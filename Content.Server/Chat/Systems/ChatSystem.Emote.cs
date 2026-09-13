@@ -36,7 +36,8 @@ public partial class ChatSystem
                     dict[lowerWord] = value.Add(emote);
 
                     var errMsg = $"Duplicate of emote word {lowerWord}";
-                    Log.Warning(errMsg);
+                    Log.Debug(errMsg); // LuaM - duplicates are intended since DeltaV multi-emote support | Ранее при запуске сервера был спам [WARN] эмоутов, перемещено в Debug из-за поддержки "мульти эмоутов" с Delta-V.
+                                       // Проще говоря, если вырезать дубликаты эмоутов с других перенесённых сборок - Эмоуты в целом умрут. Поэтому вместо log.warning перемещено в log.debug 
 
                     continue;
                 }

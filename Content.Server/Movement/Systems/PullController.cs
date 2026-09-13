@@ -85,7 +85,8 @@ public sealed partial class PullController : VirtualController
     {
         CommandBinds.Builder
             .Bind(ContentKeyFunctions.MovePulledObject, new PointerInputCmdHandler(OnRequestMovePulledObject))
-            .Register<PullingSystem>();
+            .Register<PullController>(); // LuaM - matches Unregister<PullController> in Shutdown, was spamming a duplicate-binds warning
+                                         // Вкратце - убирает дубликат и лишний спам в консоль из-за <PullingSystem>()
 
         _physicsQuery = GetEntityQuery<PhysicsComponent>();
         _pullableQuery = GetEntityQuery<PullableComponent>();

@@ -961,6 +961,13 @@ public sealed partial class ShuttleSystem
                 case FTLState.Cooldown:
                     UpdateFTLCooldown(entity);
                     break;
+                // LuaM start - FTLToDock uses EnsureComp and docks instantly, leaving an FTLComponent in the
+                // default Available state behind. Remove it quietly, same as the default branch but without the error spam.
+                case FTLState.Available:
+                    RemCompDeferred<FTLComponent>(uid);
+                    break;
+                // LuaM end
+                // Вкратце - убран спам «Found invalid FTL state Available», подробнее в Pull-request'е
                 default:
                     Log.Error($"Found invalid FTL state {comp.State} for {uid}");
                     RemCompDeferred<FTLComponent>(uid);

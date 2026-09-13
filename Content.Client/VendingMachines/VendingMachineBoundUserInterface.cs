@@ -62,6 +62,18 @@ namespace Content.Client.VendingMachines
 
         public void Refresh()
         {
+            // LuaM start - the engine registers a BUI as open a frame before calling Open(), so a vending state
+            // arriving in between used to call Refresh() with _uiSystem still null. That exception made the client
+            // drop its game state and request a full one from the server, which is the lag spike players felt.
+            // Open() refreshes on its own, and a missing component (client resetting to a full state) refreshes
+            // again once the state is applied.
+            if (_menu == null || !EntMan.HasComponent<VendingMachineComponent>(Owner))
+                return;
+            // LuaM end
+            // Вкратце, исправлен древний баг торгоматов из-за которых при открытии окна
+            // и покупки одновременно с другим игроком или с резким закрытием торгомата
+            // вылезает данная ошибка. Исправлена добавлением проверки перед Refresh()
+
             var system = EntMan.System<VendingMachineSystem>();
             _cachedInventory = system.GetAllInventory(Owner);
 

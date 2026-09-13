@@ -17354,33 +17354,6 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 17.5,39.5
       parent: 2
-- proto: RandomItem
-  entities:
-  - uid: 1437
-    components:
-    - type: Transform
-      pos: 12.5,10.5
-      parent: 2
-  - uid: 1504
-    components:
-    - type: Transform
-      pos: 11.5,4.5
-      parent: 2
-  - uid: 1518
-    components:
-    - type: Transform
-      pos: 13.5,9.5
-      parent: 2
-  - uid: 1523
-    components:
-    - type: Transform
-      pos: 11.5,10.5
-      parent: 2
-  - uid: 2520
-    components:
-    - type: Transform
-      pos: 11.5,7.5
-      parent: 2
 - proto: RandomPosterContrabandDeadDrop
   entities:
   - uid: 2984

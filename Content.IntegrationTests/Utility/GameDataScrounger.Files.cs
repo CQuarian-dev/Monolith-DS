@@ -39,7 +39,8 @@ public static partial class GameDataScrounger
         return Directory.EnumerateFiles(path,
                 pattern ?? "*",
                 recursive ? SearchOption.AllDirectories : SearchOption.TopDirectoryOnly)
-            .Select(x => new ResPath(x.Remove(0, resBasePath.Length)))
+            .Select(x => new ResPath(x.Remove(0, resBasePath.Length).Replace('\\', '/'))) // LuaM - Windows returns backslash paths |
+                                                                                          // Заменяет неправильные слеши на правильные из-за индексации Виндовса (прим. GitHub\Monolith-DS\Content)
             .ToArray();
     }
 
