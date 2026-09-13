@@ -282,7 +282,7 @@
     sprite: _Mono/Objects/Weapons/Melee/viz-sabre.rsi
   - type: MeleeWeapon
     attackRate: 1.25
-    wideAnimationRotation: -60
+    wideAnimationRotation: -135 # LuaM: -60 > -135
     damage:
       types: # It's still incredibly strong, but -reasonable-
         Slash: 50 # LuaM: 42 > 50
