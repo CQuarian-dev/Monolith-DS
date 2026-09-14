@@ -74,14 +74,14 @@ public sealed partial class MeleeWeaponSystem
                 track.User = user;
                 _animation.Play(animationUid, GetSlashAnimation(sprite, angle, spriteRotation, length, offset), SlashAnimationKey); // LuaM
                 if (arcComponent.Fadeout)
-                    _animation.Play(animationUid, GetFadeAnimation(sprite, length * 0.5f, length + 0.15f), FadeAnimationKey); // LuaM
+                    _animation.Play(animationUid, GetFadeAnimation(sprite, length * 0.5f, length + 0.15f), FadeAnimationKey); // LuaM: 0.065f, 0.115f > length
                 break;
             case WeaponArcAnimation.Thrust:
                 track = EnsureComp<TrackUserComponent>(animationUid);
                 track.User = user;
                 _animation.Play(animationUid, GetThrustAnimation(sprite, offset, spriteRotation, length), ThrustAnimationKey); // LuaM
                 if (arcComponent.Fadeout)
-                    _animation.Play(animationUid, GetFadeAnimation(sprite, length * 0.5f, length + 0.15f), FadeAnimationKey); // LuaM
+                    _animation.Play(animationUid, GetFadeAnimation(sprite, length * 0.5f, length + 0.15f), FadeAnimationKey); // LuaM: 0.05f, 0.15f > length
                 break;
             case WeaponArcAnimation.None:
                 var (mapPos, mapRot) = TransformSystem.GetWorldPositionRotation(userXform);
@@ -236,9 +236,8 @@ public sealed partial class MeleeWeaponSystem
                 targetPos += entRotation.RotateVec(arcComponent.Offset);
             }
 
-            // --  Без NoLerp движок сглаживает сам эффект повторно, и он догоняет игрока рывками
             var localPos = Vector2.Transform(targetPos, TransformSystem.GetInvWorldMatrix(xform.ParentUid)); // LuaM
-            TransformSystem.SetLocalPositionNoLerp(uid, localPos, xform); // LuaM
+            TransformSystem.SetLocalPositionNoLerp(uid, localPos, xform); // LuaM: SetWorldPosition > SetLocalPositionNoLerp
         }
     }
 }

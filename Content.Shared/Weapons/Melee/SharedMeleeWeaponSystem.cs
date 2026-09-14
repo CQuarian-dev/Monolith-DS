@@ -397,7 +397,6 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
         if (!CombatMode.IsInCombatMode(user))
             return false;
 
-        // --  Координаты атаки приходят от клиента: без проверки удалённая или нулевая сущность ломает расчёты
         if (!GetCoordinates(attack.Coordinates).IsValid(EntityManager)) // LuaM
             return false;
 
@@ -478,13 +477,13 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
             {
                 case LightAttackEvent light:
                     DoLightAttack(attacker, light, weaponUid, weapon, session, user);
-                    animation = GetLightAnimation(user, attacker, weaponUid, weapon); // LuaM
+                    animation = GetLightAnimation(user, attacker, weaponUid, weapon); // LuaM: weapon.Animation > GetLightAnimation
                     break;
                 case DisarmAttackEvent disarm:
                     if (!DoDisarm(attacker, disarm, weaponUid, weapon, session))
                         return false;
 
-                    animation = GetLightAnimation(user, attacker, weaponUid, weapon); // LuaM
+                    animation = GetLightAnimation(user, attacker, weaponUid, weapon); // LuaM: weapon.Animation > GetLightAnimation
                     break;
                 case HeavyAttackEvent heavy:
                     if (!DoHeavyAttack(attacker, heavy, weaponUid, weapon, session, user))
@@ -610,7 +609,6 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
 
     protected abstract void DoDamageEffect(List<EntityUid> targets, EntityUid? user,  TransformComponent targetXform);
 
-    // --  Выпад копирует спрайт предмета. Без предмета остаётся спрайт копья, поэтому мобам показываем удар
     private static EntProtoId GetLightAnimation(EntityUid user, EntityUid attacker, EntityUid weaponUid, MeleeWeaponComponent weapon) // LuaM
     {
         if (weapon.Animation == MeleeWeaponComponent.ItemLightAnimation && (weaponUid == user || weaponUid == attacker))
