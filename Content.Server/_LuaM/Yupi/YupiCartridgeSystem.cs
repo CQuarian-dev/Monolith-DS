@@ -38,7 +38,6 @@ public sealed partial class YupiCartridgeSystem : EntitySystem
 
         var loader = GetEntity(args.LoaderUid);
 
-        // Money always leaves the account of whoever carries the PDA, and only they may send it.
         if (!TryGetHolder(loader, out var holder) || holder != args.Actor)
             return;
 
@@ -94,10 +93,6 @@ public sealed partial class YupiCartridgeSystem : EntitySystem
         _cartridgeLoader.UpdateCartridgeUiState(loader, new YupiUiState(code, balance, lowRateRemaining, nextTransfer));
     }
 
-    /// <summary>
-    /// Updates every PDA carried by <paramref name="holder"/> that currently has YUPI open.
-    /// Only runs after a successful transfer, so walking all loaders is cheap.
-    /// </summary>
     private void RefreshOpenApps(EntityUid holder)
     {
         var query = EntityQueryEnumerator<CartridgeLoaderComponent>();
@@ -112,9 +107,6 @@ public sealed partial class YupiCartridgeSystem : EntitySystem
         }
     }
 
-    /// <summary>
-    /// Finds the closest entity with a bank account that the loader is inside of.
-    /// </summary>
     private bool TryGetHolder(EntityUid loader, out EntityUid holder)
     {
         var current = loader;

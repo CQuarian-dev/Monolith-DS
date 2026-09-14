@@ -22,9 +22,6 @@ public sealed partial class YupiUiFragment : BoxContainer
     private int _lowRateRemaining;
     private TimeSpan _nextTransfer;
 
-    /// <summary>
-    /// Last whole number of cooldown seconds put on the send button, so it is only relabeled once a second.
-    /// </summary>
     private int _shownCooldownSeconds = -1;
 
     public YupiUiFragment()
@@ -55,7 +52,6 @@ public sealed partial class YupiUiFragment : BoxContainer
 
     public void UpdateState(YupiUiState state)
     {
-        // No code means no usable bank account, e.g. an Ironman character.
         var hasAccount = state.OwnCode != string.Empty;
         NoAccountLabel.Visible = !hasAccount;
         AccountBox.Visible = hasAccount;
@@ -128,9 +124,6 @@ public sealed partial class YupiUiFragment : BoxContainer
                && YupiRules.IsValidCode(code);
     }
 
-    /// <summary>
-    /// Accepts both 1000000 and 1.000.000.
-    /// </summary>
     private static bool TryParseAmount(string text, out int amount)
     {
         return int.TryParse(text.Replace(".", string.Empty), out amount);

@@ -38,8 +38,6 @@
                 <Button Name="SendButton" Text="{Loc 'yupi-ui-send'}" Margin="0 5 0 0" Disabled="True"/>
             </BoxContainer>
 
-            <!-- Bank branding: swap the texture and the yupi-bank-name string to rebrand.
-                 SetSize is the box the logo is fitted into, keeping its proportions. -->
             <BoxContainer Orientation="Vertical" HorizontalAlignment="Center" Margin="0 8 0 0">
                 <TextureRect TexturePath="/Textures/_LuaM/Yupi/bank_logo.png"
                              Stretch="KeepAspectCentered"
