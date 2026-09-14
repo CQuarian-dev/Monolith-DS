@@ -1,7 +1,3 @@
-// LuaCorp - This file is licensed under AGPLv3
-// Copyright (c) 2026 LuaCorp
-// See AGPLv3.txt for details.
-
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
@@ -37,7 +33,6 @@ public sealed class LenientGridLoaderSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        // --  Строго после MapMigrationSystem: она добавляет ключи через Dictionary.Add и упадёт на дубликате
         SubscribeLocalEvent<BeforeEntityReadEvent>(OnBeforeEntityRead,
             after: new[] { typeof(MapMigrationSystem), typeof(HolidaySystem) });
     }
@@ -108,7 +103,6 @@ public sealed class LenientGridLoaderSystem : EntitySystem
         }
         finally
         {
-            // --  Очищать всегда, иначе подмена прототипов утечёт во все последующие загрузки карт и шаттлов
             _pendingMissing.Clear();
         }
 
@@ -130,7 +124,6 @@ public sealed class LenientGridLoaderSystem : EntitySystem
         return true;
     }
 
-    // --  Проверяются только прототипы сущностей. Отсутствующий тайл по-прежнему ломает загрузку грида
     private Dictionary<string, int> CollectMissingPrototypes(MappingDataNode data)
     {
         var missing = new Dictionary<string, int>();
@@ -192,7 +185,6 @@ public sealed class LenientGridLoaderSystem : EntitySystem
                 report.Rescued++;
             }
 
-            // --  Удалять только после выгрузки: движок удаляет сущность вместе со всем содержимым
             Del(uid);
             report.Removed++;
         }

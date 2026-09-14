@@ -1,7 +1,3 @@
-// LuaCorp - This file is licensed under AGPLv3
-// Copyright (c) 2026 LuaCorp
-// See AGPLv3.txt for details.
-
 using System.Globalization;
 using System.Linq;
 using System.Numerics;
@@ -18,7 +14,6 @@ using Robust.Shared.Utility;
 
 namespace Content.Server._LuaM.Mapping;
 
-// --  Тот же флаг MAPPING, что у loadgrid. Не ослаблять: команда создаёт сущности на сервере
 [AdminCommand(AdminFlags.Mapping)]
 public sealed partial class LoadGridLenientCommand : IConsoleCommand
 {
@@ -53,7 +48,6 @@ public sealed partial class LoadGridLenientCommand : IConsoleCommand
         }
 
         var path = new ResPath(args[1]);
-        // --  Запрет выхода из папки данных сервера через ".."
         if (path.EnumerateSegments().Any(segment => segment == ".."))
         {
             shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-bad-path"));
