@@ -3,7 +3,6 @@ tiles-hull-reinforced-corner-nw = exterior reinforced hull plating corner (NW)
 tiles-hull-reinforced-corner-se = exterior reinforced hull plating corner (SE)
 tiles-hull-reinforced-corner-sw = exterior reinforced hull plating corner (SW)
 
-# Corner, half, wedge and half-tilt lattice and plating (Mono tiles), original Monolith names
 tiles-latticecornerNE = NE lattice
 tiles-platingcornerNE = NE plating
 tiles-latticecornerNW = NW lattice

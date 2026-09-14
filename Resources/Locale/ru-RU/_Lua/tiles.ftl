@@ -3,7 +3,6 @@ tiles-hull-reinforced-corner-nw = угловая наружная укреплё
 tiles-hull-reinforced-corner-se = угловая наружная укреплённая обшивка корпуса (юго-восток)
 tiles-hull-reinforced-corner-sw = угловая наружная укреплённая обшивка корпуса (юго-запад)
 
-# Corner, half, wedge and half-tilt lattice and plating (Mono tiles), texts from Sector Frontier 14
 tiles-latticecornerNE = угловая решётка Северо Восток
 tiles-platingcornerNE = угловое покрытие Северо Восток
 tiles-latticecornerNW = угловая решётка Северо Запад

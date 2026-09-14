@@ -1,7 +1,3 @@
-# Diagonal corners of the exterior reinforced hull plating, ported from Sector Frontier 14.
-# Same ids as there so their maps load here; they inherit Monolith's FloorHullReinforced, which is destructible.
-# When destroyed they break down to the matching Mono corner plating instead of a full plating tile.
-
 - type: tile
   id: HullReinforcedCornerNE
   parent: FloorHullReinforced
