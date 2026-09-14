@@ -573,7 +573,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         Angle angle,
         Dictionary<string, string>? portNames = null)
     {
-        // --  Консоль могут обновить в момент удаления грида или цели радара: удалённые сущности в сеть не отдаём
+        // --  Консоль могут обновить в момент удаления грида или цели радара
         NetCoordinates? netCoordinates = TerminatingOrDeleted(coordinates.EntityId) ? null : GetNetCoordinates(coordinates); // LuaM
 
         if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2, false))
