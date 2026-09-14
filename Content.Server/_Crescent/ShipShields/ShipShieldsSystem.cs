@@ -26,6 +26,7 @@ public sealed partial class ShipShieldsSystem : EntitySystem
 
     //private const float DeflectionSpread = 25f;
     private const float EmitterUpdateRate = 1.5f;
+    private const int ShieldChainVertices = 64; // LuaM
 
     [Dependency] private SharedTransformSystem _transformSystem = default!;
     [Dependency] private FixtureSystem _fixtureSystem = default!;
@@ -103,12 +104,11 @@ public sealed partial class ShipShieldsSystem : EntitySystem
                 UnshieldEntity(parent.Value);
                 emitter.Shield = null;
                 emitter.Shielded = null;
-                _audio.PlayGlobal(emitter.PowerDownSound, filter, true, emitter.PowerDownSound.Params); // LuaM
+                _audio.PlayGlobal(emitter.PowerDownSound, filter, true, emitter.PowerDownSound.Params); // LuaM: PowerUpSound.Params > PowerDownSound.Params
             }
 
             // Forge-Change-Start
             // Push fresh shield state to any consoles on this grid so HP %/recharge timer stays current.
-            // --  Консоли пересобирают все доки сервера, поэтому обновляем их только при видимом изменении щита
             var consoleState = GetConsoleState(parent.Value, emitter); // LuaM
             if (emitter.LastConsoleState != consoleState) // LuaM
             {
@@ -349,19 +349,21 @@ public sealed partial class ShipShieldsSystem : EntitySystem
 
         var chain = new ChainShape();
 
-        chain.CreateLoop(Vector2.Zero, radius);
-
-        for (int i = 0; i < chain.Vertices.Length; i++)
+        Span<Vector2> vertices = stackalloc Vector2[ShieldChainVertices + 1]; // LuaM: CreateLoop(radius) > oval vertices with closing edge
+        var arcLength = MathF.PI * 2f / ShieldChainVertices;
+        for (var i = 0; i < ShieldChainVertices; i++)
         {
+            var vertex = new Vector2(MathF.Cos(arcLength * i) * radius, MathF.Sin(arcLength * i) * radius);
             if (scaleX)
-            {
-                chain.Vertices[i].X *= scale;
-            }
+                vertex.X *= scale;
             else
-            {
-                chain.Vertices[i].Y *= scale;
-            }
+                vertex.Y *= scale;
+
+            vertices[i] = vertex;
         }
+
+        vertices[ShieldChainVertices] = vertices[0];
+        chain.CreateLoop(vertices);
 
         _fixtureSystem.TryCreateFixture(uid, chain, name,
             hard: false,

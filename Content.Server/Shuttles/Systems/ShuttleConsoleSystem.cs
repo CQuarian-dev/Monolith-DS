@@ -88,6 +88,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             subs.Event<ShuttleConsoleFTLPositionMessage>(OnPositionFTLMessage);
             subs.Event<ToggleFTLLockRequestMessage>(OnToggleFTLLock);
             subs.Event<BoundUIClosedEvent>(OnConsoleUIClose);
+            subs.Event<BoundUIOpenedEvent>(OnConsoleUIOpened); // LuaM
         });
 
         SubscribeLocalEvent<DroneConsoleComponent, ConsoleShuttleEvent>(OnCargoGetConsole);
@@ -175,6 +176,12 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         }
 
         RemovePilot(args.Actor);
+    }
+
+    private void OnConsoleUIOpened(EntityUid uid, ShuttleConsoleComponent component, BoundUIOpenedEvent args) // LuaM
+    {
+        DockingInterfaceState? dockState = null;
+        UpdateState(uid, ref dockState);
     }
 
     private void OnConsoleUIOpenAttempt(
@@ -391,6 +398,9 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
 
     private void UpdateState(EntityUid consoleUid, ref DockingInterfaceState? dockState)
     {
+        if (!_ui.IsUiOpen(consoleUid, ShuttleConsoleUiKey.Key)) // LuaM
+            return;
+
         EntityUid? entity = consoleUid;
 
         var getShuttleEv = new ConsoleShuttleEvent
@@ -573,7 +583,6 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         Angle angle,
         Dictionary<string, string>? portNames = null)
     {
-        // --  Консоль могут обновить в момент удаления грида или цели радара
         NetCoordinates? netCoordinates = TerminatingOrDeleted(coordinates.EntityId) ? null : GetNetCoordinates(coordinates); // LuaM
 
         if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2, false))

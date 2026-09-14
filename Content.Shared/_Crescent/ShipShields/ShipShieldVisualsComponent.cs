@@ -19,12 +19,11 @@ public sealed partial class ShipShieldVisualsComponent : Component
     public float Padding = 50f;
 
     // LuaM-start: animated shader parameters ported from Sector Frontier.
-    // --  Сеть получает только моменты начала анимаций, прогресс клиент считает сам. Нанейрослопили тут и страдайте.
     [ViewVariables, AutoNetworkedField, AutoPausedField]
-    public TimeSpan? FormStart; // LuaM
+    public TimeSpan? FormStart; // LuaM: float Form > TimeSpan? FormStart
 
     [ViewVariables, AutoNetworkedField, AutoPausedField]
-    public TimeSpan? ShatterStart; // LuaM
+    public TimeSpan? ShatterStart; // LuaM: float Shatter > TimeSpan? ShatterStart
 
     [DataField]
     public float SpinupTime = 1.25f;
