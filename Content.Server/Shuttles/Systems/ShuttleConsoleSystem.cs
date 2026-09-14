@@ -573,18 +573,23 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         Angle angle,
         Dictionary<string, string>? portNames = null)
     {
+        // --  Консоль могут обновить в момент удаления грида или цели радара: удалённые сущности в сеть не отдаём
+        NetCoordinates? netCoordinates = TerminatingOrDeleted(coordinates.EntityId) ? null : GetNetCoordinates(coordinates); // LuaM
+
         if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2, false))
-            return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, GetNetCoordinates(coordinates), angle, docks, InertiaDampeningMode.Dampen, true, null, null, null, false); // Frontier: add inertial dampening
+            return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, netCoordinates, angle, docks, InertiaDampeningMode.Dampen, true, null, null, null, false); // Frontier: add inertial dampening // LuaM: netCoordinates
+
+        EntityUid? targetEntity = TerminatingOrDeleted(entity.Comp1.TargetEntity) ? null : entity.Comp1.TargetEntity; // LuaM
 
         return new NavInterfaceState(
             entity.Comp1.MaxRange,
-            GetNetCoordinates(coordinates),
+            netCoordinates, // LuaM
             angle,
             docks,
             _shuttle.NfGetInertiaDampeningMode(entity), // Frontier: inertia dampening
             entity.Comp1.HideTarget, // Frontier
             entity.Comp1.Target, // Frontier
-            GetNetEntity(entity.Comp1.TargetEntity), // Frontier
+            GetNetEntity(targetEntity), // Frontier // LuaM: targetEntity
             entity.Comp1.MaxIffRange,
             entity.Comp1.HideCoords,
             portNames,

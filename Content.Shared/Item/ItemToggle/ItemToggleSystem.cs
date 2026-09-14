@@ -269,8 +269,7 @@ public sealed partial class ItemToggleSystem : EntitySystem
     /// </summary>
     private void TurnOnOnWielded(Entity<ItemToggleComponent> ent, ref ItemWieldedEvent args)
     {
-        // FIXME: for some reason both client and server play sound
-        TryActivate((ent, ent.Comp));
+        TryActivate((ent, ent.Comp), args.User); // LuaM
     }
 
     public bool IsActivated(Entity<ItemToggleComponent?> ent)

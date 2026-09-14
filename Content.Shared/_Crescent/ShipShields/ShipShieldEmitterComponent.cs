@@ -78,6 +78,9 @@ public sealed partial class ShipShieldEmitterComponent : Component
     [ViewVariables]
     public float OverloadAccumulator = 0f;
 
+    [ViewVariables]
+    public (EntityUid Grid, bool Online, int Percent, bool Overloaded)? LastConsoleState; // LuaM
+
     /// <summary>
     /// On power up, players for all on vessel, pitched down.
     /// </summary>
