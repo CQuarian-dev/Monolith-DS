@@ -1,4 +1,3 @@
-<!-- LuaCorp - This file is licensed under AGPLv3 -->
 <styles:LunaWindow xmlns="https://spacestation14.io"
                    xmlns:styles="clr-namespace:Content.Client._Lua.Styles"
                    xmlns:graphics="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
