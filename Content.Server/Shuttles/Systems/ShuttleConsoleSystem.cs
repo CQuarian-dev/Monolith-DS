@@ -178,11 +178,13 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         RemovePilot(args.Actor);
     }
 
-    private void OnConsoleUIOpened(EntityUid uid, ShuttleConsoleComponent component, BoundUIOpenedEvent args) // LuaM
+// LuaM-start:
+    private void OnConsoleUIOpened(EntityUid uid, ShuttleConsoleComponent component, BoundUIOpenedEvent args)
     {
         DockingInterfaceState? dockState = null;
         UpdateState(uid, ref dockState);
     }
+// LuaM-end.
 
     private void OnConsoleUIOpenAttempt(
         EntityUid uid,
@@ -398,8 +400,10 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
 
     private void UpdateState(EntityUid consoleUid, ref DockingInterfaceState? dockState)
     {
-        if (!_ui.IsUiOpen(consoleUid, ShuttleConsoleUiKey.Key)) // LuaM
+// LuaM-start:
+        if (!_ui.IsUiOpen(consoleUid, ShuttleConsoleUiKey.Key))
             return;
+// LuaM-end.
 
         EntityUid? entity = consoleUid;
 
@@ -586,19 +590,19 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
         NetCoordinates? netCoordinates = TerminatingOrDeleted(coordinates.EntityId) ? null : GetNetCoordinates(coordinates); // LuaM
 
         if (!Resolve(entity, ref entity.Comp1, ref entity.Comp2, false))
-            return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, netCoordinates, angle, docks, InertiaDampeningMode.Dampen, true, null, null, null, false); // Frontier: add inertial dampening // LuaM: netCoordinates
+            return new NavInterfaceState(SharedRadarConsoleSystem.DefaultMaxRange, netCoordinates, angle, docks, InertiaDampeningMode.Dampen, true, null, null, null, false); // Frontier: add inertial dampening // LuaM: GetNetCoordinates(coordinates), > netCoordinates
 
         EntityUid? targetEntity = TerminatingOrDeleted(entity.Comp1.TargetEntity) ? null : entity.Comp1.TargetEntity; // LuaM
 
         return new NavInterfaceState(
             entity.Comp1.MaxRange,
-            netCoordinates, // LuaM
+            netCoordinates, // LuaM: GetNetCoordinates(coordinates) > netCoordinates
             angle,
             docks,
             _shuttle.NfGetInertiaDampeningMode(entity), // Frontier: inertia dampening
             entity.Comp1.HideTarget, // Frontier
             entity.Comp1.Target, // Frontier
-            GetNetEntity(targetEntity), // Frontier // LuaM: targetEntity
+            GetNetEntity(targetEntity), // Frontier // LuaM: entity.Comp1.TargetEntity > targetEntity
             entity.Comp1.MaxIffRange,
             entity.Comp1.HideCoords,
             portNames,

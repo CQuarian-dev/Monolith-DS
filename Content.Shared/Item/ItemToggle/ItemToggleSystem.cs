@@ -269,7 +269,7 @@ public sealed partial class ItemToggleSystem : EntitySystem
     /// </summary>
     private void TurnOnOnWielded(Entity<ItemToggleComponent> ent, ref ItemWieldedEvent args)
     {
-        TryActivate((ent, ent.Comp), args.User); // LuaM: user null > args.User
+        TryActivate((ent, ent.Comp), args.User); // LuaM: added args.User
     }
 
     public bool IsActivated(Entity<ItemToggleComponent?> ent)

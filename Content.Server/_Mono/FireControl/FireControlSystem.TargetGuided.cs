@@ -171,8 +171,10 @@ public sealed partial class FireControlSystem
 
         UpdatePendingConsoleUi(); // LuaM
 
-        if (_activeMissiles.Count == 0 && _consoleMousePositions.Count == 0) // LuaM
+// LuaM-start:
+        if (_activeMissiles.Count == 0 && _consoleMousePositions.Count == 0)
             return;
+// LuaM-end.
 
         // Update target positions for active missiles based on the current cursor position
         foreach (var missileUid in _activeMissiles.ToArray())

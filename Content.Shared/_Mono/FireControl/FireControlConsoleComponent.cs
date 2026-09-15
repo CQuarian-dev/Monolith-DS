@@ -22,9 +22,11 @@ public sealed partial class FireControlConsoleComponent : Component
     [DataField]
     public float LogGridLookupRange = 1024f;
 
+// LuaM-start:
     [ViewVariables]
-    public TimeSpan? NextUiUpdate; // LuaM
+    public TimeSpan? NextUiUpdate;
 
     [DataField]
-    public TimeSpan UiUpdateSpacing = TimeSpan.FromSeconds(0.5); // LuaM
+    public TimeSpan UiUpdateSpacing = TimeSpan.FromSeconds(0.5);
+// LuaM-end.
 }

@@ -161,16 +161,19 @@ public sealed partial class FireControlSystem : EntitySystem
 
             component.NextLog = _timing.CurTime + component.LogSpacing;
         }
-
-        if (args.Selected.Count > 0) // LuaM
-            QueueUiUpdate(uid, component); // LuaM
+//        UpdateUi(uid, component); // Commented by LuaM
+// LuaM-start:
+        if (args.Selected.Count > 0)
+            QueueUiUpdate(uid, component);
+// LuaM-end.
 
         // Raise an event to track the cursor position even when not firing
         var fireEvent = new FireControlConsoleFireEvent(args.Coordinates, args.Selected);
         RaiseLocalEvent(uid, fireEvent);
     }
 
-    private void QueueUiUpdate(EntityUid uid, FireControlConsoleComponent component) // LuaM
+// LuaM-start:
+    private void QueueUiUpdate(EntityUid uid, FireControlConsoleComponent component)
     {
         if (component.NextUiUpdate == null || component.NextUiUpdate <= _timing.CurTime)
         {
@@ -201,6 +204,7 @@ public sealed partial class FireControlSystem : EntitySystem
             return true;
         });
     }
+// LuaM-end.
 
     public void OnUIOpened(EntityUid uid, FireControlConsoleComponent component, BoundUIOpenedEvent args)
     {
@@ -306,8 +310,10 @@ public sealed partial class FireControlSystem : EntitySystem
         if (!Resolve(uid, ref component))
             return;
 
-        if (!_ui.IsUiOpen(uid, FireControlConsoleUiKey.Key)) // LuaM
+// LuaM-start:
+        if (!_ui.IsUiOpen(uid, FireControlConsoleUiKey.Key))
             return;
+// LuaM-end.
 
         NavInterfaceState navState = _shuttleConsoleSystem.GetNavState(uid, _shuttleConsoleSystem.GetAllDocks());
 

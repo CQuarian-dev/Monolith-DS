@@ -562,7 +562,7 @@ public abstract partial class SharedDisposalUnitSystem : EntitySystem
         {
             component.NextPressurized = TimeSpan.Zero;
             if (TryComp<DeviceLinkSourceComponent>(uid, out var source)) // LuaM
-                _device.InvokePort(uid, ReadyPort, sourceComponent: source); // Goobstation
+                _device.InvokePort(uid, ReadyPort, sourceComponent: source); // Goobstation // LuaM: added sourceComponent: source
 
             // Manually engaged
             if (component.Engaged)
