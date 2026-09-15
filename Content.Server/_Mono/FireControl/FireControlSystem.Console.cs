@@ -36,6 +36,7 @@ public sealed partial class FireControlSystem : EntitySystem
     [Dependency] private IMapManager _mapMan = default!;
 
     private bool _completedCheck = false;
+    private readonly HashSet<EntityUid> _pendingUiConsoles = new(); // LuaM
 
     private void InitializeConsole()
     {
@@ -160,13 +161,50 @@ public sealed partial class FireControlSystem : EntitySystem
 
             component.NextLog = _timing.CurTime + component.LogSpacing;
         }
-
-        UpdateUi(uid, component);
+//        UpdateUi(uid, component); // Commented by LuaM
+// LuaM-start:
+        if (args.Selected.Count > 0)
+            QueueUiUpdate(uid, component);
+// LuaM-end.
 
         // Raise an event to track the cursor position even when not firing
         var fireEvent = new FireControlConsoleFireEvent(args.Coordinates, args.Selected);
         RaiseLocalEvent(uid, fireEvent);
     }
+
+// LuaM-start:
+    private void QueueUiUpdate(EntityUid uid, FireControlConsoleComponent component)
+    {
+        if (component.NextUiUpdate == null || component.NextUiUpdate <= _timing.CurTime)
+        {
+            component.NextUiUpdate = _timing.CurTime + component.UiUpdateSpacing;
+            UpdateUi(uid, component);
+            return;
+        }
+
+        _pendingUiConsoles.Add(uid);
+    }
+
+    private void UpdatePendingConsoleUi() // LuaM
+    {
+        if (_pendingUiConsoles.Count == 0)
+            return;
+
+        var now = _timing.CurTime;
+        _pendingUiConsoles.RemoveWhere(uid =>
+        {
+            if (!TryComp<FireControlConsoleComponent>(uid, out var component))
+                return true;
+
+            if (component.NextUiUpdate > now)
+                return false;
+
+            component.NextUiUpdate = now + component.UiUpdateSpacing;
+            UpdateUi(uid, component);
+            return true;
+        });
+    }
+// LuaM-end.
 
     public void OnUIOpened(EntityUid uid, FireControlConsoleComponent component, BoundUIOpenedEvent args)
     {
@@ -271,6 +309,11 @@ public sealed partial class FireControlSystem : EntitySystem
     {
         if (!Resolve(uid, ref component))
             return;
+
+// LuaM-start:
+        if (!_ui.IsUiOpen(uid, FireControlConsoleUiKey.Key))
+            return;
+// LuaM-end.
 
         NavInterfaceState navState = _shuttleConsoleSystem.GetNavState(uid, _shuttleConsoleSystem.GetAllDocks());
 
