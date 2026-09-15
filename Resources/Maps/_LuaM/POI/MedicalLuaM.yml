@@ -15005,8 +15005,6 @@ entities:
       pos: -0.5,-17.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4949
   - uid: 4926
@@ -15015,8 +15013,6 @@ entities:
       pos: 0.5,-17.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4949
   - uid: 4927
@@ -15025,8 +15021,6 @@ entities:
       pos: 1.5,-17.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4949
   - uid: 4928
@@ -22151,8 +22145,6 @@ entities:
       pos: -15.5,32.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
   - uid: 2543
@@ -22227,8 +22219,6 @@ entities:
       pos: -7.5,14.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22239,8 +22229,6 @@ entities:
       pos: -14.5,22.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22252,8 +22240,6 @@ entities:
       pos: -9.5,17.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22274,8 +22260,6 @@ entities:
       pos: -8.5,26.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22287,8 +22271,6 @@ entities:
       pos: -11.5,30.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22300,8 +22282,6 @@ entities:
       pos: -19.5,26.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22800,8 +22780,6 @@ entities:
       pos: -13.5,25.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22814,8 +22792,6 @@ entities:
       pos: -12.5,31.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22829,8 +22805,6 @@ entities:
       pos: -16.5,33.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22843,8 +22817,6 @@ entities:
       pos: -18.5,27.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22858,8 +22830,6 @@ entities:
       pos: -15.5,20.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22873,8 +22843,6 @@ entities:
       pos: -7.5,25.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -22900,8 +22868,6 @@ entities:
       pos: -8.5,19.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor
@@ -23508,8 +23474,6 @@ entities:
       pos: -7.5,15.5
       parent: 1
     - type: DeviceNetwork
-      configurators:
-      - invalid
       deviceLists:
       - 4950
     - type: AtmosPipeColor

@@ -62,6 +62,10 @@ namespace Content.Client.VendingMachines
 
         public void Refresh()
         {
+// LuaM-start:
+            if (_menu == null || !EntMan.HasComponent<VendingMachineComponent>(Owner))
+                return;
+// LuaM-end.
             var system = EntMan.System<VendingMachineSystem>();
             _cachedInventory = system.GetAllInventory(Owner);
 
