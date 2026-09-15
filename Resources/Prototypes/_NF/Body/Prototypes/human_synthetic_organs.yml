@@ -14,9 +14,9 @@
     torso:
       part: TorsoHuman
       connections:
-      - right arm # LuaM: right_arm > right arm
-      - left arm # LuaM: left_arm > left arm
-      - right leg # LuaM: right_leg > right leg
+      - right arm # LuaM right_arm > right arm
+      - left arm # LuaM left_arm > left arm
+      - right leg # LuaM right_leg > right leg
       - left leg # LuaM left_leg > left leg
       - head # LuaM
       organs:
@@ -25,27 +25,27 @@
         stomach: OrganHumanStomach
         liver: OrganSyntheticLiver
         kidneys: OrganSyntheticKidneys
-    right arm: # LuaM: right_arm > right arm
+    right arm: # LuaM right_arm > right arm
       part: RightArmHuman
       connections:
-      - right hand # LuaM: right_hand > right hand
-    left arm: # LuaM: left_arm > left arm
+      - right hand # LuaM right_hand > right hand
+    left arm: # LuaM left_arm > left arm
       part: LeftArmHuman
       connections:
-      - left hand # LuaM: left_hand > left hand
-    right hand: # LuaM: right_hand > right hand
+      - left hand # LuaM left_hand > left hand
+    right hand: # LuaM right_hand > right hand
       part: RightHandHuman
-    left hand: # LuaM: left_hand > left hand
+    left hand: # LuaM left_hand > left hand
       part: LeftHandHuman
-    right leg: # LuaM: right_leg > right leg
+    right leg: # LuaM right_leg > right leg
       part: RightLegHuman
       connections:
-      - right foot # LuaM: right_foot > right foot
-    left leg: # LuaM: left_leg > left leg
+      - right foot # LuaM right_foot > right foot
+    left leg: # LuaM left_leg > left leg
       part: LeftLegHuman
       connections:
-      - left foot # LuaM: left_foot > left foot
-    right foot: # LuaM: right_foot > right foot
+      - left foot # LuaM left_foot > left foot
+    right foot: # LuaM right_foot > right foot
       part: RightFootHuman
-    left foot: # LuaM: left_foot > left foot
+    left foot: # LuaM left_foot > left foot
       part: LeftFootHuman
