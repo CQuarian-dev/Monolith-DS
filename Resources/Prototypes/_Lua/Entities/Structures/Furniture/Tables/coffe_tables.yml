@@ -5,7 +5,7 @@
   id: CoffeeTableFrame
   parent: BaseStructure
   name: coffee table frame
-  description: Металлические ножки, составляющие основу столика.
+  description: The metal legs that form the base of the table.
   components:
   - type: Sprite
     sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi

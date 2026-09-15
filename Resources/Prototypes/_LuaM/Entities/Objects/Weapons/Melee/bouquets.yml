@@ -1,8 +1,7 @@
-
 - type: entity
   parent: BaseItem
-  id: ADTObjectWeaponsMeleeWhiteBouquet
-  name: White bouquet
+  id: ObjectWeaponsMeleeWhiteBouquet
+  name: white bouquet
   description: Bouquet of white roses. Classic!
   components:
   - type: Sharp
@@ -21,8 +20,8 @@
 
 - type: entity
   parent: BaseItem
-  id: ADTObjectWeaponsMeleeRoseBouquet
-  name: Rose bouquet
+  id: ObjectWeaponsMeleeRoseBouquet
+  name: rose bouquet
   description: Delicate bouquet of pink hibiscus flowers. Especialy for her!
   components:
   - type: Sharp
@@ -41,8 +40,8 @@
 
 - type: entity
   parent: BaseItem
-  id: ADTObjectWeaponsMeleeYellowBouquet
-  name: Yellow bouquet
+  id: ObjectWeaponsMeleeYellowBouquet
+  name: yellow bouquet
   description: This is a bouquet of yellow peonies. Especially for connoisseurs of peonies
   components:
   - type: Sharp
@@ -61,8 +60,8 @@
 
 - type: entity
   parent: BaseItem
-  id: ADTObjectWeaponsMeleeBouquetWithBeer
-  name: Bouquet with beer
+  id: ObjectWeaponsMeleeBouquetWithBeer
+  name: bouquet with beer
   description: Be unique! GIve a bouquet that you can eat, at the same time knocking over a bottle of beer
   components:
   - type: Sharp
@@ -81,8 +80,8 @@
 
 - type: entity
   parent: BaseItem
-  id: ADTObjectWeaponsMeleeBlackBouquet
-  name: Black bouquet
+  id: ObjectWeaponsMeleeBlackBouquet
+  name: black bouquet
   description: This roses are difinietly not colored, thay have always been like thah
   components:
   - type: Sharp
@@ -101,7 +100,7 @@
 
 - type: entity
   parent: BaseItem
-  id: ADTObjectWeaponsMeleeLiliacBouquet
+  id: ObjectWeaponsMeleeLiliacBouquet
   name: liliac roses bouquet
   description: This roses are difinietly not colored, thay have always been like thah
   components:
