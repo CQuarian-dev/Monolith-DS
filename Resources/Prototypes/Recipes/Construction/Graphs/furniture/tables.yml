@@ -76,6 +76,24 @@
               amount: 1
               doAfter: 1
 
+        - to: TablePlasmaGlassReinforced # LuaM
+          steps:
+            - material: ReinforcedPlasmaGlass
+              amount: 1
+              doAfter: 1
+
+        - to: TableUraniumGlass # LuaM
+          steps:
+            - material: UraniumGlass
+              amount: 1
+              doAfter: 1
+
+        - to: TableReinforcedUraniumGlass # LuaM
+          steps:
+            - material: ReinforcedUraniumGlass
+              amount: 1
+              doAfter: 1
+
         - to: TableBrass
           steps:
             - material: Brass
@@ -181,6 +199,42 @@
           completed:
             - !type:SpawnPrototype
               prototype: SheetPGlass1
+              amount: 1
+          steps:
+            - tool: Anchoring
+              doAfter: 1
+
+    - node: TablePlasmaGlassReinforced # LuaM
+      entity: TablePlasmaGlassReinforced
+      edges:
+        - to: TableFrame
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetRPGlass1
+              amount: 1
+          steps:
+            - tool: Anchoring
+              doAfter: 1
+
+    - node: TableUraniumGlass # LuaM
+      entity: TableUraniumGlass
+      edges:
+        - to: TableFrame
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetUGlass1
+              amount: 1
+          steps:
+            - tool: Anchoring
+              doAfter: 1
+
+    - node: TableReinforcedUraniumGlass # LuaM
+      entity: TableReinforcedUraniumGlass
+      edges:
+        - to: TableFrame
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetRUGlass1
               amount: 1
           steps:
             - tool: Anchoring

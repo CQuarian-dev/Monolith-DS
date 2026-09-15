@@ -1,0 +1,203 @@
+- type: construction
+  name: wooden coffee table
+  id: CoffeeTableWood
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableWood
+  category: construction-category-furniture
+  description: Even more simple coffee table.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: wood
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: coffee table
+  id: CoffeeTableSteel
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableSteel
+  category: construction-category-furniture
+  description: Simple coffee table.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: steel
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced coffee table
+  id: CoffeeTableReinforced
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableReinforced
+  category: construction-category-furniture
+  description: You obviously know, what are you doing, right?
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: reinforced
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: glass coffee table
+  id: CoffeeTableGlass
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableGlass
+  category: construction-category-furniture
+  description: Please, don't try standing on it.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: glass
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: plasma glass coffee table
+  id: CoffeeTablePlasma
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTablePlasma
+  category: construction-category-furniture
+  description: Suspiciously plasma table...
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: plasma
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced glass coffee table
+  id: CoffeeTableReinforcedGlass
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableReinforcedGlass
+  category: construction-category-furniture
+  description: Robust and reflective.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: reinforced_glass
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: uranium glass coffee table
+  id: CoffeeTableUranium
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableUranium
+  category: construction-category-furniture
+  description: Is it OSHA approved?
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: uranium
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced uranium glass coffee table
+  id: CoffeeTableReinforcedUranium
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableReinforcedUranium
+  category: construction-category-furniture
+  description: This is buisness you strived for, my friend.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: reinforced_uranium
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced plasma glass coffee table
+  id: CoffeeTableReinforcedPlasma
+  graph: CoffeeTableGraph
+  startNode: start
+  targetNode: CoffeeTableReinforcedPlasma
+  category: construction-category-furniture
+  description: A table for strangers... Hello, assistant with lightsaber.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/coffee_table.rsi
+    state: reinforced_plasma
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: uranium glass table
+  id: TableUraniumGlass
+  graph: Table
+  startNode: start
+  targetNode: TableUraniumGlass
+  category: construction-category-furniture
+  description: Just a sheet of uranium glass on four legs.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/uranium.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced uranium glass table
+  id: TableReinforcedUraniumGlass
+  graph: Table
+  startNode: start
+  targetNode: TableReinforcedUraniumGlass
+  category: construction-category-furniture
+  description: Stonks.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/r_uranium.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  name: reinforced plasma glass table
+  id: TablePlasmaGlassReinforced
+  graph: Table
+  startNode: start
+  targetNode: TablePlasmaGlassReinforced
+  category: construction-category-furniture
+  description: Ultra-robust table made from reinforced plasma glass.
+  icon:
+    sprite: _Lua/Structures/Furniture/Tables/r_plasma.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
