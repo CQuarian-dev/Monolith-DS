@@ -47,5 +47,5 @@
       - left foot # LuaM: left_foot > left foot
     right foot: # LuaM: right_foot > right foot
       part: RightFootHuman
-    left foot: # LuaM: left_foot > left foot
+    left foot: # LuaM: left_foot > left foot 
       part: LeftFootHuman
