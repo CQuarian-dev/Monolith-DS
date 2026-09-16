@@ -44,21 +44,7 @@ public sealed partial class ItemToggleSystem : EntitySystem
         SubscribeLocalEvent<ItemToggleHotComponent, IsHotEvent>(OnIsHotEvent);
 
         SubscribeLocalEvent<ItemToggleActiveSoundComponent, ItemToggledEvent>(UpdateActiveSound);
-        SubscribeLocalEvent<ItemToggleComponent, AfterAutoHandleStateEvent>(OnAfterState); // LuaM
     }
-
-    // LuaM-start
-    private void OnAfterState(Entity<ItemToggleComponent> ent, ref AfterAutoHandleStateEvent args)
-    {
-        if (ent.Comp.Activated)
-            return;
-
-        if (!TryComp<ItemToggleActiveSoundComponent>(ent, out var sound) || sound.PlayingStream == null)
-            return;
-
-        sound.PlayingStream = _audio.Stop(sound.PlayingStream);
-    }
-    // LuaM-end
 
     private void OnStartup(Entity<ItemToggleComponent> ent, ref ComponentStartup args)
     {
