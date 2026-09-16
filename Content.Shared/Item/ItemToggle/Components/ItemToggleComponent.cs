@@ -10,7 +10,7 @@ namespace Content.Shared.Item.ItemToggle.Components;
 /// If you need extended functionality (e.g. requiring power) then add a new component and use events:
 /// ItemToggleActivateAttemptEvent, ItemToggleDeactivateAttemptEvent, ItemToggledEvent.
 /// </remarks>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)] // LuaM: AutoGenerateComponentState > AutoGenerateComponentState(true)
 public sealed partial class ItemToggleComponent : Component
 {
     /// <summary>
