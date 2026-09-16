@@ -3,7 +3,7 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared._Crescent.ShipShields;
 
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState, AutoGenerateComponentPause] // LuaM: added AutoGenerateComponentPause
 public sealed partial class ShipShieldVisualsComponent : Component
 {
     /// <summary>
@@ -19,11 +19,11 @@ public sealed partial class ShipShieldVisualsComponent : Component
     public float Padding = 50f;
 
     // LuaM-start: animated shader parameters ported from Sector Frontier.
-    [ViewVariables, AutoNetworkedField]
-    public float Form;
+    [ViewVariables, AutoNetworkedField, AutoPausedField] // LuaM: added AutoPausedField
+    public TimeSpan? FormStart; // LuaM: float Form > TimeSpan? FormStart
 
-    [ViewVariables, AutoNetworkedField]
-    public float Shatter;
+    [ViewVariables, AutoNetworkedField, AutoPausedField] // LuaM: added AutoPausedField
+    public TimeSpan? ShatterStart; // LuaM: float Shatter > TimeSpan? ShatterStart
 
     [DataField]
     public float SpinupTime = 1.25f;
@@ -63,5 +63,25 @@ public sealed partial class ShipShieldVisualsComponent : Component
 
     [DataField]
     public float ShardScale = 5f;
-    // LuaM-end
 }
+
+public static class ShipShieldVisualsProgress
+{
+    public static bool IsVisible(ShipShieldVisualsComponent visuals) =>
+        visuals.FormStart != null || visuals.ShatterStart != null;
+
+    public static bool IsShatterFinished(ShipShieldVisualsComponent visuals, TimeSpan now) =>
+        visuals.ShatterStart is { } start && now >= start + TimeSpan.FromSeconds(MathF.Max(visuals.ShatterTime, 0.01f));
+
+    public static float GetShaderProgress(ShipShieldVisualsComponent visuals, TimeSpan now)
+    {
+        if (visuals.ShatterStart is { } shatterStart)
+            return 1f + Fraction(now - shatterStart, visuals.ShatterTime);
+
+        return visuals.FormStart is { } formStart ? Fraction(now - formStart, visuals.SpinupTime) : 0f;
+    }
+
+    private static float Fraction(TimeSpan elapsed, float duration) =>
+        Math.Clamp((float) elapsed.TotalSeconds / MathF.Max(duration, 0.01f), 0f, 1f);
+}
+// LuaM-end

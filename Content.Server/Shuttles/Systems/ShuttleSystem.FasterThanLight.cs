@@ -961,6 +961,11 @@ public sealed partial class ShuttleSystem
                 case FTLState.Cooldown:
                     UpdateFTLCooldown(entity);
                     break;
+// LuaM-start:
+                case FTLState.Available:
+                    RemCompDeferred<FTLComponent>(uid);
+                    break;
+// LuaM-end.
                 default:
                     Log.Error($"Found invalid FTL state {comp.State} for {uid}");
                     RemCompDeferred<FTLComponent>(uid);
