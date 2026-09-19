@@ -32,6 +32,9 @@
     #- SiikMaasTranslator # No tajara here
     #- MarishTranslator # No shadowkin here
     - NewKinPidginTranslator # Vox
+    - AvaliTranslator # LuaM
+    - SharkTranslator # LuaM
+    - AriralTranslator # LuaM
 
 - type: entity
   parent: TechDiskBase
@@ -83,4 +86,10 @@
     - AnimalTranslator
     - XenoTranslator
     - NewKinPidginTranslator # Vox
+    - AvaliTranslator # LuaM
+    - SharkTranslator # LuaM
+    - AriralTranslator # LuaM
     - NewKinPidginTranslatorImplanter # Vox
+    - AvaliTranslatorImplanter # LuaM
+    - SharkTranslatorImplanter # LuaM
+    - AriralTranslatorImplanter # LuaM

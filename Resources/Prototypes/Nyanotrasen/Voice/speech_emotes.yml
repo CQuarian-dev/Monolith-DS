@@ -2,7 +2,7 @@
 - type: emote
   id: Hiss
   category: Vocal
-  name: Hiss
+  name: chat-emote-name-hiss # LuaM: Hiss > chat-emote-name-hiss
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -11,7 +11,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [hisses.]
+  chatMessages: [chat-emote-msg-felinid-hiss] # LuaM: hisses. > chat-emote-msg-felinid-hiss
   chatTriggers:
     - hiss
     - hisses
@@ -26,7 +26,7 @@
 - type: emote
   id: Meow
   category: Vocal
-  name: Meow
+  name: chat-emote-name-meow # LuaM: Meow > chat-emote-name-meow
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -35,7 +35,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [meows.]
+  chatMessages: [chat-emote-msg-felinid-meow] # LuaM: meows. > chat-emote-msg-felinid-meow
   chatTriggers:
     - meow
     - meows
@@ -68,7 +68,7 @@
 - type: emote
   id: Mew
   category: Vocal
-  name: Mew
+  name: chat-emote-name-mew # LuaM: Mew > chat-emote-name-mew
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -77,7 +77,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [mews.]
+  chatMessages: [chat-emote-msg-felinid-mew] # LuaM: mews. > chat-emote-msg-felinid-mew
   chatTriggers:
     - mew
     - mews
@@ -87,7 +87,7 @@
 - type: emote
   id: Growl
   category: Vocal
-  name: Growl
+  name: chat-emote-name-growl # LuaM: Growl > chat-emote-name-growl
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -96,7 +96,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [growls.]
+  chatMessages: [chat-emote-msg-felinid-growl] # LuaM: growls. > chat-emote-msg-felinid-growl
   chatTriggers:
     - growl
     - growls
@@ -106,7 +106,7 @@
 - type: emote
   id: Purr
   category: Vocal
-  name: Purr
+  name: chat-emote-name-purr # LuaM: Purr > chat-emote-name-purr
   icon: Interface/Actions/scream.png
   available: false
   whitelist:
@@ -115,7 +115,7 @@
   blacklist:
     components:
     - BorgChassis
-  chatMessages: [purrs.]
+  chatMessages: [chat-emote-msg-felinid-purr] # LuaM: purrs. > chat-emote-msg-felinid-purr
   chatTriggers:
     - purr
     - purrs

@@ -1,0 +1,68 @@
+- type: language
+  id: Avali
+  isVisibleLanguage: true
+  speech:
+    color: "#C0FFD9"
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 3
+    replacement:
+    - чир
+    - чвик
+    - цвик
+    - цвир
+    - трив
+    - три
+    - пик
+    - пии
+    - пип
+    - пипи
+    - трр
+    - трии
+
+- type: language
+  id: Shark
+  isVisibleLanguage: true
+  speech:
+    color: "#99E0FF"
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 3
+    replacement:
+    - грр
+    - клац
+    - клик
+    - хрр
+    - ррр
+    - рррр
+    - щелк
+    - цок
+    - чавк
+    - кхр
+    - кхрр
+    - ррх
+
+- type: language
+  id: Ariral
+  isVisibleLanguage: true
+  speech:
+    color: "#B0E0FF"
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 3
+    replacement:
+    - шзо
+    - зоак
+    - ша
+    - сза
+    - ррх
+    - аак
+    - орх
+    - кзо
+    - жа
+    - лхз
+    - хра
+    - шрр

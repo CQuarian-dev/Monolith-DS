@@ -1,0 +1,119 @@
+- type: entity
+  id: AvaliTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: avali translator
+  description: Translates speech between Avali and Tau-Ceti Basic.
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Avali
+    understood:
+    - TauCetiBasic
+    - Avali
+    requires:
+    - TauCetiBasic
+    - Avali
+
+- type: entity
+  id: SharkTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: plafeim translator
+  description: Translates speech between Plafeim and Tau-Ceti Basic.
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Shark
+    understood:
+    - TauCetiBasic
+    - Shark
+    requires:
+    - TauCetiBasic
+    - Shark
+
+- type: entity
+  id: AriralTranslator
+  parent: [ TranslatorPoweredBase ]
+  name: ariral translator
+  description: Translates speech between Ariral and Tau-Ceti Basic.
+  components:
+  - type: HandheldTranslator
+    spoken:
+    - TauCetiBasic
+    - Ariral
+    understood:
+    - TauCetiBasic
+    - Ariral
+    requires:
+    - TauCetiBasic
+    - Ariral
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AvaliTranslatorImplant
+  name: avali translator implant
+  description: An implant giving the ability to understand and speak Avali.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Avali
+    spoken:
+    - Avali
+    requires:
+    - TauCetiBasic
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: SharkTranslatorImplant
+  name: plafeim translator implant
+  description: An implant giving the ability to understand and speak Plafeim.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Shark
+    spoken:
+    - Shark
+    requires:
+    - TauCetiBasic
+
+- type: entity
+  parent: BaseSubdermalImplant
+  id: AriralTranslatorImplant
+  name: ariral translator implant
+  description: An implant giving the ability to understand and speak Ariral.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: TranslatorImplant
+    understood:
+    - Ariral
+    spoken:
+    - Ariral
+    requires:
+    - TauCetiBasic
+
+- type: entity
+  id: AvaliTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: avali translator implant
+  components:
+  - type: Implanter
+    implant: AvaliTranslatorImplant
+
+- type: entity
+  id: SharkTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: plafeim translator implant
+  components:
+  - type: Implanter
+    implant: SharkTranslatorImplant
+
+- type: entity
+  id: AriralTranslatorImplanter
+  parent: [ BaseTranslatorImplanter ]
+  name: ariral translator implant
+  components:
+  - type: Implanter
+    implant: AriralTranslatorImplant

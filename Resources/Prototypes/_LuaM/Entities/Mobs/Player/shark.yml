@@ -1,0 +1,6 @@
+- type: entity
+  save: false
+  name: Urist McShark
+  suffix: Shark
+  parent: BaseMobPlaf
+  id: MobPlaf

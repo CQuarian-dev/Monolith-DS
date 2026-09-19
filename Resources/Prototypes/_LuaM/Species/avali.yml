@@ -1,0 +1,158 @@
+- type: species
+  id: Avali
+  name: species-name-avali
+  roundStart: true
+  prototype: MobAvali
+  defaultSkinTone: "#985629"
+  sprites: MobAvaliSprites
+  markingLimits: MobAvaliMarkingLimits
+  dollPrototype: MobAvaliDummy
+  maleFirstNames: NamesAvaliMale
+  femaleFirstNames: NamesAvaliFemale
+  naming: First
+  skinColoration: Hues
+
+- type: speciesBaseSprites
+  id: MobAvaliSprites
+  sprites:
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Head: MobAvaliHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobAvaliTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    Tail: MobHumanoidAnyMarking
+    Eyes: MobAvaliEyes
+    LArm: MobAvaliLArm
+    RArm: MobAvaliRArm
+    LHand: MobAvaliLHand
+    RHand: MobAvaliRHand
+    LLeg: MobAvaliLLeg
+    RLeg: MobAvaliRLeg
+    LFoot: MobAvaliLFoot
+    RFoot: MobAvaliRFoot
+
+- type: markingPoints
+  id: MobAvaliMarkingLimits
+  points:
+    Tail:
+      points: 1
+      required: true
+      defaultMarkings: [ AvaliTailDefault ]
+    HeadTop:
+      points: 1
+      required: true
+      defaultMarkings: [ AvaliEarsDefault ]
+    FacialHair:
+      points: 0
+      required: false
+    Arms:
+      points: 1
+      required: true
+      defaultMarkings: [ AvaliWingDefault ]
+    Snout:
+      points: 1
+      required: false
+    Hair:
+      points: 1
+      required: false
+    Head:
+      points: 2
+      required: false
+    Chest:
+      points: 1
+      required: false
+    Legs:
+      points: 2
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobAvaliEyes
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/eyes.rsi
+    state: aeyes
+
+- type: humanoidBaseSprite
+  id: MobAvaliHead
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobAvaliHeadMale
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobAvaliHeadFemale
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobAvaliTorso
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobAvaliTorsoMale
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobAvaliTorsoFemale
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobAvaliLLeg
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobAvaliLHand
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobAvaliLArm
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobAvaliLFoot
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobAvaliRLeg
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobAvaliRHand
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobAvaliRArm
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobAvaliRFoot
+  baseSprite:
+    sprite: _LuaM/Mobs/Species/Avali/parts.rsi
+    state: r_foot

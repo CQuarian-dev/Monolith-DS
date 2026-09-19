@@ -1,0 +1,343 @@
+- type: marking
+  id: AvaliWingDefault
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_wings.rsi
+      state: avali
+
+- type: marking
+  id: AvaliEarsDefault
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_ears.rsi
+      state: avali_ears_default
+
+- type: marking
+  id: Avali2EarsDefault
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_ears.rsi
+      state: avali_ears_default
+    - sprite: _LuaM/Mobs/Species/Avali/avali_ears.rsi
+      state: avali_ears_inner
+
+- type: marking
+  id: Avali2EarsLow
+  bodyPart: Head
+  markingCategory: HeadTop
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_ears.rsi
+      state: avali_ears_low
+    - sprite: _LuaM/Mobs/Species/Avali/avali_ears.rsi
+      state: avali_ears_low_inner
+
+- type: marking
+  id: AvaliTailPhoenix
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: phoenix_tail
+
+- type: marking
+  id: AvaliTailDefault
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: avali_default
+
+- type: marking
+  id: Avali3Color
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: avali_default
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: avali_default_inner
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: avali_default_inner_second
+
+- type: marking
+  id: Avali2Color
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: avali_default
+    - sprite: _LuaM/Mobs/Species/Avali/avali_tails.rsi
+      state: avali_default_inner
+
+- type: marking
+  id: AvaliLines1
+  bodyPart: Tail
+  markingCategory: Snout
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_lines.rsi
+      state: lines1
+
+- type: marking
+  id: AvaliLines2
+  bodyPart: Tail
+  markingCategory: Snout
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_lines.rsi
+      state: lines2
+
+- type: marking
+  id: AvaliTail
+  bodyPart: Chest
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  forcedColoring: true
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: tail
+
+- type: marking
+  id: AvaliTailFeathers
+  bodyPart: Chest
+  markingCategory: Tail
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: tail_feathers
+
+- type: marking
+  id: AvaliLArmFeathers
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: l_hand_feathers
+
+- type: marking
+  id: AvaliLLegFeathers
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: l_foot_feathers
+
+- type: marking
+  id: AvaliRArmFeathers
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: r_hand_feathers
+
+- type: marking
+  id: AvaliRLegFeathers
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: r_foot_feathers
+
+- type: marking
+  id: AvaliFluff
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: fluff
+
+- type: marking
+  id: AvaliFluffHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: fluff_head
+
+- type: marking
+  id: AvaliFluffHeadUp
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Avali]
+  sprites:
+  - sprite: _LuaM/Mobs/Species/Avali/avali_parts.rsi
+    state: fluff_head_up
+
+- type: marking
+  id: HairAvaliBackstrafe
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliBackstrafe
+
+- type: marking
+  id: HairAvaliBurstShort
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliBurstShort
+
+- type: marking
+  id: HairAvaliDefault
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliDefault
+
+- type: marking
+  id: HairAvaliDroopy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliDroopy
+
+- type: marking
+  id: HairAvaliEars
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliEars
+
+- type: marking
+  id: HairAvaliFluffymohawk
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliFluffymohawk
+
+- type: marking
+  id: HairAvaliHedge
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliHedge
+
+- type: marking
+  id: HairAvaliLongway
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliLongway
+
+- type: marking
+  id: HairAvaliMane
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliMane
+
+- type: marking
+  id: HairAvaliManeBeardless
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliManeBeardless
+
+- type: marking
+  id: HairAvaliMohawk
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliMohawk
+
+- type: marking
+  id: HairAvaliMushroom
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliMushroom
+
+- type: marking
+  id: HairAvaliNotree
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliNotree
+
+- type: marking
+  id: HairAvaliSpiky
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliSpiky
+
+- type: marking
+  id: HairAvaliPointy
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliPointy
+
+- type: marking
+  id: HairAvaliTwies
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliTwies
+
+- type: marking
+  id: HairAvaliUpright
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliUpright
+
+- type: marking
+  id: HairAvaliLong
+  bodyPart: Hair
+  markingCategory: Hair
+  speciesRestriction: [Avali]
+  sprites:
+    - sprite: _LuaM/Mobs/Species/Avali/avali_hair.rsi
+      state: AvaliLong

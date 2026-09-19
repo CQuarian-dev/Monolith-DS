@@ -1,0 +1,142 @@
+- type: entity
+  save: false
+  name: Urist McArir
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobAriral
+  abstract: true
+  components:
+  - type: Hunger
+  - type: Thirst
+  - type: Carriable
+  - type: Icon
+    sprite: _LuaM/Mobs/Species/Ariral/parts.rsi
+    state: full
+  - type: Body
+    prototype: Ariral
+    requiredLegs: 2
+  - type: Speech
+    speechVerb: Ariral
+    allowedEmotes: ['Meow', 'Mew', 'Purr', 'Hiss', 'Growl']
+  - type: Vocal
+    sounds:
+      Male: MaleAriral
+      Female: FemaleAriral
+      Unsexed: FemaleAriral
+  - type: InteractionPopup
+    successChance: 0.1
+    interactFailureString: petting-failure-ariral
+    interactSuccessString: hugging-success-generic
+    interactSuccessSound: /Audio/Effects/thudswoosh.ogg
+    messagePerceivedByOthers: null
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: Damageable
+    damageModifierSet: Ariral
+  - type: LanguageKnowledge
+    speaks:
+    - TauCetiBasic
+    - Ariral
+    understands:
+    - TauCetiBasic
+    - Ariral
+  - type: Stamina
+    critThreshold: 75
+  - type: Bloodstream
+    bloodReagent: AriralBlood
+    bloodRefreshAmount: 0.85
+    bleedReductionAmount: 0.25
+    damageBleedModifiers: BloodlossAriral
+  - type: MeleeWeapon
+    soundHit:
+      collection: Punch
+    angle: 30
+    animation: WeaponArcFist
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 3
+  - type: SolutionContainerManager
+    solutions:
+      skin:
+        maxVol: 30
+  - type: SolutionRegeneration
+    solution: skin
+    generated:
+      reagents:
+      - ReagentId: AriralSweat
+        Quantity: 0.5
+  - type: MeleeChemicalInjector
+    solution: skin
+    transferAmount: 1
+  - type: HumanoidAppearance
+    species: Ariral
+    hideLayersOnEquip:
+    - Hair
+    - Head
+    - HeadTop
+    - Snout
+    - Tail
+  - type: Sprite
+    scale: 1, 1.1
+  - type: Inventory
+    speciesId: reptilian
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit-female
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+
+- type: entity
+  save: false
+  parent: MobHumanDummy
+  id: MobAriralDummy
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: HumanoidAppearance
+    species: Ariral
+  - type: Sprite
+    scale: 1, 1.1
+  - type: Inventory
+    speciesId: reptilian
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit-female
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: jumpsuit
+      shoes:
+        sizeMaps:
+          32:
+            sprite: _White/Mobs/Species/displacement.rsi
+            state: shoes

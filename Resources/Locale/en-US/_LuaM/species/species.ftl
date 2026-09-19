@@ -1,0 +1,102 @@
+species-name-shark = Plafeim
+species-name-avali = Avali
+species-name-ariral = Ariral
+
+metabolizer-type-ariral = Ariral
+
+chat-speech-verb-name-ariral = Ariral
+chat-speech-verb-ariral-1 = purrs
+chat-speech-verb-ariral-2 = trills
+chat-speech-verb-ariral-3 = growls
+chat-speech-verb-ariral-4 = rumbles
+
+reagent-name-ariral-blood = ariral blood
+reagent-desc-ariral-blood = How can something so toxic be so vital?
+reagent-name-ariral-sweat = ariral sweat
+reagent-desc-ariral-sweat = Its toxicity is said to be an evolutionary answer to the overly curious.
+
+generic-reagent-effect-dizzy = You feel dizzy and see colorful shapes...
+
+petting-failure-ariral = You reach out to hug { $target }, but remember that touching an ariral is toxic!
+
+marking-SharkFrillsAquatic = Frills (Aquatic)
+marking-SharkFrillsShort = Frills (Short)
+marking-SharkFrillsSimple = Frills (Simple)
+marking-SharkFrillsDivinity = Frills (Divinity)
+marking-SharkFrillsBig = Frills (Big)
+marking-SharkFrillsAxolotl = Frills (Axolotl)
+marking-SharkFrillsHood = Frills (Hood)
+marking-SharkFrillsHood-frills_hood_primary = Outer Hood
+marking-SharkFrillsHood-frills_hood_secondary = Inner Hood
+marking-SharkHornsAngler = Horns (Angler)
+marking-SharkHornsCurled = Horns (Curled)
+marking-SharkHornsRam = Horns (Ram)
+marking-SharkHornsShort = Horns (Short)
+marking-SharkHornsSimple = Horns (Simple)
+marking-SharkHornsDouble = Horns (Double)
+
+marking-AvaliWingDefault = Avali Wings
+marking-AvaliEarsDefault = Avali Ears
+marking-Avali2EarsDefault = Avali Ears (Two-Tone)
+marking-Avali2EarsDefault-avali_ears_default = Ears
+marking-Avali2EarsDefault-avali_ears_inner = Inner
+marking-Avali2EarsLow = Avali Ears (Low)
+marking-Avali2EarsLow-avali_ears_low = Ears
+marking-Avali2EarsLow-avali_ears_low_inner = Inner
+marking-AvaliTailPhoenix = Phoenix Tail
+marking-AvaliTailDefault = Avali Tail
+marking-Avali3Color = Avali Tail (Three-Tone)
+marking-Avali3Color-avali_default = Tail
+marking-Avali3Color-avali_default_inner = Inner
+marking-Avali3Color-avali_default_inner_second = Second Inner
+marking-Avali2Color = Avali Tail (Two-Tone)
+marking-Avali2Color-avali_default = Tail
+marking-Avali2Color-avali_default_inner = Inner
+marking-AvaliLines1 = Avali Lines 1
+marking-AvaliLines2 = Avali Lines 2
+marking-AvaliTail = Avali Tail 2
+marking-AvaliTailFeathers = Tail Feathers
+marking-AvaliLArmFeathers = Left Arm Feathers
+marking-AvaliLLegFeathers = Left Leg Feathers
+marking-AvaliRArmFeathers = Right Arm Feathers
+marking-AvaliRLegFeathers = Right Leg Feathers
+marking-AvaliFluff = Fluff
+marking-AvaliFluffHead = Head Fluff
+marking-AvaliFluffHeadUp = Raised Head Fluff
+marking-HairAvaliBackstrafe = Avali (Backstrafe)
+marking-HairAvaliBurstShort = Avali (Short Burst)
+marking-HairAvaliDefault = Avali (Default)
+marking-HairAvaliDroopy = Avali (Droopy)
+marking-HairAvaliEars = Avali (Ears)
+marking-HairAvaliFluffymohawk = Avali (Fluffy Mohawk)
+marking-HairAvaliHedge = Avali (Hedge)
+marking-HairAvaliLong = Avali (Long)
+marking-HairAvaliLongway = Avali (Longway)
+marking-HairAvaliMane = Avali (Mane)
+marking-HairAvaliManeBeardless = Avali (Beardless Mane)
+marking-HairAvaliMohawk = Avali (Mohawk)
+marking-HairAvaliMushroom = Avali (Mushroom)
+marking-HairAvaliNotree = Avali (Notree)
+marking-HairAvaliPointy = Avali (Pointy)
+marking-HairAvaliSpiky = Avali (Spiky)
+marking-HairAvaliTwies = Avali (Twies)
+marking-HairAvaliUpright = Avali (Upright)
+
+marking-AriralEars = Ariral Ears
+marking-AriralTail = Ariral Tail
+marking-AriralTailFluff = Ariral Tail (Fluffy)
+marking-AriralTailFluff-tail = Tail
+marking-AriralTailFluff-tail_overlay = Fluff
+marking-AriralTailBigFluff = Ariral Tail (Big Fluffy)
+marking-AriralTailBigFluff-tail = Tail
+marking-AriralTailBigFluff-tail_long = Fluff
+
+language-Avali-name = Avali
+language-Avali-description = Chirps and short trills.
+chat-language-Avali-name = Avali
+language-Shark-name = Plafeim
+language-Shark-description = Low growls and clacking teeth.
+chat-language-Shark-name = Plafeim
+language-Ariral-name = Ariral
+language-Ariral-description = Hissing and soft drawling speech.
+chat-language-Ariral-name = Ariral

@@ -1,0 +1,6 @@
+- type: entity
+  save: false
+  name: Urist McArir
+  suffix: Ariral
+  parent: BaseMobAriral
+  id: MobAriral

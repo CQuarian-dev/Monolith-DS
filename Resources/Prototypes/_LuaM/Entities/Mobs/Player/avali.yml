@@ -1,0 +1,6 @@
+- type: entity
+  save: false
+  name: Urist McAvali
+  suffix: Avali
+  parent: BaseMobAvali
+  id: MobAvali

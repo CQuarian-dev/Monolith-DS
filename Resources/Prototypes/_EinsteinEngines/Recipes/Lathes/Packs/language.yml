@@ -17,6 +17,9 @@
   # - SiikMaasTranslator
   # - MarishTranslator
   - NewKinPidginTranslator
+  - AvaliTranslator # LuaM
+  - SharkTranslator # LuaM
+  - AriralTranslator # LuaM
 
 - type: latheRecipePack
   id: TranslatorImplanters
@@ -37,3 +40,6 @@
 #  - SiikMaasTranslatorImplanter
 #  - MarishTranslatorImplanter
   - NewKinPidginTranslatorImplanter
+  - AvaliTranslatorImplanter # LuaM
+  - SharkTranslatorImplanter # LuaM
+  - AriralTranslatorImplanter # LuaM

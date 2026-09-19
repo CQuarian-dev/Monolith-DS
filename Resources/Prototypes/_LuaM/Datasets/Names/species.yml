@@ -1,0 +1,47 @@
+- type: localizedDataset
+  id: NamesSharkFirstMale
+  values:
+    prefix: names-shark-first-male-dataset-
+    count: 324
+
+- type: localizedDataset
+  id: NamesSharkFirstFemale
+  values:
+    prefix: names-shark-first-female-dataset-
+    count: 320
+
+- type: localizedDataset
+  id: NamesSharkLast
+  values:
+    prefix: names-shark-last-dataset-
+    count: 313
+
+- type: localizedDataset
+  id: NamesAvaliMale
+  values:
+    prefix: names-avali-first-male-dataset-
+    count: 17
+
+- type: localizedDataset
+  id: NamesAvaliFemale
+  values:
+    prefix: names-avali-first-female-dataset-
+    count: 17
+
+- type: localizedDataset
+  id: NamesAriralMale
+  values:
+    prefix: names-ariral-first-male-dataset-
+    count: 16
+
+- type: localizedDataset
+  id: NamesAriralFemale
+  values:
+    prefix: names-ariral-first-female-dataset-
+    count: 19
+
+- type: localizedDataset
+  id: NamesAriralLast
+  values:
+    prefix: names-ariral-last-dataset-
+    count: 20

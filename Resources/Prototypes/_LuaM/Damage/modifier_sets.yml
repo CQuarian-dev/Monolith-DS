@@ -1,0 +1,36 @@
+- type: damageModifierSet
+  id: Fur
+  coefficients:
+    Blunt: 1
+    Piercing: 1
+    Slash: 1
+    Cold: 0.5
+    Heat: 1.5
+    Poison: 1
+
+- type: damageModifierSet
+  id: Ariral
+  coefficients:
+    Blunt: 0.8
+    Slash: 1.15
+    Piercing: 1.15
+    Cold: 1.2
+    Poison: 0.1
+    Radiation: 1.2
+    Bloodloss: 1.1
+
+- type: damageModifierSet
+  id: BloodlossAriral
+  coefficients:
+    Blunt: 0.16
+    Slash: 0.5
+    Piercing: 0.4
+    Shock: 0.0
+    Cold: 0.0
+    Heat: -0.5
+    Poison: 0.0
+    Radiation: 0.0
+    Asphyxiation: 0.0
+    Bloodloss: 0.0
+    Cellular: 0.0
+    Caustic: 0.0

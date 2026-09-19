@@ -1,0 +1,39 @@
+- type: entity
+  id: OrganAriralLungs
+  parent: OrganHumanLungs
+  suffix: Ariral
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Human, Ariral ]
+
+- type: entity
+  id: OrganAriralHeart
+  parent: OrganHumanHeart
+  suffix: Ariral
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Human, Ariral ]
+
+- type: entity
+  id: OrganAriralStomach
+  parent: OrganHumanStomach
+  suffix: Ariral
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Animal, Ariral ]
+
+- type: entity
+  id: OrganAriralLiver
+  parent: OrganHumanLiver
+  suffix: Ariral
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Human, Ariral ]
+
+- type: entity
+  id: OrganAriralKidneys
+  parent: OrganHumanKidneys
+  suffix: Ariral
+  components:
+  - type: Metabolizer
+    metabolizerTypes: [ Human, Ariral ]

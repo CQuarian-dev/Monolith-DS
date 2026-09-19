@@ -1,0 +1,19 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "By HacksLua",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "lines1",
+            "directions": 4
+        },
+        {
+            "name": "lines2",
+            "directions": 4
+        }
+    ]
+}

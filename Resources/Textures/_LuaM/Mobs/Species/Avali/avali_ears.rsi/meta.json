@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "By HacksLua",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "avali_ears_default",
+            "directions": 4
+        },
+        {
+            "name": "avali_ears_inner",
+            "directions": 4
+        },
+        {
+            "name": "avali_ears_low",
+            "directions": 4
+        },
+        {
+            "name": "avali_ears_low_inner",
+            "directions": 4
+        }
+    ]
+}

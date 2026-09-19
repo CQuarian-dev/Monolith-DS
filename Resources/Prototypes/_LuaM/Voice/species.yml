@@ -1,0 +1,197 @@
+- type: soundCollection
+  id: AvaliScreams
+  files:
+  - /Audio/_LuaM/Voice/Avali/scream1.ogg
+  - /Audio/_LuaM/Voice/Avali/scream2.ogg
+  - /Audio/_LuaM/Voice/Avali/scream3.ogg
+  - /Audio/_LuaM/Voice/Avali/scream4.ogg
+  - /Audio/_LuaM/Voice/Avali/scream5.ogg
+  - /Audio/_LuaM/Voice/Avali/scream6.ogg
+  - /Audio/_LuaM/Voice/Avali/scream7.ogg
+
+- type: speechSounds
+  id: Avali
+  saySound:
+    path: /Audio/_LuaM/Voice/Avali/avalispeech.ogg
+
+- type: emoteSounds
+  id: MaleAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: AvaliScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Sigh:
+      collection: MaleSigh
+    Yawn:
+      collection: MaleYawn
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      path: /Audio/_Moffstation/Voice/Resomi/resomi_deathgrasp.ogg
+    Chirp:
+      collection: ResomiChirp
+    Trill:
+      collection: ResomiTrills
+    Scree:
+      collection: ResomiScrees
+    Call:
+      collection: ResomiCalls
+    Squawk:
+      collection: ResomiSquawk
+    Warble:
+      collection: Warble
+    Wurble:
+      collection: Wurble
+    Bagawk:
+      collection: Bagawk
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+
+- type: emoteSounds
+  id: FemaleAvali
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: AvaliScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Sigh:
+      collection: FemaleSigh
+    Yawn:
+      collection: FemaleYawn
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      path: /Audio/_Moffstation/Voice/Resomi/resomi_deathgrasp.ogg
+    Chirp:
+      collection: ResomiChirp
+    Trill:
+      collection: ResomiTrills
+    Scree:
+      collection: ResomiScrees
+    Call:
+      collection: ResomiCalls
+    Squawk:
+      collection: ResomiSquawk
+    Warble:
+      collection: Warble
+    Wurble:
+      collection: Wurble
+    Bagawk:
+      collection: Bagawk
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+
+- type: soundCollection
+  id: AriralScreams
+  files:
+  - /Audio/_LuaM/Voice/Ariral/ariral_scream.ogg
+
+- type: emoteSounds
+  id: MaleAriral
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: AriralScreams
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Hiss:
+      collection: FelinidHisses
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+
+- type: emoteSounds
+  id: FemaleAriral
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      collection: AriralScreams
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    Meow:
+      collection: FelinidMeows
+    Mew:
+      collection: FelinidMews
+    Hiss:
+      collection: FelinidHisses
+    Growl:
+      collection: FelinidGrowls
+    Purr:
+      collection: FelinidPurrs
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+
+- type: speechVerb
+  id: Ariral
+  name: chat-speech-verb-name-ariral
+  speechVerbStrings:
+  - chat-speech-verb-ariral-1
+  - chat-speech-verb-ariral-2
+  - chat-speech-verb-ariral-3
+  - chat-speech-verb-ariral-4
