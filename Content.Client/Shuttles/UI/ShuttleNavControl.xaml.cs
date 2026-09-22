@@ -858,8 +858,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
                 // End Frontier: IFF drawing functions
             }
 
-            // Frontier Don't skip drawing blips if they're out of range.
-            NfDrawBlips(handle, _tempBlipDataList);
+            // LuaM: NfDrawBlips > drawn once after the loop
 
             // Detailed view
             var gridAABB = curGridToWorld.TransformBox(grid.Comp.LocalAABB);

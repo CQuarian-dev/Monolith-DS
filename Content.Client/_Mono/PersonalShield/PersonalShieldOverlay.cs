@@ -22,7 +22,11 @@ public sealed partial class PersonalShieldOverlay : Overlay
     private readonly SharedTransformSystem _transform;
     private readonly SpriteSystem _sprite;
     private readonly InventorySystem _inventory;
-    private readonly ShaderInstance _shader;
+    // LuaM-start: one shader instance per shield > shared instance
+    private readonly ShaderPrototype _shaderProto;
+    private readonly Dictionary<EntityUid, ShaderInstance> _shaders = new();
+    private readonly List<EntityUid> _staleShaders = new();
+    // LuaM-end
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowFOV;
 
@@ -33,7 +37,7 @@ public sealed partial class PersonalShieldOverlay : Overlay
         _sprite = _entManager.System<SpriteSystem>();
         _inventory = _entManager.System<InventorySystem>();
         var protoMan = IoCManager.Resolve<IPrototypeManager>();
-        _shader = protoMan.Index(ShaderId).InstanceUnique();
+        _shaderProto = protoMan.Index(ShaderId); // LuaM
         ZIndex = -2; // LuaM
     }
 
@@ -68,21 +72,29 @@ public sealed partial class PersonalShieldOverlay : Overlay
 
             var size = extents * shield.Scale;
 
-            _shader.SetParameter("progress", GetProgress(shield));
-            _shader.SetParameter("skin_color", shield.Color);
-            _shader.SetParameter("brightness", shield.Brightness);
-            _shader.SetParameter("pixel_grid", shield.PixelGrid);
-            _shader.SetParameter("hex_density", shield.HexDensity);
-            _shader.SetParameter("form_origin", shield.FormOrigin);
-            _shader.SetParameter("fill_level", shield.FillLevel);
-            _shader.SetParameter("line_level", shield.LineLevel);
-            _shader.SetParameter("rim_level", shield.RimLevel);
-            _shader.SetParameter("core_fade", shield.CoreFade);
-            _shader.SetParameter("shard_scale", shield.ShardScale);
-            _shader.SetParameter("alpha_bands", shield.AlphaBands);
-            _shader.SetParameter("breath_depth", shield.BreathDepth);
+            // LuaM-start
+            if (!_shaders.TryGetValue(uid, out var shader))
+            {
+                shader = _shaderProto.InstanceUnique();
+                _shaders[uid] = shader;
+            }
+            // LuaM-end
 
-            handle.UseShader(_shader);
+            shader.SetParameter("progress", GetProgress(shield));
+            shader.SetParameter("skin_color", shield.Color);
+            shader.SetParameter("brightness", shield.Brightness);
+            shader.SetParameter("pixel_grid", shield.PixelGrid);
+            shader.SetParameter("hex_density", shield.HexDensity);
+            shader.SetParameter("form_origin", shield.FormOrigin);
+            shader.SetParameter("fill_level", shield.FillLevel);
+            shader.SetParameter("line_level", shield.LineLevel);
+            shader.SetParameter("rim_level", shield.RimLevel);
+            shader.SetParameter("core_fade", shield.CoreFade);
+            shader.SetParameter("shard_scale", shield.ShardScale);
+            shader.SetParameter("alpha_bands", shield.AlphaBands);
+            shader.SetParameter("breath_depth", shield.BreathDepth);
+
+            handle.UseShader(shader);
 
             var worldPos = _transform.GetWorldPosition(xform);
             handle.SetTransform(Matrix3x2.Multiply(counterRot, Matrix3Helpers.CreateTranslation(worldPos)));
@@ -91,7 +103,36 @@ public sealed partial class PersonalShieldOverlay : Overlay
 
         handle.SetTransform(Matrix3x2.Identity);
         handle.UseShader(null);
+
+        // LuaM-start: drop instances of shields that no longer exist
+        _staleShaders.Clear();
+        foreach (var uid in _shaders.Keys)
+        {
+            if (!_entManager.HasComponent<PersonalShieldComponent>(uid))
+                _staleShaders.Add(uid);
+        }
+
+        foreach (var uid in _staleShaders)
+        {
+            _shaders[uid].Dispose();
+            _shaders.Remove(uid);
+        }
+        // LuaM-end
     }
+
+    // LuaM-start
+    protected override void DisposeBehavior()
+    {
+        base.DisposeBehavior();
+
+        foreach (var shader in _shaders.Values)
+        {
+            shader.Dispose();
+        }
+
+        _shaders.Clear();
+    }
+    // LuaM-end
 
     private bool TryGetHitboxSize(EntityUid uid, SpriteComponent sprite, out Vector2 extents)
     {
