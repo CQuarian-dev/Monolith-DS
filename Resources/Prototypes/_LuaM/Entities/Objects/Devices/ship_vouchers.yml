@@ -1,3 +1,54 @@
+# Tier 1 AN
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherScorpionART
+  name: PDV Scorpion-ART LPC [T1]
+  description: The voucher provides an opportunity to sit at the "Scorpion" consoles, one of the fastest fighters in the flagship's reserves.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/lpcnew.rsi
+    layers:
+    - state: icon
+    - state: screen
+      color: "#1eff00"
+    - state: screen6
+      color: "#1eff00"
+      shader: unshaded
+  - type: ShipyardVoucher
+    destroyOnEmpty: false
+    cooldown: 7200 # one hour
+    consoleType: BlackMarket
+    companyName: PDV
+    vessels:
+    - ScorpionART
+  - type: StaticPrice
+    vendPrice: 20000
+
+- type: entity
+  parent: BaseShipLPC
+  id: ShipVoucherScorpionMSL
+  name: PDV Scorpion-MSL LPC [T1]
+  description: The voucher provides an opportunity to sit at the "Scorpion" consoles, one of the fastest fighters in the flagship's reserves.
+  components:
+  - type: Sprite
+    sprite: _Mono/Objects/Misc/lpcnew.rsi
+    layers:
+    - state: icon
+    - state: screen
+      color: "#1eff00"
+    - state: screen6
+      color: "#1eff00"
+      shader: unshaded
+  - type: ShipyardVoucher
+    destroyOnEmpty: false
+    cooldown: 7200 # one hour
+    consoleType: BlackMarket
+    companyName: PDV
+    vessels:
+    - ScorpionMSL
+  - type: StaticPrice
+    vendPrice: 20000
+
 # Tier 2
 
 - type: entity

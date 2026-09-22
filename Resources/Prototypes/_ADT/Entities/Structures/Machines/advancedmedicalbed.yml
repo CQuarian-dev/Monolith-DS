@@ -1,0 +1,58 @@
+- type: entity
+  parent: BaseStructure
+  id: ADTAdvancedMedBed
+  name: advanced hospital bed
+  description: Top-of-the-shelf hospital bed, made in a special way to get patients up faster.
+  components:
+  - type: Sprite
+    sprite: _ADT/Structures/Furniture/adv_bed.rsi
+    state: adv_bed
+    noRot: true
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.2
+        Cold: -0.8
+        Blunt: -0.4
+        Slash: -0.8
+        Piercing: -0.4
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.05"
+        density: 190
+        mask:
+        - TableMask
+  - type: Strap
+    position: Down
+    rotation: -90
+  - type: PlaceableSurface
+    placeCentered: true
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 2
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Anchorable
+  - type: Pullable
+  - type: GuideHelp
+    guides:
+    - MedicalDoctor

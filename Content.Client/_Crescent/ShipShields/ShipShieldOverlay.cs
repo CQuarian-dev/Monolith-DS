@@ -8,6 +8,7 @@ using Robust.Shared.Physics;
 using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Timing; // LuaM
 
 namespace Content.Client._Crescent.ShipShields;
 
@@ -18,6 +19,7 @@ public sealed class ShipShieldOverlay : Overlay
     private readonly FixtureSystem _fixture;
     private readonly SharedPhysicsSystem _physics;
     private readonly IEntityManager _entManager;
+    private readonly IGameTiming _timing; // LuaM
     private readonly ShaderInstance _baseShader;
     private readonly Dictionary<EntityUid, ShaderInstance> _shaders = new();
     private readonly HashSet<EntityUid> _seen = new();
@@ -27,6 +29,7 @@ public sealed class ShipShieldOverlay : Overlay
     public ShipShieldOverlay(IEntityManager entityManager, IPrototypeManager prototypeManager)
     {
         _entManager = entityManager;
+        _timing = IoCManager.Resolve<IGameTiming>(); // LuaM
         _fixture = _entManager.System<FixtureSystem>();
         _physics = _entManager.System<Robust.Client.Physics.PhysicsSystem>();
         _baseShader = prototypeManager.Index(ShaderId).Instance().Duplicate();
@@ -52,7 +55,7 @@ public sealed class ShipShieldOverlay : Overlay
         var enumerator = _entManager.AllEntityQueryEnumerator<ShipShieldVisualsComponent, FixturesComponent, TransformComponent>();
         while (enumerator.MoveNext(out var uid, out var visuals, out var fixtures, out var xform))
         {
-            if (xform.MapID != args.MapId || visuals.Form <= 0f && visuals.Shatter <= 0f)
+            if (xform.MapID != args.MapId || !ShipShieldVisualsProgress.IsVisible(visuals)) // LuaM
                 continue;
 
             var fixture = _fixture.GetFixtureOrNull(uid, "shield", fixtures);
@@ -79,7 +82,7 @@ public sealed class ShipShieldOverlay : Overlay
 
             var shader = GetShader(uid);
             _seen.Add(uid);
-            shader.SetParameter("progress", visuals.Shatter > 0f ? 1f + MathF.Min(visuals.Shatter, 1f) : visuals.Form);
+            shader.SetParameter("progress", ShipShieldVisualsProgress.GetShaderProgress(visuals, _timing.CurTime)); // LuaM
             shader.SetParameter("skin_color", color);
             shader.SetParameter("brightness", visuals.Brightness);
             shader.SetParameter("pixel_grid", visuals.PixelGrid);

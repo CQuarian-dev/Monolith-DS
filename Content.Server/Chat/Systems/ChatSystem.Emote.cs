@@ -36,7 +36,7 @@ public partial class ChatSystem
                     dict[lowerWord] = value.Add(emote);
 
                     var errMsg = $"Duplicate of emote word {lowerWord}";
-                    Log.Warning(errMsg);
+                    Log.Debug(errMsg); // LuaM: warning > debug
 
                     continue;
                 }

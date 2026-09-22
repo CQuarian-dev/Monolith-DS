@@ -14,6 +14,7 @@ using Robust.Shared.Physics.Collision.Shapes;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Timing; // LuaM
 using System.Numerics;
 
 
@@ -25,6 +26,7 @@ public sealed partial class ShipShieldsSystem : EntitySystem
 
     //private const float DeflectionSpread = 25f;
     private const float EmitterUpdateRate = 1.5f;
+    private const int ShieldChainVertices = 64; // LuaM
 
     [Dependency] private SharedTransformSystem _transformSystem = default!;
     [Dependency] private FixtureSystem _fixtureSystem = default!;
@@ -32,6 +34,7 @@ public sealed partial class ShipShieldsSystem : EntitySystem
     [Dependency] private PvsOverrideSystem _pvsSys = default!;
     [Dependency] private ShuttleConsoleSystem _shuttleConsole = default!; // Forge
     [Dependency] private FireControlSystem _fireControl = default!; // Forge
+    [Dependency] private IGameTiming _timing = default!; // LuaM
 
     private EntityQuery<ProjectileComponent> _projectileQuery;
     private EntityQuery<ShipWeaponProjectileComponent> _shipWeaponProjectileQuery;
@@ -101,13 +104,18 @@ public sealed partial class ShipShieldsSystem : EntitySystem
                 UnshieldEntity(parent.Value);
                 emitter.Shield = null;
                 emitter.Shielded = null;
-                _audio.PlayGlobal(emitter.PowerDownSound, filter, true, emitter.PowerUpSound.Params);
+                _audio.PlayGlobal(emitter.PowerDownSound, filter, true, emitter.PowerDownSound.Params); // LuaM: PowerUpSound.Params > PowerDownSound.Params
             }
 
             // Forge-Change-Start
             // Push fresh shield state to any consoles on this grid so HP %/recharge timer stays current.
-            _shuttleConsole.RefreshShuttleConsoles(parent.Value);
-            _fireControl.RefreshConsolesOnGrid(parent.Value);
+            var consoleState = GetConsoleState(parent.Value, emitter); // LuaM
+            if (emitter.LastConsoleState != consoleState) // LuaM
+            {
+                emitter.LastConsoleState = consoleState; // LuaM
+                _shuttleConsole.RefreshShuttleConsoles(parent.Value);
+                _fireControl.RefreshConsolesOnGrid(parent.Value);
+            }
             // Forge-Change-End
         }
     }
@@ -115,25 +123,12 @@ public sealed partial class ShipShieldsSystem : EntitySystem
     // LuaM-start: animate shuttle shield formation and destruction.
     private void UpdateShieldVisuals(float frameTime)
     {
+        var now = _timing.CurTime;
         var query = EntityQueryEnumerator<ShipShieldVisualsComponent>();
         while (query.MoveNext(out var uid, out var visuals))
         {
-            if (visuals.Shatter > 0f)
-            {
-                visuals.Shatter += frameTime / MathF.Max(visuals.ShatterTime, 0.01f);
-                Dirty(uid, visuals);
-
-                if (visuals.Shatter >= 1f)
-                    TryQueueDel(uid);
-
-                continue;
-            }
-
-            if (visuals.Form >= 1f)
-                continue;
-
-            visuals.Form = MathF.Min(visuals.Form + frameTime / MathF.Max(visuals.SpinupTime, 0.01f), 1f);
-            Dirty(uid, visuals);
+            if (ShipShieldVisualsProgress.IsShatterFinished(visuals, now))
+                TryQueueDel(uid);
         }
     }
     // LuaM-end
@@ -187,6 +182,13 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         }
     }
 
+    private static (EntityUid Grid, bool Online, int Percent, bool Overloaded) GetConsoleState(EntityUid grid, ShipShieldEmitterComponent emitter) // LuaM
+    {
+        var limit = emitter.DamageLimit > 0 ? emitter.DamageLimit : 1f;
+        var percent = (int) MathF.Round(Math.Clamp(1f - emitter.Damage / limit, 0f, 1f) * 100f);
+        return (grid, emitter.Shield != null, percent, emitter.OverloadAccumulator > 0);
+    }
+
     private void OnEmitterShutdown(EntityUid uid, ShipShieldEmitterComponent emitter, ComponentShutdown args) // Mono
     {
         var parent = Transform(uid).GridUid; // Forge-Change
@@ -234,8 +236,8 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         // Copy shield color from the generator to the shield visuals
         var shieldVisuals = EnsureComp<ShipShieldVisualsComponent>(shield);
         // LuaM-start: initialize shader animation state.
-        shieldVisuals.Form = 0f;
-        shieldVisuals.Shatter = 0f;
+        shieldVisuals.FormStart = _timing.CurTime; // LuaM
+        shieldVisuals.ShatterStart = null; // LuaM
         if (source != null && TryComp<ShipShieldEmitterComponent>(source.Value, out var emitter))
         {
             var color = emitter.ShieldColor;
@@ -293,9 +295,9 @@ public sealed partial class ShipShieldsSystem : EntitySystem
         var shield = component.Shield;
         RemComp<ShipShieldedComponent>(uid);
 
-        if (TryComp<ShipShieldVisualsComponent>(shield, out var visuals) && visuals.Shatter <= 0f)
+        if (TryComp<ShipShieldVisualsComponent>(shield, out var visuals) && visuals.ShatterStart == null) // LuaM
         {
-            visuals.Shatter = float.Epsilon;
+            visuals.ShatterStart = _timing.CurTime; // LuaM
             Dirty(shield, visuals);
             SoftenShieldCollision(shield);
             return true;
@@ -347,19 +349,21 @@ public sealed partial class ShipShieldsSystem : EntitySystem
 
         var chain = new ChainShape();
 
-        chain.CreateLoop(Vector2.Zero, radius);
-
-        for (int i = 0; i < chain.Vertices.Length; i++)
+        Span<Vector2> vertices = stackalloc Vector2[ShieldChainVertices + 1]; // LuaM: CreateLoop(radius) > oval vertices with closing edge
+        var arcLength = MathF.PI * 2f / ShieldChainVertices;
+        for (var i = 0; i < ShieldChainVertices; i++)
         {
+            var vertex = new Vector2(MathF.Cos(arcLength * i) * radius, MathF.Sin(arcLength * i) * radius);
             if (scaleX)
-            {
-                chain.Vertices[i].X *= scale;
-            }
+                vertex.X *= scale;
             else
-            {
-                chain.Vertices[i].Y *= scale;
-            }
+                vertex.Y *= scale;
+
+            vertices[i] = vertex;
         }
+
+        vertices[ShieldChainVertices] = vertices[0];
+        chain.CreateLoop(vertices);
 
         _fixtureSystem.TryCreateFixture(uid, chain, name,
             hard: false,

@@ -1,4 +1,4 @@
-﻿- type: body
+- type: body
   parent: Human
   id: HumanSyntheticOrgans
   name: "human"
@@ -14,37 +14,38 @@
     torso:
       part: TorsoHuman
       connections:
-      - right_arm
-      - left_arm
-      - right_leg
-      - left_leg
+      - right arm # LuaM: right_arm > right arm
+      - left arm # LuaM: left_arm > left arm
+      - right leg # LuaM: right_leg > right leg
+      - left leg # LuaM left_leg > left leg
+      - head # LuaM
       organs:
         heart: OrganSyntheticHeart
         lungs: OrganHumanLungs
         stomach: OrganHumanStomach
         liver: OrganSyntheticLiver
         kidneys: OrganSyntheticKidneys
-    right_arm:
+    right arm: # LuaM: right_arm > right arm
       part: RightArmHuman
       connections:
-      - right_hand
-    left_arm:
+      - right hand # LuaM: right_hand > right hand
+    left arm: # LuaM: left_arm > left arm
       part: LeftArmHuman
       connections:
-      - left_hand
-    right_hand:
+      - left hand # LuaM: left_hand > left hand
+    right hand: # LuaM: right_hand > right hand
       part: RightHandHuman
-    left_hand:
+    left hand: # LuaM: left_hand > left hand
       part: LeftHandHuman
-    right_leg:
+    right leg: # LuaM: right_leg > right leg
       part: RightLegHuman
       connections:
-      - right_foot
-    left_leg:
+      - right foot # LuaM: right_foot > right foot
+    left leg: # LuaM: left_leg > left leg
       part: LeftLegHuman
       connections:
-      - left_foot
-    right_foot:
+      - left foot # LuaM: left_foot > left foot
+    right foot: # LuaM: right_foot > right foot
       part: RightFootHuman
-    left_foot:
+    left foot: # LuaM: left_foot > left foot 
       part: LeftFootHuman
