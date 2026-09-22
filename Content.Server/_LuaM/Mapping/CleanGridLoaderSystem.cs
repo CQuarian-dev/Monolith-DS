@@ -18,7 +18,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server._LuaM.Mapping;
 
-public sealed class CleanGridLoaderSystem : EntitySystem
+public sealed partial class CleanGridLoaderSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private ITileDefinitionManager _tileDefs = default!;
