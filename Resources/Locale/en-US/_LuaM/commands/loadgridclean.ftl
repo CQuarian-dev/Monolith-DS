@@ -1,4 +1,4 @@
-cmd-loadgridclean-desc = Loads a grid from a file, cleaning out what this build does not have. Entities without a prototype are removed and their contents dropped next to them. Missing tiles become plating, missing decals are removed.
+cmd-loadgridclean-desc = Loads a grid from a file, cleaning out what this build does not have. Entities without a prototype are removed and their contents dropped next to them. Missing tiles become plating, missing decals and unknown components are removed.
 cmd-loadgridclean-help = loadgridclean <MapID> <Path> [x y] [rotation] [storeUids]
 cmd-loadgridclean-bad-map = { $value } is not a valid map ID.
 cmd-loadgridclean-nullspace = Cannot load into nullspace.
@@ -10,4 +10,5 @@ cmd-loadgridclean-failed = Failed to load the grid ({ $reason }). See the server
 cmd-loadgridclean-missing-entry = Skipped prototype { $id } (entities: { $count })
 cmd-loadgridclean-missing-tile = Missing tile { $id }, replaced with { $fallback }
 cmd-loadgridclean-missing-decal = Missing decal { $id }, removed: { $count }
-cmd-loadgridclean-success = Grid { $grid } loaded. Skipped types: { $types }, removed entities: { $removed }, rescued items: { $rescued }, replaced tiles: { $tiles }, removed decals: { $decals }.
+cmd-loadgridclean-missing-component = Missing component { $id }, removed: { $count }
+cmd-loadgridclean-success = Grid { $grid } loaded. Skipped types: { $types }, removed entities: { $removed }, rescued items: { $rescued }, replaced tiles: { $tiles }, removed decals: { $decals }, removed components: { $components }.

@@ -121,19 +121,26 @@ public sealed partial class LoadGridCleanCommand : IConsoleCommand
             shell.WriteLine(_loc.GetString("cmd-loadgridclean-missing-decal", ("id", id), ("count", count)));
         }
 
+        foreach (var (id, count) in report.MissingComponents.OrderBy(pair => pair.Key))
+        {
+            shell.WriteLine(_loc.GetString("cmd-loadgridclean-missing-component", ("id", id), ("count", count)));
+        }
+
         shell.WriteLine(_loc.GetString("cmd-loadgridclean-success",
             ("grid", _entManager.GetNetEntity(grid.Value.Owner)),
             ("types", report.Missing.Count),
             ("removed", report.Removed),
             ("rescued", report.Rescued),
             ("tiles", report.MissingTiles.Count),
-            ("decals", report.MissingDecals.Values.Sum())));
+            ("decals", report.MissingDecals.Values.Sum()),
+            ("components", report.MissingComponents.Values.Sum())));
 
         _adminLogger.Add(LogType.Action,
             LogImpact.High,
             $"{shell.Player?.Name ?? "server console"} loaded grid {path} onto map {intMapId} with loadgridclean: " +
             $"{_entManager.ToPrettyString(grid.Value.Owner)}, skipped prototypes: {string.Join(", ", report.Missing.Keys)}, " +
-            $"replaced tiles: {string.Join(", ", report.MissingTiles)}, removed decals: {string.Join(", ", report.MissingDecals.Keys)}");
+            $"replaced tiles: {string.Join(", ", report.MissingTiles)}, removed decals: {string.Join(", ", report.MissingDecals.Keys)}, " +
+            $"removed components: {string.Join(", ", report.MissingComponents.Keys)}");
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)

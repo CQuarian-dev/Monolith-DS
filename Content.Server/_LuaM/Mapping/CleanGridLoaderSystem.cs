@@ -21,6 +21,7 @@ namespace Content.Server._LuaM.Mapping;
 public sealed partial class CleanGridLoaderSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private IComponentFactory _compFactory = default!;
     [Dependency] private ITileDefinitionManager _tileDefs = default!;
     [Dependency] private MapLoaderSystem _mapLoader = default!;
     [Dependency] private SharedContainerSystem _container = default!;
@@ -29,6 +30,8 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
     public const string Placeholder = "LuaMCleanLoadPlaceholder";
 
     public const string FallbackTile = "Plating";
+
+    private static readonly string[] KeptComponents = { "Transform", "ContainerContainer" };
 
     private readonly HashSet<string> _pendingMissing = new();
 
@@ -83,9 +86,10 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
         try
         {
             var version = data.Get<MappingDataNode>("meta").Get<ValueDataNode>("format").AsInt();
-            missing = CollectMissingPrototypes(data, version);
+            var placeholders = new HashSet<string>();
+            missing = CollectMissingPrototypes(data, version, placeholders);
             ReplaceMissingTiles(data, report);
-            RemoveMissingDecals(data, version, report);
+            CleanEntities(data, version, placeholders, report);
         }
         catch (Exception e)
         {
@@ -137,7 +141,7 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
         return true;
     }
 
-    private Dictionary<string, int> CollectMissingPrototypes(MappingDataNode data, int version)
+    private Dictionary<string, int> CollectMissingPrototypes(MappingDataNode data, int version, HashSet<string> placeholders)
     {
         var missing = new Dictionary<string, int>();
         var key = version >= 4 ? "proto" : "type";
@@ -152,9 +156,33 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
 
             var count = version >= 4 && node.TryGet<SequenceDataNode>("entities", out var group) ? group.Count : 1;
             missing[protoNode.Value] = missing.GetValueOrDefault(protoNode.Value) + count;
+
+            foreach (var entity in EnumerateGroup(node, version))
+            {
+                if (entity.TryGet<ValueDataNode>("uid", out var uid))
+                    placeholders.Add(uid.Value);
+
+                StripComponents(entity);
+            }
         }
 
         return missing;
+    }
+
+    private static void StripComponents(MappingDataNode entity)
+    {
+        if (!entity.TryGet<SequenceDataNode>("components", out var components))
+            return;
+
+        for (var i = components.Count - 1; i >= 0; i--)
+        {
+            if (components[i] is MappingDataNode comp
+                && comp.TryGet<ValueDataNode>("type", out var type)
+                && KeptComponents.Contains(type.Value))
+                continue;
+
+            components.RemoveAt(i);
+        }
     }
 
     private void ReplaceMissingTiles(MappingDataNode data, CleanLoadReport report)
@@ -182,7 +210,7 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
         }
     }
 
-    private void RemoveMissingDecals(MappingDataNode data, int version, CleanLoadReport report)
+    private void CleanEntities(MappingDataNode data, int version, HashSet<string> placeholders, CleanLoadReport report)
     {
         if (!data.TryGet<SequenceDataNode>("entities", out var entities))
             return;
@@ -192,30 +220,60 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
             if (!entity.TryGet<SequenceDataNode>("components", out var components))
                 continue;
 
-            foreach (var component in components)
+            for (var i = components.Count - 1; i >= 0; i--)
             {
-                if (component is not MappingDataNode comp
-                    || !comp.TryGet<ValueDataNode>("type", out var type)
-                    || type.Value != "DecalGrid")
+                if (components[i] is not MappingDataNode comp || !comp.TryGet<ValueDataNode>("type", out var type))
                     continue;
 
-                if (!comp.TryGet<MappingDataNode>("chunkCollection", out var collection)
-                    || !collection.TryGet<SequenceDataNode>("nodes", out var nodes))
-                    continue;
-
-                for (var i = nodes.Count - 1; i >= 0; i--)
+                if (!_compFactory.TryGetRegistration(type.Value, out _) && !_compFactory.IsIgnored(type.Value))
                 {
-                    if (nodes[i] is not MappingDataNode group
-                        || !group.TryGet<MappingDataNode>("node", out var node)
-                        || !node.TryGet<ValueDataNode>("id", out var id)
-                        || _proto.HasIndex<DecalPrototype>(id.Value))
-                        continue;
+                    report.MissingComponents[type.Value] = report.MissingComponents.GetValueOrDefault(type.Value) + 1;
+                    components.RemoveAt(i);
+                    continue;
+                }
 
-                    var count = group.TryGet<MappingDataNode>("decals", out var decals) ? decals.Children.Count : 0;
-                    report.MissingDecals[id.Value] = report.MissingDecals.GetValueOrDefault(id.Value) + count;
-                    nodes.RemoveAt(i);
+                switch (type.Value)
+                {
+                    case "DecalGrid":
+                        RemoveMissingDecals(comp, report);
+                        break;
+                    case "DeviceLinkSource":
+                        RemoveDeadLinks(comp, placeholders);
+                        break;
                 }
             }
+        }
+    }
+
+    private void RemoveMissingDecals(MappingDataNode component, CleanLoadReport report)
+    {
+        if (!component.TryGet<MappingDataNode>("chunkCollection", out var collection)
+            || !collection.TryGet<SequenceDataNode>("nodes", out var nodes))
+            return;
+
+        for (var i = nodes.Count - 1; i >= 0; i--)
+        {
+            if (nodes[i] is not MappingDataNode group
+                || !group.TryGet<MappingDataNode>("node", out var node)
+                || !node.TryGet<ValueDataNode>("id", out var id)
+                || _proto.HasIndex<DecalPrototype>(id.Value))
+                continue;
+
+            var count = group.TryGet<MappingDataNode>("decals", out var decals) ? decals.Children.Count : 0;
+            report.MissingDecals[id.Value] = report.MissingDecals.GetValueOrDefault(id.Value) + count;
+            nodes.RemoveAt(i);
+        }
+    }
+
+    private static void RemoveDeadLinks(MappingDataNode component, HashSet<string> placeholders)
+    {
+        if (placeholders.Count == 0 || !component.TryGet<MappingDataNode>("linkedPorts", out var ports))
+            return;
+
+        foreach (var key in ports.Children.Keys.ToList())
+        {
+            if (placeholders.Contains(key))
+                ports.Remove(key);
         }
     }
 
@@ -226,20 +284,28 @@ public sealed partial class CleanGridLoaderSystem : EntitySystem
             if (node is not MappingDataNode entry)
                 continue;
 
-            if (version < 4)
+            foreach (var ent in EnumerateGroup(entry, version))
             {
-                yield return entry;
-                continue;
+                yield return ent;
             }
+        }
+    }
 
-            if (!entry.TryGet<SequenceDataNode>("entities", out var group))
-                continue;
+    private static IEnumerable<MappingDataNode> EnumerateGroup(MappingDataNode entry, int version)
+    {
+        if (version < 4)
+        {
+            yield return entry;
+            yield break;
+        }
 
-            foreach (var ent in group)
-            {
-                if (ent is MappingDataNode mapped)
-                    yield return mapped;
-            }
+        if (!entry.TryGet<SequenceDataNode>("entities", out var group))
+            yield break;
+
+        foreach (var ent in group)
+        {
+            if (ent is MappingDataNode mapped)
+                yield return mapped;
         }
     }
 
@@ -296,6 +362,8 @@ public sealed class CleanLoadReport
     public readonly HashSet<string> MissingTiles = new();
 
     public readonly Dictionary<string, int> MissingDecals = new();
+
+    public readonly Dictionary<string, int> MissingComponents = new();
 
     public int Removed;
     public int Rescued;

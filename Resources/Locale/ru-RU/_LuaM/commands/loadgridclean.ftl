@@ -1,4 +1,4 @@
-cmd-loadgridclean-desc = Загружает грид из файла, вычищая то, чего нет в этом билде. Сущности без прототипа удаляются, их содержимое выкладывается рядом. Отсутствующие тайлы заменяются на покрытие, отсутствующие декали удаляются.
+cmd-loadgridclean-desc = Загружает грид из файла, вычищая то, чего нет в этом билде. Сущности без прототипа удаляются, их содержимое выкладывается рядом. Отсутствующие тайлы заменяются на покрытие, отсутствующие декали и неизвестные компоненты удаляются.
 cmd-loadgridclean-help = loadgridclean <MapID> <Path> [x y] [вращение] [storeUids]
 cmd-loadgridclean-bad-map = { $value } не является корректным ID карты.
 cmd-loadgridclean-nullspace = Нельзя загружать в nullspace.
@@ -10,4 +10,5 @@ cmd-loadgridclean-failed = Не удалось загрузить грид ({ $r
 cmd-loadgridclean-missing-entry = Пропущен прототип { $id } (сущностей: { $count })
 cmd-loadgridclean-missing-tile = Нет тайла { $id }, заменён на { $fallback }
 cmd-loadgridclean-missing-decal = Нет декали { $id }, удалено: { $count }
-cmd-loadgridclean-success = Грид { $grid } загружен. Пропущено типов: { $types }, удалено сущностей: { $removed }, спасено предметов: { $rescued }, заменено тайлов: { $tiles }, удалено декалей: { $decals }.
+cmd-loadgridclean-missing-component = Нет компонента { $id }, удалено: { $count }
+cmd-loadgridclean-success = Грид { $grid } загружен. Пропущено типов: { $types }, удалено сущностей: { $removed }, спасено предметов: { $rescued }, заменено тайлов: { $tiles }, удалено декалей: { $decals }, удалено компонентов: { $components }.
