@@ -3,6 +3,7 @@ using System.Linq;
 using System.Numerics;
 using Content.Server.Holiday;
 using Content.Server.Maps;
+using Content.Shared.Decals;
 using Robust.Shared.Containers;
 using Robust.Shared.EntitySerialization;
 using Robust.Shared.EntitySerialization.Systems;
@@ -17,14 +18,17 @@ using Robust.Shared.Utility;
 
 namespace Content.Server._LuaM.Mapping;
 
-public sealed class LenientGridLoaderSystem : EntitySystem
+public sealed class CleanGridLoaderSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _proto = default!;
+    [Dependency] private ITileDefinitionManager _tileDefs = default!;
     [Dependency] private MapLoaderSystem _mapLoader = default!;
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
 
-    public const string Placeholder = "LuaMLenientLoadPlaceholder";
+    public const string Placeholder = "LuaMCleanLoadPlaceholder";
+
+    public const string FallbackTile = "Plating";
 
     private readonly HashSet<string> _pendingMissing = new();
 
@@ -56,12 +60,18 @@ public sealed class LenientGridLoaderSystem : EntitySystem
         Vector2 offset,
         Angle rotation,
         [NotNullWhen(true)] out Entity<MapGridComponent>? grid,
-        out LenientLoadReport report,
+        out CleanLoadReport report,
         out string? error)
     {
         grid = null;
-        report = new LenientLoadReport();
+        report = new CleanLoadReport();
         error = null;
+
+        if (!_tileDefs.TryGetDefinition(FallbackTile, out _))
+        {
+            error = "tile";
+            return false;
+        }
 
         if (!_mapLoader.TryReadFile(path, out var data))
         {
@@ -72,7 +82,10 @@ public sealed class LenientGridLoaderSystem : EntitySystem
         Dictionary<string, int> missing;
         try
         {
-            missing = CollectMissingPrototypes(data);
+            var version = data.Get<MappingDataNode>("meta").Get<ValueDataNode>("format").AsInt();
+            missing = CollectMissingPrototypes(data, version);
+            ReplaceMissingTiles(data, report);
+            RemoveMissingDecals(data, version, report);
         }
         catch (Exception e)
         {
@@ -124,10 +137,9 @@ public sealed class LenientGridLoaderSystem : EntitySystem
         return true;
     }
 
-    private Dictionary<string, int> CollectMissingPrototypes(MappingDataNode data)
+    private Dictionary<string, int> CollectMissingPrototypes(MappingDataNode data, int version)
     {
         var missing = new Dictionary<string, int>();
-        var version = data.Get<MappingDataNode>("meta").Get<ValueDataNode>("format").AsInt();
         var key = version >= 4 ? "proto" : "type";
 
         foreach (var node in data.Get<SequenceDataNode>("entities").Cast<MappingDataNode>())
@@ -145,7 +157,93 @@ public sealed class LenientGridLoaderSystem : EntitySystem
         return missing;
     }
 
-    private void ReplacePlaceholders(LoadResult result, LenientLoadReport report)
+    private void ReplaceMissingTiles(MappingDataNode data, CleanLoadReport report)
+    {
+        if (!data.TryGet<MappingDataNode>("tilemap", out var tileMap))
+            return;
+
+        var aliases = new Dictionary<string, string>();
+        foreach (var alias in _proto.EnumeratePrototypes<TileAliasPrototype>())
+        {
+            aliases[alias.ID] = alias.Target;
+        }
+
+        foreach (var key in tileMap.Children.Keys.ToList())
+        {
+            if (tileMap[key] is not ValueDataNode value)
+                continue;
+
+            var resolved = aliases.GetValueOrDefault(value.Value, value.Value);
+            if (_tileDefs.TryGetDefinition(resolved, out _))
+                continue;
+
+            report.MissingTiles.Add(value.Value);
+            tileMap[key] = new ValueDataNode(FallbackTile);
+        }
+    }
+
+    private void RemoveMissingDecals(MappingDataNode data, int version, CleanLoadReport report)
+    {
+        if (!data.TryGet<SequenceDataNode>("entities", out var entities))
+            return;
+
+        foreach (var entity in EnumerateEntityNodes(entities, version))
+        {
+            if (!entity.TryGet<SequenceDataNode>("components", out var components))
+                continue;
+
+            foreach (var component in components)
+            {
+                if (component is not MappingDataNode comp
+                    || !comp.TryGet<ValueDataNode>("type", out var type)
+                    || type.Value != "DecalGrid")
+                    continue;
+
+                if (!comp.TryGet<MappingDataNode>("chunkCollection", out var collection)
+                    || !collection.TryGet<SequenceDataNode>("nodes", out var nodes))
+                    continue;
+
+                for (var i = nodes.Count - 1; i >= 0; i--)
+                {
+                    if (nodes[i] is not MappingDataNode group
+                        || !group.TryGet<MappingDataNode>("node", out var node)
+                        || !node.TryGet<ValueDataNode>("id", out var id)
+                        || _proto.HasIndex<DecalPrototype>(id.Value))
+                        continue;
+
+                    var count = group.TryGet<MappingDataNode>("decals", out var decals) ? decals.Children.Count : 0;
+                    report.MissingDecals[id.Value] = report.MissingDecals.GetValueOrDefault(id.Value) + count;
+                    nodes.RemoveAt(i);
+                }
+            }
+        }
+    }
+
+    private static IEnumerable<MappingDataNode> EnumerateEntityNodes(SequenceDataNode entities, int version)
+    {
+        foreach (var node in entities)
+        {
+            if (node is not MappingDataNode entry)
+                continue;
+
+            if (version < 4)
+            {
+                yield return entry;
+                continue;
+            }
+
+            if (!entry.TryGet<SequenceDataNode>("entities", out var group))
+                continue;
+
+            foreach (var ent in group)
+            {
+                if (ent is MappingDataNode mapped)
+                    yield return mapped;
+            }
+        }
+    }
+
+    private void ReplacePlaceholders(LoadResult result, CleanLoadReport report)
     {
         var placeholders = new List<EntityUid>();
         foreach (var uid in result.Entities)
@@ -191,9 +289,13 @@ public sealed class LenientGridLoaderSystem : EntitySystem
     }
 }
 
-public sealed class LenientLoadReport
+public sealed class CleanLoadReport
 {
     public readonly Dictionary<string, int> Missing = new();
+
+    public readonly HashSet<string> MissingTiles = new();
+
+    public readonly Dictionary<string, int> MissingDecals = new();
 
     public int Removed;
     public int Rescued;

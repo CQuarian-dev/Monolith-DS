@@ -15,16 +15,16 @@ using Robust.Shared.Utility;
 namespace Content.Server._LuaM.Mapping;
 
 [AdminCommand(AdminFlags.Mapping)]
-public sealed partial class LoadGridLenientCommand : IConsoleCommand
+public sealed partial class LoadGridCleanCommand : IConsoleCommand
 {
     [Dependency] private IEntityManager _entManager = default!;
     [Dependency] private IResourceManager _resource = default!;
     [Dependency] private ILocalizationManager _loc = default!;
     [Dependency] private IAdminLogManager _adminLogger = default!;
 
-    public string Command => "loadgrid_lenient";
-    public string Description => _loc.GetString("cmd-loadgrid_lenient-desc");
-    public string Help => _loc.GetString("cmd-loadgrid_lenient-help");
+    public string Command => "loadgridclean";
+    public string Description => _loc.GetString("cmd-loadgridclean-desc");
+    public string Help => _loc.GetString("cmd-loadgridclean-help");
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
@@ -36,21 +36,21 @@ public sealed partial class LoadGridLenientCommand : IConsoleCommand
 
         if (!int.TryParse(args[0], out var intMapId))
         {
-            shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-bad-map", ("value", args[0])));
+            shell.WriteError(_loc.GetString("cmd-loadgridclean-bad-map", ("value", args[0])));
             return;
         }
 
         var mapId = new MapId(intMapId);
         if (mapId == MapId.Nullspace)
         {
-            shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-nullspace"));
+            shell.WriteError(_loc.GetString("cmd-loadgridclean-nullspace"));
             return;
         }
 
         var path = new ResPath(args[1]);
         if (path.EnumerateSegments().Any(segment => segment == ".."))
         {
-            shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-bad-path"));
+            shell.WriteError(_loc.GetString("cmd-loadgridclean-bad-path"));
             return;
         }
 
@@ -60,7 +60,7 @@ public sealed partial class LoadGridLenientCommand : IConsoleCommand
             if (!float.TryParse(args[2], NumberStyles.Float, CultureInfo.InvariantCulture, out var x) ||
                 !float.TryParse(args[3], NumberStyles.Float, CultureInfo.InvariantCulture, out var y))
             {
-                shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-bad-float"));
+                shell.WriteError(_loc.GetString("cmd-loadgridclean-bad-float"));
                 return;
             }
 
@@ -72,7 +72,7 @@ public sealed partial class LoadGridLenientCommand : IConsoleCommand
         {
             if (!float.TryParse(args[4], NumberStyles.Float, CultureInfo.InvariantCulture, out var degrees))
             {
-                shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-bad-float"));
+                shell.WriteError(_loc.GetString("cmd-loadgridclean-bad-float"));
                 return;
             }
 
@@ -84,7 +84,7 @@ public sealed partial class LoadGridLenientCommand : IConsoleCommand
         {
             if (!bool.TryParse(args[5], out var storeUids))
             {
-                shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-bad-bool", ("value", args[5])));
+                shell.WriteError(_loc.GetString("cmd-loadgridclean-bad-bool", ("value", args[5])));
                 return;
             }
 
@@ -94,32 +94,46 @@ public sealed partial class LoadGridLenientCommand : IConsoleCommand
         var mapSystem = _entManager.System<SharedMapSystem>();
         if (!mapSystem.MapExists(mapId))
         {
-            shell.WriteLine(_loc.GetString("cmd-loadgrid_lenient-map-created", ("map", intMapId)));
+            shell.WriteLine(_loc.GetString("cmd-loadgridclean-map-created", ("map", intMapId)));
             mapSystem.CreateMap(mapId, false);
         }
 
-        var loader = _entManager.System<LenientGridLoaderSystem>();
+        var loader = _entManager.System<CleanGridLoaderSystem>();
         if (!loader.TryLoadGrid(mapId, path, options, offset, rotation, out var grid, out var report, out var error))
         {
-            shell.WriteError(_loc.GetString("cmd-loadgrid_lenient-failed", ("reason", error ?? "load")));
+            shell.WriteError(_loc.GetString("cmd-loadgridclean-failed", ("reason", error ?? "load")));
             return;
         }
 
         foreach (var (id, count) in report.Missing.OrderBy(pair => pair.Key))
         {
-            shell.WriteLine(_loc.GetString("cmd-loadgrid_lenient-missing-entry", ("id", id), ("count", count)));
+            shell.WriteLine(_loc.GetString("cmd-loadgridclean-missing-entry", ("id", id), ("count", count)));
         }
 
-        shell.WriteLine(_loc.GetString("cmd-loadgrid_lenient-success",
+        foreach (var id in report.MissingTiles.OrderBy(tile => tile))
+        {
+            shell.WriteLine(_loc.GetString("cmd-loadgridclean-missing-tile",
+                ("id", id), ("fallback", CleanGridLoaderSystem.FallbackTile)));
+        }
+
+        foreach (var (id, count) in report.MissingDecals.OrderBy(pair => pair.Key))
+        {
+            shell.WriteLine(_loc.GetString("cmd-loadgridclean-missing-decal", ("id", id), ("count", count)));
+        }
+
+        shell.WriteLine(_loc.GetString("cmd-loadgridclean-success",
             ("grid", _entManager.GetNetEntity(grid.Value.Owner)),
             ("types", report.Missing.Count),
             ("removed", report.Removed),
-            ("rescued", report.Rescued)));
+            ("rescued", report.Rescued),
+            ("tiles", report.MissingTiles.Count),
+            ("decals", report.MissingDecals.Values.Sum())));
 
         _adminLogger.Add(LogType.Action,
             LogImpact.High,
-            $"{shell.Player?.Name ?? "server console"} loaded grid {path} onto map {intMapId} with loadgrid_lenient: " +
-            $"{_entManager.ToPrettyString(grid.Value.Owner)}, skipped prototypes: {string.Join(", ", report.Missing.Keys)}");
+            $"{shell.Player?.Name ?? "server console"} loaded grid {path} onto map {intMapId} with loadgridclean: " +
+            $"{_entManager.ToPrettyString(grid.Value.Owner)}, skipped prototypes: {string.Join(", ", report.Missing.Keys)}, " +
+            $"replaced tiles: {string.Join(", ", report.MissingTiles)}, removed decals: {string.Join(", ", report.MissingDecals.Keys)}");
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
