@@ -289,7 +289,7 @@
 # MARSOC only
 
 - type: entity
-  parent: [ClothingOuterHardsuitM86, BaseFactionGearTSFT3, MonoEnergyShieldClothing] # LuaM: EnergyShieldClothing > MonoEnergyShieldClothing
+  parent: [ClothingOuterHardsuitM86, BaseFactionGearTSFT3] # LuaM: MonoEnergyShieldClothing > already inherited from ClothingOuterHardsuitM86
   id: ClothingOuterHardsuitM86Mk4
   name: M86 Mk.4(B) hardsuit
   description: A limited-production redesign proposal for the M86 Mk.3(R), outfitted with an inbuilt personal shield generator.
