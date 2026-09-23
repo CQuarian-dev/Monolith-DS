@@ -1,0 +1,37 @@
+cmd-shipstat-desc = Показывает статистику шаттла: размер, оценку стоимости и проверку правил. Работает и на неинициализированных картах.
+cmd-shipstat-help = shipstat [GridID] - без аргумента берётся грид, на котором вы стоите
+cmd-shipstat-no-grid = Вы не стоите на гриде. Встаньте на шаттл или укажите ID грида.
+cmd-shipstat-bad-grid = { $value } не является гридом.
+cmd-shipstat-header = === SHIPSTAT ===
+cmd-shipstat-footer = === END SHIPSTAT ===
+cmd-shipstat-size = [Размер] { $width }×{ $height }, тайлов: { $tiles }, макс. сторона: { $side }
+cmd-shipstat-too-big = [!] Тайлов { $tiles } > { $max } - шаттл слишком большой
+cmd-shipstat-category = [Категория по размеру] { $size } (Micro ≤{ $micro }т, Small ≤{ $small }т, Medium ≤{ $medium }т, Large ≤{ $large }т)
+cmd-shipstat-appraisal = [Оценка] { $price } cr, рекомендуемая цена: { $min }–{ $max } cr (наценка 5–30%)
+cmd-shipstat-uninitialized = [!] Подсчёт произошёл на неинициализированном гриде! Для точного подсчёта инициализируйте карту через mapinit { $map }
+cmd-shipstat-rules = [Правила]
+cmd-shipstat-guns = Орудий: { $count }, мощность: { $cost }/{ $capacity } [{ $status }]
+cmd-shipstat-air-alarms = AirAlarm: { $count }/{ $max } [{ $status }]
+cmd-shipstat-warp-ok = WarpPoint: есть [OK]
+cmd-shipstat-warp-missing = WarpPoint: ОТСУТСТВУЕТ [ОШИБКА]
+cmd-shipstat-cash = Кредиты (CashComponent): { $count } [ОШИБКА - запрещено]
+cmd-shipstat-godmode = GodmodeComponent: { $count } [ОШИБКА]
+cmd-shipstat-power = SMES Basic: { $smesBasic }, Advanced: { $smesAdvanced }, SubstationWall: { $substationWall }, SubstationBasic: { $substationBasic }
+cmd-shipstat-status-ok = OK
+cmd-shipstat-status-over = ПРЕВЫШЕНИЕ
+cmd-shipstat-violations = Нарушения:
+cmd-shipstat-no-violations = Нарушений не найдено [OK]
+cmd-shipstat-forbidden = [{ $category }] { $id }
+cmd-shipstat-limit = [Энергия] { $id }: { $count } > лимит { $limit } для { $size }
+cmd-shipstat-limit-mixed = [Энергия] { $id }: { $count } > лимит { $limit } при смешивании на { $size }
+cmd-shipstat-banned-for-size = [Энергия] { $id } запрещён для { $size }
+cmd-shipstat-smes-mixed = [Энергия] нельзя смешивать SMESBasic и SMESAdvanced на { $size }
+cmd-shipstat-gunnery = [Оружие] сервер { $id } запрещён для { $size }. Допустимы: { $allowed }
+cmd-shipstat-category-power = Энергия
+cmd-shipstat-category-generator = Генератор
+cmd-shipstat-category-structure = Структура
+cmd-shipstat-category-ftl = FTL
+cmd-shipstat-category-iff = IFF
+cmd-shipstat-category-shield = Щит
+cmd-shipstat-category-atmos = Атмос
+cmd-shipstat-category-debug = Debug

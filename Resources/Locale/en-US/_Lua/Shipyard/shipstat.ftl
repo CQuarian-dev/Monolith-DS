@@ -1,0 +1,37 @@
+cmd-shipstat-desc = Shows shuttle statistics: size, price appraisal and a rules check. Also works on uninitialized maps.
+cmd-shipstat-help = shipstat [GridID] - without an argument, uses the grid you are standing on
+cmd-shipstat-no-grid = You are not standing on a grid. Stand on a shuttle or pass a grid ID.
+cmd-shipstat-bad-grid = { $value } is not a grid.
+cmd-shipstat-header = === SHIPSTAT ===
+cmd-shipstat-footer = === END SHIPSTAT ===
+cmd-shipstat-size = [Size] { $width }×{ $height }, tiles: { $tiles }, longest side: { $side }
+cmd-shipstat-too-big = [!] { $tiles } tiles > { $max } - the shuttle is too big
+cmd-shipstat-category = [Size category] { $size } (Micro ≤{ $micro }t, Small ≤{ $small }t, Medium ≤{ $medium }t, Large ≤{ $large }t)
+cmd-shipstat-appraisal = [Appraisal] { $price } cr, suggested price: { $min }–{ $max } cr (5–30% markup)
+cmd-shipstat-uninitialized = [!] Evaluated on an uninitialized grid! For an exact result, initialize the map with mapinit { $map }
+cmd-shipstat-rules = [Rules]
+cmd-shipstat-guns = Guns: { $count }, processing power: { $cost }/{ $capacity } [{ $status }]
+cmd-shipstat-air-alarms = AirAlarm: { $count }/{ $max } [{ $status }]
+cmd-shipstat-warp-ok = WarpPoint: present [OK]
+cmd-shipstat-warp-missing = WarpPoint: MISSING [ERROR]
+cmd-shipstat-cash = Credits (CashComponent): { $count } [ERROR - forbidden]
+cmd-shipstat-godmode = GodmodeComponent: { $count } [ERROR]
+cmd-shipstat-power = SMES Basic: { $smesBasic }, Advanced: { $smesAdvanced }, SubstationWall: { $substationWall }, SubstationBasic: { $substationBasic }
+cmd-shipstat-status-ok = OK
+cmd-shipstat-status-over = EXCEEDED
+cmd-shipstat-violations = Violations:
+cmd-shipstat-no-violations = No violations found [OK]
+cmd-shipstat-forbidden = [{ $category }] { $id }
+cmd-shipstat-limit = [Power] { $id }: { $count } > limit { $limit } for { $size }
+cmd-shipstat-limit-mixed = [Power] { $id }: { $count } > limit { $limit } when mixed on { $size }
+cmd-shipstat-banned-for-size = [Power] { $id } is forbidden for { $size }
+cmd-shipstat-smes-mixed = [Power] SMESBasic and SMESAdvanced cannot be mixed on { $size }
+cmd-shipstat-gunnery = [Weapons] server { $id } is forbidden for { $size }. Allowed: { $allowed }
+cmd-shipstat-category-power = Power
+cmd-shipstat-category-generator = Generator
+cmd-shipstat-category-structure = Structure
+cmd-shipstat-category-ftl = FTL
+cmd-shipstat-category-iff = IFF
+cmd-shipstat-category-shield = Shield
+cmd-shipstat-category-atmos = Atmos
+cmd-shipstat-category-debug = Debug
