@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server._Lua.SpaceHazards; // LuaM
 using Content.Server.Radiation.Components;
 using Content.Server.Radiation.Events;
 using Content.Shared.Radiation.Components;
@@ -94,6 +95,12 @@ public partial class RadiationSystem
                     ray.Blockers ?? new())
                 );
             }
+
+            // LuaM start
+            var ambient = new GetAmbientRadiationEvent();
+            RaiseLocalEvent(destUid, ref ambient);
+            rads += MathF.Max(ambient.Radiation, 0f);
+            // LuaM end
 
             // Apply modifier if the destination entity is hidden within a radiation blocking container
             rads = GetAdjustedRadiationIntensity(destUid, rads);

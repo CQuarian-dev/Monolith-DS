@@ -1,6 +1,7 @@
 using System.Buffers;
 using System.Numerics;
 using Content.Client.Shuttles.Systems;
+using Content.Shared._Lua.SpaceHazards; // LuaM
 using Content.Shared._Mono.Company;
 using Content.Shared._Mono.Detection;
 using Content.Shared.Shuttles.Components;
@@ -331,6 +332,8 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             _viewportExclusions.Add(exclusion);
         }
 
+        DrawMapSpaceHazards(handle, matty, viewBox); // LuaM
+
         _verts.Clear();
         _edges.Clear();
         _strings.Clear();
@@ -387,6 +390,9 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
             {
                 continue;
             }
+
+            if (grid.Owner != _shuttleEntity && EntManager.HasComponent<NebulaVeilTrackedComponent>(grid)) // LuaM
+                continue; // LuaM
 
             // Mono
             var hideLabel = iffComp != null && (iffComp.Flags & IFFFlags.HideLabel) != 0x0;

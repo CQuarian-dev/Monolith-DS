@@ -206,6 +206,16 @@ public sealed partial class ShipSteererComponent : Component
     public float TargetRotation = 0f;
 
     public float? MaxVelocity = null; // LuaM
+
+    // LuaM start
+    [ViewVariables]
+    public List<System.Numerics.Vector2>? Waypoints;
+
+    [ViewVariables]
+    public int WaypointIndex;
+
+    public TimeSpan NextHazardPlan;
+    // LuaM end
 }
 
 public enum ShipSteeringStatus : byte

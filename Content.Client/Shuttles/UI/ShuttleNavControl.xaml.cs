@@ -1,5 +1,6 @@
 using System.Linq;
 using System.Numerics;
+using Content.Client._Lua.AmbientSpaceEffects; // LuaM
 using Content.Client._Mono.Radar;
 using Content.Client.Station; // Frontier
 using Content.Shared._Crescent.ShipShields;
@@ -131,6 +132,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         _transform = EntManager.System<SharedTransformSystem>();
         _station = EntManager.System<StationSystem>(); // Frontier
         _blips = EntManager.System<RadarBlipsSystem>();
+        _nebulaVisibility = new AmbientSpaceNebulaVisibility(EntManager, _mapManager, IoCManager.Resolve<IPrototypeManager>()); // LuaM
 
         OnMouseEntered += HandleMouseEntered;
         OnMouseExited += HandleMouseExited;
@@ -600,6 +602,10 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
         // Draw shields
         DrawShields(handle, xform, worldToShuttle);
+        // LuaM start
+        DrawNebulaContours(handle, xform, worldToShuttle, shuttleToView, mapPos.Position);
+        DrawSpaceHazardRadarIcons(handle, xform, worldToView, _transform.ToMapCoordinates(_coordinates.Value).Position);
+        // LuaM end
 
         // Frontier Corvax: north line drawing
         DrawNorthLine(handle, worldRot);

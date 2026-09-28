@@ -1,0 +1,120 @@
+- type: nebulaWeather
+  id: NebulaLightning
+  kind: Lightning
+  priority: 60
+  blocksFtl: true
+  weaponCooldownMultiplier: 1.25
+  shieldLoad: 300
+  preferredColorIndex: 0
+  radarIcon: /Textures/_Lua/Interface/Radar/nebula_lightning.png
+  empRange: 3.5
+  empEnergy: 4000
+  empDuration: 4
+  empChance: 0.035
+  empPulsesPerTick: 1
+  minEventDelaySeconds: 4
+  maxEventDelaySeconds: 7
+  damageChance: 0.44 # LuaM 0.22 > 0.44
+  maxDamagedPerTick: 4 # LuaM 2 > 4
+  damage:
+    types:
+      Shock: 40
+      Blunt: 30
+      Structural: 50
+  mobDamage:
+    types:
+      Shock: 8
+      Blunt: 3
+
+- type: nebulaWeather
+  id: NebulaCorrosion
+  kind: Corrosion
+  blocksFtl: true
+  priority: 40
+  thrustMultiplier: 0.85
+  shieldLoad: 220
+  preferredColorIndex: 1
+  radarIcon: /Textures/_Lua/Interface/Radar/nebula_corrosion.png
+  damageChance: 0.5 # LuaM 0.25 > 0.5
+  maxDamagedPerTick: 6 # LuaM 3 > 6
+  minEventDelaySeconds: 4
+  maxEventDelaySeconds: 8
+  damage:
+    types:
+      Blunt: 40
+      Structural: 60
+  mobDamage:
+    types:
+      Blunt: 5
+      Caustic: 4
+
+- type: nebulaWeather
+  id: NebulaEmpStorm
+  kind: EmpStorm
+  priority: 55
+  radioBlackout: true
+  thrustMultiplier: 0.65
+  blocksFtl: true
+  preferredColorIndex: 2
+  radarIcon: /Textures/_Lua/Interface/Radar/nebula_emp.png
+  empRange: 3.5
+  empEnergy: 5000
+  empDuration: 5
+  empChance: 0.04
+  empPulsesPerTick: 1
+  minEventDelaySeconds: 8
+  maxEventDelaySeconds: 20
+
+- type: nebulaWeather
+  id: NebulaVeil
+  kind: Veil
+  priority: 30
+  blocksFtl: false
+  preferredColorIndex: 3
+  radarIcon: /Textures/_Lua/Interface/Radar/nebula_veil.png
+
+- type: nebulaWeather
+  id: NebulaRadiationFog
+  kind: RadiationFog
+  priority: 45
+  shieldLoad: 200
+  blocksFtl: true
+  preferredColorIndex: 4
+  radarIcon: /Textures/_Lua/Interface/Radar/nebula_radiation.png
+  radiationIntensity: 4
+  damageChance: 0.44 # LuaM 0.22 > 0.44
+  maxDamagedPerTick: 4 # LuaM 2 > 4
+  minEventDelaySeconds: 5
+  maxEventDelaySeconds: 10
+  damage:
+    types:
+      Blunt: 30
+      Structural: 50
+  mobDamage:
+    types:
+      Blunt: 2
+
+- type: nebulaWeather
+  id: NebulaHeatWash
+  kind: HeatWash
+  blocksFtl: true
+  priority: 50
+  thrustMultiplier: 0.8
+  weaponCooldownMultiplier: 1.5
+  shieldLoad: 240
+  preferredColorIndex: 5
+  radarIcon: /Textures/_Lua/Interface/Radar/nebula_heat.png
+  damageChance: 0.44 # LuaM 0.22 > 0.44
+  maxDamagedPerTick: 4 # LuaM 2 > 4
+  minEventDelaySeconds: 4
+  maxEventDelaySeconds: 8
+  mobTemperatureIncrease: 8
+  damage:
+    types:
+      Heat: 50
+      Blunt: 20
+      Structural: 40
+  mobDamage:
+    types:
+      Heat: 7
+      Blunt: 2

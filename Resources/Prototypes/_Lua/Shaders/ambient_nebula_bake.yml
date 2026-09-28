@@ -1,0 +1,14 @@
+- type: shader
+  id: AmbientNebulaBake
+  kind: source
+  path: "/Textures/_Lua/Shaders/ambient_nebula_bake.swsl"
+
+- type: shader
+  id: AmbientNebulaBaked
+  kind: source
+  path: "/Textures/_Lua/Shaders/ambient_nebula_baked.swsl"
+
+- type: shader
+  id: AmbientNebulaMidBaked
+  kind: source
+  path: "/Textures/_Lua/Shaders/ambient_nebula_mid_baked.swsl"

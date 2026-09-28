@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using Content.Shared._Lua.SpaceHazards; // LuaM
 using Content.Shared._Mono.Ships;
 using Content.Shared.Containers.ItemSlots;
 using Content.Shared.Power.EntitySystems;
@@ -125,6 +126,9 @@ public abstract partial class SharedShuttleSystem : EntitySystem
 
     public bool CanDraw(EntityUid gridUid, PhysicsComponent? physics = null, IFFComponent? iffComp = null)
     {
+        if (HasComp<NebulaVeilTrackedComponent>(gridUid)) // LuaM
+            return false; // LuaM
+
         if (!Resolve(gridUid, ref physics))
             return true;
 

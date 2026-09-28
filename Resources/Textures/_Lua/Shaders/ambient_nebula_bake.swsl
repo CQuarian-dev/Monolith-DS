@@ -1,0 +1,45 @@
+light_mode unshaded;
+uniform highp float seed;
+uniform highp float quality;
+uniform highp float particle_scale;
+uniform highp float field_radius;
+uniform highp float layer_id;
+highp float hash21(highp vec2 p) {
+    return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+}
+highp float vnoise(highp vec2 p) {
+    highp vec2 i = floor(p);
+    highp vec2 f = fract(p);
+    highp float a = hash21(i);
+    highp float b = hash21(i + vec2(1.0, 0.0));
+    highp float c = hash21(i + vec2(0.0, 1.0));
+    highp float d = hash21(i + vec2(1.0, 1.0));
+    highp vec2 u = f * f * (3.0 - 2.0 * f);
+    return mix(mix(a, b, u.x), mix(c, d, u.x), u.y);
+}
+highp float fbm(highp vec2 p) {
+    highp float v = 0.0;
+    highp float a = 0.5;
+    for (int i = 0; i < 5; i++) {
+        v += a * vnoise(p);
+        p = p * 2.02 + vec2(17.0, 9.0);
+        a *= 0.5;
+    }
+    return v;
+}
+highp float warpedFbm(highp vec2 p) {
+    highp vec2 q = vec2(fbm(p), fbm(p + vec2(5.2, 1.3)));
+    highp vec2 r = vec2(
+        fbm(p + 1.5 * q + vec2(1.7, 9.2)),
+        fbm(p + 1.5 * q + vec2(8.3, 2.8))
+    );
+    return fbm(p + 2.0 * r);
+}
+void fragment() {
+    highp vec2 p = (UV - vec2(0.5)) * 2.0;
+    highp float scale = mix(1.55, 2.05, clamp(quality, 0.0, 1.0)) * max(particle_scale, 0.5);
+    highp float sizeScale = max(field_radius, 1.0) / 500.0;
+    highp vec2 base = p * sizeScale * vec2(scale * 1.35, scale * 0.95);
+    base += vec2(seed * 0.13 + layer_id * 2.3, seed * 0.07);
+    COLOR = vec4(warpedFbm(base), fbm(base * 0.9 + vec2(9.0, 2.0)), fbm(base * 2.6 + vec2(3.1, 5.7)), 1.0);
+}

@@ -5,6 +5,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Content.Server.NPC.Systems; // LuaM
 using Robust.Shared.Map; // LuaM
+using Content.Server._Lua.Worldgen; // LuaM
 
 namespace Content.Server.Worldgen.Systems.Biomes;
 
@@ -17,6 +18,7 @@ public sealed partial class BiomeSelectionSystem : BaseWorldSystem
     [Dependency] private IPrototypeManager _proto = default!;
     [Dependency] private ISerializationManager _ser = default!;
     [Dependency] private NPCUtilitySystem _npcUtility = default!; // LuaM
+    [Dependency] private SectorAsteroidClusterSystem _sectorClusters = default!; // LuaM
 
     /// <inheritdoc />
     public override void Initialize()
@@ -44,6 +46,9 @@ public sealed partial class BiomeSelectionSystem : BaseWorldSystem
 
             if (!CheckBiomeValidity(args.Chunk, biome, coords))
                 continue;
+
+            if (biome.SectorCluster && !_sectorClusters.IsInCluster(uid, worldPos)) // LuaM
+                continue; // LuaM
 
             // LuaM-start: 
             if (biome.NeedDroneTarget)

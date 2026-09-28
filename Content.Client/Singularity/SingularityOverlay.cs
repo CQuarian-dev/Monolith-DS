@@ -20,6 +20,7 @@ namespace Content.Client.Singularity
         public const int MaxCount = 5;
 
         private const float MaxDistance = 20f;
+        private float _activeMaxDistance = MaxDistance; // LuaM
 
         public override OverlaySpace Space => OverlaySpace.WorldSpace;
         public override bool RequestScreenTexture => true;
@@ -48,6 +49,7 @@ namespace Content.Client.Singularity
                 return false;
 
             _count = 0;
+            _activeMaxDistance = MaxDistance; // LuaM
             var query = _entMan.EntityQueryEnumerator<SingularityDistortionComponent, TransformComponent>();
             while (query.MoveNext(out var uid, out var distortion, out var xform))
             {
@@ -55,10 +57,13 @@ namespace Content.Client.Singularity
                     continue;
 
                 var mapPos = _xformSystem.GetWorldPosition(uid);
+                var maxDistance = MathF.Max(distortion.MaxDistance, 1f); // LuaM
 
                 // is the distortion in range?
-                if ((mapPos - args.WorldAABB.ClosestPoint(mapPos)).LengthSquared() > MaxDistance * MaxDistance)
+                if ((mapPos - args.WorldAABB.ClosestPoint(mapPos)).LengthSquared() > maxDistance * maxDistance) // LuaM: MaxDistance > maxDistance
                     continue;
+
+                _activeMaxDistance = MathF.Max(_activeMaxDistance, maxDistance); // LuaM
 
                 // To be clear, this needs to use "inside-viewport" pixels.
                 // In other words, specifically NOT IViewportControl.WorldToScreen (which uses outer coordinates).
@@ -82,6 +87,7 @@ namespace Content.Client.Singularity
             if (ScreenTexture == null || args.Viewport.Eye == null)
                 return;
 
+            _shader?.SetParameter("maxDistance", _activeMaxDistance * EyeManager.PixelsPerMeter); // LuaM
             _shader?.SetParameter("renderScale", args.Viewport.RenderScale * args.Viewport.Eye.Scale);
             _shader?.SetParameter("count", _count);
             _shader?.SetParameter("position", _positions);
@@ -102,7 +108,7 @@ namespace Content.Client.Singularity
         {   // Mostly copypasta from the singularity shader.
             if (args.Viewport.Eye == null)
                 return;
-            var maxDistance = MaxDistance * EyeManager.PixelsPerMeter;
+            var maxDistance = _activeMaxDistance * EyeManager.PixelsPerMeter; // LuaM: MaxDistance > _activeMaxDistance
             var finalCoords = args.VisiblePosition;
 
             for (var i = 0; i < MaxCount && i < _count; i++)

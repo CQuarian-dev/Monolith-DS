@@ -16,6 +16,15 @@
                 <CheckBox Name="ParallaxLowQualityCheckBox" Text="{Loc 'ui-options-parallax-low-quality'}" />
                 <CheckBox Name="AmbientOcclusionCheckBox" Text="{Loc 'ui-options-ambient-occlusion'}" />
 
+                <!-- LuaM start -->
+                <Label Text="{Loc 'ui-options-ambient-space-section-label'}" StyleClasses="LabelKeyText"/>
+                <ui:OptionDropDown Name="DropDownAmbientSpaceQuality" Title="{Loc 'ui-options-ambient-space-label'}" />
+                <CheckBox Name="AmbientSpaceLayerLowerCheckBox" Text="{Loc 'ui-options-ambient-space-layer-lower'}" />
+                <CheckBox Name="AmbientSpaceLayerMidCheckBox" Text="{Loc 'ui-options-ambient-space-layer-mid'}" />
+                <CheckBox Name="AmbientSpaceLayerUpperCheckBox" Text="{Loc 'ui-options-ambient-space-layer-upper'}" />
+                <ui:OptionSlider Name="AmbientSpaceDensitySlider" Title="{Loc 'ui-options-ambient-space-density'}" />
+                <!-- LuaM end -->
+
                 <!-- Interface -->
                 <Label Text="{Loc 'ui-options-interface-label'}" StyleClasses="LabelKeyText"/>
                 <ui:OptionDropDown Name="DropDownUIScale" Title="{Loc 'ui-options-scale-label'}" />

@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server._Lua.SpaceHazards; // LuaM
 using Content.Server._Mono.Projectiles.TargetGuided;
 using Content.Server._Mono.Projectiles.TargetSeeking;
 using Content.Shared._Mono.Radar;
@@ -14,6 +15,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
 {
     [Dependency] private SharedTransformSystem _xform = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private NebulaEnvironmentSystem _nebulaEnvironment = default!; // LuaM
 
     // Pooled collections to avoid per-request heap churn
     private readonly List<BlipNetData> _tempBlipsCache = new();
@@ -85,6 +87,7 @@ public sealed partial class RadarBlipSystem : EntitySystem
             if (!blip.Enabled
                 || blipXform.MapID != radarMapId
                 || !NearAnySources(_xform.GetWorldPosition(blipXform), sources, blip.MaxDistance)
+                || _nebulaEnvironment.IsHiddenByVeil(blipUid, blipXform) // LuaM
             )
                 continue;
 
@@ -194,6 +197,9 @@ public sealed partial class RadarBlipSystem : EntitySystem
 
             if (!NearAnySources(hitscan.StartPosition, sources, component.MaxRange) && NearAnySources(hitscan.EndPosition, sources, component.MaxRange))
                 continue;
+
+            if (_nebulaEnvironment.IsInVeil(radarXform.MapID, hitscan.StartPosition) || _nebulaEnvironment.IsInVeil(radarXform.MapID, hitscan.EndPosition)) // LuaM
+                continue; // LuaM
 
             _tempHitscansCache.Add(new(hitscan.StartPosition, hitscan.EndPosition, hitscan.LineThickness, hitscan.RadarColor));
         }

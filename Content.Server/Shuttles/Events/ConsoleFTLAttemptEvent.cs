@@ -1,3 +1,5 @@
+using Robust.Shared.Map; // LuaM
+
 namespace Content.Server.Shuttles.Events;
 
 /// <summary>
@@ -6,4 +8,4 @@ namespace Content.Server.Shuttles.Events;
 /// <param name="Cancelled"></param>
 /// <param name="Reason"></param>
 [ByRefEvent]
-public record struct ConsoleFTLAttemptEvent(EntityUid Uid, bool Cancelled, string Reason);
+public record struct ConsoleFTLAttemptEvent(EntityUid Uid, bool Cancelled, string Reason, EntityCoordinates? Destination = null); // LuaM: + Destination

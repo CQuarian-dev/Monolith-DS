@@ -87,6 +87,13 @@ public sealed partial class ShipSteeringSystem : EntitySystem
         if (mapTarget.MapId != shipPos.MapId)
             return;
 
+        // LuaM start: follow hazard detour waypoints before the real target
+        var finalMapTarget = mapTarget;
+        AdvanceHazardWaypoints(ent.Comp, shipPos.Position, shipBody.LinearVelocity);
+        mapTarget = GetSteerMapTarget(ent.Comp, finalMapTarget, shipPos.MapId);
+        var pendingWaypoints = HasPendingWaypoints(ent.Comp);
+        // LuaM end
+
         // gather context
         var shipNorthAngle = _transform.GetWorldRotation(shipXform);
         var toTargetVec = mapTarget.Position - shipPos.Position;
@@ -96,12 +103,19 @@ public sealed partial class ShipSteeringSystem : EntitySystem
 
         var targetVel = Vector2.Zero;
         // if target doesn't have physcomp it's likely the map so keep vector as zero
-        if (ent.Comp.LeadingEnabled && _physQuery.TryComp(targetGrid ?? targetUid, out var targetBody))
+        if (!pendingWaypoints && ent.Comp.LeadingEnabled && _physQuery.TryComp(targetGrid ?? targetUid, out var targetBody)) // LuaM: + !pendingWaypoints
             targetVel = targetBody.LinearVelocity;
         var relVel = linVel - targetVel;
 
         // get the actual destination we will move to
-        var (destMapPos, inRange) = ResolveDestination(ent.Comp, mapTarget, shipPos, shipNorthAngle, toTargetVec, distance, relVel, angVel);
+        // LuaM start
+        MapCoordinates destMapPos;
+        var inRange = false;
+        if (pendingWaypoints)
+            destMapPos = mapTarget;
+        else
+            (destMapPos, inRange) = ResolveDestination(ent.Comp, mapTarget, shipPos, shipNorthAngle, toTargetVec, distance, relVel, angVel);
+        // LuaM end
 
         // ResolveDestination says we're all good
         if (ent.Comp.Status == ShipSteeringStatus.InRange)
@@ -111,7 +125,7 @@ public sealed partial class ShipSteeringSystem : EntitySystem
 
         var config = new SteeringConfig
         {
-            MaxArrivedVel = ent.Comp.InRangeMaxSpeed ?? float.PositiveInfinity,
+            MaxArrivedVel = pendingWaypoints ? float.PositiveInfinity : ent.Comp.InRangeMaxSpeed ?? float.PositiveInfinity, // LuaM: + pendingWaypoints
             BrakeThreshold = ent.Comp.BrakeThreshold,
 
             BaseEvasionTime = ent.Comp.BaseEvasionTime,
@@ -147,7 +161,7 @@ public sealed partial class ShipSteeringSystem : EntitySystem
             DestMapPos = destMapPos,
             TargetVel = targetVel,
             TargetUid = targetUid,
-            TargetEntPos = mapTarget,
+            TargetEntPos = finalMapTarget, // LuaM: mapTarget > finalMapTarget
             TargetGridUid = targetGrid,
 
             RotationCompensation = ref ent.Comp.RotationCompensation,
@@ -714,7 +728,10 @@ public sealed partial class ShipSteeringSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp, false))
             ent.Comp = AddComp<ShipSteererComponent>(ent);
 
+        var coordinatesChanged = ent.Comp.Coordinates != coordinates; // LuaM
         ent.Comp.Coordinates = coordinates;
+        if (coordinatesChanged) // LuaM
+            TryPlanHazardWaypoints(ent, ent.Comp); // LuaM
 
         return ent.Comp;
     }

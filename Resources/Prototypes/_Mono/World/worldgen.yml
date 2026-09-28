@@ -22,4 +22,25 @@
     - MonoWorldgenVeryFarT2InnerPieceful
     - MonoWorldgenVeryFarT2MiddlePieceful
     - MonoWorldgenVeryFarT2FarPieceful
+    - LuaSectorAsteroidCluster
     # LuaM-end
+  # LuaM start
+  - type: AmbientSpaceFieldPlacerController
+    minCount: 80
+    maxCount: 120
+    minDistance: 0
+    minStationClearance: 3500
+  - type: SectorCelestialPlacerController
+    spawnDistance: 12000
+    maxSpawnDistance: 15000
+  - type: SectorAsteroidClusterController
+    minCount: 2
+    maxCount: 3
+    minEmptyCount: 0
+    maxEmptyCount: 0
+    minDistance: 5000
+    maxDistance: 10000
+  - type: SectorBackgroundPlanetPlacerController
+    minCount: 0
+    maxCount: 0
+  # LuaM end

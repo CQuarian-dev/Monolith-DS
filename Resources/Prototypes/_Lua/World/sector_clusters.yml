@@ -1,0 +1,44 @@
+- type: spaceBiome
+  id: LuaSectorAsteroidCluster
+  parent: NFBiomeBase
+  priority: 60
+  sectorCluster: true
+  noiseRanges: {}
+  chunkComponents:
+  - type: DebrisFeaturePlacerController
+    densityNoiseChannel: DensityHigh
+  - type: SimpleDebrisSelector
+    debrisTable:
+    - id: NFWreckDebrisSmall
+      prob: 5
+      orGroup: wreck
+    - id: NFWreckDebrisLarge
+      prob: 2
+      orGroup: wreck
+    - id: NFWreckDebrisExtraLarge
+      prob: 2
+      orGroup: wreck
+    - id: NFWreckDebrisHuge
+      prob: 3
+      orGroup: wreck
+    - id: NFWreckDebrisExtraHuge
+      prob: 4
+      orGroup: wreck
+    - id: NFWreckDebrisEnormous
+      prob: 3
+      orGroup: wreck
+    - id: NFWreckDebrisBrassLarge
+      prob: 0.05
+      orGroup: wreck
+    - id: NFWreckDebrisBrassExtraLarge
+      prob: 0.05
+      orGroup: wreck
+  - type: NoiseDrivenDebrisSelector
+    noiseChannel: Wreck
+    debrisTable:
+    - id: NFAsteroidDebrisExtraEnormous
+      prob: 0.3
+      orGroup: debris
+    - id: NFAsteroidScrapDebrisExtraGigantic
+      prob: 0.7
+      orGroup: debris

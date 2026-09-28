@@ -112,6 +112,9 @@ public sealed partial class BiomePrototype : IPrototype, IInheritingPrototype
     /// </summary>
     [DataField("droneTargetRange")]
     public float DroneTargetRange = 1400f;
+
+    [DataField]
+    public bool SectorCluster;
     // LuaM-end
 
     //TODO: Get someone to make this a method on componentregistry that does it Correctly.

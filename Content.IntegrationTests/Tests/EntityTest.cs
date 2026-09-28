@@ -42,6 +42,8 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !pair.IsTestPrototype(p))
                     .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
                     .Where(p => !p.Components.ContainsKey("RoomFill")) // This comp can delete all entities, and spawn others
+                    .Where(p => !p.Components.ContainsKey("SpaceHazardActivity")) // LuaM: star / BH / nebula
+                    .Where(p => !p.Components.ContainsKey("SectorBackgroundPlanet")) // LuaM: planet
                     .Where(p => p.Categories.All(x => x.ID != SpawnerCategory)) // mono
                     .Select(p => p.ID)
                     .ToList();
@@ -106,6 +108,8 @@ namespace Content.IntegrationTests.Tests
                     .Where(p => !pair.IsTestPrototype(p))
                     .Where(p => !p.Components.ContainsKey("MapGrid")) // This will smash stuff otherwise.
                     .Where(p => !p.Components.ContainsKey("RoomFill")) // This comp can delete all entities, and spawn others
+                    .Where(p => !p.Components.ContainsKey("SpaceHazardActivity")) // LuaM: star / BH / nebula
+                    .Where(p => !p.Components.ContainsKey("SectorBackgroundPlanet")) // LuaM: planet
                     .Where(p => !p.Components.ContainsKey("GridSpawner")) // Mono - We shouldn't spawn grids.
                     .Where(p => p.Categories.All(x => x.ID != SpawnerCategory)) // mono
                     .Select(p => p.ID)
@@ -250,6 +254,8 @@ namespace Content.IntegrationTests.Tests
                 "TimedDespawn",
                 "TransferMindOnDespawn", // Frontier
                 "BluespaceErrorRule", // Frontier
+                "SpaceHazardActivity", // LuaM: star / BH / nebula
+                "SectorBackgroundPlanet", // LuaM: planet
 
                 // makes an announcement on mapInit.
                 "AnnounceOnSpawn",

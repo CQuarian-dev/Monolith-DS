@@ -437,6 +437,8 @@ public sealed partial class MapScreen : BoxContainer
                 _pendingMapObjects.Add((mapComp.MapId, beacon));
             }
 
+            AddSectorLandmarks(mapComp.MapId); // LuaM
+
             HyperspaceDestinations.AddChild(mapButton);
 
             // Zoom in to our map
