@@ -100,7 +100,7 @@
     - id: TechDiskTSFAnnie
     - id: TechDiskEnergyWeapons
     - id: TechDiskBulldog
-    - id: TechDiskHristov
+    # - id: TechDiskHristov # LuaM: Hristov, Shenzhen and Hunter-101 disabled, their ammo stays
     - id: SpawnLootTechDisksT3Fracture
     - id: TechDiskUniversalShipAmmoAdvanced
 # LuaM-start:
@@ -221,3 +221,5 @@
     - id: TechDiskFtl
     - id: TechDiskTranslationPreFracture
     - id: TechDiskDataFarm # LuaM
+    - id: TechDiskSurgicalGloves # LuaM
+    - id: TechDiskModsuitStorageBluespace # LuaM

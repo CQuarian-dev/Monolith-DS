@@ -38,6 +38,7 @@ public abstract partial class CESharedZLevelsSystem
                 !_physicsQuery.TryComp(uid, out var physics))
             {
                 _activeBodies.RemoveAt(i);
+                _activeBodiesSet.Remove(uid); // LuaM
                 continue;
             }
 
@@ -57,6 +58,7 @@ public abstract partial class CESharedZLevelsSystem
                 // WOLFGATE END
 
                 _activeBodies.RemoveAt(i);
+                _activeBodiesSet.Remove(uid); // LuaM
                 continue;
             }
 

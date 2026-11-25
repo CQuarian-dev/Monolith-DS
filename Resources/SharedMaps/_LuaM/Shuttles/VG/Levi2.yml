@@ -13688,7 +13688,7 @@ entities:
     - type: Transform
       pos: 1.5,19.5
       parent: 1
-- proto: MachineThermobath
+- proto: ChemistryHotplate
   entities:
   - uid: 2063
     components:
@@ -20243,7 +20243,7 @@ entities:
     - type: Transform
       pos: -12.5,35.5
       parent: 1
-- proto: SMESAdvanced
+- proto: SMESIndustrial
   entities:
   - uid: 3165
     components:

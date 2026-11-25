@@ -1,3 +1,4 @@
+using Content.Shared.Clothing.Components; // LuaM
 using Content.Shared.Hands; // LuaM
 using Content.Shared.IdentityManagement;
 using Content.Shared.Lube;
@@ -36,7 +37,8 @@ public sealed partial class LubedSystem : EntitySystem
         if (args.Cancelled)
             return;
 
-        if (component.SlipsLeft <= 0)
+        // LuaM: attached clothing must always go back into its suit
+        if (component.SlipsLeft <= 0 || HasComp<AttachedClothingComponent>(uid))
         {
             RemComp<LubedComponent>(uid);
             _nameMod.RefreshNameModifiers(uid);

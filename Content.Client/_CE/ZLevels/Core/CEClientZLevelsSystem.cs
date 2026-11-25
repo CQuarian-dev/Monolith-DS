@@ -107,7 +107,8 @@ internal sealed partial class CEClientZLevelsPreAnimSystem : EntitySystem
             // WOLFGATE END
 
             var localPosition = zPhys.LocalPosition;
-            _sprite.SetOffset((uid, sprite), zPhys.SpriteOffsetDefault);
+            if (sprite.Offset != zPhys.SpriteOffsetDefault) // LuaM: SetOffset rebuilds the sprite matrix even for the same value
+                _sprite.SetOffset((uid, sprite), zPhys.SpriteOffsetDefault);
 
             // WOLFGATE(Species) START: only touch the draw depth when the entity takes off or lands
             // Writing it every frame silently undid every other client-side depth change (sneaking under tables,
@@ -139,7 +140,8 @@ internal sealed partial class CEClientZLevelsPreAnimSystem : EntitySystem
             if (!_zPhysQuery.TryComp(parent, out var parentZPhys))
                 continue;
             var zOffset = new Vector2(0, parentZPhys.LocalPosition * CESharedZLevelsSystem.ZLevelOffset);
-            _sprite.SetOffset((uid, sprite), zOffset);
+            if (sprite.Offset != zOffset) // LuaM
+                _sprite.SetOffset((uid, sprite), zOffset);
         }
     }
 }
