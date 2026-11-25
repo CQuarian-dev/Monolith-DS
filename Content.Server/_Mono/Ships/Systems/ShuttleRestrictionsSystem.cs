@@ -91,7 +91,7 @@ public sealed partial class ShuttleRestrictionsSystem : EntitySystem
         var query = EntityQueryEnumerator<VesselComponent>();
         var shuttleCount = 0;
 
-        if (limitActive <= 0)
+        if (limitActive < 0) // LuaM
             return;
 
         while (query.MoveNext(out var uid, out var targetVessel))
@@ -133,7 +133,7 @@ public sealed partial class ShuttleRestrictionsSystem : EntitySystem
                 continue;
 
             var limitActive = _hyperwar.HyperwarActive ? proto.HyperwarLimitActive : proto.LimitActive;
-            if (limitActive <= 0)
+            if (limitActive < 0) // LuaM
                 continue;
 
             if (!TryComp<ShipActivityComponent>(uid, out var inactivity) || inactivity.InactivePastThreshold)

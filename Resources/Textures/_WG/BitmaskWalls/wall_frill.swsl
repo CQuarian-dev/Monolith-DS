@@ -1,0 +1,7 @@
+uniform sampler2D LIGHT_TEXTURE;
+uniform highp vec2 wallOffset;
+
+void fragment() {
+    COLOR = zTexture(UV);
+    lightSample = texture2D(LIGHT_TEXTURE, Pos + wallOffset).rgb;
+}

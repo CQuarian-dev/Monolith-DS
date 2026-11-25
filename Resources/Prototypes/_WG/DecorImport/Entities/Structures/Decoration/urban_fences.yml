@@ -1,0 +1,1914 @@
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BaseUrbanFence
+  components:
+  - type: Sprite
+    drawdepth: WallTops
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Transform
+    anchored: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Climbable
+    delay: 5.0
+    startClimbSound:
+      collection: FenceRattle
+    finishClimbSound:
+      collection: FenceRattle
+  - type: Damageable
+    damageModifierSet: FlimsyMetallic
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFence
+  id: BaseUrbanFenceSmooth
+  components:
+  - type: Sprite
+    noRot: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFence
+  id: BaseUrbanFencePiece
+  components:
+  - type: Sprite
+    noRot: false
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFence
+  id: BaseUrbanFenceSmoothWood
+  components:
+  - type: Sprite
+    noRot: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFence
+  id: BaseUrbanFenceSmoothStone
+  components:
+  - type: Sprite
+    noRot: false
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  id: BaseUrbanFenceHoleMedium
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - MidImpassable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFence
+  id: BaseUrbanFenceGate
+  components:
+  - type: Sprite
+    noRot: false
+  - type: Appearance
+  - type: AnimationPlayer
+  - type: Rotatable
+  - type: Door
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+    occludes: false
+    changeAirtight: false
+    canPry: false
+    canCrush: false
+    bumpOpen: false
+    clickOpen: true
+  - type: IconSmooth
+    key: airlocks
+    mode: NoSprite
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BaseUrbanRailing
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+  - type: Physics
+    bodyType: Static
+  - type: InteractionOutline
+  - type: Repairable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: FlimsyMetallic
+  - type: Climbable
+  - type: RCDDeconstructable
+    cost: 2
+    delay: 2
+    fx: EffectRCDDeconstruct2
+  - type: ShipRepairable
+    repairTime: 1
+    repairCost: 1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanRailing
+  id: BaseUrbanRailingCorner
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.25,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanRailing
+  id: BaseUrbanRailingStub
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.25,-0.49,0.49,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BaseUrbanRailingWood
+  components:
+  - type: Sprite
+    drawdepth: SmallObjects
+  - type: Physics
+    bodyType: Static
+  - type: InteractionOutline
+  - type: Climbable
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanRailingWood
+  id: BaseUrbanRailingCornerWood
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+      fix2:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "0.25,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseUrbanPropRotatable
+  components:
+  - type: Sprite
+    noRot: false
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseUrbanPropNoCollideRotatable
+  components:
+  - type: Sprite
+    noRot: false
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseUrbanBlocker
+  components:
+  - type: Sprite
+    noRot: false
+    snapCardinals: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageModifierSet: Metallic
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanBlocker
+  id: BaseUrbanBlockerSeeThrough
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFencePiece
+  id: BaseCoyoteFence
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCoyoteFence
+  id: CoyoteFenceStraight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: straight
+  - type: Construction
+    graph: DecorCutCoyoteFence
+    node: intact
+    deconstructionTarget: null
+
+- type: entity
+  parent: [ BaseUrbanFenceHoleMedium, CoyoteFenceStraight ]
+  id: CoyoteFenceHoleMedium
+  suffix: Medium hole
+  components:
+  - type: Sprite
+    state: straight_cut2
+  - type: Construction
+    node: medium
+
+- type: entity
+  parent: CoyoteFenceStraight
+  id: CoyoteFenceHoleLarge
+  suffix: Large hole
+  components:
+  - type: Construction
+    node: large
+  - type: Sprite
+    state: straight_cut3
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseCoyoteFence
+  id: CoyoteFenceEnd
+  suffix: End
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: end
+
+- type: entity
+  parent: CoyoteFenceEnd
+  id: CoyoteFencePost
+  suffix: Post
+  components:
+  - type: Sprite
+    state: post
+
+- type: entity
+  parent: CoyoteFenceEnd
+  id: CoyoteFenceCorner
+  suffix: Corner
+  components:
+  - type: Sprite
+    state: corner
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: CoyoteFenceGate
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    layers:
+    - state: fence
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: fenceopen
+    closedSpriteState: fence
+    openingSpriteState: fenceopening
+    closingSpriteState: fenceclosing
+    openTimeOne: 0.3
+    openTimeTwo: 0.4
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.5
+    openingAnimationTime: 0.7
+    closingAnimationTime: 0.7
+
+- type: entity
+  parent: CoyoteFenceGate
+  id: CoyoteFenceGateWood
+  components:
+  - type: Sprite
+    layers:
+    - state: fence_wood
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: fence_woodopen
+    closedSpriteState: fence_wood
+    openingSpriteState: fence_woodopening
+    closingSpriteState: fence_woodclosing
+
+- type: entity
+  parent: BaseUrbanRailingWood
+  id: CoyoteRailingWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: straight_wood
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: straight_wood
+
+- type: entity
+  parent: BaseUrbanPropNoCollideRotatable
+  id: CoyotePostWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: post_wood
+
+- type: entity
+  parent: CoyotePostWood
+  id: CoyotePostWoodFlipped
+  suffix: Flipped
+  components:
+  - type: Sprite
+    state: post_wood_flipped
+
+- type: entity
+  parent: BaseUrbanPost
+  id: CoyotePoleWood
+  components:
+  - type: Sprite
+    noRot: false
+    snapCardinals: true
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: pole_wood
+
+- type: entity
+  parent: BaseUrbanPost
+  id: CoyoteDancePole
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: pole_b
+
+- type: entity
+  parent: BaseUrbanPost
+  id: CoyoteDancePoleTop
+  suffix: Top half, place north of the pole
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: pole_t
+    drawdepth: Overdoors
+
+- type: entity
+  parent: BaseUrbanRailing
+  id: CoyoteHandrailBlue
+  suffix: Blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_b
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_b
+
+- type: entity
+  parent: BaseUrbanRailingCorner
+  id: CoyoteHandrailBlueCorner
+  suffix: Blue, corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_b_corner
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_b_corner
+
+- type: entity
+  parent: BaseUrbanRailingStub
+  id: CoyoteHandrailBlueEnd
+  suffix: Blue, end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: handrail_b_end
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: handrail_b_end
+
+- type: entity
+  parent: CoyoteHandrailBlueEnd
+  id: CoyoteHandrailBlueEndFlipped
+  suffix: Blue, end, flipped
+  components:
+  - type: Sprite
+    state: handrail_b_end_flipped
+  - type: Icon
+    state: handrail_b_end_flipped
+
+- type: entity
+  parent: BaseUrbanRailing
+  id: CoyoteHandrailYellow
+  suffix: Yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_y
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_y
+
+- type: entity
+  parent: BaseUrbanRailingCorner
+  id: CoyoteHandrailYellowCorner
+  suffix: Yellow, corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_y_corner
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/coyote_railings.rsi
+    state: handrail_y_corner
+
+- type: entity
+  parent: BaseUrbanPropNoCollideRotatable
+  id: CoyoteHandrailYellowEnd
+  suffix: Yellow, end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_coyote.rsi
+    state: handrail_y_end
+
+- type: entity
+  parent: CoyoteHandrailYellowEnd
+  id: CoyoteHandrailYellowEndFlipped
+  suffix: Yellow, end, flipped
+  components:
+  - type: Sprite
+    state: handrail_y_end_flipped
+
+- type: entity
+  parent: BaseUrbanRailingWood
+  id: DarkPackWoodenRailing
+  suffix: Posts
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/darkpack_wooden_railing.rsi
+    state: wooden_railing
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/darkpack_wooden_railing.rsi
+    state: wooden_railing
+
+- type: entity
+  parent: BaseUrbanRailingCornerWood
+  id: DarkPackWoodenRailingCorner
+  suffix: Posts, corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/darkpack_wooden_railing.rsi
+    state: wooden_railing_corner
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/darkpack_wooden_railing.rsi
+    state: wooden_railing_corner
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackWoodenRailingEnd
+  suffix: Posts, end
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: wooden_railing_corner
+
+- type: entity
+  parent: DarkPackWoodenRailingEnd
+  id: DarkPackWoodenRailingEndFlipped
+  suffix: Posts, end, flipped
+  components:
+  - type: Sprite
+    state: wooden_railing_corner_flipped
+
+- type: entity
+  parent: BaseUrbanRailing
+  id: AuroraRodRailing
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/aurora_rod_railing.rsi
+    state: rod_railing
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/aurora_rod_railing.rsi
+    state: rod_railing
+
+- type: entity
+  parent: BaseUrbanRailingCorner
+  id: AuroraRodRailingCorner
+  suffix: Corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/aurora_rod_railing.rsi
+    state: rod_railing_corner
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/aurora_rod_railing.rsi
+    state: rod_railing_corner
+
+- type: entity
+  parent: BaseUrbanRailing
+  id: AuroraGuardRail
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/road_edges_aurora.rsi
+    state: guard
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/road_edges_aurora.rsi
+    state: guard
+
+- type: entity
+  parent: AuroraGuardRail
+  id: AuroraGuardRailCorner
+  suffix: Corner
+  components:
+  - type: Sprite
+    state: guard_corner
+  - type: Icon
+    state: guard_corner
+
+- type: entity
+  parent: BaseStructure
+  id: AuroraRopeRailing
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/wood_aurora.rsi
+    state: rope-railing
+    drawdepth: SmallObjects
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,-0.25"
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanPropNoCollideRotatable
+  id: AuroraRopePost
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/wood_aurora.rsi
+    state: post
+    drawdepth: SmallObjects
+
+- type: entity
+  parent: [ BaseUrbanPropRotatable, BaseUrbanBlockerSeeThrough ]
+  id: DarkPackRoadblock
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barriers_darkpack.rsi
+    state: roadblock
+    snapCardinals: false # LuaM: 4-directional state; a seethrough blocker parent snaps it, which the sprite bounds assert on
+    noRot: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: DarkPackRoadblock
+  id: DarkPackJerseyBarrier
+  components:
+  - type: Sprite
+    state: barrier
+
+- type: entity
+  parent: BaseUrbanFencePiece
+  id: DarkPackIronFence
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fence_darkpack.rsi
+    state: fence
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: DarkPackIronFence
+  id: DarkPackIronFenceCorner
+  suffix: Corner
+  components:
+  - type: Sprite
+    state: fence_corner
+
+- type: entity
+  parent: DarkPackIronFence
+  id: DarkPackIronFenceSnow
+  suffix: Snow
+  components:
+  - type: Sprite
+    state: fence-snow
+
+- type: entity
+  parent: DarkPackIronFence
+  id: DarkPackIronFenceCornerSnow
+  suffix: Corner, snow
+  components:
+  - type: Sprite
+    state: fence_corner-snow
+
+- type: entity
+  abstract: true
+  parent: BaseBarricade
+  id: BaseUrbanWoodenBarricade
+  components:
+  - type: Sprite
+    noRot: false
+    snapCardinals: true
+  - type: Tag
+    tags:
+    - Wooden
+  - type: Flammable
+    fireSpread: true
+    damage:
+      types:
+        Heat: 3
+  - type: Appearance
+  - type: FireVisuals
+    sprite: Effects/fire.rsi
+    normalState: 1
+  - type: Damageable
+    damageModifierSet: Wood
+
+- type: entity
+  parent: BaseUrbanWoodenBarricade
+  id: DarkPackWoodenBarricade
+  suffix: Boards
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: woodenbarricade
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanWoodenBarricade
+  id: CoyoteWoodenBarricadeStrong
+  suffix: Strong
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: woodenbarricade
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: CoyoteWoodenBarricadeStrong
+  id: CoyoteWoodenBarricadeStrongSnow
+  suffix: Strong, snow
+  components:
+  - type: Sprite
+    state: woodenbarricade-snow
+
+- type: entity
+  parent: BaseUrbanWoodenBarricade
+  id: CoyoteWoodenBarricadeCrude
+  suffix: Crude
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: woodenbarricade-old
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanWoodenBarricade
+  id: CoyoteWoodenBarricadeCrudeSnow
+  suffix: Crude, snow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: woodenbarricade-snow-old
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 0
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanBlocker
+  id: CoyoteBoardedDoorway
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: boarded
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanBlocker
+  id: CoyoteLockedDoorway
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: locked
+    snapCardinals: false
+  - type: Occluder
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanBlocker
+  id: CoyoteJammedDoorway
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: jammed
+    snapCardinals: false
+  - type: Climbable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 800
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: [ BaseUrbanPropRotatable, BaseUrbanBlockerSeeThrough ]
+  id: CoyoteWindowBars
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: bars
+    noRot: false
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 1
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: CoyoteWindowBars
+  id: CoyoteWindowBarsFramed
+  suffix: Framed
+  components:
+  - type: Sprite
+    state: barswindow
+
+- type: entity
+  parent: BaseUrbanBlockerSeeThrough
+  id: CoyoteTankTrap
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: tanktrap
+  - type: Climbable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructure
+  id: CoyoteBarbedWire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: barbed
+    drawdepth: Objects
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        layer:
+        - MidImpassable
+  - type: StepTrigger
+    intersectRatio: 0.2
+  - type: TriggerOnStepTrigger
+  - type: DamageUserOnTrigger
+    damage:
+      types:
+        Piercing: 25
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: CoyoteBarbedWire
+  id: CoyoteBarbedWireEnd
+  suffix: End
+  components:
+  - type: Sprite
+    state: barbed_end
+
+- type: entity
+  parent: BaseUrbanPropNoCollideRotatable
+  id: CoyoteRazorWire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barricades_coyote.rsi
+    state: barbed_single
+    drawdepth: Overdoors
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BaseShiptestConcreteBarricade
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/shiptest_concrete_barricade.rsi
+    drawdepth: Objects
+    noRot: false
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+  - type: Climbable
+  - type: Damageable
+    damageModifierSet: StructuralMetallic
+
+- type: entity
+  parent: BaseShiptestConcreteBarricade
+  id: ShiptestConcreteBarricade
+  components:
+  - type: Sprite
+    state: concrete_0
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseShiptestConcreteBarricade
+  id: ShiptestConcreteBarricadeChipped
+  suffix: Chipped
+  components:
+  - type: Sprite
+    state: concrete_1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 375
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseShiptestConcreteBarricade
+  id: ShiptestConcreteBarricadeCracked
+  suffix: Cracked
+  components:
+  - type: Sprite
+    state: concrete_2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseShiptestConcreteBarricade
+  id: ShiptestConcreteBarricadeCrumbling
+  suffix: Crumbling
+  components:
+  - type: Sprite
+    state: concrete_3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/break_stone.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanFenceSmoothStone
+  id: NebulaFenceBrick
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/nebula_fence_brick.rsi
+    state: fence0
+  - type: IconSmooth
+    key: NebulaFenceBrick
+    base: fence
+    mode: CardinalFlags
+  - type: Construction
+    graph: DecorCutNebulaFenceBrick
+    node: intact
+    deconstructionTarget: null
+
+- type: entity
+  parent: NebulaFenceBrick
+  id: NebulaFenceBrickPost
+  suffix: Post
+  components:
+  - type: Construction
+    node: post
+  - type: Sprite
+    state: post0
+  - type: IconSmooth
+    base: post
+
+- type: entity
+  parent: [ BaseUrbanFenceHoleMedium, NebulaFenceBrick ]
+  id: NebulaFenceBrickHoleMedium
+  suffix: Medium hole
+  components:
+  - type: Construction
+    node: medium
+  - type: Sprite
+    state: cut1_0
+  - type: IconSmooth
+    base: cut1_
+
+- type: entity
+  parent: NebulaFenceBrick
+  id: NebulaFenceBrickHoleLarge
+  suffix: Large hole
+  components:
+  - type: Construction
+    node: large
+  - type: Sprite
+    state: cut2_0
+  - type: IconSmooth
+    base: cut2_
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: NebulaFenceBrickGate
+  suffix: Brick
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/brick_nebula_fence.rsi
+    layers:
+    - state: door-closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: door-opened
+    closedSpriteState: door-closed
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openingAnimationTime: 0
+    closingAnimationTime: 0
+  - type: IconSmooth
+    key: NebulaFenceBrick
+
+- type: entity
+  parent: BaseUrbanFenceSmooth
+  id: NebulaFenceChain
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/nebula_fence_chain.rsi
+    state: fence0
+  - type: IconSmooth
+    key: NebulaFenceChain
+    base: fence
+    mode: CardinalFlags
+  - type: Construction
+    graph: DecorCutNebulaFenceChain
+    node: intact
+    deconstructionTarget: null
+
+- type: entity
+  parent: NebulaFenceChain
+  id: NebulaFenceChainPost
+  suffix: Post
+  components:
+  - type: Construction
+    node: post
+  - type: Sprite
+    state: post0
+  - type: IconSmooth
+    base: post
+
+- type: entity
+  parent: [ BaseUrbanFenceHoleMedium, NebulaFenceChain ]
+  id: NebulaFenceChainHoleMedium
+  suffix: Medium hole
+  components:
+  - type: Construction
+    node: medium
+  - type: Sprite
+    state: cut1_0
+  - type: IconSmooth
+    base: cut1_
+
+- type: entity
+  parent: NebulaFenceChain
+  id: NebulaFenceChainHoleLarge
+  suffix: Large hole
+  components:
+  - type: Construction
+    node: large
+  - type: Sprite
+    state: cut2_0
+  - type: IconSmooth
+    base: cut2_
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: NebulaFenceChainGate
+  suffix: Chain
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/chain_nebula_fence.rsi
+    layers:
+    - state: door-closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: door-opened
+    closedSpriteState: door-closed
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openingAnimationTime: 0
+    closingAnimationTime: 0
+  - type: IconSmooth
+    key: NebulaFenceChain
+
+- type: entity
+  parent: BaseUrbanFenceSmoothWood
+  id: NebulaFencePalisade
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/nebula_fence_palisade.rsi
+    state: fence0
+  - type: IconSmooth
+    key: NebulaFencePalisade
+    base: fence
+    mode: CardinalFlags
+  - type: Construction
+    graph: DecorCutNebulaFencePalisade
+    node: intact
+    deconstructionTarget: null
+
+- type: entity
+  parent: NebulaFencePalisade
+  id: NebulaFencePalisadePost
+  suffix: Post
+  components:
+  - type: Construction
+    node: post
+  - type: Sprite
+    state: post0
+  - type: IconSmooth
+    base: post
+
+- type: entity
+  parent: [ BaseUrbanFenceHoleMedium, NebulaFencePalisade ]
+  id: NebulaFencePalisadeHoleMedium
+  suffix: Medium hole
+  components:
+  - type: Construction
+    node: medium
+  - type: Sprite
+    state: cut1_0
+  - type: IconSmooth
+    base: cut1_
+
+- type: entity
+  parent: NebulaFencePalisade
+  id: NebulaFencePalisadeHoleLarge
+  suffix: Large hole
+  components:
+  - type: Construction
+    node: large
+  - type: Sprite
+    state: cut2_0
+  - type: IconSmooth
+    base: cut2_
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: NebulaFencePalisadeGate
+  suffix: Palisade
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/palisade_nebula_fence.rsi
+    layers:
+    - state: door-closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: door-opened
+    closedSpriteState: door-closed
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openingAnimationTime: 0
+    closingAnimationTime: 0
+  - type: IconSmooth
+    key: NebulaFencePalisade
+
+- type: entity
+  parent: BaseUrbanFenceSmoothWood
+  id: NebulaFencePlank
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/nebula_fence_plank.rsi
+    state: fence0
+  - type: IconSmooth
+    key: NebulaFencePlank
+    base: fence
+    mode: CardinalFlags
+  - type: Construction
+    graph: DecorCutNebulaFencePlank
+    node: intact
+    deconstructionTarget: null
+
+- type: entity
+  parent: NebulaFencePlank
+  id: NebulaFencePlankPost
+  suffix: Post
+  components:
+  - type: Construction
+    node: post
+  - type: Sprite
+    state: post0
+  - type: IconSmooth
+    base: post
+
+- type: entity
+  parent: [ BaseUrbanFenceHoleMedium, NebulaFencePlank ]
+  id: NebulaFencePlankHoleMedium
+  suffix: Medium hole
+  components:
+  - type: Construction
+    node: medium
+  - type: Sprite
+    state: cut1_0
+  - type: IconSmooth
+    base: cut1_
+
+- type: entity
+  parent: NebulaFencePlank
+  id: NebulaFencePlankHoleLarge
+  suffix: Large hole
+  components:
+  - type: Construction
+    node: large
+  - type: Sprite
+    state: cut2_0
+  - type: IconSmooth
+    base: cut2_
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: NebulaFencePlankGate
+  suffix: Plank
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/plank_nebula_fence.rsi
+    layers:
+    - state: door-closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: door-opened
+    closedSpriteState: door-closed
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openingAnimationTime: 0
+    closingAnimationTime: 0
+  - type: IconSmooth
+    key: NebulaFencePlank
+
+- type: entity
+  parent: BaseUrbanFenceSmoothWood
+  id: NebulaFenceStick
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/nebula_fence_stick.rsi
+    state: fence0
+  - type: IconSmooth
+    key: NebulaFenceStick
+    base: fence
+    mode: CardinalFlags
+  - type: Construction
+    graph: DecorCutNebulaFenceStick
+    node: intact
+    deconstructionTarget: null
+
+- type: entity
+  parent: NebulaFenceStick
+  id: NebulaFenceStickPost
+  suffix: Post
+  components:
+  - type: Construction
+    node: post
+  - type: Sprite
+    state: post0
+  - type: IconSmooth
+    base: post
+
+- type: entity
+  parent: [ BaseUrbanFenceHoleMedium, NebulaFenceStick ]
+  id: NebulaFenceStickHoleMedium
+  suffix: Medium hole
+  components:
+  - type: Construction
+    node: medium
+  - type: Sprite
+    state: cut1_0
+  - type: IconSmooth
+    base: cut1_
+
+- type: entity
+  parent: NebulaFenceStick
+  id: NebulaFenceStickHoleLarge
+  suffix: Large hole
+  components:
+  - type: Construction
+    node: large
+  - type: Sprite
+    state: cut2_0
+  - type: IconSmooth
+    base: cut2_
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: NebulaFenceStickGate
+  suffix: Stick
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/stick_nebula_fence.rsi
+    layers:
+    - state: door-closed
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: door-opened
+    closedSpriteState: door-closed
+    closeTimeOne: 0
+    closeTimeTwo: 0
+    openTimeOne: 0
+    openTimeTwo: 0
+    openingAnimationTime: 0
+    closingAnimationTime: 0
+  - type: IconSmooth
+    key: NebulaFenceStick
+
+- type: entity
+  parent: CMFence
+  id: CMFenceSlim
+  suffix: Slim
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fence_alt_cm.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Items/wirecutter.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMFenceSlimBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: RMCFenceBroken
+  id: CMFenceSlimBroken
+  suffix: Slim
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fence_alt_cm.rsi
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CMFenceSlimWreckage
+  suffix: Slim
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/fence_alt_cm.rsi
+    state: special_brokenfence1
+
+- type: entity
+  parent: CMFenceSlimWreckage
+  id: CMFenceSlimWreckage2
+  components:
+  - type: Sprite
+    state: special_brokenfence2
+
+- type: entity
+  parent: CMFence
+  id: CMFenceSlimStriped
+  suffix: Slim, warning stripes
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/electric_fence_alt_cm.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Items/wirecutter.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMFenceSlimStripedBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: RMCFenceBroken
+  id: CMFenceSlimStripedBroken
+  suffix: Slim, warning stripes
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/electric_fence_alt_cm.rsi
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CMFenceSlimStripedWreckage
+  suffix: Slim, warning stripes
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/electric_fence_alt_cm.rsi
+    state: special_brokenfence1
+
+- type: entity
+  parent: CMFenceSlimStripedWreckage
+  id: CMFenceSlimStripedWreckage2
+  components:
+  - type: Sprite
+    state: special_brokenfence2
+
+- type: entity
+  parent: CMFence
+  id: CMFenceOvergrownDark
+  suffix: Dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/overgrown_dark_fence_cm.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Items/wirecutter.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMFenceOvergrownDarkBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: RMCFenceBroken
+  id: CMFenceOvergrownDarkBroken
+  suffix: Dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/overgrown_dark_fence_cm.rsi
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CMFenceOvergrownDarkWreckage
+  suffix: Dark
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/overgrown_dark_fence_cm.rsi
+    state: special_brokenfence1
+
+- type: entity
+  parent: CMFenceOvergrownDarkWreckage
+  id: CMFenceOvergrownDarkWreckage2
+  components:
+  - type: Sprite
+    state: special_brokenfence2
+
+- type: entity
+  parent: CMFence
+  id: CMFenceOvergrownStriped
+  suffix: Warning stripes
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/overgrown_electric_fence_cm.rsi
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Items/wirecutter.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMFenceOvergrownStripedBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: RMCFenceBroken
+  id: CMFenceOvergrownStripedBroken
+  suffix: Warning stripes
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/overgrown_electric_fence_cm.rsi
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CMFenceOvergrownStripedWreckage
+  suffix: Warning stripes
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/overgrown_electric_fence_cm.rsi
+    state: special_brokenfence1
+
+- type: entity
+  parent: CMFenceOvergrownStripedWreckage
+  id: CMFenceOvergrownStripedWreckage2
+  components:
+  - type: Sprite
+    state: special_brokenfence2
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFencePiece
+  id: BaseCoyoteCivFence
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fences_civ_coyote.rsi
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Tag
+    tags:
+    - Wooden
+
+- type: entity
+  parent: BaseCoyoteCivFence
+  id: CoyoteFenceWooden
+  components:
+  - type: Sprite
+    state: fence
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCoyoteCivFence
+  id: CoyoteFencePicket
+  components:
+  - type: Sprite
+    state: picket
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

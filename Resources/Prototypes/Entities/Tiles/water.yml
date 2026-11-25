@@ -177,3 +177,5 @@
     fishDefaultTimer: 25.0
     fishTimerVariety: 15.0
   # LuaM-end
+  # WOLFGATE(GroundCover): lakes and ponds freeze over in cold air
+  - type: WGFreezableWater

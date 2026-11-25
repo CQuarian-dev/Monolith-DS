@@ -13,7 +13,7 @@ using Robust.Server.GameObjects;
 namespace Content.Server._LuaM.NetTraffic;
 
 // -- Движок шлёт сохранённое UI-состояние всем, кто видит сущность, даже при закрытом окне; держим его только пока окно открыто.
-public sealed class UiStateTrimSystem : EntitySystem
+public sealed partial class UiStateTrimSystem : EntitySystem
 {
     [Dependency] private UserInterfaceSystem _ui = default!;
     [Dependency] private GasCanisterSystem _canister = default!;

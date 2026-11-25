@@ -1,0 +1,113 @@
+- type: constructionGraph
+  id: DecorBuildDarkPackDresser
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 10
+        doAfter: 2
+  - node: built
+    entity: DarkPackDresser
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 10
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNovaDresser
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 10
+        doAfter: 2
+  - node: built
+    entity: NovaDresser
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 10
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildParaDresser
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 30
+        doAfter: 2
+  - node: built
+    entity: ParaDresser
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 30
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestDresser
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 10
+        doAfter: 2
+  - node: built
+    entity: ShiptestDresser
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 10
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildParaDresserWardrobe
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: ParaDresserWardrobe
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

@@ -1,0 +1,24 @@
+- files: ["Generic_Hit_Heavy_1.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d."
+  source: "https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/sound/impact_sounds/Generic_Hit_Heavy_1.ogg"
+
+- files: ["exlow.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d."
+  source: "https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/sound/effects/exlow.ogg"
+
+- files: ["door_open.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d."
+  source: "https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/sound/machines/door_open.ogg"
+
+- files: ["door_close.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d."
+  source: "https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/sound/machines/door_close.ogg"
+
+- files: ["Slimy_Splat_1.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d."
+  source: "https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/sound/impact_sounds/Slimy_Splat_1.ogg"

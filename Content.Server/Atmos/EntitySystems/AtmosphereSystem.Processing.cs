@@ -148,7 +148,7 @@ namespace Content.Server.Atmos.EntitySystems
                 for (var i = 0; i < Atmospherics.Directions; i++)
                 {
                     var indices = tile.GridIndices.Offset((AtmosDirection) (1 << i));
-                    if (_map.TryGetTile(ent.Comp3, indices, out var gridTile) && !gridTile.IsEmpty)
+                    if (_map.TryGetTile(ent.Comp3, indices, out var gridTile) && !gridTile.IsEmpty && !WgIsBareGround(ent, gridTile)) // WOLFGATE(Planets): bare planet ground keeps no map tile alive
                     {
                         connected = true;
                         break;
@@ -158,12 +158,38 @@ namespace Content.Server.Atmos.EntitySystems
                 if (!connected)
                 {
                     RemoveActiveTile(atmos, tile);
+                    LuaMUnlinkTile(tile); // LuaM: WOLFGATE(ShipRepair) WgUnlinkTile, planets trim bare ground tiles in bulk
                     atmos.Tiles.Remove(tile.GridIndices);
                 }
             }
 
             atmos.PossiblyDisconnectedTiles.Clear();
         }
+
+        // LuaM-start: a trimmed tile must not stay linked to its neighbours, or monstermos walks into a null adjacent tile
+        private static void LuaMUnlinkTile(TileAtmosphere tile)
+        {
+            for (var i = 0; i < Atmospherics.Directions; i++)
+            {
+                if (tile.AdjacentTiles[i] is { } adjacent)
+                {
+                    var opposite = i.ToOppositeIndex();
+                    if (adjacent.AdjacentTiles[opposite] == tile)
+                    {
+                        adjacent.AdjacentTiles[opposite] = null;
+                        adjacent.AdjacentBits &= ~(AtmosDirection) (1 << opposite);
+                        if (!adjacent.AdjacentBits.IsFlagSet(adjacent.MonstermosInfo.CurrentTransferDirection))
+                            adjacent.MonstermosInfo.CurrentTransferDirection = AtmosDirection.Invalid;
+                    }
+                }
+
+                tile.AdjacentTiles[i] = null;
+            }
+
+            tile.AdjacentBits = AtmosDirection.Invalid;
+            tile.MonstermosInfo.CurrentTransferDirection = AtmosDirection.Invalid;
+        }
+        // LuaM-end
 
         /// <summary>
         /// Checks whether a tile has a corresponding grid-tile, or whether it is a "map" tile. Also checks whether the
@@ -176,7 +202,7 @@ namespace Content.Server.Atmos.EntitySystems
         {
             var idx = tile.GridIndices;
             bool mapAtmosphere;
-            if (_map.TryGetTile(ent.Comp3, idx, out var gTile) && !gTile.IsEmpty)
+            if (_map.TryGetTile(ent.Comp3, idx, out var gTile) && !gTile.IsEmpty && !WgIsBareGround(ent, gTile)) // WOLFGATE(Planets): bare planet ground shares the map's air, like a tile off the grid
             {
                 var contentDef = (ContentTileDefinition) _tileDefinitionManager[gTile.TypeId];
                 mapAtmosphere = contentDef.MapAtmosphere;
@@ -260,11 +286,7 @@ namespace Content.Server.Atmos.EntitySystems
                 if (tile.Air == null)
                     return;
 
-                tile.Air = null;
-                tile.AirArchived = null;
-                tile.ArchivedCycle = 0;
-                tile.LastShare = 0f;
-                tile.Hotspot = new Hotspot();
+                ShuntTileVolume(tile); // LuaM
                 return;
             }
 
@@ -275,6 +297,8 @@ namespace Content.Server.Atmos.EntitySystems
 
             if (data.FixVacuum)
                 GridFixTileVacuum(tile);
+
+            WgFillTerrainTile(ent, tile, data); // WOLFGATE(Planets): a tile built on a planet starts with the air around it, not a vacuum
         }
 
         private void QueueRunTiles(

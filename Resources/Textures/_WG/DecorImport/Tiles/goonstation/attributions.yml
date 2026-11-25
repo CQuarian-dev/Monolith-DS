@@ -1,0 +1,704 @@
+- files: [ auto_arctic_lake.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/arctic_lake.dmi (state lake)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ blue_decal.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ carpet_darkcarpet.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ carpet_office.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state office_carpet)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ carpet_regalcarpet.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state regal_carpet)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ dark_wide.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state dark_stairs2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_border_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_border)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_innercorner.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_corner)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_innercorner_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_corner)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_innercorner_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_corner)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ darkcarpet_innercorner_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state dark_carpet_corner)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_edge_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ fancy_narrow_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fblue6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_artmaze_silicatefloor.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state iocrust)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_caution.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state fullcaution)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_glassblock.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state glass_small)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_grasstodirt_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state grasstodirt)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_lava.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state lava)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_marble.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_white)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_marslike.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state placeholder)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_sand.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/outdoors.dmi (state sand)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_sandytile.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state sandytile)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_sanitary.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state freezerfloor)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_snowcalm.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state snow_calm)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_snowrough.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state snow_rough)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_stone.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/dojo.dmi (state stone)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_swampgrass.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state swampgrass)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_techfloor.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state techfloor_blue)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_terrazzo.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state terrazzo_beige)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ glassblock_large.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state glass_large)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ glassblock_transparent.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state glasstr_cyan)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ grass_swamp_grass.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/forest.dmi (state grass1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ green_decal_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fgreen1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ ice_rough.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state ice1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ large_grey.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state glasstr_large_grey)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ longtile_red.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state longtile-red)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marble_border_wb_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state marble_border_wb)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t1.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ medical_wide.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state medstairs_wide)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_blue.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_blue)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhite.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluew)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhite_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluew)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhite_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluew)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhite_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluew)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhite_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluew)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhitecorner.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluewcorner)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_lightbluewhitecorner_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state pooltiles_lightbluewcorner)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ pool_no_animate.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state poolwaterfloor_static)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_north.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_east.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ purple_decal_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors/carpet.dmi (state fpurple1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ racing_edge.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/racing.dmi (state track_2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ racing_edge_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/racing.dmi (state track_2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ sanitary_blue.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state freezerfloor3)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ shuttle_red.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/shuttle.dmi (state floor4)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ shuttle_white.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/shuttle.dmi (state floor3)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ stairs_wide.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state Stairs_wide)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ stairs_wood.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wood_stairs)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ stairs_wood_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wood_stairs)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ stairs_wood3.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wood3_stairs)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ stairs_wood3_southwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wood3_stairs)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ techfloor_red.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state techfloor_red)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ terrazzo_white.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state terrazzo_white)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wide_green.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state Stairs_wide_green)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_eight.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-8)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_four.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-4)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ yellow_checker.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state yellowchecker)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_ballpit.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/obj/poolballpit.dmi (state ballpitfloor)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ racing_rainbow_road.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/racing.dmi (state rainbow_road)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ setpieces_rootfloor.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state rootfloor_1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ specialroom_clown.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state clownfloor)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ terrazzo_black.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state terrazzo_black)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ floor_wood.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_five.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-5)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_seven.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-7)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_six.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_three.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden-3)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ wood_two.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state wooden)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ bluefloor.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/worlds.dmi (state bluefloor)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ martian_floor.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/martian.dmi (state floor1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ mars_rocks.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (states 1 to 6)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t2.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t3.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t3)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t4.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t4)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t2_edge_south.png, marslike_t2_edge_north.png, marslike_t2_edge_east.png, marslike_t2_edge_west.png, marslike_t2_edge_southeast.png, marslike_t2_edge_southwest.png, marslike_t2_edge_northeast.png, marslike_t2_edge_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t2-e)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t3_edge_south.png, marslike_t3_edge_north.png, marslike_t3_edge_east.png, marslike_t3_edge_west.png, marslike_t3_edge_southeast.png, marslike_t3_edge_southwest.png, marslike_t3_edge_northeast.png, marslike_t3_edge_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t3-e)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ marslike_t4_edge_south.png, marslike_t4_edge_north.png, marslike_t4_edge_east.png, marslike_t4_edge_west.png, marslike_t4_edge_southeast.png, marslike_t4_edge_southwest.png, marslike_t4_edge_northeast.png, marslike_t4_edge_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state t4-e)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ mars_base1.png, mars_base1_north.png, mars_base1_east.png, mars_base1_west.png, mars_base1_southeast.png, mars_base1_southwest.png, mars_base1_northeast.png, mars_base1_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state base1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ mars_base2.png, mars_base2_north.png, mars_base2_east.png, mars_base2_west.png, mars_base2_southeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state base2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ mars_base3.png, mars_base3_north.png, mars_base3_east.png, mars_base3_west.png, mars_base3_southeast.png, mars_base3_southwest.png, mars_base3_northeast.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state base3)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ mars_dirtroad1.png, mars_dirtroad1_north.png, mars_dirtroad1_southeast.png, mars_dirtroad1_southwest.png, mars_dirtroad1_northeast.png, mars_dirtroad1_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state dirtroad1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ mars_dirtroad2.png, mars_dirtroad2_north.png, mars_dirtroad2_east.png, mars_dirtroad2_west.png, mars_dirtroad2_southeast.png, mars_dirtroad2_southwest.png, mars_dirtroad2_northeast.png, mars_dirtroad2_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/mars_outpost.dmi (state dirtroad2)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ martian_dust.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (states mars1, mars2, mars3)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ snow_rough_border.png, snow_rough_border_north.png, snow_rough_border_east.png, snow_rough_border_west.png, snow_rough_border_southeast.png, snow_rough_border_southwest.png, snow_rough_border_northeast.png, snow_rough_border_northwest.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/turf/floors.dmi (state snow_rough_border, one file per direction)."
+  source: "https://github.com/goonstation/goonstation"

@@ -19,6 +19,7 @@ using Robust.Shared.Physics.Components;
 using Content.Shared.Whitelist; // Frontier
 using Content.Shared.Buckle.Components; // Frontier
 using Content.Shared.Buckle; // Frontier
+using Content.Shared.Storage.Components; // LuaM
 
 namespace Content.Server.Mech.Equipment.EntitySystems;
 
@@ -200,6 +201,28 @@ public sealed partial class MechGrabberSystem : EntitySystem
             }
         }
         // End Frontier
+
+        // LuaM-start
+        if (TryComp<ContainerManagerComponent>(args.Args.Target, out var containerManager))
+        {
+            var coords = Transform(equipmentComponent.EquipmentOwner.Value).Coordinates;
+            var toRemove = new List<EntityUid>();
+            foreach (var container in _container.GetAllContainers(args.Args.Target.Value, containerManager))
+            {
+                toRemove.Clear();
+                foreach (var contained in container.ContainedEntities)
+                {
+                    if (HasComp<MagnetPickupComponent>(contained))
+                        toRemove.Add(contained);
+                }
+
+                foreach (var removeUid in toRemove)
+                {
+                    _container.Remove(removeUid, container, destination: coords);
+                }
+            }
+        }
+        // LuaM-end
 
         _container.Insert(args.Args.Target.Value, component.ItemContainer);
         _mech.UpdateUserInterface(equipmentComponent.EquipmentOwner.Value);

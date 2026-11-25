@@ -103,8 +103,8 @@
 - type: entity
   parent: NFClothingOuterEVASuitBase
   id: ClothingOuterEVASuitMailman
-  name: mailcarrier EVA suit
-  description: An EVA suit with a built-in helmet commonly issued to hydroponics workers.
+  name: mail carrier EVA suit # LuaM
+  description: An EVA suit with a built-in helmet commonly issued to mail carriers. # LuaM
   components:
   - type: Sprite
     sprite: _NF/Clothing/OuterClothing/Suits/eva_color.rsi

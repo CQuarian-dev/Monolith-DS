@@ -23,6 +23,10 @@ public sealed partial class ForceParentSystem : EntitySystem
             return;
         // LuaM-end
 
+        // WOLFGATE(Planets): the pin isn't networked, so a client applying a body's state must not re-parent it to nothing.
+        if (!ent.Comp.Position.EntityId.IsValid())
+            return;
+
         var newPos = args.NewPosition;
         if (newPos.EntityId != ent.Comp.Position.EntityId || newPos.Position != ent.Comp.Position.Position)
         { // LuaM

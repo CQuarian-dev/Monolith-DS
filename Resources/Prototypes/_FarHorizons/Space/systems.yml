@@ -1,5 +1,6 @@
 - type: starSystem
   id: SystemKyphrus
+  planetNetworkVariant: WGSystemKyphrus # LuaM
   star: StarKyphrus
   planets:
     - planet: PlanetFervidus

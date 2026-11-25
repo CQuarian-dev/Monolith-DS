@@ -1,0 +1,79 @@
+- files: [ concrete_tile.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state conc_tiles)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ fairy_green.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors/grass_fairy.dmi (state fairygrass)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ fairy_purple.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors/grass_fairy.dmi (state fairygrass)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ floor_pod.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state podfloor)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ floor_wax.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state honeyfloor)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ freezer_half.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state freezer_half)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ freezer_large.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state freezer_large)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ iron_freezer.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state freezer)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ mineral_bananium.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state bananium)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ mineral_diamond.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state diamond)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ mineral_plasma.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state plasma)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ noslip_blue.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state bluefull)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ stairs_medium.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state stairs-m)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ vault_sandstone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state sandstonevault)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ abyssal_water.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors.dmi (state abyssal_water)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"
+
+- files: [ red_ice.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/BeeStation/BeeStation-Hornet/blob/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d/icons/turf/floors/red_ice.dmi (state red_ice-255)."
+  source: "https://github.com/BeeStation/BeeStation-Hornet"

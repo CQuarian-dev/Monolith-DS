@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355, Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "book-0_baystation"
+    },
+    {
+      "name": "book-0_nebula"
+    },
+    {
+      "name": "fancy"
+    }
+  ]
+}

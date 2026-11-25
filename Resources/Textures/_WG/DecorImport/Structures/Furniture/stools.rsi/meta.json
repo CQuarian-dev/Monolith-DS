@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7, Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355, CEV-Eris at commit https://github.com/discordia-space/CEV-Eris/commit/5f7847f26585d80505500be5a62e621022a56bf7, Citadel Station at commit https://github.com/Citadel-Station-13/Citadel-Station-13/commit/31b47497ab7e3b1c15c67657931ce480f14caed1, Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, Monkestation at commit https://github.com/Monkestation/Monkestation2.0/commit/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8, Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76, Polaris at commit https://github.com/PolarisSS13/Polaris/commit/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25, Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3, tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518, Yogstation at commit https://github.com/yogstation13/Yogstation/commit/ae2886be95c234202212a3090ee7637173ea2c1d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bamboo_stool",
+      "directions": 4
+    },
+    {
+      "name": "bar",
+      "directions": 4
+    },
+    {
+      "name": "bar_backed",
+      "directions": 4
+    },
+    {
+      "name": "bar_chair",
+      "directions": 4
+    },
+    {
+      "name": "bar_greyscale",
+      "directions": 4
+    },
+    {
+      "name": "bar_stool"
+    },
+    {
+      "name": "bar_stool_padded_preview"
+    },
+    {
+      "name": "bar_stool_preview_baystation"
+    },
+    {
+      "name": "bar_stool_preview_polaris",
+      "directions": 4
+    },
+    {
+      "name": "baralien"
+    },
+    {
+      "name": "barbrass"
+    },
+    {
+      "name": "beanbag_black",
+      "directions": 4
+    },
+    {
+      "name": "beanbag_blue",
+      "directions": 4
+    },
+    {
+      "name": "beanbag_chair",
+      "directions": 4
+    },
+    {
+      "name": "beanbag_green",
+      "directions": 4
+    },
+    {
+      "name": "beanbag_red",
+      "directions": 4
+    },
+    {
+      "name": "beanbag_yellow",
+      "directions": 4
+    },
+    {
+      "name": "f13stool"
+    },
+    {
+      "name": "hover_stool",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "modern_stool"
+    },
+    {
+      "name": "stool"
+    },
+    {
+      "name": "stool_citadel"
+    },
+    {
+      "name": "stool_coyote"
+    },
+    {
+      "name": "stool_greyscale",
+      "directions": 4
+    },
+    {
+      "name": "stool_monke"
+    },
+    {
+      "name": "stool_padded_preview_baystation"
+    },
+    {
+      "name": "stool_padded_preview_eris"
+    },
+    {
+      "name": "stool_preview_baystation"
+    },
+    {
+      "name": "stool_preview_eris"
+    },
+    {
+      "name": "stool_preview_polaris",
+      "directions": 4
+    },
+    {
+      "name": "stool_rustic"
+    },
+    {
+      "name": "stool_shiptest",
+      "directions": 4
+    },
+    {
+      "name": "stool_wood"
+    },
+    {
+      "name": "stoolalien"
+    },
+    {
+      "name": "stoolbrass"
+    }
+  ]
+}

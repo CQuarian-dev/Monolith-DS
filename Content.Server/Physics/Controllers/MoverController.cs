@@ -31,6 +31,7 @@ public sealed partial class MoverController : SharedMoverController
     private Dictionary<EntityUid, (ShuttleComponent, List<(EntityUid, PilotComponent, InputMoverComponent, TransformComponent)>)> _shuttlePilots = new();
 
     [Dependency] private EntityQuery<ActiveInputMoverComponent> _activeQuery = default!;
+    [Dependency] private Content.Server._WG.Dormancy.WGDormancySystem _wgDormancy = default!; // WOLFGATE(Dormancy): skips movers at rest nobody is near
     [Dependency] private EntityQuery<DroneConsoleComponent> _droneQuery = default!;
     [Dependency] private EntityQuery<ShuttleComponent> _shuttleQuery = default!;
     [Dependency] private EntityQuery<GhostComponent> _ghostQuery = default!;
@@ -204,6 +205,11 @@ public sealed partial class MoverController : SharedMoverController
         {
             if (IsPaused(uid) && !_ghostQuery.HasComp(uid)) // Frontier: Skip processing paused entities. Ghosts are excepted for mapping reasons
                 continue; // Frontier
+
+            // WOLFGATE(Dormancy) START: an NPC at rest with no input on planet ground no player is near has nothing to move
+            if (activeComp.RelayedFrom == null && moverComp.HeldMoveButtons == MoveButtons.None && _wgDormancy.MoverSleeps(uid))
+                continue;
+            // WOLFGATE END
 
             // LuaM-start
             if (activeComp.RelayedFrom == null
@@ -460,7 +466,7 @@ public sealed partial class MoverController : SharedMoverController
 
         // return dir * shuttle.AccelerationMultiplier; // LuaM comented
         // LuaM-start:
-        var thrust = dir * shuttle.AccelerationMultiplier;
+        var thrust = dir * shuttle.AccelerationMultiplier * WgAtmosphereManeuvering(xform.Owner); // WOLFGATE(Planets): planet lift and cargo load scale thrust
         if (shuttle.BodyModifier == ShuttleSystem.DampenDampingStrength)
         {
             return thrust * 1.3f;

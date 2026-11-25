@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3.",
+  "size": {
+    "x": 64,
+    "y": 128
+  },
+  "states": [
+    {
+      "name": "pine_1"
+    },
+    {
+      "name": "tree_1"
+    }
+  ]
+}

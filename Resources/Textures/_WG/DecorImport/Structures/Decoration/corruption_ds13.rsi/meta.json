@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DS13 at commit https://github.com/DS-13-Dev-Team/DS13-2.0/commit/4c8813536f72a1e2efafb661b62821bb62a5a514.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "growth"
+    },
+    {
+      "name": "eye",
+      "delays": [
+        [
+          5.0,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.5,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      ]
+    },
+    {
+      "name": "minieye",
+      "delays": [
+        [
+          3.0,
+          0.4,
+          0.4,
+          0.4,
+          2.0,
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "maw"
+    },
+    {
+      "name": "maw_new",
+      "delays": [
+        [
+          2.5,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "cyst-empty"
+    },
+    {
+      "name": "cyst-full",
+      "delays": [
+        [
+          2.0,
+          0.4,
+          0.4,
+          0.4
+        ]
+      ]
+    },
+    {
+      "name": "minigrowth1"
+    },
+    {
+      "name": "minigrowth2"
+    },
+    {
+      "name": "minigrowth3"
+    },
+    {
+      "name": "minigrowth4"
+    },
+    {
+      "name": "wall"
+    },
+    {
+      "name": "nest"
+    }
+  ]
+}

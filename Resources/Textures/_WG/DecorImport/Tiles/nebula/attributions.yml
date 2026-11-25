@@ -1,0 +1,99 @@
+- files: [ carpet_blue3.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/carpet.dmi (state blue3)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ carpet_purple.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/carpet.dmi (state purple)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ concrete_flooded.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/concrete.dmi (state inset)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_carpet.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/carpet.dmi (state brown)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_clay.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/clay.dmi (state clay)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_path.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/path.dmi (state cobble0)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_rescue_base.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/floors.dmi (state asteroidfloor)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_rock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/rock.dmi (state rock)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_shrouded.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/shrouded.dmi (state shrouded0)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_woven.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/woven.dmi (state woven)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ grass_wild.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/wildgrass.dmi (state wildgrass)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ path_herringbone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/path.dmi (state herringbone)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ path_running_bond.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/path.dmi (state runningbond0)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ rock_sand.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/sand.dmi (state sand0)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ sand_water.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/sand.dmi (state sand0)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ seafloor_flooded.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/seafloor.dmi (state seafloor)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ tiled_monofloor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/tiles.dmi (state steel_monofloor)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ wood_rough.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/wood_alt.dmi (state wood_peasant0)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ floor_dry.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/seafloor.dmi (state seafloor)."
+  source: "https://github.com/NebulaSS13/Nebula"
+
+- files: [ mud_water.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NebulaSS13/Nebula/blob/d7a668ec0268164d33a13481e2e5ce307996ff76/icons/turf/flooring/mud.dmi (state mud)."
+  source: "https://github.com/NebulaSS13/Nebula"

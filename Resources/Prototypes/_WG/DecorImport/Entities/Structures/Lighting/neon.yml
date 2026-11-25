@@ -1,0 +1,396 @@
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanWallSign, BaseUrbanToggleLight ]
+  id: BaseAuroraNeonAssunzione
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Lighting/assunzione_neon.rsi
+    offset: 0,0.5
+  - type: PointLight
+    radius: 2.5
+    energy: 0.8
+
+- type: entity
+  parent: BaseAuroraNeonAssunzione
+  id: AuroraNeonHotel
+  components:
+  - type: Sprite
+    layers:
+    - state: Hotel
+    - state: Hotel
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4A4A"
+
+- type: entity
+  parent: BaseAuroraNeonAssunzione
+  id: AuroraNeonPvAv
+  components:
+  - type: Sprite
+    layers:
+    - state: PV_AV
+    - state: PV_AV
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF5AE0"
+
+- type: entity
+  parent: BaseAuroraNeonAssunzione
+  id: AuroraNeonBar
+  components:
+  - type: Sprite
+    layers:
+    - state: bar
+    - state: bar
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4040"
+
+- type: entity
+  parent: BaseAuroraNeonAssunzione
+  id: AuroraNeonDutyFree
+  components:
+  - type: Sprite
+    layers:
+    - state: duty_free
+    - state: duty_free
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF8A2A"
+
+- type: entity
+  parent: BaseAuroraNeonAssunzione
+  id: AuroraNeonRepairShopLeft
+  suffix: Left
+  components:
+  - type: Sprite
+    layers:
+    - state: repair_shop_l
+    - state: repair_shop_l
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#5AD8FF"
+
+- type: entity
+  parent: BaseAuroraNeonAssunzione
+  id: AuroraNeonRepairShopRight
+  suffix: Right
+  components:
+  - type: Sprite
+    layers:
+    - state: repair_shop_r
+    - state: repair_shop_r
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#5AD8FF"
+
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanWallSign, BaseUrbanToggleLight ]
+  id: BaseAuroraNeonKonyang
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Lighting/konyang_neon.rsi
+    offset: 0,0.5
+  - type: PointLight
+    radius: 2.5
+    energy: 0.8
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonBelieve
+  components:
+  - type: Sprite
+    layers:
+    - state: believe
+    - state: believe
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#F0F0FF"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonMotoGreen
+  suffix: Green
+  components:
+  - type: Sprite
+    layers:
+    - state: ee_moto
+    - state: ee_moto
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#7AFFB0"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonInternetCafe
+  components:
+  - type: Sprite
+    layers:
+    - state: internet_cafe
+    - state: internet_cafe
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4A6A"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonRecords
+  components:
+  - type: Sprite
+    layers:
+    - state: koramak_records
+    - state: koramak_records
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFB030"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonElectronics
+  components:
+  - type: Sprite
+    layers:
+    - state: lime_electronics
+    - state: lime_electronics
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#8AFF5A"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonConsulting
+  components:
+  - type: Sprite
+    layers:
+    - state: rokkaku_consulting
+    - state: rokkaku_consulting
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#E0E0E0"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonMotoRed
+  suffix: Red
+  components:
+  - type: Sprite
+    layers:
+    - state: shibata_moto
+    - state: shibata_moto
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4040"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign1
+  suffix: Red sushi
+  components:
+  - type: Sprite
+    layers:
+    - state: sign1
+    - state: sign1
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4A5A"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign2
+  suffix: Fan
+  components:
+  - type: Sprite
+    layers:
+    - state: sign2
+    - state: sign2
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#7AB8FF"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign3
+  suffix: Blue vertical
+  components:
+  - type: Sprite
+    layers:
+    - state: sign3
+    - state: sign3
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#5AC8FF"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign4
+  suffix: Gold
+  components:
+  - type: Sprite
+    layers:
+    - state: sign4
+    - state: sign4
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFC040"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign5
+  suffix: Pink fish
+  components:
+  - type: Sprite
+    layers:
+    - state: sign5
+    - state: sign5
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF6AB0"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign6
+  suffix: Portrait
+  components:
+  - type: Sprite
+    layers:
+    - state: sign6
+    - state: sign6
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF5A8A"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSign7
+  suffix: ATM
+  components:
+  - type: Sprite
+    layers:
+    - state: sign7
+    - state: sign7
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF3A3A"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonHotelRoyal
+  components:
+  - type: Sprite
+    layers:
+    - state: soleil_royal
+    - state: soleil_royal
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFD86A"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonSpiceHut
+  components:
+  - type: Sprite
+    layers:
+    - state: spice_hut
+    - state: spice_hut
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFB040"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonVolPlus
+  components:
+  - type: Sprite
+    layers:
+    - state: vol_plus
+    - state: vol_plus
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFD030"
+
+- type: entity
+  parent: BaseAuroraNeonKonyang
+  id: AuroraNeonRainbow
+  components:
+  - type: Sprite
+    layers:
+    - state: xt-100
+    - state: xt-100
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFF0A0"
+
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanWallSign, BaseUrbanToggleLight ]
+  id: BasePolarisNeonSmall
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Lighting/neonsigns.rsi
+  - type: PointLight
+    radius: 2
+    energy: 0.7
+
+- type: entity
+  parent: BasePolarisNeonSmall
+  id: PolarisNeonCafe
+  components:
+  - type: Sprite
+    layers:
+    - state: cafesign_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+      shader: unshaded
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: cafesign_on }
+          False: { state: cafesign_off }
+  - type: PointLight
+    color: "#FF8A3A"
+
+- type: entity
+  parent: BasePolarisNeonSmall
+  id: PolarisNeonBlank
+  components:
+  - type: Sprite
+    layers:
+    - state: sign_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+      shader: unshaded
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: sign_on }
+          False: { state: sign_off }
+  - type: PointLight
+    color: "#8AD8FF"

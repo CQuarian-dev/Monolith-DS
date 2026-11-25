@@ -1,0 +1,14 @@
+ent-TgBedMedical = medical bed
+    .desc = A medical bed with wheels for assisted patient movement or medbay racing tournaments.
+ent-TgBedMedicalEmergency = emergency medical bed
+    .desc = A compact medical bed. This emergency version can be folded and carried for quick transport.
+ent-ShiptestBedRoller = roller bed
+    .desc = A foldable, wheeled bed used to transport people with injuries safely. Bed guards and straps prevent the occupant from falling out. Push handles at both ends of the frame allow it to be relocated from either side. Its compact design makes it easy to maneuver and store in the confines of a spacecraft, but rather uncomfortable for rest and recovery.
+ent-ParaBedAmbTrolley = ambulance train trolley
+    .desc = This is used to lie in, sleep in or strap on.
+ent-NovaBedMedicalMedigun = hardlight medical bed
+    .desc = A medical bed made out of hardlight.
+ent-YogBedSurgicalMat = surgical mat
+    .desc = A sanitized mat for preforming simple triage.
+ent-CMHybrisaHospitalHospitaldivider = hospital divider
+    .desc = A hospital divider for privacy.

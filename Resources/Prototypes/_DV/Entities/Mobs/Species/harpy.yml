@@ -6,10 +6,12 @@
   suffix: Harpy # LuaM
   abstract: true
   components:
+  # WOLFGATE(Planets) START: z-level flight is back on, which Monolith#4812 turned off
   - type: CEZFlyer # Mono: z-level flight
     flightSpeed: 0.5
     flightMoveSpeedModifier: 0.5
     hoverStaminaDrain: 5
+  # WOLFGATE END
   - type: CEControllableFlight
     startFlightDoAfter: 1.5
   - type: HarpySinger

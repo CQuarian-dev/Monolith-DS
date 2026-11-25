@@ -1,0 +1,20 @@
+# Aurora monolith tints (COLOR_HULL, COLOR_ASTEROID_ROCK and the dark grey in monolith.dm)
+- type: palette
+  id: AuroraMonolithRock
+  name: AuroraMonolithRock
+  colors:
+    dark: "#232B2B"
+    rock: "#735555"
+    hull: "#436b8e"
+
+# Stand-ins for get_random_colour(0, 150, 255), which picks each channel from 150 to 255
+- type: palette
+  id: AuroraMonolithGlow
+  name: AuroraMonolithGlow
+  colors:
+    blue: "#96C8FF"
+    pink: "#FF96C8"
+    green: "#C8FF96"
+    yellow: "#FFE696"
+    purple: "#C896FF"
+    teal: "#96FFE6"

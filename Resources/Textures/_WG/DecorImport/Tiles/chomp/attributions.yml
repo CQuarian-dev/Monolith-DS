@@ -1,0 +1,59 @@
+- files: [ blackhole_grate.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/blackhole/blackhole32x32.dmi (state tile3)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ blackhole_spirals.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/blackhole/blackhole32x32.dmi (state tile2)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ desert_planet_gravel.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/turf/desert_tiles.dmi (state gravel)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ desert_planet_mud.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/turf/desert_tiles.dmi (state mud)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ desert_planet_sandrock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/turf/desert_tiles.dmi (state sandrock)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ floor_diona.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/icons/turf/floors.dmi (state diona)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ grass_smokestar.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/turf/falseplanets.dmi (state moss)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ grid_train.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/icons/turf/flooring/maglevs.dmi (state maglevup)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ lavaland_ash.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/turf/lava_land.dmi (state ash)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ lavaland_ashrock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/modular_chomp/icons/turf/lava_land.dmi (state ashrock)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ rocks_cetus.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/icons/turf/outdoors.dmi (state rock_brown)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"
+
+- files: [ sif_valley.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/icons/turf/outdoors.dmi (state grass_sif0)."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2"

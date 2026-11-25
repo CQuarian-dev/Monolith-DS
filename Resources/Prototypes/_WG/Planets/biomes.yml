@@ -1,0 +1,58 @@
+# Asclepiu (Verda): temperate meadow and woodland dotted with lakes and their shores, irradiated scars, and polar snow.
+
+- type: biomeTemplate
+  id: WGBiomeAsclepiu
+  layers:
+  - !type:BiomeMetaLayer
+    template: WGTemperatePlains
+    threshold: -1
+    noise:
+      frequency: 0.001
+      noiseType: OpenSimplex2
+      fractalType: FBm
+      octaves: 2
+      lacunarity: 2
+  # Irradiated scars: dead ground and trees, a few per cent of the surface, under the lakes and the snow.
+  - !type:BiomeMetaLayer
+    template: WGVerdaScar
+    threshold: 0.7
+    noise:
+      seed: 83
+      frequency: 0.006
+      noiseType: OpenSimplex2
+      fractalType: FBm
+      octaves: 2
+      lacunarity: 2
+  # Wild slime patches (_WG/WildSlimes) over the plains and scars, under the lakes and the snow: a few sparse zones,
+  # each with a patch or two. The Underkarst's grotto layer shares both noises.
+  # Lake shores: the lake's own noise a little under the water's threshold, so the ring follows the water.
+  - !type:BiomeMetaLayer
+    template: WGVerdaShore
+    threshold: 0.62
+    noise:
+      seed: 71
+      frequency: 0.012
+      noiseType: OpenSimplex2
+      fractalType: FBm
+      octaves: 2
+      lacunarity: 2
+  # Lakes some 8 to 40 tiles across, a couple to every hundred tiles square, not seas.
+  - !type:BiomeMetaLayer
+    template: WGTemperateLake
+    threshold: 0.78
+    noise:
+      seed: 71
+      frequency: 0.012
+      noiseType: OpenSimplex2
+      fractalType: FBm
+      octaves: 2
+      lacunarity: 2
+  - !type:BiomeMetaLayer
+    template: WGTemperateSnow
+    threshold: 0.5
+    noise:
+      frequency: 0.001
+      noiseType: OpenSimplex2
+      fractalType: FBm
+      octaves: 2
+      lacunarity: 2

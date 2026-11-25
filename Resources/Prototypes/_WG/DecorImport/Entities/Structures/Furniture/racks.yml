@@ -1,0 +1,416 @@
+- type: entity
+  parent: Dresser
+  id: BayTableRack
+  suffix: table
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_table
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayTableRack
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: BayTableRackDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_table_dark
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayTableRackDark
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: NebulaRack
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaRack
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: NebulaRackDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_dark
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaRackDark
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: PolarisTableRack
+  suffix: table
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_polaris
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisTableRack
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: PolarisTableRackSteel
+  suffix: steel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_table_steel
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisTableRackSteel
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: VoreTableRackSteel
+  suffix: steel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_vore
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreTableRackSteel
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: VoreTableRackWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_table_wood
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreTableRackWood
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: VoreTableRackGlamour
+  suffix: glamour
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_table_glamour
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildVoreTableRackGlamour
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: PolarisTableRackShelf
+  suffix: shelf
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_table
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildPolarisTableRackShelf
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: PolarisRackShelfSteel
+  suffix: steel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_steel
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildPolarisRackShelfSteel
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: VoreRackShelfSteel
+  suffix: steel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_vore
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreRackShelfSteel
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: VoreRackShelfWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_wood
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreRackShelfWood
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: VoreRackShelfGlamour
+  suffix: glamour
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_glamour
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildVoreRackShelfGlamour
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: PolarisTableRackGunRack
+  suffix: table
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: gunrack_table
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildPolarisTableRackGunRack
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: PolarisRackGunRackSteel
+  suffix: steel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: gunrack_steel
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildPolarisRackGunRackSteel
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: AuroraTableRackRetailShelf
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_aurora
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraTableRackRetailShelf
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: AuroraTableRackClothing
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: clothes_rack
+    noRot: true
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraTableRackClothing
+    node: built

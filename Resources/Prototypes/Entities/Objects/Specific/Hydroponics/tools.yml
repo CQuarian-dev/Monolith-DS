@@ -126,6 +126,7 @@
     sprite: Objects/Tools/Hydroponics/spade.rsi
   - type: Shovel
     speedModifier: 0.75 # slower at digging than a full-sized shovel
+  - type: WGSnowShovel # WOLFGATE(GroundCover): clears snow cover
   - type: Tool #Mono start: Shovel parity
     qualities:
     - Digging

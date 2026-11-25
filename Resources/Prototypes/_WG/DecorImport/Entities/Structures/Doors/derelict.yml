@@ -1,0 +1,22 @@
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: CitadelRPDoorDerelict
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/derelict_citadelrp.rsi
+    layers:
+    - state: derelict
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openSpriteState: derelictopen
+    closedSpriteState: derelict
+    openingSpriteState: derelictopening
+    closingSpriteState: derelictclosing
+    openingAnimationTime: 4.25
+    closingAnimationTime: 4.25
+    openTimeOne: 2.8
+    openTimeTwo: 1.45
+    closeTimeOne: 1.45
+    closeTimeTwo: 2.8
+  - type: Damageable
+    damageModifierSet: StructuralMetallic

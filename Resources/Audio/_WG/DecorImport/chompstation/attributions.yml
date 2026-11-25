@@ -1,0 +1,9 @@
+- files: ["blastdooropen.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from CHOMPStation at commit https://github.com/CHOMPStation2/CHOMPStation2/commit/ca24d940aa4a6eb0d58d32b85ddc830f44459264."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/sound/machines/door/blastdooropen.ogg"
+
+- files: ["blastdoorclose.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from CHOMPStation at commit https://github.com/CHOMPStation2/CHOMPStation2/commit/ca24d940aa4a6eb0d58d32b85ddc830f44459264."
+  source: "https://github.com/CHOMPStation2/CHOMPStation2/blob/ca24d940aa4a6eb0d58d32b85ddc830f44459264/sound/machines/door/blastdoorclose.ogg"

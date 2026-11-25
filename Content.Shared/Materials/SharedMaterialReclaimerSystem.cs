@@ -103,6 +103,11 @@ public abstract partial class SharedMaterialReclaimerSystem : EntitySystem
 
     public bool TryStartProcessItem(EntityUid uid, EntityUid item, MaterialReclaimerComponent? component = null, EntityUid? user = null, bool predictSound = true) // Frontier: add predictSound
     {
+        // LuaM-start
+        if (EntityManager.IsQueuedForDeletion(item))
+            return false;
+        // LuaM-end
+
         if (!Resolve(uid, ref component))
             return false;
 

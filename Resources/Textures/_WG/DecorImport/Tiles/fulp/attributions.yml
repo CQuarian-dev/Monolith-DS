@@ -1,0 +1,19 @@
+- files: [ dark_large.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/fulpstation/fulpstation/blob/cbd12d2bac0ef9b54c8e8259893cce9aa03e0611/icons/turf/floors.dmi (state darkwood_large)."
+  source: "https://github.com/fulpstation/fulpstation"
+
+- files: [ dark_parquet.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/fulpstation/fulpstation/blob/cbd12d2bac0ef9b54c8e8259893cce9aa03e0611/icons/turf/floors.dmi (state darkwood_parquet)."
+  source: "https://github.com/fulpstation/fulpstation"
+
+- files: [ dark_tile.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/fulpstation/fulpstation/blob/cbd12d2bac0ef9b54c8e8259893cce9aa03e0611/icons/turf/floors.dmi (state darkwood_tile)."
+  source: "https://github.com/fulpstation/fulpstation"
+
+- files: [ wood_dark.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/fulpstation/fulpstation/blob/cbd12d2bac0ef9b54c8e8259893cce9aa03e0611/icons/turf/floors.dmi (state darkwood)."
+  source: "https://github.com/fulpstation/fulpstation"

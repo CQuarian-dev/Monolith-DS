@@ -1,0 +1,14 @@
+- files: [ floor_silk.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Monkestation/Monkestation2.0/blob/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8/icons/turf/floors.dmi (state silk)."
+  source: "https://github.com/Monkestation/Monkestation2.0"
+
+- files: [ terracotta_diagonal.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Monkestation/Monkestation2.0/blob/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8/icons/turf/floors.dmi (state terracotta_diagonal)."
+  source: "https://github.com/Monkestation/Monkestation2.0"
+
+- files: [ terracotta_herringbone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Monkestation/Monkestation2.0/blob/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8/icons/turf/floors.dmi (state terracotta_herringbone)."
+  source: "https://github.com/Monkestation/Monkestation2.0"

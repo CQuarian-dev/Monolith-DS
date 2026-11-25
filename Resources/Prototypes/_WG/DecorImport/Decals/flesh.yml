@@ -1,0 +1,111 @@
+- type: decal
+  id: VoreDecalFloorDecalFleshSouth
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_south
+
+- type: decal
+  id: VoreDecalFloorDecalFleshNorth
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_north
+
+- type: decal
+  id: VoreDecalFloorDecalFleshEast
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_east
+
+- type: decal
+  id: VoreDecalFloorDecalFleshWest
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_west
+
+- type: decal
+  id: VoreDecalFloorDecalFleshSouthEast
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_southeast
+
+- type: decal
+  id: VoreDecalFloorDecalFleshSouthWest
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_southwest
+
+- type: decal
+  id: VoreDecalFloorDecalFleshNorthEast
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_northeast
+
+- type: decal
+  id: VoreDecalFloorDecalFleshNorthWest
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: flesh_northwest
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourSouth
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_south
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourNorth
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_north
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourEast
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_east
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourWest
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_west
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourSouthEast
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_southeast
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourSouthWest
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_southwest
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourNorthEast
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_northeast
+
+- type: decal
+  id: VoreDecalFloorDecalFleshColourNorthWest
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/flesh_edges_vore.rsi
+    state: c_flesh_northwest

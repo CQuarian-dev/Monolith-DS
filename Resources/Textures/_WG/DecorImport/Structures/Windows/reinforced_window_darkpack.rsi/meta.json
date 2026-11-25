@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "reinforced_window-0"
+    },
+    {
+      "name": "reinforced_window-1"
+    },
+    {
+      "name": "reinforced_window-2"
+    },
+    {
+      "name": "reinforced_window-3"
+    },
+    {
+      "name": "reinforced_window-4"
+    },
+    {
+      "name": "reinforced_window-5"
+    },
+    {
+      "name": "reinforced_window-6"
+    },
+    {
+      "name": "reinforced_window-7"
+    },
+    {
+      "name": "reinforced_window-8"
+    },
+    {
+      "name": "reinforced_window-9"
+    },
+    {
+      "name": "reinforced_window-10"
+    },
+    {
+      "name": "reinforced_window-11"
+    },
+    {
+      "name": "reinforced_window-12"
+    },
+    {
+      "name": "reinforced_window-13"
+    },
+    {
+      "name": "reinforced_window-14"
+    },
+    {
+      "name": "reinforced_window-15"
+    }
+  ]
+}

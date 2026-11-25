@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3, tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518.",
+  "size": {
+    "x": 32,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "crystal"
+    },
+    {
+      "name": "siderite_growth1"
+    }
+  ]
+}

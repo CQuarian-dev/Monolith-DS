@@ -90,9 +90,9 @@ public sealed class VehicleDashboard : VehicleHudPanel
         var limited = SpeedLimit < 0.999f;
         DrawMiddle(handle, Label, Fit(Label, Locale("luam-vehicle-dashboard-limiter"), TrackLeft - 18f, s), 12, TrackMiddle, s, limited ? Warn : Muted);
 
-        handle.DrawRect(Rect(TrackLeft, TrackMiddle - 1.5f, TrackRight - TrackLeft, 3, s), Off);
+        handle.DrawRect(HudRect(TrackLeft, TrackMiddle - 1.5f, TrackRight - TrackLeft, 3, s), Off);
         var knob = TrackLeft + (TrackRight - TrackLeft) * LimitToFraction(SpeedLimit);
-        handle.DrawRect(Rect(TrackLeft, TrackMiddle - 1.5f, knob - TrackLeft, 3, s), limited ? Warn : Accent);
+        handle.DrawRect(HudRect(TrackLeft, TrackMiddle - 1.5f, knob - TrackLeft, 3, s), limited ? Warn : Accent);
         Box(handle, knob - 3f, TrackMiddle - 6f, 6, 12, _draggingLimit ? Accent : LitFill, limited ? Warn : Accent, s);
 
         var value = limited
@@ -149,7 +149,7 @@ public sealed class VehicleDashboard : VehicleHudPanel
             var h = 8f + 38f * t;
             var x = 148f + i * 5.6f;
             var color = t > 0.85f ? Danger : t > 0.65f ? Warn : Accent;
-            handle.DrawRect(Rect(x, baseY - h, 4f, h, s), i < lit ? color : Off.WithAlpha(0.6f));
+            handle.DrawRect(HudRect(x, baseY - h, 4f, h, s), i < lit ? color : Off.WithAlpha(0.6f));
         }
     }
 

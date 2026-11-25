@@ -1,0 +1,116 @@
+# LuaM: prototypes DecorImport furniture and its construction recipes need, from Wolfgate's DEN content.
+
+# _DEN/Entities/Structures/furniture/chairs.yml
+- type: entity
+  parent: ChairBase
+  id: ChairBeachLoungeBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    state: blue
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    snapCardinals: false
+  - type: Construction
+    node: built
+    graph: DecorBuildChairBeachLoungeBlue
+  - type: StaticPrice
+    price: 30.0
+  - type: Icon
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: blue
+
+# _DEN/Entities/Structures/furniture/chairs.yml
+- type: entity
+  parent: ChairBase
+  id: ChairBeachLoungeBrown
+  suffix: brown
+  components:
+  - type: Sprite
+    state: brown
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    snapCardinals: false
+  - type: Construction
+    node: built
+    graph: DecorBuildChairBeachLoungeBrown
+  - type: StaticPrice
+    price: 30.0
+  - type: Icon
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: brown
+
+# _DEN/Entities/Structures/furniture/chairs.yml
+- type: entity
+  parent: ChairBase
+  id: ChairBeachLoungeGreen
+  suffix: green
+  components:
+  - type: Sprite
+    state: green
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    snapCardinals: false
+  - type: Construction
+    node: built
+    graph: DecorBuildChairBeachLoungeGreen
+  - type: StaticPrice
+    price: 30.0
+  - type: Icon
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: green
+
+# _DEN/Entities/Structures/furniture/chairs.yml
+- type: entity
+  parent: ChairBase
+  id: ChairBeachLoungeOrange
+  suffix: orange
+  components:
+  - type: Sprite
+    state: orange
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    snapCardinals: false
+  - type: Construction
+    node: built
+    graph: DecorBuildChairBeachLoungeOrange
+  - type: StaticPrice
+    price: 30.0
+  - type: Icon
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: orange
+
+# _DEN/Entities/Structures/furniture/chairs.yml
+- type: entity
+  parent: ChairBase
+  id: ChairBeachLoungeRed
+  suffix: red
+  components:
+  - type: Sprite
+    state: red
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    snapCardinals: false
+  - type: Construction
+    node: built
+    graph: DecorBuildChairBeachLoungeRed
+  - type: StaticPrice
+    price: 30.0
+  - type: Icon
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: red
+
+# _DEN/Entities/Structures/furniture/chairs.yml
+- type: entity
+  parent: ChairBase
+  id: ChairBeachLoungeWhite
+  suffix: white
+  components:
+  - type: Sprite
+    state: white
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    snapCardinals: false
+  - type: Construction
+    node: built
+    graph: DecorBuildChairBeachLoungeWhite
+  - type: StaticPrice
+    price: 30.0
+  - type: Icon
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: white
+# WOLFGATE END

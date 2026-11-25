@@ -1,0 +1,244 @@
+- type: entity
+  parent: ChairBase
+  id: BayBedChairShuttle
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: shuttle_chair_preview_bed
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: BayChairShuttleBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: shuttle_chair_preview_black
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: BayChairShuttleBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: shuttle_chair_preview_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: BayChairShuttleWhite
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: shuttle_chair_preview_white
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairComfyShuttle
+  suffix: comfy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats_goonstation.rsi
+    state: shuttle_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonComfyShuttleBrown
+  suffix: brown
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats_goonstation.rsi
+    state: shuttle_chair-brown
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonComfyShuttleGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats_goonstation.rsi
+    state: shuttle_chair-green
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonComfyShuttleRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats_goonstation.rsi
+    state: shuttle_chair-red
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonComfyShuttlePilot
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats_goonstation.rsi
+    state: shuttle_chair-pilot
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: AuroraOfficeBridgePilot
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: pilot
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: AuroraStoolChairCockpit
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    noRot: false
+    state: cockpit_preview
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisBedChairShuttle
+  suffix: shuttle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: shuttlechair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: VoreChairBayShuttle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/shuttle_seats.rsi
+    state: shuttle_chair_preview_vore
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreChairBayShuttle
+    node: built

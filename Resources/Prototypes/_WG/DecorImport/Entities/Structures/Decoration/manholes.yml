@@ -1,0 +1,21 @@
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: N14Manhole
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Misc/laddersms13.rsi
+    drawdepth: FloorObjects
+    offset: 0,0.25
+    layers:
+    - state: manhole_closed
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Appearance
+  - type: ItemToggle
+    activated: false
+    onUse: false
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: manhole_open }
+          False: { state: manhole_closed }

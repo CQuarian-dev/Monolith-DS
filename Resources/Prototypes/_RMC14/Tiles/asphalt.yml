@@ -1,0 +1,22 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+# in this file: Asphalt(_, 1..17), Cement(1..20), CementSunBleached(1..20)
+
+# Asphalt
+- type: tile
+  parent: CMTileBaseUnpryable
+  id: RMCFloorAsphaltTile
+  name: tiles-rmc-asphalt
+  sprite: /Textures/_RMC14/Tiles/asphalt/tile.png
+
+# Asphalt Tiles
+- type: tile
+  parent: CMTileBaseUnpryable
+  id: RMCFloorAsphalt
+  name: tiles-rmc-asphalt
+  allowRotationMirror: true
+  sprite: /Textures/_RMC14/Tiles/asphalt/asphalt.png
+
+- type: tile
+  parent: RMCFloorAsphalt
+  id: RMCFloorAsphalt10
+  sprite: /Textures/_RMC14/Tiles/asphalt/asphalt10.png

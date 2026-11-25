@@ -71,12 +71,12 @@ public abstract class VehicleHudPanel : Control
         Box(handle, 0, 0, PanelWidth, PanelHeight, Section, SectionBorder, s);
         Box(handle, 0, 0, PanelWidth, HeaderHeight, Header, null, s);
         handle.DrawLine(new Vector2(0, HeaderHeight) * s, new Vector2(PanelWidth, HeaderHeight) * s, HeaderBorder);
-        handle.DrawRect(Rect(0, 0, 3, HeaderHeight, s), Accent);
+        handle.DrawRect(HudRect(0, 0, 3, HeaderHeight, s), Accent);
 
         var grip = PanelWidth - 10f;
         for (var i = 0; i < 3; i++)
         {
-            handle.DrawRect(Rect(grip, HeaderMiddle - 3.5f + i * 3, 4, 1, s), _dragOffset != null ? Accent : Muted);
+            handle.DrawRect(HudRect(grip, HeaderMiddle - 3.5f + i * 3, 4, 1, s), _dragOffset != null ? Accent : Muted);
         }
 
         var titleRight = DrawHeader(handle, PanelWidth - GripWidth, s);
@@ -126,7 +126,7 @@ public abstract class VehicleHudPanel : Control
     {
         var textX = right - Measure(Label, text, s) / s;
         var dotX = textX - 9f;
-        handle.DrawRect(Rect(dotX, HeaderMiddle - 3f, 6, 6, s), color);
+        handle.DrawRect(HudRect(dotX, HeaderMiddle - 3f, 6, 6, s), color);
         DrawMiddle(handle, Label, text, textX, HeaderMiddle, s, color);
         return dotX;
     }
@@ -176,7 +176,7 @@ public abstract class VehicleHudPanel : Control
 
     protected float IndicatorWidth(string text, float s)
     {
-        return MathF.Max(36f, MathF.Ceiling(Width(Label, text, s)) + 10f);
+        return MathF.Max(36f, MathF.Ceiling(TextWidth(Label, text, s)) + 10f);
     }
 
     protected void Indicator(DrawingHandleScreen handle, float x, float y, float w, float h, string text, Color? color, float s)
@@ -184,7 +184,7 @@ public abstract class VehicleHudPanel : Control
         var on = color is { } c;
         Box(handle, x, y, w, h, on ? LitFill : OffFill, on ? color : Off, s);
         var fitted = Fit(Label, text, w - 4f, s);
-        var textW = Width(Label, fitted, s);
+        var textW = TextWidth(Label, fitted, s);
         DrawMiddle(handle, Label, fitted, x + (w - textW) / 2f, y + h / 2f, s, on ? color!.Value : Muted);
     }
 
@@ -196,7 +196,7 @@ public abstract class VehicleHudPanel : Control
         for (var i = 0; i < count; i++)
         {
             var t = (i + 1f) / count;
-            var rect = Rect(x + i * (w + gap), y, w, height, s);
+            var rect = HudRect(x + i * (w + gap), y, w, height, s);
             if (i < lit)
             {
                 var color = colorAt(t);
@@ -212,13 +212,13 @@ public abstract class VehicleHudPanel : Control
 
     protected static void Box(DrawingHandleScreen handle, float x, float y, float w, float h, Color fill, Color? border, float s)
     {
-        var rect = Rect(x, y, w, h, s);
+        var rect = HudRect(x, y, w, h, s);
         handle.DrawRect(rect, fill);
         if (border is { } b)
             handle.DrawRect(rect, b, false);
     }
 
-    protected static UIBox2 Rect(float x, float y, float w, float h, float s)
+    protected static UIBox2 HudRect(float x, float y, float w, float h, float s)
     {
         return new UIBox2(new Vector2(x, y) * s, new Vector2(x + w, y + h) * s);
     }
@@ -284,7 +284,7 @@ public abstract class VehicleHudPanel : Control
         return length == 0 ? string.Empty : text[..length].TrimEnd() + "…";
     }
 
-    protected static float Width(Font font, string text, float s)
+    protected static float TextWidth(Font font, string text, float s)
     {
         return Measure(font, text, s) / s;
     }

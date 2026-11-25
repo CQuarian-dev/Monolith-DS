@@ -1,0 +1,29 @@
+- files: ["frontier_floor_white_marble.png", "frontier_floor_dark_marble.png", "frontier_floor_plasma_marble.png", "frontier_floor_uranium_marble.png"]
+  license: "CC0-1.0"
+  copyright: "Created by SeaWyrm. Taken from Frontier at commit 8a530ced2fd18fa430482245581a32f64f4a435a."
+  source: "https://github.com/space-wizards/space-station-14/pull/38007"
+
+- files: ["goob_floor_ironsand_tile.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Goob Station at commit e1988eba78e9e08ccbb2a09d1840b0d5e007056c."
+  source: "https://github.com/Goob-Station/Goob-Station"
+
+- files: ["delta_v_ironsand_paved.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Delta-V at commit e0e9917ffb145c0d1dc7509e7115ae8c81406eef."
+  source: "https://github.com/DeltaV-Station/Delta-v"
+
+- files: ["harmony_floor_steel_slats_continuous.png", "harmony_floor_steel_vertical_slats_bordered.png", "harmony_floor_white_slats_continuous.png", "harmony_floor_white_vertical_slats_bordered.png", "harmony_floor_dark_slats_continuous.png", "harmony_floor_dark_vertical_slats_bordered.png"]
+  license: "CC0-1.0"
+  copyright: "created by SeaWyrm (github Aearo-Deepwater). Taken from Harmony at commit 3e2ddf1784b734b42cf8daced7ba2a61de8f94d5."
+  source: "https://github.com/space-wizards/space-station-14/pull/37832"
+
+- files: ["moff_floor_exo_horizontal.png", "moff_floor_exo_vertical.png"]
+  license: "CC-BY-SA-4.0"
+  copyright: "By AftrLite (GitHub). Taken from Moffstation at commit d1a8a5e6d279ad62f95f358ceb79a7d532f331de."
+  source: "https://github.com/moff-station/moff-station-14"
+
+- files: ["wizden_floor_dark_horizontal_slats_bordered.png"]
+  license: "CC0-1.0"
+  copyright: "By AftrLite (GitHub). Taken from Space Wizards at commit b20a6845847b9f6025d5170c044186cbe0836e7b."
+  source: "https://github.com/space-wizards/space-station-14"

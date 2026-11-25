@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "sofa_corner_in",
+      "directions": 4
+    },
+    {
+      "name": "sofa_corner_in_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofa_corner_in_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofa_corner_in_yellow",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_left_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_left_chair",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_left_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_left_yellow",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_right_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_right_chair",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_right_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofa_end_right_yellow",
+      "directions": 4
+    },
+    {
+      "name": "sofa_middle_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofa_middle_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofa_middle_stool",
+      "directions": 4
+    },
+    {
+      "name": "sofa_middle_yellow",
+      "directions": 4
+    }
+  ]
+}

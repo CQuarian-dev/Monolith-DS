@@ -1,0 +1,547 @@
+- type: entity
+  parent: CrateGeneric
+  id: DarkPackDumpster
+  components:
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/crates32x32.rsi
+    state: garbage
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crates32x32.rsi
+    layers:
+    - state: garbage
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: garbage
+      map: ["enum.StorageVisualLayers.Door"]
+      visible: false
+  - type: EntityStorageVisuals
+    stateBaseClosed: garbage
+    stateBaseOpen: garbageopen
+    stateDoorOpen: null
+    stateDoorClosed: null
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:NestedSelector
+        tableId: GenericTrashItems
+        prob: 0.75
+
+- type: entity
+  parent: DarkPackDumpster
+  id: DarkPackDumpsterSnow
+  suffix: Snow
+  components:
+  - type: Icon
+    state: garbage-snow
+  - type: Sprite
+    layers:
+    - state: garbage-snow
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: garbage-snow
+      map: ["enum.StorageVisualLayers.Door"]
+      visible: false
+  - type: EntityStorageVisuals
+    stateBaseClosed: garbage-snow
+    stateBaseOpen: garbageopen
+    stateDoorOpen: null
+    stateDoorClosed: null
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackHydrant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/hydrant.rsi
+    state: hydrant
+    noRot: true
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.2
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackHydrant
+  id: DarkPackHydrantSnow
+  suffix: snow
+  components:
+  - type: Sprite
+    state: hydrant-snow
+
+- type: entity
+  parent: DarkPackHydrant
+  id: DarkPackBollard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bollards.rsi
+    state: yellow
+
+- type: entity
+  parent: DarkPackBollard
+  id: DarkPackBollardGrey
+  suffix: grey
+  components:
+  - type: Sprite
+    state: grey
+
+- type: entity
+  parent: DarkPackBollard
+  id: DarkPackBollardDual
+  suffix: dual
+  components:
+  - type: Sprite
+    state: yellow_dual
+    noRot: false
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.15,0.4,0.15"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: DarkPackBollardDual
+  id: DarkPackBollardDualGrey
+  suffix: dual, grey
+  components:
+  - type: Sprite
+    state: grey_dual
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackGrate
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/grate.rsi
+    state: grate
+    drawdepth: FloorObjects
+  - type: Physics
+    canCollide: false
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackGrate
+  id: DarkPackGrateRust
+  suffix: rust
+  components:
+  - type: Sprite
+    state: grate-rust
+
+- type: entity
+  parent: DarkPackGrate
+  id: DarkPackGrateRound
+  suffix: round
+  components:
+  - type: Sprite
+    state: grate_round
+
+- type: entity
+  parent: DarkPackGrate
+  id: DarkPackGrateRoundRust
+  suffix: round, rust
+  components:
+  - type: Sprite
+    state: grate_round-rust
+
+- type: entity
+  parent: DarkPackGrate
+  id: DarkPackDrain
+  components:
+  - type: Sprite
+    state: grate_small
+
+- type: entity
+  parent: DarkPackDrain
+  id: DarkPackDrainRust
+  suffix: rust
+  components:
+  - type: Sprite
+    state: grate_small-rust
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackRoofVent
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/vents.rsi
+    state: roof1
+    noRot: true
+    drawdepth: Overdoors
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackRoofVent
+  id: DarkPackRoofVentSnow
+  suffix: snow
+  components:
+  - type: Sprite
+    state: roof1-snow
+
+- type: entity
+  parent: DarkPackRoofVent
+  id: DarkPackRoofVentRound
+  suffix: round
+  components:
+  - type: Sprite
+    state: roof2
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: DarkPackRoofVentRound
+  id: DarkPackRoofVentRoundSnow
+  suffix: round, snow
+  components:
+  - type: Sprite
+    state: roof2-snow
+
+- type: entity
+  parent: DarkPackRoofVent
+  id: DarkPackRoofVentChimney
+  suffix: chimney
+  components:
+  - type: Sprite
+    state: roof3
+
+- type: entity
+  parent: DarkPackRoofVentChimney
+  id: DarkPackRoofVentChimneySnow
+  suffix: chimney, snow
+  components:
+  - type: Sprite
+    state: roof3-snow
+
+- type: entity
+  parent: DarkPackRoofVent
+  id: DarkPackRoofVentEnd
+  suffix: duct end
+  components:
+  - type: Sprite
+    state: roof4
+    noRot: false
+
+- type: entity
+  parent: DarkPackRoofVentEnd
+  id: DarkPackRoofVentEndSnow
+  suffix: duct end, snow
+  components:
+  - type: Sprite
+    state: roof4-snow
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackFountain
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fountain.rsi
+    state: fountain
+    noRot: true
+    offset: "0,0.25"
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.95,-0.45,0.95,0.95"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackFoodCart
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/food_cart.rsi
+    state: vat1
+    noRot: true
+    offset: "0,0.25"
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackFoodCart
+  id: DarkPackFoodCart2
+  components:
+  - type: Sprite
+    state: vat2
+
+- type: entity
+  parent: DarkPackFoodCart
+  id: DarkPackFoodCart3
+  components:
+  - type: Sprite
+    state: vat3
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackBillboard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/billboards.rsi
+    state: billboard_blank
+    offset: "0,0.5"
+    drawdepth: Overdoors
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.45,-0.45,1.45,-0.15"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardTransam
+  suffix: TransAmerica
+  components:
+  - type: Sprite
+    state: billboard_1
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardEndron
+  suffix: Endron
+  components:
+  - type: Sprite
+    state: billboard_2
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardEndronVandal
+  suffix: Endron, vandalised
+  components:
+  - type: Sprite
+    state: billboard_3
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardKing
+  suffix: King
+  components:
+  - type: Sprite
+    state: billboard_4
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardKingVandal
+  suffix: King, vandalised
+  components:
+  - type: Sprite
+    state: billboard_5
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardBubway
+  suffix: Bubway
+  components:
+  - type: Sprite
+    state: billboard_6
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardStarkist
+  suffix: Starkist
+  components:
+  - type: Sprite
+    state: billboard_7
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardRedbat
+  suffix: Redbat
+  components:
+  - type: Sprite
+    state: billboard_9
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardMagadon
+  suffix: Magadon
+  components:
+  - type: Sprite
+    state: billboard_10
+
+- type: entity
+  parent: DarkPackBillboard
+  id: DarkPackBillboardRedNews
+  suffix: Red Network
+  components:
+  - type: Sprite
+    state: billboard_11
+
+- type: entity
+  parent: BaseUrbanFenceGate
+  id: DarkPackGraveyardGate
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/gate.rsi
+    offset: "0,0.5"
+    layers:
+    - state: gate
+      map: [ "enum.DoorVisualLayers.Base" ]
+  - type: Door
+    openSpriteState: gate-open
+    closedSpriteState: gate
+    openingSpriteState: gate-open
+    closingSpriteState: gate
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.45,-0.45,1.45,0.45"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackSmallFence
+  components:
+  - type: Sprite
+    noRot: false
+    snapCardinals: true
+    sprite: _WG/DecorImport/Structures/Decoration/smallfence.rsi
+    state: fence1
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.15,0.5,0.15"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackSmallFence
+  id: DarkPackSmallFence2
+  components:
+  - type: Sprite
+    state: fence2
+
+- type: entity
+  parent: DarkPackSmallFence
+  id: DarkPackSmallFence3
+  components:
+  - type: Sprite
+    state: fence3

@@ -1,0 +1,179 @@
+- files: [ assunzione_blocks.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs_assun.dmi (state blocks)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ assunzione_detail.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs_assun.dmi (state sidewalk-tile-detail)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ assunzione_flat.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs_assun.dmi (state flat)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ assunzione_paved.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs_assun.dmi (state brick-paver)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ cave_adhomai.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/cave_floor.dmi (state cave)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ concrete_dark_2.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs.dmi (state preview-colorable-sidewalk-detail)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_southeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_southwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_northeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_beach_northwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state beach)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ dirt_konyang_sand.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/konyang/konyang_beach.dmi (state sand)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ exoplanet_crystal.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/crystal.dmi (state crystal)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ exoplanet_ice.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/snow.dmi (state ice)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ exoplanet_lino.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/linoleum.dmi (state lino_preview)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ exoplanet_permafrost.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/snow.dmi (state permafrost)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ exoplanet_roofing_tiles.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs.dmi (state rooftop)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ ice_dark.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/snow.dmi (state icedark)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ ramp_bottom.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/tiles.dmi (state rampbot)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ shallow_moghes.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/moghes.dmi (state water)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ shallow_sewage.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/misc/beach.dmi (state seashallow)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ shuttle_skrell.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/shuttle.dmi (state skrell_purple)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ water_alt_2.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/misc/beach.dmi (state poolwater)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ water_pool.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/misc/beach.dmi (state pool)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ carpet_rubber.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/carpet.dmi (state rub_carpet)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ exoplanet_konyang.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/konyang.dmi (state grass)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ konyang_pink.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/konyang/moss_transition_2.dmi (state unsmooth)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ konyang_wilting.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/exoplanet/konyang/moss_transition_1.dmi (state unsmooth)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ marble_red.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/tiles.dmi (state textured)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ detail_concrete.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/urban_turfs.dmi (state preview-colorable-sidewalk-detail)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ floor_vaurca.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/tiles.dmi (state vaurca)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ icy_rock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/flooring/ice_cavern.dmi (states icy_rock1 to icy_rock19)."
+  source: "https://github.com/Aurorastation/Aurora.3"
+
+- files: [ basalt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/icons/turf/basalt.dmi (states basalt, basalt0 to basalt12)."
+  source: "https://github.com/Aurorastation/Aurora.3"

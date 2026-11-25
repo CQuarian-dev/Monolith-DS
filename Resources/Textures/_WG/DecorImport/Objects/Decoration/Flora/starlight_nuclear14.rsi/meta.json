@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "harvest, dead and produce by PatoGrone for N14, stages and seed modified by Peptide90 from harvest and produce.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "harvest"
+    }
+  ]
+}

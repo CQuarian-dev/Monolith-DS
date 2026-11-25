@@ -121,6 +121,8 @@ public sealed partial class ContentAudioSystem
         if (_state.CurrentState is not GameplayState) // LuaM
             return;
 
+        WgUpdatePlanetMusic(); // WOLFGATE(Planets): planet soundscapes replace ordinary ambient music.
+
         if (_initialStationMusicBool)
         {
             _initialStationMusicTimer += frameTime;
@@ -436,6 +438,16 @@ public sealed partial class ContentAudioSystem
             return;
         }
         // LuaM end
+
+        // WOLFGATE(Planets) START: no ordinary ambient music on a planet, whether a biome, grid, timer or combat-exit request asked.
+        if (!combatMode && WgOnPlanet())
+        {
+            DisableAmbientMusic();
+            _isCombatMusicPlaying = false;
+            _replayAmbientMusicBool = false;
+            return;
+        }
+        // WOLFGATE END
 
         _isCombatMusicPlaying = combatMode;
         FadeOut(_ambientMusicStream);

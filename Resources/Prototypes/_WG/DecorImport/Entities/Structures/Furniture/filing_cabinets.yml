@@ -1,0 +1,238 @@
+- type: entity
+  parent: Dresser
+  id: BayFilingcabinet
+  suffix: filingcabinet 2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: filingcabinet_baystation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildBayFilingcabinet
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: BayFilingcabinetFilingcabinet
+  suffix: filingcabinet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: tallcabinet_baystation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildBayFilingcabinetFilingcabinet
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: BayFilingcabinetWallcabinet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: wallcabinet
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayFilingcabinetWallcabinet
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMFilingcabinet
+  suffix: filingcabinet 2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: filingcabinet_m
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMFilingcabinet
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMFilingcabinetFilingcabinet
+  suffix: filingcabinet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: tallcabinet_cmss13
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMFilingcabinetFilingcabinet
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMFilingcabinetDouble
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: filingcabinet_double
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMFilingcabinetDouble
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMFilingcabinetChestdrawer
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: chestdrawer_filingcabinet
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMFilingcabinetChestdrawer
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMFilingcabinetChestdrawerDouble
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: chestdrawer_double
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMFilingcabinetChestdrawerDouble
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMFilingcabinetDocumentation
+  suffix: documentation
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: filingcabinet_m_documentation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMFilingcabinetDocumentation
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: CMDocumentationHighcomChestdrawer
+  suffix: chestdrawer
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: chestdrawer_documentation_highcom
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMDocumentationHighcomChestdrawer
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: GoonCabinet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets_goonstation.rsi
+    state: cabinet
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonCabinet
+    node: built

@@ -1,0 +1,59 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "center-line",
+            "directions": 4
+        },
+        {
+            "name": "pedestrian",
+            "directions": 4
+        },
+        {
+            "name": "line",
+            "directions": 4
+        },
+        {
+            "name": "line_thin",
+            "directions": 4
+        },
+        {
+            "name": "no_pass",
+            "directions": 4
+        },
+        {
+            "name": "turn_right",
+            "directions": 4
+        },
+        {
+            "name": "turn_left",
+            "directions": 4
+        },
+        {
+            "name": "fork",
+            "directions": 4
+        },
+        {
+            "name": "no_park",
+            "directions": 4
+        },
+        {
+            "name": "reflector",
+            "directions": 4
+        },
+        {
+            "name": "incline_line",
+            "directions": 4
+        },
+        {
+            "name": "incline_center-line",
+            "directions": 4
+        }
+    ]
+}

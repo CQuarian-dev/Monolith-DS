@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fence0"
+    },
+    {
+      "name": "fence1"
+    },
+    {
+      "name": "fence2"
+    },
+    {
+      "name": "fence3"
+    },
+    {
+      "name": "fence4"
+    },
+    {
+      "name": "fence5"
+    },
+    {
+      "name": "fence6"
+    },
+    {
+      "name": "fence7"
+    },
+    {
+      "name": "fence8"
+    },
+    {
+      "name": "fence9"
+    },
+    {
+      "name": "fence10"
+    },
+    {
+      "name": "fence11"
+    },
+    {
+      "name": "fence12"
+    },
+    {
+      "name": "fence13"
+    },
+    {
+      "name": "fence14"
+    },
+    {
+      "name": "fence15"
+    },
+    {
+      "name": "post0"
+    },
+    {
+      "name": "post1"
+    },
+    {
+      "name": "post2"
+    },
+    {
+      "name": "post3"
+    },
+    {
+      "name": "post4"
+    },
+    {
+      "name": "post5"
+    },
+    {
+      "name": "post6"
+    },
+    {
+      "name": "post7"
+    },
+    {
+      "name": "post8"
+    },
+    {
+      "name": "post9"
+    },
+    {
+      "name": "post10"
+    },
+    {
+      "name": "post11"
+    },
+    {
+      "name": "post12"
+    },
+    {
+      "name": "post13"
+    },
+    {
+      "name": "post14"
+    },
+    {
+      "name": "post15"
+    },
+    {
+      "name": "cut1_0"
+    },
+    {
+      "name": "cut1_1"
+    },
+    {
+      "name": "cut1_2"
+    },
+    {
+      "name": "cut1_3"
+    },
+    {
+      "name": "cut1_4"
+    },
+    {
+      "name": "cut1_5"
+    },
+    {
+      "name": "cut1_6"
+    },
+    {
+      "name": "cut1_7"
+    },
+    {
+      "name": "cut1_8"
+    },
+    {
+      "name": "cut1_9"
+    },
+    {
+      "name": "cut1_10"
+    },
+    {
+      "name": "cut1_11"
+    },
+    {
+      "name": "cut1_12"
+    },
+    {
+      "name": "cut1_13"
+    },
+    {
+      "name": "cut1_14"
+    },
+    {
+      "name": "cut1_15"
+    },
+    {
+      "name": "cut2_0"
+    },
+    {
+      "name": "cut2_1"
+    },
+    {
+      "name": "cut2_2"
+    },
+    {
+      "name": "cut2_3"
+    },
+    {
+      "name": "cut2_4"
+    },
+    {
+      "name": "cut2_5"
+    },
+    {
+      "name": "cut2_6"
+    },
+    {
+      "name": "cut2_7"
+    },
+    {
+      "name": "cut2_8"
+    },
+    {
+      "name": "cut2_9"
+    },
+    {
+      "name": "cut2_10"
+    },
+    {
+      "name": "cut2_11"
+    },
+    {
+      "name": "cut2_12"
+    },
+    {
+      "name": "cut2_13"
+    },
+    {
+      "name": "cut2_14"
+    },
+    {
+      "name": "cut2_15"
+    }
+  ]
+}

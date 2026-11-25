@@ -1,0 +1,456 @@
+# Each world alternates phased storms with 3-7 minutes of clear skies. A storm telegraphs with a light overlay, runs,
+# and winds down through a light overlay again, after /tg/station's weather. The scheduler picks these stock weathers,
+# which say what the weather is; wolfWeathers says how each looks, sounds and blows on this world (_WG/WolfWeather),
+# and a wolfWeather with lightning drops real bolts on open ground.
+# Seasons loop in order (a world with one has it for good, none has no seasons); each can weight the storms, bring its
+# own, stretch clear spells and shift the temperature. The outdoor air is the ground's air plus the season, the weather
+# (weatherTemperature) and the hour (dayTemperatureSwing either side, warmest at 15:00, coldest at 05:00), in kelvin.
+- type: wgPlanetWeather
+  id: WGPlanetWeatherAsclepiu
+  planetType: PlanetAsclepiu
+  storms:
+  - main: WGRainLow
+  - telegraph: WGRainLow
+    main: WGRainMed
+    end: WGRainEnd
+  - telegraph: WGRainLow
+    main: WGRainHigh
+    end: WGRainEnd
+  wolfWeathers:
+    WGRainLow: WGRainLight
+    WGRainEnd: WGRainLight
+    WGRainMed: WGRainModerate
+    WGRainHigh: WGThunderstorm
+    WGSnowLight: WGSnow
+    WGSnowStorm: WGBlizzard
+    WGFogMist: WGFogWisps
+    WGFog: WGFogBank
+  initialHour: 8
+  dayTemperatureSwing: 5
+  weatherTemperature:
+    WGRainLow: -1
+    WGRainEnd: -1
+    WGRainMed: -2
+    WGRainHigh: -4
+    WGSnowLight: -3
+    WGSnowStorm: -8
+    WGFogMist: -1
+    WGFog: -2
+  # A year is six local days: four seasons of 90 minutes.
+  seasons:
+  - id: Spring
+    name: wg-planet-season-spring
+    color: "#9ad48a"
+    temperature: -1
+    clearScale: 0.8
+    stormWeights:
+      WGRainLow: 2
+      WGRainMed: 2
+      WGRainHigh: 0.5
+  - id: Summer
+    name: wg-planet-season-summer
+    color: "#f2c95c"
+    temperature: 8
+    clearDayTemperature: 3
+    clearScale: 1.2
+    stormWeights:
+      WGRainLow: 0.5
+      WGRainHigh: 2.5
+  - id: Autumn
+    name: wg-planet-season-autumn
+    color: "#d8894a"
+    temperature: -5
+    storms:
+    - main: WGRainLow
+    - telegraph: WGRainLow
+      main: WGRainMed
+      end: WGRainEnd
+    - telegraph: WGFogMist
+      main: WGFog
+      end: WGFogMist
+      telegraphSeconds: 45
+      endSeconds: 45
+  - id: Winter
+    name: wg-planet-season-winter
+    color: "#a8d0f0"
+    temperature: -18
+    storms:
+    - main: WGSnowLight
+    - telegraph: WGSnowLight
+      main: WGSnowStorm
+      end: WGSnowLight
+    - telegraph: WGFogMist
+      main: WGFog
+      end: WGFogMist
+      telegraphSeconds: 45
+      endSeconds: 45
+    stormWeights:
+      WGSnowLight: 2
+      WGFog: 0.5
+
+- type: wgPlanetWeather
+  id: WGPlanetWeatherFervidus
+  planetType: PlanetFervidus
+  storms:
+  - main: WGAshLight
+  - telegraph: WGAshLight
+    main: WGAshStorm
+    end: WGAshLight
+  wolfWeathers:
+    WGAshLight: WGAshfall
+    WGAshStorm: WGAshStorm
+  initialHour: 12
+  # Thick volcanic air holds its heat; ash smothers the ground warmer still. No seasons.
+  dayTemperatureSwing: 2
+  weatherTemperature:
+    WGAshLight: 2
+    WGAshStorm: 4
+
+- type: wgPlanetWeather
+  id: WGPlanetWeatherMerak
+  planetType: PlanetMerak
+  storms:
+  - telegraph: WGDustLow
+    main: WGDustMed
+    end: WGDustLow
+  - telegraph: WGDustLow
+    main: WGDustHigh
+    end: WGDustLow
+  wolfWeathers:
+    WGDustLow: WGDustLight
+    WGDustMed: WGSandstorm
+    WGDustHigh: WGSandstormHeavy
+  initialHour: 15
+  clearMinSeconds: 300
+  clearMaxSeconds: 600
+  # Desert: scorching afternoons, cold nights; sand on the wind is hot.
+  dayTemperatureSwing: 12
+  weatherTemperature:
+    WGDustLow: 1
+    WGDustMed: 2
+    WGDustHigh: 3
+  seasons:
+  - id: Dry
+    name: wg-planet-season-dry
+    color: "#e8c890"
+    clearDayTemperature: 2
+    clearScale: 1.3
+    stormWeights:
+      WGDustHigh: 0.3
+  - id: Dust
+    name: wg-planet-season-dust
+    color: "#c8955a"
+    temperature: 3
+    clearScale: 0.6
+    stormWeights:
+      WGDustMed: 1.5
+      WGDustHigh: 2.5
+
+- type: wgPlanetWeather
+  id: WGPlanetWeatherAerumna
+  planetType: PlanetAerumna
+  storms:
+  - main: WGRainLow
+  - telegraph: WGRainLow
+    main: WGRainMed
+    end: WGRainEnd
+  wolfWeathers:
+    WGRainLow: WGRainLight
+    WGRainEnd: WGRainLight
+    WGRainMed: WGRainHeavy
+  initialHour: 18
+  # Thick humid air: little swing between day and night.
+  dayTemperatureSwing: 2.5
+  weatherTemperature:
+    WGRainLow: -1
+    WGRainEnd: -1
+    WGRainMed: -2
+  seasons:
+  - id: Dry
+    name: wg-planet-season-dry
+    color: "#d8c890"
+    temperature: 3
+    clearScale: 1.6
+    stormWeights:
+      WGRainMed: 0.3
+  - id: Monsoon
+    name: wg-planet-season-monsoon
+    color: "#6aa0c8"
+    temperature: -2
+    clearScale: 0.35
+    weatherScale: 1.5
+    stormWeights:
+      WGRainLow: 0.5
+      WGRainMed: 3
+
+- type: wgPlanetWeather
+  id: WGPlanetWeatherThrascias
+  planetType: PlanetThrascias
+  storms:
+  - main: WGSnowLight
+  - telegraph: WGSnowLight
+    main: WGSnowStorm
+    end: WGSnowLight
+  wolfWeathers:
+    WGSnowLight: WGSnow
+    WGSnowStorm: WGBlizzard
+  initialHour: 6
+  dayTemperatureSwing: 6
+  weatherTemperature:
+    WGSnowLight: -3
+    WGSnowStorm: -12
+  seasons:
+  - id: DeepWinter
+    name: wg-planet-season-deep-winter
+    color: "#c8e4ff"
+
+# Carcinoma's red haze and fog came from WolfWeather's first schedule.
+- type: wgPlanetWeather
+  id: WGPlanetWeatherCarcinoma
+  planetType: WGPlanetCarcinoma
+  storms:
+  - main: WGBloodRain
+  - main: WGBloodHaze
+  - telegraph: WGBloodHaze
+    main: WGBloodFog
+    end: WGBloodHaze
+  - telegraph: WGBloodRain
+    main: WGBloodStorm
+    end: WGBloodRain
+  wolfWeathers:
+    WGBloodRain: WGBloodRainModerate
+    WGBloodStorm: WGBloodStorm
+    WGBloodHaze: WGBloodHaze
+    WGBloodFog: WGBloodFog
+  initialHour: 21
+  # Body-warm and nearly steady; no seasons.
+  dayTemperatureSwing: 1
+  weatherTemperature:
+    WGBloodRain: -1
+    WGBloodStorm: -2
+    WGBloodFog: -1
+
+# Overlays and rain loops from /tg/station (weather_effects.dmi, sound/ambience/weather/rain).
+- type: weather
+  id: WGRainLow
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: rain_low
+  sound:
+    path: /Audio/_WG/Planets/Weather/rain_start.ogg
+    params:
+      loop: true
+      volume: -8
+
+- type: weather
+  id: WGRainEnd
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: rain_low
+  sound:
+    path: /Audio/_WG/Planets/Weather/rain_end.ogg
+    params:
+      loop: true
+      volume: -8
+
+- type: weather
+  id: WGRainMed
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: rain_med
+  sound:
+    path: /Audio/_WG/Planets/Weather/rain_mid.ogg
+    params:
+      loop: true
+      volume: -6
+
+- type: weather
+  id: WGRainHigh
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: rain_high
+  sound:
+    path: /Audio/_WG/Planets/Weather/rain_mid.ogg
+    params:
+      loop: true
+      volume: -2
+
+- type: weather
+  id: WGSnowLight
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: light_snow
+  sound:
+    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    params:
+      loop: true
+      volume: -8
+
+- type: weather
+  id: WGSnowStorm
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: snow_storm
+  sound:
+    path: /Audio/Effects/Weather/snowstorm.ogg
+    params:
+      loop: true
+      volume: -4
+
+- type: weather
+  id: WGAshLight
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: light_ash
+  sound:
+    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    params:
+      loop: true
+      volume: -10
+
+- type: weather
+  id: WGAshStorm
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: ash_storm
+  sound:
+    path: /Audio/Effects/Weather/snowstorm.ogg
+    params:
+      loop: true
+      volume: -6
+
+- type: weather
+  id: WGDustLow
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_low
+  sound:
+    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    params:
+      loop: true
+      volume: -10
+
+- type: weather
+  id: WGDustMed
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_med
+  sound:
+    path: /Audio/Effects/Weather/snowstorm_weak.ogg
+    params:
+      loop: true
+      volume: -6
+
+- type: weather
+  id: WGDustHigh
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_high
+  sound:
+    path: /Audio/Effects/Weather/snowstorm.ogg
+    params:
+      loop: true
+      volume: -4
+
+# Tinted red; these create no reagent puddles or biomass.
+- type: weather
+  id: WGBloodRain
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: rain_low
+  color: "#b83c46"
+  sound:
+    path: /Audio/_WG/Planets/Weather/rain_start.ogg
+    params:
+      loop: true
+      volume: -8
+
+- type: weather
+  id: WGBloodStorm
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: rain_high
+  color: "#b83c46"
+  sound:
+    path: /Audio/_WG/Planets/Weather/rain_mid.ogg
+    params:
+      loop: true
+      volume: -2
+
+# Red murk for Carcinoma; on a planet WolfWeather draws it, this sprite only shows where a stock overlay is used.
+- type: weather
+  id: WGBloodHaze
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_low
+  color: "#b83c46"
+
+- type: weather
+  id: WGBloodFog
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_med
+  color: "#b83c46"
+
+# Fog for Asclepiu's autumn and winter; on a planet WolfWeather draws it.
+- type: weather
+  id: WGFogMist
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_low
+  color: "#c8d0d8"
+
+- type: weather
+  id: WGFog
+  sprite:
+    sprite: /Textures/_WG/Planets/Effects/weather_tg.rsi
+    state: dust_med
+  color: "#c8d0d8"
+
+# A thunderbolt: one flash, one crack, gone.
+- type: entity
+  id: WGThunderbolt
+  categories: [ HideSpawnMenu ]
+  name: thunderbolt
+  components:
+  - type: Sprite
+    sprite: /Textures/_WG/Planets/Effects/thunderbolt.rsi
+    state: thunderbolt
+    offset: 0, 1
+    drawdepth: Effects
+    noRot: true
+    shader: unshaded
+  - type: PointLight
+    radius: 14
+    energy: 10
+    color: "#cfe4ff"
+    netsync: false
+  - type: TimedDespawn
+    lifetime: 0.6
+
+# A far flash's bolt, drawn by the client somewhere in view; the server never spawns it.
+- type: entity
+  parent: WGThunderbolt
+  id: WGThunderboltFar
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: /Textures/_WG/Planets/Effects/thunderbolt.rsi
+    state: thunderbolt
+    offset: 0, 1
+    drawdepth: Effects
+    noRot: true
+    shader: unshaded
+    color: "#dfe8ffcc"
+  - type: PointLight
+    radius: 10
+    energy: 6
+    color: "#cfe4ff"
+    netsync: false
+
+# The thunder is played by the strike itself, at the spot: it outlasts the bolt by seconds.
+- type: soundCollection
+  id: WGThunder
+  files:
+  - /Audio/_WG/Planets/Weather/thunder_1.ogg
+  - /Audio/_WG/Planets/Weather/thunder_2.ogg

@@ -1,0 +1,90 @@
+- type: entity
+  parent: OperatingTable
+  id: CoyoteTableOptable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    noRot: false
+    state: optable
+
+- type: entity
+  parent: TableBase
+  id: CoyoteTableOptablePrimitive
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    state: optable_primitive
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    state: optable_primitive
+  - type: IconSmooth
+    key: CoyoteTableOptablePrimitive
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: TgTableOptable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    state: surgery_table
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    state: surgery_table
+  - type: IconSmooth
+    key: TgTableOptable
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 15
+  - type: Construction
+    graph: DecorBuildTgTableOptable
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: ParaTableTray
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    state: tray
+    noRot: true
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/operating_tables.rsi
+    state: tray
+  - type: IconSmooth
+    key: ParaTableTray
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

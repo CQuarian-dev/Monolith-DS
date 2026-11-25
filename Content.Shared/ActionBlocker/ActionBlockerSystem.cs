@@ -163,15 +163,15 @@ namespace Content.Shared.ActionBlocker
             return !ev.Cancelled;
         }
 
-        public bool CanPickup(EntityUid user, EntityUid item)
+        public bool CanPickup(EntityUid user, EntityUid item, bool showPopup = false) // LuaM
         {
-            var userEv = new PickupAttemptEvent(user, item);
+            var userEv = new PickupAttemptEvent(user, item, showPopup); // LuaM
             RaiseLocalEvent(user, userEv);
 
             if (userEv.Cancelled)
                 return false;
 
-            var itemEv = new GettingPickedUpAttemptEvent(user, item);
+            var itemEv = new GettingPickedUpAttemptEvent(user, item, showPopup); // LuaM
             RaiseLocalEvent(item, itemEv);
 
             return !itemEv.Cancelled;

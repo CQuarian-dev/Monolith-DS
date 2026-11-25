@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3.",
+  "size": {
+    "x": 64,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "churchtree"
+    },
+    {
+      "name": "pine_1"
+    },
+    {
+      "name": "tree_stump_coyote"
+    },
+    {
+      "name": "tree_stump_shiptest"
+    }
+  ]
+}

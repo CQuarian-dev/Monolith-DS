@@ -107,6 +107,7 @@ public sealed partial class SecretStashSystem : EntitySystem
 
         // check if item is too big to fit into secret stash or is in the blacklist
         if (_item.GetSizePrototype(itemComp.Size) > _item.GetSizePrototype(entity.Comp.MaxItemSize) ||
+            HasComp<SecretStashComponent>(itemToHideUid) || // LuaM
             _whitelistSystem.IsBlacklistPass(entity.Comp.Blacklist, itemToHideUid))
         {
             var msg = Loc.GetString("comp-secret-stash-action-hide-item-too-big",

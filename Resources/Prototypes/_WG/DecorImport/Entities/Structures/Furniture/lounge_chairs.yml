@@ -1,0 +1,37 @@
+- type: entity
+  parent: ChairBase
+  id: ParaChairComfyBeach
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/lounge_chairs.rsi
+    state: beach_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolChairPool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/lounge_chairs_goonstation.rsi
+    noRot: false
+    state: chair_pool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

@@ -1,0 +1,63 @@
+# LuaM: prototypes DecorImport furniture and its construction recipes need, from Wolfgate's Goobstation content.
+
+# _Goobstation/Entities/Structures/Decorations/floorlight.yml
+- type: entity
+  id: AlwaysPoweredFloorLight
+  suffix: Always powered
+  parent: AlwaysPoweredWallLight
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Structures/Decoration/floorlight.rsi
+    layers:
+      - map: ["enum.PoweredLightLayers.Base"]
+        state: base
+      - map: ["enum.PoweredLightLayers.Glow"]
+        state: glow
+        shader: unshaded
+    state: base
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+          - Impassable
+        layer:
+          - Opaque
+  - type: Icon
+    sprite: _Goobstation/Structures/Decoration/floorlight.rsi
+    state: base
+
+# _Goobstation/Entities/Structures/Decorations/floorlight.yml
+- type: entity
+  id: PoweredFloorLightEmpty
+  suffix: Empty
+  parent: PoweredlightEmpty
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _Goobstation/Structures/Decoration/floorlight.rsi
+    layers:
+      - map: ["enum.PoweredLightLayers.Base"]
+        state: empty
+    state: empty
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.4"
+        density: 190
+        mask:
+          - Impassable
+        layer:
+          - Opaque
+  - type: Icon
+    sprite: _Goobstation/Structures/Decoration/floorlight.rsi
+    state: empty
+# WOLFGATE END

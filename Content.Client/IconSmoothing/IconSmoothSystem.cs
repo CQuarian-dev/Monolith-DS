@@ -185,7 +185,8 @@ namespace Content.Client.IconSmoothing
             DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(0, 1)));
             DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(0, -1)));
 
-            if (comp.Mode is IconSmoothingMode.Corners or IconSmoothingMode.NoSprite or IconSmoothingMode.Diagonal or IconSmoothingMode.DiagonalNF) // Frontier: add DiagonalNF
+            // WOLFGATE(BitmaskWalls): bitmask walls join their diagonal neighbours
+            if (comp.Mode is IconSmoothingMode.Corners or IconSmoothingMode.NoSprite or IconSmoothingMode.Diagonal or IconSmoothingMode.DiagonalNF or IconSmoothingMode.Bitmask) // Frontier: add DiagonalNF
             {
                 DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(1, 1)));
                 DirtyEntities(_mapSystem.GetAnchoredEntities(entityUid, grid, pos + new Vector2i(-1, -1)));
@@ -297,6 +298,11 @@ namespace Content.Client.IconSmoothing
                 case IconSmoothingMode.DiagonalNF: // Frontier
                     CalculateNewSpriteDiagonalNF(gridEntity, smooth, spriteEnt, xform, smoothQuery); // Frontier
                     break; // Frontier
+                // WOLFGATE(BitmaskWalls) START: walls drawn from tg's baked bitmask states
+                case IconSmoothingMode.Bitmask:
+                    CalculateNewSpriteBitmask(gridEntity, smooth, spriteEnt, xform, smoothQuery);
+                    break;
+                // WOLFGATE END
                 default:
                     throw new ArgumentOutOfRangeException();
             }

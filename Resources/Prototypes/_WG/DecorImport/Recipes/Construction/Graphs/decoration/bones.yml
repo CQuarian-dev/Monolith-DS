@@ -1,0 +1,119 @@
+- type: constructionGraph
+  id: DecorBuildTgStatueBoneRib
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Bones
+        amount: 10
+        doAfter: 2
+  - node: built
+    entity: TgStatueBoneRib
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialBones1
+        amount: 10
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgStatueBoneSkull
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Bones
+        amount: 6
+        doAfter: 2
+  - node: built
+    entity: TgStatueBoneSkull
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialBones1
+        amount: 6
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgBoneSkullHalf
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Bones
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: TgBoneSkullHalf
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialBones1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNovaStatueBoneRib
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Bones
+        amount: 10
+        doAfter: 2
+  - node: built
+    entity: NovaStatueBoneRib
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialBones1
+        amount: 10
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNovaStatueBoneSkull
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Bones
+        amount: 6
+        doAfter: 2
+  - node: built
+    entity: NovaStatueBoneSkull
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialBones1
+        amount: 6
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

@@ -1,0 +1,11 @@
+ent-DarkPackDresser = dresser
+    .desc = A nicely-crafted wooden dresser. It's filled with lots of undies.
+ent-NovaDresser = dresser
+    .desc = A nicely-crafted wooden dresser. It's filled with lots of undies.
+ent-ParaDresser = dresser
+    .desc = A nicely-crafted wooden dresser. It's filled with lots of undies.
+ent-ShiptestDresser = dresser
+    .desc = A nicely-crafted wooden dresser. It's filled with lots of undies.
+ent-ParaDresserWardrobe = wardrobe
+    .desc = A good place to store all your clothes.
+ent-MushwoodDresser = mushwood dresser

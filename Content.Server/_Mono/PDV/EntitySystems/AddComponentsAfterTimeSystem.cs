@@ -19,7 +19,7 @@ public sealed partial class AddComponentsAfterTimeSystem : EntitySystem
 
     private void OnMapInit(Entity<AddComponentsAfterTimeComponent> ent, ref MapInitEvent args)
     {
-        ent.Comp.SelectionTime = _timing.CurTime + TimeSpan.FromMinutes(_random.Next(ent.Comp.MinSelectionTime.Minutes, ent.Comp.MaxSelectionTime.Minutes));
+        ent.Comp.SelectionTime = _timing.CurTime + TimeSpan.FromMinutes(_random.NextDouble(ent.Comp.MinSelectionTime.TotalMinutes, ent.Comp.MaxSelectionTime.TotalMinutes)); // LuaM
         if (!_random.Prob(ent.Comp.SelectionProbability) || TryComp<CompanyComponent>(ent, out var company) && ent.Comp.ExcludedCompanies.Contains(company.CompanyName))
             RemComp<AddComponentsAfterTimeComponent>(ent);
     }

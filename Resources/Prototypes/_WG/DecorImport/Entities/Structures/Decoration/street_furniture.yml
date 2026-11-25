@@ -1,0 +1,508 @@
+- type: entity
+  parent: BaseUrbanPost
+  id: DarkPackStreetPhone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/phone_darkpack.rsi
+    state: streetphone
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: DarkPackPayphone
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/phone_darkpack.rsi
+    state: payphone
+    noRot: false
+
+- type: entity
+  parent: BaseUrbanPost
+  id: CoyoteMailbox
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/junk_coyote.rsi
+    state: mailbox
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: MonkeWallMailbox
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/mail_monke.rsi
+    state: wall_mailbox
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: NebulaATM
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/terminals_nebula.rsi
+    state: atm
+    shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 0.6
+    color: "#7FB8FF"
+
+- type: entity
+  parent: BaseUrbanProp
+  id: GoonJukebox
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/decoration_goonstation.rsi
+    state: jukebox
+  - type: PointLight
+    radius: 2
+    energy: 0.7
+    color: "#FFB0E0"
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: GoonTrophy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/decoration_goonstation.rsi
+    drawdepth: SmallObjects
+    state: trophy
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: GoonWallFish
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/decoration_goonstation.rsi
+    state: wallfish
+
+- type: entity
+  parent: BaseUrbanPropIndestructible
+  id: DarkPackBathtub
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bathroom_darkpack.rsi
+    state: tub
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.35,0.45,0.2"
+        density: 190
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseCoyoteColumn
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_coyote.rsi
+
+- type: entity
+  parent: BaseCoyoteColumn
+  id: CoyoteConcretePillar
+  components:
+  - type: Sprite
+    state: concrete_pillar
+
+- type: entity
+  parent: BaseCoyoteColumn
+  id: CoyoteSandstoneColumn
+  components:
+  - type: Sprite
+    state: sandstone_column_ionic
+
+- type: entity
+  parent: BaseCoyoteColumn
+  id: CoyoteStoneColumn
+  components:
+  - type: Sprite
+    state: stone_column_ionic
+
+- type: entity
+  parent: BaseCoyoteColumn
+  id: CoyoteSandstoneSupport
+  components:
+  - type: Sprite
+    state: sandstone_support_st1
+
+- type: entity
+  parent: BaseCoyoteColumn
+  id: CoyoteSandstonePillarCarved
+  components:
+  - type: Sprite
+    state: sandstone_aztec_pillar
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropIndestructible
+  id: BaseAuroraStatue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/statues_aurora.rsi
+    offset: 0,0.5
+
+- type: entity
+  parent: BaseAuroraStatue
+  id: AuroraStatueBronze
+  components:
+  - type: Sprite
+    state: neopolymus
+
+- type: entity
+  parent: BaseAuroraStatue
+  id: AuroraStatueBuddha
+  components:
+  - type: Sprite
+    state: buddha
+
+- type: entity
+  parent: BaseAuroraStatue
+  id: AuroraStatueArmour
+  components:
+  - type: Sprite
+    state: gusoku
+
+- type: entity
+  parent: BaseAuroraStatue
+  id: AuroraStatueSmall
+  components:
+  - type: Sprite
+    state: aec_small
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseCoyoteGasPump
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/gas_pumps_coyote.rsi
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpRedFaded
+  components:
+  - type: Sprite
+    state: oilpump1
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpRed
+  components:
+  - type: Sprite
+    state: oilpump1X
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpSlimFaded
+  components:
+  - type: Sprite
+    state: oilpump2
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpSlim
+  components:
+  - type: Sprite
+    state: oilpump2X
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpGreenFaded
+  components:
+  - type: Sprite
+    state: oilpump3
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpGreen
+  components:
+  - type: Sprite
+    state: oilpump3X
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpYellow
+  components:
+  - type: Sprite
+    state: oilpump4X
+
+- type: entity
+  parent: BaseCoyoteGasPump
+  id: CoyoteGasPumpYellowFaded
+  components:
+  - type: Sprite
+    state: oilpump4
+
+- type: entity
+  parent: BaseUrbanProp
+  id: CoyoteShoppingCart
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/shopping_cart_coyote.rsi
+    state: cart
+    offset: 0.5,0.5
+
+- type: entity
+  parent: BaseUrbanProp
+  id: CoyoteHayBale
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/playground_coyote.rsi
+    state: haybale
+    offset: 0.5625,0.5625
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CoyoteClothesline
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/playground_large_coyote.rsi
+    state: clothesline
+    drawdepth: Overdoors
+    offset: 1.0625,1.0625
+
+- type: entity
+  abstract: true
+  parent: BaseStructureDynamic
+  id: BaseCMPhoneBox
+  components:
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/phonebox.rsi
+    noRot: true
+    offset: 0.65625,0.5
+    layers:
+    - state: phonebox_off_empty_closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: phonebox_off_full_closed
+      map: ["occupied"]
+      visible: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/phonebox.rsi
+    state: phonebox_off_empty_closed
+  - type: InteractionOutline
+  - type: Anchorable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+  - type: ResistLocker
+  - type: EntityStorage
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateDoorOpen: phonebox_off_open
+    stateDoorClosed: phonebox_off_empty_closed
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.HasContents:
+        occupied:
+          True: { visible: true }
+          False: { visible: false }
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:WeightedSpawnEntityBehavior
+        weightedEntityTable: CMPhoneBoxWrecks
+        spawnOffset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMPhoneBox
+  id: CMPhoneBox
+  components:
+  - type: Sprite
+    layers:
+    - state: phonebox_on_empty_closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: phonebox_on_full_closed
+      map: ["occupied"]
+      visible: false
+  - type: Icon
+    state: phonebox_on_empty_closed
+  - type: EntityStorageVisuals
+    stateDoorOpen: phonebox_on_open
+    stateDoorClosed: phonebox_on_empty_closed
+  - type: PointLight
+    radius: 2.5
+    energy: 0.8
+    softness: 1
+    color: "#BFF5FF"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMPhoneBoxUnlit:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMPhoneBox
+  id: CMPhoneBoxUnlit
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseCMPhoneBoxWrecked
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/phonebox.rsi
+    offset: 0.65625,0.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMPhoneBoxWrecked
+  id: CMPhoneBoxWreckedUnlit
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: phonebox_off_broken
+
+- type: entity
+  parent: BaseCMPhoneBoxWrecked
+  id: CMPhoneBoxWreckedBloody
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: phonebox_bloody_off_broken
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: MonkeTelevision
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/modern_structures_monke.rsi
+    drawdepth: SmallObjects
+    layers:
+    - state: TV
+    - state: TV_wn
+      shader: unshaded
+      map: ["screen"]
+      visible: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/modern_structures_monke.rsi
+    state: TV
+  - type: Appearance
+  - type: ItemToggle
+    onUse: false
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    energy: 0.5
+    color: "#D0E0FF"
+    netsync: false
+  - type: ToggleableVisuals
+    spriteLayer: screen
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          MonkeTelevisionBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: MonkeTelevisionBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/modern_structures_monke.rsi
+    drawdepth: SmallObjects
+    state: TV_b
+
+- type: entity
+  parent: BaseUrbanPost
+  id: MojaveSunPunchingBag
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/stationary_mojavesun.rsi
+    drawdepth: Overdoors
+    state: pbag1
+
+- type: weightedRandomEntity
+  id: CMPhoneBoxWrecks
+  weights:
+    CMPhoneBoxWreckedUnlit: 3
+    CMPhoneBoxWreckedBloody: 1

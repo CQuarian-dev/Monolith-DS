@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7, BeeStation at commit https://github.com/BeeStation/BeeStation-Hornet/commit/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d, CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15, Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "autumn-overlay1"
+    },
+    {
+      "name": "drift",
+      "directions": 4
+    },
+    {
+      "name": "fungus"
+    },
+    {
+      "name": "icerock",
+      "directions": 8
+    },
+    {
+      "name": "rocksmall1"
+    },
+    {
+      "name": "sand1_s",
+      "directions": 8
+    },
+    {
+      "name": "sand2_s",
+      "directions": 8
+    },
+    {
+      "name": "snow_corner_aurora",
+      "directions": 8
+    },
+    {
+      "name": "snow_corner_beestation",
+      "directions": 8
+    },
+    {
+      "name": "snow_corner_tgstation",
+      "directions": 8
+    }
+  ]
+}

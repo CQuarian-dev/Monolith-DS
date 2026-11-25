@@ -446,7 +446,7 @@ namespace Content.Server.Lathe
             foreach (var id in packs)
             {
                 var pack = _proto.Index(id);
-                foreach (var recipe in pack.Recipes)
+                foreach (var recipe in pack.GetRecipes(RecipeConfig)) // LuaM
                 {
                     if (args.getUnavailable || database.UnlockedRecipes.Contains(recipe))
                         args.Recipes.Add(recipe);

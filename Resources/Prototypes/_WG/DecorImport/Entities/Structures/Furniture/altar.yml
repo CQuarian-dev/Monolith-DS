@@ -1,0 +1,24 @@
+- type: entity
+  parent: TableBase
+  id: YogTableAltarOfGods
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/altar.rsi
+    state: convertaltar
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/altar.rsi
+    state: convertaltar
+  - type: IconSmooth
+    key: YogTableAltarOfGods
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fissurel",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "fissurec",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "fissurer",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "molten",
+      "delays": [
+        [
+          1.0,
+          0.4,
+          0.6,
+          0.6,
+          0.45
+        ]
+      ]
+    }
+  ]
+}

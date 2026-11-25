@@ -99,6 +99,7 @@ public sealed partial class ThrusterSystem : EntitySystem
         using (args.PushGroup(nameof(ThrusterComponent)))
         {
             args.PushMarkup(enabled);
+            WgExamineAtmosphere(uid, args); // WOLFGATE(Planets): show atmospheric rating and conversion status.
 
             if (component.Type == ThrusterType.Linear &&
                 TryComp(uid, out TransformComponent? xform) &&
@@ -568,6 +569,8 @@ public sealed partial class ThrusterSystem : EntitySystem
     {
         if (!component.Enabled)
             return false;
+        if (WgCooling(uid)) // WOLFGATE(Planets): atmospheric overload recovery must survive power-change callbacks.
+            return false;
 
         if (component.LifeStage > ComponentLifeStage.Running)
             return false;
@@ -602,6 +605,9 @@ public sealed partial class ThrusterSystem : EntitySystem
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
+
+        WgUpdateAtmosphereThrusters(); // WOLFGATE(Planets): atmospheric efficiency and continuous power demand.
+        WgUpdateCrashThrust(); // WOLFGATE(Planets): severed engines retain their last firing command while powered.
 
         var query = EntityQueryEnumerator<ThrusterComponent>();
         var curTime = _timing.CurTime;
@@ -757,6 +763,7 @@ public sealed partial class ThrusterSystem : EntitySystem
         var thrustRating = args.PartRatings[component.MachinePartThrust];
 
         component.Thrust = component.BaseThrust * MathF.Pow(component.PartRatingThrustMultiplier, thrustRating - 1);
+        WgRefreshAtmosphereRating(uid, component); // WOLFGATE(Planets): preserve upgraded rating across atmosphere transitions.
 
         if (component.Enabled && CanEnable(uid, component))
             EnableThruster(uid, component);

@@ -49,7 +49,7 @@ public sealed class VehicleGunnerPanel : VehicleHudPanel
 
         var capacity = Format("/{0}", Capacity);
         var capacityX = 11 + advance + 2;
-        if (Capacity > 0 && capacityX + Width(DigitsSmall, capacity, s) <= 95)
+        if (Capacity > 0 && capacityX + TextWidth(DigitsSmall, capacity, s) <= 95)
             DrawMiddle(handle, DigitsSmall, capacity, capacityX, 56, s, Muted);
 
         var fill = Math.Clamp(Reload, 0f, 1f);
@@ -70,7 +70,7 @@ public sealed class VehicleGunnerPanel : VehicleHudPanel
                 if (selected)
                 {
                     Box(handle, 107, middle - 5.5f, 144, 11, LitFill, null, s);
-                    handle.DrawRect(Rect(107, middle - 5.5f, 2, 11, s), Accent);
+                    handle.DrawRect(HudRect(107, middle - 5.5f, 2, 11, s), Accent);
                 }
 
                 var textColor = selected ? Accent : count > 0 ? Text : Muted;
@@ -84,7 +84,7 @@ public sealed class VehicleGunnerPanel : VehicleHudPanel
             DrawMiddle(handle, TitleFont, Fit(TitleFont, Upper(Weapon), RightEdge - RightX, s), RightX, 47, s, Text);
         }
 
-        handle.DrawRect(Rect(107, 67, 144, 1, s), SectionBorder);
+        handle.DrawRect(HudRect(107, 67, 144, 1, s), SectionBorder);
         var heading = ((int) MathF.Round(Azimuth) % 360 + 360) % 360;
         var valueX = DrawMiddleRight(handle, DigitsSmall, Format("{0:000}°", heading), RightEdge, 75, s, Accent);
         DrawMiddle(handle, Label, Fit(Label, Locale("luam-vehicle-gunner-azimuth"), valueX - 4f - RightX, s), RightX, 75, s, Muted);

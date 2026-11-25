@@ -1,0 +1,48 @@
+# LuaM: only abandoned camps until NPCs are ported; the original weights are in Wolfgate.
+# Which encounters each world's cavern holds. The count follows the cavern's area (perArea, default 1.4 per 10,000
+# square tiles: about one every couple of minutes of exploring), the first two go near the gate, and kinds are picked
+# by weight up to their limits. The Old Wise Miner, the Echo and the Lamplighter are one of a kind; the paying
+# rescues are capped; raiders, crawlers and abandoned camps fill the rest, and the scary ones weigh least.
+# Planned counts at each world's own radius: Asclepiu 54, Merak 36, Fervidus and Thrascias 21, Aerumna and Carcinoma 11.
+
+# The Underkarst: wet limestone, the busiest mining world.
+- type: wgCavernEncounterTable
+  id: WGCavernEncountersAsclepiu
+  surface: WGSurfaceAsclepiu
+  encounters:
+    WGCavernEncounterAbandonedCamp: 1
+
+# The Cinder Vaults: lava tubes, raiders and collapses.
+- type: wgCavernEncounterTable
+  id: WGCavernEncountersFervidus
+  surface: WGSurfaceFervidus
+  encounters:
+    WGCavernEncounterAbandonedCamp: 1
+
+# The Sandstone Galleries: long pillared halls that carry a voice.
+- type: wgCavernEncounterTable
+  id: WGCavernEncountersMerak
+  surface: WGSurfaceMerak
+  encounters:
+    WGCavernEncounterAbandonedCamp: 1
+
+# The Umbral Deeps: the darkest caverns, the Lamplighter's.
+- type: wgCavernEncounterTable
+  id: WGCavernEncountersAerumna
+  surface: WGSurfaceAerumna
+  encounters:
+    WGCavernEncounterAbandonedCamp: 1
+
+# The Rime Galleries: ice falls bury miners.
+- type: wgCavernEncounterTable
+  id: WGCavernEncountersThrascias
+  surface: WGSurfaceThrascias
+  encounters:
+    WGCavernEncounterAbandonedCamp: 1
+
+# The Gut: few people go down, and fewer come back.
+- type: wgCavernEncounterTable
+  id: WGCavernEncountersCarcinoma
+  surface: WGSurfaceCarcinoma
+  encounters:
+    WGCavernEncounterAbandonedCamp: 1

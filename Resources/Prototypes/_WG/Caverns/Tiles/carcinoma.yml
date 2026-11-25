@@ -1,0 +1,41 @@
+# The Gut's halls: throats of flesh and the stomach floor (tiles.yml), raw nerve ground, the ossuary's bone from calcified
+# flesh through cartilage to bleached bone, and the clotted banks of the blood channels. Each is indestructible, can't be
+# dug and has no base turf.
+
+- type: tile
+  id: WGCavernFloorNerve
+  parent: WGFloorFleshScab
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/meat_fresh.png
+  variants: 1
+  placementVariants: [1]
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorBoneRim
+  parent: WGFloorFleshBoneMeaty
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorBoneCartilage
+  parent: WGFloorFleshBoneStraight
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorBoneSpine
+  parent: WGFloorFleshBoneSpine
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorClot
+  parent: WGFloorFleshRiverBank
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""

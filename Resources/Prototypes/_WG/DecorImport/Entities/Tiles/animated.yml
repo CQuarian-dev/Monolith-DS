@@ -1,0 +1,443 @@
+- type: entity
+  abstract: true
+  id: DecorAnimatedFloorBase
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: SyncSprite
+  - type: Sprite
+    drawdepth: BelowFloor
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorBeachWaterPoolAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: water_pool
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorExoplanetWaterAltAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: water_alt_2
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_east
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachNorthAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_north
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachNorthEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_northeast
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachNorthWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_northwest
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachSouthEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_southeast
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachSouthWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_southwest
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorMoghesDirtBeachWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: dirt_beach_west
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorWaterShallowMoghesAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: shallow_moghes
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: AuroraFloorWaterShallowSewageAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/aurora/animated.rsi
+    state: shallow_sewage
+    color: "#9ea844"
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: BayFloorExoplanetLavaAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/baystation/animated.rsi
+    state: exoplanet_lava
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: BayFloorWaterShallowChlorineLiquidAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/baystation/animated.rsi
+    state: shallow_chlorine_liquid
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: BayFloorWaterShallowTarAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/baystation/animated.rsi
+    state: shallow_tar
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: BubberFloorLightColourCycleDancefloorAAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/bubber/animated.rsi
+    state: colour_cycle_dancefloor_a
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: CitFloorSpooktimeRiverwatermotionAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/citadel/animated.rsi
+    state: spooktime_riverwatermotion
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: CoyoteFloorUltraFissureLeftAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/coyote/animated.rsi
+    state: fissurel
+  - type: PointLight
+    radius: 1.5
+    energy: 0.8
+    color: "#c5df43"
+
+- type: entity
+  parent: CoyoteFloorUltraFissureLeftAnimated
+  id: CoyoteFloorUltraFissureCenterAnimated
+  components:
+  - type: Sprite
+    state: fissurec
+
+- type: entity
+  parent: CoyoteFloorUltraFissureLeftAnimated
+  id: CoyoteFloorUltraFissureRightAnimated
+  components:
+  - type: Sprite
+    state: fissurer
+
+- type: entity
+  parent: CoyoteFloorUltraFissureLeftAnimated
+  id: CoyoteFloorUltraMoltenAnimated
+  components:
+  - type: Sprite
+    state: molten
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: DarkPackFloorCityLightAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/darkpack/animated.rsi
+    state: city_light
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: GoonFloorLavaAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/goonstation/animated.rsi
+    state: floor_lava
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: GoonFloorMartianDustAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/goonstation/animated.rsi
+    state: mars1
+
+- type: entity
+  parent: GoonFloorMartianDustAnimated
+  id: GoonFloorMartianDustRocksAnimated
+  components:
+  - type: Sprite
+    state: mars2
+
+- type: entity
+  parent: GoonFloorMartianDustAnimated
+  id: GoonFloorMartianDustBouldersAnimated
+  components:
+  - type: Sprite
+    state: mars3
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: GoonFloorTechfloorAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/goonstation/animated.rsi
+    state: floor_techfloor
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: GoonFloorBluefloorAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/goonstation/animated.rsi
+    state: bluefloor
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: GoonFloorTechfloorRedAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/goonstation/animated.rsi
+    state: techfloor_red
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: NovaFloorCircuitAshAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/nova/animated.rsi
+    state: circuit_ash
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: ParaFloorAwayWaterDeepAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/paradise/animated.rsi
+    state: water_deep
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: ParaFloorAwayWaterEdgeDropAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/paradise/animated.rsi
+    state: water_edge_drop
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: ShiptestFloorMechBayRechargeFloorAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/shiptest/animated.rsi
+    state: floor_mech_bay_recharge_floor
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: SkyratFloorIronRechargeFloorAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/skyrat/animated.rsi
+    state: iron_recharge_floor
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastCornerAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_corner
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastCornerEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_corner_east
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastCornerNorthAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_corner_north
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastCornerWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_corner_west
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_east
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastNorthAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_north
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastNorthEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_northeast
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastNorthWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_northwest
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastSouthEastAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_southeast
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastSouthWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_southwest
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachCoastWestAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_coast_west
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachWaterAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_water
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorBeachWaterDeepAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: beach_water_deep
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: VoreFloorSkyAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/vore/animated.rsi
+    state: floor_sky
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: VoreFloorWaterGlamourAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/vore/animated.rsi
+    state: water_glamour
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: VoreFloorWaterUnderwaterIndoorsAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/vore/animated.rsi
+    state: indoors_open
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: BeeFloorWaterRedAnimated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/beestation/animated.rsi
+    state: abyssal_water
+
+- type: entity
+  parent: DecorAnimatedFloorBase
+  id: TgFloorNecropolis2Animated
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/tgstation/animated.rsi
+    state: necro2
+
+- type: entity
+  parent: TgFloorNecropolis2Animated
+  id: TgFloorNecropolis3Animated
+  components:
+  - type: Sprite
+    state: necro3

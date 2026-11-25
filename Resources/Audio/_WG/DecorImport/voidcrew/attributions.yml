@@ -1,0 +1,14 @@
+- files: ["crunchybushwhack1.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Voidcrew at commit https://github.com/voidcrew/Voidcrew/commit/0c87384b55294dc7348f83bbd3fddd9427d136de."
+  source: "https://github.com/voidcrew/Voidcrew/blob/0c87384b55294dc7348f83bbd3fddd9427d136de/sound/effects/bush/crunchybushwhack1.ogg"
+
+- files: ["crunchybushwhack2.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Voidcrew at commit https://github.com/voidcrew/Voidcrew/commit/0c87384b55294dc7348f83bbd3fddd9427d136de."
+  source: "https://github.com/voidcrew/Voidcrew/blob/0c87384b55294dc7348f83bbd3fddd9427d136de/sound/effects/bush/crunchybushwhack2.ogg"
+
+- files: ["crunchybushwhack3.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Voidcrew at commit https://github.com/voidcrew/Voidcrew/commit/0c87384b55294dc7348f83bbd3fddd9427d136de."
+  source: "https://github.com/voidcrew/Voidcrew/blob/0c87384b55294dc7348f83bbd3fddd9427d136de/sound/effects/bush/crunchybushwhack3.ogg"

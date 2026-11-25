@@ -1,0 +1,4 @@
+- files: [ meatland_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/TauCetiStation/TauCetiClassic/blob/57a938ae835ac9888092b65687ca0e2c2acd3c11/icons/obj/structures/cellular_biomass/meatland_cellular.dmi (states bloodfloor_1, bloodfloor_2, bloodfloor_3)."
+  source: "https://github.com/TauCetiStation/TauCetiClassic"

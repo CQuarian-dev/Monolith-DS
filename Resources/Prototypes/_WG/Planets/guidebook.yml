@@ -1,0 +1,5 @@
+- type: guideEntry
+  id: WGPlanetFlight
+  name: guide-entry-wg-planet-flight
+  text: "/ServerInfo/_WG/Planets/Guidebook/PlanetFlight.xml"
+  priority: 0

@@ -1,0 +1,4 @@
+- files: [ cave_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/citadel-station/citadel-rp/blob/db254a45e84676b7d1f32e3386c65453253bc6c5/code/game/content/factions/derelict/derelict.dmi/derelict_flora.dmi (state cave1)."
+  source: "https://github.com/citadel-station/citadel-rp"

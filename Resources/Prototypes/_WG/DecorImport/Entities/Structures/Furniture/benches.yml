@@ -1,0 +1,814 @@
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairBench
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_coyote.rsi
+    state: church
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolChairPew
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: pew
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairPewFancy
+  suffix: fancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: fpew
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMBedSofaPews
+  suffix: sofa
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_cmss13.rsi
+    state: pews
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSofaPewsFlipped
+  suffix: flipped
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_cmss13.rsi
+    state: pews_f
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairBenchBeige
+  suffix: beige
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_shiptest.rsi
+    state: bench_beige
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairBenchBeige
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairBenchBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_shiptest.rsi
+    state: bench_blue
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairBenchBlue
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairBenchOrange
+  suffix: orange
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_shiptest.rsi
+    state: bench_orange
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairBenchWhite
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_shiptest.rsi
+    state: bench_white
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairBenchWhite
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NovaBenchSolo
+  suffix: solo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_nova.rsi
+    state: bench_solo
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNovaBenchSolo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CMHybrisaMiscBench
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/seatedbench.rsi
+    state: seatedbench
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: BayChairPewMahogany
+  suffix: chair mahogany
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_baystation.rsi
+    noRot: false
+    state: pew_mahogany
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildBayChairPewMahogany
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayPewLeftMahogany
+  suffix: mahogany
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_baystation.rsi
+    noRot: false
+    state: pew_left_mahogany
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildBayPewLeftMahogany
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayBedChairPew
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_baystation.rsi
+    noRot: false
+    state: pew_bed
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildBayBedChairPew
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairPewLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_baystation.rsi
+    noRot: false
+    state: pew_left_chair
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildBayChairPewLeft
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairPewRight
+  suffix: chair right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: pewR
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairPewCenter
+  suffix: chair center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: pewC
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairPewLeft
+  suffix: chair left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: pewL
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonPewFancyRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: fpewR
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonPewFancyCenter
+  suffix: center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: fpewC
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonPewFancyLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_goonstation.rsi
+    state: fpewL
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairPewLeft
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_shiptest.rsi
+    state: pewend_left
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairPewLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairPew
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_shiptest.rsi
+    state: pewmiddle
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairPew
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairPewRight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/pews_shiptest.rsi
+    state: pewend_right
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairPewRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BeeFancyBenchLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_beestation.rsi
+    state: bench_left
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeFancyBenchLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BeeChairFancyBench
+  suffix: fancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_beestation.rsi
+    state: bench_center
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeChairFancyBench
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BeeFancyBenchRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_beestation.rsi
+    state: bench_right
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeFancyBenchRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: DarkPackCityBenchMetalLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_metal.rsi
+    state: metal_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: DarkPackSofaCityBenchMetal
+  suffix: city
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_metal.rsi
+    state: metal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: DarkPackCityBenchMetalRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_metal.rsi
+    state: metal_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: NovaBenchRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_nova.rsi
+    state: bench_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNovaBenchRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NovaChairSofaBench
+  suffix: sofa
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_nova.rsi
+    state: sofa_bench
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNovaChairSofaBench
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NovaBenchCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_nova.rsi
+    state: bench_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNovaBenchCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NovaBenchLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_nova.rsi
+    state: bench_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNovaBenchLeft
+    node: built
+
+- type: entity
+  parent: BaseStructure
+  id: CMHybrisaMiscStoneplanterseats
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_64x64.rsi
+    noRot: true
+    offset: "0.500,0.500"
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: planterseats
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Rock
+
+- type: entity
+  parent: CMHybrisaMiscStoneplanterseats
+  id: CMHybrisaMiscStoneplanterseats2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: CMHybrisaMiscStoneplanterseats
+  id: CMHybrisaMiscStoneplanterseats3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: ChairBase
+  id: DarkPackParkBench
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/64x64_darkpack.rsi
+    state: table1
+    offset: "0.5,0.5"
+    noRot: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackParkBench
+  id: DarkPackParkBench2
+  components:
+  - type: Sprite
+    state: table2

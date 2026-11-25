@@ -46,6 +46,9 @@
   name: guide-entry-piloting
   text: "/ServerInfo/_LuaM/Guidebook/Ships/Piloting.xml" # LuaM: "/ServerInfo/_NF/Guidebook/Piloting.xml" > "/ServerInfo/_LuaM/Guidebook/Ships/Piloting.xml"
   priority: 20 # LuaM: 2 > 20 (section order)
+  # WOLFGATE(Planets): planet flight guide under piloting
+  children:
+  - WGPlanetFlight
 # LuaM-end
 
 # LuaM-start: maintained guidebook navigation.

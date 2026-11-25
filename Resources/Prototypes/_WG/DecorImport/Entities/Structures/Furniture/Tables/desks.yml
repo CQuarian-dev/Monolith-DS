@@ -1,0 +1,338 @@
+- type: entity
+  parent: TableBase
+  id: DarkPackNoSmoothModularDeskLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: desk_wood_left
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: desk_wood_left
+  - type: IconSmooth
+    key: DarkPackNoSmoothModularDeskLeft
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskLeft
+  id: DarkPackNoSmoothModularDeskLeft2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskLeft
+  id: DarkPackNoSmoothModularDeskLeft3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskLeft
+  id: DarkPackNoSmoothModularDeskLeft4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: TableBase
+  id: DarkPackTableNoSmoothModularDesk
+  suffix: modular
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: desk_wood_mid
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: desk_wood_mid
+  - type: IconSmooth
+    key: DarkPackTableNoSmoothModularDesk
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackTableNoSmoothModularDesk
+  id: DarkPackTableNoSmoothModularDesk2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: DarkPackTableNoSmoothModularDesk
+  id: DarkPackTableNoSmoothModularDesk3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: DarkPackTableNoSmoothModularDesk
+  id: DarkPackTableNoSmoothModularDesk4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: TableBase
+  id: DarkPackNoSmoothModularDeskCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: desk_wood_corner
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: desk_wood_corner
+  - type: IconSmooth
+    key: DarkPackNoSmoothModularDeskCorner
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskCorner
+  id: DarkPackNoSmoothModularDeskCorner2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskCorner
+  id: DarkPackNoSmoothModularDeskCorner3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskCorner
+  id: DarkPackNoSmoothModularDeskCorner4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: TableBase
+  id: DarkPackNoSmoothModularDeskRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: desk_wood_right
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: desk_wood_right
+  - type: IconSmooth
+    key: DarkPackNoSmoothModularDeskRight
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskRight
+  id: DarkPackNoSmoothModularDeskRight2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskRight
+  id: DarkPackNoSmoothModularDeskRight3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: DarkPackNoSmoothModularDeskRight
+  id: DarkPackNoSmoothModularDeskRight4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: Dresser
+  id: NebulaTableDeskDresser
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: dresser
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNebulaTableDeskDresser
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: ShiptestTableEmptycomputer
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: emptycomputer
+    noRot: true
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks.rsi
+    state: emptycomputer
+  - type: IconSmooth
+    key: ShiptestTableEmptycomputer
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: NebulaDeskEbonyRight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks_64x32.rsi
+    state: desk_right
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks_64x32.rsi
+    state: desk_right
+  - type: IconSmooth
+    key: NebulaDeskEbonyRight
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: BubberTableWoodCabinet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks_32x48.rsi
+    state: wood_table
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks_32x48.rsi
+    state: wood_table
+  - type: IconSmooth
+    key: BubberTableWoodCabinet
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonWoodRegalBookshelf
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks_goonstation.rsi
+    state: bookshelf_desk
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/desks_goonstation.rsi
+    state: bookshelf_desk
+  - type: IconSmooth
+    key: GoonWoodRegalBookshelf
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

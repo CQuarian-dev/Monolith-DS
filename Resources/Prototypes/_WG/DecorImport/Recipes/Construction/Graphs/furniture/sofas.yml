@@ -1,0 +1,3230 @@
+- type: constructionGraph
+  id: DecorBuildNebulaBedSofaLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaBedSofaLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaBedSofa
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaBedSofa
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaBedSofaRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaBedSofaRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaLeftPurple
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaLeftPurple
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaMiddlePurple
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaMiddlePurple
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaRightPurple
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaRightPurple
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaLeftRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaLeftRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaMiddleRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaMiddleRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaRightRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaRightRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaLeftTeal
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaLeftTeal
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaMiddleTeal
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaMiddleTeal
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaRightTeal
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaRightTeal
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaLeftUnpadded
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaLeftUnpadded
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaMiddleUnpadded
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaMiddleUnpadded
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaSofaRightUnpadded
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaSofaRightUnpadded
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaFancyEndLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+      - material: Cloth
+        amount: 2
+  - node: built
+    entity: SofaFancyEndLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaFancyMiddle
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+      - material: Cloth
+        amount: 2
+  - node: built
+    entity: SofaFancyMiddle
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaFancyEndRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+      - material: Cloth
+        amount: 2
+  - node: built
+    entity: SofaFancyEndRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCoyoteChairSofaRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CoyoteChairSofaRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCoyoteChairSofa
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CoyoteChairSofa
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCoyoteChairSofaCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CoyoteChairSofaCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCoyoteChairSofaLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CoyoteChairSofaLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgChairSofaRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: TgChairSofaRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgChairSofaMiddle
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: TgChairSofaMiddle
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgChairSofaCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: TgChairSofaCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgChairSofaLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: TgChairSofaLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaMiddle
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaMiddle
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndLeftWhite
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndLeftWhite
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaMiddleWhite
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaMiddleWhite
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaCornerWhite
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaCornerWhite
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndRightWhite
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndRightWhite
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndLeftBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndLeftBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaMiddleBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaMiddleBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaCornerBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaCornerBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndRightBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndRightBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndLeftRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndLeftRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaMiddleRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaMiddleRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaCornerRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaCornerRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndRightRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndRightRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndLeftGreen
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndLeftGreen
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaMiddleGreen
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaMiddleGreen
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaCornerGreen
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaCornerGreen
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndRightGreen
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndRightGreen
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndLeftBrown
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndLeftBrown
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaMiddleBrown
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaMiddleBrown
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaCornerBrown
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaCornerBrown
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildSofaEndRightBrown
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+      - material: Cloth
+        amount: 1
+  - node: built
+    entity: SofaEndRightBrown
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaRightBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaRightBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraChairSofaBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraChairSofaBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraCornerConcaveBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraCornerConcaveBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaLeftBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaLeftBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaRightLime
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaRightLime
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraChairSofaLime
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraChairSofaLime
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraCornerConcaveLime
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraCornerConcaveLime
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaLeftLime
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaLeftLime
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaRightYellow
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaRightYellow
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraChairSofaYellow
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraChairSofaYellow
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraCornerConcaveYellow
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraCornerConcaveYellow
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaLeftYellow
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaLeftYellow
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraChairSofaRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraChairSofaRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraStoolChairSofa
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraStoolChairSofa
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraSofaCornerConcave
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraSofaCornerConcave
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraChairSofaLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: AuroraChairSofaLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildADTSofaCutBlackLeftCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+  - node: built
+    entity: ADTSofaCutBlackLeftCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildADTSofaCutComfyLeftCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+  - node: built
+    entity: ADTSofaCutComfyLeftCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildADTSofaCutDainerLeftCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+  - node: built
+    entity: ADTSofaCutDainerLeftCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBlueRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBlueRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairSofaBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairSofaBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBlueCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBlueCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBlueInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBlueInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBlueLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBlueLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBrownRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBrownRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairSofaBrown
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairSofaBrown
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBrownCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBrownCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBrownInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBrownInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBrownLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBrownLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaGreyRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaGreyRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairSofaGrey
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairSofaGrey
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaGreyCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaGreyCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaGreyInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaGreyInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaGreyLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaGreyLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaWhiteRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaWhiteRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairSofaWhite
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairSofaWhite
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaWhiteCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaWhiteCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaWhiteInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaWhiteInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaWhiteLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaWhiteLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueCorpoRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueCorpoRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBlueCorpo
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBlueCorpo
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueCorpoCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueCorpoCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueCorpoInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueCorpoInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueCorpoLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueCorpoLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBrownCorpoRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBrownCorpoRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBrownCorpo
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBrownCorpo
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBrownCorpoCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBrownCorpoCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBrownCorpoInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBrownCorpoInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBrownCorpoLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBrownCorpoLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestPurpleCorpoRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestPurpleCorpoRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaPurpleCorpo
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaPurpleCorpo
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestPurpleCorpoCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestPurpleCorpoCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestPurpleCorpoInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestPurpleCorpoInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestPurpleCorpoLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestPurpleCorpoLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteCorpoRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteCorpoRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaWhiteCorpo
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaWhiteCorpo
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteCorpoCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteCorpoCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteCorpoInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteCorpoInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteCorpoLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteCorpoLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueOldRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueOldRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaBlueOld
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaBlueOld
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueOldCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueOldCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueOldInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueOldInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBlueOldLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestBlueOldLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestGreyOldRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestGreyOldRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaGreyOld
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaGreyOld
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestGreyOldCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestGreyOldCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestGreyOldInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestGreyOldInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestGreyOldLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestGreyOldLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestRedOldRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestRedOldRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaRedOld
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaRedOld
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestRedOldCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestRedOldCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestRedOldInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestRedOldInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestRedOldLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestRedOldLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteOldRight
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteOldRight
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestSofaWhiteOld
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestSofaWhiteOld
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteOldCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteOldCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteOldInternalCorner
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteOldInternalCorner
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestWhiteOldLeft
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestWhiteOldLeft
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

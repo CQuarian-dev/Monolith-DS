@@ -65,7 +65,7 @@ public sealed class CourierGuideTests
             void Click(Button button)
             {
                 var callback = (Delegate)typeof(BaseButton).GetField("OnPressed", BindingFlags.Instance | BindingFlags.NonPublic)!.GetValue(button)!;
-                callback.DynamicInvoke(new object?[] { null });
+                callback.DynamicInvoke(new object[] { null });
             }
             Click(take);
             Assert.That(Descendants(window).OfType<Label>().Count(l => l.Text == Loc.GetString("delivery-ui-status-yours")), Is.EqualTo(2));

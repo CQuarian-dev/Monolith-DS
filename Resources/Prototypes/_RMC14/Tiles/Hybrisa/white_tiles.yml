@@ -1,0 +1,18 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- type: tile
+  abstract: true
+  parent: CMTileBase
+  id: RMCFloorHybrisaWhiteBase
+  name: tiles-cm-default-white
+
+- type: tile
+  parent: RMCFloorHybrisaWhiteBase
+  id: RMCFloorHybrisaWhite
+  name: tiles-wg-rmc-white-metal-tile
+  sprite: /Textures/_RMC14/Tiles/hybrisa/tilewhite.png
+
+- type: tile
+  parent: RMCFloorHybrisaWhite
+  id: RMCFloorHybrisaWhiteFull
+  sprite: /Textures/_RMC14/Tiles/hybrisa/metalwhitefull.png
+# WOLFGATE END

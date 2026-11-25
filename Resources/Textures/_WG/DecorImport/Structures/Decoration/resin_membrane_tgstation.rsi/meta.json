@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "resin_membrane0"
+    },
+    {
+      "name": "resin_membrane1"
+    },
+    {
+      "name": "resin_membrane2"
+    },
+    {
+      "name": "resin_membrane3"
+    },
+    {
+      "name": "resin_membrane4"
+    },
+    {
+      "name": "resin_membrane5"
+    },
+    {
+      "name": "resin_membrane6"
+    },
+    {
+      "name": "resin_membrane7"
+    },
+    {
+      "name": "resin_membrane8"
+    },
+    {
+      "name": "resin_membrane9"
+    },
+    {
+      "name": "resin_membrane10"
+    },
+    {
+      "name": "resin_membrane11"
+    },
+    {
+      "name": "resin_membrane12"
+    },
+    {
+      "name": "resin_membrane13"
+    },
+    {
+      "name": "resin_membrane14"
+    },
+    {
+      "name": "resin_membrane15"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+ent-InsurrectionWindowCovenant = covenant window
+ent-InsurrectionDoorCovenant = covenant door
+ent-InsurrectionCovenantHoloSmall = small holo projector
+ent-InsurrectionCovenantHoloMedium = holo projector
+ent-InsurrectionCovenantHoloLarge = holo display
+ent-InsurrectionCovenantMonitor = covenant monitor
+ent-InsurrectionTableCovenant = covenant table
+ent-InsurrectionTableCovenantSmall = small covenant table
+ent-InsurrectionCovenantCryotube = covenant cryotube
+ent-InsurrectionCovenantCryotubeOccupied = { ent-InsurrectionCovenantCryotube }
+ent-InsurrectionCovenantLiftPad = grav lift pad
+ent-InsurrectionCovenantLiftPadOff = { ent-InsurrectionCovenantLiftPad }
+ent-InsurrectionCovenantLiftShaft = grav lift shaft
+ent-InsurrectionCovenantLiftPillar = grav lift pillar
+ent-InsurrectionCovenantLiftPillarOff = { ent-InsurrectionCovenantLiftPillar }
+ent-InsurrectionCovenantGravLift = grav lift
+ent-InsurrectionCovenantJumpPad = jump pad

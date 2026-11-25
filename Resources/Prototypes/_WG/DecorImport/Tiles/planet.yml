@@ -1,0 +1,345 @@
+- type: tile
+  id: GoonFloorGrasstodirtNorth
+  name: tiles-wg-goon-floor-grasstodirt-north
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_grasstodirt_north.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGoonFloorGrasstodirtNorth
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorGrasstodirtEast
+  name: tiles-wg-goon-floor-grasstodirt-east
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_grasstodirt_east.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGoonFloorGrasstodirtEast
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorGrasstodirtWest
+  name: tiles-wg-goon-floor-grasstodirt-west
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_grasstodirt_west.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGoonFloorGrasstodirtWest
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorSand
+  name: tiles-wg-goon-floor-sand
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_sand.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemGoonFloorSand
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorSnowcalm
+  name: tiles-wg-goon-floor-snowcalm
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_snowcalm.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepSnow
+  itemDrop: FloorTileItemGoonFloorSnowcalm
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorSnowrough
+  name: tiles-wg-goon-floor-snowrough
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_snowrough.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepSnow
+  itemDrop: FloorTileItemGoonFloorSnowrough
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorSwampgrass
+  name: tiles-wg-goon-floor-swampgrass
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/floor_swampgrass.png
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemGoonFloorSwampgrass
+  heatCapacity: 10000
+
+- type: tile
+  id: GoonFloorWaterIceRough
+  name: tiles-wg-goon-floor-water-ice-rough
+  sprite: /Textures/_WG/DecorImport/Tiles/goonstation/ice_rough.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepSnow
+  itemDrop: FloorTileItemGoonFloorWaterIceRough
+  heatCapacity: 10000
+
+- type: tile
+  id: AuroraFloorCaveAdhomai
+  name: tiles-wg-aurora-floor-cave-adhomai
+  sprite: /Textures/_WG/DecorImport/Tiles/aurora/cave_adhomai.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemAuroraFloorCaveAdhomai
+  heatCapacity: 10000
+
+- type: tile
+  id: AuroraFloorExoplanetCrystal
+  name: tiles-wg-aurora-floor-exoplanet-crystal
+  sprite: /Textures/_WG/DecorImport/Tiles/aurora/exoplanet_crystal.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemAuroraFloorExoplanetCrystal
+  heatCapacity: 10000
+
+- type: tile
+  id: AuroraFloorExoplanetIceDark
+  name: tiles-wg-aurora-floor-exoplanet-ice-dark
+  sprite: /Textures/_WG/DecorImport/Tiles/aurora/ice_dark.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepSnow
+  itemDrop: FloorTileItemAuroraFloorExoplanetIceDark
+  heatCapacity: 10000
+
+- type: tile
+  id: CitFloorSpooktimeDirtpatch
+  name: tiles-wg-cit-floor-spooktime-dirtpatch
+  sprite: /Textures/_WG/DecorImport/Tiles/citadel/spooktime_dirtpatch.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemCitFloorSpooktimeDirtpatch
+  heatCapacity: 10000
+
+# Nebula
+
+- type: tile
+  id: NebulaFloorClay
+  name: tiles-wg-nebula-floor-clay
+  sprite: /Textures/_WG/DecorImport/Tiles/nebula/floor_clay.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNebulaFloorClay
+  heatCapacity: 10000
+
+- type: tile
+  id: NebulaFloorShrouded
+  name: tiles-wg-nebula-floor-shrouded
+  sprite: /Textures/_WG/DecorImport/Tiles/nebula/floor_shrouded.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemNebulaFloorShrouded
+  heatCapacity: 10000
+
+- type: tile
+  id: NebulaFloorRockSand
+  name: tiles-wg-nebula-floor-rock-sand
+  sprite: /Textures/_WG/DecorImport/Tiles/nebula/rock_sand.png
+  variants: 6
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemNebulaFloorRockSand
+  heatCapacity: 10000
+
+- type: tile
+  id: NebulaFloorDry
+  name: tiles-wg-nebula-floor-dry
+  sprite: /Textures/_WG/DecorImport/Tiles/nebula/floor_dry.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemNebulaFloorDry
+  heatCapacity: 10000
+
+- type: tile
+  id: NovaFloorGrassLavaland
+  name: tiles-wg-nova-floor-grass-lavaland
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/grass_lavaland.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepGrass
+  itemDrop: FloorTileItemNovaFloorGrassLavaland
+  heatCapacity: 10000
+
+# Polaris
+
+- type: tile
+  id: PolarisFloorOutdoorsMud
+  name: tiles-wg-polaris-floor-outdoors-mud
+  sprite: /Textures/_WG/DecorImport/Tiles/polaris/outdoors_mud.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemPolarisFloorOutdoorsMud
+  heatCapacity: 10000
+
+- type: tile
+  id: PolarisFloorOutdoorsDirt
+  name: tiles-wg-polaris-floor-outdoors-dirt
+  sprite: /Textures/_WG/DecorImport/Tiles/polaris/outdoors_dirt.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemPolarisFloorOutdoorsDirt
+  heatCapacity: 10000
+
+- type: tile
+  id: BayFloorWaterShallowChlorineLiquid
+  name: tiles-wg-bay-floor-water-shallow-chlorine-liquid
+  sprite: /Textures/_WG/DecorImport/Tiles/baystation/shallow_chlorine_liquid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemBayFloorWaterShallowChlorineLiquid
+  heatCapacity: 10000
+
+- type: tile
+  id: BayFloorWaterShallowTar
+  name: tiles-wg-bay-floor-water-shallow-tar
+  sprite: /Textures/_WG/DecorImport/Tiles/baystation/shallow_tar.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemBayFloorWaterShallowTar
+  heatCapacity: 10000
+
+- type: tile
+  id: ChompFloorOutdoorsDesertPlanetGravel
+  name: tiles-wg-chomp-floor-outdoors-desert-planet-gravel
+  sprite: /Textures/_WG/DecorImport/Tiles/chomp/desert_planet_gravel.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemChompFloorOutdoorsDesertPlanetGravel
+  heatCapacity: 10000
+
+- type: tile
+  id: ChompFloorOutdoorsRocksCetus
+  name: tiles-wg-chomp-floor-outdoors-rocks-cetus
+  sprite: /Textures/_WG/DecorImport/Tiles/chomp/rocks_cetus.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemChompFloorOutdoorsRocksCetus
+  heatCapacity: 10000
+
+- type: tile
+  id: ChompFloorOutdoorsLavalandAsh
+  name: tiles-wg-chomp-floor-outdoors-lavaland-ash
+  sprite: /Textures/_WG/DecorImport/Tiles/chomp/lavaland_ash.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemChompFloorOutdoorsLavalandAsh
+  heatCapacity: 10000
+
+- type: tile
+  id: ChompFloorOutdoorsLavalandAshrock
+  name: tiles-wg-chomp-floor-outdoors-lavaland-ashrock
+  sprite: /Textures/_WG/DecorImport/Tiles/chomp/lavaland_ashrock.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemChompFloorOutdoorsLavalandAshrock
+  heatCapacity: 10000
+
+# Paradise

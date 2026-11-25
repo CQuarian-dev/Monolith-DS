@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pew_bed"
+    },
+    {
+      "name": "pew_left_chair"
+    },
+    {
+      "name": "pew_left_mahogany"
+    },
+    {
+      "name": "pew_mahogany"
+    }
+  ]
+}

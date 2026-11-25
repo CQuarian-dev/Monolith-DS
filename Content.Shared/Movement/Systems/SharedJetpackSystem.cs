@@ -1,14 +1,21 @@
 using Content.Shared.Actions;
+using Content.Shared._CE.ZLevels.Core.Components; // Mono/CE: planet (z-level map) detection
+using Content.Shared._WG.Planets; // WOLFGATE(Planets)
+using Content.Shared._WG.Planets.Jetpack; // WOLFGATE(Planets)
 using Content.Shared._EE.CCVar; // EE
 using Content.Shared.Gravity;
+using Content.Shared.Input; // Mono/CE
 using Content.Shared.Interaction.Events;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Events;
 using Content.Shared.Popups;
 using Robust.Shared.Configuration; // EE
 using Robust.Shared.Containers;
+using Robust.Shared.Input; // Mono/CE
+using Robust.Shared.Input.Binding; // Mono/CE
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Player; // Mono/CE
 using Robust.Shared.Serialization;
 using Content.Shared.Clothing;
 using JetBrains.Annotations; // Mono
@@ -25,6 +32,7 @@ public abstract partial class SharedJetpackSystem : EntitySystem
     [Dependency] private ActionContainerSystem _actionContainer = default!;
     [Dependency] private IConfigurationManager _config = default!; // EE
     [Dependency] private SharedGravitySystem _gravity = default!; // Mono
+    [Dependency] private WGAtmosphericJetpackSystem _wgAtmosphericJetpack = default!; // WOLFGATE(Planets)
 
     public override void Initialize()
     {
@@ -35,12 +43,65 @@ public abstract partial class SharedJetpackSystem : EntitySystem
 
         SubscribeLocalEvent<JetpackUserComponent, RefreshWeightlessModifiersEvent>(OnJetpackUserWeightlessMovement);
         SubscribeLocalEvent<JetpackUserComponent, CanWeightlessMoveEvent>(OnJetpackUserCanWeightless);
+        SubscribeLocalEvent<JetpackUserComponent, IsWeightlessEvent>(OnJetpackUserIsWeightless); // Mono/CE
         SubscribeLocalEvent<JetpackUserComponent, MagbootsToggledEvent>(OnJetpackUserMagbootsToggled); // Mono
         SubscribeLocalEvent<JetpackUserComponent, EntParentChangedMessage>(OnJetpackUserEntParentChanged);
         SubscribeLocalEvent<JetpackComponent, EntGotInsertedIntoContainerMessage>(OnJetpackMoved);
 
         SubscribeLocalEvent<GravityChangedEvent>(OnJetpackUserGravityChanged);
         SubscribeLocalEvent<JetpackComponent, MapInitEvent>(OnMapInit);
+
+        CommandBinds.Builder
+            .Bind(ContentKeyFunctions.ShuttleAscend, new JetpackVerticalCmdHandler(this, ascend: true))
+            .Bind(ContentKeyFunctions.ShuttleDescend, new JetpackVerticalCmdHandler(this, ascend: false))
+            .Register<SharedJetpackSystem>();
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        CommandBinds.Unregister<SharedJetpackSystem>();
+    }
+
+    private void SetJetpackVerticalInput(EntityUid user, bool ascend, bool held)
+    {
+        if (!TryComp<JetpackUserComponent>(user, out var jetpackUser))
+            return;
+
+        if (ascend)
+        {
+            if (jetpackUser.AscendHeld == held)
+                return;
+            jetpackUser.AscendHeld = held;
+        }
+        else
+        {
+            if (jetpackUser.DescendHeld == held)
+                return;
+            jetpackUser.DescendHeld = held;
+        }
+
+        Dirty(user, jetpackUser); // Server networks the held state to the client for prediction.
+    }
+
+    private sealed class JetpackVerticalCmdHandler : InputCmdHandler
+    {
+        private readonly SharedJetpackSystem _system;
+        private readonly bool _ascend;
+
+        public JetpackVerticalCmdHandler(SharedJetpackSystem system, bool ascend)
+        {
+            _system = system;
+            _ascend = ascend;
+        }
+
+        public override bool HandleCmdMessage(IEntityManager entManager, ICommonSession? session, IFullInputCmdMessage message)
+        {
+            if (session?.AttachedEntity is { } user)
+                _system.SetJetpackVerticalInput(user, _ascend, message.State == BoundKeyState.Down);
+
+            return false;
+        }
     }
 
     private void OnJetpackUserWeightlessMovement(Entity<JetpackUserComponent> ent, ref RefreshWeightlessModifiersEvent args)
@@ -116,6 +177,20 @@ public abstract partial class SharedJetpackSystem : EntitySystem
         args.CanMove = true;
     }
 
+    /// <summary>
+    /// An active jetpack makes its wearer weightless, so it drifts (weightless movement) instead
+    /// of walking as if on solid ground — the actual "cancel gravity on your own" behaviour, and
+    /// it works in planet gravity too since it doesn't care what the grid does.
+    /// </summary>
+    private void OnJetpackUserIsWeightless(Entity<JetpackUserComponent> ent, ref IsWeightlessEvent args)
+    {
+        if (args.Handled)
+            return;
+
+        args.IsWeightless = true;
+        args.Handled = true;
+    }
+
     private void OnJetpackUserEntParentChanged(EntityUid uid, JetpackUserComponent component, ref EntParentChangedMessage args)
     {
         // Frontier: note - comment from upstream, dead men tell no tales
@@ -124,7 +199,8 @@ public abstract partial class SharedJetpackSystem : EntitySystem
         if (TryComp<JetpackComponent>(component.Jetpack, out var jetpack)
             && (!CanEnableOnGrid(args.Transform.GridUid)
                 || !UserNotParented(uid, jetpack) // EE
-                || !_gravity.IsWeightless(uid))) // Mono
+                || !IsWeightlessOrPlanet(uid) // Mono/CE: planets (grid or open map) keep it on; WOLFGATE(Planets): the condition continues on the next line.
+                || WgInAtmosphere(uid, component.Jetpack))) // WOLFGATE(Planets): a jetpack cuts out below a planet's orbit layer.
         {
             SetEnabled(component.Jetpack, jetpack, false, uid);
 
@@ -146,6 +222,7 @@ public abstract partial class SharedJetpackSystem : EntitySystem
         userComp.WeightlessFriction = component.Friction;
         userComp.WeightlessFrictionNoInput = component.Friction;
         _movementSpeedModifier.RefreshWeightlessModifiers(user);
+        _gravity.RefreshWeightless(user); // Mono/CE: recompute the weightless cache now the IsWeightless hook applies.
     }
 
     private void RemoveUser(EntityUid uid, JetpackComponent component)
@@ -159,6 +236,10 @@ public abstract partial class SharedJetpackSystem : EntitySystem
             _physics.SetBodyStatus(uid, physics, BodyStatus.OnGround);
 
         _movementSpeedModifier.RefreshWeightlessModifiers(uid);
+        // Mono/CE: the JetpackUserComponent (and its IsWeightless hook) is gone now, so recompute
+        // the weightless cache — otherwise it stays stuck true and the wearer floats on planet
+        // gravity after turning the jetpack off.
+        _gravity.RefreshWeightless(uid);
     }
 
     private void OnJetpackToggle(EntityUid uid, JetpackComponent component, ToggleJetpackEvent args)
@@ -166,8 +247,24 @@ public abstract partial class SharedJetpackSystem : EntitySystem
         if (args.Handled)
             return;
 
+        // WOLFGATE(Planets) START: an atmosphere refusal is said plainly, rather than the gravity line, which is not why it failed.
+        if (!IsEnabled(uid) && WgInAtmosphere(args.Performer, uid))
+        {
+            _popup.PopupClient(Loc.GetString("wg-jetpack-atmosphere"), uid, args.Performer);
+            return;
+        }
+
+        // An atmospheric pack has its own reasons: no air to burn, too much gravity or an empty tank.
+        if (!IsEnabled(uid) && TryComp<WGAtmosphericJetpackComponent>(uid, out var wgAtmospheric)
+            && _wgAtmosphericJetpack.GetRefusal((uid, wgAtmospheric), args.Performer) is { } wgRefusal)
+        {
+            _popup.PopupClient(Loc.GetString(wgRefusal), uid, args.Performer);
+            return;
+        }
+        // WOLFGATE END
+
         if (TryComp(uid, out TransformComponent? xform) && !CanEnableOnGrid(xform.GridUid)
-        || !_gravity.IsWeightless(args.Performer)) // Mono
+        || !IsWeightlessOrPlanet(args.Performer)) // Mono/CE
         {
             _popup.PopupClient(Loc.GetString("jetpack-no-station"), uid, args.Performer);
 
@@ -175,18 +272,6 @@ public abstract partial class SharedJetpackSystem : EntitySystem
         }
 
         SetEnabled(uid, component, !IsEnabled(uid));
-    }
-
-    private bool CanEnableOnGrid(EntityUid? gridUid)
-    {
-        // No and no again! Do not attempt to activate the jetpack on a grid with gravity disabled. You will not be the first or the last to try this.
-        // https://discord.com/channels/310555209753690112/310555209753690112/1270067921682694234
-        return gridUid == null // EE
-        //||(!HasComp<GravityComponent>(gridUid)); // EE
-            || _config.GetCVar(EECCVars.JetpackEnableAnywhere) // EE
-            || _config.GetCVar(EECCVars.JetpackEnableInNoGravity) // EE
-            && TryComp<GravityComponent>(gridUid, out var comp) // EE
-            && !comp.Enabled; // EE
     }
 
     private void OnJetpackGetAction(EntityUid uid, JetpackComponent component, GetItemActionsEvent args)
@@ -240,9 +325,64 @@ public abstract partial class SharedJetpackSystem : EntitySystem
         return HasComp<JetpackUserComponent>(uid);
     }
 
+    private bool CanEnableOnGrid(EntityUid? gridUid)
+    {
+        // No and no again! Do not attempt to activate the jetpack on a grid with gravity disabled. You will not be the first or the last to try this.
+        // https://discord.com/channels/310555209753690112/310555209753690112/1270067921682694234
+        return gridUid == null // EE
+        //||(!HasComp<GravityComponent>(gridUid)); // EE
+            || _config.GetCVar(EECCVars.JetpackEnableAnywhere) // EE
+            || IsPlanet(gridUid) // Mono
+            || _config.GetCVar(EECCVars.JetpackEnableInNoGravity) // EE
+            && TryComp<GravityComponent>(gridUid, out var comp) // EE
+            && !comp.Enabled; // EE
+    }
+
+    // politely ignore that you can't fly with gravity on planets
+    private bool IsPlanet(EntityUid? gridUid)
+    {
+        return gridUid is { } grid && HasComp<CEZMapComponent>(Transform(grid).MapUid);
+    }
+
+    // True whenever the entity is on a z-level (planet) map, whether it's standing on a grid
+    // there or directly on the open planet map — the latter has no GridUid, which is why the
+    // grid-based IsPlanet isn't enough and we check the map itself. Stepping off a grid onto
+    // the open planet map used to fail this and disable the jetpack mid-air.
+    private bool OverPlanet(EntityUid user)
+    {
+        return TryComp(user, out TransformComponent? xform) && HasComp<CEZMapComponent>(xform.MapUid);
+    }
+
+    private bool IsWeightlessOrPlanet(EntityUid user)
+    {
+        return _gravity.IsWeightless(user) || OverPlanet(user);
+    }
+
+    // WOLFGATE(Planets) START: jetpacks fly on a planet's orbit layer but not in its atmosphere.
+    /// <summary>
+    /// Below a planet's orbit layer the air is too thick and the pull too strong for a jetpack. Orbit itself
+    /// still flies, so a pack is what keeps somebody off a hull from falling, for as long as its tank lasts.
+    /// </summary>
+    protected bool WgInAtmosphere(EntityUid user)
+    {
+        return TryComp(user, out TransformComponent? xform)
+            && HasComp<WGPlanetLayerComponent>(xform.MapUid)
+            && !HasComp<WGOrbitLayerComponent>(xform.MapUid);
+    }
+
+    /// <summary>
+    /// The same gate for a given pack: an atmospheric jetpack is built for that air, so it is never cut by it and
+    /// answers to <see cref="WGAtmosphericJetpackSystem"/> instead.
+    /// </summary>
+    protected bool WgInAtmosphere(EntityUid user, EntityUid pack)
+    {
+        return !HasComp<WGAtmosphericJetpackComponent>(pack) && WgInAtmosphere(user);
+    }
+    // WOLFGATE END
+
     protected virtual bool CanEnable(EntityUid uid, EntityUid user, JetpackComponent component)
     {
-        return _gravity.IsWeightless(user); // Mono
+        return IsWeightlessOrPlanet(user) && !WgInAtmosphere(user, uid); // Mono/CE, WOLFGATE(Planets): no jetpack below a planet's orbit layer.
     }
 
     // EE: check parent

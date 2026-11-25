@@ -109,6 +109,14 @@ public sealed partial class GunSystem : SharedGunSystem
             ? _transform.WithEntityId(fromCoordinates, gridUid)
             : _transform.ToCoordinates(fromMap);
 
+        // LuaM-start
+        if (!fromEnt.EntityId.Valid)
+        {
+            Log.Warning($"Tried to fire gun {ToPrettyString(gunUid)} at entity coordinates with an invalid EntityUid.");
+            return;
+        }
+        // LuaM-end
+
         // get gun's fromEnt-relative velocity
         var gunVelocity = Vector2.Zero;
         gunVelocity = Physics.GetMapLinearVelocity(gunUid) - Physics.GetMapLinearVelocity(fromEnt);

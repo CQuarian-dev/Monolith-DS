@@ -1,0 +1,109 @@
+# The planetary vault's PDV guards. Mono's expedition PDV keep their kit on them and carry an empty pack, which leaves
+# a fight on foot with nothing to show for it; these carry a field pack worth the ammo and medicine spent on them.
+
+- type: entityTable
+  id: WGPlanetPdvPackLoot
+  table: !type:AllSelector
+    children:
+    - id: Brutepack
+    - id: Ointment
+    - !type:GroupSelector
+      children:
+      - id: Magazine9x19mmSubMachineGunFMJ
+        amount: !type:ConstantNumberSelector
+          value: 2
+      - id: Magazine45_ACPPistolFMJ
+        amount: !type:ConstantNumberSelector
+          value: 2
+    - !type:GroupSelector
+      children:
+      - id: SpaceCash250
+        weight: 2
+      - id: SpaceCash500
+        weight: 2
+      - id: SpaceCash1000
+        weight: 1
+    - id: CombatMedipen
+      prob: 0.25
+
+- type: entity
+  parent: ClothingBackpackPDV
+  id: WGClothingBackpackPdvField
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: WGPlanetPdvPackLoot
+
+- type: startingGear
+  id: WGPlanetPdvGearA
+  parent: PDVMobGearA
+  equipment:
+    back: WGClothingBackpackPdvField
+
+- type: startingGear
+  id: WGPlanetPdvGearB
+  parent: PDVMobGearB
+  equipment:
+    back: WGClothingBackpackPdvField
+
+- type: startingGear
+  id: WGPlanetPdvGearC
+  parent: PDVMobGearC
+  equipment:
+    back: WGClothingBackpackPdvField
+
+- type: startingGear
+  id: WGPlanetPdvGearD
+  parent: PDVMobGearD
+  equipment:
+    back: WGClothingBackpackPdvField
+
+- type: entity
+  parent: MobPDVBaseA
+  id: WGMobPlanetPdvA
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - WGPlanetPdvGearA
+
+- type: entity
+  parent: MobPDVBaseB
+  id: WGMobPlanetPdvB
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - WGPlanetPdvGearB
+
+- type: entity
+  parent: MobPDVBaseC
+  id: WGMobPlanetPdvC
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - WGPlanetPdvGearC
+
+- type: entity
+  parent: MobPDVBaseD
+  id: WGMobPlanetPdvD
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - WGPlanetPdvGearD
+
+- type: entity
+  parent: SpawnMobPDV
+  id: WGSpawnMobPlanetPdv
+  suffix: AI, Hostile, PDV, Planet
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - WGMobPlanetPdvA
+    - WGMobPlanetPdvB
+    - WGMobPlanetPdvC
+    - WGMobPlanetPdvD

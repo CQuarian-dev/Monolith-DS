@@ -26,7 +26,7 @@ public sealed partial class RandomSentienceRule : StationEventSystem<RandomSenti
         while (query.MoveNext(out var targetUid, out var target, out var xform))
         {
             var owningStation = StationSystem.GetOwningStation(targetUid, xform);
-            if (!owningStation.HasValue || !stations.Contains(owningStation.Value)) // Mono change: multiple stations
+            if (!owningStation.HasValue || !stations.Contains(owningStation.Value) || target.Weight <= 0) // Mono change: multiple stations // LuaM: target.Weight <= 0
                 continue;
 
             targetList.Add((targetUid, target));

@@ -11,7 +11,7 @@ using Robust.Shared.Timing;
 namespace Content.Client._LuaM.ShipShields;
 
 // -- Последние попадания по каждому щиту для шейдера: вспышка в точке и волна по полосе края
-public sealed class ShipShieldImpactSystem : EntitySystem
+public sealed partial class ShipShieldImpactSystem : EntitySystem
 {
     [Dependency] private IGameTiming _timing = default!;
 

@@ -15,7 +15,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._LuaM.Water;
 
-public sealed class LuaMWaterSystem : EntitySystem
+public sealed partial class LuaMWaterSystem : EntitySystem
 {
     [Dependency] private SharedContainerSystem _container = default!;
     [Dependency] private SharedMapSystem _map = default!;

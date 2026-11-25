@@ -1,0 +1,890 @@
+- type: construction
+  name: "lounge chair (blue)"
+  id: DecorBuildChairBeachLoungeBlue
+  graph: DecorBuildChairBeachLoungeBlue
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "For sitting back, relaxing, and soaking in the solar lamp radiation."
+  icon:
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: blue
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "lounge chair (red)"
+  id: DecorBuildChairBeachLoungeRed
+  graph: DecorBuildChairBeachLoungeRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "For sitting back, relaxing, and soaking in the solar lamp radiation."
+  icon:
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "lounge chair (white)"
+  id: DecorBuildChairBeachLoungeWhite
+  graph: DecorBuildChairBeachLoungeWhite
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "For sitting back, relaxing, and soaking in the solar lamp radiation."
+  icon:
+    sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+    state: white
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "diner booth (left)"
+  id: DecorBuildDinerEndLeft
+  graph: DecorBuildDinerEndLeft
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It looks like cheap plastic, and smells like fries."
+  icon:
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_end_left.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "diner booth (right)"
+  id: DecorBuildDinerEndRight
+  graph: DecorBuildDinerEndRight
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It looks like cheap plastic, and smells like fries."
+  icon:
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_end_right.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "diner booth (middle)"
+  id: DecorBuildDinerMiddle
+  graph: DecorBuildDinerMiddle
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It looks like cheap plastic, and smells like fries."
+  icon:
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_middle.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "fancy sofa (left)"
+  id: DecorBuildSofaFancyEndLeft
+  graph: DecorBuildSofaFancyEndLeft
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It looks comfy."
+  icon:
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_end_left.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "fancy sofa (right)"
+  id: DecorBuildSofaFancyEndRight
+  graph: DecorBuildSofaFancyEndRight
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It looks comfy."
+  icon:
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_end_right.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "fancy sofa (middle)"
+  id: DecorBuildSofaFancyMiddle
+  graph: DecorBuildSofaFancyMiddle
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It looks comfy."
+  icon:
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_middle.rsi
+    state: base
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "beanbag (black)"
+  id: DecorBuildYogStoolBeanbagBlack
+  graph: DecorBuildYogStoolBeanbagBlack
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A lump of beads in cloth that forms around whatever sits in it, providing supreme comfort and relaxation."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_black
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "beanbag (blue)"
+  id: DecorBuildYogStoolBeanbagBlue
+  graph: DecorBuildYogStoolBeanbagBlue
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A lump of beads in cloth that forms around whatever sits in it, providing supreme comfort and relaxation."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_blue
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "beanbag (green)"
+  id: DecorBuildYogStoolBeanbagGreen
+  graph: DecorBuildYogStoolBeanbagGreen
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A lump of beads in cloth that forms around whatever sits in it, providing supreme comfort and relaxation."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_green
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "beanbag (red)"
+  id: DecorBuildYogStoolBeanbagRed
+  graph: DecorBuildYogStoolBeanbagRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A lump of beads in cloth that forms around whatever sits in it, providing supreme comfort and relaxation."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "beanbag (yellow)"
+  id: DecorBuildYogStoolBeanbagYellow
+  graph: DecorBuildYogStoolBeanbagYellow
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A lump of beads in cloth that forms around whatever sits in it, providing supreme comfort and relaxation."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_yellow
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "armchair (purple)"
+  id: DecorBuildNebulaChairArmchairPurple
+  graph: DecorBuildNebulaChairArmchairPurple
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It's an armchair. It looks comfy."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: armchair_purple
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "armchair (red)"
+  id: DecorBuildNebulaChairArmchairRed
+  graph: DecorBuildNebulaChairArmchairRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It's an armchair. It looks comfy."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: armchair_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "armchair (grey)"
+  id: DecorBuildNebulaChairArmchair
+  graph: DecorBuildNebulaChairArmchair
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "It's an armchair. It looks comfy."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: armchair
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (purple, left)"
+  id: DecorBuildNebulaSofaLeftPurple
+  graph: DecorBuildNebulaSofaLeftPurple
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_purple
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (red, left)"
+  id: DecorBuildNebulaSofaLeftRed
+  graph: DecorBuildNebulaSofaLeftRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (teal, left)"
+  id: DecorBuildNebulaSofaLeftTeal
+  graph: DecorBuildNebulaSofaLeftTeal
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_teal
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (unpadded, left)"
+  id: DecorBuildNebulaSofaLeftUnpadded
+  graph: DecorBuildNebulaSofaLeftUnpadded
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_unpadded
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (purple, middle)"
+  id: DecorBuildNebulaSofaMiddlePurple
+  graph: DecorBuildNebulaSofaMiddlePurple
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_purple
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (red, middle)"
+  id: DecorBuildNebulaSofaMiddleRed
+  graph: DecorBuildNebulaSofaMiddleRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (teal, middle)"
+  id: DecorBuildNebulaSofaMiddleTeal
+  graph: DecorBuildNebulaSofaMiddleTeal
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_teal
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (unpadded, middle)"
+  id: DecorBuildNebulaSofaMiddleUnpadded
+  graph: DecorBuildNebulaSofaMiddleUnpadded
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_unpadded
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (purple, right)"
+  id: DecorBuildNebulaSofaRightPurple
+  graph: DecorBuildNebulaSofaRightPurple
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_purple
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (red, right)"
+  id: DecorBuildNebulaSofaRightRed
+  graph: DecorBuildNebulaSofaRightRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (teal, right)"
+  id: DecorBuildNebulaSofaRightTeal
+  graph: DecorBuildNebulaSofaRightTeal
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_teal
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "sofa (unpadded, right)"
+  id: DecorBuildNebulaSofaRightUnpadded
+  graph: DecorBuildNebulaSofaRightUnpadded
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A wide and comfy sofa - no assistants were harmed to produce it!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_unpadded
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "double bed"
+  id: DecorBuildTgBedDoublePod
+  graph: DecorBuildTgBedDoublePod
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A luxurious double bed, for those too important for small dreams."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    state: bed_double_pod
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "white pelts bed"
+  id: DecorBuildNovaBedDoublePelt
+  graph: DecorBuildNovaBedDoublePelt
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A luxurious double bed, made with white wolf pelts."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    state: pelt_bed_white
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "black pelts bed"
+  id: DecorBuildNovaDoublePeltBlack
+  graph: DecorBuildNovaDoublePeltBlack
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A luxurious double bed, made with black wolf pelts."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    state: pelt_bed_black
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (black)"
+  id: DecorBuildVoreBedPillowpileBlack
+  graph: DecorBuildVoreBedPillowpileBlack
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_black
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (green)"
+  id: DecorBuildVoreBedPillowpileGreen
+  graph: DecorBuildVoreBedPillowpileGreen
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_green
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (red)"
+  id: DecorBuildVoreBedPillowpileRed
+  graph: DecorBuildVoreBedPillowpileRed
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_red
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (white)"
+  id: DecorBuildVoreBedPillowpileWhite
+  graph: DecorBuildVoreBedPillowpileWhite
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_white
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (black, front)"
+  id: DecorBuildVoreBedPillowpilefrontBlack
+  graph: DecorBuildVoreBedPillowpilefrontBlack
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_black_overlay
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (teal, front)"
+  id: DecorBuildVoreBedPillowpilefrontTeal
+  graph: DecorBuildVoreBedPillowpilefrontTeal
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_teal_overlay
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (white, front)"
+  id: DecorBuildVoreBedPillowpilefrontWhite
+  graph: DecorBuildVoreBedPillowpilefrontWhite
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_white_overlay
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pillow pile (yellow, front)"
+  id: DecorBuildVoreBedPillowpilefrontYellow
+  graph: DecorBuildVoreBedPillowpilefrontYellow
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A massive pile of pillows!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: pillowpile_large_yellow_overlay
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: hammock
+  id: DecorBuildCoyoteBedChairHammockKbraidN
+  graph: DecorBuildCoyoteBedChairHammockKbraidN
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A blue hammock with two white stripes along one side and a black hexagonal pattern on the other."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: kbraid_hammock_upper
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "wooden end table"
+  id: DecorBuildShiptestTableEndtable
+  graph: DecorBuildShiptestTableEndtable
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A small wooden table perfect for next to beds and the side of sofas."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: end_table
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "regal table"
+  id: DecorBuildGoonTableRegal
+  graph: DecorBuildGoonTableRegal
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: Fancy.
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_regal.rsi
+    state: full
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "pool table"
+  id: DecorBuildCoyoteTableSnooker
+  graph: DecorBuildCoyoteTableSnooker
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A cloth surfaced pool table for that bar themed aesthetic! Bring over the brews! Bring a cue to play."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: nv_pooltable
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "wall-mounted filing cabinet"
+  id: DecorBuildBayFilingcabinetWallcabinet
+  graph: DecorBuildBayFilingcabinetWallcabinet
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A filing cabinet installed into a cavity in the wall to save space. Wow!"
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/filing_cabinets.rsi
+    state: wallcabinet
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: fancy bookcase
+  id: DecorBuildNebulaBookcaseFancy
+  graph: DecorBuildNebulaBookcaseFancy
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: Mostly filled with books.
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf.rsi
+    state: fancy
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "clothing rack"
+  id: DecorBuildAuroraTableRackClothing
+  graph: DecorBuildAuroraTableRackClothing
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A mighty rack, suitable for grabbing and pushing. It's quite mobile."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: clothes_rack
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: "retail shelves"
+  id: DecorBuildAuroraTableRackRetailShelf
+  graph: DecorBuildAuroraTableRackRetailShelf
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "A large, assorted shelf with many platforms for setting things upon."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_aurora
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: rack
+  id: DecorBuildVoreTableRackWood
+  graph: DecorBuildVoreTableRackWood
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "Different from the Middle Ages version."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: rack_table_wood
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}
+
+- type: construction
+  name: shelving
+  id: DecorBuildVoreRackShelfWood
+  graph: DecorBuildVoreRackShelfWood
+  startNode: start
+  targetNode: built
+  category: construction-category-furniture
+  description: "Some nice metal shelves."
+  icon:
+    sprite: _WG/DecorImport/Structures/Furniture/racks.rsi
+    state: shelf_wood
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: true
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked {}

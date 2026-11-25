@@ -1,0 +1,444 @@
+- files: [ adamantine_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state adamantium)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ adamantine_plating.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state adamantium_alt)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ alt_off.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state ash_alt_off)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ ash_off.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state ash_off)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ bone_meaty.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state meatbone_tile)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ bone_spine.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state bone_spine)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ bone_straight.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state bone_straight)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ circuit_ash.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state ash)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ cobble_wateryrock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/mining.dmi (state wateryrock)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ concrete_tiles.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors/concrete.dmi (state conc_tiles)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_inverse.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_inverse_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_inverse_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_aligned_corner_vertical_inverse_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_inverse.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_inverse_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_inverse_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ dark_brick_corner_vertical_inverse_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state dark_brick_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ floor_plastic.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state plastic)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ floor_silvergold.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state blade)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ grass_lavaland.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state sand)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ hauntium_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state hauntium)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ hauntium_ghostbricked.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state hauntium_ghostbricked)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ hauntium_tiled.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state hauntium_tiled)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_aligned_corner_vertical_inverse.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_aligned_corner_vertical_inverse_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_aligned_corner_vertical_inverse_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_aligned_corner_vertical_inverse_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_corner_vertical.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_corner_vertical_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_corner_vertical_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ iron_brick_corner_vertical_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ meat_fresh.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state meat_fresh)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ metal_hydrogen_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state metalhydrogen)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mineral_plastitanium.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state plastitanium)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mythril_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state mythril)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mythril_tiled.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state mythril_tiled)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ neo_cyan.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state neo_cyan)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ neo_red.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state neo_red)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ planks_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state bamboo)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ plasteel_block.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state block)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ plasteel_lock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state lock)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ runite_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state runite)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ sandstone_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state sandstone_floor)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ sandstone_basalt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state basaltbrick_floor)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ silvergold_flow.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state flow)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ silvergold_sword.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state blade_sword)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ silvergold_sword_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state blade_sword)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ silvergold_void.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state void)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ telecrystal_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state telecrystal)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ tiled_alt_3.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state telecrystal_tiled)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ tiled_white.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state titanium_tiled_white)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ titanium_tiled.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/icons/turf/floors.dmi (state titanium_tiled)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_inverse.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_inverse_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_inverse_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_corner_vertical_inverse_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_corner_vertical_inverse)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_half_vertical.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_half_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_half_vertical_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_half_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_half_vertical_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_half_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_aligned_half_vertical_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_aligned_half_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_corner_vertical.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_corner_vertical_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_corner_vertical_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ white_brick_corner_vertical_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state white_brick_corner_vertical)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ grass_thatch.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/primitive_structures/icons/thatch.dmi (state grass-255)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ sandstone_cobbled.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/floors_and_walls/icons/floors.dmi (state sandstone_cobbled)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ wood_wood_12.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state wood_12)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ wood_wood_13.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state wood_13)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ wood_wood_5.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state wood_5)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ wood_wood_9.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state wood_9)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mushroom_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state mushroom)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mushroom_blue_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state mushroom_blue)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mushroom_green_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/master_files/icons/turf/floors/floor.dmi (state mushroom_green)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mushroom_floor_edge_south.png, mushroom_floor_edge_north.png, mushroom_floor_edge_east.png, mushroom_floor_edge_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/serenitystation/icons/turfs/floors/mushroom.dmi (states mushroom-55, mushroom-110, mushroom-157, mushroom-203)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mushroom_blue_floor_edge_south.png, mushroom_blue_floor_edge_north.png, mushroom_blue_floor_edge_east.png, mushroom_blue_floor_edge_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/serenitystation/icons/turfs/floors/mushroom_blue.dmi (states mushroom_blue-55, mushroom_blue-110, mushroom_blue-157, mushroom_blue-203)."
+  source: "https://github.com/NovaSector/NovaSector"
+
+- files: [ mushroom_green_floor_edge_south.png, mushroom_green_floor_edge_north.png, mushroom_green_floor_edge_east.png, mushroom_green_floor_edge_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/NovaSector/NovaSector/blob/3754f28afedc5e20e1bc76dd6c5568c957a4a9de/modular_nova/modules/serenitystation/icons/turfs/floors/mushroom_green.dmi (states mushroom_green-55, mushroom_green-110, mushroom_green-157, mushroom_green-203)."
+  source: "https://github.com/NovaSector/NovaSector"

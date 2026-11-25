@@ -1,0 +1,50 @@
+# Goonstation
+
+- type: entity
+  parent: BaseStructure
+  id: GoonIcyCliff
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/snow_cliff_goon.rsi
+    drawdepth: FloorObjects
+    layers:
+    - state: snow_cliff1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        snow_cliff1: ""
+        snow_cliff2: ""
+        snow_cliff3: ""
+        snow_cliff4: ""
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+
+# Mojave Sun
+
+- type: entity
+  parent: BaseFlora
+  id: MojaveFloraMutfruit
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/wastelandflora_mojavesun.rsi
+    layers:
+    - state: mutfruit1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        mutfruit1: ""
+        mutfruit2: ""
+        mutfruit3: ""

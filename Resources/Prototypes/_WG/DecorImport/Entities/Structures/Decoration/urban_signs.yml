@@ -1,0 +1,1344 @@
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseUrbanLitWallSign
+  components:
+  - type: Sprite
+    noRot: false
+    shader: unshaded
+  - type: PointLight
+    radius: 2.5
+    energy: 1.2
+    softness: 1
+    color: "#FFD9F2"
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanLitWallSign
+  id: BaseUrbanShopSign
+  components:
+  - type: Sprite
+    offset: 0.25,-0.156
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraMiniMartSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/assunzione_signs.rsi
+    state: shop_sign
+  - type: PointLight
+    color: "#7FE8FF"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraSecuritySign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/assunzione_signs.rsi
+    state: police_sign
+  - type: PointLight
+    color: "#B98CFF"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraPharmacySign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/assunzione_signs.rsi
+    state: pharmacy_sign
+    offset: 0.125,-0.156
+  - type: PointLight
+    color: "#D58CFF"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraStafyliaSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/assunzione_signs.rsi
+    state: stafylia_sign
+  - type: PointLight
+    color: "#7FE8FF"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraKonyangPharmacySign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/konyang_signs.rsi
+    state: pharmacy_sign
+    offset: 0,-0.156
+  - type: PointLight
+    color: "#7FFF9A"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraKonyangPoliceSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/konyang_signs.rsi
+    state: police_sign
+  - type: PointLight
+    color: "#9CC8FF"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraKonyangBarSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/konyang_signs.rsi
+    state: bar_sign
+  - type: PointLight
+    color: "#FF9A4D"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraKonyangShopSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/konyang_signs.rsi
+    state: shop_sign
+  - type: PointLight
+    color: "#7FE8FF"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraKonyangClinicSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/konyang_signs.rsi
+    state: krc_sign
+    offset: 0.266,-0.156
+  - type: PointLight
+    color: "#FF8CD9"
+
+- type: entity
+  parent: BaseUrbanShopSign
+  id: AuroraKonyangArcadeSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/konyang_signs.rsi
+    state: arcade_sign
+    offset: 0.641,-0.156
+  - type: PointLight
+    color: "#FF9A4D"
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: AuroraWitchHandSign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/assunzione_96x160.rsi
+    offset: 0.266,1.625
+    layers:
+    - state: wh_sign
+    - state: wh_sign-em
+      shader: unshaded
+  - type: PointLight
+    radius: 4
+    energy: 1.2
+    softness: 1
+    color: "#C77DFF"
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: AuroraLargeSign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/assunzione_96x160.rsi
+    offset: -0.109,2.0
+    layers:
+    - state: aec_large
+    - state: aec_large-em
+      shader: unshaded
+  - type: PointLight
+    radius: 4
+    energy: 1.2
+    softness: 1
+    color: "#9CC8FF"
+
+- type: entity
+  parent: NoticeBoard
+  id: DarkPackNoticeBoard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/noticeboard_darkpack.rsi
+    layers:
+    - state: noticeboard
+    - state: notice-0
+      map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: notice
+
+- type: entity
+  parent: NoticeBoard
+  id: CoyoteNoticeBoard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/noticeboard_coyote.rsi
+    layers:
+    - state: notice-0
+      map: ["enum.StorageFillLayers.Fill"]
+  - type: StorageFillVisualizer
+    maxFillLevels: 6
+    fillBaseName: notice
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: DarkPackShelterSignRound
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/fallout_shelter_sign.rsi
+    state: round
+
+- type: entity
+  parent: DarkPackShelterSignRound
+  id: DarkPackShelterSignSquare
+  components:
+  - type: Sprite
+    state: square
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: DarkPackPainting1
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/paintings.rsi
+    state: painting1
+
+- type: entity
+  parent: DarkPackPainting1
+  id: DarkPackPainting2
+  components:
+  - type: Sprite
+    state: painting2
+
+- type: entity
+  parent: DarkPackPainting1
+  id: DarkPackPainting3
+  components:
+  - type: Sprite
+    state: painting3
+
+- type: entity
+  parent: BaseUrbanPost
+  id: NebulaSignPost
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/sign_post.rsi
+    state: sign
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/sign_post.rsi
+    state: sign_preview
+
+- type: entity
+  parent: BaseUrbanProp
+  id: CMMessageBoard
+  suffix: Evac center
+  components:
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/traffic_signal.rsi
+    state: traffic_1
+    noRot: false
+    offset: 0.484,0.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.4,-0.4,0.4,0.2"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+
+- type: entity
+  parent: CMMessageBoard
+  id: CMMessageBoard2
+  suffix: Message 2
+  components:
+  - type: Sprite
+    state: traffic_2
+
+- type: entity
+  parent: CMMessageBoard
+  id: CMMessageBoard3
+  suffix: Message 3
+  components:
+  - type: Sprite
+    state: traffic_3
+
+- type: entity
+  parent: CMMessageBoard
+  id: CMMessageBoard4
+  suffix: Message 4
+  components:
+  - type: Sprite
+    state: traffic_4
+
+- type: entity
+  parent: CMMessageBoard
+  id: CMMessageBoard5
+  suffix: Message 5
+  components:
+  - type: Sprite
+    state: traffic_5
+
+- type: entity
+  parent: CMMessageBoard
+  id: CMMessageBoard6
+  suffix: Message 6
+  components:
+  - type: Sprite
+    state: traffic_6
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseAuroraBillboard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/billboard_aurora.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.3,1.4,0.2"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseAuroraWallBillboard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/billboard_aurora.rsi
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboard
+  suffix: Blank
+  components:
+  - type: Sprite
+    state: billboard
+    offset: 0,0.5
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardYourAdHere
+  suffix: Your ad here
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric2
+  suffix: Ad 2
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic2
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric3
+  suffix: Ad 3
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic3
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric4
+  suffix: Ad 4
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic4
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric5
+  suffix: Ad 5
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic5
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric6
+  suffix: Ad 6
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic6
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric7
+  suffix: Ad 7
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic7
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardGeneric8
+  suffix: Ad 8
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_generic8
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang1
+  suffix: Konyang ad 1
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang1
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang2
+  suffix: Konyang ad 2
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang2
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang3
+  suffix: Konyang ad 3
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang3
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang4
+  suffix: Konyang ad 4
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang4
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang5
+  suffix: Konyang ad 5
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang5
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang6
+  suffix: Konyang ad 6
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang6
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang7
+  suffix: Konyang ad 7
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang7
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang8
+  suffix: Konyang ad 8
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang8
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang9
+  suffix: Konyang ad 9
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang9
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang10
+  suffix: Konyang ad 10
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang10
+
+- type: entity
+  parent: BaseAuroraBillboard
+  id: AuroraBillboardKonyang11
+  suffix: Konyang ad 11
+  components:
+  - type: Sprite
+    offset: 0,0.5
+    layers:
+    - state: billboard
+    - state: sign_konyang11
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboard
+  suffix: Blank
+  components:
+  - type: Sprite
+    state: billboard_nolegs
+    offset: 0,0
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardYourAdHere
+  suffix: Your ad here
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric2
+  suffix: Ad 2
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic2
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric3
+  suffix: Ad 3
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic3
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric4
+  suffix: Ad 4
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic4
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric5
+  suffix: Ad 5
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic5
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric6
+  suffix: Ad 6
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic6
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric7
+  suffix: Ad 7
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic7
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardGeneric8
+  suffix: Ad 8
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_generic8
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang1
+  suffix: Konyang ad 1
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang1
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang2
+  suffix: Konyang ad 2
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang2
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang3
+  suffix: Konyang ad 3
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang3
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang4
+  suffix: Konyang ad 4
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang4
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang5
+  suffix: Konyang ad 5
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang5
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang6
+  suffix: Konyang ad 6
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang6
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang7
+  suffix: Konyang ad 7
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang7
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang8
+  suffix: Konyang ad 8
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang8
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang9
+  suffix: Konyang ad 9
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang9
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang10
+  suffix: Konyang ad 10
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang10
+
+- type: entity
+  parent: BaseAuroraWallBillboard
+  id: AuroraWallBillboardKonyang11
+  suffix: Konyang ad 11
+  components:
+  - type: Sprite
+    offset: 0,0
+    layers:
+    - state: billboard_nolegs
+    - state: sign_konyang11
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseAuroraRoadSign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/road_signs_aurora.rsi
+    offset: -0.016,0.469
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignStop
+  components:
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+  - type: Sprite
+    state: stop
+    noRot: false
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignRight
+  components:
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+  - type: Sprite
+    state: right
+    noRot: false
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignLeft
+  components:
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+  - type: Sprite
+    state: left
+    noRot: false
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignPedestrian
+  components:
+  - type: Transform
+    noRot: false
+  - type: Rotatable
+  - type: Sprite
+    state: pedestrian
+    noRot: false
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignYield
+  components:
+  - type: Sprite
+    state: yield
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignStreetLeft
+  components:
+  - type: Sprite
+    state: street_left
+    offset: 0.172,0.469
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignStreetRight
+  components:
+  - type: Sprite
+    state: street_right
+    offset: -0.188,0.469
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignStreetBoth
+  components:
+  - type: Sprite
+    state: street_both
+    offset: 0.0,0.469
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignStreetBig
+  components:
+  - type: Sprite
+    state: street_big
+    offset: 0.0,0.469
+
+- type: entity
+  parent: BaseAuroraRoadSign
+  id: AuroraRoadSignNotice
+  components:
+  - type: Sprite
+    state: notice
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseDarkPackRoadSign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/road_signs.rsi
+    offset: 0.016,0.188
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignNoEnter
+  components:
+  - type: Sprite
+    state: noenter
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignFourWay
+  components:
+  - type: Sprite
+    state: 4way
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignAllWay
+  components:
+  - type: Sprite
+    state: allway
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignWrongWay
+  components:
+  - type: Sprite
+    state: wrongway
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignNoTurnLeft
+  components:
+  - type: Sprite
+    state: noturnleft
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignNoTurnRight
+  components:
+  - type: Sprite
+    state: noturnright
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignNoTurnForward
+  components:
+  - type: Sprite
+    state: noturnforward
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignExitLeft
+  suffix: Left
+  components:
+  - type: Sprite
+    state: exitleft
+    offset: 0.0,0.188
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignOneWayRight
+  suffix: Right
+  components:
+  - type: Sprite
+    state: onewayright
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignOnlyRight
+  components:
+  - type: Sprite
+    state: onlyright
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignOnlyLeft
+  components:
+  - type: Sprite
+    state: onlyleft
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignSpeed50
+  suffix: "50"
+  components:
+  - type: Sprite
+    state: speed50
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignSpeed40
+  suffix: "40"
+  components:
+  - type: Sprite
+    state: speed40
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignSpeed25
+  suffix: "25"
+  components:
+  - type: Sprite
+    state: speed25
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignWarningDeer
+  components:
+  - type: Sprite
+    state: warningdeer
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignWarningPedestrian
+  components:
+  - type: Sprite
+    state: warningpedestrian
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignRoundabout
+  components:
+  - type: Sprite
+    state: circleofdoom
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignParking
+  components:
+  - type: Sprite
+    state: parking
+
+- type: entity
+  parent: BaseDarkPackRoadSign
+  id: DarkPackRoadSignCrosswalk
+  components:
+  - type: Sprite
+    state: crosswalk
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseDarkPackPoster
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/poster.rsi
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster1
+  suffix: "1"
+  components:
+  - type: Sprite
+    state: poster_1
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster2
+  suffix: "2"
+  components:
+  - type: Sprite
+    state: poster_2
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster3
+  suffix: "3"
+  components:
+  - type: Sprite
+    state: poster_3
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster4
+  suffix: "4"
+  components:
+  - type: Sprite
+    state: poster_4
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster5
+  suffix: "5"
+  components:
+  - type: Sprite
+    state: poster_5
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster6
+  suffix: "6"
+  components:
+  - type: Sprite
+    state: poster_6
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster7
+  suffix: "7"
+  components:
+  - type: Sprite
+    state: poster_7
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster8
+  suffix: "8"
+  components:
+  - type: Sprite
+    state: poster_8
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster9
+  suffix: "9"
+  components:
+  - type: Sprite
+    state: poster_9
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster10
+  suffix: "10"
+  components:
+  - type: Sprite
+    state: poster_10
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster11
+  suffix: "11"
+  components:
+  - type: Sprite
+    state: poster_11
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster12
+  suffix: "12"
+  components:
+  - type: Sprite
+    state: poster_12
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster13
+  suffix: "13"
+  components:
+  - type: Sprite
+    state: poster_13
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster14
+  suffix: "14"
+  components:
+  - type: Sprite
+    state: poster_14
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster15
+  suffix: "15"
+  components:
+  - type: Sprite
+    state: poster_15
+
+- type: entity
+  parent: BaseDarkPackPoster
+  id: DarkPackPoster16
+  suffix: "16"
+  components:
+  - type: Sprite
+    state: poster_16
+
+- type: entity
+  parent: BaseUrbanProp
+  id: SplurtCitySign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/city_sign_splurt.rsi
+    state: sign
+    offset: 0.094,0.406
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.2,-0.3,1.2,0.2"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseCoyoteHazardSign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/hazard_signs_coyote.rsi
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignRadiation
+  components:
+  - type: Sprite
+    state: radiation
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignFire
+  components:
+  - type: Sprite
+    state: fire
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignWarning
+  components:
+  - type: Sprite
+    state: warn
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignNoSmoking
+  components:
+  - type: Sprite
+    state: smokeold
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignCctv
+  components:
+  - type: Sprite
+    state: cctv
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignTrain
+  components:
+  - type: Sprite
+    state: train
+
+- type: entity
+  parent: BaseCoyoteHazardSign
+  id: CoyoteSignShock
+  components:
+  - type: Sprite
+    state: shock
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: CoyoteChalkboard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/chalkboard_coyote.rsi
+    state: board_clean
+    offset: 0.5,0
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseDarkPackMoviePoster
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/poster_large_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackMoviePoster
+  id: DarkPackMoviePosterWarOfTheWorlds
+  components:
+  - type: Sprite
+    state: war_of_the_worlds
+
+- type: entity
+  parent: BaseDarkPackMoviePoster
+  id: DarkPackMoviePosterLandOfTheDead
+  components:
+  - type: Sprite
+    state: land_of_dead
+
+- type: entity
+  parent: BaseDarkPackMoviePoster
+  id: DarkPackMoviePosterElectra
+  components:
+  - type: Sprite
+    state: electra
+
+- type: entity
+  parent: BaseDarkPackMoviePoster
+  id: DarkPackMoviePosterCursed
+  components:
+  - type: Sprite
+    state: cursed
+
+- type: entity
+  parent: BaseDarkPackMoviePoster
+  id: DarkPackMoviePosterBlade
+  components:
+  - type: Sprite
+    state: blade
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: DarkPackFlagAnarchy
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/flags_darkpack.rsi
+    state: flag_anarchy
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseDarkPackSkateShopSign
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/skateshop_sign_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackSkateShopSign
+  id: DarkPackSkateShopSign1
+  suffix: "1"
+  components:
+  - type: Sprite
+    state: beralta1
+
+- type: entity
+  parent: BaseDarkPackSkateShopSign
+  id: DarkPackSkateShopSign2
+  suffix: "2"
+  components:
+  - type: Sprite
+    state: beralta2
+
+- type: entity
+  parent: BaseDarkPackSkateShopSign
+  id: DarkPackSkateShopSign3
+  suffix: "3"
+  components:
+  - type: Sprite
+    state: beralta3
+
+- type: entity
+  parent: BaseDarkPackSkateShopSign
+  id: DarkPackSkateShopSign4
+  suffix: "4"
+  components:
+  - type: Sprite
+    state: beralta4

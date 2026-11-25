@@ -1,0 +1,39 @@
+- files: [ bloodrealm_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state floor)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_accent.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state floor_accent)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_accent_alt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state floor_accent_alt)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_grease.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state grease)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_grease_grey.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state grease2)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_obsidian.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state obsidian)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_clot_edge_north.png, bloodrealm_clot_edge_south.png, bloodrealm_clot_edge_east.png, bloodrealm_clot_edge_west.png, bloodrealm_clot_edge_northeast.png, bloodrealm_clot_edge_northwest.png, bloodrealm_clot_edge_southeast.png, bloodrealm_clot_edge_southwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (states clot_north to clot_southwest, turned to SS14 edge form)."
+  source: "https://github.com/vgstation-coders/vgstation13"
+
+- files: [ bloodrealm_clot.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/vgstation-coders/vgstation13/blob/23f25f386f7a6c75b1a604029848d798e8b7ec06/icons/turf/bloodrealm.dmi (state clot_break)."
+  source: "https://github.com/vgstation-coders/vgstation13"

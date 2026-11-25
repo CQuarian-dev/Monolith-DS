@@ -881,6 +881,7 @@
   - ContractorFlashlightLantern
   - ContractorCardBoxBlack
   - ContractorWristwatch
+  - WGPlanetTimepiece # WOLFGATE(Planets): planetary clock and weather HUD.
   - ContractorWristwatchGold
   - ContractorSilverRing
   - ContractorGoldRing

@@ -1,0 +1,44 @@
+- files: ["covert1o.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/machines/door/covert1o.ogg"
+
+- files: ["covert1c.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/machines/door/covert1c.ogg"
+
+- files: ["deniedbeep.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/machines/deniedbeep.ogg"
+
+- files: ["magnetclamp.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/effects/magnetclamp.ogg"
+
+- files: ["squish_01.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/vore/sunesound/prey/squish_01.ogg"
+
+- files: ["squish_02.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/vore/sunesound/prey/squish_02.ogg"
+
+- files: ["squish_03.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/vore/sunesound/prey/squish_03.ogg"
+
+- files: ["squish_04.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/vore/sunesound/prey/squish_04.ogg"
+
+- files: ["stomachmove.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88."
+  source: "https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/sound/vore/sunesound/prey/stomachmove.ogg"

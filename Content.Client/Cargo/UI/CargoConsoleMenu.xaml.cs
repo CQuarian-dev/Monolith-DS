@@ -16,6 +16,7 @@ namespace Content.Client.Cargo.UI
     [GenerateTypedNameReferences]
     public sealed partial class CargoConsoleMenu : FancyWindow
     {
+        private readonly Robust.Shared.Configuration.IConfigurationManager _cfg; // LuaM
         private IEntityManager _entityManager;
         private IPrototypeManager _protoManager;
         private SpriteSystem _spriteSystem;
@@ -28,13 +29,14 @@ namespace Content.Client.Cargo.UI
         private readonly List<string> _categoryStrings = new();
         private string? _category;
 
-        public CargoConsoleMenu(EntityUid owner, IEntityManager entMan, IPrototypeManager protoManager, SpriteSystem spriteSystem)
+        public CargoConsoleMenu(EntityUid owner, IEntityManager entMan, IPrototypeManager protoManager, SpriteSystem spriteSystem, Robust.Shared.Configuration.IConfigurationManager cfg) // LuaM
         {
             RobustXamlLoader.Load(this);
             _entityManager = entMan;
             _protoManager = protoManager;
             _spriteSystem = spriteSystem;
             _owner = owner;
+            _cfg = cfg; // LuaM
 
             Title = Loc.GetString("cargo-console-menu-title");
 
@@ -70,7 +72,8 @@ namespace Content.Client.Cargo.UI
                     if (!allowedGroups?.Contains(cargoPrototype.Group) ?? false)
                         continue;
 
-                    yield return cargoPrototype;
+                    if (cargoPrototype.Available(_cfg)) // LuaM
+                        yield return cargoPrototype;
                 }
             }
         }

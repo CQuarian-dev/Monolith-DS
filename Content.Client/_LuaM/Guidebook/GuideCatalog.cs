@@ -197,7 +197,7 @@ public sealed partial class GuideCatalog : BoxContainer, IDocumentTag
         Row(body, "Размер / класс", Term("category", vessel.Size) + " · " + string.Join(", ", vessel.Classes.Select(c => Term("class", c))));
         Row(body, "Энергетика", string.Join(", ", vessel.Engines.Select(e => Term("engine", e))));
         if (vessel.RequireCrew) Row(body, "Экипаж", "Требуется");
-        if (vessel.ActiveLimit > 0) Row(body, "Лимит в секторе", vessel.ActiveLimit.ToString());
+        if (vessel.ActiveLimit >= 0) Row(body, "Лимит в секторе", vessel.ActiveLimit.ToString());
         var vouchers = data.Vouchers.Where(v => vessel.Vouchers.Contains(v.PrototypeId)
             && (consoleTypes == null || consoleTypes.Count == 0 || consoleTypes.Contains(v.ConsoleType))).ToList();
         if (vouchers.Count > 0)

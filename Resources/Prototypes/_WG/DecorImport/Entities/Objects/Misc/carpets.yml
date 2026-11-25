@@ -1,0 +1,485 @@
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemBeeFloorCarpetGrimy
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetBeeFloorCarpetGrimy
+  - type: SpawnAfterInteract
+    prototype: BeeFloorCarpetGrimy
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemBeeFloorCarpetOlive
+  components:
+  - type: Sprite
+    state: carpet-green
+  - type: Item
+    heldPrefix: carpet-green
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetBeeFloorCarpetOlive
+  - type: SpawnAfterInteract
+    prototype: BeeFloorCarpetOlive
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemCoyoteFloorCarpetVault
+  components:
+  - type: Sprite
+    state: carpet-blue
+  - type: Item
+    heldPrefix: carpet-blue
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetCoyoteFloorCarpetVault
+  - type: SpawnAfterInteract
+    prototype: CoyoteFloorCarpetVault
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorKinarisBlackGreen
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorKinarisBlackGreen
+  - type: SpawnAfterInteract
+    prototype: NovaFloorKinarisBlackGreen
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorKinarisBlackRed
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorKinarisBlackRed
+  - type: SpawnAfterInteract
+    prototype: NovaFloorKinarisBlackRed
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetKinaris
+  components:
+  - type: Sprite
+    state: carpet-white
+  - type: Item
+    heldPrefix: carpet-white
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetKinaris
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetKinaris
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetKinarisGreen
+  components:
+  - type: Sprite
+    state: carpet-white
+  - type: Item
+    heldPrefix: carpet-white
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetKinarisGreen
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetKinarisGreen
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetKinarisRed
+  components:
+  - type: Sprite
+    state: carpet-white
+  - type: Item
+    heldPrefix: carpet-white
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetKinarisRed
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetKinarisRed
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetPolite
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetPolite
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetPolite
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetPoliteBlue
+  components:
+  - type: Sprite
+    state: carpet-blue
+  - type: Item
+    heldPrefix: carpet-blue
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetPoliteBlue
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetPoliteBlue
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetPoliteRed
+  components:
+  - type: Sprite
+    state: carpet-red
+  - type: Item
+    heldPrefix: carpet-red
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetPoliteRed
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetPoliteRed
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetCarpAlt
+  components:
+  - type: Sprite
+    state: carpet-purple
+  - type: Item
+    heldPrefix: carpet-purple
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetCarpAlt
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetCarpAlt
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetLizardAlt
+  components:
+  - type: Sprite
+    state: carpet-green
+  - type: Item
+    heldPrefix: carpet-green
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetLizardAlt
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetLizardAlt
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetMothAlt
+  components:
+  - type: Sprite
+    state: carpet-white
+  - type: Item
+    heldPrefix: carpet-white
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetMothAlt
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetMothAlt
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemNovaFloorCarpetNeonSimple
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetNovaFloorCarpetNeonSimple
+  - type: SpawnAfterInteract
+    prototype: NovaFloorCarpetNeonSimple
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemShiptestFloorCarpetRedGold
+  components:
+  - type: Sprite
+    state: carpet-red
+  - type: Item
+    heldPrefix: carpet-red
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetShiptestFloorCarpetRedGold
+  - type: SpawnAfterInteract
+    prototype: ShiptestFloorCarpetRedGold
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpet
+  components:
+  - type: Sprite
+    state: carpet-orange
+  - type: Item
+    heldPrefix: carpet-orange
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpet
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpet
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetBlack
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetBlack
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetBlack
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetBlue
+  components:
+  - type: Sprite
+    state: carpet-skyblue
+  - type: Item
+    heldPrefix: carpet-skyblue
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetBlue
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetBlue
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetCyan
+  components:
+  - type: Sprite
+    state: carpet-cyan
+  - type: Item
+    heldPrefix: carpet-cyan
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetCyan
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetCyan
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetRoyalblack
+  components:
+  - type: Sprite
+    state: carpet-black
+  - type: Item
+    heldPrefix: carpet-black
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetRoyalblack
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetRoyalblack
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetRoyalblue
+  components:
+  - type: Sprite
+    state: carpet-blue
+  - type: Item
+    heldPrefix: carpet-blue
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetRoyalblue
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetRoyalblue
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetCarp
+  components:
+  - type: Sprite
+    state: carpet-purple
+  - type: Item
+    heldPrefix: carpet-purple
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetCarp
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetCarp
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetGoliath
+  components:
+  - type: Sprite
+    state: carpet-red
+  - type: Item
+    heldPrefix: carpet-red
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetGoliath
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetGoliath
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetLizard
+  components:
+  - type: Sprite
+    state: carpet-green
+  - type: Item
+    heldPrefix: carpet-green
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetLizard
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetLizard
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetMoth
+  components:
+  - type: Sprite
+    state: carpet-white
+  - type: Item
+    heldPrefix: carpet-white
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetMoth
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetMoth
+    doAfter: 0.5
+    removeOnInteract: true
+
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTgFloorCarpetStellar
+  components:
+  - type: Sprite
+    state: carpet-blue
+  - type: Item
+    heldPrefix: carpet-blue
+  - type: FloorTile
+    outputs:
+      - Plating
+  - type: Stack
+    stackType: FloorCarpetTgFloorCarpetStellar
+  - type: SpawnAfterInteract
+    prototype: TgFloorCarpetStellar
+    doAfter: 0.5
+    removeOnInteract: true

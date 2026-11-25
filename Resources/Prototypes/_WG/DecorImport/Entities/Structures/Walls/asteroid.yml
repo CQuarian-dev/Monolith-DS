@@ -1,0 +1,37 @@
+- type: entity
+  parent: BaseWallTierOne
+  id: CMRockIce
+  components:
+  - type: Gatherable
+    toolWhitelist:
+      tags:
+      - Pickaxe
+      components:
+      - MiningGatheringHard
+      - MiningGatheringSoft
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Walls/cave_ice_cmss13.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Walls/cave_ice_cmss13.rsi
+  - type: IconSmooth
+    key: walls
+    base: cavewall
+
+- type: entity
+  parent: BaseWallTierOne
+  id: CMRockOrange
+  components:
+  - type: Gatherable
+    toolWhitelist:
+      tags:
+      - Pickaxe
+      components:
+      - MiningGatheringHard
+      - MiningGatheringSoft
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Walls/cave_orange_cmss13.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Walls/cave_orange_cmss13.rsi
+  - type: IconSmooth
+    key: walls
+    base: cavewall

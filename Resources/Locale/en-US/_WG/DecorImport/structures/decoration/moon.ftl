@@ -1,0 +1,14 @@
+ent-BubberFloorMoonWater = lunar water
+    .desc = Semi-shallow water containing a variety of natural and invasive fish species.
+ent-BubberFloorMoonWaterSurface = lunar surface water
+    .desc = { ent-BubberFloorMoonWater.desc }
+ent-GoonMeteorHuge = huge asteroid
+ent-TgSpring = spring
+ent-BaseAltRock = asteroid rock
+    .desc = A rocky asteroid.
+ent-AsteroidAltRock = { ent-BaseAltRock }
+    .desc = { ent-BaseAltRock.desc }
+ent-AsteroidAltRockMining = { ent-BaseAltRock }
+    .desc = { ent-BaseAltRock.desc }
+ent-AsteroidRockOreCrab = { ent-BaseAltRock }
+    .desc = { ent-BaseAltRock.desc }

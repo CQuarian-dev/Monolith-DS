@@ -1,0 +1,144 @@
+- files: [ bamboo_tatami.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floor_variations.dmi (state bamboo-green)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ bamboo_tatami_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floor_variations.dmi (state bamboo-green)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ catwalk_floor_wood_smooth.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/catwalk_newfloors.dmi (state wood_above)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_southeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_southwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_northeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ cobble_corner_northwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble_corner)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ colour_cycle_dancefloor_a.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state light_on-dancefloor_A)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ floor_bamboo.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/bamboo_mat.dmi (state mat-0)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ floor_tram.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/tram.dmi (state tram_platform)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ iron_solarpanel.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state solarpanel)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ iron_submarine.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_skyrat/modules/liquids/icons/turf/submarine.dmi (state submarine_floor)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ iron_submarine_perf.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_skyrat/modules/liquids/icons/turf/submarine.dmi (state submarine_perf)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ iron_submarine_vents.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_skyrat/modules/liquids/icons/turf/submarine.dmi (state submarine_vents)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ pool_cobble.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state cobble)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ tatami_black.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floor_variations.dmi (state bamboo-black)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ tatami_black_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floor_variations.dmi (state bamboo-black)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ tatami_purple.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floor_variations.dmi (state bamboo-purple)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ tatami_purple_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floor_variations.dmi (state bamboo-purple)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ tram_guideway.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state elevatorshaft)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ tram_plate.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/tram.dmi (state tram_plate)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ vault_alien.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state alienvault)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ vault_sandstone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/floors/floors.dmi (state sandstonevault)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ lunar_sand.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/lunar_sand.dmi (states 0,0 to 9,9)."
+  source: "https://github.com/Bubberstation/Bubberstation"
+
+- files: [ lunar_rock.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Bubberstation/Bubberstation/blob/792301a70da075679790652676e6774e746df81d/modular_zubbers/icons/turf/lunar_rock.dmi (states 0,0 to 9,9)."
+  source: "https://github.com/Bubberstation/Bubberstation"

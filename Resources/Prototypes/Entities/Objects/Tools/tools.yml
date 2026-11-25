@@ -691,6 +691,7 @@
   # - type: EarthDigging # Frontier
   - type: Shovel
   - type: ToolTileCompatible # Frontier
+  - type: WGSnowShovel # WOLFGATE(GroundCover): clears snow cover
 
 - type: entity
   parent: BaseItem

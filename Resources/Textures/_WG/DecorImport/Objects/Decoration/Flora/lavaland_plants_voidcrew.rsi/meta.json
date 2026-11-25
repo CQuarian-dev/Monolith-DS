@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Voidcrew at commit https://github.com/voidcrew/Voidcrew/commit/0c87384b55294dc7348f83bbd3fddd9427d136de.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fern1"
+    },
+    {
+      "name": "fireblossom1"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+- files: [ catwalk_floor_iron.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/catwalk_plating.dmi (state iron_above)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ catwalk_floor_iron_dark.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/catwalk_plating.dmi (state darkiron_above)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ catwalk_floor_iron_white.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/catwalk_plating.dmi (state whiteiron_above)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ colony_texture.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/colony_fabricator/icons/tiles.dmi (state colony_grey_texture)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ colony_white.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/colony_fabricator/icons/tiles.dmi (state colony_white)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ floor_catwalk_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/catwalk_plating.dmi (state maint_above)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ floor_stone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/floors.dmi (state stone_floor)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ iron_colony.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/colony_fabricator/icons/tiles.dmi (state colony_grey)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ iron_goonplaque.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/floors.dmi (state plaque)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ iron_recharge_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/floors.dmi (state recharge_floor)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ kitchen_diagonal.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/floors.dmi (state kitchen_diagonal)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ kitchen_herringbone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/floors.dmi (state kitchen_herringbone)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ kitchen_small.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/aesthetics/floors/icons/floors.dmi (state kitchen_small)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ shuttle_exploration.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/advanced_shuttles/icons/exploration_floor.dmi (state oside)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ white_bolts.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/colony_fabricator/icons/tiles.dmi (state colony_white_bolts)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"
+
+- files: [ white_texture.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Skyrat-SS13/Skyrat-tg/blob/e507f9120bb0c3beecfe169d14193d90e7229a58/modular_skyrat/modules/colony_fabricator/icons/tiles.dmi (state colony_white_texture)."
+  source: "https://github.com/Skyrat-SS13/Skyrat-tg"

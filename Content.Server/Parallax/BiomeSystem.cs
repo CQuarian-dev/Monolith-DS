@@ -110,6 +110,9 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
     {
         var uid = ev.Entity.Owner;
 
+        if (_wgUnloading) // WOLFGATE(Planets): a chunk's own entities need no bookkeeping as its unload deletes them
+            return;
+
         if (!_xformQuery.TryGetComponent(uid, out var xform) ||
             xform.GridUid is not { } gridUid ||
             !_biomeQuery.TryGetComponent(gridUid, out var biome) ||
@@ -117,6 +120,10 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
         {
             return;
         }
+
+        // WOLFGATE(Planets): a biome grid being deleted needs no bookkeeping; the chunk walk below is per entity
+        if (MetaData(gridUid).EntityLifeStage >= EntityLifeStage.Terminating)
+            return;
 
         var tile = _mapSystem.LocalToTile(gridUid, grid, xform.Coordinates);
         var chunk = SharedMapSystem.GetChunkIndices(tile, ChunkSize) * ChunkSize;
@@ -215,6 +222,7 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
 
         _unloadTimer += frameTime;
         var shouldUnload = _unloadTimer > UnloadInterval;
+        WgBeginUnload(); // WOLFGATE(Planets): planet layers unload on their own schedule, see BiomeSystem.WGUnload.cs
 
         while (loadBiomes.MoveNext(out var gridUid, out var biome, out var grid))
         {
@@ -230,6 +238,9 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
                 continue;
 
             LoadChunks(biome, gridUid, grid, biome.Seed);
+
+            if (WgUnload(biome, gridUid, grid)) // WOLFGATE(Planets): a planet layer is left to its own unloader
+                continue;
 
             if (shouldUnload)
                 UnloadChunks(biome, gridUid, grid, biome.Seed);
@@ -269,11 +280,16 @@ public sealed partial class BiomeSystem : SharedBiomeSystem
         {
             LoadChunkMarkers(component, gridUid, grid, chunk, seed);
 
+            if (WgDeferLoad(component, gridUid, chunk)) // WOLFGATE(Planets): the far part of a planet layer's load area is put off
+                continue;
+
             if (!component.LoadedChunks.Add(chunk))
                 continue;
 
             // Load NOW!
             LoadChunk(component, gridUid, grid, chunk, seed);
         }
+
+        WgLoadDeferred(component, gridUid, grid, seed); // WOLFGATE(Planets): what was put off loads nearest first, within the pass's budget
     }
 }

@@ -1,0 +1,123 @@
+- type: entity
+  parent: TableBase
+  id: DarkPackTableCountertopBubway
+  suffix: bubway
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_bubway.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_bubway.rsi
+    state: full
+  - type: IconSmooth
+    key: DarkPackTableCountertopBubway
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: DarkPackTableCountertopFastfood
+  suffix: fastfood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_fastfood.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_fastfood.rsi
+    state: full
+  - type: IconSmooth
+    key: DarkPackTableCountertopFastfood
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: DarkPackTableCountertopTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_teal.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_teal.rsi
+    state: full
+  - type: IconSmooth
+    key: DarkPackTableCountertopTeal
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: DarkPackTableCountertopYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_yellow.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/countertop_yellow.rsi
+    state: full
+  - type: IconSmooth
+    key: DarkPackTableCountertopYellow
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: CoyoteTableBooth
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_booth.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_booth.rsi
+    state: full
+  - type: IconSmooth
+    key: CoyoteTableBooth
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

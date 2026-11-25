@@ -1,0 +1,709 @@
+- type: constructionGraph
+  id: DecorBuildBayStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: BayStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildBayStoolPadded
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: BayStoolPadded
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCitChairStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CitChairStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCoyoteChairStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CoyoteChairStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildErisStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ErisStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildErisStoolPadded
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ErisStoolPadded
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildGoonStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: GoonStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: PolarisStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairStoolGreyscale
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairStoolGreyscale
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCitChairStoolBrass
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Brass
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CitChairStoolBrass
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetBrass1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildADTWoodenStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 5
+  - node: built
+    entity: ADTWoodenStool
+
+- type: constructionGraph
+  id: DecorBuildGoonStoolWooden
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: GoonStoolWooden
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaStoolWood
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaStoolWood
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildADTChairBarStool
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+  - node: built
+    entity: ADTChairBarStool
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildADTChairBarStool2
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 1
+  - node: built
+    entity: ADTChairBarStool2
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildBayStoolBar
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: BayStoolBar
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildBayStoolBarPadded
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: BayStoolBarPadded
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCitStoolBarBrass
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Brass
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: CitStoolBarBrass
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetBrass1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildErisChairCustomBarSpecial
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 4
+        doAfter: 2
+  - node: built
+    entity: ErisChairCustomBarSpecial
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 4
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaStoolBar
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 2
+        doAfter: 2
+  - node: built
+    entity: NebulaStoolBar
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestChairStoolBar
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestChairStoolBar
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestStoolBarGreyscale
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: ShiptestStoolBarGreyscale
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogChairStoolBeanbag
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+  - node: built
+    entity: YogChairStoolBeanbag
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 5
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogStoolBeanbagBlack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+  - node: built
+    entity: YogStoolBeanbagBlack
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 5
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogStoolBeanbagBlue
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+  - node: built
+    entity: YogStoolBeanbagBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 5
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogStoolBeanbagGreen
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+  - node: built
+    entity: YogStoolBeanbagGreen
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 5
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogStoolBeanbagRed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+  - node: built
+    entity: YogStoolBeanbagRed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 5
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogStoolBeanbagYellow
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Cloth
+        amount: 5
+        doAfter: 2
+  - node: built
+    entity: YogStoolBeanbagYellow
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 5
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

@@ -1,0 +1,455 @@
+- type: entity
+  parent: TableBase
+  id: GoonTableGlass
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: table_glass
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: table_glass
+  - type: IconSmooth
+    key: GoonTableGlass
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 15
+  - type: Construction
+    graph: DecorBuildGoonTableGlass
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: CMReinforcedAlmayerBlendNorth
+  suffix: north
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: reqNtable
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: reqNtable
+  - type: IconSmooth
+    key: CMReinforcedAlmayerBlendNorth
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableFolding
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: table_folding
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: table_folding
+  - type: IconSmooth
+    key: GoonTableFolding
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: Dresser
+  id: AuroraTableRackFoldingTable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: camping_table
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraTableRackFoldingTable
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: AuroraTableRackCafeTable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: cafe
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraTableRackCafeTable
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: GoonTableEndtableClassic
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: endtable-classic
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: endtable-classic
+  - type: IconSmooth
+    key: GoonTableEndtableClassic
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableEndtableGothic
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: endtable-gothic
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: endtable-gothic
+  - type: IconSmooth
+    key: GoonTableEndtableGothic
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableEndtableHoney
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: endtablehoney
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: endtablehoney
+  - type: IconSmooth
+    key: GoonTableEndtableHoney
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableEnd
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: end_table_1
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: end_table_1
+  - type: IconSmooth
+    key: NebulaTableEnd
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: ShiptestTableEndtable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: end_table
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables.rsi
+    state: end_table
+  - type: IconSmooth
+    key: ShiptestTableEndtable
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildShiptestTableEndtable
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: GoonTableHibachi
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: hibachi
+    noRot: true
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: hibachi
+  - type: IconSmooth
+    key: GoonTableHibachi
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseStructure
+  id: GoonTableAnvil
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: anvil
+    noRot: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: TableBase
+  id: GoonTablePodiumWhite
+  suffix: table
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwhite
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwhite
+  - type: IconSmooth
+    key: GoonTablePodiumWhite
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTablePodiumWhiteNanotrasen
+  suffix: nanotrasen
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwhite-nt
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwhite-nt
+  - type: IconSmooth
+    key: GoonTablePodiumWhiteNanotrasen
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTablePodiumWhiteSyndicate
+  suffix: syndicate
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwhite-snd
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwhite-snd
+  - type: IconSmooth
+    key: GoonTablePodiumWhiteSyndicate
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTablePodiumWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwood
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwood
+  - type: IconSmooth
+    key: GoonTablePodiumWood
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTablePodiumWoodNanotrasen
+  suffix: nanotrasen
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwood-nt
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwood-nt
+  - type: IconSmooth
+    key: GoonTablePodiumWoodNanotrasen
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTablePodiumWoodSyndicate
+  suffix: syndicate
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwood-snd
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/small_tables_goonstation.rsi
+    state: podiumwood-snd
+  - type: IconSmooth
+    key: GoonTablePodiumWoodSyndicate
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

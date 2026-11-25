@@ -1,0 +1,172 @@
+- type: entity
+  parent: BaseStructure
+  id: GoonTombstone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Memorials/gravestones_goonstation.rsi
+    state: tombstone
+    noRot: true
+    enableOverrideDir: true
+    overrideDir: South
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Rock
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone5
+  components:
+  - type: Sprite
+    overrideDir: SouthEast
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone6
+  components:
+  - type: Sprite
+    overrideDir: SouthWest
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone7
+  components:
+  - type: Sprite
+    overrideDir: NorthEast
+
+- type: entity
+  parent: GoonTombstone
+  id: GoonTombstone8
+  components:
+  - type: Sprite
+    overrideDir: NorthWest
+
+- type: entity
+  parent: BaseStructure
+  id: GoonTombstoneMemorial
+  suffix: memorial
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Memorials/gravestones_goonstation.rsi
+    state: memorial
+    noRot: true
+    enableOverrideDir: true
+    overrideDir: South
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Rock
+
+- type: entity
+  parent: GoonTombstoneMemorial
+  id: GoonTombstoneMemorial2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonTombstoneMemorial
+  id: GoonTombstoneMemorial3
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: BaseStructure
+  id: CoyoteStatueSandstoneGravestone
+  suffix: sandstone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Memorials/gravestones.rsi
+    state: stone-1
+    noRot: true
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Rock
+
+- type: entity
+  parent: BaseStructure
+  id: CoyoteStatueWoodHeadstonewood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Memorials/gravestones.rsi
+    state: wooden
+    noRot: true
+  - type: Physics
+    canCollide: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Wood
+
+- type: entity
+  parent: BaseStructure
+  id: PolarisPropStatueStumpPlaque
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Memorials/gravestones.rsi
+    state: stump
+    noRot: true
+    drawdepth: Mobs
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic

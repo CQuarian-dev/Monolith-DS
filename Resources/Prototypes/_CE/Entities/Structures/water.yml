@@ -61,12 +61,14 @@
         reagents:
         - ReagentId: Water
           Quantity: 9999999
-  - type: SolutionRegeneration
-    solution: pool
-    generated:
-      reagents:
-      - ReagentId: Water
-        Quantity: 100
+  # LuaM-start: WOLFGATE(Performance)
+  # - type: SolutionRegeneration
+  #   solution: pool
+  #   generated:
+  #     reagents:
+  #     - ReagentId: Water
+  #       Quantity: 100
+  # LuaM-end
   - type: DrainableSolution
     solution: pool
   - type: StepTrigger

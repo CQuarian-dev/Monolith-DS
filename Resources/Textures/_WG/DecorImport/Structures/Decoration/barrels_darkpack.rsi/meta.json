@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "barrel1"
+    },
+    {
+      "name": "barrel2"
+    },
+    {
+      "name": "barrel3"
+    },
+    {
+      "name": "barrel4"
+    },
+    {
+      "name": "barrel5"
+    },
+    {
+      "name": "barrel6"
+    },
+    {
+      "name": "barrel7"
+    },
+    {
+      "name": "barrel8"
+    },
+    {
+      "name": "barrel9"
+    },
+    {
+      "name": "barrel10"
+    },
+    {
+      "name": "barrel11"
+    },
+    {
+      "name": "barrel12"
+    }
+  ]
+}

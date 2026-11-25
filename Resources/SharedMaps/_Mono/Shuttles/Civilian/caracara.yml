@@ -3891,10 +3891,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -9.5,11.5
       parent: 1
-    - type: Thruster
-      enabled: False
-    - type: ApcPowerReceiver
-      powerLoad: 1
 - proto: ThrusterLarge
   entities:
   - uid: 442

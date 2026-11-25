@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from OnyxBay at commit https://github.com/ChaoticOnyx/OnyxBay/commit/3cb893c92162f09aa91987e1e1a943221809e3d3.",
+  "size": {
+    "x": 64,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "mush1"
+    },
+    {
+      "name": "mush2"
+    },
+    {
+      "name": "mush3"
+    },
+    {
+      "name": "mush4"
+    },
+    {
+      "name": "mush5"
+    },
+    {
+      "name": "t1",
+      "delays": [
+        [
+          25.0,
+          5.0
+        ]
+      ]
+    },
+    {
+      "name": "t2"
+    },
+    {
+      "name": "t3"
+    },
+    {
+      "name": "t4"
+    },
+    {
+      "name": "t5"
+    },
+    {
+      "name": "t6"
+    },
+    {
+      "name": "t7"
+    },
+    {
+      "name": "t8"
+    },
+    {
+      "name": "t9"
+    },
+    {
+      "name": "t10"
+    },
+    {
+      "name": "t11"
+    },
+    {
+      "name": "t12"
+    },
+    {
+      "name": "t13"
+    },
+    {
+      "name": "t14"
+    },
+    {
+      "name": "t15"
+    },
+    {
+      "name": "t16",
+      "delays": [
+        [
+          12.0,
+          5.0
+        ]
+      ]
+    },
+    {
+      "name": "t1stump"
+    },
+    {
+      "name": "t2stump"
+    },
+    {
+      "name": "t3stump"
+    },
+    {
+      "name": "t4stump"
+    },
+    {
+      "name": "log1"
+    },
+    {
+      "name": "log2"
+    },
+    {
+      "name": "mystical"
+    }
+  ]
+}

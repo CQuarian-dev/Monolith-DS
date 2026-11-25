@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "fpew",
+      "directions": 4
+    },
+    {
+      "name": "fpewC",
+      "directions": 4
+    },
+    {
+      "name": "fpewL",
+      "directions": 4
+    },
+    {
+      "name": "fpewR",
+      "directions": 4
+    },
+    {
+      "name": "pew",
+      "directions": 4
+    },
+    {
+      "name": "pewC",
+      "directions": 4
+    },
+    {
+      "name": "pewL",
+      "directions": 4
+    },
+    {
+      "name": "pewR",
+      "directions": 4
+    }
+  ]
+}

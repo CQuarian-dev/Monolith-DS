@@ -1,0 +1,131 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+    "size": {
+        "x": 96,
+        "y": 160
+    },
+    "states": [
+        {
+            "name": "nvlamp-singles",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-singles-on",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-corner-doubles",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-corner-doubles-on",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-straight-doubles",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-straight-doubles-on",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-tripples",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-tripples-on",
+            "directions": 4
+        },
+        {
+            "name": "nvlamp-quadra"
+        },
+        {
+            "name": "nvlamp-quadra-on"
+        },
+        {
+            "name": "traffic-light-leftside",
+            "directions": 4
+        },
+        {
+            "name": "traffic-light-rightside",
+            "directions": 4
+        },
+        {
+            "name": "traffic-light-south-blinking",
+            "directions": 4,
+            "delays": [
+                [
+                    0.25,
+                    1.0,
+                    0.1,
+                    1.0,
+                    0.1,
+                    0.75,
+                    0.125,
+                    0.1,
+                    0.25,
+                    0.075,
+                    0.15,
+                    0.1,
+                    0.085,
+                    0.075,
+                    0.1
+                ],
+                [
+                    0.25,
+                    1.0,
+                    0.1,
+                    1.0,
+                    0.1,
+                    0.75,
+                    0.125,
+                    0.1,
+                    0.25,
+                    0.075,
+                    0.15,
+                    0.1,
+                    0.085,
+                    0.075,
+                    0.1
+                ],
+                [
+                    0.25,
+                    1.0,
+                    0.1,
+                    1.0,
+                    0.1,
+                    0.75,
+                    0.125,
+                    0.1,
+                    0.25,
+                    0.075,
+                    0.15,
+                    0.1,
+                    0.085,
+                    0.075,
+                    0.1
+                ],
+                [
+                    0.25,
+                    1.0,
+                    0.1,
+                    1.0,
+                    0.1,
+                    0.75,
+                    0.125,
+                    0.1,
+                    0.25,
+                    0.075,
+                    0.15,
+                    0.1,
+                    0.085,
+                    0.075,
+                    0.1
+                ]
+            ]
+        }
+    ]
+}

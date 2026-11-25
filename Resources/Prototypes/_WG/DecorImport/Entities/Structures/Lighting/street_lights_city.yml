@@ -1,0 +1,725 @@
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanPost, BaseUrbanPoweredLight ]
+  id: BaseAuroraPoleLight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/poles.rsi
+    offset: 0,1
+  - type: PointLight
+    radius: 8
+    energy: 1
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraStreetLightModern
+  components:
+  - type: Sprite
+    layers:
+    - state: street
+    - state: street_light
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraStreetLightSlim
+  suffix: Slim
+  components:
+  - type: Sprite
+    layers:
+    - state: street_aszn
+    - state: street_aszn_light
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#F0FFF0"
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraStreetLightClassic
+  components:
+  - type: Sprite
+    layers:
+    - state: classic_lamp
+    - state: classic_lamp_light
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFE0A0"
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraStreetLightClassicCool
+  suffix: Cool light
+  components:
+  - type: Sprite
+    layers:
+    - state: classic_lamp
+    - state: classic_lamp_light_alt
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#E0E8FF"
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraFloodlightPole
+  components:
+  - type: Sprite
+    layers:
+    - state: radial_floodlight
+    - state: radial_floodlight-light
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    radius: 10
+    energy: 1.4
+    color: "#F8F8FF"
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraLanternPoleLeft
+  suffix: Left
+  components:
+  - type: Sprite
+    layers:
+    - state: left_lamp_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: left_lamp }
+          False: { state: left_lamp_off }
+  - type: PointLight
+    radius: 5
+    color: "#FF9A6A"
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraLanternPoleRight
+  suffix: Right
+  components:
+  - type: Sprite
+    layers:
+    - state: right_lamp_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: right_lamp }
+          False: { state: right_lamp_off }
+  - type: PointLight
+    radius: 5
+    color: "#FF9A6A"
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraTrafficLight
+  components:
+  - type: Sprite
+    layers:
+    - state: traffic
+    - state: traffic_lights
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#FFF0C0"
+
+- type: entity
+  parent: AuroraTrafficLight
+  id: AuroraTrafficLightInverse
+  suffix: Opposite phase
+  components:
+  - type: Sprite
+    layers:
+    - state: traffic
+    - state: traffic_lights_inverse
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: BaseAuroraPoleLight
+  id: AuroraCrossingSignalWalk
+  suffix: Walk
+  components:
+  - type: Sprite
+    layers:
+    - state: crosswalk
+    - state: crosswalk_go
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#5AFFB0"
+
+- type: entity
+  parent: AuroraCrossingSignalWalk
+  id: AuroraCrossingSignalStop
+  suffix: Stop
+  components:
+  - type: Sprite
+    layers:
+    - state: crosswalk
+    - state: crosswalk_stop
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4A4A"
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseAuroraPole
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/poles.rsi
+    offset: 0,1
+
+- type: entity
+  parent: BaseAuroraPole
+  id: AuroraUtilityPole
+  components:
+  - type: Sprite
+    state: power
+
+- type: entity
+  parent: BaseAuroraPole
+  id: AuroraSignalPole
+  components:
+  - type: Sprite
+    state: junction
+
+- type: entity
+  parent: BaseAuroraPole
+  id: AuroraSignalPoleCentral
+  suffix: Central
+  components:
+  - type: Sprite
+    state: central
+
+- type: entity
+  parent: BaseUrbanCeilingProp
+  id: AuroraPowerLine
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/poles.rsi
+    offset: 0,1
+    state: line
+
+- type: entity
+  parent: AuroraPowerLine
+  id: AuroraPowerLineEnd
+  suffix: End
+  components:
+  - type: Sprite
+    state: line_end
+
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanPost, BaseUrbanPoweredLight ]
+  id: BaseCMStreetLight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/streetlights.rsi
+    offset: 0,0.5
+  - type: PointLight
+    radius: 8
+    energy: 1
+
+- type: entity
+  parent: BaseCMStreetLight
+  id: CMStreetLightIndustrial
+  components:
+  - type: Sprite
+    layers:
+    - state: street_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: street_on }
+          False: { state: street_off }
+  - type: PointLight
+    color: "#D2E3EC"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMStreetLightIndustrialBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMStreetLight
+  id: CMTrafficLightIndustrial
+  suffix: Industrial
+  components:
+  - type: Sprite
+    layers:
+    - state: trafficlight
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: trafficlight_on }
+          False: { state: trafficlight }
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMTrafficLightIndustrialBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#FFF0C0"
+
+- type: entity
+  parent: CMTrafficLightIndustrial
+  id: CMTrafficLightIndustrialAlt
+  suffix: Industrial, opposite phase
+  components:
+  - type: Sprite
+    layers:
+    - state: trafficlight_alt
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: trafficlight_alt_on }
+          False: { state: trafficlight_alt }
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMTrafficLightIndustrialAltBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseCMStreetProp
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/streetlights.rsi
+    offset: 0,0.5
+
+- type: entity
+  parent: BaseCMStreetProp
+  id: CMStreetLightIndustrialBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: street_dmg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMStreetLightStump:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMStreetProp
+  id: CMStreetLightStump
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: street_stump
+
+- type: entity
+  parent: BaseCMStreetProp
+  id: CMTrafficLightIndustrialBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: trafficlight_damaged
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMTrafficLightStump:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMStreetProp
+  id: CMTrafficLightIndustrialAltBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: trafficlight_alt_damaged
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          CMTrafficLightStump:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseCMStreetProp
+  id: CMTrafficLightStump
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    state: trafficlight_stump
+
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanPost, BaseUrbanPoweredLight ]
+  id: BaseCoyoteStreetLightTall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/96x160_street_decore.rsi
+    offset: 0,2
+  - type: PointLight
+    enabled: false
+    radius: 8
+    energy: 1.1
+    color: "#a8a582"
+
+- type: entity
+  parent: BaseCoyoteStreetLightTall
+  id: CoyoteStreetLightTallSingle
+  suffix: Tall, one arm
+  components:
+  - type: Sprite
+    layers:
+    - state: nvlamp-singles
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: nvlamp-singles-on }
+          False: { state: nvlamp-singles }
+
+- type: entity
+  parent: BaseCoyoteStreetLightTall
+  id: CoyoteStreetLightTallCorner
+  suffix: Tall, corner arms
+  components:
+  - type: Sprite
+    layers:
+    - state: nvlamp-corner-doubles
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: nvlamp-corner-doubles-on }
+          False: { state: nvlamp-corner-doubles }
+
+- type: entity
+  parent: BaseCoyoteStreetLightTall
+  id: CoyoteStreetLightTallDouble
+  suffix: Tall, two arms
+  components:
+  - type: Sprite
+    layers:
+    - state: nvlamp-straight-doubles
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: nvlamp-straight-doubles-on }
+          False: { state: nvlamp-straight-doubles }
+
+- type: entity
+  parent: BaseCoyoteStreetLightTall
+  id: CoyoteStreetLightTallTriple
+  suffix: Tall, three arms
+  components:
+  - type: Sprite
+    layers:
+    - state: nvlamp-tripples
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: nvlamp-tripples-on }
+          False: { state: nvlamp-tripples }
+
+- type: entity
+  parent: BaseCoyoteStreetLightTall
+  id: CoyoteStreetLightTallQuad
+  suffix: Tall, four arms
+  components:
+  - type: Sprite
+    layers:
+    - state: nvlamp-quadra
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: nvlamp-quadra-on }
+          False: { state: nvlamp-quadra }
+  - type: PointLight
+    radius: 11
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseCoyoteTrafficLightTall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/96x160_street_decore.rsi
+    offset: 0,2
+
+- type: entity
+  parent: BaseCoyoteTrafficLightTall
+  id: CoyoteTrafficLightTallLeft
+  suffix: Tall, facing left
+  components:
+  - type: Sprite
+    state: traffic-light-leftside
+
+- type: entity
+  parent: BaseCoyoteTrafficLightTall
+  id: CoyoteTrafficLightTallRight
+  suffix: Tall, facing right
+  components:
+  - type: Sprite
+    state: traffic-light-rightside
+
+- type: entity
+  parent: BaseCoyoteTrafficLightTall
+  id: CoyoteTrafficLightTallBlinking
+  suffix: Tall, blinking
+  components:
+  - type: Sprite
+    state: traffic-light-south-blinking
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#FFC040"
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseDarkPackLampPostCity
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/lamppost.rsi
+    offset: 0,2
+  - type: PointLight
+    radius: 8
+    energy: 1
+    softness: 1
+    color: "#FFE4C0"
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostTwo
+  suffix: Two lamps
+  components:
+  - type: Sprite
+    state: two
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostTraffic
+  suffix: City
+  components:
+  - type: Sprite
+    state: traffic
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#FFF0C0"
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostOneSnow
+  suffix: One lamp, snow
+  components:
+  - type: Sprite
+    state: one-snow
+
+- type: entity
+  parent: DarkPackLampPostTwo
+  id: DarkPackLampPostTwoSnow
+  suffix: Two lamps, snow
+  components:
+  - type: Sprite
+    state: two-snow
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostThreeSnow
+  suffix: Three lamps, snow
+  components:
+  - type: Sprite
+    state: three-snow
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostFourSnow
+  suffix: Four lamps, snow
+  components:
+  - type: Sprite
+    state: four-snow
+  - type: PointLight
+    radius: 10
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostVictorianSnow
+  suffix: Victorian, snow
+  components:
+  - type: Sprite
+    state: civ-snow
+
+- type: entity
+  parent: BaseDarkPackLampPostCity
+  id: DarkPackLampPostChineseSnow
+  suffix: Chinese lantern, snow
+  components:
+  - type: Sprite
+    state: chinese-snow
+  - type: PointLight
+    color: "#FF8A5A"
+
+- type: entity
+  parent: DarkPackLampPostTraffic
+  id: DarkPackLampPostTrafficSnow
+  suffix: City, snow
+  components:
+  - type: Sprite
+    state: traffic-snow
+
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanPost, BaseUrbanPoweredLight ]
+  id: BaseShiptestTrafficLight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/city_props_32x64.rsi
+    offset: 0,0.5
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#FFF0C0"
+
+- type: entity
+  parent: BaseShiptestTrafficLight
+  id: ShiptestTrafficLight
+  suffix: Compact
+  components:
+  - type: Sprite
+    layers:
+    - state: traffic_light
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        enum.ToggleableVisuals.Layer:
+          True: { state: traffic_light_light }
+          False: { state: traffic_light }
+
+- type: entity
+  parent: BaseShiptestTrafficLight
+  id: ShiptestTrafficLightError
+  suffix: Compact, blinking fault
+  components:
+  - type: Sprite
+    layers:
+    - state: traffic_light
+    - state: traffic_light_error
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FF4040"

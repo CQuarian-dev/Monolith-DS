@@ -1,0 +1,419 @@
+- type: entity
+  parent: BaseFlora
+  id: AuroraAssunzioneGrassAlt
+  suffix: alt
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: stalks_alt
+    offset: "0,0"
+    layers:
+    - state: stalks_alt
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraFloraBushKonyangReeds
+  suffix: reeds
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: stalks
+    offset: "0,0"
+    layers:
+    - state: stalks
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraFloraGrassAdhomai
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: grass1
+    offset: "0,0"
+    layers:
+    - state: grass1
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraFloraGrassDesert
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: desert_grass
+    offset: "0,0"
+    layers:
+    - state: desert_grass
+
+- type: entity
+  parent: BaseFlora
+  id: CitFloraGrassSpookytime
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tall_grass_1_citadel
+    offset: "0,0"
+    layers:
+    - state: tall_grass_1_citadel
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassDesertHeavy
+  suffix: heavy
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: heavygrass_1
+    offset: "0,0"
+    layers:
+    - state: heavygrass_1
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassDesertHeavygrass5
+  suffix: 5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: heavygrass_5
+    offset: "0,0"
+    layers:
+    - state: heavygrass_5
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassDesertHeavygrass7
+  suffix: 7
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: heavygrass_7
+    offset: "0,0"
+    layers:
+    - state: heavygrass_7
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassDesertLightgrass5
+  suffix: lightgrass 5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: lightgrass_5
+    offset: "0,0"
+    layers:
+    - state: lightgrass_5
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassDesertLightgrass7
+  suffix: lightgrass 7
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: lightgrass_7
+    offset: "0,0"
+    layers:
+    - state: lightgrass_7
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassDesertLightgrass10
+  suffix: 10
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: lightgrass_10
+    offset: "0,0"
+    layers:
+    - state: lightgrass_10
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassTallgrassJungle
+  suffix: jungle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_jungle
+    offset: "0,0"
+    layers:
+    - state: tallgrass_jungle
+
+- type: entity
+  parent: BaseFlora
+  id: CMTallgrassJungleAltCorner
+  suffix: alt corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_corner_jungle_alt
+    offset: "0,0"
+    layers:
+    - state: tallgrass_corner_jungle_alt
+    snapCardinals: false
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraGrassBoth
+  suffix: both
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: snowgrassall1
+    offset: "0,0"
+    layers:
+    - state: snowgrassall1
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraGrassBrown
+  suffix: brown
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: snowgrass1bb
+    offset: "0,0"
+    layers:
+    - state: snowgrass1bb
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraGrassGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: snowgrass1gb
+    offset: "0,0"
+    layers:
+    - state: snowgrass1gb
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestFloraGrassRockplanet
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tall_grass_1_shiptest
+    offset: "0,0"
+    layers:
+    - state: tall_grass_1_shiptest
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackGrassShortStyle3
+  suffix: style 3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: grass_3
+    offset: "0.0,0.250"
+    layers:
+    - state: grass_3
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackGrassShortStyle4
+  suffix: style 4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: grass_4
+    offset: "0.0,0.250"
+    layers:
+    - state: grass_4
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackGrassTallStyle3
+  suffix: tall style 3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: tallgrass_3
+    offset: "0.0,0.250"
+    layers:
+    - state: tallgrass_3
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackGrassTallStyle4
+  suffix: tall style 4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: tallgrass_4
+    offset: "0.0,0.250"
+    layers:
+    - state: tallgrass_4
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackTallDryStyle2
+  suffix: 2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: drytallgrass_2
+    offset: "0.0,0.250"
+    layers:
+    - state: drytallgrass_2
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackTallDryStyle3
+  suffix: 3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: drytallgrass_3
+    offset: "0.0,0.250"
+    layers:
+    - state: drytallgrass_3
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackTallDryStyle4
+  suffix: 4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass_32x48.rsi
+    state: drytallgrass_4
+    offset: "0.0,0.250"
+    layers:
+    - state: drytallgrass_4
+
+- type: entity
+  parent: BaseFlora
+  id: CMTallgrassDesertCorner
+  suffix: corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_corner_desert
+    offset: "0,0"
+    layers:
+    - state: tallgrass_corner_desert
+    snapCardinals: false
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassTallgrassDesert
+  suffix: desert
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_desert
+    offset: "0,0"
+    layers:
+    - state: tallgrass_desert
+
+- type: entity
+  parent: BaseFlora
+  id: CMTallgrassIceCorner
+  suffix: ice corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_corner_ice
+    offset: "0,0"
+    layers:
+    - state: tallgrass_corner_ice
+    snapCardinals: false
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassTallgrassIce
+  suffix: ice
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_ice
+    offset: "0,0"
+    layers:
+    - state: tallgrass_ice
+
+- type: entity
+  parent: BaseFlora
+  id: CMTallgrassJungleCorner
+  suffix: jungle corner
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_corner_jungle
+    offset: "0,0"
+    layers:
+    - state: tallgrass_corner_jungle
+    snapCardinals: false
+
+- type: entity
+  parent: BaseFlora
+  id: CMGrassTallgrassJungleAlt
+  suffix: alt
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_jungle_alt
+    offset: "0,0"
+    layers:
+    - state: tallgrass_jungle_alt

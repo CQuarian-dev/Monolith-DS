@@ -1,0 +1,62 @@
+- type: entity
+  parent: Poweredlight
+  id: AuroraLightSkrell
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_skrell.rsi
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: Poweredlight
+  id: AuroraLightVoidtamer
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_voidtamer.rsi
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: Poweredlight
+  id: GoonLightEmergency
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_emergency.rsi
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: GoonLightIncandescentSmall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/incandescent_small.rsi
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: Poweredlight
+  id: NebulaWallSconce
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/structure_wall_sconce.rsi
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: Poweredlight
+  id: ParaLightFlock
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_flock.rsi
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreLightSmallFairylights
+  suffix: fairylights
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/small_fairylights.rsi
+    offset: "0,0"

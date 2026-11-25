@@ -1,0 +1,22 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- type: tile
+  abstract: true
+  parent: CMTileBase
+  id: RMCFloorHybrisaBlueBase
+  name: tiles-cm-default-blue
+
+- type: tile
+  parent: RMCFloorHybrisaBlueBase
+  id: RMCFloorHybrisaBlueFull
+  name: tiles-wg-rmc-blue-metal-tile
+  sprite: /Textures/_RMC14/Tiles/hybrisa/bluemetalfull.png
+
+- type: tile
+  parent: RMCFloorHybrisaBlueFull
+  id: RMCFloorHybrisaBlueTile
+  sprite: /Textures/_RMC14/Tiles/hybrisa/tileblue.png
+
+- type: tile
+  parent: RMCFloorHybrisaBlueFull
+  id: RMCFloorHybrisaBlueSupermart
+  sprite: /Textures/_RMC14/Tiles/hybrisa/supermartfloor1.png

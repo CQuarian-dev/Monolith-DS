@@ -43,6 +43,19 @@ public abstract partial class CESharedZLevelsSystem
 
             if (!_zMapQuery.HasComp(xform.MapUid))
             {
+                // WOLFGATE(Planets) START: z-motion carried off the z-network is cleared, not kept for the next planet.
+                // A body riding a hull never changes parent, so OnParentChanged cannot clear what it
+                // carries off the z-network. Anything left on it here would be spent on the next planet it reaches.
+                if (!HasComp<CEZTransitMapComponent>(xform.MapUid)
+                    && (zPhysicsComponent.Velocity != 0f || zPhysicsComponent.LocalPosition != 0f))
+                {
+                    zPhysicsComponent.Velocity = 0f;
+                    zPhysicsComponent.LocalPosition = 0f;
+                    DirtyField(uid, zPhysicsComponent, nameof(CEZPhysicsComponent.Velocity));
+                    DirtyField(uid, zPhysicsComponent, nameof(CEZPhysicsComponent.LocalPosition));
+                }
+                // WOLFGATE END
+
                 _activeBodies.RemoveAt(i);
                 continue;
             }
@@ -69,7 +82,7 @@ public abstract partial class CESharedZLevelsSystem
 
         if (zPhysicsComponent.VelocityRaiseEvent)
         {
-            var velocityEvent = new CEGetZVelocityEvent((entity, zPhysicsComponent));
+            var velocityEvent = new CEGetZVelocityEvent((entity, zPhysicsComponent), frameTime);
             RaiseLocalEvent(entity, ref velocityEvent);
 
             zPhysicsComponent.Velocity += velocityEvent.VelocityDelta * frameTime;
@@ -81,6 +94,7 @@ public abstract partial class CESharedZLevelsSystem
 
         var stickyGround = zPhysicsComponent.CachedStickyGround &&
             zPhysicsComponent.Velocity is <= 0 and > -2f;
+        WgGroundless(zPhysicsComponent, ref stickyGround); // WOLFGATE(Planets): a ghost never sticks to stairs or stays between levels
 
         if (stickyGround || zPhysicsComponent.AutoStep && distanceToGround < 0)
             zPhysicsComponent.LocalPosition = zPhysicsComponent.CachedGroundHeight;
@@ -115,10 +129,10 @@ public abstract partial class CESharedZLevelsSystem
 
         if (zPhysicsComponent.LocalPosition < 0)
         {
-            if (TryMoveDownOrChasm(entity))
+            if (TryMoveDown(entity))
             {
                 zPhysicsComponent.LocalPosition += 1;
-                if (zPhysicsComponent is { CachedStickyGround: false, Fallable: true })
+                if (zPhysicsComponent is { CachedStickyGround: false, Fallable: true } && !WgSteppedDown(zPhysicsComponent)) // WOLFGATE(Caverns): stepping down onto stairs is not a fall
                 {
                     var fallEv = new CEZLevelFallMapEvent();
                     RaiseLocalEvent(entity, ref fallEv);
@@ -128,7 +142,7 @@ public abstract partial class CESharedZLevelsSystem
 
         if (zPhysicsComponent.LocalPosition >= 1)
         {
-            if (HasTileAbove(entity))
+            if (HasTileAbove(entity) || WgSealedAbove((entity.Owner, zPhysicsComponent))) // WOLFGATE(Caverns): ground over a cavern is a ceiling even where it isn't loaded
             {
                 if (zPhysicsComponent.Velocity >= ImpactVelocityLimit)
                 {
@@ -149,6 +163,8 @@ public abstract partial class CESharedZLevelsSystem
             }
         }
 
+        WGNoteHeight(entity, zPhysicsComponent.LocalPosition); // WOLFGATE(Performance): predicted height joins the sprite passes
+
         if (float.Abs(oldVelocity - zPhysicsComponent.Velocity) > 0.001f)
             DirtyField(entity, zPhysicsComponent, nameof(CEZPhysicsComponent.Velocity));
 
@@ -158,6 +174,10 @@ public abstract partial class CESharedZLevelsSystem
         if (zPhysicsComponent.VelocityGravity)
         {
             var targetStatus = distanceToGround > AirborneHeightThreshold ? BodyStatus.InAir : BodyStatus.OnGround;
+            // WOLFGATE(Planets): a thrown body stays InAir until the throw lands, or friction eats a jump at once.
+            if (targetStatus == BodyStatus.OnGround && HasComp<ThrownItemComponent>(entity))
+                targetStatus = entity.Comp2.BodyStatus;
+
             if (entity.Comp2.BodyStatus != targetStatus)
             {
                 _physicsSystem.SetBodyStatus(entity, entity.Comp2, targetStatus);

@@ -1,0 +1,528 @@
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraJurlmah
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_xenoarch_nova.rsi
+    state: jurlmah
+  - type: PointLight
+    radius: 1.7
+    energy: 0.4
+    color: "#6699FF"
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraNofruit
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_xenoarch_nova.rsi
+    state: nofruit
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraShand
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_xenoarch_nova.rsi
+    state: shand
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraSurik
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_xenoarch_nova.rsi
+    state: surik
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraVaporsac
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_xenoarch_nova.rsi
+    state: vaporsac
+
+- type: entity
+  parent: BaseFlora
+  id: Nuclear14FloraStarlight
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/starlight_nuclear14.rsi
+    state: harvest
+
+- type: entity
+  parent: BaseStructure
+  id: SkyratXenCrystal
+  suffix: Lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_xen_skyrat.rsi
+    state: crystal
+    color: "#00FF00"
+    noRot: true
+  - type: PointLight
+    radius: 4
+    energy: 2
+    color: "#00FF00"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: SkyratXenCrystal
+  id: SkyratXenCrystalYellow
+  suffix: Yellow
+  components:
+  - type: Sprite
+    color: "#FBFF23"
+  - type: PointLight
+    color: "#FBFF23"
+
+- type: entity
+  parent: SkyratXenCrystal
+  id: SkyratXenCrystalPink
+  suffix: Pink
+  components:
+  - type: Sprite
+    color: "#FF3CC8"
+  - type: PointLight
+    color: "#FF3CC8"
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraGlowshroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/glowshroom_shiptest.rsi
+    state: glowshroom
+  - type: PointLight
+    radius: 3
+    energy: 0.5
+    color: "#11fa25"
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraFloraStalks
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/stalks_aurora.rsi
+    state: grove_stalks1
+    layers:
+    - state: grove_stalks1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        grove_stalks1: ""
+    - base:
+        grove_stalks2: ""
+
+- type: entity
+  parent: BaseFlora
+  id: PolarisFloraEyebulbs
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_sif_polaris.rsi
+    state: eyeplant1
+    layers:
+    - state: eyeplant1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        eyeplant1: ""
+    - base:
+        eyeplant2: ""
+    - base:
+        eyeplant3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: PolarisFloraSubterraneanBulbs
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_sif_polaris.rsi
+    state: glowplant1
+    layers:
+    - state: glowplant1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        glowplant1: ""
+    - base:
+        glowplant2: ""
+  - type: PointLight
+    radius: 2
+    energy: 0.6
+    color: "#FF6633"
+
+- type: entity
+  parent: BaseFlora
+  id: ErisFloraFungoArtiglieria
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fungoartiglieria_eris.rsi
+    state: fungoartiglieria
+
+- type: entity
+  parent: BaseFlora
+  id: BeeFloraGlowcap
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/glowcap_beestation.rsi
+    state: glowcap
+  - type: PointLight
+    radius: 2
+    energy: 1.2
+    color: "#FF3333"
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraCreeper
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: creeper
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraDripper
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: dripper
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraGoldfish
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: goldfish
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraLeaker
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: leaker
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraLightLotus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: litelotus
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraPeeker
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: peeker
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraPuker
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: puker
+  - type: SpamEmitSound
+    minInterval: 20
+    maxInterval: 60
+    sound:
+      path: /Audio/_WG/DecorImport/goonstation/Slimy_Splat_1.ogg
+      params:
+        variation: 0.125
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraRock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plants_alien_goonstation.rsi
+    state: rocks
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraFlytrap
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flytrap_goonstation.rsi
+    state: flytrap
+
+- type: entity
+  parent: BaseFlora
+  id: GoonPlasmaCoralStylophora
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plascoral_goonstation.rsi
+    state: plascoral1
+
+- type: entity
+  parent: BaseFlora
+  id: GoonPlasmaCoralBranching
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plascoral_goonstation.rsi
+    state: plascoral2
+
+- type: entity
+  parent: BaseFlora
+  id: GoonPlasmaCoralBulbous
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/plascoral_goonstation.rsi
+    state: plascoral3
+
+- type: entity
+  parent: BaseFlora
+  id: MojaveFloraOdiousPuffballs
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/puffball_mojavesun.rsi
+    state: puffball
+
+- type: entity
+  parent: BaseFlora
+  id: MojaveFloraMindshroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/mindshroom_mojavesun.rsi
+    state: mindshroom
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFloraGlowFlowersYellow
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/glowflowers_onyxbay.rsi
+    drawdepth: FloorObjects
+    layers:
+    - state: ywflowers_1
+      map: [ "base" ]
+    - state: ywflowers_1-overlay
+      map: [ "glow" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        ywflowers_1: ""
+      glow:
+        ywflowers_1-overlay: ""
+    - base:
+        ywflowers_2: ""
+      glow:
+        ywflowers_2-overlay: ""
+    - base:
+        ywflowers_3: ""
+      glow:
+        ywflowers_3-overlay: ""
+    - base:
+        ywflowers_4: ""
+      glow:
+        ywflowers_4-overlay: ""
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+    color: "#E8D85A"
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/onyxbay/vegetation_hit.ogg
+
+- type: entity
+  parent: OnyxBayFloraGlowFlowersYellow
+  id: OnyxBayFloraGlowFlowersBlue
+  components:
+  - type: Sprite
+    layers:
+    - state: brflowers_1
+      map: [ "base" ]
+    - state: brflowers_1-overlay
+      map: [ "glow" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        brflowers_1: ""
+      glow:
+        brflowers_1-overlay: ""
+    - base:
+        brflowers_2: ""
+      glow:
+        brflowers_2-overlay: ""
+    - base:
+        brflowers_3: ""
+      glow:
+        brflowers_3-overlay: ""
+  - type: PointLight
+    color: "#6FC8FF"
+
+- type: entity
+  parent: OnyxBayFloraGlowFlowersYellow
+  id: OnyxBayFloraGlowFlowersPurple
+  components:
+  - type: Sprite
+    layers:
+    - state: ppflowers_1
+      map: [ "base" ]
+    - state: ppflowers_1-overlay
+      map: [ "glow" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        ppflowers_1: ""
+      glow:
+        ppflowers_1-overlay: ""
+    - base:
+        ppflowers_2: ""
+      glow:
+        ppflowers_2-overlay: ""
+    - base:
+        ppflowers_3: ""
+      glow:
+        ppflowers_3-overlay: ""
+  - type: PointLight
+    color: "#C77DFF"
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFloraGlowshroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamp_flora_onyxbay.rsi
+    layers:
+    - state: glowshroom1
+      map: [ "base" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        glowshroom1: ""
+    - base:
+        glowshroom2: ""
+    - base:
+        glowshroom3: ""
+  - type: PointLight
+    radius: 2
+    energy: 0.8
+    color: "#D8E060"
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFloraTallMushroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamptree_onyxbay.rsi
+    offset: "0,1"
+    layers:
+    - state: mush1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        mush1: ""
+    - base:
+        mush2: ""
+    - base:
+        mush3: ""
+    - base:
+        mush4: ""
+    - base:
+        mush5: ""
+
+- type: entity
+  parent: BaseFlora
+  id: InsurrectionFloraWeirdPlant
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/weird_plant_insurrection.rsi
+    layers:
+    - state: weird_plant1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        weird_plant1: ""
+    - base:
+        weird_plant2: ""
+    - base:
+        weird_plant3: ""

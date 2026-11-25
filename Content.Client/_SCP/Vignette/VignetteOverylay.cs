@@ -31,9 +31,9 @@ public sealed partial class VignetteOverlay : Overlay
         if (ScreenTexture is null)
             return;
 
-        // Mono: Prevent a stupid bug with Z eyes causing multiple vignettes showing causing rendering issues.
-        // This took me too long to find for how simple it was.
-        if (args.Viewport.Eye is ScalingViewport.ZEye)
+        // Mono: Only draw vignette on NON-Z EYES (or at the very least the PRIMARY Z-EYE IF WE MUST).
+        // I hate this overlay so much.
+        if (args.Viewport.Eye is ScalingViewport.ZEye { Primary: false })
             return;
 
         if (Strength <= 0f) // LuaM

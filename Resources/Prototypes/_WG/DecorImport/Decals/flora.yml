@@ -1,0 +1,57 @@
+- type: decal
+  id: CMDecalGrassOverlayGrass1
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_decor.rsi
+    state: grass_outercorner
+
+- type: decal
+  id: CMDecalGrassOverlayGrass1Dark
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_decor.rsi
+    state: grass_outercorner_dark
+
+- type: decal
+  id: AuroraDecalFloorDecalKonyangFlowers
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_decor.rsi
+    state: flowers
+
+- type: decal
+  id: Flowersp1
+  tags: [ flora ]
+  snapCardinals: true
+  defaultSnap: false
+  sprite:
+    sprite: _White/Decals/Flora/spring_flowers.rsi
+    state: flowersp1
+
+- type: decal
+  id: CMDecalTangledVines1
+  tags: [ flora ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/vines_cmss13.rsi
+    state: tw1
+
+- type: decal
+  id: CMDecalTangledVines2
+  tags: [ flora ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/vines_cmss13.rsi
+    state: tw2
+
+- type: decal
+  id: CMDecalTangledVines3
+  tags: [ flora ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/vines_cmss13.rsi
+    state: tw3
+
+- type: decal
+  id: CMDecalTangledVines4
+  tags: [ flora ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/vines_cmss13.rsi
+    state: tw4

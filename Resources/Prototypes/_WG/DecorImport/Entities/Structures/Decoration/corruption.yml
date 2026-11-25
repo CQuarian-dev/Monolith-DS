@@ -1,0 +1,214 @@
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: DS13CorruptionBase
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/corruption_ds13.rsi
+    noRot: true
+  - type: Damageable
+    damageContainer: Biological
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/ds13/attackblob.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionEye
+  components:
+  - type: Sprite
+    state: eye
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionMaw
+  components:
+  - type: Sprite
+    state: maw
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionMawOpen
+  components:
+  - type: Sprite
+    state: maw_new
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionCyst
+  components:
+  - type: Sprite
+    state: cyst-full
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionCystEmpty
+  components:
+  - type: Sprite
+    state: cyst-empty
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionPillar
+  components:
+  - type: Sprite
+    state: wall
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionPillarTall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/corruption_32x48_ds13.rsi
+    state: wall
+    offset: "0,0.25"
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionNest
+  components:
+  - type: Sprite
+    state: nest
+
+- type: entity
+  parent: DS13CorruptionBase
+  id: DS13CorruptionNestLarge
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/corruption_64_ds13.rsi
+    state: nest
+
+- type: entity
+  parent: BaseFlora
+  id: DS13CorruptionGrowth
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/corruption_ds13.rsi
+    drawdepth: FloorObjects
+    state: growth
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/ds13/attackblob.ogg
+
+- type: entity
+  parent: DS13CorruptionGrowth
+  id: DS13CorruptionGrowthSmall
+  components:
+  - type: Sprite
+    layers:
+    - state: minigrowth1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        minigrowth1: ""
+        minigrowth2: ""
+        minigrowth3: ""
+        minigrowth4: ""
+
+- type: entity
+  parent: DS13CorruptionGrowth
+  id: DS13CorruptionEyeSmall
+  components:
+  - type: Sprite
+    state: minieye
+
+- type: entity
+  parent: BaseStructure
+  id: DS13Marker
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/marker_ds13.rsi
+    noRot: true
+    state: marker_normal_dormant
+    offset: "0,0.5"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: DS13Marker
+  id: DS13MarkerActive
+  components:
+  - type: Sprite
+    layers:
+    - state: marker_normal_active
+      shader: unshaded
+  - type: PointLight
+    radius: 3
+    energy: 1.5
+    color: "#FF2A2A"
+
+- type: entity
+  parent: DS13Marker
+  id: DS13MarkerGiant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/marker_giant_ds13.rsi
+    state: marker_giant_dormant
+    offset: "0,2.56"
+    drawdepth: Overdoors
+
+- type: entity
+  parent: DS13MarkerGiant
+  id: DS13MarkerGiantActive
+  components:
+  - type: Sprite
+    layers:
+    - state: marker_giant_active_anim
+      shader: unshaded
+  - type: PointLight
+    radius: 6
+    energy: 2
+    color: "#FF2A2A"
+  - type: AmbientSound
+    volume: -3
+    range: 12
+    sound:
+      path: /Audio/_WG/DecorImport/ds13/markerthrob.ogg
+
+- type: entity
+  parent: BaseFlora
+  id: DS13MarkerShard
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/marker_shard_ds13.rsi
+    state: marker_shard_dormant
+
+- type: entity
+  parent: DS13MarkerShard
+  id: DS13MarkerShardActive
+  components:
+  - type: Sprite
+    layers:
+    - state: marker_shard_active
+      shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 1
+    color: "#FF2A2A"

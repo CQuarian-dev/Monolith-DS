@@ -31,12 +31,13 @@ public sealed partial class SalvageMobRestrictionsSystem : EntitySystem
 
     private void OnInit(EntityUid uid, NFSalvageMobRestrictionsComponent component, ComponentInit args)
     {
-        var gridUid = Transform(uid).ParentUid;
-        if (!Exists(gridUid))
+        // LuaM-start
+        if (Transform(uid).GridUid is not { } gridUid || !Exists(gridUid))
         {
             // Give up, we were spawned improperly
             return;
         }
+        // LuaM-end
         // When this code runs, the system hasn't actually gotten ahold of the grid entity yet.
         // So it therefore isn't in a position to do this.
         if (!TryComp(gridUid, out SalvageMobRestrictionsGridComponent? rg))

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+  "size": {
+    "x": 100,
+    "y": 100
+  },
+  "states": [
+    {
+      "name": "tire_swing"
+    },
+    {
+      "name": "see_saw"
+    },
+    {
+      "name": "sandbox"
+    },
+    {
+      "name": "swings"
+    },
+    {
+      "name": "vollyball"
+    },
+    {
+      "name": "monkeybars",
+      "directions": 4
+    },
+    {
+      "name": "clothesline"
+    }
+  ]
+}

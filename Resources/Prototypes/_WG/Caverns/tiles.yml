@@ -1,0 +1,101 @@
+# Cavern floors inherit their parent's look and name. Each is indestructible, can't be dug and has no base turf, so
+# no tool, blast or acid opens the bottom layer to void.
+
+- type: tile
+  id: WGCavernFloorLimestone
+  parent: FloorCave
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorSand
+  parent: FloorAsteroidSand
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+# FloorDesertPlanet is already indestructible.
+- type: tile
+  id: WGCavernFloorSandstone
+  parent: FloorDesertPlanet
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorChromite
+  parent: FloorChromite
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorBedrock
+  parent: FloorBedrock
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorFlesh
+  parent: FloorFlesh
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+# Landing tiles: what lies under each mouth. The fall multipliers soften or harden the one-level drop.
+
+- type: tile
+  id: WGCavernFloorAsh
+  parent: FloorCaveDrought
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+  fallDamageMultiplier: 0.75
+  fallStunMultiplier: 0.75
+
+- type: tile
+  id: WGCavernFloorSandDrift
+  parent: FloorAsteroidSand
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+  fallDamageMultiplier: 0.5
+  fallStunMultiplier: 0.5
+
+- type: tile
+  id: WGCavernFloorChromiteScree
+  parent: FloorChromite
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+  fallDamageMultiplier: 1.5
+  fallStunMultiplier: 1.2
+
+# FloorSnow is already indestructible.
+- type: tile
+  id: WGCavernFloorSnowdrift
+  parent: FloorSnow
+  deconstructTools: []
+  baseTurf: ""
+  fallDamageMultiplier: 0.25
+  fallStunMultiplier: 0.25
+
+# The dirt under a landing pool, which the mouth covers with the surface's water entity. FloorPlanetDirt is already
+# indestructible.
+- type: tile
+  id: WGCavernFloorPoolbed
+  parent: FloorPlanetDirt
+  deconstructTools: []
+  baseTurf: ""
+  fallDamageMultiplier: 0
+  fallStunMultiplier: 0.1
+
+- type: tile
+  id: WGCavernFloorGut
+  parent: FloorAsteroidIronsand
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+  fallDamageMultiplier: 0.4
+  fallStunMultiplier: 0.4

@@ -380,7 +380,7 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
         return AttemptAttack(user,
             weaponUid,
             weapon,
-            new HeavyAttackEvent(GetNetEntity(weaponUid), GetNetEntityList(targets), GetNetCoordinates(coordinates)),
+            new HeavyAttackEvent(GetNetEntity(weaponUid), GetNetEntitySet(targets.ToHashSet()), GetNetCoordinates(coordinates)), // LuaM
             null);
     }
 

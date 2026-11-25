@@ -1,0 +1,287 @@
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: CitadelRPDerelictPropBase
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/derelict_props_citadelrp.rsi
+  - type: InteractionOutline
+
+- type: entity
+  abstract: true
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictPodBase
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CitadelRPDerelictPodBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictJarShelf
+  components:
+  - type: Sprite
+    state: jarshelf
+    noRot: true
+
+- type: entity
+  parent: CitadelRPDerelictPodBase
+  id: CitadelRPDerelictPod
+  components:
+  - type: Sprite
+    layers:
+    - state: active_pod
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        active_pod: ""
+    - base:
+        active_pod2: ""
+    - base:
+        active_pod3: ""
+  - type: PointLight
+    radius: 1.5
+    energy: 0.6
+    color: "#9a7cff"
+
+- type: entity
+  parent: CitadelRPDerelictPodBase
+  id: CitadelRPDerelictPodOvergrown
+  components:
+  - type: Sprite
+    state: overgrown_pod
+
+- type: entity
+  parent: CitadelRPDerelictPodBase
+  id: CitadelRPDerelictPodFlesh
+  components:
+  - type: Sprite
+    state: flesh_pod
+  - type: PointLight
+    radius: 1.5
+    energy: 0.6
+    color: "#ff3020"
+
+- type: entity
+  parent: CitadelRPDerelictPodBase
+  id: CitadelRPDerelictPodEmpty
+  components:
+  - type: Sprite
+    state: empty_pod
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictPodBroken
+  components:
+  - type: Sprite
+    state: broken_pod
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictTerminal
+  components:
+  - type: Sprite
+    layers:
+    - state: terminal1
+      map: [ "base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - base:
+        terminal1: ""
+    - base:
+        terminal2: ""
+    - base:
+        terminal3: ""
+    - base:
+        terminal4: ""
+    - base:
+        terminal5: ""
+    - base:
+        terminal6: ""
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictMonitor
+  components:
+  - type: Sprite
+    state: monitor1
+    noRot: true
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictScreen
+  components:
+  - type: Sprite
+    state: monitor2
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictScreenAlt
+  components:
+  - type: Sprite
+    state: monitor3
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictMonitorBroken
+  components:
+  - type: Sprite
+    state: monitor_broken
+    noRot: true
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictProcessor
+  components:
+  - type: Sprite
+    layers:
+    - state: processor1
+      map: [ "base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - base:
+        processor1: ""
+    - base:
+        processor2: ""
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictServer
+  components:
+  - type: Sprite
+    layers:
+    - state: server1
+      map: [ "base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - base:
+        server1: ""
+    - base:
+        server2: ""
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictTube
+  components:
+  - type: Sprite
+    layers:
+    - state: tube1
+      map: [ "base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - base:
+        tube1: ""
+    - base:
+        tube2: ""
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictMachine
+  components:
+  - type: Sprite
+    layers:
+    - state: machine1
+      map: [ "base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - base:
+        machine1: ""
+    - base:
+        machine2: ""
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictHub
+  components:
+  - type: Sprite
+    state: hub1
+    noRot: true
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictCryoFeed
+  components:
+  - type: Sprite
+    state: cryofeed
+
+- type: entity
+  parent: CitadelRPDerelictPropBase
+  id: CitadelRPDerelictLamp
+  components:
+  - type: Sprite
+    layers:
+    - state: light2
+      map: [ "base" ]
+    noRot: true
+  - type: RandomSprite
+    available:
+    - base:
+        light2: ""
+    - base:
+        light3: ""
+  - type: PointLight
+    radius: 3
+    energy: 1
+    color: "#7fd4ff"
+
+- type: entity
+  parent: ChairBase
+  id: CitadelRPChairDerelict
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/derelict_props_citadelrp.rsi
+    state: chair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseStructure
+  id: CitadelRPDerelictCore
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/derelict_core_citadelrp.rsi
+    state: core
+    offset: "1,0.5"
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,2.45,1.45"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable

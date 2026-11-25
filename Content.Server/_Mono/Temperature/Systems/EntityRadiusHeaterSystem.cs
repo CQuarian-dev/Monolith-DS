@@ -80,4 +80,17 @@ public sealed partial class EntityRadiusHeaterSystem : EntitySystem
 
         return d;
     }
+
+    // LuaM-start: shared activation check for WGGroundCoverSystem (snow melting round heaters)
+    public bool IsActive(EntityUid uid, EntityRadiusHeaterComponent comp)
+    {
+        if (comp.RequireActivation && TryComp<IgnitionSourceComponent>(uid, out var ignite) && !ignite.Ignited)
+            return false;
+
+        if (comp.RequireActivation && TryComp<ItemToggleComponent>(uid, out var toggle) && !toggle.Activated)
+            return false;
+
+        return this.IsPowered(uid, EntityManager);
+    }
+    // LuaM-end
 }

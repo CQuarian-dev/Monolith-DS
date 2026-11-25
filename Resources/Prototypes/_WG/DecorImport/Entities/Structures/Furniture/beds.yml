@@ -1,0 +1,721 @@
+- type: entity
+  parent: Bed
+  id: BayBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 12
+  - type: Construction
+    graph: DecorBuildBayBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: BubberBedWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bed_wooden
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildBubberBedWood
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CoyoteBedClub
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    state: bed_club
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCoyoteBedClub
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CoyoteBedWooden
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    state: bed_wood
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildCoyoteBedWooden
+    node: built
+
+- type: entity
+  parent: Bed
+  id: DarkPackBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed_darkpack
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 12
+  - type: Construction
+    graph: DecorBuildDarkPackBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: ErisBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed_eris
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildErisBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: GoonStoolBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds_goonstation.rsi
+    noRot: false
+    state: bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 12
+  - type: Construction
+    graph: DecorBuildGoonStoolBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: MonkeBedSilk
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bed_monke
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildMonkeBedSilk
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NebulaBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildNebulaBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NebulaBedSimple
+  suffix: simple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: world_padded_preview_bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNebulaBedSimple
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NebulaBedSimpleCrafted
+  suffix: crafted
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed_simple
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildNebulaBedSimpleCrafted
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NebulaBedSimpleEbony
+  suffix: ebony
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: world_padded_preview_bed_ebony
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNebulaBedSimpleEbony
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NebulaSimpleEbonyCloth
+  suffix: cloth
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: world_padded_preview_ebony_cloth
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNebulaSimpleEbonyCloth
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed_vore
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 12
+  - type: Construction
+    graph: DecorBuildVoreBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPadded
+  suffix: padded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed_padded
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildVoreBedPadded
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPod
+  suffix: pod
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bed_pod
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildVoreBedPod
+    node: built
+
+- type: entity
+  parent: Bed
+  id: TgBedPod
+  suffix: pod
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bed_tgstation
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildTgBedPod
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedHybrisaDingy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bed_dingy
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedHybrisaDingy
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CitBedBadhaybed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: shitty_hay_bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCitBedBadhaybed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedBdsmBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: bdsm_bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNovaBedBdsmBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: ParaBedPsych
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: psychbed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildParaBedPsych
+    node: built
+
+- type: entity
+  parent: Bed
+  id: BeeBedDoubleAlien
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: abed_double
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildBeeBedDoubleAlien
+    node: built
+
+- type: entity
+  parent: Bed
+  id: BeeBedDoubleMaint
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: dirty_mattress_double
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildBeeBedDoubleMaint
+    node: built
+
+- type: entity
+  parent: Bed
+  id: TgBedDouble
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bed_double
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 24
+  - type: Construction
+    graph: DecorBuildTgBedDouble
+    node: built
+
+- type: entity
+  parent: Bed
+  id: TgBedDoublePod
+  suffix: pod
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bed_double_pod
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildTgBedDoublePod
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedDoublePelt
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: pelt_bed_white
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildNovaBedDoublePelt
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaDoublePeltBlack
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: pelt_bed_black
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildNovaDoublePeltBlack
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedDoubleThatch
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds.rsi
+    noRot: false
+    state: thatch_bed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildNovaBedDoubleThatch
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedOversized
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds_64x64.rsi
+    state: bed_1x2
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 15
+  - type: Construction
+    graph: DecorBuildNovaBedOversized
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedOversizedDouble
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds_64x64.rsi
+    state: bed_2x2
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNovaBedOversizedDouble
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedOversizedTriple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/beds_96x96.rsi
+    state: bed_3x3
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 50
+  - type: Construction
+    graph: DecorBuildNovaBedOversizedTriple
+    node: built

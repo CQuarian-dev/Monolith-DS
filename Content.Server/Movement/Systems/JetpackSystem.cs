@@ -1,6 +1,7 @@
 using Content.Server.Atmos.Components;
 using Content.Server.Atmos.EntitySystems;
 using Content.Server._Mono.Radar;
+using Content.Shared._WG.Planets.Jetpack; // WOLFGATE(Planets)
 using Content.Shared.Atmos.Components;
 using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
@@ -14,6 +15,7 @@ public sealed partial class JetpackSystem : SharedJetpackSystem
     [Dependency] private GasTankSystem _gasTank = default!;
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private EntityManager _entityManager = default!;
+    [Dependency] private WGAtmosphericJetpackSystem _wgAtmosphericJetpack = default!; // WOLFGATE(Planets)
 
     public override void Initialize()
     {
@@ -26,6 +28,11 @@ public sealed partial class JetpackSystem : SharedJetpackSystem
 
     protected override bool CanEnable(EntityUid uid, EntityUid user, JetpackComponent component)
     {
+        // WOLFGATE(Planets) START: an atmospheric pack burns welding fuel from a solution, not gas from a tank.
+        if (TryComp<WGAtmosphericJetpackComponent>(uid, out var wgAtmospheric))
+            return base.CanEnable(uid, user, component) && _wgAtmosphericJetpack.CanFly((uid, wgAtmospheric), user);
+        // WOLFGATE END
+
         return base.CanEnable(uid, user, component) &&
                TryComp<GasTankComponent>(uid, out var gasTank) &&
                !(gasTank.Air.TotalMoles < component.MoleUsage);
@@ -66,15 +73,25 @@ public sealed partial class JetpackSystem : SharedJetpackSystem
             if (_timing.CurTime < active.TargetTime)
                 continue;
 
+            // WOLFGATE(Planets) START: a wearer carried below orbit on a hull never changes parent, so the pack is cut here.
+            // An atmospheric pack has no gas tank, so it never reaches this loop; WGAtmosphericJetpackFuelSystem burns it.
+            if (comp.JetpackUser is { } wearer && WgInAtmosphere(wearer, uid))
+            {
+                toDisable.Add((uid, comp));
+                continue;
+            }
+            // WOLFGATE END
+
             var gasTank = (uid, gasTankComp);
             active.TargetTime = _timing.CurTime + TimeSpan.FromSeconds(active.EffectCooldown);
-            var usedAir = _gasTank.RemoveAir(gasTank, comp.MoleUsage);
+            var moleUsage = comp.IsZMoving ? (comp.MoleUsage * comp.UpwardsMultiplier) : comp.MoleUsage;
+            var usedAir = _gasTank.RemoveAir(gasTank, moleUsage);
 
             if (usedAir == null)
                 continue;
 
             var usedEnoughAir =
-                MathHelper.CloseTo(usedAir.TotalMoles, comp.MoleUsage, comp.MoleUsage/100);
+                MathHelper.CloseTo(usedAir.TotalMoles, moleUsage, moleUsage/100);
 
             if (!usedEnoughAir)
             {

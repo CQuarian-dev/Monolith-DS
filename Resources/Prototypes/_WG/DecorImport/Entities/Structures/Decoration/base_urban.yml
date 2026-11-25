@@ -1,0 +1,153 @@
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BaseUrbanPropIndestructible
+  components:
+  - type: Sprite
+    noRot: true
+    drawdepth: Objects
+  - type: InteractionOutline
+  - type: Anchorable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropIndestructible
+  id: BaseUrbanProp
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseUrbanPost
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.17,-0.30,0.17,0.25"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseUrbanPropNoCollide
+  components:
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseUrbanWallSign
+  components:
+  - type: Sprite
+    drawdepth: Overdoors
+  - type: WallMount
+    arc: 360
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/poster_broken.ogg
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseUrbanCeilingProp
+  components:
+  - type: Sprite
+    drawdepth: Overdoors
+
+- type: entity
+  abstract: true
+  id: BaseUrbanToggleLight
+  components:
+  - type: Appearance
+  - type: ItemToggle
+    activated: true
+    onUse: false
+  - type: ItemTogglePointLight
+  - type: ToggleableVisuals
+    spriteLayer: light
+  - type: PointLight
+    radius: 6
+    energy: 1
+    softness: 1
+    color: "#FFE4CE"
+    netsync: false
+
+- type: entity
+  abstract: true
+  id: BaseUrbanPoweredLight
+  components:
+  - type: Appearance
+  - type: ApcPowerReceiver
+    powerLoad: 50
+  - type: ExtensionCableReceiver
+  - type: LitOnPowered
+  - type: PointLight
+    enabled: false
+    radius: 6
+    energy: 1
+    softness: 1
+    color: "#FFE4CE"
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        light:
+          True: { visible: true }
+          False: { visible: false }
+
+- type: entity
+  abstract: true
+  id: BaseUrbanIgnitable
+  components:
+  - type: Appearance
+  - type: UseDelay
+  - type: Reactive
+    groups:
+      Flammable: [ Touch ]
+      Extinguish: [ Touch ]
+  - type: ExtinguishOnInteract
+    extinguishAttemptSound:
+      path: /Audio/Items/candle_blowing.ogg
+  - type: Flammable
+    fireSpread: false
+    canResistFire: false
+    alwaysCombustible: true
+    canExtinguish: true
+    firestacksOnIgnite: 3.0
+    firestackFade: 0
+    damage:
+      types:
+        Heat: 0

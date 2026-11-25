@@ -1,0 +1,14 @@
+- files: ["attackblob.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b."
+  source: "https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/sound/effects/attackblob.ogg"
+
+- files: ["alien_resin_break1.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b."
+  source: "https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/sound/effects/alien_resin_break1.ogg"
+
+- files: ["alien_resin_break2.ogg"]
+  license: "CC-BY-NC-SA-3.0"
+  copyright: "Taken from Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b."
+  source: "https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/sound/effects/alien_resin_break2.ogg"

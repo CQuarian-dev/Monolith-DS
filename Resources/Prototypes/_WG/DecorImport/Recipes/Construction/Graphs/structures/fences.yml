@@ -1,0 +1,190 @@
+- type: constructionGraph
+  id: DecorCutCoyoteFence
+  start: intact
+  graph:
+  - node: intact
+    entity: CoyoteFenceStraight
+    edges:
+    - to: medium
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: medium
+    entity: CoyoteFenceHoleMedium
+    edges:
+    - to: large
+      steps:
+      - tool: Cutting
+        doAfter: 2
+    - to: intact
+      steps:
+      - material: MetalRod
+        amount: 1
+        doAfter: 2
+  - node: large
+    entity: CoyoteFenceHoleLarge
+    edges:
+    - to: medium
+      steps:
+      - material: MetalRod
+        amount: 1
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorCutNebulaFenceChain
+  start: intact
+  graph:
+  - node: intact
+    entity: NebulaFenceChain
+    edges:
+    - to: medium
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: medium
+    entity: NebulaFenceChainHoleMedium
+    edges:
+    - to: large
+      steps:
+      - tool: Cutting
+        doAfter: 2
+    - to: intact
+      steps:
+      - material: MetalRod
+        amount: 1
+        doAfter: 2
+  - node: large
+    entity: NebulaFenceChainHoleLarge
+    edges:
+    - to: medium
+      steps:
+      - material: MetalRod
+        amount: 1
+        doAfter: 2
+  - node: post
+    entity: NebulaFenceChainPost
+
+- type: constructionGraph
+  id: DecorCutNebulaFenceBrick
+  start: intact
+  graph:
+  - node: intact
+    entity: NebulaFenceBrick
+    edges:
+    - to: medium
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: medium
+    entity: NebulaFenceBrickHoleMedium
+    edges:
+    - to: large
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: large
+    entity: NebulaFenceBrickHoleLarge
+  - node: post
+    entity: NebulaFenceBrickPost
+
+- type: constructionGraph
+  id: DecorCutNebulaFencePalisade
+  start: intact
+  graph:
+  - node: intact
+    entity: NebulaFencePalisade
+    edges:
+    - to: medium
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: medium
+    entity: NebulaFencePalisadeHoleMedium
+    edges:
+    - to: large
+      steps:
+      - tool: Cutting
+        doAfter: 2
+    - to: intact
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: large
+    entity: NebulaFencePalisadeHoleLarge
+    edges:
+    - to: medium
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: post
+    entity: NebulaFencePalisadePost
+
+- type: constructionGraph
+  id: DecorCutNebulaFencePlank
+  start: intact
+  graph:
+  - node: intact
+    entity: NebulaFencePlank
+    edges:
+    - to: medium
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: medium
+    entity: NebulaFencePlankHoleMedium
+    edges:
+    - to: large
+      steps:
+      - tool: Cutting
+        doAfter: 2
+    - to: intact
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: large
+    entity: NebulaFencePlankHoleLarge
+    edges:
+    - to: medium
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: post
+    entity: NebulaFencePlankPost
+
+- type: constructionGraph
+  id: DecorCutNebulaFenceStick
+  start: intact
+  graph:
+  - node: intact
+    entity: NebulaFenceStick
+    edges:
+    - to: medium
+      steps:
+      - tool: Cutting
+        doAfter: 2
+  - node: medium
+    entity: NebulaFenceStickHoleMedium
+    edges:
+    - to: large
+      steps:
+      - tool: Cutting
+        doAfter: 2
+    - to: intact
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: large
+    entity: NebulaFenceStickHoleLarge
+    edges:
+    - to: medium
+      steps:
+      - material: WoodPlank
+        amount: 1
+        doAfter: 2
+  - node: post
+    entity: NebulaFenceStickPost

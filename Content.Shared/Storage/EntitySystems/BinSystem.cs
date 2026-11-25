@@ -93,11 +93,20 @@ public sealed partial class BinSystem : EntitySystem
     /// </summary>
     private void OnAltInteractHand(EntityUid uid, BinComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-        if (args.Using != null)
+        // LuaM-start
+        if (args.Using is not { } used)
+            return;
+
+        var canReach = args.CanAccess && args.CanInteract;
+        var user = args.User;
+        var target = args.Target;
+        args.Verbs.Add(new AlternativeVerb
         {
-            var canReach = args.CanAccess && args.CanInteract;
-            InsertIntoBin(args.User, args.Target, (EntityUid) args.Using, component, false, canReach);
-        }
+            Act = () => InsertIntoBin(user, target, used, component, false, canReach),
+            Text = Loc.GetString("verb-categories-insert"),
+            Priority = 2,
+        });
+        // LuaM-end
     }
 
     private void OnAfterInteractUsing(EntityUid uid, BinComponent component, AfterInteractUsingEvent args)

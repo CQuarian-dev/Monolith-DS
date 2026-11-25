@@ -107,14 +107,21 @@ public sealed partial class BiomeSystem
     {
         var loadedEntities = new Dictionary<EntityUid, Vector2i>();
         component.LoadedEntities.Add(chunk, loadedEntities);
+        WgOccupiedTiles(gridUid, grid, chunk); // WOLFGATE(Planets): nobody standing in a chunk as it loads is walled in
 
         ForEachTileInChunk(chunk, modified, indices =>
         {
             if (HasAnchoredEntity(gridUid, grid, indices))
                 return;
 
+            if (_wgOccupied.Contains(indices)) // WOLFGATE(Planets)
+                return;
+
             if (TryGetEntity(indices, component, (gridUid, grid), out var entPrototype))
             {
+                if (WgLayRoll(component, gridUid, grid, indices, entPrototype, loadedEntities)) // WOLFGATE(Planets): a planet's rock spawner is rolled here from its tile, so the rock unloads and comes back the same
+                    return;
+
                 var ent = Spawn(entPrototype, _mapSystem.GridTileToLocal(gridUid, grid, indices));
 
                 if (_xformQuery.TryGetComponent(ent, out var xform) && !xform.Anchored)

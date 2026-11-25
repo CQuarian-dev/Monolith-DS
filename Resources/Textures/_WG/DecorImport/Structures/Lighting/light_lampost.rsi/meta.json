@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+  "size": {
+    "x": 64,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "base",
+      "directions": 4
+    },
+    {
+      "name": "broken",
+      "directions": 4
+    },
+    {
+      "name": "burned",
+      "directions": 4
+    },
+    {
+      "name": "empty",
+      "directions": 4
+    },
+    {
+      "name": "glow",
+      "directions": 4
+    }
+  ]
+}

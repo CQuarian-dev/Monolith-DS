@@ -1,0 +1,468 @@
+- type: entity
+  abstract: true
+  parent: BaseMaterialDoorNavMap
+  id: DecorImportMaterialDoorBase
+  components:
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+
+- type: entity
+  abstract: true
+  id: BaseDecorImportWoodDoor
+  components:
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection: WoodDestroy # LuaM: WGBulletImpactWood
+  - type: Construction
+    graph: DoorGraph
+    node: woodDoor
+  - type: Door
+    openSound:
+      path: /Audio/Effects/door_open.ogg
+    closeSound:
+      path: /Audio/Effects/door_close.ogg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  abstract: true
+  id: BaseDecorImportMetalDoor
+  components:
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection: MetalBulletImpact
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Door
+    openSound:
+      path: /Audio/Effects/stonedoor_openclose.ogg
+    closeSound:
+      path: /Audio/Effects/stonedoor_openclose.ogg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  parent: BaseMaterialDoorNavMap
+  id: CMDoorAncientTempleDoor
+  components:
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/ancient_temple_door.rsi
+  - type: Door
+    openingAnimationTime: 1.7
+    closingAnimationTime: 1.7
+    openTimeOne: 1.13
+    openTimeTwo: 0.57
+    closeTimeOne: 0.57
+    closeTimeTwo: 1.13
+    openSound:
+      path: /Audio/_WG/DecorImport/cmss13/runedsanddoor.ogg
+    closeSound:
+      path: /Audio/_WG/DecorImport/cmss13/runedsanddoor.ogg
+
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: CMDoorHunterDoor
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/hunter_door_cm.rsi
+    layers:
+    - state: door_closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openSpriteState: door_open
+    closedSpriteState: door_closed
+    openingSpriteState: door_opening
+    closingSpriteState: door_closing
+    openingAnimationTime: 0.6
+    closingAnimationTime: 0.6
+    openTimeOne: 0.4
+    openTimeTwo: 0.2
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.4
+    openSound:
+      path: /Audio/_WG/DecorImport/cmss13/airlock.ogg
+    closeSound:
+      path: /Audio/_WG/DecorImport/cmss13/airlock.ogg
+  - type: Damageable
+    damageModifierSet: StructuralMetallic
+
+- type: entity
+  parent: [ BaseDecorImportWoodDoor, DecorImportMaterialDoorBase ]
+  id: GoonDoorDoorOffice
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: woodDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_office.rsi
+  - type: Door
+    openingAnimationTime: 0.7
+    closingAnimationTime: 0.7
+    openTimeOne: 0.47
+    openTimeTwo: 0.23
+    closeTimeOne: 0.23
+    closeTimeTwo: 0.47
+
+- type: entity
+  parent: [ BaseDecorImportWoodDoor, DecorImportMaterialDoorBase ]
+  id: GoonDoorDoorWood
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: woodDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_wood.rsi
+  - type: Door
+    openingAnimationTime: 0.7
+    closingAnimationTime: 0.7
+    openTimeOne: 0.47
+    openTimeTwo: 0.23
+    closeTimeOne: 0.23
+    closeTimeTwo: 0.47
+
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: GoonIomoonSealedDoor
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/ancientdoor_goon.rsi
+  - type: Door
+    clickOpen: false
+    openingAnimationTime: 1.25
+    closingAnimationTime: 1.25
+    openTimeOne: 0.6
+    openTimeTwo: 0.65
+    closeTimeOne: 0.65
+    closeTimeTwo: 0.6
+  - type: DoorSignalControl
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Open
+    - Close
+    - Toggle
+  - type: DeviceLinkSource
+    ports:
+    - DoorStatus
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 2000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+
+- type: entity
+  parent: GoonIomoonSealedDoor
+  id: ChompTyrDoor
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/weather_ruins_doors_chomp.rsi
+    layers:
+    - state: star_door
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    clickOpen: true
+    openSpriteState: open_door
+    closedSpriteState: star_door
+    openingSpriteState: open_door
+    closingSpriteState: star_door
+    openingAnimationTime: 0.2
+    closingAnimationTime: 0.2
+    openTimeOne: 0.1
+    openTimeTwo: 0.1
+    closeTimeOne: 0.1
+    closeTimeTwo: 0.1
+    openSound:
+      path: /Audio/_WG/DecorImport/chompstation/blastdooropen.ogg
+    closeSound:
+      path: /Audio/_WG/DecorImport/chompstation/blastdoorclose.ogg
+
+- type: entity
+  parent: ChompTyrDoor
+  id: ChompTyrDoorFinale
+  components:
+  - type: Sprite
+    layers:
+    - state: final_door
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    closedSpriteState: final_door
+    closingSpriteState: final_door
+
+- type: entity
+  parent: ChompTyrDoor
+  id: ChompTyrDoorFire
+  components:
+  - type: Sprite
+    layers:
+    - state: fog_door
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    closedSpriteState: fog_door
+    closingSpriteState: fog_door
+
+- type: entity
+  parent: ChompTyrDoor
+  id: ChompTyrDoorStorm
+  components:
+  - type: Sprite
+    layers:
+    - state: storm_door
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    closedSpriteState: storm_door
+    closingSpriteState: storm_door
+
+- type: entity
+  parent: ChompTyrDoor
+  id: ChompTyrDoorBlizzard
+  components:
+  - type: Sprite
+    layers:
+    - state: blizzard_door
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    closedSpriteState: blizzard_door
+    closingSpriteState: blizzard_door
+
+- type: entity
+  parent: ChompTyrDoor
+  id: ChompTyrDoorBase
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    closedSpriteState: base
+    closingSpriteState: base
+
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: VoreAutoFleshDoor
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/flesh_valve_vore.rsi
+    layers:
+    - state: flesh-closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openSpriteState: flesh-open
+    closedSpriteState: flesh-closed
+    openingSpriteState: flesh-opening
+    closingSpriteState: flesh-closing
+    openingAnimationTime: 0.4
+    closingAnimationTime: 0.4
+    openTimeOne: 0.27
+    openTimeTwo: 0.13
+    closeTimeOne: 0.13
+    closeTimeTwo: 0.27
+    openSound:
+      collection: VoreFleshDoor
+    closeSound:
+      collection: VoreFleshDoor
+
+- type: entity
+  parent: GoonDoorMartian
+  id: GoonDoorMartianMeat
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/sphincter_goon.rsi
+
+- type: entity
+  parent: GoonIomoonSealedDoor
+  id: GoonIomoonSealedDoorMeat
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/mandibles_goon.rsi
+  - type: Door
+    openingAnimationTime: 0.8
+    closingAnimationTime: 0.8
+    openTimeOne: 0.53
+    openTimeTwo: 0.27
+    closeTimeOne: 0.27
+    closeTimeTwo: 0.53
+
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: GoonDoorMartian
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/orifice_goon.rsi
+  - type: Door
+    openingAnimationTime: 1.0
+    closingAnimationTime: 1.0
+    openTimeOne: 0.67
+    openTimeTwo: 0.33
+    closeTimeOne: 0.33
+    closeTimeTwo: 0.67
+    openSound:
+      path: /Audio/_WG/DecorImport/goonstation/Slimy_Splat_1.ogg
+    closeSound:
+      path: /Audio/_WG/DecorImport/goonstation/Slimy_Splat_1.ogg
+
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: SkyratDoorXen
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_xen_skyrat.rsi
+    color: "#ff8d58"
+  - type: Door
+    openingAnimationTime: 1.1
+    closingAnimationTime: 1.1
+    openTimeOne: 0.73
+    openTimeTwo: 0.37
+    closeTimeOne: 0.37
+    closeTimeTwo: 0.73
+    openSound:
+      path: /Audio/_WG/DecorImport/skyrat/xen_door.ogg
+    closeSound:
+      path: /Audio/_WG/DecorImport/skyrat/xen_door.ogg
+
+- type: entity
+  parent: [ BaseDecorImportMetalDoor, DecorImportMaterialDoorBase ]
+  id: BaseDarkPackDoor
+  abstract: true
+  components:
+  - type: Sprite
+    noRot: false
+    layers:
+    - state: closed
+      map: ["enum.DoorVisualLayers.Base"]
+      offset: 0,0.5
+  - type: Door
+    openingAnimationTime: 0
+    closingAnimationTime: 0
+
+- type: entity
+  parent: BaseDarkPackDoor
+  id: DarkPackDoorMetal
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_metal_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackDoor
+  id: DarkPackDoorOld
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_old_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackDoor
+  id: DarkPackDoorReinforced
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_reinf_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackDoor
+  id: DarkPackDoorPrison
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_prison_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackDoor
+  id: DarkPackDoorSimple
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_simple_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackDoor
+  id: DarkPackDoorGlassBlue
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: metalDoor
+  - type: Occluder
+    enabled: false
+  - type: Door
+    occludes: false
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_glass_blue_darkpack.rsi
+
+- type: entity
+  parent: [ BaseDecorImportWoodDoor, BaseDarkPackDoor ]
+  id: DarkPackDoorWood
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: woodDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_wood_darkpack.rsi
+
+- type: entity
+  parent: [ BaseDecorImportWoodDoor, BaseDarkPackDoor ]
+  id: DarkPackDoorOldWood
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: woodDoor
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_oldwood_darkpack.rsi
+
+- type: entity
+  parent: [ BaseDecorImportWoodDoor, BaseDarkPackDoor ]
+  id: DarkPackDoorWoodGlass
+  components:
+  - type: Construction
+    graph: DoorGraph
+    node: woodDoor
+  - type: Occluder
+    enabled: false
+  - type: Door
+    occludes: false
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/door_glass_darkpack.rsi

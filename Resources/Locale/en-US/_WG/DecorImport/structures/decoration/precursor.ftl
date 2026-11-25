@@ -1,0 +1,10 @@
+ent-GoonCultistBarricade = ominous barricade
+    .desc = This appears to be a rapidly hacked together barricade with some sort of religious sigil attached to it, it feels easily breakable but doesn't budge.
+ent-GoonIntruderSpire = alien spire
+ent-GoonIntruderSpireDamaged = damaged alien spire
+ent-GoonIntruderSpireRuined = ruined alien spire
+ent-GoonIntruderSpireOld = old alien spire
+ent-ADTForerunnersComputer = forerunners computer
+    .desc = Forerunners computer
+ent-ADTForerunnersSphere = forerunners sphere
+    .desc = Forerunners sphere

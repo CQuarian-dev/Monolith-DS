@@ -1,0 +1,132 @@
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseCoyotePlayground
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/playground_coyote.rsi
+    offset: 0.5625,0.5625
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseCoyotePlaygroundLarge
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/playground_large_coyote.rsi
+    offset: 1.0625,1.0625
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteSlide
+  components:
+  - type: Sprite
+    state: slide
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteMerryGoRound
+  components:
+  - type: Sprite
+    state: merry_go_round
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteSpringRiderBrown
+  components:
+  - type: Sprite
+    state: brown_ride
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteSpringRiderWhite
+  components:
+  - type: Sprite
+    state: white_ride
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteSpringRiderPainted
+  components:
+  - type: Sprite
+    state: white2_ride
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteSpringRiderBlack
+  components:
+  - type: Sprite
+    state: black_ride
+
+- type: entity
+  parent: BaseCoyotePlayground
+  id: CoyoteSpringRiderRed
+  components:
+  - type: Sprite
+    state: red_ride
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseCoyoteHopscotch
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/playground_coyote.rsi
+    drawdepth: FloorObjects
+    offset: 0.5625,0.5625
+
+- type: entity
+  parent: BaseCoyoteHopscotch
+  id: CoyoteHopscotch
+  components:
+  - type: Sprite
+    state: hopscotch
+
+- type: entity
+  parent: BaseCoyoteHopscotch
+  id: CoyoteHopscotchNumbered
+  components:
+  - type: Sprite
+    state: hopscotch_number
+
+- type: entity
+  parent: BaseCoyotePlaygroundLarge
+  id: CoyoteTireSwing
+  components:
+  - type: Sprite
+    state: tire_swing
+
+- type: entity
+  parent: BaseCoyotePlaygroundLarge
+  id: CoyoteSeesaw
+  components:
+  - type: Sprite
+    state: see_saw
+
+- type: entity
+  parent: BaseCoyotePlaygroundLarge
+  id: CoyoteSandbox
+  components:
+  - type: Sprite
+    state: sandbox
+
+- type: entity
+  parent: BaseCoyotePlaygroundLarge
+  id: CoyoteSwings
+  components:
+  - type: Sprite
+    state: swings
+
+- type: entity
+  parent: BaseCoyotePlaygroundLarge
+  id: CoyoteVolleyballNet
+  components:
+  - type: Sprite
+    state: vollyball
+
+- type: entity
+  parent: BaseCoyotePlaygroundLarge
+  id: CoyoteMonkeyBars
+  components:
+  - type: Sprite
+    state: monkeybars

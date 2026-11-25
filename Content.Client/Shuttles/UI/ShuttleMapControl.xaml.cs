@@ -116,6 +116,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
 
 //        _font = new VectorFont(cache.GetResource<FontResource>("/EngineFonts/NotoSans/NotoSans-Regular.ttf"), 10); // Commented by Lua
         _font = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-Regular.ttf"), 9); // Lua
+        WgAddPlanetScanner(); // WOLFGATE(PlanetScan): hovering a world opens its scan.
     }
 
     public void SetMap(MapId mapId, Vector2 offset, bool recentering = false)
@@ -302,6 +303,7 @@ public sealed partial class ShuttleMapControl : BaseShuttleControl
         }
 
 //        DrawParallax(handle); // Commented by Lua
+        DrawWgPlanetBackground(handle, _mapManager.GetMapOrInvalid(ViewingMap)); // WOLFGATE(Planets): over a world, the world fills the plot instead of space.
 
         var viewedMapUid = _mapManager.GetMapOrInvalid(ViewingMap);
         var matty = Matrix3Helpers.CreateInverseTransform(Offset, Angle.Zero);

@@ -1,0 +1,254 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "snow_overlay"
+        },
+        {
+            "name": "line",
+            "directions": 4
+        },
+        {
+            "name": "line1",
+            "directions": 4
+        },
+        {
+            "name": "line2",
+            "directions": 4
+        },
+        {
+            "name": "line3",
+            "directions": 4
+        },
+        {
+            "name": "line1-snow",
+            "directions": 4
+        },
+        {
+            "name": "line2-snow",
+            "directions": 4
+        },
+        {
+            "name": "line3-snow",
+            "directions": 4
+        },
+        {
+            "name": "line_alt",
+            "directions": 4
+        },
+        {
+            "name": "line_alt1",
+            "directions": 4
+        },
+        {
+            "name": "line_alt2",
+            "directions": 4
+        },
+        {
+            "name": "line_alt3",
+            "directions": 4
+        },
+        {
+            "name": "line_alt1-snow",
+            "directions": 4
+        },
+        {
+            "name": "line_alt2-snow",
+            "directions": 4
+        },
+        {
+            "name": "line_alt3-snow",
+            "directions": 4
+        },
+        {
+            "name": "crosswalk1",
+            "directions": 4
+        },
+        {
+            "name": "crosswalk2",
+            "directions": 4
+        },
+        {
+            "name": "crosswalk3",
+            "directions": 4
+        },
+        {
+            "name": "crosswalk1-snow",
+            "directions": 4
+        },
+        {
+            "name": "crosswalk2-snow",
+            "directions": 4
+        },
+        {
+            "name": "crosswalk3-snow",
+            "directions": 4
+        },
+        {
+            "name": "decal1"
+        },
+        {
+            "name": "decal2"
+        },
+        {
+            "name": "decal3"
+        },
+        {
+            "name": "decal4"
+        },
+        {
+            "name": "decal5"
+        },
+        {
+            "name": "decal6"
+        },
+        {
+            "name": "decal7"
+        },
+        {
+            "name": "decal8"
+        },
+        {
+            "name": "decal9"
+        },
+        {
+            "name": "decal10"
+        },
+        {
+            "name": "decal11"
+        },
+        {
+            "name": "decal12"
+        },
+        {
+            "name": "decal13"
+        },
+        {
+            "name": "decal14"
+        },
+        {
+            "name": "decal15"
+        },
+        {
+            "name": "decal16"
+        },
+        {
+            "name": "decal17"
+        },
+        {
+            "name": "decal18"
+        },
+        {
+            "name": "decal19"
+        },
+        {
+            "name": "decal20"
+        },
+        {
+            "name": "decal21"
+        },
+        {
+            "name": "decal22"
+        },
+        {
+            "name": "decal23"
+        },
+        {
+            "name": "decal24"
+        },
+        {
+            "name": "stock",
+            "directions": 4
+        },
+        {
+            "name": "border",
+            "directions": 8
+        },
+        {
+            "name": "border_corner",
+            "directions": 4
+        },
+        {
+            "name": "rugs"
+        },
+        {
+            "name": "rugs1"
+        },
+        {
+            "name": "rugs2"
+        },
+        {
+            "name": "rugs3"
+        },
+        {
+            "name": "rugs4"
+        },
+        {
+            "name": "rugs5"
+        },
+        {
+            "name": "rugs6"
+        },
+        {
+            "name": "rugs7"
+        },
+        {
+            "name": "rugs8"
+        },
+        {
+            "name": "rugs9"
+        },
+        {
+            "name": "rugs10"
+        },
+        {
+            "name": "rugs11"
+        },
+        {
+            "name": "shadow"
+        },
+        {
+            "name": "shadow-alt"
+        },
+        {
+            "name": "support"
+        },
+        {
+            "name": "shadow_low"
+        },
+        {
+            "name": "line_offset_alt",
+            "directions": 8
+        },
+        {
+            "name": "line_offset_alt1",
+            "directions": 8
+        },
+        {
+            "name": "line_offset_alt2",
+            "directions": 8
+        },
+        {
+            "name": "line_offset_alt3",
+            "directions": 8
+        },
+        {
+            "name": "line_offset_alt1-snow",
+            "directions": 8
+        },
+        {
+            "name": "line_offset_alt2-snow",
+            "directions": 8
+        },
+        {
+            "name": "line_offset_alt3-snow",
+            "directions": 8
+        }
+    ]
+}

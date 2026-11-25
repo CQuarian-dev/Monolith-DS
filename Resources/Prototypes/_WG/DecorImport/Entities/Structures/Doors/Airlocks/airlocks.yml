@@ -1,0 +1,496 @@
+- type: entity
+  parent: Airlock
+  id: CMAirlockAlmayerdoorWhite
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/almayerdoor_white.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.6
+    closingAnimationTime: 0.6
+    openTimeOne: 0.4
+    openTimeTwo: 0.2
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.4
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: NovaAirlockSandstone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/sandstone_nova.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.6
+    closingAnimationTime: 0.6
+    openTimeOne: 0.4
+    openTimeTwo: 0.2
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.4
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ParaAirlockSurvival
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/survival.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.6
+    closingAnimationTime: 0.6
+    openTimeOne: 0.4
+    openTimeTwo: 0.2
+    closeTimeOne: 0.2
+    closeTimeTwo: 0.4
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockDiamond
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/diamond.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockGold
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/gold.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockPlasma
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/plasma.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockSilver
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/silver.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockUranium
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/uranium.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/wood.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: Airlock
+  id: ShiptestAirlockSandstone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/sandstone_shiptest.rsi
+    layers:
+    - state: closed
+      map: [ enum.DoorVisualLayers.Base ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseUnlit ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseBolted ]
+    - state: blank
+      map: [ enum.DoorVisualLayers.BaseEmergencyAccess ]
+    - state: blank
+      map: [ enum.WiresVisualLayers.MaintenancePanel ]
+    - state: welded
+      sprite: Structures/Doors/Airlocks/Effects/airlock-effects.rsi
+      map: [ enum.WeldableLayers.BaseWelded ]
+    - state: electrified_ai
+      sprite: Interface/Misc/ai_hud.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.HUD ]
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      shader: unshaded
+      visible: false
+      map: [ enum.ElectrifiedLayers.Sparks ]
+  - type: Door
+    openingAnimationTime: 0.49
+    closingAnimationTime: 0.49
+    openTimeOne: 0.33
+    openTimeTwo: 0.16
+    closeTimeOne: 0.16
+    closeTimeTwo: 0.33
+    emaggingSpriteState: blank
+  - type: Airlock
+    openUnlitVisible: false
+    openingSpriteState: blank
+    closingSpriteState: blank
+    openSpriteState: blank
+    closedSpriteState: blank
+    denySpriteState: blank
+    animatePanel: false
+
+- type: entity
+  parent: CMAirlockAlmayerdoorWhite
+  id: TgAirlockAbductor
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/abductor_tg.rsi
+
+- type: entity
+  parent: TgAirlockAbductor
+  id: VoreAirlockAlienBlue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/Airlocks/Standard/alien_blue_vore.rsi
+  - type: Door
+    openingAnimationTime: 1.2
+    closingAnimationTime: 1.2
+    openTimeOne: 0.8
+    openTimeTwo: 0.4
+    closeTimeOne: 0.4
+    closeTimeTwo: 0.8
+    openSound:
+      path: /Audio/_WG/DecorImport/vorestation/covert1o.ogg
+    closeSound:
+      path: /Audio/_WG/DecorImport/vorestation/covert1c.ogg
+    denySound:
+      path: /Audio/_WG/DecorImport/vorestation/deniedbeep.ogg

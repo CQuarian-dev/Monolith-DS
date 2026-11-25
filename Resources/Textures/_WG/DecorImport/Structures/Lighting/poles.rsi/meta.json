@@ -1,0 +1,164 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+    "size": {
+        "x": 32,
+        "y": 96
+    },
+    "states": [
+        {
+            "name": "crosswalk"
+        },
+        {
+            "name": "crosswalk_go",
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_stop",
+            "delays": [
+                [
+                    0.2,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "junction"
+        },
+        {
+            "name": "power",
+            "directions": 4
+        },
+        {
+            "name": "central"
+        },
+        {
+            "name": "street",
+            "directions": 4
+        },
+        {
+            "name": "street_light",
+            "directions": 4
+        },
+        {
+            "name": "street_aszn"
+        },
+        {
+            "name": "street_aszn_light"
+        },
+        {
+            "name": "line",
+            "directions": 4
+        },
+        {
+            "name": "line_end",
+            "directions": 4
+        },
+        {
+            "name": "traffic",
+            "directions": 4
+        },
+        {
+            "name": "traffic_lights",
+            "directions": 4,
+            "delays": [
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ],
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ],
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ],
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ]
+            ]
+        },
+        {
+            "name": "traffic_lights_inverse",
+            "directions": 4,
+            "delays": [
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ],
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ],
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ],
+                [
+                    10.0,
+                    4.0,
+                    10.0
+                ]
+            ]
+        },
+        {
+            "name": "right_lamp_off"
+        },
+        {
+            "name": "left_lamp_off"
+        },
+        {
+            "name": "right_lamp",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "left_lamp",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "classic_lamp"
+        },
+        {
+            "name": "classic_lamp_light"
+        },
+        {
+            "name": "classic_lamp_light_alt"
+        },
+        {
+            "name": "radial_floodlight"
+        },
+        {
+            "name": "radial_floodlight-light"
+        }
+    ]
+}

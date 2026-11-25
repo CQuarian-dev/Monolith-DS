@@ -1,0 +1,500 @@
+- type: entity
+  parent: BaseFlora
+  id: GoonMushrooms
+  suffix: mushrooms
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom7
+    offset: "0,0"
+    layers:
+    - state: mushroom7
+
+- type: entity
+  parent: BaseFlora
+  id: GoonMushroomsType1
+  suffix: type1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom1
+    offset: "0,0"
+    layers:
+    - state: mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: GoonMushroomsType2
+  suffix: type2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom2
+    offset: "0,0"
+    layers:
+    - state: mushroom2
+
+- type: entity
+  parent: BaseFlora
+  id: GoonMushroomsType3
+  suffix: type3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom3
+    offset: "0,0"
+    layers:
+    - state: mushroom3
+
+- type: entity
+  parent: BaseFlora
+  id: GoonMushroomsType4
+  suffix: type4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom4
+    offset: "0,0"
+    layers:
+    - state: mushroom4
+
+- type: entity
+  parent: BaseFlora
+  id: GoonMushroomsType5
+  suffix: type5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom5
+    offset: "0,0"
+    layers:
+    - state: mushroom5
+
+- type: entity
+  parent: BaseFlora
+  id: GoonMushroomsType6
+  suffix: type6
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom6
+    offset: "0,0"
+    layers:
+    - state: mushroom6
+
+- type: entity
+  parent: BaseStructure
+  id: GoonFakeobjectShrooms
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: shrooms
+    noRot: true
+  - type: Physics
+    canCollide: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+
+- type: entity
+  parent: BaseFlora
+  id: NebulaFloraPlantMushroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: mush1
+    offset: "0,0"
+    layers:
+    - state: mush1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraMushroom
+  suffix: flora
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fake_stillcap_red
+    offset: "0,0"
+    layers:
+    - state: fake_stillcap_red
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraMushroomBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fake_stillcap_blue
+    offset: "0,0"
+    layers:
+    - state: fake_stillcap_blue
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraMushroomGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fake_stillcap_green
+    offset: "0,0"
+    layers:
+    - state: fake_stillcap_green
+
+- type: entity
+  parent: BaseFlora
+  id: NovaAshCapShroomColored
+  suffix: colored
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom_red1
+    offset: "0,0"
+    layers:
+    - state: r_mushroom_red1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaCapShroomColoredBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom_blue1
+    offset: "0,0"
+    layers:
+    - state: r_mushroom_blue1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaCapShroomColoredGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom_green1
+    offset: "0,0"
+    layers:
+    - state: r_mushroom_green1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaAshLeafShroomColored
+  suffix: colored
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: s_mushroom_red1
+    offset: "0,0"
+    layers:
+    - state: s_mushroom_red1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaLeafShroomColoredBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: s_mushroom_blue1
+    offset: "0,0"
+    layers:
+    - state: s_mushroom_blue1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaLeafShroomColoredGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: s_mushroom_green1
+    offset: "0,0"
+    layers:
+    - state: s_mushroom_green1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaAshStemShroomColored
+  suffix: colored
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: t_mushroom_red1
+    offset: "0,0"
+    layers:
+    - state: t_mushroom_red1
+  - type: PointLight
+    radius: 2.0
+    energy: 2.1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaStemShroomColoredBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: t_mushroom_blue1
+    offset: "0,0"
+    layers:
+    - state: t_mushroom_blue1
+  - type: PointLight
+    radius: 2.0
+    energy: 2.1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaStemShroomColoredGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: t_mushroom_green1
+    offset: "0,0"
+    layers:
+    - state: t_mushroom_green1
+  - type: PointLight
+    radius: 2.0
+    energy: 2.1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaAshTallShroomColored
+  suffix: colored
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom_red1
+    offset: "0,0"
+    layers:
+    - state: l_mushroom_red1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaTallShroomColoredBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom_blue1
+    offset: "0,0"
+    layers:
+    - state: l_mushroom_blue1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaTallShroomColoredGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom_green1
+    offset: "0,0"
+    layers:
+    - state: l_mushroom_green1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraAshLightshroom
+  suffix: ash
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: red_mushroom1
+    offset: "0,0"
+    layers:
+    - state: red_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaAshLightshroomBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: blue_mushroom1
+    offset: "0,0"
+    layers:
+    - state: blue_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: NovaAshLightshroomGreen
+  suffix: green
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: green_mushroom1
+    offset: "0,0"
+    layers:
+    - state: green_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAsh
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom1
+    offset: "0,0"
+    layers:
+    - state: l_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshCapShroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom1
+    offset: "0,0"
+    layers:
+    - state: r_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshLeafShroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: s_mushroom1
+    offset: "0,0"
+    layers:
+    - state: s_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshStemShroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: t_mushroom1
+    offset: "0,0"
+    layers:
+    - state: t_mushroom1
+  - type: PointLight
+    radius: 2.0
+    energy: 2.1
+
+- type: entity
+  parent: BaseFlora
+  id: BubberFloraAshSeraka
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: seraka_mushroom1
+    offset: "0,0"
+    layers:
+    - state: seraka_mushroom1
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraFloraBushMushroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fungus_bush
+    offset: "0,0"
+    layers:
+    - state: fungus_bush
+
+- type: entity
+  parent: BaseStructure
+  id: ShiptestFluffGlowshroom
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: glowshroom
+    noRot: true
+  - type: Physics
+    canCollide: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: PointLight
+    radius: 2.5
+    energy: 1.0
+    color: "#C3E381"

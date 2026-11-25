@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "sofa_left_bed",
+      "directions": 4
+    },
+    {
+      "name": "sofa_left_purple",
+      "directions": 4
+    },
+    {
+      "name": "sofa_left_red",
+      "directions": 4
+    },
+    {
+      "name": "sofa_left_teal",
+      "directions": 4
+    },
+    {
+      "name": "sofa_left_unpadded",
+      "directions": 4
+    },
+    {
+      "name": "sofa_middle_bed",
+      "directions": 8
+    },
+    {
+      "name": "sofa_middle_purple",
+      "directions": 8
+    },
+    {
+      "name": "sofa_middle_red",
+      "directions": 8
+    },
+    {
+      "name": "sofa_middle_teal",
+      "directions": 8
+    },
+    {
+      "name": "sofa_middle_unpadded",
+      "directions": 8
+    },
+    {
+      "name": "sofa_right_bed",
+      "directions": 4
+    },
+    {
+      "name": "sofa_right_purple",
+      "directions": 4
+    },
+    {
+      "name": "sofa_right_red",
+      "directions": 4
+    },
+    {
+      "name": "sofa_right_teal",
+      "directions": 4
+    },
+    {
+      "name": "sofa_right_unpadded",
+      "directions": 4
+    }
+  ]
+}

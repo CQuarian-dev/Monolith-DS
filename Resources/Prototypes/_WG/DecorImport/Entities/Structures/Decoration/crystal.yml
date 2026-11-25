@@ -1,0 +1,386 @@
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: DecorImportCrystalBase
+  components:
+  - type: Sprite
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: DecorImportCrystalBase
+  id: PolarisCrystal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystals_polaris.rsi
+    state: crystal
+  - type: PointLight
+    radius: 3
+    energy: 3
+    color: "#33CC33"
+
+- type: entity
+  parent: PolarisCrystal
+  id: PolarisCrystalPurple
+  components:
+  - type: Sprite
+    state: crystal2
+  - type: PointLight
+    color: "#CC00CC"
+
+- type: entity
+  parent: PolarisCrystal
+  id: PolarisCrystalIce
+  components:
+  - type: Sprite
+    layers:
+    - state: icecrystal2
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        icecrystal1: ""
+    - base:
+        icecrystal2: ""
+  - type: PointLight
+    color: "#C4FFFF"
+
+- type: entity
+  parent: PolarisCrystal
+  id: PolarisCrystalMagma
+  components:
+  - type: Sprite
+    state: lavacrystal1
+  - type: PointLight
+    color: "#E03131"
+
+- type: entity
+  parent: DecorImportCrystalBase
+  id: NebulaCrystal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_nebula.rsi
+    layers:
+    - state: crystal
+      color: "#FFFFFFB4"
+    - state: crystal_shadow
+  - type: PointLight
+    radius: 3
+    energy: 3
+
+- type: entity
+  parent: DecorImportCrystalBase
+  id: GoonCrystalShards
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_shards_goonstation.rsi
+    layers:
+    - state: crystal_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal_1: ""
+    - base:
+        crystal_2: ""
+    - base:
+        crystal_3: ""
+    - base:
+        crystal_4: ""
+
+- type: entity
+  parent: DecorImportCrystalBase
+  id: CoyoteUltraciteVein
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ultra_coyote.rsi
+    state: ultravien
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraPucestal
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/pucestal_shiptest.rsi
+    state: pucetal
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFloraCrystal
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/crystal_plant_goonstation.rsi
+    state: crystal
+
+- type: entity
+  parent: CrystalGreen
+  id: ImpstationCrystalGreen
+  suffix: green, Impstation
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/crystal.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+        crystal4: ""
+        crystal5: ""
+        crystal6: ""
+        crystal7: ""
+
+- type: entity
+  parent: CrystalGreen
+  id: SS220CrystalGreen
+  suffix: green, SS220
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ss220.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+
+- type: entity
+  parent: CrystalPink
+  id: ImpstationCrystalPink
+  suffix: pink, Impstation
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/crystal.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+        crystal4: ""
+        crystal5: ""
+        crystal6: ""
+        crystal7: ""
+
+- type: entity
+  parent: CrystalPink
+  id: SS220CrystalPink
+  suffix: pink, SS220
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ss220.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+
+- type: entity
+  parent: CrystalGrey
+  id: ImpstationCrystalGrey
+  suffix: red, Impstation
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/crystal.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+        crystal4: ""
+        crystal5: ""
+        crystal6: ""
+        crystal7: ""
+
+- type: entity
+  parent: CrystalGrey
+  id: SS220CrystalGrey
+  suffix: red, SS220
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ss220.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+
+- type: entity
+  parent: CrystalOrange
+  id: ImpstationCrystalOrange
+  suffix: orange, Impstation
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/crystal.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+        crystal4: ""
+        crystal5: ""
+        crystal6: ""
+        crystal7: ""
+
+- type: entity
+  parent: CrystalOrange
+  id: SS220CrystalOrange
+  suffix: orange, SS220
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ss220.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+
+- type: entity
+  parent: CrystalBlue
+  id: ImpstationCrystalBlue
+  suffix: blue, Impstation
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/crystal.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+        crystal4: ""
+        crystal5: ""
+        crystal6: ""
+        crystal7: ""
+
+- type: entity
+  parent: CrystalBlue
+  id: SS220CrystalBlue
+  suffix: blue, SS220
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ss220.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+
+- type: entity
+  parent: CrystalCyan
+  id: ImpstationCrystalCyan
+  suffix: cyan, Impstation
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/crystal.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+        crystal4: ""
+        crystal5: ""
+        crystal6: ""
+        crystal7: ""
+
+- type: entity
+  parent: CrystalCyan
+  id: SS220CrystalCyan
+  suffix: cyan, SS220
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crystal_ss220.rsi
+    layers:
+    - state: crystal1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        crystal1: ""
+        crystal2: ""
+        crystal3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPMoundSmall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/mounds_citadelrp.rsi
+    state: mound_small
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Rock
+
+- type: entity
+  parent: CitadelRPMoundSmall
+  id: CitadelRPMoundMedium
+  components:
+  - type: Sprite
+    state: mound_medium
+
+- type: entity
+  parent: CitadelRPMoundSmall
+  id: CitadelRPMoundLarge
+  components:
+  - type: Sprite
+    state: mound_large

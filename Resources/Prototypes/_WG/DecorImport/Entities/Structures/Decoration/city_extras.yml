@@ -1,0 +1,1829 @@
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseDarkPackChinatownGate
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/chinatown.rsi
+    drawdepth: Overdoors
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate1
+  suffix: Piece 1
+  components:
+  - type: Sprite
+    state: ark1_s
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate2
+  suffix: Piece 2
+  components:
+  - type: Sprite
+    state: ark1_n
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate3
+  suffix: Piece 3
+  components:
+  - type: Sprite
+    state: ark1_e
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate4
+  suffix: Piece 4
+  components:
+  - type: Sprite
+    state: ark1_w
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate5
+  suffix: Piece 5
+  components:
+  - type: Sprite
+    state: ark1_se
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate6
+  suffix: Piece 6
+  components:
+  - type: Sprite
+    state: ark1_sw
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate7
+  suffix: Piece 7
+  components:
+  - type: Sprite
+    state: ark1_ne
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGate8
+  suffix: Piece 8
+  components:
+  - type: Sprite
+    state: ark1_nw
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow1
+  suffix: Piece 1, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_s
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow2
+  suffix: Piece 2, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_n
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow3
+  suffix: Piece 3, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_e
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow4
+  suffix: Piece 4, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_w
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow5
+  suffix: Piece 5, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_se
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow6
+  suffix: Piece 6, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_sw
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow7
+  suffix: Piece 7, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_ne
+
+- type: entity
+  parent: BaseDarkPackChinatownGate
+  id: DarkPackChinatownGateSnow8
+  suffix: Piece 8, snow
+  components:
+  - type: Sprite
+    state: ark1-snow_nw
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseDarkPackChinatownRailing
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/chinatown.rsi
+    drawdepth: WallTops
+
+- type: entity
+  parent: BaseDarkPackChinatownRailing
+  id: DarkPackChinatownRailingLeft
+  suffix: Left end
+  components:
+  - type: Sprite
+    state: ark2_s
+
+- type: entity
+  parent: BaseDarkPackChinatownRailing
+  id: DarkPackChinatownRailing
+  suffix: Middle
+  components:
+  - type: Sprite
+    state: ark2_n
+
+- type: entity
+  parent: BaseDarkPackChinatownRailing
+  id: DarkPackChinatownRailingRight
+  suffix: Right end
+  components:
+  - type: Sprite
+    state: ark2_w
+
+- type: entity
+  parent: BaseDarkPackChinatownRailing
+  id: DarkPackChinatownRailingLeftSnow
+  suffix: Left end, snow
+  components:
+  - type: Sprite
+    state: ark2-snow_s
+
+- type: entity
+  parent: BaseDarkPackChinatownRailing
+  id: DarkPackChinatownRailingSnow
+  suffix: Middle, snow
+  components:
+  - type: Sprite
+    state: ark2-snow_n
+
+- type: entity
+  parent: BaseDarkPackChinatownRailing
+  id: DarkPackChinatownRailingRightSnow
+  suffix: Right end, snow
+  components:
+  - type: Sprite
+    state: ark2-snow_w
+
+- type: entity
+  parent: BaseUrbanCeilingProp
+  id: DarkPackChineseLantern
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/chinatown.rsi
+    state: trad
+  - type: PointLight
+    radius: 2.5
+    energy: 1
+    softness: 1
+    color: "#FF5A3A"
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseDarkPackChineseScroll
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/chinatown.rsi
+
+- type: entity
+  parent: BaseDarkPackChineseScroll
+  id: DarkPackChineseScrolls
+  components:
+  - type: Sprite
+    state: trad-art1
+
+- type: entity
+  parent: BaseDarkPackChineseScroll
+  id: DarkPackChineseScrollWide
+  components:
+  - type: Sprite
+    state: trad-art2
+
+- type: entity
+  parent: BaseDarkPackChineseScroll
+  id: DarkPackChineseScrollWide2
+  components:
+  - type: Sprite
+    state: trad-art3
+
+- type: entity
+  parent: BaseUrbanProp
+  id: DarkPackBuddhaShrine
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/chinatown.rsi
+    state: budshrine
+  - type: PointLight
+    radius: 2
+    energy: 0.8
+    color: "#FF8A3A"
+
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanWallSign, BaseUrbanToggleLight ]
+  id: BaseDarkPackChineseNeon
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Lighting/city_sign.rsi
+  - type: PointLight
+    radius: 2.5
+    energy: 0.8
+    color: "#FF4A3A"
+
+- type: entity
+  parent: BaseDarkPackChineseNeon
+  id: DarkPackChineseNeonVertical
+  suffix: Gold
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    noRot: false
+    layers:
+    - state: chinese1
+    - state: chinese1
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: DarkPackChineseNeonVertical
+  id: DarkPackChineseNeonVerticalSnow
+  suffix: Gold, snow
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese1-snow
+    - state: chinese1-snow
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: DarkPackChineseNeonVertical
+  id: DarkPackChineseNeonVertical2
+  suffix: White
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese2
+    - state: chinese2
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: DarkPackChineseNeonVertical
+  id: DarkPackChineseNeonVertical2Snow
+  suffix: White, snow
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese2-snow
+    - state: chinese2-snow
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: BaseDarkPackChineseNeon
+  id: DarkPackChineseNeonWideLeft
+  suffix: Red, left half
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese3_left
+    - state: chinese3_left
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: BaseDarkPackChineseNeon
+  id: DarkPackChineseNeonWideRight
+  suffix: Red, right half
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese3_right
+    - state: chinese3_right
+      map: [ "light" ]
+      shader: unshaded
+
+- type: entity
+  parent: BaseDarkPackChineseNeon
+  id: DarkPackChineseNeonWide2Left
+  suffix: Gold, left half
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese6_left
+    - state: chinese6_left
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFC040"
+
+- type: entity
+  parent: BaseDarkPackChineseNeon
+  id: DarkPackChineseNeonWide2Right
+  suffix: Gold, right half
+  components:
+  - type: Sprite
+    layers:
+    - state: chinese6_right
+    - state: chinese6_right
+      map: [ "light" ]
+      shader: unshaded
+  - type: PointLight
+    color: "#FFC040"
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: DarkPackMillenniumSignLeft
+  suffix: Left half
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Lighting/city_sign.rsi
+    state: millenium1
+
+- type: entity
+  parent: DarkPackMillenniumSignLeft
+  id: DarkPackMillenniumSignRight
+  suffix: Right half
+  components:
+  - type: Sprite
+    state: millenium2
+
+- type: entity
+  parent: BaseUrbanWallSign
+  id: DarkPackDoraNeon
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/48x48_darkpack.rsi
+    state: dora
+    shader: unshaded
+  - type: PointLight
+    radius: 2.5
+    energy: 0.8
+    color: "#FF6AE0"
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseDarkPackTrash
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/trash.rsi
+    drawdepth: FloorObjects
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags1
+  components:
+  - type: Sprite
+    state: garbage1_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags2
+  components:
+  - type: Sprite
+    state: garbage2_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags3
+  components:
+  - type: Sprite
+    state: garbage3_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags4
+  components:
+  - type: Sprite
+    state: garbage4_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags5
+  components:
+  - type: Sprite
+    state: garbage5_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags6
+  components:
+  - type: Sprite
+    state: garbage6_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags7
+  components:
+  - type: Sprite
+    state: garbage7_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags8
+  components:
+  - type: Sprite
+    state: garbage8_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackTrashBags9
+  components:
+  - type: Sprite
+    state: garbage9_old
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackCardboard1
+  components:
+  - type: Sprite
+    state: cardboard1
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackCardboard2
+  components:
+  - type: Sprite
+    state: cardboard2
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackCardboard3
+  components:
+  - type: Sprite
+    state: cardboard3
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackCardboard4
+  components:
+  - type: Sprite
+    state: cardboard4
+
+- type: entity
+  parent: BaseDarkPackTrash
+  id: DarkPackCardboard5
+  components:
+  - type: Sprite
+    state: cardboard5
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackTire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alleyway.rsi
+    drawdepth: FloorObjects
+    state: tire
+
+- type: entity
+  parent: DarkPackTire
+  id: DarkPackTireBig
+  components:
+  - type: Sprite
+    state: bigtire
+  - type: Physics
+    canCollide: true
+  - type: Climbable
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseDarkPackBarrel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/barrels_darkpack.rsi
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel1
+  components:
+  - type: Sprite
+    state: barrel1
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel2
+  components:
+  - type: Sprite
+    state: barrel2
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel3
+  components:
+  - type: Sprite
+    state: barrel3
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel4
+  components:
+  - type: Sprite
+    state: barrel4
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel5
+  components:
+  - type: Sprite
+    state: barrel5
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel6
+  components:
+  - type: Sprite
+    state: barrel6
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel7
+  components:
+  - type: Sprite
+    state: barrel7
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel8
+  components:
+  - type: Sprite
+    state: barrel8
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel9
+  components:
+  - type: Sprite
+    state: barrel9
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel10
+  components:
+  - type: Sprite
+    state: barrel10
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel11
+  components:
+  - type: Sprite
+    state: barrel11
+
+- type: entity
+  parent: BaseDarkPackBarrel
+  id: DarkPackBarrel12
+  components:
+  - type: Sprite
+    state: barrel12
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseDarkPackMenuBoard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/restaurant.rsi
+    shader: unshaded
+  - type: PointLight
+    radius: 2
+    energy: 0.6
+    color: "#FFE0B0"
+
+- type: entity
+  parent: BaseDarkPackMenuBoard
+  id: DarkPackMenuBoard1
+  components:
+  - type: Sprite
+    state: order1
+
+- type: entity
+  parent: BaseDarkPackMenuBoard
+  id: DarkPackMenuBoard2
+  components:
+  - type: Sprite
+    state: order2
+
+- type: entity
+  parent: BaseDarkPackMenuBoard
+  id: DarkPackMenuBoard3
+  components:
+  - type: Sprite
+    state: order3
+
+- type: entity
+  parent: BaseDarkPackMenuBoard
+  id: DarkPackMenuBoard4
+  components:
+  - type: Sprite
+    state: order4
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackCondiments
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/restaurant.rsi
+    drawdepth: SmallObjects
+    state: stuff
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackTablecloth
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/restaurant.rsi
+    drawdepth: SmallObjects
+    state: underplate
+
+- type: entity
+  parent: [ BaseUrbanProp, BaseUrbanIgnitable ]
+  id: DarkPackFireplace
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/48x64_darkpack.rsi
+    offset: 0,0.5
+    layers:
+    - state: fireplace_large
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Decoration/48x64_darkpack.rsi
+    normalState: fireplace_large_burning
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.17
+    maxLightEnergy: 1.5
+
+- type: entity
+  parent: BaseUrbanPropIndestructible
+  id: DarkPackAngelStatue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x64_darkpack.rsi
+    offset: 0,0.5
+    state: statue
+
+- type: entity
+  parent: BaseUrbanPropIndestructible
+  id: DarkPackCloakedStatue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x48_darkpack.rsi
+    offset: 0,0.25
+    state: cloakedstatue
+
+- type: entity
+  parent: BaseUrbanPropIndestructible
+  id: DarkPackGargoyle
+  components:
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x48_darkpack.rsi
+    offset: 0,0.25
+    noRot: false
+    state: gargoyle
+
+- type: entity
+  parent: BaseUrbanPropIndestructible
+  id: DarkPackGlobeStatue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/48x48_darkpack.rsi
+    offset: 0,0.25
+    state: earth
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanWallSign
+  id: BaseDarkPackGraffiti
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/32x48_darkpack.rsi
+    offset: 0,0.25
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti1
+  components:
+  - type: Sprite
+    state: graffiti1
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti2
+  components:
+  - type: Sprite
+    state: graffiti2
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti3
+  components:
+  - type: Sprite
+    state: graffiti3
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti4
+  components:
+  - type: Sprite
+    state: graffiti4
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti5
+  components:
+  - type: Sprite
+    state: graffiti5
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti6
+  components:
+  - type: Sprite
+    state: graffiti6
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti7
+  components:
+  - type: Sprite
+    state: graffiti7
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti8
+  components:
+  - type: Sprite
+    state: graffiti8
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti9
+  components:
+  - type: Sprite
+    state: graffiti9
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti10
+  components:
+  - type: Sprite
+    state: graffiti10
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti11
+  components:
+  - type: Sprite
+    state: graffiti11
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti12
+  components:
+  - type: Sprite
+    state: graffiti12
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti13
+  components:
+  - type: Sprite
+    state: graffiti13
+
+- type: entity
+  parent: BaseDarkPackGraffiti
+  id: DarkPackGraffiti14
+  components:
+  - type: Sprite
+    state: graffiti14
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseDarkPackRug
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/rugs64x64.rsi
+    drawdepth: FloorObjects
+
+- type: entity
+  parent: BaseDarkPackRug
+  id: DarkPackRugOrnate
+  components:
+  - type: Sprite
+    state: kover
+
+- type: entity
+  parent: BaseDarkPackRug
+  id: DarkPackRugBearskin
+  components:
+  - type: Sprite
+    state: kopatich
+
+- type: entity
+  parent: BaseDarkPackRug
+  id: DarkPackRugGreen
+  components:
+  - type: Sprite
+    state: greencarpet
+
+- type: entity
+  parent: BaseUrbanPost
+  id: DarkPackCityMap
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/city_map.rsi
+    state: map
+
+- type: entity
+  parent: DarkPackCityMap
+  id: DarkPackCityMapSnow
+  suffix: Snow
+  components:
+  - type: Sprite
+    state: map-snow
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseTgRoadsideBillboard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/billboard_tg.rsi
+    offset: 0,0.5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.4,-0.3,1.4,0.2"
+        density: 190
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - BulletImpassable
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardBlank
+  suffix: Blank
+  components:
+  - type: Sprite
+    state: billboard_blank
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardDonkNGo
+  suffix: Donk-n-Go
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_donk_n_go
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardSpaceCola
+  suffix: Space Cola
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_space_cola
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardNanotrasen
+  suffix: Nanotrasen
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_nanotrasen
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardAzik
+  suffix: Azik
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_azik
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardCvr
+  suffix: CVR
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_cvr
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardTwentyFourSeven
+  suffix: 24-Seven
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_twenty_four_seven
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardStarway
+  suffix: Starway
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_starway
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardLizardsGas
+  suffix: Lizard's Gas
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_lizards_gas
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardLizardsGasDefaced
+  suffix: Lizard's Gas, defaced
+  components:
+  - type: Sprite
+    state: billboard_lizards_gas_defaced
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardRoadsign
+  suffix: Last gas, blank
+  components:
+  - type: Sprite
+    state: billboard_roadsign_blank
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardRoadsignTwo
+  suffix: Last gas, 2 miles
+  components:
+  - type: Sprite
+    state: billboard_roadsign_two
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardRoadsignTwoThousand
+  suffix: Last gas, 2000 miles
+  components:
+  - type: Sprite
+    state: billboard_roadsign_twothousand
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardRoadsignTwoMillion
+  suffix: Last gas, 2000000 miles
+  components:
+  - type: Sprite
+    state: billboard_roadsign_twomillion
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardRoadsignError
+  suffix: Last gas, error
+  components:
+  - type: Sprite
+    state: billboard_roadsign_error
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardSmoothies
+  suffix: Smoothies
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_smoothies
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardFortuneTeller
+  suffix: Fortune teller
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_fortune_tell
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardAmericanDiner
+  suffix: Diner
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_american_diner
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardPhone
+  suffix: Holophone
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_phone
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  parent: BaseTgRoadsideBillboard
+  id: TgBillboardGloves
+  suffix: Gloves
+  components:
+  - type: Sprite
+    layers:
+    - state: billboard_gloves
+    - state: overlay
+      shader: unshaded
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPropNoCollide
+  id: BaseTgPatioUmbrella
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/general_tg.rsi
+    drawdepth: Overdoors
+
+- type: entity
+  parent: BaseTgPatioUmbrella
+  id: TgPatioUmbrella
+  suffix: Red and yellow
+  components:
+  - type: Sprite
+    state: brella
+
+- type: entity
+  parent: BaseTgPatioUmbrella
+  id: TgPatioUmbrellaBlue
+  suffix: Blue and yellow
+  components:
+  - type: Sprite
+    state: cap_brella
+
+- type: entity
+  parent: BaseTgPatioUmbrella
+  id: TgPatioUmbrellaGreen
+  suffix: Green and yellow
+  components:
+  - type: Sprite
+    state: ce_brella
+
+- type: entity
+  parent: BaseTgPatioUmbrella
+  id: TgPatioUmbrellaRed
+  suffix: Red and grey
+  components:
+  - type: Sprite
+    state: hos_brella
+
+- type: entity
+  parent: BaseTgPatioUmbrella
+  id: TgPatioUmbrellaPurple
+  suffix: Purple and white
+  components:
+  - type: Sprite
+    state: rd_brella
+
+- type: entity
+  parent: BaseTgPatioUmbrella
+  id: TgPatioUmbrellaBlack
+  suffix: Red and black
+  components:
+  - type: Sprite
+    state: syndi_brella
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: TgLuckyCat
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/general_tg.rsi
+    drawdepth: SmallObjects
+    state: maneki-neko
+
+- type: entity
+  parent: [ BaseUrbanPropNoCollide, BaseUrbanIgnitable ]
+  id: TgPaperLantern
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/lanterns_tg.rsi
+    drawdepth: SmallObjects
+    layers:
+    - state: syndilantern
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Decoration/lanterns_tg.rsi
+    normalState: syndilantern-on
+    lightColor: "#FF8A5A"
+    lightRadiusPerStack: 0.50
+    maxLightRadius: 3
+    lightEnergyPerStack: 0.00
+    maxLightEnergy: 1
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanPost
+  id: BaseTgSignboard
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: _WG/DecorImport/Structures/Decoration/signboards.rsi
+
+- type: entity
+  parent: BaseTgSignboard
+  id: TgChalkSignboard
+  components:
+  - type: Sprite
+    state: sign
+
+- type: entity
+  parent: BaseTgSignboard
+  id: TgChalkSignboardBlank
+  suffix: Blank
+  components:
+  - type: Sprite
+    state: sign_blank
+
+- type: entity
+  parent: BaseTgSignboard
+  id: TgHoloSignboard
+  components:
+  - type: Sprite
+    state: holographic_sign
+    shader: unshaded
+  - type: PointLight
+    radius: 1.5
+    energy: 0.6
+    color: "#5AFFE0"
+
+- type: entity
+  parent: TgHoloSignboard
+  id: TgHoloSignboardBlank
+  suffix: Blank
+  components:
+  - type: Sprite
+    state: holographic_sign_blank
+
+- type: entity
+  parent: CrateGeneric
+  id: DarkPackTrashCan
+  components:
+  - type: Transform
+    anchored: true
+    noRot: true
+  - type: Physics
+    bodyType: Static
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/crates32x32.rsi
+    state: trashcan
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/crates32x32.rsi
+    layers:
+    - state: trashcan
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: trashcan
+      map: ["enum.StorageVisualLayers.Door"]
+      visible: false
+  - type: EntityStorageVisuals
+    stateBaseClosed: trashcan
+    stateBaseOpen: trashcanopen
+    stateDoorOpen: null
+    stateDoorClosed: null
+
+- type: entity
+  parent: BaseUrbanProp
+  id: DarkPackTelevision
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/television_darkpack.rsi
+    layers:
+    - state: tv_off
+    - state: tv_news
+      shader: unshaded
+      map: ["screen"]
+      visible: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/television_darkpack.rsi
+    state: tv_off
+  - type: RandomSprite
+    available:
+    - screen:
+        tv_news: ""
+        tv_nature: ""
+        tv_analog: ""
+  - type: Appearance
+  - type: ItemToggle
+    onUse: false
+  - type: ItemTogglePointLight
+  - type: PointLight
+    enabled: false
+    radius: 1.5
+    energy: 0.5
+    color: "#D0E0FF"
+    netsync: false
+  - type: ToggleableVisuals
+    spriteLayer: screen
+
+- type: entity
+  abstract: true
+  parent: VendingMachineCigs
+  id: BaseDarkPackCigaretteShelf
+  components:
+  - type: VendingMachine
+    pack: CigaretteMachineInventory
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
+    normalState: ciggies-light-mask
+    ejectState: null
+    denyState: null
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/cigarette_shelf.rsi
+    noRot: false
+    snapCardinals: false
+    layers:
+    - state: ciggies1
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: ciggies-light-mask
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      sprite: Structures/Machines/VendingMachines/cigs.rsi
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: PointLight
+    color: "#FFFFFF"
+
+- type: entity
+  parent: BaseDarkPackCigaretteShelf
+  id: DarkPackCigaretteShelf1
+  components:
+  - type: VendingMachine
+    pack: CigaretteMachineInventory
+    offState: ciggies1
+    brokenState: ciggies1-empty
+    normalState: ciggies-light-mask
+    ejectState: null
+    denyState: null
+  - type: Sprite
+    layers:
+    - state: ciggies1
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: ciggies-light-mask
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      sprite: Structures/Machines/VendingMachines/cigs.rsi
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: entity
+  parent: BaseDarkPackCigaretteShelf
+  id: DarkPackCigaretteShelf2
+  components:
+  - type: VendingMachine
+    pack: CigaretteMachineInventory
+    offState: ciggies2
+    brokenState: ciggies2-empty
+    normalState: ciggies-light-mask
+    ejectState: null
+    denyState: null
+  - type: Sprite
+    layers:
+    - state: ciggies2
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: ciggies-light-mask
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      sprite: Structures/Machines/VendingMachines/cigs.rsi
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: entity
+  parent: BaseDarkPackCigaretteShelf
+  id: DarkPackCigaretteShelf3
+  components:
+  - type: VendingMachine
+    pack: CigaretteMachineInventory
+    offState: ciggies3
+    brokenState: ciggies3-empty
+    normalState: ciggies-light-mask
+    ejectState: null
+    denyState: null
+  - type: Sprite
+    layers:
+    - state: ciggies3
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: ciggies-light-mask
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      sprite: Structures/Machines/VendingMachines/cigs.rsi
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
+- type: entity
+  abstract: true
+  parent: BaseStructureDynamic
+  id: BaseDarkPackLinenBin
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    drawdepth: SmallObjects
+    noRot: true
+  - type: Appearance
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.25,-0.25,0.25,0.25"
+        density: 500
+        mask:
+        - TabletopMachineMask
+  - type: InteractionOutline
+  - type: Bin
+    whitelist:
+      tags:
+      - Bedsheet
+  - type: ContainerContainer
+    containers:
+      bin-container: !type:Container
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 70
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseDarkPackLinenBin
+  id: DarkPackLinenBin
+  suffix: Empty
+  components:
+  - type: Sprite
+    state: linenbin-empty
+  - type: ItemMapper
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    mapLayers:
+      linenbin-half:
+        maxCount: 5
+        whitelist:
+          tags:
+          - Bedsheet
+      linenbin-full:
+        minCount: 6
+        whitelist:
+          tags:
+          - Bedsheet
+
+- type: entity
+  parent: DarkPackLinenBin
+  id: DarkPackLinenBinFilled
+  suffix: Filled
+  components:
+  - type: Bin
+    initialContents:
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+
+- type: entity
+  parent: BaseDarkPackLinenBin
+  id: DarkPackLinenBasket
+  suffix: Empty
+  components:
+  - type: Sprite
+    state: linenbasket-empty
+  - type: ItemMapper
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    mapLayers:
+      linenbasket-half:
+        maxCount: 5
+        whitelist:
+          tags:
+          - Bedsheet
+      linenbasket-full:
+        minCount: 6
+        whitelist:
+          tags:
+          - Bedsheet
+
+- type: entity
+  parent: DarkPackLinenBasket
+  id: DarkPackLinenBasketFilled
+  suffix: Filled
+  components:
+  - type: Bin
+    initialContents:
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+    - BedsheetWhite
+
+- type: entity
+  abstract: true
+  parent: LockerBaseSecure
+  id: BaseDarkPackSafe
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    noRot: true
+    layers:
+    - state: safe_locked
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: safe_locked
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: safe_locked
+      map: ["enum.LockVisualLayers.Lock"]
+    - state: paper
+      visible: false
+      sprite: Structures/Storage/closet_labels.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: GenericVisualizer
+    visuals:
+      enum.PaperLabelVisuals.HasLabel:
+        enum.PaperLabelVisuals.Layer:
+          True: { visible: true }
+          False: { visible: false }
+      enum.StorageVisuals.Open:
+        enum.PaperLabelVisuals.Layer:
+          True: { visible: false }
+      enum.PaperLabelVisuals.LabelType:
+        enum.PaperLabelVisuals.Layer:
+          Paper: { state: paper }
+          Bounty: { state: bounty }
+          CaptainsPaper: { state: captains_paper }
+          Invoice: { state: invoice }
+
+- type: entity
+  parent: BaseDarkPackSafe
+  id: DarkPackSafe
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: safe_locked
+    stateBaseOpen: safe
+    stateDoorOpen: safe
+    stateDoorClosed: safe_locked
+
+- type: entity
+  parent: BaseDarkPackSafe
+  id: DarkPackFloorSafe
+  components:
+  - type: Sprite
+    drawdepth: FloorObjects
+    layers:
+    - state: floorsafe_locked
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: floorsafe_locked
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: floorsafe_locked
+      map: ["enum.LockVisualLayers.Lock"]
+    - state: paper
+      visible: false
+      sprite: Structures/Storage/closet_labels.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: floorsafe_locked
+    stateBaseOpen: floorsafe
+    stateDoorOpen: floorsafe
+    stateDoorClosed: floorsafe_locked
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: BaseDarkPackSafe
+  id: DarkPackSpareSafe
+  components:
+  - type: Sprite
+    layers:
+    - state: spare_safe
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: spare_safe
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: spare_safe_locked
+      map: ["enum.LockVisualLayers.Lock"]
+    - state: paper
+      visible: false
+      sprite: Structures/Storage/closet_labels.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: spare_safe
+    stateDoorOpen: spare_safe
+    stateDoorClosed: spare_safe
+  - type: LockVisuals
+    stateLocked: spare_safe_locked
+    stateUnlocked: spare_safe
+  - type: EntityStorage
+    capacity: 5
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackSteamVent
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    drawdepth: FloorObjects
+    layers:
+    - state: steam_vent_off
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Appearance
+  - type: ItemToggle
+    activated: false
+    onUse: false
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: steam_vent }
+          False: { state: steam_vent_off }
+
+- type: entity
+  parent: BaseStructureDynamic
+  id: DarkPackFlatpackCart
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: flatcart
+    noRot: true
+  - type: Appearance
+  - type: InteractionOutline
+  - type: Storage
+    grid:
+    - 0,0,5,1
+    whitelist:
+      components:
+      - Flatpack
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+  - type: ItemMapper
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    mapLayers:
+      flatcart_flat:
+        whitelist:
+          components:
+          - Flatpack
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:EmptyAllContainersBehaviour
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackMoistureTrap
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: moisture_trap
+    drawdepth: FloorObjects
+  - type: SecretStash
+    secretStashName: secret-stash-moisture-trap
+  - type: ContainerContainer
+    containers:
+      stash: !type:ContainerSlot {}
+  - type: AmbientSound
+    volume: -12
+    range: 3
+    sound:
+      path: /Audio/Ambience/Objects/drain.ogg
+
+- type: entity
+  parent: BaseUrbanProp
+  id: DarkPackFalconet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: falconet_patina
+  - type: Rotatable
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 4
+            max: 4
+          PartRodMetal1:
+            min: 3
+            max: 3
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanProp
+  id: DarkPackSpiritBoard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: spirit_board
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseTarget
+  id: DarkPackTargetAlien
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: target_q
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanProp
+  id: BaseDarkPackTrough
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 5
+            max: 5
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseDarkPackTrough
+  id: DarkPackTroughGutlunch
+  components:
+  - type: Sprite
+    state: gutlunch_trough
+
+- type: entity
+  parent: BaseDarkPackTrough
+  id: DarkPackTroughRaptor
+  components:
+  - type: Sprite
+    state: raptor_trough
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: DarkPackLadder
+  suffix: Up and down
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: ladder11
+
+- type: entity
+  parent: DarkPackLadder
+  id: DarkPackLadderUp
+  suffix: Up
+  components:
+  - type: Sprite
+    state: ladder10
+
+- type: entity
+  parent: DarkPackLadder
+  id: DarkPackLadderDown
+  suffix: Down
+  components:
+  - type: Sprite
+    state: ladder01
+
+- type: entity
+  parent: Window
+  id: DarkPackWindowStonePane
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: stone_window_pane
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/structures_darkpack.rsi
+    state: stone_window_pane
+  - type: IconSmooth
+    mode: NoSprite

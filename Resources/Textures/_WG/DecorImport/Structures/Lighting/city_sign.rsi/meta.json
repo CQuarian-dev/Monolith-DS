@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "banner"
+    },
+    {
+      "name": "banner-snow"
+    },
+    {
+      "name": "bar"
+    },
+    {
+      "name": "bar-snow"
+    },
+    {
+      "name": "order"
+    },
+    {
+      "name": "hotel_east",
+      "delays": [
+        [
+          5.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "hotel_west",
+      "delays": [
+        [
+          5.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "hotel_east-snow",
+      "delays": [
+        [
+          5.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "hotel_west-snow",
+      "delays": [
+        [
+          5.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "chinese1",
+      "directions": 4
+    },
+    {
+      "name": "chinese1-snow",
+      "directions": 4
+    },
+    {
+      "name": "chinese2",
+      "directions": 4
+    },
+    {
+      "name": "chinese2-snow",
+      "directions": 4
+    },
+    {
+      "name": "chinese3_left"
+    },
+    {
+      "name": "chinese3_right"
+    },
+    {
+      "name": "chinese6_left"
+    },
+    {
+      "name": "chinese6_right"
+    },
+    {
+      "name": "millenium1"
+    },
+    {
+      "name": "millenium2"
+    }
+  ]
+}

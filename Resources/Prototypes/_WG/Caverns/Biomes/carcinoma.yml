@@ -1,0 +1,262 @@
+# Carcinoma: the Gut. Winding flesh throats, some choked with tendons, open into big halls: stomachs of pustules, polyps,
+# assimilation sacks, gastric moss and pools of digestive acid; nerve tangles of raw pink ground lit by nerve clusters;
+# and an ossuary of calcified bone. Blood channels cut through the flesh between them, with clotted banks, and the
+# calcified nodes of the mineral world the flesh grew over stand in the walls.
+# Layers run last to first and the first match wins. Walls only stand on flesh, so any other floor is open ground.
+
+- type: biomeTemplate
+  id: WGCavernBiomeCarcinoma
+  layers:
+  # Substrate and throat floor.
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorFlesh
+    threshold: -1
+  # Overgrown stretches of throat, lowest priority.
+  - !type:BiomeMetaLayer
+    template: WGCavernOvergrowthCarcinoma
+    threshold: 0.3
+    noise: { seed: 61, noiseType: OpenSimplex2, frequency: 0.03 }
+  # Nerve clusters along the throats.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WGCavernNerveCluster]
+    threshold: 0.93
+    noise: { seed: 32, noiseType: OpenSimplex2, frequency: 1 }
+  # The throats' own wildlife, sparse.
+  # Breathing vents (_WG/PlanetVents) along the throats.
+  # Flesh wherever ridged noise is at most the throat threshold; a weak second octave makes the throats wiggle
+  # without breaking them.
+  - !type:BiomeMetaLayer
+    template: WGCavernRockCarcinoma
+    invert: true
+    threshold: -0.4
+    noise: { seed: 7, noiseType: OpenSimplex2, fractalType: Ridged, octaves: 2, gain: 0.3, frequency: 0.06 }
+  # Stomachs on the web.
+  - !type:BiomeMetaLayer
+    template: WGCavernChamberCarcinoma
+    threshold: 0.53
+    noise: { seed: 101, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.016 }
+  # Nerve tangles, then the ossuary: a few big halls each.
+  - !type:BiomeMetaLayer
+    template: WGCavernNerveCarcinoma
+    threshold: 0.57
+    noise: { seed: 611, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.008 }
+  - !type:BiomeMetaLayer
+    template: WGCavernOssuaryCarcinoma
+    threshold: 0.57
+    noise: { seed: 621, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.008 }
+  # The clotted banks of the blood channels.
+  - !type:BiomeMetaLayer
+    template: WGCavernBanksCarcinoma
+    threshold: 0.88
+    noise: { seed: 55, noiseType: OpenSimplex2, fractalType: Ridged, octaves: 1, frequency: 0.012 }
+  # Digestive channels, highest priority: blood placed straight on the flesh, through walls and throats alike.
+  - !type:BiomeMetaLayer
+    template: WGCavernSignatureCarcinoma
+    threshold: 0.94
+    noise: { seed: 55, noiseType: OpenSimplex2, fractalType: Ridged, octaves: 1, frequency: 0.012 }
+  # Slime grottos (_WG/WildSlimes) under the surface's jelly patches, over everything: the patch noise, its seed less
+  # the cavern's seed offset of 7949, at a lower threshold so each grotto is a little wider than its patch.
+
+- type: biomeTemplate
+  id: WGCavernRockCarcinoma
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WallMeat]
+    threshold: -1
+  # Calcified nodes: the mineral world under the flesh.
+  - !type:BiomeMetaLayer
+    template: WGCavernNodeCarcinoma
+    threshold: 0.6
+    noise: { seed: 57, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.05 }
+
+- type: biomeTemplate
+  id: WGCavernNodeCarcinoma
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WallRockAndesite]
+    threshold: -1
+  # Common.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WallRockAndesiteSalt, WallRockAndesitePlasma]
+    threshold: 0.7
+    noise: { seed: 201, noiseType: OpenSimplex2, frequency: 0.09 }
+  # Uncommon.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WallRockAndesiteSilver, WallRockAndesiteUranium]
+    threshold: 0.8
+    noise: { seed: 202, noiseType: OpenSimplex2, frequency: 0.09 }
+  # Rare.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WallRockAndesiteGold]
+    threshold: 0.88
+    noise: { seed: 203, noiseType: OpenSimplex2, frequency: 0.09 }
+
+# Stomachs: the stomach floor with its polyps, pustules and sacks, moss on the walls and acid in the pools.
+- type: biomeTemplate
+  id: WGCavernChamberCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorGut
+    threshold: -1
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorGut]
+    entities: [WGCavernGutGlow]
+    threshold: 0.975
+    noise: { seed: 302, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorGut]
+    entities: [WGFleshPolyp]
+    threshold: 0.98
+    noise: { seed: 314, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorGut]
+    entities: [WGCarcinomaAssimilationSack]
+    threshold: 0.985
+    noise: { seed: 316, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorGut]
+    entities: [WGCavernNerveCluster]
+    threshold: 0.95
+    noise: { seed: 317, noiseType: OpenSimplex2, frequency: 1 }
+  # Rare.
+  # Bile and undigested remains around the acid pools, and the pools inside them, on the same noise.
+  - !type:BiomeMetaLayer
+    template: WGCavernPoolEdgeCarcinoma
+    threshold: 0.3
+    noise: { seed: 60, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.06 }
+  - !type:BiomeMetaLayer
+    template: WGCavernAcidCarcinoma
+    threshold: 0.48
+    noise: { seed: 60, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.06 }
+
+# Nerve tangles: stomach floor at the rim and raw nerve ground inside, thick with nerve clusters, whips and antibodies.
+- type: biomeTemplate
+  id: WGCavernNerveCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorGut
+    threshold: -1
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorGut, WGCavernFloorNerve]
+    entities: [WGCavernNerveCluster]
+    threshold: 0.94
+    noise: { seed: 641, noiseType: OpenSimplex2, frequency: 1 }
+  # Rare.
+  - !type:BiomeMetaLayer
+    template: WGCavernNerveCoreCarcinoma
+    threshold: 0.68
+    noise: { seed: 611, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.008 }
+
+- type: biomeTemplate
+  id: WGCavernNerveCoreCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorNerve
+    threshold: -1
+
+# The ossuary: calcified flesh at the rim, cartilage inside and bleached bone at the core, with the bone piles of the
+# surface, ribs and skulls, marrow caps, and pillars of calcified rock.
+- type: biomeTemplate
+  id: WGCavernOssuaryCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorBoneRim
+    threshold: -1
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorBoneRim, WGCavernFloorBoneCartilage, WGCavernFloorBoneSpine]
+    entities: [WGCarcinomaBoneRibs, WGCarcinomaBoneSkull, WGCarcinomaBoneHorn]
+    threshold: 0.975
+    noise: { seed: 654, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorBoneRim, WGCavernFloorBoneCartilage, WGCavernFloorBoneSpine]
+    entities: [WGCavernNerveCluster]
+    threshold: 0.95
+    noise: { seed: 655, noiseType: OpenSimplex2, frequency: 1 }
+  # Pillars of the rock the bone grew round.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorBoneRim, WGCavernFloorBoneCartilage]
+    entities: [WallRockAndesite]
+    threshold: 0.78
+    noise: { seed: 656, noiseType: OpenSimplex2, frequency: 0.3 }
+  - !type:BiomeMetaLayer
+    template: WGCavernOssuaryCartilageCarcinoma
+    threshold: 0.66
+    noise: { seed: 621, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.008 }
+
+- type: biomeTemplate
+  id: WGCavernOssuaryCartilageCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorBoneCartilage
+    threshold: -1
+  - !type:BiomeMetaLayer
+    template: WGCavernOssuaryCoreCarcinoma
+    threshold: 0.76
+    noise: { seed: 621, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.008 }
+
+- type: biomeTemplate
+  id: WGCavernOssuaryCoreCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorBoneSpine
+    threshold: -1
+
+# Clotted banks along a blood channel; its leeches wait in them.
+- type: biomeTemplate
+  id: WGCavernBanksCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorClot
+    threshold: -1
+
+# A stretch of throat grown thick with tendons, and now and then a vine that grabs.
+- type: biomeTemplate
+  id: WGCavernOvergrowthCarcinoma
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh]
+    entities: [WGCavernTendons]
+    threshold: -0.45
+    noise: { seed: 62, noiseType: OpenSimplex2, frequency: 0.6 }
+
+# In game a decal lookup reads the floor already laid, and no decal lands under an anchored entity, so the acid keeps
+# the bile out from under itself. The pool edge repeats the stomach floor only so a lookup with no grid, as a preview
+# takes, finds its decals.
+- type: biomeTemplate
+  id: WGCavernPoolEdgeCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorGut
+    threshold: -1
+  - !type:BiomeDecalLayer
+    allowedTiles: [WGCavernFloorGut]
+    decals: [WGCavernBile1, WGCavernBile2, WGCavernBile3, WGCavernBile4]
+    threshold: 0.2
+    noise: { seed: 318, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeDecalLayer
+    allowedTiles: [WGCavernFloorGut]
+    decals: [Remains]
+    threshold: 0.8
+    noise: { seed: 319, noiseType: OpenSimplex2, frequency: 1 }
+
+- type: biomeTemplate
+  id: WGCavernAcidCarcinoma
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorGut]
+    entities: [WGCavernDigestiveAcid]
+    threshold: -1
+
+- type: biomeTemplate
+  id: WGCavernSignatureCarcinoma
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorFlesh, WGCavernFloorClot]
+    entities: [WGBloodRiver]
+    threshold: -1

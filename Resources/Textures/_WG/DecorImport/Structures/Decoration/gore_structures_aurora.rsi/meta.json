@@ -1,0 +1,62 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "nest"
+        },
+        {
+            "name": "tendril_dir0"
+        },
+        {
+            "name": "tendril_dir15"
+        },
+        {
+            "name": "tendril_dir1"
+        },
+        {
+            "name": "tendril_dir2"
+        },
+        {
+            "name": "tendril_dir3"
+        },
+        {
+            "name": "tendril_dir4"
+        },
+        {
+            "name": "tendril_dir5"
+        },
+        {
+            "name": "tendril_dir6"
+        },
+        {
+            "name": "tendril_dir7"
+        },
+        {
+            "name": "tendril_dir8"
+        },
+        {
+            "name": "tendril_dir9"
+        },
+        {
+            "name": "tendril_dir10"
+        },
+        {
+            "name": "tendril_dir11"
+        },
+        {
+            "name": "tendril_dir12"
+        },
+        {
+            "name": "tendril_dir13"
+        },
+        {
+            "name": "tendril_dir14"
+        }
+    ]
+}

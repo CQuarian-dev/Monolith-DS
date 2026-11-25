@@ -1,0 +1,17 @@
+- type: constructionGraph
+  id: DecorBuildNebulaTableDeskDresser
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: NebulaTableDeskDresser
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

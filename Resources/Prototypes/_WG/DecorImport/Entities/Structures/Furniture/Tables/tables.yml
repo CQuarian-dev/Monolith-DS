@@ -1,0 +1,1269 @@
+- type: entity
+  parent: TableBase
+  id: CitTableWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_citadel.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_citadel.rsi
+    state: full
+  - type: IconSmooth
+    key: CitTableWood
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildCitTableWood
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: CoyoteTableWoodSettler
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_settler.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_settler.rsi
+    state: full
+  - type: IconSmooth
+    key: CoyoteTableWoodSettler
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildCoyoteTableWoodSettler
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: CoyoteTableWoodJunk
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_junk.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_junk.rsi
+    state: full
+  - type: IconSmooth
+    key: CoyoteTableWoodJunk
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildCoyoteTableWoodJunk
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: DarkPackTableWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_darkpack.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_darkpack.rsi
+    state: full
+  - type: IconSmooth
+    key: DarkPackTableWood
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildDarkPackTableWood
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: ShiptestTableWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_shiptest.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_shiptest.rsi
+    state: full
+  - type: IconSmooth
+    key: ShiptestTableWood
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildShiptestTableWood
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_nebula.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wood_nebula.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableWood
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNebulaTableWood
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableWoodEbony
+  suffix: ebony
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_ebony.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_ebony.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableWoodEbony
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNebulaTableWoodEbony
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableWoodMahogany
+  suffix: mahogany
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_mahogany.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_mahogany.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableWoodMahogany
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNebulaTableWoodMahogany
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableWoodMaple
+  suffix: maple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_maple.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_maple.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableWoodMaple
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNebulaTableWoodMaple
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableWoodWalnut
+  suffix: wood walnut
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_walnut.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_walnut.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableWoodWalnut
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNebulaTableWoodWalnut
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableWoodReinforced
+  suffix: reinforced
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_reinforced.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_reinforced.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableWoodReinforced
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildNebulaTableWoodReinforced
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaReinforcedEbonyWalnut
+  suffix: walnut
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/ebony_walnut_2.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/ebony_walnut_2.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaReinforcedEbonyWalnut
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 40
+  - type: Construction
+    graph: DecorBuildNebulaReinforcedEbonyWalnut
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: PolarisTableWoodenReinforced
+  suffix: wooden reinforced
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wooden_reinforced.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wooden_reinforced.rsi
+    state: full
+  - type: IconSmooth
+    key: PolarisTableWoodenReinforced
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildPolarisTableWoodenReinforced
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: PolarisTableSifwoodenReinforced
+  suffix: reinforced
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_sifwooden_reinforced.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_sifwooden_reinforced.rsi
+    state: full
+  - type: IconSmooth
+    key: PolarisTableSifwoodenReinforced
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildPolarisTableSifwoodenReinforced
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: CMWoodentableFancyBlack
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/fancy_black.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/fancy_black.rsi
+    state: full
+  - type: IconSmooth
+    key: CMWoodentableFancyBlack
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableWoodRegal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_regal.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_regal.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableWoodRegal
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableRegal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_regal.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_regal.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableRegal
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 12
+  - type: Construction
+    graph: DecorBuildGoonTableRegal
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NovaWoodFancyKinaris
+  suffix: fancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/fancy_kinaris.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/fancy_kinaris.rsi
+    state: full
+  - type: IconSmooth
+    key: NovaWoodFancyKinaris
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: NovaFancyKinarisBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/kinaris_black.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/kinaris_black.rsi
+    state: full
+  - type: IconSmooth
+    key: NovaFancyKinarisBlack
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: NovaFancyKinarisRed
+  suffix: fancy red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/kinaris_red.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/kinaris_red.rsi
+    state: full
+  - type: IconSmooth
+    key: NovaFancyKinarisRed
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: NovaKinarisBlackRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/black_red.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/black_red.rsi
+    state: full
+  - type: IconSmooth
+    key: NovaKinarisBlackRed
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: ErisTableStandard
+  suffix: standard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_standard_eris.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_standard_eris.rsi
+    state: full
+  - type: IconSmooth
+    key: ErisTableStandard
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildErisTableStandard
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: ErisTableSteel
+  suffix: steel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_steel.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_steel.rsi
+    state: full
+  - type: IconSmooth
+    key: ErisTableSteel
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 18
+  - type: Construction
+    graph: DecorBuildErisTableSteel
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: ErisTableReinforced
+  suffix: reinforced
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_reinforced.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_reinforced.rsi
+    state: full
+  - type: IconSmooth
+    key: ErisTableReinforced
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildErisTableReinforced
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: PolarisTableStandard
+  suffix: standard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_standard_polaris.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_standard_polaris.rsi
+    state: full
+  - type: IconSmooth
+    key: PolarisTableStandard
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildPolarisTableStandard
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: CoyoteTableWasteland
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wasteland.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_wasteland.rsi
+    state: full
+  - type: IconSmooth
+    key: CoyoteTableWasteland
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableSleek
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_sleek.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_sleek.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableSleek
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableReinforcedBar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/reinforced_bar.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/reinforced_bar.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableReinforcedBar
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: ErisTableBarSpecial
+  suffix: special
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_bar_special.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_bar_special.rsi
+    state: full
+  - type: IconSmooth
+    key: ErisTableBarSpecial
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 24
+  - type: Construction
+    graph: DecorBuildErisTableBarSpecial
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: AuroraTableStone
+  suffix: stone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_stone.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_stone.rsi
+    state: full
+  - type: IconSmooth
+    key: AuroraTableStone
+    base: state_
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: AuroraTableStoneMarble
+  suffix: marble
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/stone_marble.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/stone_marble.rsi
+    state: full
+  - type: IconSmooth
+    key: AuroraTableStoneMarble
+    base: state_
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: PolarisTableGlass
+  suffix: glass
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_glass_polaris.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_glass_polaris.rsi
+    state: full
+  - type: IconSmooth
+    key: PolarisTableGlass
+    base: state_
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 8
+  - type: Construction
+    graph: DecorBuildPolarisTableGlass
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableGlass
+  suffix: glass
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_glass_nebula.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_glass_nebula.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableGlass
+    base: state_
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 8
+  - type: Construction
+    graph: DecorBuildNebulaTableGlass
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableGlassPglass
+  suffix: pglass
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/glass_pglass.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/glass_pglass.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableGlassPglass
+    base: state_
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 22
+  - type: Construction
+    graph: DecorBuildNebulaTableGlassPglass
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: GoonTableNanotrasen
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_nanotrasen.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_nanotrasen.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableNanotrasen
+    base: state_
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableSyndicate
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_syndicate.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_syndicate.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableSyndicate
+    base: state_
+  - type: Damageable
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonWoodAutoDesk
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/auto_desk_2.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/auto_desk_2.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonWoodAutoDesk
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: FrontierTableCard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/card.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/card.rsi
+  - type: GlassTable
+    climberDamage:
+      types:
+        Blunt: 6
+    tableDamage:
+      types:
+        Blunt: 15
+    tableMassLimit: 40
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 45
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+      - !type:PlaySoundBehavior
+        sound: /Audio//Weapons/pierce.ogg
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound: /Audio//Weapons/pierce.ogg
+      - !type:ChangeConstructionNodeBehavior
+        node: TableFrame
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: IconSmooth
+    key: cardtable
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepTile
+
+- type: entity
+  parent: TableBase
+  id: CMTableReinforcedCloth
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/reinforced_cloth.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/reinforced_cloth.rsi
+    state: full
+  - type: IconSmooth
+    key: CMTableReinforcedCloth
+    base: state_
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: GoonTableClothred
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_clothred.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_clothred.rsi
+    state: full
+  - type: IconSmooth
+    key: GoonTableClothred
+    base: state_
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: BeeTableWoodPoker
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_poker_beestation.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_poker_beestation.rsi
+    state: full
+  - type: IconSmooth
+    key: BeeTableWoodPoker
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: CitTableWoodPoker
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_poker_citadel.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_poker_citadel.rsi
+    state: full
+  - type: IconSmooth
+    key: CitTableWoodPoker
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: ShiptestTableWoodPoker
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_poker_shiptest.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/wood_poker_shiptest.rsi
+    state: full
+  - type: IconSmooth
+    key: ShiptestTableWoodPoker
+    base: state_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: ErisTableGamblingtable
+  suffix: gamblingtable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_gamblingtable_eris.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_gamblingtable_eris.rsi
+    state: full
+  - type: IconSmooth
+    key: ErisTableGamblingtable
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 10
+  - type: Construction
+    graph: DecorBuildErisTableGamblingtable
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: NebulaTableGamblingtable
+  suffix: gamblingtable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_gamblingtable_nebula.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_gamblingtable_nebula.rsi
+    state: full
+  - type: IconSmooth
+    key: NebulaTableGamblingtable
+    base: state_
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30
+  - type: Construction
+    graph: DecorBuildNebulaTableGamblingtable
+    node: built
+
+- type: entity
+  parent: TableBase
+  id: AuroraTableDiona
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_diona_aurora.rsi
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/table_diona_aurora.rsi
+  - type: IconSmooth
+    key: AuroraTableDiona
+    base: biomass_
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

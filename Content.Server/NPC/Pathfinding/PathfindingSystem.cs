@@ -110,6 +110,8 @@ namespace Content.Server.NPC.Pathfinding
                 MaxDegreeOfParallelism = _parallel.ParallelProcessCount,
             };
 
+            WgEvictIdleChunks(); // WOLFGATE(Planets): free planet navmesh nobody has been near, before anything walks it
+
             // LuaM-start
             using (_prof.Group("Pathfinding navmesh"))
             {
@@ -122,6 +124,7 @@ namespace Content.Server.NPC.Pathfinding
             var amount = Math.Min(PathTickLimit, _pathRequests.Count);
             var results = ArrayPool<PathResult>.Shared.Rent(amount);
 
+            WgHoldForGround(amount); // WOLFGATE(Planets): requests across unbuilt planet ground wait for it
 
             Parallel.For(0, amount, options, i =>
             {
@@ -131,6 +134,14 @@ namespace Content.Server.NPC.Pathfinding
                     results[i] = PathResult.Continuing;
                     return;
                 }
+
+                // WOLFGATE(Planets) START: held until the planet ground on its way is built
+                if (WgHeld(_pathRequests[i]))
+                {
+                    results[i] = PathResult.Continuing;
+                    return;
+                }
+                // WOLFGATE END
 
                 var request = _pathRequests[i];
 

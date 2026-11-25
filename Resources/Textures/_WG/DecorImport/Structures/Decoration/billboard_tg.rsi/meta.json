@@ -1,0 +1,110 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518.",
+  "size": {
+    "x": 96,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "overlay"
+    },
+    {
+      "name": "billboard_blank"
+    },
+    {
+      "name": "billboard_donk_n_go"
+    },
+    {
+      "name": "billboard_space_cola"
+    },
+    {
+      "name": "billboard_nanotrasen"
+    },
+    {
+      "name": "billboard_azik"
+    },
+    {
+      "name": "billboard_cvr",
+      "delays": [
+        [
+          5.0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          5.0,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "billboard_twenty_four_seven"
+    },
+    {
+      "name": "billboard_starway"
+    },
+    {
+      "name": "billboard_lizards_gas"
+    },
+    {
+      "name": "billboard_lizards_gas_defaced"
+    },
+    {
+      "name": "billboard_roadsign_blank"
+    },
+    {
+      "name": "billboard_roadsign_two"
+    },
+    {
+      "name": "billboard_roadsign_twothousand"
+    },
+    {
+      "name": "billboard_roadsign_twomillion"
+    },
+    {
+      "name": "billboard_roadsign_error"
+    },
+    {
+      "name": "billboard_smoothies"
+    },
+    {
+      "name": "billboard_fortune_tell"
+    },
+    {
+      "name": "billboard_american_diner"
+    },
+    {
+      "name": "billboard_phone"
+    },
+    {
+      "name": "billboard_gloves"
+    }
+  ]
+}

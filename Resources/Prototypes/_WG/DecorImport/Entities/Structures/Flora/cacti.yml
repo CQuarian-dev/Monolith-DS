@@ -1,0 +1,120 @@
+- type: entity
+  parent: BaseFlora
+  id: ChompFloraDesertPlanetBarrelcacti
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti0
+    offset: "0,0"
+    layers:
+    - state: barrelcacti0
+
+- type: entity
+  parent: BaseFlora
+  id: ChompFloraDesertPlanetLbarrelcacti
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: lbarrelcacti0
+    offset: "0,0"
+    layers:
+    - state: lbarrelcacti0
+
+- type: entity
+  parent: BaseFlora
+  id: CMBushDesertCactus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: cactus_3
+    offset: "0,0"
+    layers:
+    - state: cactus_3
+
+- type: entity
+  parent: BaseFlora
+  id: CMDesertCactusMultiple
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: cacti_1
+    offset: "0,0"
+    layers:
+    - state: cacti_1
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompBarrelcacti1
+  suffix: barrelcacti1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti1
+    offset: "0,0"
+    layers:
+    - state: barrelcacti1
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompBarrelcacti2
+  suffix: barrelcacti2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti2
+    offset: "0,0"
+    layers:
+    - state: barrelcacti2
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompBarrelcacti3
+  suffix: barrelcacti3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti3
+    offset: "0,0"
+    layers:
+    - state: barrelcacti3
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompLbarrelcacti1
+  suffix: lbarrelcacti1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: lbarrelcacti1
+    offset: "0,0"
+    layers:
+    - state: lbarrelcacti1
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraAshCacti
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: cactus
+    offset: "0,0"
+    layers:
+    - state: cactus

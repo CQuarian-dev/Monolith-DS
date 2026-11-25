@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Bubberstation at commit https://github.com/Bubberstation/Bubberstation/commit/792301a70da075679790652676e6774e746df81d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "moonwater_surface-0"
+    },
+    {
+      "name": "moonwater_surface-1"
+    },
+    {
+      "name": "moonwater_surface-2"
+    },
+    {
+      "name": "moonwater_surface-3"
+    },
+    {
+      "name": "moonwater_surface-4"
+    },
+    {
+      "name": "moonwater_surface-5"
+    },
+    {
+      "name": "moonwater_surface-6"
+    },
+    {
+      "name": "moonwater_surface-7"
+    },
+    {
+      "name": "moonwater_surface-8"
+    },
+    {
+      "name": "moonwater_surface-9"
+    },
+    {
+      "name": "moonwater_surface-10"
+    },
+    {
+      "name": "moonwater_surface-11"
+    },
+    {
+      "name": "moonwater_surface-12"
+    },
+    {
+      "name": "moonwater_surface-13"
+    },
+    {
+      "name": "moonwater_surface-14"
+    },
+    {
+      "name": "moonwater_surface-15"
+    },
+    {
+      "name": "moonwater_surface-21"
+    },
+    {
+      "name": "moonwater_surface-23"
+    },
+    {
+      "name": "moonwater_surface-29"
+    },
+    {
+      "name": "moonwater_surface-31"
+    },
+    {
+      "name": "moonwater_surface-38"
+    },
+    {
+      "name": "moonwater_surface-39"
+    },
+    {
+      "name": "moonwater_surface-46"
+    },
+    {
+      "name": "moonwater_surface-47"
+    },
+    {
+      "name": "moonwater_surface-55"
+    },
+    {
+      "name": "moonwater_surface-63"
+    },
+    {
+      "name": "moonwater_surface-74"
+    },
+    {
+      "name": "moonwater_surface-75"
+    },
+    {
+      "name": "moonwater_surface-78"
+    },
+    {
+      "name": "moonwater_surface-79"
+    },
+    {
+      "name": "moonwater_surface-95"
+    },
+    {
+      "name": "moonwater_surface-110"
+    },
+    {
+      "name": "moonwater_surface-111"
+    },
+    {
+      "name": "moonwater_surface-127"
+    },
+    {
+      "name": "moonwater_surface-137"
+    },
+    {
+      "name": "moonwater_surface-139"
+    },
+    {
+      "name": "moonwater_surface-141"
+    },
+    {
+      "name": "moonwater_surface-143"
+    },
+    {
+      "name": "moonwater_surface-157"
+    },
+    {
+      "name": "moonwater_surface-159"
+    },
+    {
+      "name": "moonwater_surface-175"
+    },
+    {
+      "name": "moonwater_surface-191"
+    },
+    {
+      "name": "moonwater_surface-203"
+    },
+    {
+      "name": "moonwater_surface-207"
+    },
+    {
+      "name": "moonwater_surface-223"
+    },
+    {
+      "name": "moonwater_surface-239"
+    },
+    {
+      "name": "moonwater_surface-255"
+    }
+  ]
+}

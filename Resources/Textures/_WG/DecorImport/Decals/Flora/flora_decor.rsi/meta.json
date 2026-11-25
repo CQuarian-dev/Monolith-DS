@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7, CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "flowers"
+    },
+    {
+      "name": "grass_outercorner",
+      "directions": 8
+    },
+    {
+      "name": "grass_outercorner_dark",
+      "directions": 8
+    }
+  ]
+}

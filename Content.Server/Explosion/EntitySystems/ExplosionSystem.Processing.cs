@@ -556,6 +556,15 @@ public sealed partial class ExplosionSystem
         if (tileDef.TileId == tileRef.Tile.TypeId)
             return;
 
+        // WOLFGATE(Planets) START: a blast leaves a planet's ground, not station plating, lattice or a hole under a player's floor.
+        if (_wgPlanetTileBreak.BlastTile(tileRef, tileDef) is { } ground)
+        {
+            if (ground != tileRef.Tile)
+                damagedTiles.Add((tileRef.GridIndices, ground));
+            return;
+        }
+        // WOLFGATE END
+
         damagedTiles.Add((tileRef.GridIndices, new Tile(tileDef.TileId)));
     }
 }
@@ -944,4 +953,13 @@ public sealed class QueuedExplosion
     public int MaxTileBreak;
     public bool CanCreateVacuum;
     public EntityUid? Cause; // The entity that exploded, for logging purposes.
+
+    // WOLFGATE(Planets) START: silent flag, so a crash's storm of blasts makes one bang.
+    /// <summary>
+    /// No sound and no camera shake for this one. For storms of explosions queued as a single event, where
+    /// one bang is wanted and a hundred would exhaust the client's audio sources. Combining clears it: an explosion
+    /// merged with an audible one is audible.
+    /// </summary>
+    public bool Silent;
+    // WOLFGATE END
 }

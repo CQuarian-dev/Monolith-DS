@@ -1,0 +1,237 @@
+# NovaSector
+
+- type: entity
+  parent: BaseStructure
+  id: NovaStatueObelisk
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/statuelarge_nova.rsi
+    state: obelisk_base
+    offset: "0,0.5"
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 120
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueObeliskDark
+  components:
+  - type: Sprite
+    state: obelisk_base_dark
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueTwins
+  components:
+  - type: Sprite
+    layers:
+    - state: twins
+    - state: twins-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueTwins
+  id: NovaStatueTwinsLight
+  components:
+  - type: Sprite
+    layers:
+    - state: twins_light
+    - state: twins_light-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueTelekinesis
+  components:
+  - type: Sprite
+    layers:
+    - state: telekenesis
+    - state: telekenesis-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueHonour
+  components:
+  - type: Sprite
+    layers:
+    - state: honour
+    - state: honour-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueHonour
+  id: NovaStatueHonourLight
+  components:
+  - type: Sprite
+    layers:
+    - state: honour_light
+    - state: honour_light-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueLight
+  components:
+  - type: Sprite
+    layers:
+    - state: light_statue
+    - state: light_statue-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueOrder
+  components:
+  - type: Sprite
+    layers:
+    - state: order
+    - state: order-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueLove
+  components:
+  - type: Sprite
+    layers:
+    - state: statue_love
+    - state: statue_love-emissive
+      shader: unshaded
+
+- type: entity
+  parent: NovaStatueObelisk
+  id: NovaStatueCuriosity
+  components:
+  - type: Sprite
+    layers:
+    - state: curiosity
+    - state: curiosity-emissive
+      shader: unshaded
+
+# Aurora
+
+- type: entity
+  parent: BaseStructure
+  id: AuroraMonolith
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/monolith_aurora.rsi
+    offset: "0,0.5"
+    noRot: true
+    layers:
+    - state: jaggy1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        jaggy1: AuroraMonolithRock
+    - base:
+        jaggy2: AuroraMonolithRock
+    - base:
+        jaggy3: AuroraMonolithRock
+    - base:
+        jaggy4: AuroraMonolithRock
+  - type: InteractionOutline
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: AuroraMonolith
+  id: AuroraMonolithActive
+  components:
+  - type: Sprite
+    layers:
+    - state: jaggy1
+      map: [ "base" ]
+    - state: jaggy1decor
+      map: [ "decor" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        jaggy1: AuroraMonolithRock
+      decor:
+        jaggy1decor: AuroraMonolithGlow
+    - base:
+        jaggy2: AuroraMonolithRock
+      decor:
+        jaggy2decor: AuroraMonolithGlow
+    - base:
+        jaggy3: AuroraMonolithRock
+      decor:
+        jaggy3decor: AuroraMonolithGlow
+    - base:
+        jaggy4: AuroraMonolithRock
+      decor:
+        jaggy4decor: AuroraMonolithGlow
+
+# Baystation
+
+- type: entity
+  parent: DecorImportCrystalBase
+  id: BayPylon
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/pylon_baystation.rsi
+    state: pylon
+    offset: "0,0.25"
+  - type: PointLight
+    radius: 5
+    energy: 1
+    color: "#c81414"
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/baystation/Glasshit.ogg
+
+# Polaris
+
+- type: entity
+  parent: BaseStructure
+  id: PolarisPillar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/pillars_polaris.rsi
+    state: pillar
+    offset: "0,0.5"
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: PolarisPillar
+  id: PolarisPillarDark
+  components:
+  - type: Sprite
+    state: dark_pillar

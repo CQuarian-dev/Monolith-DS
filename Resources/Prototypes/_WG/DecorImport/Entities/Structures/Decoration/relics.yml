@@ -1,0 +1,315 @@
+- type: entity
+  parent: BaseStructure
+  id: NovaArtifactConsole
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/artifacts_nova.rsi
+    state: artifact_8_active
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: NovaArtifactEye
+  components:
+  - type: Sprite
+    state: artifact_10_active
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: NovaArtifactGemGreen
+  components:
+  - type: Sprite
+    state: artifact_11_active
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: NovaArtifactGemPink
+  components:
+  - type: Sprite
+    state: artifact_12_active
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: NovaArtifactGemBlue
+  components:
+  - type: Sprite
+    state: artifact_13_active
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: NovaMysteriousPod
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/mysterious_pod_nova.rsi
+    state: autocloner_process
+    noRot: false
+    offset: "0,0.5"
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#00FFFF"
+
+- type: entity
+  parent: DecorImportCrystalBase
+  id: NebulaXenoCrystal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/xeno_crystal_nebula.rsi
+    layers:
+    - state: green
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        green: ""
+    - base:
+        purple: ""
+  - type: PointLight
+    radius: 3
+    energy: 3
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: PolarisAlienTank
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alien_tank_polaris.rsi
+    state: tank_larva
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PolarisAlienTankBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: NovaArtifactConsole
+  id: PolarisAlienTankBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alien_tank_polaris.rsi
+    state: tank_broken
+
+- type: entity
+  parent: ClosetBase
+  id: VoreDropPod
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/droppod_vore.rsi
+    noRot: false
+    offset: "0,0.28"
+    layers:
+    - state: pod # LuaM: our ClosetBase visuals set a Base layer
+      map: ["enum.StorageVisualLayers.Base"]
+      visible: false
+    - state: pod
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: pod # LuaM
+    stateDoorOpen: pod_open
+    stateDoorClosed: pod
+  - type: EntityStorage
+    openSound:
+      path: /Audio/_WG/DecorImport/vorestation/magnetclamp.ogg
+
+- type: entity
+  parent: VoreDropPod
+  id: RMCDropPod
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Machines/drop_pod.rsi
+    offset: "0,0.5"
+    layers:
+    - state: techpod_closed # LuaM: our ClosetBase visuals set a Base layer
+      map: ["enum.StorageVisualLayers.Base"]
+      visible: false
+    - state: techpod_closed
+      map: ["enum.StorageVisualLayers.Door"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: techpod_closed # LuaM
+    stateDoorOpen: techpod_open
+    stateDoorClosed: techpod_closed
+  - type: EntityStorage
+    openSound:
+      path: /Audio/Effects/closetopen.ogg
+
+- type: entity
+  parent: BaseStructure
+  id: TauCetiMoonwell
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/moonwell_taucetistation.rsi
+    noRot: true
+    state: well
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructure
+  id: TGMCXenoCell
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/xenocryo_tgmc.rsi
+    state: xenocelllarva
+    offset: "0,0.5"
+  - type: PointLight
+    radius: 1.5
+    energy: 0.6
+    color: "#9FE6FF"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Glass
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          TGMCXenoCellCracked:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: TGMCXenoCell
+  id: TGMCXenoCellFacehugger
+  components:
+  - type: Sprite
+    state: xenocellhugger
+
+- type: entity
+  parent: TGMCXenoCell
+  id: TGMCXenoCellEgg
+  components:
+  - type: Sprite
+    state: xenocellegg
+
+- type: entity
+  parent: TGMCXenoCell
+  id: TGMCXenoCellEmpty
+  components:
+  - type: Sprite
+    state: xenocellemptyon
+
+- type: entity
+  parent: TGMCXenoCell
+  id: TGMCXenoCellOff
+  components:
+  - type: Sprite
+    state: xenocellemptyoff
+  - type: PointLight
+    enabled: false
+
+- type: entity
+  parent: TGMCXenoCellOff
+  id: TGMCXenoCellCracked
+  components:
+  - type: Sprite
+    layers:
+    - state: xenocellcrackedempty
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        xenocellcrackedempty: ""
+        xenocellcrackedempty2: ""
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: TGMCXenoCellCracked
+  id: TGMCXenoCellCrackedEgg
+  components:
+  - type: Sprite
+    layers:
+    - state: xenocellcrackedegg
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        xenocellcrackedegg: ""
+
+- type: entity
+  parent: BaseStructure
+  id: TGMCQueenSpecimenTank
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/queencryo_tgmc.rsi
+    layers:
+    - state: bigqueencryo3
+      offset: "0,0.5"
+    - state: bigqueencryo4
+      offset: "1,0.5"
+    - state: bigqueencryo1
+      offset: "0,2.5"
+    - state: bigqueencryo2
+      offset: "1,2.5"
+  - type: PointLight
+    radius: 3
+    energy: 1
+    color: "#FFB040"
+    offset: "0.5,1.5"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

@@ -39,6 +39,11 @@ see_own_notes = true
 [mono]
 company_whitelist = false
 
+# WOLFGATE(Planets) START: planet networks are on in development builds.
+[wg]
+planet_networks = true
+# WOLFGATE END
+
 # LuaM: no watchdog locally, a shutdown at round end would just close the server
 [server]
 restart_on_round_end = false

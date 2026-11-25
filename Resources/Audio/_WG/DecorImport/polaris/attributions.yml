@@ -1,0 +1,4 @@
+- files: ["HeavySand1.ogg", "HeavySand2.ogg", "HeavySand3.ogg", "HeavySand4.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Polaris at commit https://github.com/PolarisSS13/Polaris/commit/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25."
+  source: "https://github.com/PolarisSS13/Polaris/tree/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/sound/effects/footstep"

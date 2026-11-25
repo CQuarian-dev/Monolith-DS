@@ -1,0 +1,79 @@
+- files: [ carpet_black.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/carpet.dmi (state black)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ carpet_green.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/carpet.dmi (state green)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ carpet_red.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/carpet.dmi (state red)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ exoplanet_lava.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/lava.dmi (state lava)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ floor_greengrid.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/circuit.dmi (state gcircuit)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ floor_reinforced_2.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/floors.dmi (state reinforced)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ shallow_chlorine_liquid.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/chlorine.dmi (state chlorine_liquid)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ shallow_tar.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/shrouded.dmi (state shrouded_tar)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ skrell_blue.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/skrellturf.dmi (state skrellblue)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ skrell_red.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/skrellturf.dmi (state skrellred)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ skrell_white.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/skrellturf.dmi (state skrellwhite)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ chlorine_sand.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/chlorine.dmi (states chlorine_sand0 to chlorine_sand11)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ flesh.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/flesh.dmi (states flesh0 to flesh3)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ lava_cold.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/lava.dmi (state cold)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ chlorine_sand_edge_south.png, chlorine_sand_edge_north.png, chlorine_sand_edge_east.png, chlorine_sand_edge_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/chlorine.dmi (state edge0)."
+  source: "https://github.com/Baystation12/Baystation12"
+
+- files: [ lava_cold_edge_south.png, lava_cold_edge_north.png, lava_cold_edge_east.png, lava_cold_edge_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/icons/turf/flooring/lava.dmi (state edge0)."
+  source: "https://github.com/Baystation12/Baystation12"

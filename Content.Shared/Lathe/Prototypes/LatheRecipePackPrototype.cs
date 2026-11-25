@@ -1,3 +1,6 @@
+using System.Linq; // LuaM
+using Content.Shared._WG.CCVar; // LuaM
+using Robust.Shared.Configuration; // LuaM
 using Content.Shared.Research.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Array;
@@ -28,4 +31,12 @@ public sealed partial class LatheRecipePackPrototype : IPrototype, IInheritingPr
     [DataField(required: true)]
     [AlwaysPushInheritance]
     public HashSet<ProtoId<LatheRecipePrototype>> Recipes = new();
+
+    // LuaM-start
+    [DataField]
+    public HashSet<ProtoId<LatheRecipePrototype>>? PlanetRecipes;
+
+    public IEnumerable<ProtoId<LatheRecipePrototype>> GetRecipes(IConfigurationManager cfg) =>
+        PlanetRecipes != null && PlanetCVars.NetworksEnabled(cfg) ? Recipes.Concat(PlanetRecipes) : Recipes;
+    // LuaM-end
 }

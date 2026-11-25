@@ -1,0 +1,810 @@
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerBlue
+  suffix: flower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_blue
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_blue
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerBlueTwo
+  suffix: two
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_blue2
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_blue2
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerOrange
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_orange
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_orange
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerPink
+  suffix: flower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_pink
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_pink
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerPinkTwo
+  suffix: two
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_pink2
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_pink2
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerPinkThree
+  suffix: three
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_pink3
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_pink3
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerPinkFour
+  suffix: four
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_pink4
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_pink4
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerPurple
+  suffix: flower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_purple
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_purple
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerPurpleTwo
+  suffix: two
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_purple2
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_purple2
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerRed
+  suffix: flower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_red
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_red
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerRedTwo
+  suffix: two
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_red2
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_red2
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerWhite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_white
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_white
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantFlowerYellowhite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_yw
+    offset: "-0.109,-0.109"
+    layers:
+    - state: flower_yw
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerBluestar
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wooly_bluestar
+    offset: "0,0"
+    layers:
+    - state: wooly_bluestar
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerFlax
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: prairie_flax
+    offset: "0,0"
+    layers:
+    - state: prairie_flax
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerMarigold
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: marigold
+    offset: "0,0"
+    layers:
+    - state: marigold
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerPaintbrush
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: indian_paintbrush
+    offset: "0,0"
+    layers:
+    - state: indian_paintbrush
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerPrimrose
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: evening_primrose
+    offset: "0,0"
+    layers:
+    - state: evening_primrose
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerTurtleback
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: velvet_turtleback
+    offset: "0,0"
+    layers:
+    - state: velvet_turtleback
+
+- type: entity
+  parent: BaseFlora
+  id: DarkPackFloraDarkpackFlowerYerba
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: yerba_mansa
+    offset: "0,0"
+    layers:
+    - state: yerba_mansa
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshPlasmaFlower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: plasma_flower1
+    offset: "0,0"
+    layers:
+    - state: plasma_flower1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshPodsneyzka
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: flower1
+    offset: "0,0"
+    layers:
+    - state: flower1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshVahrezjia
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: flowerpod1
+    offset: "0,0"
+    layers:
+    - state: flowerpod1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshFireblossom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: fireblossom1
+    offset: "0,0"
+    layers:
+    - state: fireblossom1
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraAshFireblossom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: fireblossom
+    offset: "0,0"
+    layers:
+    - state: fireblossom
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantCarrot
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: carrot
+    offset: "0,0"
+    layers:
+    - state: carrot
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantFeverBlossom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_blossom
+    offset: "0,0"
+    layers:
+    - state: wild_blossom
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantForgetmenot
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: forget_me_not
+    offset: "0,0"
+    layers:
+    - state: forget_me_not
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantGeranium
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: geranium
+    offset: "0,0"
+    layers:
+    - state: geranium
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantGrape
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: grape
+    offset: "0,0"
+    layers:
+    - state: grape
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantLily
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: lily
+    offset: "0,0"
+    layers:
+    - state: lily
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantRose
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: rose
+    offset: "0,0"
+    layers:
+    - state: rose
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantSunflower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: sunflower
+    offset: "0,0"
+    layers:
+    - state: sunflower
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantTomato
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: tomato
+    offset: "0,0"
+    layers:
+    - state: tomato
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildAgave
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_agave
+    offset: "0,0"
+    layers:
+    - state: wild_agave
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildBroc
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_broc
+    offset: "0,0"
+    layers:
+    - state: wild_broc
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildBuffalogourd
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_gourd
+    offset: "0,0"
+    layers:
+    - state: wild_gourd
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildCoyote
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_coyote
+    offset: "0,0"
+    layers:
+    - state: wild_coyote
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildDatura
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_datura
+    offset: "0,0"
+    layers:
+    - state: wild_datura
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildFeracactus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_feracactus
+    offset: "0,0"
+    layers:
+    - state: wild_feracactus
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildFungus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_fungus
+    offset: "0,0"
+    layers:
+    - state: wild_fungus
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildHorsenettle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_horsenettle
+    offset: "0,0"
+    layers:
+    - state: wild_horsenettle
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildMesquite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_mesquite
+    offset: "0,0"
+    layers:
+    - state: wild_mesquite
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildMutfruit
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_mutfruit
+    offset: "0,0"
+    layers:
+    - state: wild_mutfruit
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraWasteplantWildPinyon
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_pinyon
+    offset: "0,0"
+    layers:
+    - state: wild_pinyon
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildPrickly
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_prickly
+    offset: "0,0"
+    layers:
+    - state: wild_prickly
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildPunga
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_punga
+    offset: "0,0"
+    layers:
+    - state: wild_punga
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildTato
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_tato
+    offset: "0,0"
+    layers:
+    - state: wild_tato
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildXander
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_xander
+    offset: "0,0"
+    layers:
+    - state: wild_xander
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWasteplantWildYucca
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_yucca
+    offset: "0,0"
+    layers:
+    - state: wild_yucca
+
+- type: entity
+  parent: BaseFlora
+  id: ParaFloraCornStalkAlt1
+  suffix: 1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: cornstalk2
+    offset: "0,0"
+    layers:
+    - state: cornstalk2
+
+- type: entity
+  parent: BaseFlora
+  id: ParaFloraCornStalkAlt2
+  suffix: 2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: cornstalk3
+    offset: "0,0"
+    layers:
+    - state: cornstalk3
+
+- type: entity
+  parent: BaseFlora
+  id: ChompFloraTyrLilly
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: lilly
+    offset: "0,0"
+    layers:
+    - state: lilly
+
+- type: entity
+  parent: BaseFlora
+  id: PolarisFloraSifFrostbelle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: frostbelle
+    offset: "0,0"
+    layers:
+    - state: frostbelle
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWildPlantPetunia
+  suffix: plant
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: petunia
+    offset: "0.500,0.500"
+    layers:
+    - state: petunia
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantPetuniaBlue
+  suffix: blue
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: petunia_blue
+    offset: "0.500,0.500"
+    layers:
+    - state: petunia_blue
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantPetuniaBluewhite
+  suffix: bluewhite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: petunia_bluewhite
+    offset: "0.500,0.500"
+    layers:
+    - state: petunia_bluewhite
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantPetuniaPurple
+  suffix: purple
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: petunia_purple
+    offset: "0.500,0.500"
+    layers:
+    - state: petunia_purple
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantPetuniaPurplewhite
+  suffix: purplewhite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: petunia_purplewhite
+    offset: "0.500,0.500"
+    layers:
+    - state: petunia_purplewhite
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteWildPlantPetuniaRedwhite
+  suffix: redwhite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: petunia_redwhite
+    offset: "0.500,0.500"
+    layers:
+    - state: petunia_redwhite
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraWildPlantThistle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_64x64.rsi
+    state: thistle
+    offset: "0.500,0.500"
+    layers:
+    - state: thistle

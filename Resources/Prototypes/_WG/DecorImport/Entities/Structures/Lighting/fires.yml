@@ -1,0 +1,280 @@
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanProp, BaseUrbanIgnitable ]
+  id: BaseUrbanFire
+
+- type: entity
+  abstract: true
+  parent: BaseUrbanFire
+  id: BaseUrbanCampfire
+  components:
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseUrbanCampfire
+  id: AuroraCampfire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/fires_aurora.rsi
+    offset: 0,0.25
+    layers:
+    - state: campfire
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/fires_aurora.rsi
+    normalState: campfire_lit
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: BaseUrbanFire
+  id: AuroraFireBarrel
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/fires_aurora.rsi
+    offset: 0,0.25
+    layers:
+    - state: fire_barrel
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/fires_aurora.rsi
+    normalState: fire_barrel_lit
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: BaseUrbanProp
+  id: AuroraBarrelGrill
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/fires_aurora.rsi
+    offset: 0,0.25
+    state: barrel_grill
+
+- type: entity
+  parent: BaseUrbanFire
+  id: CoyoteDrumFire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    layers:
+    - state: drumfire
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    normalState: drumfire-lit
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: BaseUrbanFire
+  id: CoyotePotbellyStove
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    layers:
+    - state: potbelly
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    normalState: potbelly-lit
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.50
+    maxLightRadius: 3
+    lightEnergyPerStack: 0.00
+    maxLightEnergy: 1
+
+- type: entity
+  parent: BaseUrbanCampfire
+  id: CoyoteBonfire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    layers:
+    - state: bonfire
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    normalState: bonfire_warm
+    alternateState: bonfire_on_fire_intense
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 1.50
+    maxLightRadius: 6
+    lightEnergyPerStack: 0.33
+    maxLightEnergy: 2
+
+- type: entity
+  parent: BaseUrbanCampfire
+  id: CoyoteCampfire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    layers:
+    - state: campfire
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    normalState: campfire-lit
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: BaseUrbanCampfire
+  id: CoyoteCampfireTall
+  suffix: Tall flames
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    layers:
+    - state: campfire0
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    normalState: campfire_overlay
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: BaseUrbanProp
+  id: CoyoteSmallFlame
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    layers:
+    - state: campfire_o
+  - type: PointLight
+    radius: 3
+    energy: 1.2
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CoyoteFireRoastingRod
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    drawdepth: Overdoors
+    state: bonfire_rod
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CoyoteFireGrill
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    drawdepth: Overdoors
+    state: bonfire_grill
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: CoyoteFireStones
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/heating.rsi
+    drawdepth: FloorObjects
+    state: bonfire_stones
+
+- type: entity
+  parent: BaseUrbanFire
+  id: DarkPackWallTorch
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/torch.rsi
+    layers:
+    - state: torch
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Lighting/torch.rsi
+    normalState: torch_lit
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.13
+    maxLightEnergy: 1.4
+
+- type: entity
+  parent: BaseUrbanCampfire
+  id: DarkPackBonfire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/fires.rsi
+    offset: "0,0.25"
+    layers:
+    - state: bonfire
+  - type: Physics
+    canCollide: false
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Decoration/fires.rsi
+    normalState: bonfire_on_fire
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 1.50
+    maxLightRadius: 6
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: DarkPackBonfire
+  id: DarkPackCampfire
+  components:
+  - type: Sprite
+    layers:
+    - state: campfire
+  - type: FireVisuals
+    sprite: _WG/DecorImport/Structures/Decoration/fires.rsi
+    normalState: campfire_on_fire
+    lightColor: "#FF9A3C"
+    lightRadiusPerStack: 0.83
+    maxLightRadius: 4
+    lightEnergyPerStack: 0.20
+    maxLightEnergy: 1.6
+
+- type: entity
+  parent: [ BaseUrbanProp, BaseUrbanToggleLight ]
+  id: DarkPackBrazier
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/brazier.rsi
+    layers:
+    - state: brazier
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: ItemToggle
+    activated: false
+    onUse: false
+  - type: PointLight
+    enabled: false
+    radius: 5
+    energy: 3
+    color: "#ffa35c"
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: brazier_lit }
+          False: { state: brazier }
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

@@ -1,0 +1,14 @@
+- files: ["hit_stone.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3."
+  source: "https://github.com/shiptest-ss13/Shiptest/blob/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3/sound/effects/hit_stone.ogg"
+
+- files: ["ice1.ogg", "ice2.ogg", "ice3.ogg", "ice4.ogg", "ice5.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3."
+  source: "https://github.com/shiptest-ss13/Shiptest/tree/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3/sound/effects/footstep"
+
+- files: ["concrete1.ogg", "concrete2.ogg", "concrete3.ogg", "concrete4.ogg", "concrete5.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3."
+  source: "https://github.com/shiptest-ss13/Shiptest/tree/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3/sound/effects/footstep"

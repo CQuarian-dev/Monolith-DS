@@ -1,0 +1,1203 @@
+- type: entity
+  parent: BaseTree
+  id: CMTreeTyrargoSmallTree3
+  suffix: 3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_3
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_3
+
+- type: entity
+  parent: BaseTree
+  id: CMTreeTyrargoSmallTree5
+  suffix: 5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_5_cmss13
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_5_cmss13
+
+- type: entity
+  parent: BaseTree
+  id: CitFloraTreeSpookytime
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: deadtree_1
+    offset: "0.0,0.500"
+    layers:
+    - state: deadtree_1
+
+- type: entity
+  parent: BaseTree
+  id: CitFloraAshtree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x63.rsi
+    state: ashtree
+    offset: "0.0,0.484"
+    layers:
+    - state: ashtree
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeAfricanAcacia
+  suffix: african
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: african_acacia
+    offset: "0.0,0.500"
+    layers:
+    - state: african_acacia
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeAfricanAcaciaAlt
+  suffix: alt
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: african_acaciaX
+    offset: "0.0,0.500"
+    layers:
+    - state: african_acaciaX
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeAfricanAcaciaDead
+  suffix: dead
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: african_acacia_dead
+    offset: "0.0,0.500"
+    layers:
+    - state: african_acacia_dead
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeCherryblossom
+  suffix: cherryblossom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: cherry_blossom_1
+    offset: "0.0,0.500"
+    layers:
+    - state: cherry_blossom_1
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeCherryblossom3
+  suffix: cherryblossom3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: cherry_blossom_3
+    offset: "0.0,0.500"
+    layers:
+    - state: cherry_blossom_3
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeMedPine
+  suffix: pine
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: med_pine
+    offset: "0.0,0.500"
+    layers:
+    - state: med_pine
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeOakOne
+  suffix: one
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_1_coyote
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_1_coyote
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeOakTwo
+  suffix: two
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_2
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_2
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeOakFour
+  suffix: four
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_4
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_4
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeOakFive
+  suffix: five
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_5_coyote
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_5_coyote
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeThickTree
+  suffix: thick
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: thick_tree
+    offset: "0.0,0.500"
+    layers:
+    - state: thick_tree
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraBurnedtree1
+  suffix: burnedtree1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: burnedtree1
+    offset: "0.500,0.500"
+    layers:
+    - state: burnedtree1
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraBurnedtree2
+  suffix: burnedtree2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: burnedtree2
+    offset: "0.500,0.500"
+    layers:
+    - state: burnedtree2
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraBurnedtree3
+  suffix: burnedtree3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: burnedtree3
+    offset: "0.500,0.500"
+    layers:
+    - state: burnedtree3
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraBurnedtree5
+  suffix: burnedtree5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: burnedtree5
+    offset: "0.500,0.500"
+    layers:
+    - state: burnedtree5
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeHardwoodEbony
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: ebony_1
+    offset: "0.0,0.500"
+    layers:
+    - state: ebony_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeHardwoodMahogany
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: mahogany_1
+    offset: "0.0,0.500"
+    layers:
+    - state: mahogany_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeHardwoodMaple
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: maple_1
+    offset: "0.0,0.500"
+    layers:
+    - state: maple_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeHardwoodWalnut
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: walnut_1
+    offset: "0.0,0.500"
+    layers:
+    - state: walnut_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeHardwoodYew
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: yew_1
+    offset: "0.0,0.500"
+    layers:
+    - state: yew_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeDeadEbony
+  suffix: ebony
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: dead_ebony_1
+    offset: "0.0,0.500"
+    layers:
+    - state: dead_ebony_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeDeadMahogany
+  suffix: mahogany
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: dead_mahogany_1
+    offset: "0.0,0.500"
+    layers:
+    - state: dead_mahogany_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeDeadMaple
+  suffix: maple
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: dead_maple_1
+    offset: "0.0,0.500"
+    layers:
+    - state: dead_maple_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeDeadWalnut
+  suffix: walnut
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: dead_walnut_1
+    offset: "0.0,0.500"
+    layers:
+    - state: dead_walnut_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeDeadYew
+  suffix: yew
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: dead_yew_1
+    offset: "0.0,0.500"
+    layers:
+    - state: dead_yew_1
+
+- type: entity
+  parent: BaseTree
+  id: NebulaTreeSoftwoodTowercap
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: towercap_1
+    offset: "0.0,0.500"
+    layers:
+    - state: towercap_1
+
+- type: entity
+  parent: BaseTree
+  id: GoonTreeCarcosa
+  suffix: carcosa
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x64_goonstation.rsi
+    state: tree1
+    offset: "-0.125,0.500"
+    layers:
+    - state: tree1
+
+- type: entity
+  parent: BaseTree
+  id: GoonTreeCarcosaThree
+  suffix: three
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x64_goonstation.rsi
+    state: planthuge2
+    offset: "-0.125,0.500"
+    layers:
+    - state: planthuge2
+
+- type: entity
+  parent: BaseTree
+  id: YogTreeDeadJungle
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: nwtree_1
+    offset: "0.0,0.500"
+    layers:
+    - state: nwtree_1
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestTreeDeadHell
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_1_shiptest
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_1_shiptest
+  - type: PointLight
+    radius: 2.5
+    energy: 0.85
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestFloraTreeDeadPine
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: med_pine_dead
+    offset: "0.0,0.500"
+    layers:
+    - state: med_pine_dead
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestFloraTreeCactus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: cactus1
+    offset: "0.0,0.500"
+    layers:
+    - state: cactus1
+
+- type: entity
+  parent: BaseTree
+  id: VoreFloraTreeSif
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees.rsi
+    state: tree_sif
+    offset: "0.0,0.500"
+    layers:
+    - state: tree_sif
+
+- type: entity
+  parent: BaseTree
+  id: TgFloraTreePalm
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_32x64.rsi
+    state: palm1
+    offset: "0.0,0.500"
+    layers:
+    - state: palm1
+
+- type: entity
+  parent: BaseTree
+  id: AuroraFloraTreeAdhomai
+  suffix: adhomai
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x128.rsi
+    state: tree1
+    offset: "0.0,1.500"
+    layers:
+    - state: tree1
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraFloraStumpAdhomai
+  suffix: adhomai
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x128.rsi
+    state: stump
+    offset: "0.0,1.500"
+    layers:
+    - state: stump
+
+- type: entity
+  parent: BaseTree
+  id: AuroraFloraTreeDesert
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x128.rsi
+    state: desert_tree
+    offset: "0.500,1.500"
+    layers:
+    - state: desert_tree
+
+- type: entity
+  parent: BaseTree
+  id: AuroraFloraTreeGrove
+  suffix: grove
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x128.rsi
+    state: grove_tree1
+    offset: "0.500,1.500"
+    layers:
+    - state: grove_tree1
+
+- type: entity
+  parent: BaseTree
+  id: AuroraFloraTreeMushroom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x128.rsi
+    state: shroom
+    offset: "0.500,1.500"
+    layers:
+    - state: shroom
+
+- type: entity
+  parent: BaseTree
+  id: AuroraFloraTreeCrystal
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: gem
+    offset: "0.0,1.0"
+    layers:
+    - state: gem
+
+- type: entity
+  parent: BaseTree
+  id: AuroraFloraTreeKonyang
+  suffix: konyang
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: tree_example
+    offset: "0.0,1.0"
+    layers:
+    - state: tree_example
+
+- type: entity
+  parent: BaseTree
+  id: AuroraTreeKonyangBlossom
+  suffix: blossom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: blossom_beet_tree_example
+    offset: "0.0,1.0"
+    layers:
+    - state: blossom_beet_tree_example
+
+- type: entity
+  parent: BaseTree
+  id: AuroraTreeKonyangFall
+  suffix: fall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: fall_beet_tree_example
+    offset: "0.0,1.0"
+    layers:
+    - state: fall_beet_tree_example
+
+- type: entity
+  parent: BaseRock
+  id: AuroraFloraRockSpire
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: spire
+    offset: "0.0,1.0"
+    layers:
+    - state: spire
+
+- type: entity
+  parent: BaseTree
+  id: AuroraJungleSmallPatienceTop
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: patiencetop
+    offset: "0,0"
+    layers:
+    - state: patiencetop
+
+- type: entity
+  parent: BaseTree
+  id: GoonTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_goonstation.rsi
+    state: tree
+    offset: "0.375,1.0"
+    layers:
+    - state: tree
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: GoonTree
+  id: GoonTree2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonTree
+  id: GoonTree3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: GoonTree
+  id: GoonTree4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: BaseTree
+  id: GoonTreeSakuraTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_goonstation.rsi
+    state: sakuratree
+    offset: "0.375,1.0"
+    layers:
+    - state: sakuratree
+
+- type: entity
+  parent: BaseTree
+  id: DarkPackFloraTreeVamp
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x96.rsi
+    state: tree1
+    offset: "0.500,1.0"
+    layers:
+    - state: tree1
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraStump
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x96.rsi
+    state: tree_stump_coyote
+    offset: "0.0,1.0"
+    layers:
+    - state: tree_stump_coyote
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraStump
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x96.rsi
+    state: tree_stump_shiptest
+    offset: "0.0,1.0"
+    layers:
+    - state: tree_stump_shiptest
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestFloraTreeChapel
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x96.rsi
+    state: churchtree
+    offset: "0.0,1.0"
+    layers:
+    - state: churchtree
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestFloraTreePine
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x96.rsi
+    state: pine_1
+    offset: "0.0,1.0"
+    layers:
+    - state: pine_1
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestDeadTallGrey
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x128.rsi
+    state: tree_1
+    offset: "0.0,1.500"
+    layers:
+    - state: tree_1
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestTreeTallWhitesands
+  suffix: whitesands
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x128.rsi
+    state: pine_1
+    offset: "0.0,1.500"
+    layers:
+    - state: pine_1
+
+- type: entity
+  parent: BaseTree
+  id: ShiptestTreeDeadBarren
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_64x152.rsi
+    state: barren_large
+    offset: "0.0,1.875"
+    layers:
+    - state: barren_large
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeCypressTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x96.rsi
+    state: cypress_tree
+    offset: "0.0,1.0"
+    layers:
+    - state: cypress_tree
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreeRainforestTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x96.rsi
+    state: rainforest_tree
+    offset: "0.281,1.0"
+    layers:
+    - state: rainforest_tree
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetDesertTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: desert_tree
+    offset: "0.281,2.0"
+    layers:
+    - state: desert_tree
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetDesertTree1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: desert_tree1
+    offset: "0.750,2.0"
+    layers:
+    - state: desert_tree1
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetDesertTree3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: desert_tree3
+    offset: "0.906,2.0"
+    layers:
+    - state: desert_tree3
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetMpalmtree
+  suffix: mpalmtree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: mpalmtree
+    offset: "0.719,2.0"
+    layers:
+    - state: mpalmtree
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetMpalmtreeb1
+  suffix: mpalmtreeb1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: mpalmtreeb1
+    offset: "0.656,2.0"
+    layers:
+    - state: mpalmtreeb1
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetPalmtree1
+  suffix: palmtree1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: palmtree1
+    offset: "0.625,2.0"
+    layers:
+    - state: palmtree1
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetSpalmtree
+  suffix: spalmtree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: spalmtree
+    offset: "0.312,2.0"
+    layers:
+    - state: spalmtree
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetMpalmtreeb
+  suffix: mpalmtreeb
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: mpalmtreeb
+    offset: "1.500,2.0"
+    layers:
+    - state: mpalmtreeb
+
+- type: entity
+  parent: BaseTree
+  id: ChompTreeDesertPlanetPalmtree
+  suffix: palmtree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: palmtree
+    offset: "1.500,2.0"
+    layers:
+    - state: palmtree
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraChompPalmstump
+  suffix: palmstump
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: palmrs_stump
+    offset: "2.0,2.0"
+    layers:
+    - state: palmrs_stump
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraChompPalmstump2
+  suffix: palmstump2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: palml_stump
+    offset: "0.625,2.0"
+    layers:
+    - state: palml_stump
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteTreeChompLcactus
+  suffix: lcactus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: lcactus
+    offset: "1.500,2.0"
+    layers:
+    - state: lcactus
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteTreeChompLcactus1
+  suffix: lcactus1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: lcactus1
+    offset: "1.500,2.0"
+    layers:
+    - state: lcactus1
+
+- type: entity
+  parent: BaseRock
+  id: CoyoteFloraChompBoulder
+  suffix: boulder
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: boulder
+    offset: "0.781,2.0"
+    layers:
+    - state: boulder
+
+- type: entity
+  parent: BaseRock
+  id: CoyoteFloraChompLargeBoulder
+  suffix: chomp boulder
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: large_boulder
+    offset: "-0.562,2.0"
+    layers:
+    - state: large_boulder
+
+- type: entity
+  parent: BaseRock
+  id: CoyoteFloraChompTallBoulder
+  suffix: tall boulder
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x160.rsi
+    state: tall_boulder
+    offset: "0.469,2.0"
+    layers:
+    - state: tall_boulder
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteFloraTreePinkTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_193x133.rsi
+    state: pink_tree
+    offset: "1.047,1.578"
+    layers:
+    - state: pink_tree
+
+- type: entity
+  parent: BaseTree
+  id: DarkPackTreeVampPine
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_96x256.rsi
+    state: pine1
+    offset: "-0.188,3.500"
+    layers:
+    - state: pine1
+
+- type: entity
+  parent: BaseTree
+  id: NovaTreeMushroomReverse
+  suffix: flora reverse
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x160.rsi
+    state: tree2
+    offset: "0.0,1.375"
+    layers:
+    - state: tree2
+
+- type: entity
+  parent: BaseTree
+  id: NovaMushroomBlueReverse
+  suffix: reverse
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x160.rsi
+    state: tree_blue2
+    offset: "0.0,1.375"
+    layers:
+    - state: tree_blue2
+
+- type: entity
+  parent: BaseTree
+  id: NovaMushroomGreenReverse
+  suffix: green reverse
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x160.rsi
+    state: tree_green2
+    offset: "0.0,1.375"
+    layers:
+    - state: tree_green2
+
+- type: entity
+  parent: BaseTree
+  id: NovaStumpMushroomReverse
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x160.rsi
+    state: tree2_dead
+    offset: "0.0,1.375"
+    layers:
+    - state: tree2_dead
+
+- type: entity
+  parent: BaseTree
+  id: FulpFloraTreeCherry
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_128x160.rsi
+    state: cherry
+    offset: "0.188,1.375"
+    layers:
+    - state: cherry
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: FulpFloraTreeCherry
+  id: FulpFloraTreeCherry2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteTreeVirgoBigtree2
+  suffix: bigtree2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x192.rsi
+    state: bigtree2
+    offset: "-0.062,2.500"
+    layers:
+    - state: bigtree2
+
+- type: entity
+  parent: BaseTree
+  id: CoyoteTreeVirgoBigtree3
+  suffix: bigtree3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_trees_160x192.rsi
+    state: bigtree3
+    offset: "0.0,2.500"
+    layers:
+    - state: bigtree3

@@ -1,0 +1,92 @@
+# Bubberstation
+
+- type: entity
+  parent: FloorWaterEntity
+  id: BubberFloorMoonWater
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/bubber/moonwater.rsi
+    layers:
+    - state: moonwater-255
+  - type: Icon
+    sprite: _WG/DecorImport/Tiles/bubber/moonwater.rsi
+    state: moonwater-255
+  - type: IconSmooth
+    key: moonwater
+    base: moonwater-
+    mode: Bitmask
+
+- type: entity
+  parent: FloorWaterEntity
+  id: BubberFloorMoonWaterSurface
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Tiles/bubber/moonwater_surface.rsi
+    layers:
+    - state: moonwater_surface-255
+  - type: Icon
+    sprite: _WG/DecorImport/Tiles/bubber/moonwater_surface.rsi
+    state: moonwater_surface-255
+  - type: IconSmooth
+    key: moonwater_surface
+    base: moonwater_surface-
+    mode: Bitmask
+
+# Goonstation
+
+- type: entity
+  parent: BaseRock
+  id: GoonMeteorHuge
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/meteor96x96_goon.rsi
+    state: flaming
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/goonstation/Generic_Hit_Heavy_1.ogg
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 1.3
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 400
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Coal1:
+            min: 2
+            max: 4
+          SteelOre1:
+            min: 2
+            max: 4
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/_WG/DecorImport/goonstation/exlow.ogg
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+# /tg/station
+
+- type: entity
+  parent: FloorWaterEntity
+  id: TgSpring
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/spring_tgstation.rsi
+    layers:
+    - state: spring
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/spring_tgstation.rsi
+    state: spring

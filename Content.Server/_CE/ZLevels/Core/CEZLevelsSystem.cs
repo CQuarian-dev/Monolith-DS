@@ -3,6 +3,8 @@
  * https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT
  */
 
+using Content.Shared._LuaM.CCVar; // LuaM
+using Robust.Shared.Configuration; // LuaM
 using Content.Server._CE.ZLevels.Core.Components;
 using Content.Server.Station.Events;
 using Content.Server.Station.Systems;
@@ -18,6 +20,8 @@ namespace Content.Server._CE.ZLevels.Core;
 public sealed partial class CEZLevelsSystem : CESharedZLevelsSystem
 {
     [Dependency] private MapSystem _map = default!;
+    [Dependency] private IConfigurationManager _luamCfg = default!; // LuaM
+    private bool _luamGridNetworks; // LuaM
     [Dependency] private MapLoaderSystem _mapLoader = default!;
     [Dependency] private TransformSystem _transform = default!;
     [Dependency] private MetaDataSystem _meta = default!;
@@ -31,6 +35,8 @@ public sealed partial class CEZLevelsSystem : CESharedZLevelsSystem
 
         InitView();
         InitializeTransit();
+        InitializeGroundFriction();
+        Subs.CVar(_luamCfg, LuaMCVars.ZLevelsGridNetworks, value => _luamGridNetworks = value, true); // LuaM
 
         SubscribeLocalEvent<CEStationZLevelsComponent, StationPostInitEvent>(OnStationPostInit);
         SubscribeLocalEvent<CEZMapComponent, EntityTerminatingEvent>(OnZMapTerminating); // LuaM
@@ -137,6 +143,13 @@ public sealed partial class CEZLevelsSystem : CESharedZLevelsSystem
         base.Update(frameTime);
 
         UpdateGridGravity(frameTime);
+        // LuaM-start
+        if (_luamGridNetworks)
+        {
+            UpdateGroundFriction();
+            UpdateWallCollision();
+        }
+        // LuaM-end
         UpdateView(frameTime);
         CleanupOrphanedTransitMaps();
     }

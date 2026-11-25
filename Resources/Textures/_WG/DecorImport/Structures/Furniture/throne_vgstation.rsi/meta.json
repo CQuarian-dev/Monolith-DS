@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from vgstation at commit https://github.com/vgstation-coders/vgstation13/commit/23f25f386f7a6c75b1a604029848d798e8b7ec06.",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "throne",
+      "directions": 4
+    },
+    {
+      "name": "skullthrone",
+      "directions": 4
+    }
+  ]
+}

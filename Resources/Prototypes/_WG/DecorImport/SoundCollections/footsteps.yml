@@ -1,0 +1,33 @@
+- type: soundCollection
+  id: BayFootstepSand
+  files:
+  - /Audio/_WG/DecorImport/baystation/sand1.ogg
+  - /Audio/_WG/DecorImport/baystation/sand2.ogg
+  - /Audio/_WG/DecorImport/baystation/sand3.ogg
+  - /Audio/_WG/DecorImport/baystation/sand4.ogg
+
+- type: soundCollection
+  id: PolarisFootstepHeavySand
+  files:
+  - /Audio/_WG/DecorImport/polaris/HeavySand1.ogg
+  - /Audio/_WG/DecorImport/polaris/HeavySand2.ogg
+  - /Audio/_WG/DecorImport/polaris/HeavySand3.ogg
+  - /Audio/_WG/DecorImport/polaris/HeavySand4.ogg
+
+- type: soundCollection
+  id: ShiptestFootstepIce
+  files:
+  - /Audio/_WG/DecorImport/shiptest/ice1.ogg
+  - /Audio/_WG/DecorImport/shiptest/ice2.ogg
+  - /Audio/_WG/DecorImport/shiptest/ice3.ogg
+  - /Audio/_WG/DecorImport/shiptest/ice4.ogg
+  - /Audio/_WG/DecorImport/shiptest/ice5.ogg
+
+- type: soundCollection
+  id: ShiptestFootstepConcrete
+  files:
+  - /Audio/_WG/DecorImport/shiptest/concrete1.ogg
+  - /Audio/_WG/DecorImport/shiptest/concrete2.ogg
+  - /Audio/_WG/DecorImport/shiptest/concrete3.ogg
+  - /Audio/_WG/DecorImport/shiptest/concrete4.ogg
+  - /Audio/_WG/DecorImport/shiptest/concrete5.ogg

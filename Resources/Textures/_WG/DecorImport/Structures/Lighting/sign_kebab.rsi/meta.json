@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "Kebab",
+      "delays": [
+        [
+          2.0,
+          0.05,
+          0.1,
+          0.1,
+          2.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "base",
+      "delays": [
+        [
+          2.0,
+          0.05,
+          0.1,
+          0.1,
+          2.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "broken",
+      "delays": [
+        [
+          2.0,
+          0.05,
+          0.1,
+          0.1,
+          2.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "burned",
+      "delays": [
+        [
+          2.0,
+          0.05,
+          0.1,
+          0.1,
+          2.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "empty",
+      "delays": [
+        [
+          2.0,
+          0.05,
+          0.1,
+          0.1,
+          2.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "glow",
+      "delays": [
+        [
+          2.0,
+          0.05,
+          0.1,
+          0.1,
+          2.0,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

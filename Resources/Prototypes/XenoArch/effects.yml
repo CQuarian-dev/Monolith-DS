@@ -947,7 +947,7 @@
         - id: MobAdultSlimesYellowAngry
         - id: MobAngryBee
         - id: MobBearSpace
-        - id: MobXenoRavager
+        - id: NFMobXenoRavager # LuaM
         - id: MobTick
         - id: MobSpiderSpace
         - id: MobPurpleSnake

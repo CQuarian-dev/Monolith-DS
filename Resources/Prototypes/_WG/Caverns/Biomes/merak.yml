@@ -1,0 +1,231 @@
+# Merak: the Sandstone Galleries. Sand tunnels lit amber by lamp agaves, joined by three kinds of gallery: wide
+# pillared halls, fossil beds of cracked clay and bone, and a buried ruin quarter of laid sandstone, with prospectors'
+# camps and the richest gold in the rock. One low-frequency noise picks the zone (the pillared halls are the default,
+# the fossil beds where it runs high, the ruins where it runs low), so each is a stretch of ground over a hundred
+# tiles across; a zone's galleries open at their own threshold. A gallery is ringed by the common chamber sandstone
+# with its zone's floor inside it.
+# Layers run last to first and the first match wins. Rock walls only stand on sand; the hall pillars are placed on
+# purpose.
+
+- type: biomeTemplate
+  id: WGCavernBiomeMerak
+  layers:
+  # Substrate and tunnel floor.
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorSand
+    threshold: -1
+  # Tunnel litter, lowest priority.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [FloraRockSolid]
+    threshold: 0.985
+    noise: { seed: 31, noiseType: OpenSimplex2, frequency: 1 }
+  # Lamp agaves along the tunnels.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WGCavernLampAgave]
+    threshold: 0.94
+    noise: { seed: 32, noiseType: OpenSimplex2, frequency: 1 }
+  # Whatever crawls the tunnels between the zones.
+  # Rock wherever ridged noise is at most the tunnel threshold; the tunnels are the ridges.
+  - !type:BiomeMetaLayer
+    template: WGCavernRockMerak
+    invert: true
+    threshold: -0.5
+    noise: { seed: 7, noiseType: OpenSimplex2, fractalType: Ridged, octaves: 1, frequency: 0.03 }
+  # Pillared halls on the web, the default zone.
+  - !type:BiomeMetaLayer
+    template: WGCavernChamberMerak
+    threshold: 0.2
+    noise: { seed: 101, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.02 }
+  # Fossil beds, where the zone noise runs high.
+  - !type:BiomeMetaLayer
+    template: WGCavernZoneFossilsMerak
+    threshold: 0.18
+    noise: { seed: 611, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.005 }
+  # The buried ruin quarter, where it runs low.
+  - !type:BiomeMetaLayer
+    template: WGCavernZoneRuinsMerak
+    invert: true
+    threshold: 0.22
+    noise: { seed: 611, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.005 }
+  # Slime grottos (_WG/WildSlimes) under the surface's glass patches, over everything: the oasis noise, its seed less
+  # the cavern's seed offset of 7927, at a lower threshold so each grotto is a little wider than its patch.
+
+- type: biomeTemplate
+  id: WGCavernRockMerak
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSand]
+    threshold: -1
+  # Common.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandTin, WallRockSandQuartz]
+    threshold: 0.7
+    noise: { seed: 201, noiseType: OpenSimplex2, frequency: 0.09 }
+  # Uncommon.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandCopper, WallRockSandSalt]
+    threshold: 0.8
+    noise: { seed: 202, noiseType: OpenSimplex2, frequency: 0.09 }
+  # Gold, richer than anywhere else.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandGold]
+    threshold: 0.86
+    noise: { seed: 206, noiseType: OpenSimplex2, frequency: 0.09 }
+  # Rare.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandSilver]
+    threshold: 0.88
+    noise: { seed: 203, noiseType: OpenSimplex2, frequency: 0.09 }
+  # Very rare.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandDiamond]
+    threshold: 0.95
+    noise: { seed: 204, noiseType: OpenSimplex2, frequency: 0.2 }
+  # Fossil beds.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandArtifactFragment]
+    threshold: 0.88
+    noise: { seed: 207, noiseType: OpenSimplex2, frequency: 0.05 }
+  # Gold crabs wait in the rock.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSand]
+    entities: [WallRockSandGoldCrabNF]
+    threshold: 0.96
+    noise: { seed: 205, noiseType: OpenSimplex2, frequency: 0.2 }
+
+# Pillared halls: the original gallery floor, held up by single pillars, with aloe to pick and snares in the sand.
+- type: biomeTemplate
+  id: WGCavernChamberMerak
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorSandstone
+    threshold: -1
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone]
+    entities: [CrystalOrange, CrystalPink]
+    threshold: 0.992
+    noise: { seed: 304, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone]
+    entities: [WGCavernLampAgave]
+    threshold: 0.955
+    noise: { seed: 317, noiseType: OpenSimplex2, frequency: 1 }
+  # Single-tile pillars hold up the halls.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone]
+    entities: [WallRockSand]
+    threshold: 0.84
+    noise: { seed: 306, noiseType: OpenSimplex2, frequency: 0.35 }
+  # Buried camps, a few tiles across.
+  - !type:BiomeMetaLayer
+    template: WGCavernSignatureMerak
+    threshold: 0.9
+    noise: { seed: 57, noiseType: OpenSimplex2, frequency: 0.05 }
+
+# What is left of lost prospectors.
+- type: biomeTemplate
+  id: WGCavernSignatureMerak
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorFossilBed, WGCavernFloorRuinStone]
+    entities: [SalvageSpawnerScrapValuable]
+    threshold: 0.6
+    noise: { seed: 307, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorFossilBed, WGCavernFloorRuinStone]
+    entities: [SalvageHumanCorpseSpawner]
+    threshold: 0.75
+    noise: { seed: 308, noiseType: OpenSimplex2, frequency: 1 }
+
+# The fossil zone: its galleries open at a lower chamber threshold than the halls'.
+- type: biomeTemplate
+  id: WGCavernZoneFossilsMerak
+  layers:
+  - !type:BiomeMetaLayer
+    template: WGCavernChamberFossilsMerak
+    threshold: 0.14
+    noise: { seed: 101, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.02 }
+
+# Fossil beds: dried clay inside a rim of sandstone, bones in the ground, marrow caps, brittle geodes, vipers and crabs.
+- type: biomeTemplate
+  id: WGCavernChamberFossilsMerak
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorSandstone
+    threshold: -1
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorFossilBed
+    threshold: 0.32
+    noise: { seed: 101, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.02 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorFossilBed]
+    entities: [CrystalOrange]
+    threshold: 0.992
+    noise: { seed: 304, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorFossilBed]
+    entities: [WGCavernLampAgave]
+    threshold: 0.955
+    noise: { seed: 317, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorFossilBed]
+    entities: [CoyoteChompBonesLskullW, CoyoteChompBonesLbone, CoyoteChompBonesLribs, CoyoteChompBonesLribs1]
+    threshold: 0.95
+    noise: { seed: 631, noiseType: OpenSimplex2, frequency: 1 }
+
+# The ruin zone.
+- type: biomeTemplate
+  id: WGCavernZoneRuinsMerak
+  layers:
+  - !type:BiomeMetaLayer
+    template: WGCavernChamberRuinsMerak
+    threshold: 0.16
+    noise: { seed: 101, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.02 }
+
+# Buried ruin quarter: laid sandstone inside a rim of sandstone, fallen blocks and tombstones, gravebloom, dust pods,
+# camps, ticks and bats.
+- type: biomeTemplate
+  id: WGCavernChamberRuinsMerak
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorSandstone
+    threshold: -1
+  - !type:BiomeTileLayer
+    tile: WGCavernFloorRuinStone
+    threshold: 0.32
+    noise: { seed: 101, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.02 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorRuinStone]
+    entities: [CrystalOrange, CrystalPink]
+    threshold: 0.992
+    noise: { seed: 304, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorRuinStone]
+    entities: [WGCavernLampAgave]
+    threshold: 0.955
+    noise: { seed: 317, noiseType: OpenSimplex2, frequency: 1 }
+  # Fallen blocks.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorRuinStone]
+    entities: [BaySandstone]
+    threshold: 0.975
+    noise: { seed: 641, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGCavernFloorSandstone, WGCavernFloorRuinStone]
+    entities: [GoonTombstone, GoonTombstone2]
+    threshold: 0.985
+    noise: { seed: 642, noiseType: OpenSimplex2, frequency: 1 }
+  # Buried camps, a few tiles across.
+  - !type:BiomeMetaLayer
+    template: WGCavernSignatureMerak
+    threshold: 0.88
+    noise: { seed: 57, noiseType: OpenSimplex2, frequency: 0.05 }

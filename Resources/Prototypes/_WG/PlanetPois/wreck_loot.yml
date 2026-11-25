@@ -1,0 +1,13 @@
+# LuaM: in Wolfgate a wreck's hold carries their ship gun flatpacks and gunnery chips (_WG/Traders), which we don't
+# have; here it is ordinary salvage.
+
+- type: entityTable
+  id: WGWreckLoot
+  table: !type:GroupSelector
+    children:
+    - id: CrateSalvageEquipment
+      weight: 2
+    - id: SalvageSpawnerEquipmentValuable
+      weight: 2
+    - id: SalvageSpawnerTreasure
+      weight: 1

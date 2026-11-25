@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from TauCetiClassic at commit https://github.com/TauCetiStation/TauCetiClassic/commit/57a938ae835ac9888092b65687ca0e2c2acd3c11.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "light-dead"
+    },
+    {
+      "name": "light_1",
+      "delays": [
+        [
+          0.15,
+          0.15,
+          0.15,
+          0.15
+        ]
+      ]
+    },
+    {
+      "name": "light_2",
+      "delays": [
+        [
+          0.075,
+          0.075,
+          0.075,
+          0.075
+        ]
+      ]
+    },
+    {
+      "name": "bloodwall_1",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bloodwall_2"
+    },
+    {
+      "name": "bloodwall_3",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "bloodwall_4",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "creep_1"
+    },
+    {
+      "name": "creep_2"
+    },
+    {
+      "name": "creep_3"
+    },
+    {
+      "name": "creep_4"
+    },
+    {
+      "name": "creep_5"
+    },
+    {
+      "name": "creep_6"
+    },
+    {
+      "name": "creep_7"
+    },
+    {
+      "name": "creep_8"
+    },
+    {
+      "name": "creep_9"
+    },
+    {
+      "name": "lair"
+    }
+  ]
+}

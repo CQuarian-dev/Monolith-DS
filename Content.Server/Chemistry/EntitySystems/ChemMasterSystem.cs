@@ -240,8 +240,11 @@ namespace Content.Server.Chemistry.EntitySystems
             }
 
             // Ensure the number is valid.
-            if (message.Number == 0 || !_storageSystem.HasSpace((container, storage)))
+            // LuaM-start
+            if (message.Number == 0
+                || storage.Grid.GetArea() - _storageSystem.GetCumulativeItemAreas((container, storage)) < message.Number)
                 return;
+            // LuaM-end
 
             // Ensure the amount is valid.
             if (message.Dosage == 0 || message.Dosage > chemMaster.Comp.PillDosageLimit)

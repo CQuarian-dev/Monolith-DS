@@ -155,7 +155,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
         if (TryComp<DoorBoltComponent>(uid, out var doorBolt)
             && IsBolted(uid, doorBolt))
         {
-            SetBoltsDown((uid, doorBolt), false, args.UserUid, true);
+            TrySetBoltDown((uid, doorBolt), false, args.UserUid, true); // LuaM
         }
         SetState(uid, DoorState.Closing, door);
 
@@ -395,7 +395,7 @@ public abstract partial class SharedDoorSystem : EntitySystem
             Audio.PlayPvs(door.OpenSound, uid, AudioParams.Default.WithVolume(-5));
 
         if (lastState == DoorState.Emagging && TryComp<DoorBoltComponent>(uid, out var doorBoltComponent))
-            SetBoltsDown((uid, doorBoltComponent), !doorBoltComponent.BoltsDown, user, true);
+            TrySetBoltDown((uid, doorBoltComponent), !doorBoltComponent.BoltsDown, user, true); // LuaM
     }
 
     /// <summary>

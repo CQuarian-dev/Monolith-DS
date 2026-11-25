@@ -1,0 +1,23 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+# Base
+
+- type: tile
+  abstract: true
+  parent: CMPlanetBase
+  id: RMCPlanetRedDesertBase
+  name: tiles-rmc-red-desert
+  sprite: /Textures/_RMC14/Tiles/planet/red_desert/desert1.png
+
+# Rock
+
+- type: tile
+  parent: RMCPlanetRedDesertBase
+  id: RMCPlanetRedDesertRock
+  sprite: /Textures/_RMC14/Tiles/planet/red_desert/rock1.png
+
+- type: tile
+  parent: RMCPlanetRedDesertRock
+  id: RMCPlanetRedDesertRock1
+  sprite: /Textures/_RMC14/Tiles/planet/red_desert/rock2.png
+
+# Rock Transition

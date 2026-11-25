@@ -38,12 +38,16 @@ public sealed partial class MultiHandedItemSystem : EntitySystem
 
     private void OnAttemptPickup(Entity<MultiHandedItemComponent> ent, ref GettingPickedUpAttemptEvent args)
     {
-        if (TryComp<HandsComponent>(args.User, out var hands) && hands.CountFreeHands() >= ent.Comp.HandsNeeded)
+        // LuaM-start
+        if (args.Cancelled || TryComp<HandsComponent>(args.User, out var hands) && hands.CountFreeHands() >= ent.Comp.HandsNeeded)
             return;
 
         args.Cancel();
-        _popup.PopupPredictedCursor(Loc.GetString("multi-handed-item-pick-up-fail",
-            ("number", ent.Comp.HandsNeeded - 1), ("item", ent.Owner)), args.User);
+
+        if (args.ShowPopup)
+            _popup.PopupPredictedCursor(Loc.GetString("multi-handed-item-pick-up-fail",
+                ("number", ent.Comp.HandsNeeded - 1), ("item", ent.Owner)), args.User);
+        // LuaM-end
     }
 
     private void OnVirtualItemDeleted(Entity<MultiHandedItemComponent> ent, ref VirtualItemDeletedEvent args)
@@ -51,6 +55,9 @@ public sealed partial class MultiHandedItemSystem : EntitySystem
         if (args.BlockingEntity != ent.Owner || _timing.ApplyingState)
             return;
 
-        _hands.TryDrop(args.User, ent.Owner);
+        // LuaM-start
+        if (!_hands.TryDrop(args.User, ent.Owner) && _hands.IsHolding(args.User, ent.Owner))
+            _virtualItem.TrySpawnVirtualItemInHand(ent.Owner, args.User);
+        // LuaM-end
     }
 }

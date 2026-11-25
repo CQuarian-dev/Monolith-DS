@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "cloakedstatue"
+    },
+    {
+      "name": "gargoyle",
+      "directions": 4
+    },
+    {
+      "name": "graffiti1"
+    },
+    {
+      "name": "graffiti2"
+    },
+    {
+      "name": "graffiti3"
+    },
+    {
+      "name": "graffiti4"
+    },
+    {
+      "name": "graffiti5"
+    },
+    {
+      "name": "graffiti6"
+    },
+    {
+      "name": "graffiti7"
+    },
+    {
+      "name": "graffiti8"
+    },
+    {
+      "name": "graffiti9"
+    },
+    {
+      "name": "graffiti10"
+    },
+    {
+      "name": "graffiti11"
+    },
+    {
+      "name": "graffiti12"
+    },
+    {
+      "name": "graffiti13"
+    },
+    {
+      "name": "graffiti14"
+    }
+  ]
+}

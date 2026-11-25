@@ -1,0 +1,328 @@
+# Aurora
+
+- type: entity
+  parent: BaseItem
+  id: AuroraCandlePile
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/candle_pile_aurora.rsi
+    state: candle1_lit
+  - type: Item
+    size: Small
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_WG/DecorImport/aurora/gloves_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_WG/DecorImport/aurora/gloves_drop.ogg
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#E09D37"
+
+- type: entity
+  parent: BaseStructure
+  id: AuroraArcticGeyser
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/geyser_aurora.rsi
+    drawdepth: FloorObjects
+    offset: "0,1"
+    layers:
+    - state: geyser_dormant
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        geyser_dormant: ""
+        geyser_plume: ""
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+
+# Nebula
+
+- type: entity
+  parent: BaseStructure
+  id: NebulaGeothermalVent
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/geyser_nebula.rsi
+    state: geyser
+    drawdepth: FloorObjects
+    noRot: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+
+# VOREStation
+
+- type: entity
+  parent: BaseStructure
+  id: VoreBigSkeleton
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/big_skeleton_vore.rsi
+    state: big_skeleton
+    drawdepth: FloorObjects
+    offset: "1,1"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+
+# Goonstation
+
+- type: entity
+  parent: BaseRock
+  id: GoonBigRock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bigrock_goon.rsi
+    state: bigrock
+    offset: "0,0.5"
+
+# TerraGov-Marine-Corps
+
+- type: entity
+  parent: BaseRock
+  id: TGMCVolcanicRock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/rocks_tgmc.rsi
+    layers:
+    - state: basalt_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        basalt_1: ""
+        basalt_2: ""
+        basalt_3: ""
+        basalt_4: ""
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/_WG/Xenonids/Effects/meteorimpact.ogg
+
+- type: entity
+  parent: TGMCVolcanicRock
+  id: TGMCVolcanicRockPale
+  components:
+  - type: Sprite
+    color: "#c7bdbd"
+    layers:
+    - state: basalt_5
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        basalt_5: ""
+        basalt_6: ""
+        basalt_7: ""
+        basalt_8: ""
+        basalt_9: ""
+        basalt_10: ""
+        basalt_11: ""
+        basalt_12: ""
+        basalt_13: ""
+        basalt_14: ""
+
+- type: entity
+  parent: BaseRock
+  id: TGMCVolcanicBoulder
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/rock_large_tgmc.rsi
+    color: "#c7bdbd"
+    noRot: false
+    offset: "0.5,0.5"
+    layers:
+    - state: boulder_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        boulder_1: ""
+        boulder_2: ""
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,1.45,1.45"
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1000
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/_WG/Xenonids/Effects/meteorimpact.ogg
+
+- type: entity
+  parent: TGMCVolcanicBoulder
+  id: TGMCVolcanicBoulderWide
+  components:
+  - type: Sprite
+    layers:
+    - state: boulder_3
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        boulder_3: ""
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,1.45,0.45"
+        density: 1000
+        layer:
+        - HalfWallLayer
+        - Opaque
+
+- type: entity
+  id: TGMCTinyRocks
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/rocks_tgmc.rsi
+    noRot: true
+    drawdepth: FloorObjects
+    layers:
+    - state: tinyrock_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        tinyrock_1: ""
+        tinyrock_2: ""
+        tinyrock_3: ""
+        tinyrock_4: ""
+        tinyrock_5: ""
+        tinyrock_6: ""
+        tinyrock_7: ""
+        tinyrock_8: ""
+
+- type: entity
+  parent: TGMCTinyRocks
+  id: TGMCRockPile
+  components:
+  - type: Clickable
+  - type: Sprite
+    layers:
+    - state: lavarocks
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        lavarocks: ""
+        lavarocks1: ""
+        lavarocks2: ""
+
+- type: entity
+  parent: TGMCRockPile
+  id: TGMCFossilPile
+  components:
+  - type: Sprite
+    layers:
+    - state: lavarocks3
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        lavarocks3: ""
+
+- type: entity
+  parent: TGMCRockPile
+  id: TGMCObsidian
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/obsidian_tgmc.rsi
+    layers:
+    - state: obsidian_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        obsidian_1: ""
+        obsidian_2: ""
+        obsidian_3: ""
+
+# Voidcrew
+
+- type: entity
+  parent: BaseFlora
+  id: VoidcrewFloraCaveFern
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/lavaland_plants_voidcrew.rsi
+    state: fern1
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: VoidcrewCrunchyBushWhack
+
+- type: entity
+  parent: BaseFlora
+  id: VoidcrewFloraFireBlossom
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/lavaland_plants_voidcrew.rsi
+    state: fireblossom1
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: VoidcrewCrunchyBushWhack

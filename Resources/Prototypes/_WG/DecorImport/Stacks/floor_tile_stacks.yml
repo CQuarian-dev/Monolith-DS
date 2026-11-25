@@ -1,0 +1,411 @@
+# Marble
+
+- type: stack
+  id: FloorTileFrontierFloorWhiteMarble
+  name: tiles-wg-frontier-floor-white-marble
+  spawn: FloorTileItemFrontierFloorWhiteMarble
+  maxCount: 30
+
+- type: stack
+  id: FloorTileFrontierFloorPlasmaMarble
+  name: tiles-wg-frontier-floor-plasma-marble
+  spawn: FloorTileItemFrontierFloorPlasmaMarble
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorGrasstodirtNorth
+  name: tiles-wg-goon-floor-grasstodirt-north
+  spawn: FloorTileItemGoonFloorGrasstodirtNorth
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorGrasstodirtEast
+  name: tiles-wg-goon-floor-grasstodirt-east
+  spawn: FloorTileItemGoonFloorGrasstodirtEast
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorGrasstodirtWest
+  name: tiles-wg-goon-floor-grasstodirt-west
+  spawn: FloorTileItemGoonFloorGrasstodirtWest
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorSand
+  name: tiles-wg-goon-floor-sand
+  spawn: FloorTileItemGoonFloorSand
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorSnowcalm
+  name: tiles-wg-goon-floor-snowcalm
+  spawn: FloorTileItemGoonFloorSnowcalm
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorSnowrough
+  name: tiles-wg-goon-floor-snowrough
+  spawn: FloorTileItemGoonFloorSnowrough
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorSwampgrass
+  name: tiles-wg-goon-floor-swampgrass
+  spawn: FloorTileItemGoonFloorSwampgrass
+  maxCount: 30
+
+- type: stack
+  id: FloorTileGoonFloorWaterIceRough
+  name: tiles-wg-goon-floor-water-ice-rough
+  spawn: FloorTileItemGoonFloorWaterIceRough
+  maxCount: 30
+
+- type: stack
+  id: FloorTileAuroraFloorSidewalkAssunzioneFlat
+  name: tiles-wg-aurora-floor-sidewalk-assunzione-flat
+  spawn: FloorTileItemAuroraFloorSidewalkAssunzioneFlat
+  maxCount: 30
+
+- type: stack
+  id: FloorTileAuroraFloorCaveAdhomai
+  name: tiles-wg-aurora-floor-cave-adhomai
+  spawn: FloorTileItemAuroraFloorCaveAdhomai
+  maxCount: 30
+
+- type: stack
+  id: FloorTileAuroraFloorExoplanetCrystal
+  name: tiles-wg-aurora-floor-exoplanet-crystal
+  spawn: FloorTileItemAuroraFloorExoplanetCrystal
+  maxCount: 30
+
+- type: stack
+  id: FloorTileAuroraFloorExoplanetIceDark
+  name: tiles-wg-aurora-floor-exoplanet-ice-dark
+  spawn: FloorTileItemAuroraFloorExoplanetIceDark
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCitFloorSpooktimeDirtpatch
+  name: tiles-wg-cit-floor-spooktime-dirtpatch
+  spawn: FloorTileItemCitFloorSpooktimeDirtpatch
+  maxCount: 30
+
+# Nebula
+
+- type: stack
+  id: FloorTileNebulaFloorPathHerringbone
+  name: tiles-wg-nebula-floor-path-herringbone
+  spawn: FloorTileItemNebulaFloorPathHerringbone
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNebulaFloorClay
+  name: tiles-wg-nebula-floor-clay
+  spawn: FloorTileItemNebulaFloorClay
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNebulaFloorShrouded
+  name: tiles-wg-nebula-floor-shrouded
+  spawn: FloorTileItemNebulaFloorShrouded
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNebulaFloorRockSand
+  name: tiles-wg-nebula-floor-rock-sand
+  spawn: FloorTileItemNebulaFloorRockSand
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNebulaFloorDry
+  name: tiles-wg-nebula-floor-dry
+  spawn: FloorTileItemNebulaFloorDry
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorBoneMeaty
+  name: tiles-wg-nova-floor-bone-meaty
+  spawn: FloorTileItemNovaFloorBoneMeaty
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorBoneSpine
+  name: tiles-wg-nova-floor-bone-spine
+  spawn: FloorTileItemNovaFloorBoneSpine
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorBoneStraight
+  name: tiles-wg-nova-floor-bone-straight
+  spawn: FloorTileItemNovaFloorBoneStraight
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorPoolCobbleWateryrock
+  name: tiles-wg-nova-floor-pool-cobble-wateryrock
+  spawn: FloorTileItemNovaFloorPoolCobbleWateryrock
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorConcreteTiles
+  name: tiles-wg-nova-floor-concrete-tiles
+  spawn: FloorTileItemNovaFloorConcreteTiles
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorMeatFresh
+  name: tiles-wg-nova-floor-meat-fresh
+  spawn: FloorTileItemNovaFloorMeatFresh
+  maxCount: 30
+
+- type: stack
+  id: FloorTileNovaFloorGrassLavaland
+  name: tiles-wg-nova-floor-grass-lavaland
+  spawn: FloorTileItemNovaFloorGrassLavaland
+  maxCount: 30
+
+- type: stack
+  id: FloorTilePolarisFloorOutdoorsMud
+  name: tiles-wg-polaris-floor-outdoors-mud
+  spawn: FloorTileItemPolarisFloorOutdoorsMud
+  maxCount: 30
+
+- type: stack
+  id: FloorTilePolarisFloorOutdoorsDirt
+  name: tiles-wg-polaris-floor-outdoors-dirt
+  spawn: FloorTileItemPolarisFloorOutdoorsDirt
+  maxCount: 30
+
+# VOREStation
+
+- type: stack
+  id: FloorTileVoreFloorWoodHardwood
+  name: tiles-wg-vore-floor-wood-hardwood
+  spawn: FloorTileItemVoreFloorWoodHardwood
+  maxCount: 30
+
+- type: stack
+  id: FloorTileBayFloorWaterShallowChlorineLiquid
+  name: tiles-wg-bay-floor-water-shallow-chlorine-liquid
+  spawn: FloorTileItemBayFloorWaterShallowChlorineLiquid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileBayFloorWaterShallowTar
+  name: tiles-wg-bay-floor-water-shallow-tar
+  spawn: FloorTileItemBayFloorWaterShallowTar
+  maxCount: 30
+
+- type: stack
+  id: FloorTileChompFloorOutdoorsDesertPlanetGravel
+  name: tiles-wg-chomp-floor-outdoors-desert-planet-gravel
+  spawn: FloorTileItemChompFloorOutdoorsDesertPlanetGravel
+  maxCount: 30
+
+- type: stack
+  id: FloorTileChompFloorOutdoorsRocksCetus
+  name: tiles-wg-chomp-floor-outdoors-rocks-cetus
+  spawn: FloorTileItemChompFloorOutdoorsRocksCetus
+  maxCount: 30
+
+- type: stack
+  id: FloorTileChompFloorOutdoorsLavalandAsh
+  name: tiles-wg-chomp-floor-outdoors-lavaland-ash
+  spawn: FloorTileItemChompFloorOutdoorsLavalandAsh
+  maxCount: 30
+
+- type: stack
+  id: FloorTileChompFloorOutdoorsLavalandAshrock
+  name: tiles-wg-chomp-floor-outdoors-lavaland-ashrock
+  spawn: FloorTileItemChompFloorOutdoorsLavalandAshrock
+  maxCount: 30
+
+# CM-SS13
+
+- type: stack
+  id: FloorTileFulpFloorWoodDark
+  name: tiles-wg-fulp-floor-wood-dark
+  spawn: FloorTileItemFulpFloorWoodDark
+  maxCount: 30
+
+# Monkestation
+
+- type: stack
+  id: FloorTileSkyratFloorIronKitchenSmall
+  name: tiles-wg-skyrat-floor-iron-kitchen-small
+  spawn: FloorTileItemSkyratFloorIronKitchenSmall
+  maxCount: 30
+
+- type: stack
+  id: FloorTileTgFloorConcreteSlab1
+  name: tiles-wg-tg-floor-concrete-slab1
+  spawn: FloorTileItemTgFloorConcreteSlab1
+  maxCount: 30
+
+- type: stack
+  id: FloorTileTgFloorSandstone
+  name: tiles-wg-tg-floor-sandstone
+  spawn: FloorTileItemTgFloorSandstone
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetBeeFloorCarpetGrimy
+  name: stack-wg-carpet-grimy
+  spawn: FloorCarpetItemBeeFloorCarpetGrimy
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetBeeFloorCarpetOlive
+  name: stack-wg-carpet-olive
+  spawn: FloorCarpetItemBeeFloorCarpetOlive
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetCoyoteFloorCarpetVault
+  name: stack-wg-carpet-vault
+  spawn: FloorCarpetItemCoyoteFloorCarpetVault
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorKinarisBlackGreen
+  name: stack-wg-carpet-kinaris-black-green
+  spawn: FloorCarpetItemNovaFloorKinarisBlackGreen
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorKinarisBlackRed
+  name: stack-wg-carpet-kinaris-black-red
+  spawn: FloorCarpetItemNovaFloorKinarisBlackRed
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetKinaris
+  name: stack-wg-carpet-kinaris-cyan
+  spawn: FloorCarpetItemNovaFloorCarpetKinaris
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetKinarisGreen
+  name: stack-wg-carpet-kinaris-green
+  spawn: FloorCarpetItemNovaFloorCarpetKinarisGreen
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetKinarisRed
+  name: stack-wg-carpet-kinaris-red
+  spawn: FloorCarpetItemNovaFloorCarpetKinarisRed
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetPolite
+  name: stack-wg-carpet-polite-black
+  spawn: FloorCarpetItemNovaFloorCarpetPolite
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetPoliteBlue
+  name: stack-wg-carpet-polite-blue
+  spawn: FloorCarpetItemNovaFloorCarpetPoliteBlue
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetPoliteRed
+  name: stack-wg-carpet-polite-red
+  spawn: FloorCarpetItemNovaFloorCarpetPoliteRed
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetCarpAlt
+  name: stack-wg-carpet-carp-patterned
+  spawn: FloorCarpetItemNovaFloorCarpetCarpAlt
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetLizardAlt
+  name: stack-wg-carpet-lizard-patterned
+  spawn: FloorCarpetItemNovaFloorCarpetLizardAlt
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetMothAlt
+  name: stack-wg-carpet-moth-patterned
+  spawn: FloorCarpetItemNovaFloorCarpetMothAlt
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetNovaFloorCarpetNeonSimple
+  name: stack-wg-carpet-neon
+  spawn: FloorCarpetItemNovaFloorCarpetNeonSimple
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetShiptestFloorCarpetRedGold
+  name: stack-wg-carpet-red-gold
+  spawn: FloorCarpetItemShiptestFloorCarpetRedGold
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpet
+  name: stack-wg-carpet-brown
+  spawn: FloorCarpetItemTgFloorCarpet
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetBlack
+  name: stack-wg-carpet-black
+  spawn: FloorCarpetItemTgFloorCarpetBlack
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetBlue
+  name: stack-wg-carpet-blue
+  spawn: FloorCarpetItemTgFloorCarpetBlue
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetCyan
+  name: stack-wg-carpet-cyan
+  spawn: FloorCarpetItemTgFloorCarpetCyan
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetRoyalblack
+  name: stack-wg-carpet-royal-black
+  spawn: FloorCarpetItemTgFloorCarpetRoyalblack
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetRoyalblue
+  name: stack-wg-carpet-royal-blue
+  spawn: FloorCarpetItemTgFloorCarpetRoyalblue
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetCarp
+  name: stack-wg-carpet-carp
+  spawn: FloorCarpetItemTgFloorCarpetCarp
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetGoliath
+  name: stack-wg-carpet-goliath
+  spawn: FloorCarpetItemTgFloorCarpetGoliath
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetLizard
+  name: stack-wg-carpet-lizard
+  spawn: FloorCarpetItemTgFloorCarpetLizard
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetMoth
+  name: stack-wg-carpet-moth
+  spawn: FloorCarpetItemTgFloorCarpetMoth
+  maxCount: 30
+
+- type: stack
+  id: FloorCarpetTgFloorCarpetStellar
+  name: stack-wg-carpet-stellar
+  spawn: FloorCarpetItemTgFloorCarpetStellar
+  maxCount: 30

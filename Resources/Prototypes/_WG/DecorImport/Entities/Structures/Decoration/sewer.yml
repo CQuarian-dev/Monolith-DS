@@ -1,0 +1,34 @@
+- type: entity
+  parent: BaseStructure
+  id: MojaveSewerFloor
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/sewer_floor.rsi
+    state: floor-255
+    drawdepth: FloorTiles
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/sewer_floor.rsi
+    state: floor-255
+  - type: IconSmooth
+    key: MojaveSewerFloor
+    mode: Bitmask
+    base: floor-
+  - type: Tag
+    tags:
+    - ForceFixRotations
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

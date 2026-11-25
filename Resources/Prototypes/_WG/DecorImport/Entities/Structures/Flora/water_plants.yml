@@ -1,0 +1,369 @@
+- type: entity
+  parent: BaseFlora
+  id: BayFloraSeaweed
+  suffix: flora
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed_baystation
+    offset: "0,0"
+    layers:
+    - state: seaweed_baystation
+
+- type: entity
+  parent: BaseFlora
+  id: BayFloraSeaweedMid
+  suffix: mid
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed1
+    offset: "0,0"
+    layers:
+    - state: seaweed1
+
+- type: entity
+  parent: BaseFlora
+  id: BayFloraSeaweedLarge
+  suffix: large
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed2
+    offset: "0,0"
+    layers:
+    - state: seaweed2
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantSeaweed
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: seaweed
+    offset: "0,0"
+    layers:
+    - state: seaweed
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantKelp
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: kelp
+    offset: "0,0"
+    layers:
+    - state: kelp
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraOceanSeaweed
+  suffix: seaweed
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed_nova
+    offset: "0,0"
+    layers:
+    - state: seaweed_nova
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraOceanLongseaweed
+  suffix: longseaweed
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: longseaweed
+    offset: "0,0"
+    layers:
+    - state: longseaweed
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraOceanGlowweed
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: glowweed
+    offset: "0,0"
+    layers:
+    - state: glowweed
+  - type: PointLight
+    radius: 2.0
+    energy: 1.0
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterSeaweed1
+  suffix: seaweed1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed-1
+    offset: "0,0"
+    layers:
+    - state: seaweed-1
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterSeaweed2
+  suffix: seaweed2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed-2
+    offset: "0,0"
+    layers:
+    - state: seaweed-2
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterSeaweed3
+  suffix: seaweed3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed-3
+    offset: "0,0"
+    layers:
+    - state: seaweed-3
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterPlant2
+  suffix: plant2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: plant-2
+    offset: "0,0"
+    layers:
+    - state: plant-2
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterPlant3
+  suffix: plant3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: plant-3
+    offset: "0,0"
+    layers:
+    - state: plant-3
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterPlant4
+  suffix: plant4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: plant-4
+    offset: "0,0"
+    layers:
+    - state: plant-4
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraUnderwaterPlant5
+  suffix: plant5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: plant-5
+    offset: "0,0"
+    layers:
+    - state: plant-5
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestAshGardenSeaweed
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: seaweed_shiptest
+    offset: "0,0"
+    layers:
+    - state: seaweed_shiptest
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantAnemone
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: anemone
+    offset: "0,0"
+    layers:
+    - state: anemone
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantBranching
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: branching
+    offset: "0,0"
+    layers:
+    - state: branching
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantBulbous
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: bulbous
+    offset: "0,0"
+    layers:
+    - state: bulbous
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantCoralfingers
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: coralfingers
+    offset: "0,0"
+    layers:
+    - state: coralfingers
+
+- type: entity
+  parent: BaseFlora
+  id: GoonSeaPlantTubesponge
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: tubesponge
+    offset: "0,0"
+    layers:
+    - state: tubesponge
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraOceanCoral
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: coral
+    offset: "0,0"
+    layers:
+    - state: coral
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraLily1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: lilypad1
+    offset: "0,0"
+    layers:
+    - state: lilypad1
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraLily2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: lilypad2
+    offset: "0,0"
+    layers:
+    - state: lilypad2
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraLily3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: lilypad3
+    offset: "0,0"
+    layers:
+    - state: lilypad3
+
+- type: entity
+  parent: BaseFlora
+  id: GoonFakeobjectLotus
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: lotus_1
+    offset: "0,0"
+    layers:
+    - state: lotus_1
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraBushKonyangReedsWater
+  suffix: water
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: water_stalks
+    offset: "0,0"
+    layers:
+    - state: water_stalks

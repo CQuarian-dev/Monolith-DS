@@ -1,0 +1,503 @@
+- type: entity
+  parent: TableBase
+  id: CoyoteTableSnooker
+  suffix: top
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: nv_pooltable
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: nv_pooltable
+  - type: IconSmooth
+    key: CoyoteTableSnooker
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 12
+  - type: Construction
+    graph: DecorBuildCoyoteTableSnooker
+    node: built
+
+- type: entity
+  parent: CoyoteTableSnooker
+  id: CoyoteTableSnookerBottom
+  suffix: bottom
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: CoyoteTableSnooker
+  id: CoyoteTableSnookerTopLeft
+  suffix: top left
+  components:
+  - type: Sprite
+    overrideDir: SouthEast
+
+- type: entity
+  parent: CoyoteTableSnooker
+  id: CoyoteTableSnookerTopRight
+  suffix: top right
+  components:
+  - type: Sprite
+    overrideDir: SouthWest
+
+- type: entity
+  parent: CoyoteTableSnooker
+  id: CoyoteTableSnookerBottomLeft
+  suffix: bottom left
+  components:
+  - type: Sprite
+    overrideDir: NorthEast
+
+- type: entity
+  parent: CoyoteTableSnooker
+  id: CoyoteTableSnookerBottomRight
+  suffix: bottom right
+  components:
+  - type: Sprite
+    overrideDir: NorthWest
+
+- type: entity
+  parent: TableBase
+  id: DarkPackTableWoodBilliard
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games_32x48.rsi
+    state: billiard1
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games_32x48.rsi
+    state: billiard1
+  - type: IconSmooth
+    key: DarkPackTableWoodBilliard
+    base: state
+    mode: NoSprite
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTable
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_table
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_table
+  - type: IconSmooth
+    key: VoreCasinoTable
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableRouletteLong
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_long
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_long
+  - type: IconSmooth
+    key: VoreCasinoTableRouletteLong
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableRouletteTableLong
+  suffix: end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_wheel_long
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_wheel_long
+  - type: IconSmooth
+    key: VoreCasinoTableRouletteTableLong
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableRouletteTable
+  suffix: table
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_wheel
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: roulette_wheel
+  - type: IconSmooth
+    key: VoreCasinoTableRouletteTable
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableCraps
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: craps_table
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: craps_table
+  - type: IconSmooth
+    key: VoreCasinoTableCraps
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: VoreCasinoTableCraps
+  id: VoreCasinoTableCrapsRight
+  suffix: right
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBlackjackL
+  suffix: l
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: blackjack_l
+    noRot: true
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: blackjack_l
+  - type: IconSmooth
+    key: VoreCasinoTableBlackjackL
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBlackjackM
+  suffix: m
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: blackjack_m
+    noRot: true
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: blackjack_m
+  - type: IconSmooth
+    key: VoreCasinoTableBlackjackM
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBlackjackR
+  suffix: r
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: blackjack_r
+    noRot: true
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: blackjack_r
+  - type: IconSmooth
+    key: VoreCasinoTableBlackjackR
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameCheckers
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_chess
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_chess
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameCheckers
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameFourRow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_four
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_four
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameFourRow
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameNineMens
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_ninemen
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_ninemen
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameNineMens
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameRpgDice
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_dice
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_dice
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameRpgDice
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameSpaceBattle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_space
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_space
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameSpaceBattle
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameTicTacToe
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_toe
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_toe
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameTicTacToe
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: TableBase
+  id: VoreCasinoTableBoardGameVoreSweeper
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_sweeper
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Tables/games.rsi
+    state: gamble_sweeper
+  - type: IconSmooth
+    key: VoreCasinoTableBoardGameVoreSweeper
+    base: state
+    mode: NoSprite
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

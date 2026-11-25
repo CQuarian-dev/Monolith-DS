@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pillar"
+    },
+    {
+      "name": "mador_pillar"
+    },
+    {
+      "name": "statue"
+    },
+    {
+      "name": "warriorstatue_left"
+    },
+    {
+      "name": "warriorstatue_right"
+    },
+    {
+      "name": "crownstatue"
+    },
+    {
+      "name": "robestatue"
+    },
+    {
+      "name": "mador_statue1"
+    },
+    {
+      "name": "mador_statue_armored"
+    },
+    {
+      "name": "mador_statue_warrior_left"
+    },
+    {
+      "name": "mador_statue_warrior_right"
+    },
+    {
+      "name": "wc_sarcophagus",
+      "directions": 4
+    },
+    {
+      "name": "wc_sarcophagus_open",
+      "directions": 4
+    },
+    {
+      "name": "mador_sarcophagus",
+      "directions": 4
+    },
+    {
+      "name": "mador_sarcophagus_open",
+      "directions": 4
+    }
+  ]
+}

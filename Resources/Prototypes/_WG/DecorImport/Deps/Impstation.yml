@@ -1,0 +1,104 @@
+# LuaM: prototypes DecorImport furniture and its construction recipes need, from Wolfgate's Impstation content.
+
+# _Impstation/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ChairApid
+  parent: StoolBase
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Furniture/Chairs/chair_apid.rsi
+    noRot: false
+    state: apid
+  - type: Construction
+    graph: DecorBuildChairApid
+    node: built
+  - type: Icon
+    sprite: _Impstation/Structures/Furniture/Chairs/chair_apid.rsi
+    state: apid
+
+# TODO: this needs to be able to crumple if you're too heavy when you buckle into it. there's already a sprite for it in the rsi.
+
+# _Impstation/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ChairBigLog
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Impstation/Structures/Furniture/Chairs/log_big.rsi
+    state: full
+  - type: Physics
+    bodyType: Static
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Log:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildChairBigLog
+    node: built
+  - type: Icon
+    sprite: _Impstation/Structures/Furniture/Chairs/log_big.rsi
+    state: full
+# WOLFGATE END
+
+# _Impstation/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ChairCardboard
+  parent: ChairBase
+  components:
+  - type: Sprite
+    sprite: _Impstation/Structures/Furniture/cardboard_chair.rsi
+    state: chair
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialCardboard:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+  - type: Construction
+    graph: DecorBuildChairCardboard
+    node: built
+  - type: Icon
+    sprite: _Impstation/Structures/Furniture/cardboard_chair.rsi
+    state: chair

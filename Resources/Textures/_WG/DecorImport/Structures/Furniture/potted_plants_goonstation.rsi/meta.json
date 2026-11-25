@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bonsai"
+    },
+    {
+      "name": "floral_arrange"
+    },
+    {
+      "name": "plant1"
+    },
+    {
+      "name": "plant2"
+    },
+    {
+      "name": "plant3"
+    },
+    {
+      "name": "plant4"
+    },
+    {
+      "name": "plant5"
+    },
+    {
+      "name": "plant6"
+    },
+    {
+      "name": "plant7"
+    },
+    {
+      "name": "plant_fern"
+    },
+    {
+      "name": "ppot0"
+    },
+    {
+      "name": "ppot1"
+    },
+    {
+      "name": "ppot2"
+    },
+    {
+      "name": "ppot3"
+    },
+    {
+      "name": "ppot4"
+    },
+    {
+      "name": "ppot5"
+    }
+  ]
+}

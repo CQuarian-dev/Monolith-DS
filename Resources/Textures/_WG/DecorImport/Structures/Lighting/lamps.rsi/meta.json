@@ -1,0 +1,76 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "flamp-empty"
+        },
+        {
+            "name": "flamp0"
+        },
+        {
+            "name": "flamp1"
+        },
+        {
+            "name": "flamp-burned"
+        },
+        {
+            "name": "flamp-broken"
+        },
+        {
+            "name": "torchere"
+        },
+        {
+            "name": "torchere-on"
+        },
+        {
+            "name": "blue_torchere"
+        },
+        {
+            "name": "blue_torchere-on"
+        },
+        {
+            "name": "table_lamp"
+        },
+        {
+            "name": "table_lamp-on"
+        },
+        {
+            "name": "candle"
+        },
+        {
+            "name": "candle-on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "lil_candle"
+        },
+        {
+            "name": "lil_candle-on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        }
+    ]
+}

@@ -39,6 +39,8 @@ public static partial class PoolManager
         // -- Иначе первый же рестарт сыгранного раунда выключает тестовый сервер и ломает пул пар
         (CCVars.ServerRestartOnRoundEnd.Name, "false"), // LuaM
         (Content.Shared._LuaM.Performance.PerformanceCVars.SlowTickThresholdMs.Name, "0"), // LuaM
-        (CCVars.StorageLimit.Name, "1")// Frontier: test failures with multiple storage 
+        ("wg.planet_site_stash", "false"), // WOLFGATE(Dormancy): tests look at a formed world's sites with nobody near
+        ("wg.caverns", "false"), // WOLFGATE(Caverns): tests that want a cavern turn caverns on themselves
+        (CCVars.StorageLimit.Name, "1")// Frontier: test failures with multiple storage
     };
 }

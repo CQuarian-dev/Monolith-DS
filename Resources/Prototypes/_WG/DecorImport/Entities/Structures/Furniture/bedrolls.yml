@@ -1,0 +1,523 @@
+- type: entity
+  parent: Bed
+  id: AuroraBedSleepingBag
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: sleepingbag_floor
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraBedSleepingBag
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedBedrollComfy
+  suffix: bed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: bedroll_comfy_o
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedBedrollComfy
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedrollComfyBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: bedroll_comfy_o_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedrollComfyBlue
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedrollComfyGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: bedroll_comfy_o_green
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedrollComfyGreen
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedrollComfyPink
+  suffix: pink
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: bedroll_comfy_o_pink
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedrollComfyPink
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedrollComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: bedroll_comfy_o_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedrollComfyRed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMBedrollComfyYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: bedroll_comfy_o_yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMBedrollComfyYellow
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NebulaBedBedroll
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: bedroll
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNebulaBedBedroll
+    node: built
+
+- type: entity
+  parent: Bed
+  id: GoonFakeobjectBedrolls
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls_goonstation.rsi
+    noRot: false
+    state: bedrolls
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonFakeobjectBedrolls
+    node: built
+
+- type: entity
+  parent: Bed
+  id: BayMattressDirty
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: dirty_mattress
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildBayMattressDirty
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CoyoteBedMattress
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    state: mattress0
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildCoyoteBedMattress
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CoyoteBedChairHammockKbraidN
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: kbraid_hammock_upper
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildCoyoteBedChairHammockKbraidN
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpileBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_black
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpileBlack
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpileGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_green
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpileGreen
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpileRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_red
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpileRed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpileWhite
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_white
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpileWhite
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpilefrontBlack
+  suffix: pillowpilefront black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_black_overlay
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpilefrontBlack
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpilefrontTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_teal_overlay
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpilefrontTeal
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpilefrontWhite
+  suffix: pillowpilefront white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_white_overlay
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpilefrontWhite
+    node: built
+
+- type: entity
+  parent: Bed
+  id: VoreBedPillowpilefrontYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: pillowpile_large_yellow_overlay
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 11.799999999999999
+  - type: Construction
+    graph: DecorBuildVoreBedPillowpilefrontYellow
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CoyoteBedBigNest
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: nest_chair_large_coyote
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 100
+  - type: Construction
+    graph: DecorBuildCoyoteBedBigNest
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VorePaddedRedBignest
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: nest_chair_large_vore
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVorePaddedRedBignest
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VorePaddedRedSmallnest
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls.rsi
+    noRot: false
+    state: nest_chair
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVorePaddedRedSmallnest
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedYoga
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bedrolls_64x32.rsi
+    noRot: false
+    state: mat
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 20
+  - type: Construction
+    graph: DecorBuildNovaBedYoga
+    node: built

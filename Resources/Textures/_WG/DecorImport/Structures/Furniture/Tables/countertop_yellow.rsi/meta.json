@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "full"
+    },
+    {
+      "name": "state_0",
+      "directions": 4
+    },
+    {
+      "name": "state_1",
+      "directions": 4
+    },
+    {
+      "name": "state_2",
+      "directions": 4
+    },
+    {
+      "name": "state_3",
+      "directions": 4
+    },
+    {
+      "name": "state_4",
+      "directions": 4
+    },
+    {
+      "name": "state_5",
+      "directions": 4
+    },
+    {
+      "name": "state_6",
+      "directions": 4
+    },
+    {
+      "name": "state_7",
+      "directions": 4
+    }
+  ]
+}

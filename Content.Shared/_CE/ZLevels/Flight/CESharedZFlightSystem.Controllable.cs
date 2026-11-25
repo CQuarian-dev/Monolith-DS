@@ -100,6 +100,9 @@ public abstract partial class CESharedZFlightSystem
         if (args.Handled)
             return;
 
+        if (args.Action.Owner != ent.Comp.ZLevelToggleActionEntity) // WOLFGATE(Avali): the tail-wag toggle also started flight
+            return;
+
         if (!TryComp<CEZFlyerComponent>(ent, out var flyerComp))
             return;
 
@@ -143,7 +146,11 @@ public abstract partial class CESharedZFlightSystem
             return;
         }
 
-        TryActivateFlight(ent.Owner);
+        // WOLFGATE(Planets) START: a refused take-off (orbit) must not leave the preventive visuals running
+        // TryActivateFlight(ent.Owner);
+        if (!TryActivateFlight(ent.Owner) && TryComp<CEZFlyerComponent>(ent, out var flyer) && !flyer.Active)
+            StopFlightVisuals(ent.Owner);
+        // WOLFGATE END
         args.Handled = true;
     }
 }

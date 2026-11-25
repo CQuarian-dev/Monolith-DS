@@ -1,0 +1,231 @@
+- type: entity
+  parent: BaseStructure
+  id: AuroraBedNest
+  components:
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.05"
+        density: 190
+        mask:
+        - TableMask
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/gore_structures_aurora.rsi
+    state: nest
+    noRot: true
+  - type: Strap
+    position: Down
+    rotation: -90
+  - type: Damageable
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/aurora/attackblob.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: AuroraGoreTendrils
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - MidImpassable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/gore_structures_aurora.rsi
+    state: tendril_dir0
+    drawdepth: FloorObjects
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/gore_structures_aurora.rsi
+    state: tendril_dir0
+  - type: IconSmooth
+    key: gore_tendrils
+    base: tendril_dir
+    mode: CardinalFlags
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
+  - type: Damageable
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/aurora/attackblob.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseWall
+  id: TauCetiMeatlandWall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/meatland_taucetistation.rsi
+    layers:
+    - state: bloodwall_1
+      map: [ "base" ]
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/meatland_taucetistation.rsi
+    state: bloodwall_2
+  - type: RandomSprite
+    available:
+    - base:
+        bloodwall_1: ""
+        bloodwall_2: ""
+        bloodwall_3: ""
+        bloodwall_4: ""
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/taucetistation/attackblob.ogg
+  - type: InteractionPopup
+    interactSuccessSound:
+      path: /Audio/_WG/DecorImport/taucetistation/attackblob.ogg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructure
+  id: TauCetiMeatlandGrowth
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/meatland_taucetistation.rsi
+    noRot: true
+    layers:
+    - state: creep_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        creep_1: ""
+        creep_2: ""
+        creep_3: ""
+        creep_4: ""
+        creep_5: ""
+  - type: Damageable
+    damageContainer: Biological
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: TauCetiMeatlandGrowth
+  id: TauCetiMeatlandCore
+  components:
+  - type: Sprite
+    layers:
+    - state: light_1
+      map: [ "base" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        light_1: ""
+        light_2: ""
+  - type: PointLight
+    radius: 3
+    energy: 1
+    color: "#710f8c"
+
+- type: entity
+  parent: TauCetiMeatlandGrowth
+  id: TauCetiMeatlandCreatureCorpse
+  components:
+  - type: Sprite
+    layers:
+    - state: light-dead
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        light-dead: ""
+
+- type: entity
+  parent: BaseFlora
+  id: TauCetiMeatlandScraps
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/meatland_taucetistation.rsi
+    drawdepth: FloorObjects
+    layers:
+    - state: creep_6
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        creep_6: ""
+        creep_7: ""
+        creep_8: ""
+        creep_9: ""
+
+- type: entity
+  parent: BaseFlora
+  id: TauCetiMeatlandLair
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/meatland_taucetistation.rsi
+    drawdepth: FloorObjects
+    state: lair
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/taucetistation/attackblob.ogg
+  - type: InteractionPopup
+    interactSuccessSound:
+      path: /Audio/_WG/DecorImport/taucetistation/attackblob.ogg

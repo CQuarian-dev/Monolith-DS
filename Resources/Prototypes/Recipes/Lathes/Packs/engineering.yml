@@ -2,6 +2,7 @@
 
 - type: latheRecipePack
   id: ToolsStatic
+  planetRecipes: [ Shovel ] # LuaM
   recipes:
   - Wirecutter
   - Screwdriver
@@ -58,6 +59,7 @@
   id: EngineeringBoardsStatic
   recipes:
   - SpaceHeaterMachineCircuitBoard
+  planetRecipes: [ WGWeatherForecastComputerCircuitboard ] # LuaM
 
 ## Dynamic
 

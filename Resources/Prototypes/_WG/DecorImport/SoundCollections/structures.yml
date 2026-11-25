@@ -1,0 +1,21 @@
+- type: soundCollection
+  id: ParadiseAlienResinBreak
+  files:
+  - /Audio/_WG/DecorImport/paradise/alien_resin_break1.ogg
+  - /Audio/_WG/DecorImport/paradise/alien_resin_break2.ogg
+
+- type: soundCollection
+  id: VoidcrewCrunchyBushWhack
+  files:
+  - /Audio/_WG/DecorImport/voidcrew/crunchybushwhack1.ogg
+  - /Audio/_WG/DecorImport/voidcrew/crunchybushwhack2.ogg
+  - /Audio/_WG/DecorImport/voidcrew/crunchybushwhack3.ogg
+
+- type: soundCollection
+  id: VoreFleshDoor
+  files:
+  - /Audio/_WG/DecorImport/vorestation/squish_01.ogg
+  - /Audio/_WG/DecorImport/vorestation/squish_02.ogg
+  - /Audio/_WG/DecorImport/vorestation/squish_03.ogg
+  - /Audio/_WG/DecorImport/vorestation/squish_04.ogg
+  - /Audio/_WG/DecorImport/vorestation/stomachmove.ogg

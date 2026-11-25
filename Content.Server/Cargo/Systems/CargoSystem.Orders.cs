@@ -26,6 +26,8 @@ namespace Content.Server.Cargo.Systems
 {
     public sealed partial class CargoSystem
     {
+        [Dependency] private Robust.Shared.Configuration.IConfigurationManager _productConfig = default!; // LuaM
+
         [Dependency] private SharedTransformSystem _transformSystem = default!;
         [Dependency] private EmagSystem _emag = default!;
 
@@ -360,7 +362,7 @@ namespace Content.Server.Cargo.Systems
                 return;
             }
 
-            if (!component.AllowedGroups.Contains(product.Group))
+            if (!component.AllowedGroups.Contains(product.Group) || !product.Available(_productConfig)) // LuaM
                 return;
 
             var data = GetOrderData(GetNetEntity(uid), args, product, GenerateOrderId(orderDatabase));

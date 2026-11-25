@@ -1,0 +1,14 @@
+ent-ParaChairComfyBeach = beach chair
+    .desc = Perfect for relaxing in the sun by the waves.
+ent-GoonStoolChairPool = pool chair
+    .desc = This chair is perfect for lounging at the side of a pool.
+ent-ADTDeckChair = deckchair
+    .desc = A deckchair for the acquisition of an even tan under the light of the nearest star.
+ent-ChairBeachLoungeBlue = lounge chair
+ent-ChairBeachLoungeBrown = lounge chair
+ent-ChairBeachLoungeGreen = lounge chair
+ent-ChairBeachLoungeOrange = lounge chair
+ent-ChairBeachLoungeRed = lounge chair
+ent-ChairBeachLoungeWhite = lounge chair
+ent-ChairBigLog = big log
+    .desc = A big log. You could sit on it, or gnaw on it if you're a beaver or some kind of termite person.

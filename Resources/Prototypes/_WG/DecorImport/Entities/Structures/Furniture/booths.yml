@@ -1,0 +1,178 @@
+- type: entity
+  parent: ChairBase
+  id: YogAmericandinerBoothEndLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/ameribooth.rsi
+    state: ameribooth-end1
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: YogChairAmericandinerBooth
+  suffix: americandiner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/ameribooth.rsi
+    state: ameribooth
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: YogAmericandinerBoothEndRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/ameribooth.rsi
+    state: ameribooth-end2
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: YogAmericandinerBoothSingle
+  suffix: single
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/ameribooth.rsi
+    state: ameribooth_single
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/booth_coyote.rsi
+    state: booth_rightend
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairMiddle
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/booth_coyote.rsi
+    state: booth_middle
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairMiddle
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/booth_coyote.rsi
+    state: booth_leftend
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairBooth
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/booth_coyote.rsi
+    state: booth_single
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairBooth
+    node: built

@@ -1,0 +1,30 @@
+# The Rime Galleries' halls, one floor family from the snowdrift hollows to the plasma shores: snowdrift (tiles.yml),
+# frozen fall (pale cyan), blue ice, pack ice, dark ice. Each is indestructible, can't be dug and has no base turf.
+
+- type: tile
+  id: WGCavernFloorRimeFall
+  parent: WGFloorThrasciasCrystalIce
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorRimeBlue
+  parent: WGFloorThrasciasRoughIce
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorRimePack
+  parent: WGFloorThrasciasPackIce
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorRimeDark
+  parent: AuroraFloorExoplanetIceDark
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""

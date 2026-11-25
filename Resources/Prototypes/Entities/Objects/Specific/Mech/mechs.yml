@@ -74,6 +74,7 @@
     - DoorBumpOpener
     - FootstepSound
   - type: Pullable
+  - type: NoSlip # LuaM
   - type: Physics
     bodyType: KinematicController
   - type: GravityAffected

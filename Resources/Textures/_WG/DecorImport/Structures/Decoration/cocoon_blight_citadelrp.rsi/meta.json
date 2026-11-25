@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from CitadelRP at commit https://github.com/citadel-station/citadel-rp/commit/db254a45e84676b7d1f32e3386c65453253bc6c5.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "cocoon_full"
+        },
+        {
+            "name": "cocoon_half",
+            "delays": [
+                [
+                    0.2,
+                    0.3,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "cocoon_empty"
+        },
+        {
+            "name": "cocoon_pop",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "cocoon_dead"
+        },
+        {
+            "name": "egg_sacs"
+        }
+    ]
+}

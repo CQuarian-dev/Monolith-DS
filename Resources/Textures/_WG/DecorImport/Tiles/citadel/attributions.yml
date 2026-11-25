@@ -1,0 +1,104 @@
+- files: [ cobble.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_mid)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_cornerne.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_corner_ne)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_cornernw.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_corner_nw)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_cornerse.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_corner_se)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_cornersw.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_corner_sw)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_roadcornersw.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state road_corner_sw)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_roadsidee.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state road_side_E)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_roadsiden.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state road_side_N)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_roadsides.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state road_side_S)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_roadsidew.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state road_side_W)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_sidee.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_side_e)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_siden.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_side_n)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_sides.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_side_s)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ cobble_sidew.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state cobble_side_w)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ festive_sidewalk.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/festive/sidewalk.dmi (state unsmooth)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ festive_white_alleyway.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/festive/white_alleywaybricks.dmi (state unsmooth)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ mineral_titanium.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/icons/turf/floors.dmi (state titanium)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ spooktime_riverwatermotion.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state riverwater_motion)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ stairs_stairsnorth.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/festive/stairs.dmi (state stairs_north)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ wooden_wooden2.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/festive/wooden.dmi (state wooden_2)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"
+
+- files: [ spooktime_dirtpatch.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Citadel-Station-13/Citadel-Station-13/blob/31b47497ab7e3b1c15c67657931ce480f14caed1/modular_citadel/code/modules/eventmaps/Spookystation/iconfile32.dmi (state smoothdarkdirt)."
+  source: "https://github.com/Citadel-Station-13/Citadel-Station-13"

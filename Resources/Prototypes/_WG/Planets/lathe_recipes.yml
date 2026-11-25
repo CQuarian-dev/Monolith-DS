@@ -1,0 +1,29 @@
+# Planet gear any autolathe can turn out.
+
+- type: latheRecipePack
+  id: WGPlanetStatic
+  recipes: []
+  planetRecipes: # LuaM
+  - WGLandingThrusterKit
+  - WGParachute
+
+- type: latheRecipe
+  id: WGLandingThrusterKit
+  result: WGLandingThrusterKit
+  categories:
+  - Tools
+  completetime: 8
+  materials:
+    Steel: 1500
+    Plastic: 500
+    Glass: 300
+
+- type: latheRecipe
+  id: WGParachute
+  result: WGParachute
+  categories:
+  - Tools
+  completetime: 4
+  materials:
+    Cloth: 400
+    Plastic: 200

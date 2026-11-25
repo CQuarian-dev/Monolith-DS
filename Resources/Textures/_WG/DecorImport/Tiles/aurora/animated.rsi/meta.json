@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "dirt_beach",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_east",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_north",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_northeast",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_northwest",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_southeast",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_southwest",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "dirt_beach_west",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "shallow_moghes",
+      "delays": [
+        [
+          0.7,
+          0.6,
+          0.7,
+          0.6
+        ]
+      ]
+    },
+    {
+      "name": "shallow_sewage",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "water_alt_2",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "water_pool",
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    }
+  ]
+}

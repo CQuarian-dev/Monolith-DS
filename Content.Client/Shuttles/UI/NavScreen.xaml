@@ -4,6 +4,7 @@
               Align="Center"
               xmlns:controls="https://spacestation14.io"
               xmlns:ui="clr-namespace:Content.Client.Shuttles.UI"
+              xmlns:wg="clr-namespace:Content.Client._WG.Planets"
               xmlns:shields="clr-namespace:Content.Client._Crescent.ShipShields.UI">
                 <!-- LuaM: Align="Center" on the root, nothing in this row stretches anymore -->
                 <!-- LuaM: Dead Space 14 menu colors (LuaMConsole* style classes) -->
@@ -179,6 +180,8 @@
                             TextAlign="Center"
                             StyleClasses="LuaMConsoleButton"
                             ToggleMode="True"/>
+                    <!-- WOLFGATE(Planets): enter/leave planet orbit, which needs no FTL drive (xmlns:wg above). -->
+                    <wg:WGOrbitButton Name="WgOrbitButton"/>
                     <!-- Frontier - Inertia dampener controls-->
                     <controls:BoxContainer Name="DampenerModeButtons"
                                   Orientation="Horizontal"

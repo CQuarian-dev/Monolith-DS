@@ -1,0 +1,23 @@
+- type: constructionGraph
+  id: DecorBuildTgTableOptable
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Silver
+        amount: 1
+        doAfter: 2
+  - node: built
+    entity: TgTableOptable
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: IngotSilver1
+        amount: 1
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

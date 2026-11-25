@@ -1,0 +1,395 @@
+- type: constructionGraph
+  id: DecorBuildBayTableRack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: BayTableRack
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildBayTableRackDark
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: BayTableRackDark
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaRack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: MetalRod
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: NebulaRack
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: PartRodMetal1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNebulaRackDark
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: MetalRod
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: NebulaRackDark
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: PartRodMetal1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisTableRack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: PolarisTableRack
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisTableRackSteel
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: PolarisTableRackSteel
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildVoreTableRackSteel
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: VoreTableRackSteel
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildVoreTableRackWood
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: VoreTableRackWood
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildVoreTableRackGlamour
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: VoreTableRackGlamour
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisTableRackShelf
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: PolarisTableRackShelf
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisRackShelfSteel
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: PolarisRackShelfSteel
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildVoreRackShelfSteel
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: VoreRackShelfSteel
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildVoreRackShelfWood
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: VoreRackShelfWood
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildVoreRackShelfGlamour
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: VoreRackShelfGlamour
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisTableRackGunRack
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: PolarisTableRackGunRack
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildPolarisRackGunRackSteel
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: PolarisRackGunRackSteel
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraTableRackRetailShelf
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Plastic
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: AuroraTableRackRetailShelf
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetPlastic1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraTableRackClothing
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Plastic
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: AuroraTableRackClothing
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetPlastic1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

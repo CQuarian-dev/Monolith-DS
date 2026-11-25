@@ -1,0 +1,9 @@
+- files: ["Glasshit.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355."
+  source: "https://github.com/Baystation12/Baystation12/blob/64fcc7090fbf1d9255446154730a57586cec3355/sound/effects/Glasshit.ogg"
+
+- files: ["sand1.ogg", "sand2.ogg", "sand3.ogg", "sand4.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355."
+  source: "https://github.com/Baystation12/Baystation12/tree/64fcc7090fbf1d9255446154730a57586cec3355/sound/effects/footstep"

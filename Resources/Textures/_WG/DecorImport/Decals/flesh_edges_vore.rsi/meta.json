@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "flesh_south"
+    },
+    {
+      "name": "c_flesh_south"
+    },
+    {
+      "name": "flesh_north"
+    },
+    {
+      "name": "c_flesh_north"
+    },
+    {
+      "name": "flesh_east"
+    },
+    {
+      "name": "c_flesh_east"
+    },
+    {
+      "name": "flesh_west"
+    },
+    {
+      "name": "c_flesh_west"
+    },
+    {
+      "name": "flesh_southeast"
+    },
+    {
+      "name": "c_flesh_southeast"
+    },
+    {
+      "name": "flesh_southwest"
+    },
+    {
+      "name": "c_flesh_southwest"
+    },
+    {
+      "name": "flesh_northeast"
+    },
+    {
+      "name": "c_flesh_northeast"
+    },
+    {
+      "name": "flesh_northwest"
+    },
+    {
+      "name": "c_flesh_northwest"
+    }
+  ]
+}

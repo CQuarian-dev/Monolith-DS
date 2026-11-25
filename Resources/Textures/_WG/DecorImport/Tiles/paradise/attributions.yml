@@ -1,0 +1,39 @@
+- files: [ away_sand.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/misc/beach.dmi (state desert)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ deep_wood_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/turf/floors.dmi (state wood)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ plasteel_reactor_pool.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/obj/fission/pool.dmi (state pool_round)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ wall_ladder.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/obj/fission/pool.dmi (state ladder_wall_round)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ water_deep.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/misc/beach.dmi (state seadeep)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ water_edge_drop.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/misc/beach.dmi (state seadrop)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ flock_floor.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/goonstation/mob/featherzone.dmi (state floor)."
+  source: "https://github.com/ParadiseSS13/Paradise"
+
+- files: [ fibrenet.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/ParadiseSS13/Paradise/blob/7cd73f80152a5e234249d99cace75ce2b5c1c54b/icons/goonstation/mob/featherzone.dmi (state fibrenet)."
+  source: "https://github.com/ParadiseSS13/Paradise"

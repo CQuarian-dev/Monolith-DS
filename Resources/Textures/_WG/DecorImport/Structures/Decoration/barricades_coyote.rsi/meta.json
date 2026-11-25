@@ -1,0 +1,55 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "locked"
+        },
+        {
+            "name": "jammed"
+        },
+        {
+            "name": "boarded"
+        },
+        {
+            "name": "bars",
+            "directions": 4
+        },
+        {
+            "name": "woodenbarricade"
+        },
+        {
+            "name": "woodenbarricade-old"
+        },
+        {
+            "name": "woodenbarricade-snow"
+        },
+        {
+            "name": "woodenbarricade-snow-old"
+        },
+        {
+            "name": "barbed",
+            "directions": 4
+        },
+        {
+            "name": "barbed_end",
+            "directions": 4
+        },
+        {
+            "name": "barbed_single",
+            "directions": 4
+        },
+        {
+            "name": "tanktrap"
+        },
+        {
+            "name": "barswindow",
+            "directions": 4
+        }
+    ]
+}

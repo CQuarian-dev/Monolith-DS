@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CitadelRP at commit https://github.com/citadel-station/citadel-rp/commit/db254a45e84676b7d1f32e3386c65453253bc6c5.",
+  "size": {
+    "x": 96,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "transmutation_rune"
+    }
+  ]
+}

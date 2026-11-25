@@ -1,0 +1,59 @@
+# How each world reclaims the ships that crashed on it (WGPlanetPoiSystem.Wrecks): its ground creeping over the deck,
+# what grows or settles there, the wildlife that moved in and the crew that never left (wreck_crew.yml),
+# and sometimes salvage still in the hold (wreck_loot.yml).
+
+- type: wgWreckTheme
+  id: WGWreckThemeVerda
+  floorTile: FloorPlanetGrass
+  floorChance: 0.25
+  overgrowth: [ FloraTree ]
+  overgrowthChance: 0.04
+  loot: !type:NestedSelector
+    tableId: WGWreckLoot
+
+- type: wgWreckTheme
+  id: WGWreckThemeMerak
+  floorTile: FloorDesert
+  floorChance: 0.35
+  overgrowth: [ FloraRockSolidPlanet ]
+  overgrowthChance: 0.03
+  loot: !type:NestedSelector
+    tableId: WGWreckLoot
+
+- type: wgWreckTheme
+  id: WGWreckThemeFervidus
+  floorTile: FloorBasalt
+  floorChance: 0.3
+  overgrowth: [ BasaltOne, BasaltTwo, Ash ]
+  overgrowthChance: 0.08
+  loot: !type:NestedSelector
+    tableId: WGWreckLoot
+
+- type: wgWreckTheme
+  id: WGWreckThemeThrascias
+  floorTile: FloorSnow
+  floorChance: 0.4
+  overgrowth: [ IceCrust, FloraTreeSnow ]
+  overgrowthChance: 0.06
+  loot: !type:NestedSelector
+    tableId: WGWreckLoot
+
+- type: wgWreckTheme
+  id: WGWreckThemeAerumna
+  floorTile: FloorChromite
+  floorChance: 0.3
+  overgrowth: [ CrystalPink, ShadowBasaltOne ]
+  overgrowthChance: 0.05
+  loot: !type:NestedSelector
+    tableId: WGWreckLoot
+
+- type: wgWreckTheme
+  id: WGWreckThemeCarcinoma
+  floorTile: WGFloorFlesh
+  floorChance: 0.5
+  overgrowth: [ WGCarcinomaTendons, WGFleshPolyp ]
+  overgrowthChance: 0.15
+  minFauna: 2
+  maxFauna: 4
+  loot: !type:NestedSelector
+    tableId: WGWreckLoot

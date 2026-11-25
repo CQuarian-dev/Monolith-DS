@@ -38,7 +38,7 @@ public sealed partial class CryoPodComponent : Component
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("beakerTransferAmount")]
-    public float BeakerTransferAmount = .25f; // Frontier: 1<0.25 (applied per reagent)
+    public float BeakerTransferAmount = .5f; // Frontier: 1<0.5 (applied per reagent) // LuaM
 
     // Frontier: more efficient cryogenics (#1443)
     /// <summary>

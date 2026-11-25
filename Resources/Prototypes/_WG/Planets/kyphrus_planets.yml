@@ -1,0 +1,279 @@
+# Remaining Kyphrus worlds, on existing art and biome templates; gravity and temperature are gameplay tuning.
+# Thrascias deliberately has a solid frozen surface despite its ice-giant sector sprite.
+# No biome marker layers: ore comes from the Mono ore spawners each biome lays (see planet_surfaces.yml).
+
+- type: wgPlanetSurface
+  id: WGSurfaceFervidus
+  planetType: PlanetFervidus
+  ground: WGFervidusSurface
+  airLayers: 3
+  cloudLayer: false
+  orbitRange: 2000
+  buildAtRoundStart: true
+  sanctioned: true
+  climate: wg-planet-scan-climate-fervidus
+  hazards:
+  - wg-planet-scan-hazard-ash-storms
+  - wg-planet-scan-hazard-lava
+  - wg-planet-scan-hazard-wildlife
+  gravity: 0.9
+  radius: 256
+  pois: WGPoisFervidus
+  seed: 20260914
+  networkComponents:
+  - type: MapAtmosphere
+    space: false
+    mixture:
+      volume: 2500
+      immutable: true
+      temperature: 373.15
+      moles: [0, 75, 25]
+  groundComponents:
+  - type: CEZLevelRoof
+  - type: CEZGroundLayer
+  airComponents:
+  - type: MapLight
+    ambientLightColor: "#a87866"
+  - type: Gravity
+    enabled: true
+    inherent: true
+  orbitComponents:
+  - type: MapLight
+    ambientLightColor: "#2a3340"
+
+- type: planet
+  id: WGFervidusSurface
+  biome: WGBiomeFervidus
+  mapName: wg-planet-fervidus-surface
+  mapLight: "#c48b71"
+  atmosphere:
+    volume: 2500
+    immutable: true
+    temperature: 373.15
+    moles: [0, 75, 25]
+
+- type: biomeTemplate
+  id: WGBiomeFervidus
+  layers:
+  # A guaranteed floor below the borrowed template prevents incidental noise gaps.
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: FloorBasalt
+  - !type:BiomeMetaLayer
+    threshold: -1
+    template: WGOpenBasalt
+  # Wild slime patches (_WG/WildSlimes): a few sparse zones, each with a patch or two. The Cinder Vaults' slime layer
+  # shares both noises.
+
+- type: wgPlanetSurface
+  id: WGSurfaceMerak
+  planetType: PlanetMerak
+  ground: WGMerakSurface
+  airLayers: 3
+  cloudLayer: false
+  orbitRange: 2000
+  buildAtRoundStart: true
+  sanctioned: true
+  climate: wg-planet-scan-climate-merak
+  hazards:
+  - wg-planet-scan-hazard-dust-storms
+  - wg-planet-scan-hazard-wildlife
+  gravity: 1.15
+  radius: 320
+  pois: WGPoisMerak
+  seed: 20260915
+  networkComponents:
+  - type: MapAtmosphere
+    space: false
+    mixture:
+      volume: 2500
+      immutable: true
+      # 32 C: the climate's afternoon swing, dust season and sandstorms add 18, short of where animals burn (MerakHeatTest).
+      temperature: 305.15
+      moles: [21.824879, 82.10312]
+  groundComponents:
+  - type: CEZLevelRoof
+  - type: CEZGroundLayer
+  airComponents:
+  - type: MapLight
+    ambientLightColor: "#c4ab80"
+  - type: Gravity
+    enabled: true
+    inherent: true
+  orbitComponents:
+  - type: MapLight
+    ambientLightColor: "#2a3340"
+
+- type: planet
+  id: WGMerakSurface
+  biome: WGBiomeMerak
+  mapName: wg-planet-merak-surface
+  mapLight: "#dfc396"
+  atmosphere:
+    volume: 2500
+    immutable: true
+    temperature: 305.15
+    moles: [21.824879, 82.10312]
+
+- type: biomeTemplate
+  id: WGBiomeMerak
+  layers:
+  # A guaranteed floor below the borrowed template prevents incidental noise gaps.
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: WGFloorMerakDuneSand
+  - !type:BiomeMetaLayer
+    threshold: -1
+    template: WGMerakDesert
+  # Wild slime patches (_WG/WildSlimes) round the oases, over the desert: the oasis noise below the oasis. The Sandstone
+  # Galleries' grotto layer shares both noises.
+
+- type: wgPlanetSurface
+  id: WGSurfaceAerumna
+  planetType: PlanetAerumna
+  ground: WGAerumnaSurface
+  airLayers: 3
+  cloudLayer: false
+  orbitRange: 2000
+  buildAtRoundStart: true
+  sanctioned: true
+  climate: wg-planet-scan-climate-aerumna
+  hazards:
+  - wg-planet-scan-hazard-wildlife
+  gravity: 3
+  radius: 192
+  pois: WGPoisAerumna
+  seed: 20260916
+  networkComponents:
+  - type: MapAtmosphere
+    space: false
+    mixture:
+      volume: 2500
+      immutable: true
+      temperature: 285.15
+      moles: [5, 70, 25]
+  groundComponents:
+  - type: CEZLevelRoof
+  - type: CEZGroundLayer
+  airComponents:
+  - type: MapLight
+    ambientLightColor: "#998374"
+  - type: Gravity
+    enabled: true
+    inherent: true
+  orbitComponents:
+  - type: MapLight
+    ambientLightColor: "#2a3340"
+
+- type: planet
+  id: WGAerumnaSurface
+  biome: WGBiomeAerumna
+  mapName: wg-planet-aerumna-surface
+  mapLight: "#9f897e"
+  atmosphere:
+    volume: 2500
+    immutable: true
+    temperature: 285.15
+    moles: [5, 70, 25]
+
+- type: biomeTemplate
+  id: WGBiomeAerumna
+  layers:
+  # A guaranteed floor below the borrowed template prevents incidental noise gaps.
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: FloorChromite
+  - !type:BiomeMetaLayer
+    threshold: -1
+    template: WGShadowClearings
+  # Wild slime patches (_WG/WildSlimes) in the fungal forest: the forest's own noise from WGShadowClearings, a little
+  # inside its edge. The Umbral Deeps' slime layer shares both noises.
+
+- type: wgPlanetSurface
+  id: WGSurfaceThrascias
+  planetType: PlanetThrascias
+  ground: WGThrasciasSurface
+  airLayers: 3
+  cloudLayer: false
+  orbitRange: 2000
+  buildAtRoundStart: true
+  sanctioned: true
+  climate: wg-planet-scan-climate-thrascias
+  hazards:
+  - wg-planet-scan-hazard-snowstorms
+  - wg-planet-scan-hazard-plasma
+  - wg-planet-scan-hazard-wildlife
+  gravity: 1.25
+  radius: 256
+  pois: WGPoisThrascias
+  seed: 20260917
+  networkComponents:
+  - type: MapAtmosphere
+    space: false
+    mixture:
+      volume: 2500
+      immutable: true
+      temperature: 180
+      moles: [0, 100]
+  groundComponents:
+  - type: CEZLevelRoof
+  - type: CEZGroundLayer
+  airComponents:
+  - type: MapLight
+    ambientLightColor: "#92afc7"
+  - type: Gravity
+    enabled: true
+    inherent: true
+  orbitComponents:
+  - type: MapLight
+    ambientLightColor: "#2a3340"
+
+- type: planet
+  id: WGThrasciasSurface
+  biome: WGBiomeThrascias
+  mapName: wg-planet-thrascias-surface
+  mapLight: "#b9d5e8"
+  atmosphere:
+    volume: 2500
+    immutable: true
+    temperature: 180
+    moles: [0, 100]
+
+- type: biomeTemplate
+  id: WGBiomeThrascias
+  layers:
+  # A guaranteed floor below the borrowed template prevents incidental noise gaps.
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: FloorIce
+  - !type:BiomeMetaLayer
+    threshold: -1
+    template: WGThrasciasTerrain
+  # Wild slime patches (_WG/WildSlimes) beside the crystal fields, over the terrain: the plasma pools' noise below the
+  # field. The Rime Galleries' grotto layer shares both noises.
+
+# LuaM: selected on the server and replicated as the sector system ID.
+- type: starSystem
+  id: WGSystemKyphrus
+  star: StarKyphrus
+  planets:
+    - planet: PlanetFervidus
+      distance: 6200
+      angle: 0.35
+    - planet: PlanetMerak
+      distance: 9400
+      angle: 1.15
+    - planet: PlanetAsclepiu
+      name: Verda
+      distance: 11500
+      angle: 2.4
+    - planet: PlanetAerumna
+      distance: 14000
+      angle: 3.55
+    - planet: PlanetThrascias
+      distance: 14500
+      angle: 4.6
+
+    - planet: WGPlanetCarcinoma
+      distance: 14500
+      angle: 0.0

@@ -12,7 +12,6 @@ using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Resist;
 using Robust.Shared.Containers;
-using Content.Server.Carrying;
 using Content.Shared.Actions;
 using Robust.Shared.Prototypes;
 

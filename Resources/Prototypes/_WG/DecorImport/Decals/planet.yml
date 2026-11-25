@@ -1,0 +1,237 @@
+- type: decal
+  id: AuroraDecalFloorDecalFungus
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: fungus
+
+- type: decal
+  id: AuroraDecalFloorDecalDune
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet_64x32.rsi
+    state: drift_dune
+
+- type: decal
+  id: AuroraDecalFloorDecalSnowdrift
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: drift
+
+- type: decal
+  id: AuroraDecalFloorDecalSnowdriftLarge
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet_64x32.rsi
+    state: drift_snowdrift_large
+
+- type: decal
+  id: AuroraDecalFloorDecalSnowrocks
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: rocksmall1
+
+- type: decal
+  id: AuroraDecalFloorDecalSnowCorner
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: snow_corner_aurora
+
+- type: decal
+  id: BeeDecalWeatherSnowCorner
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: snow_corner_beestation
+
+- type: decal
+  id: TgDecalWeatherSnowCorner
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: snow_corner_tgstation
+
+- type: decal
+  id: CMDecalRocksIceIce1
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: icerock
+
+- type: decal
+  id: CMDecalSandOverlaySand1
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: sand1_s
+
+- type: decal
+  id: CMDecalSandOverlaySand2
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: sand2_s
+
+- type: decal
+  id: CoyoteDecalTurfDecalWeatherAutumnleaves
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/Flora/flora_planet.rsi
+    state: autumn-overlay1
+
+- type: decal
+  id: AuroraDecalCrystal1
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_aurora.rsi
+    state: crystal_gen1
+
+- type: decal
+  id: AuroraDecalCrystal2
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_aurora.rsi
+    state: crystal_gen2
+
+- type: decal
+  id: AuroraDecalCrystal3
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_aurora.rsi
+    state: crystal_gen3
+
+- type: decal
+  id: CitadelRPDecalCrystalGround
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_citadelrp.rsi
+    state: crystal_floor
+
+- type: decal
+  id: CitadelRPDecalCrystal1
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_citadelrp.rsi
+    state: crystal_small
+
+- type: decal
+  id: CitadelRPDecalCrystal2
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_citadelrp.rsi
+    state: crystal_medium
+
+- type: decal
+  id: CitadelRPDecalCrystal3
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/crystal_citadelrp.rsi
+    state: crystal_large
+
+- type: decal
+  id: CitadelRPDecalAlertRune
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: alert_rune
+
+- type: decal
+  id: CitadelRPDecalTentacleRune
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: tentacle_rune
+
+- type: decal
+  id: CitadelRPDecalMadnessRune
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: madness_rune
+
+- type: decal
+  id: CitadelRPDecalGlyph1
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_1
+
+- type: decal
+  id: CitadelRPDecalGlyph2
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_2
+
+- type: decal
+  id: CitadelRPDecalGlyph3
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_3
+
+- type: decal
+  id: CitadelRPDecalGlyph4
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_4
+
+- type: decal
+  id: CitadelRPDecalGlyph5
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_5
+
+- type: decal
+  id: CitadelRPDecalGlyph6
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_6
+
+- type: decal
+  id: CitadelRPDecalGlyph7
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_7
+
+- type: decal
+  id: CitadelRPDecalGlyph8
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_8
+
+- type: decal
+  id: CitadelRPDecalGlyph9
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_9
+
+- type: decal
+  id: CitadelRPDecalGlyph10
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_10
+
+- type: decal
+  id: CitadelRPDecalGlyph11
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/runes_eldritch_citadelrp.rsi
+    state: small_rune_11
+
+- type: decal
+  id: CitadelRPDecalTransmutationCircle
+  tags: [ station ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/transmutation_citadelrp.rsi
+    state: transmutation_rune

@@ -1,0 +1,1197 @@
+- type: entity
+  parent: ChairBase
+  id: NebulaChairArmchair
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: armchair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaChairArmchair
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairArmchairPurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: armchair_purple
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaChairArmchairPurple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairArmchairRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: armchair_red
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaChairArmchairRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairComfyBeige
+  suffix: beige
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_preview_beige
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairComfyBeige
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairComfyPurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_preview_purple
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairComfyPurple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_preview_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairComfyRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairComfyTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_preview_teal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairComfyTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: TgChairComfy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_tgstation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairComfy
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: TgChairComfyCarp
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: carp_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ParaChairComfy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_paradise
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildParaChairComfy
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairComfy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: chair_comfy
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaChairComfy
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairRounded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: chair_rounded
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaChairRounded
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisBedChairComfy
+  suffix: bed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_bed
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairComfyBeige
+  suffix: beige
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_beige
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisChairComfyBeige
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairComfyBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_black
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisChairComfyBlack
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairComfyBrown
+  suffix: brown
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_brown
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisChairComfyBrown
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairComfyLime
+  suffix: lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_lime
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisChairComfyLime
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairComfyOrange
+  suffix: orange
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_orange
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisChairComfyOrange
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisChairComfyRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisComfyRoundedBeige
+  suffix: beige
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: roundedchair_beige
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisComfyRoundedBeige
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisComfyRoundedBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: roundedchair_black
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisComfyRoundedBlack
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisComfyRoundedBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: roundedchair_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisComfyRoundedBlue
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisComfyRoundedBrown
+  suffix: brown
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: roundedchair_brown
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisComfyRoundedBrown
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisComfyRoundedGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: roundedchair_green
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisComfyRoundedGreen
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisComfyRoundedRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: roundedchair_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisComfyRoundedRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreChairComfyBeige
+  suffix: beige
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_vore
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreChairComfyBeige
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreChairComfyGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_green
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreChairComfyGreen
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreChairComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_vore_vore
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreChairComfyRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreChairComfyTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: comfychair_teal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreChairComfyTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreBayComfyGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: bay_comfychair_preview_green
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreBayComfyGreen
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreBayComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: bay_comfychair_preview_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreBayComfyRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreBayComfyTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: bay_comfychair_preview_teal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreBayComfyTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: VoreBayComfyYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: bay_comfychair_preview_yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreBayComfyYellow
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairComfyBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: imaginos_blue
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairComfyBlue
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairComfyOlive
+  suffix: olive
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: imaginos_olive
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairComfyOlive
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: imaginos_red
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairComfyRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairComfyWhite
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: imaginos_white
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairComfyWhite
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyBlueCorpo
+  suffix: corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: corp_blue
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyBlueCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyOliveCorpo
+  suffix: olive corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: corp_olive
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyOliveCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyOrangeCorpo
+  suffix: orange corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: corp_orange
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyOrangeCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyWhiteCorpo
+  suffix: white corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: corp_white
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyWhiteCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyBlueOld
+  suffix: old
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_blue
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyBlueOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyOliveOld
+  suffix: olive old
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_olive
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyOliveOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyOrangeOld
+  suffix: orange old
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_orange
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyOrangeOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestComfyWhiteOld
+  suffix: white old
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_white
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestComfyWhiteOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBeigeOldAlt
+  suffix: alt
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_beige_alt
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBeigeOldAlt
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestOrangeOldAlt
+  suffix: old alt
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_orange_alt
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestOrangeOldAlt
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestPurpleOldAlt
+  suffix: purple old alt
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_purple_alt
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestPurpleOldAlt
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteOldAlt
+  suffix: white old alt
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: old_white_alt
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteOldAlt
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairComfySleek
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs_goonstation.rsi
+    state: chair_comfy_sleek
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairComfyShuttle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/armchairs.rsi
+    state: shuttle_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

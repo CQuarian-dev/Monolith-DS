@@ -156,6 +156,22 @@ namespace Content.Shared.Hands
         }
     }
 
+    // LuaM-start
+    /// <summary>
+    /// Raised on an item right before it is inserted into the picking-up user's hand.
+    /// May have side effects; cancelling it prevents the pickup.
+    /// </summary>
+    [ByRefEvent]
+    public record struct BeforeGettingEquippedHandEvent(EntityUid User, bool Cancelled = false);
+
+    /// <summary>
+    /// Raised on a mob right before an item is inserted into its hand.
+    /// May have side effects; cancelling it prevents the pickup.
+    /// </summary>
+    [ByRefEvent]
+    public record struct BeforeEquippingHandEvent(EntityUid Item, bool Cancelled = false);
+    // LuaM-end
+
     /// <summary>
     ///     Raised when putting an entity into a hand slot
     /// </summary>

@@ -48,6 +48,9 @@ public abstract partial class SharedShuttleSystem : EntitySystem
         if (shuttleMap == targetMap)
             return true;
 
+        if (!WgAllowFTL(shuttleUid, mapUid)) // WOLFGATE(Planets): you only FTL out of a planet network from orbit, and never FTL into an orbit layer.
+            return false;
+
         if (!TryComp<FTLDestinationComponent>(mapUid, out var destination) || !destination.Enabled)
             return false;
 
@@ -228,6 +231,14 @@ public abstract partial class SharedShuttleSystem : EntitySystem
     /// </summary>
     public bool FTLFree(EntityUid shuttleUid, EntityCoordinates coordinates, Angle angle, List<ShuttleExclusionObject>? exclusionZones)
     {
+        // LuaM-start
+        if (!coordinates.IsValid(EntityManager) || !double.IsFinite(angle.Theta))
+        {
+            Log.Error($"Found invalid FTL destination with coordinates {coordinates} and angle {angle} for shuttle {shuttleUid}");
+            return false;
+        }
+        // LuaM-end
+
         if (!_physicsQuery.TryGetComponent(shuttleUid, out var shuttlePhysics) ||
             !_xformQuery.TryGetComponent(shuttleUid, out var shuttleXform))
         {

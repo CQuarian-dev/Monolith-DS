@@ -77,6 +77,6 @@ public sealed partial class WorldControllerSystem
             return;
 
         _nextChunkCountLog = now + TimeSpan.FromSeconds(10);
-        _sawmill.Debug($"{EntityManager.Count<LoadedChunkComponent>()} loaded chunks, {_skippedHelms} idle helms skipped.");
+        _sawmill.Debug($"{Count<LoadedChunkComponent>()} loaded chunks, {_skippedHelms} idle helms skipped.");
     }
 }

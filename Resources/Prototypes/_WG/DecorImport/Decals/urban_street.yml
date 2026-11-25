@@ -1,0 +1,685 @@
+- type: decal
+  id: AuroraCenterLine
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: center-line
+
+- type: decal
+  id: AuroraPedestrian
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: pedestrian
+
+- type: decal
+  id: AuroraLine
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: line
+
+- type: decal
+  id: AuroraLineThin
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: line_thin
+
+- type: decal
+  id: AuroraNoPass
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: no_pass
+
+- type: decal
+  id: AuroraTurnRight
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: turn_right
+
+- type: decal
+  id: AuroraTurnLeft
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: turn_left
+
+- type: decal
+  id: AuroraFork
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: fork
+
+- type: decal
+  id: AuroraNoPark
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: no_park
+
+- type: decal
+  id: AuroraReflector
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: reflector
+
+- type: decal
+  id: AuroraInclineLine
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: incline_line
+
+- type: decal
+  id: AuroraInclineCenterLine
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/road_markings_aurora.rsi
+    state: incline_center-line
+
+- type: decal
+  id: AuroraCurb
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Structures/Decoration/road_edges_aurora.rsi
+    state: curb
+
+- type: decal
+  id: AuroraCurbCorner
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Structures/Decoration/road_edges_aurora.rsi
+    state: curb_corner
+
+- type: decal
+  id: AuroraCurbDiagonal
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: aurora_curb_diagonal
+
+- type: decal
+  id: DarkPackSnowOverlay
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: snow_overlay
+
+- type: decal
+  id: DarkPackLine
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line
+
+- type: decal
+  id: DarkPackLine1
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line1
+
+- type: decal
+  id: DarkPackLine2
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line2
+
+- type: decal
+  id: DarkPackLine3
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line3
+
+- type: decal
+  id: DarkPackLine1Snow
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line1-snow
+
+- type: decal
+  id: DarkPackLine2Snow
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line2-snow
+
+- type: decal
+  id: DarkPackLine3Snow
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line3-snow
+
+- type: decal
+  id: DarkPackLineAlt
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt
+
+- type: decal
+  id: DarkPackLineAlt1
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt1
+
+- type: decal
+  id: DarkPackLineAlt2
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt2
+
+- type: decal
+  id: DarkPackLineAlt3
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt3
+
+- type: decal
+  id: DarkPackLineAlt1Snow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt1-snow
+
+- type: decal
+  id: DarkPackLineAlt2Snow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt2-snow
+
+- type: decal
+  id: DarkPackLineAlt3Snow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_alt3-snow
+
+- type: decal
+  id: DarkPackCrosswalk1
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: crosswalk1
+
+- type: decal
+  id: DarkPackCrosswalk2
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: crosswalk2
+
+- type: decal
+  id: DarkPackCrosswalk3
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: crosswalk3
+
+- type: decal
+  id: DarkPackCrosswalk1Snow
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: crosswalk1-snow
+
+- type: decal
+  id: DarkPackCrosswalk2Snow
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: crosswalk2-snow
+
+- type: decal
+  id: DarkPackCrosswalk3Snow
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: crosswalk3-snow
+
+- type: decal
+  id: DarkPackDecal1
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal1
+
+- type: decal
+  id: DarkPackDecal2
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal2
+
+- type: decal
+  id: DarkPackDecal3
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal3
+
+- type: decal
+  id: DarkPackDecal4
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal4
+
+- type: decal
+  id: DarkPackDecal5
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal5
+
+- type: decal
+  id: DarkPackDecal6
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal6
+
+- type: decal
+  id: DarkPackDecal7
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal7
+
+- type: decal
+  id: DarkPackDecal8
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal8
+
+- type: decal
+  id: DarkPackDecal9
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal9
+
+- type: decal
+  id: DarkPackDecal10
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal10
+
+- type: decal
+  id: DarkPackDecal11
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal11
+
+- type: decal
+  id: DarkPackDecal12
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal12
+
+- type: decal
+  id: DarkPackDecal13
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal13
+
+- type: decal
+  id: DarkPackDecal14
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal14
+
+- type: decal
+  id: DarkPackDecal15
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal15
+
+- type: decal
+  id: DarkPackDecal16
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal16
+
+- type: decal
+  id: DarkPackDecal17
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal17
+
+- type: decal
+  id: DarkPackDecal18
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal18
+
+- type: decal
+  id: DarkPackDecal19
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal19
+
+- type: decal
+  id: DarkPackDecal20
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal20
+
+- type: decal
+  id: DarkPackDecal21
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal21
+
+- type: decal
+  id: DarkPackDecal22
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal22
+
+- type: decal
+  id: DarkPackDecal23
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal23
+
+- type: decal
+  id: DarkPackDecal24
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: decal24
+
+- type: decal
+  id: DarkPackStock
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: stock
+
+- type: decal
+  id: DarkPackBorder
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: border
+
+- type: decal
+  id: DarkPackBorderCorner
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: border_corner
+
+- type: decal
+  id: DarkPackBorderDiagonal
+  tags: [ station, markings ]
+  defaultCustomColor: true
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_border_diagonal
+
+- type: decal
+  id: DarkPackRugs
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs
+
+- type: decal
+  id: DarkPackRugs1
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs1
+
+- type: decal
+  id: DarkPackRugs2
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs2
+
+- type: decal
+  id: DarkPackRugs3
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs3
+
+- type: decal
+  id: DarkPackRugs4
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs4
+
+- type: decal
+  id: DarkPackRugs5
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs5
+
+- type: decal
+  id: DarkPackRugs6
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs6
+
+- type: decal
+  id: DarkPackRugs7
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs7
+
+- type: decal
+  id: DarkPackRugs8
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs8
+
+- type: decal
+  id: DarkPackRugs9
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs9
+
+- type: decal
+  id: DarkPackRugs10
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs10
+
+- type: decal
+  id: DarkPackRugs11
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: rugs11
+
+- type: decal
+  id: DarkPackShadow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: shadow
+
+- type: decal
+  id: DarkPackShadowAlt
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: shadow-alt
+
+- type: decal
+  id: DarkPackSupport
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: support
+
+- type: decal
+  id: DarkPackShadowLow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: shadow_low
+
+- type: decal
+  id: DarkPackLineOffsetAlt
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt
+
+- type: decal
+  id: DarkPackLineOffsetAlt1
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt1
+
+- type: decal
+  id: DarkPackLineOffsetAlt2
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt2
+
+- type: decal
+  id: DarkPackLineOffsetAlt3
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt3
+
+- type: decal
+  id: DarkPackLineOffsetAlt1Snow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt1-snow
+
+- type: decal
+  id: DarkPackLineOffsetAlt2Snow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt2-snow
+
+- type: decal
+  id: DarkPackLineOffsetAlt3Snow
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decals_darkpack.rsi
+    state: line_offset_alt3-snow
+
+- type: decal
+  id: DarkPackLineOffsetAltDiagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt_diagonal
+
+- type: decal
+  id: DarkPackLineOffsetAlt1Diagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt1_diagonal
+
+- type: decal
+  id: DarkPackLineOffsetAlt2Diagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt2_diagonal
+
+- type: decal
+  id: DarkPackLineOffsetAlt3Diagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt3_diagonal
+
+- type: decal
+  id: DarkPackLineOffsetAlt1SnowDiagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt1-snow_diagonal
+
+- type: decal
+  id: DarkPackLineOffsetAlt2SnowDiagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt2-snow_diagonal
+
+- type: decal
+  id: DarkPackLineOffsetAlt3SnowDiagonal
+  tags: [ station, markings ]
+  sprite:
+    sprite: _WG/DecorImport/Decals/decal_diagonals.rsi
+    state: darkpack_line_offset_alt3-snow_diagonal

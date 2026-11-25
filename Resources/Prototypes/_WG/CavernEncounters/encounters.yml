@@ -1,0 +1,29 @@
+# LuaM: NPC- and creature encounters (miners, raiders, surveyors, crawlers, Echo, Lamplighter) are left for the NPC step.
+# Cavern encounters (WGCavernEncounterSystem): each is a room cleared of rock in the cavern's own floor, laid out as
+# listed. tables.yml says which worlds get which.
+
+# The Old Wise Miner's camp: a fire, his bedroll, a rack of picks and his ore sacks. He plays for ore across a crate
+# (Minigames).
+# Tunnel raiders round their fire, with scrap, a tent and a few barricades.
+# A lost surveyor by his lantern.
+# A miner walled in by a rock fall, with the pick he dropped outside it.
+# A blind crawler nest among old bones.
+# The Lamplighter among the dead lanterns of those it caught, and a ring of lit ones that go out as you come.
+# The Echo, waiting in the dark with what's left of its last listeners.
+# A camp someone left in a hurry: a bedroll, a lantern still burning, and what they couldn't carry.
+- type: wgCavernEncounter
+  id: WGCavernEncounterAbandonedCamp
+  radius: 4
+  entries:
+  - ids: [ GoonLantern ]
+    lit: true
+  - ids: [ CMBedBedrollComfy ]
+    distance: 3
+  - ids: [ OreBag, Pickaxe, ClothingBackpackDuffel, ClothingHeadHatHardhatYellow ]
+    min: 2
+    max: 3
+    distance: 3
+  - ids: [ ScrapSteel ]
+    min: 1
+    max: 2
+    distance: 3

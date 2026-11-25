@@ -1,0 +1,22 @@
+- type: entity
+  parent: DecorImportMaterialDoorBase
+  id: InsurrectionDoorCovenant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Doors/MaterialDoors/covenant_insurrection.rsi
+    layers:
+    - state: door_closed
+      map: ["enum.DoorVisualLayers.Base"]
+  - type: Door
+    openSpriteState: door_open
+    closedSpriteState: door_closed
+    openingSpriteState: door_opening
+    closingSpriteState: door_closing
+    openingAnimationTime: 0.9
+    closingAnimationTime: 1.0
+    openTimeOne: 0.6
+    openTimeTwo: 0.3
+    closeTimeOne: 0.4
+    closeTimeTwo: 0.6
+  - type: Damageable
+    damageModifierSet: StructuralMetallic

@@ -1,9 +1,9 @@
+using Content.Shared.Hands; // LuaM
 using Content.Shared.IdentityManagement;
 using Content.Shared.Lube;
 using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Throwing;
-using Robust.Shared.Containers;
 using Robust.Shared.Random;
 
 namespace Content.Server.Lube;
@@ -21,7 +21,7 @@ public sealed partial class LubedSystem : EntitySystem
         base.Initialize();
 
         SubscribeLocalEvent<LubedComponent, ComponentInit>(OnInit);
-        SubscribeLocalEvent<LubedComponent, ContainerGettingInsertedAttemptEvent>(OnHandPickUp);
+        SubscribeLocalEvent<LubedComponent, BeforeGettingEquippedHandEvent>(OnHandPickUp); // LuaM
         SubscribeLocalEvent<LubedComponent, RefreshNameModifiersEvent>(OnRefreshNameModifiers);
     }
 
@@ -30,8 +30,12 @@ public sealed partial class LubedSystem : EntitySystem
         _nameMod.RefreshNameModifiers(uid);
     }
 
-    private void OnHandPickUp(EntityUid uid, LubedComponent component, ContainerGettingInsertedAttemptEvent args)
+    // LuaM-start
+    private void OnHandPickUp(EntityUid uid, LubedComponent component, ref BeforeGettingEquippedHandEvent args)
     {
+        if (args.Cancelled)
+            return;
+
         if (component.SlipsLeft <= 0)
         {
             RemComp<LubedComponent>(uid);
@@ -39,8 +43,9 @@ public sealed partial class LubedSystem : EntitySystem
             return;
         }
         component.SlipsLeft--;
-        args.Cancel();
-        var user = args.Container.Owner;
+        args.Cancelled = true;
+        var user = args.User;
+    // LuaM-end
         _transform.SetCoordinates(uid, Transform(user).Coordinates);
         _transform.AttachToGridOrMap(uid);
         _throwing.TryThrow(uid, _random.NextVector2(), baseThrowSpeed: component.SlipStrength);

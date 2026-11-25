@@ -22,6 +22,7 @@ namespace Content.Server.Body.Systems
     public sealed partial class MetabolizerSystem : EntitySystem
     {
         [Dependency] private IGameTiming _gameTiming = default!;
+        [Dependency] private Content.Server._WG.Dormancy.WGDormancySystem _wgDormancy = default!; // WOLFGATE(Dormancy): skips NPC bodies nobody is near
         [Dependency] private IPrototypeManager _prototypeManager = default!;
         [Dependency] private IRobustRandom _random = default!;
         [Dependency] private ISharedAdminLogManager _adminLogger = default!;
@@ -101,6 +102,7 @@ namespace Content.Server.Body.Systems
                     continue;
 
                 metab.NextUpdate += GetUpdateInterval(uid, metab); // LuaM: UpdateInterval > GetUpdateInterval
+                if (_wgDormancy.BodySleeps(uid)) continue; // WOLFGATE(Dormancy): an NPC body no player is near on a planet skips its upkeep
                 TryMetabolize((uid, metab));
             }
         }

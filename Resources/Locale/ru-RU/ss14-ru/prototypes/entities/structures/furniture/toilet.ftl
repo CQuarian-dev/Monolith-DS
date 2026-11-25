@@ -12,3 +12,6 @@ ent-ToiletGoldenDirtyWater = { ent-ToiletGoldenEmpty }
     .desc = { ent-ToiletGoldenEmpty.desc }
 ent-BaseToilet = унитаз
     .desc = HT-451 — устройство утилизации мелких отходов, работающее на вращении. Этот на удивление чистый.
+ent-ConstructedToilet = { ent-ToiletEmpty }
+    .desc = { ent-ToiletEmpty.desc }
+    .suffix = Построенный

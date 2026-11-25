@@ -11,7 +11,8 @@ namespace Content.Shared._CE.ZLevels.Core.Components;
 /// <summary>
 /// Allows an entity to move up and down the z-levels by gravity or jumping
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(fieldDeltas: true)]
+// WOLFGATE(Performance): raises AfterAutoHandleState so the client notes a height from the server
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true, fieldDeltas: true)]
 public sealed partial class CEZPhysicsComponent : Component
 {
     /// <summary>
@@ -34,6 +35,16 @@ public sealed partial class CEZPhysicsComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public float LaunchCountdown;
+
+    /// <summary>
+    /// Whether any of this grid's footprint is currently over solid terrain, for the shuttle
+    /// console readout. Distinct from being parked: a hull under power drags itself along the
+    /// ground while still very much on it, so body type answers "are the engines cold" and this
+    /// answers "is there ground under me". Networked because the client cannot honestly work it
+    /// out — the footprint walk needs terrain chunks that may sit outside its PVS.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool GroundContact;
 
     /// Optimization Caches
     /// <summary>
@@ -59,8 +70,14 @@ public sealed partial class CEZPhysicsComponent : Component
     [DataField]
     public int DrawDepthDefault;
 
+    // WOLFGATE(Species) START: transition-based airborne draw depth
+    /// <summary>
+    /// True while the sprite has been lifted to OverMobs for being airborne, so the draw depth is only
+    /// written on the way up and on the way down and other systems may change it in between.
+    /// </summary>
     [ViewVariables]
-    public int? AirborneDrawDepthOriginal; // LuaM
+    public bool DrawDepthLifted;
+    // WOLFGATE END
 
     /// <summary>
     /// When the mapinit entity is created, its initial Sprite Offset value is written here in order to apply an offset based on the Z position relative to this value.

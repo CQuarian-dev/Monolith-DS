@@ -93,5 +93,13 @@ namespace Content.Shared.Cargo.Prototypes
         /// </summary>
         [DataField]
         public string Group { get; private set; } = "market";
+
+        // LuaM-start
+        [DataField]
+        public bool RequiresPlanetNetworks { get; private set; }
+
+        public bool Available(Robust.Shared.Configuration.IConfigurationManager cfg) =>
+            !RequiresPlanetNetworks || Content.Shared._WG.CCVar.PlanetCVars.NetworksEnabled(cfg);
+        // LuaM-end
     }
 }

@@ -1,0 +1,19 @@
+wg-poi-mechanic-greeting = Shop's open. What are you driving?
+wg-poi-mechanic-farewell = Drive safe. Or don't, I could use the work.
+wg-poi-mechanic-prompt-repair = Can you fix my ride?
+wg-poi-mechanic-response-repair = Let me take a look.
+wg-poi-mechanic-prompt-shop = What have you got for sale?
+wg-poi-mechanic-response-shop = Delivery beacons and repair boxes. Tools if you want them.
+wg-poi-mechanic-prompt-beacon = How do the beacons work?
+wg-poi-mechanic-response-beacon = Pay, set it down somewhere open, stand back. Ten seconds and she's yours, keys and all.
+
+wg-poi-innkeeper-greeting = Welcome, welcome! Come in out of the dust. You look hungry.
+wg-poi-innkeeper-farewell = Come back soon. We'll keep a place for you.
+wg-poi-innkeeper-prompt-shop = What's on the menu?
+wg-poi-innkeeper-response-shop = Stew, pies, cold drinks. And a few spare parts, very fresh.
+wg-poi-innkeeper-prompt-pay = What do you take?
+wg-poi-innkeeper-response-pay = Coin's fine. But a liver or a kidney on the counter, now that's real money out here. Half what the doctors charge, change in cash.
+wg-poi-innkeeper-prompt-room = Got a room for the night?
+wg-poi-innkeeper-response-room = Down the hall, through the back. The beds are clean. Lock the door, friend. Nobody's ever left in the morning complaining.
+wg-poi-innkeeper-prompt-stew = What's in the stew?
+wg-poi-innkeeper-response-stew = Travellers love it. Old family recipe.

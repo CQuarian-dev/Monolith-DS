@@ -1,0 +1,24 @@
+# The Umbral Deeps' halls: chromite crawls and bedrock galleries (tiles.yml), blue-black shroud for the shadow groves,
+# grey dusk rock under the geodes and the brown hive floor of the deep nest. Each is indestructible, can't be dug and
+# has no base turf.
+
+- type: tile
+  id: WGCavernFloorUmbralShroud
+  parent: WGFloorAerumnaShroud
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorUmbralDusk
+  parent: WGFloorAerumnaDusk
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""
+
+- type: tile
+  id: WGCavernFloorNest
+  parent: WGFloorAerumnaHive
+  indestructible: true
+  deconstructTools: []
+  baseTurf: ""

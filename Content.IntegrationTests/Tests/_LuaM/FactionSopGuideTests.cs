@@ -57,7 +57,7 @@ public sealed class FactionSopGuideTests
                 Assert.That(parser.TryAddMarkup(document, xml), Is.True, guide);
 
                 ProtoId<GuideEntryPrototype>? opened = null;
-                void Capture(List<ProtoId<GuideEntryPrototype>> guides, List<ProtoId<GuideEntryPrototype>>? roots,
+                void Capture(List<ProtoId<GuideEntryPrototype>> guides, List<ProtoId<GuideEntryPrototype>> roots,
                     ProtoId<GuideEntryPrototype>? selected, bool children, ProtoId<GuideEntryPrototype>? start)
                     => opened = start;
                 var uid = entities.SpawnEntity(book, MapCoordinates.Nullspace);

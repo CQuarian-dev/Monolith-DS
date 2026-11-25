@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+  "size": {
+    "x": 96,
+    "y": 128
+  },
+  "states": [
+    {
+      "name": "desert_tree"
+    },
+    {
+      "name": "grove_tree1"
+    },
+    {
+      "name": "shroom"
+    },
+    {
+      "name": "stump"
+    },
+    {
+      "name": "tree1"
+    }
+  ]
+}

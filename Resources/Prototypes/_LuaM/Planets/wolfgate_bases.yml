@@ -1,0 +1,87 @@
+# LuaM: base prototypes Wolfgate takes from its RMC-14 and vehicle ports, without the xeno and vehicle components we
+# don't have. Streets and DecorImport fences and props parent these.
+
+- type: entity
+  parent: BaseFenceMetal
+  id: CMFence
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _RMC14/Structures/fences.rsi
+    state: fence0
+  - type: InteractionOutline
+  - type: Clickable
+  - type: IconSmooth
+    key: fences
+    base: fence
+    mode: CardinalFlags
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            path: /Audio/Items/wirecutter.ogg
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            RMCFenceBroken:
+              min: 1
+              max: 1
+          offset: 0
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+
+- type: entity
+  id: RMCFenceBroken
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _RMC14/Structures/fences.rsi
+    state: brokenfence0
+  - type: Clickable
+  - type: InteractionOutline
+  - type: PlacementReplacement
+    key: walls
+  - type: IconSmooth
+    key: fences
+    base: brokenfence
+    mode: CardinalFlags
+  - type: Physics
+    canCollide: false
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: RMCPropBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Clickable

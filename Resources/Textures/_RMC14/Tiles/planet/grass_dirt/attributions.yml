@@ -1,0 +1,6 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- files: ["grassdirt2_corner2_0.png", "grassdirt2_corner2_1.png", "grassdirt2_corner2_2.png", "grassdirt2_corner2_3.png", "grassdirt2_corner_0.png", "grassdirt2_corner_1.png", "grassdirt2_corner_2.png", "grassdirt2_corner_3.png", "grassdirt2_edge_0.png", "grassdirt2_edge_1.png", "grassdirt2_edge_2.png", "grassdirt2_edge_3.png", "grassdirt_corner2_0.png", "grassdirt_corner2_1.png", "grassdirt_corner2_2.png", "grassdirt_corner2_3.png", "grassdirt_corner_0.png", "grassdirt_corner_1.png", "grassdirt_corner_2.png", "grassdirt_corner_3.png", "grassdirt_edge_0.png", "grassdirt_edge_1.png", "grassdirt_edge_2.png", "grassdirt_edge_3.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from RMC-14 at commit https://github.com/RMC-14/RMC-14/commit/7fca80389aa705890666b9476051fcca2970e6fc, which credits cmss13 icons/turf/ground_map.dmi, ice.dmi and floors/snow2.dmi in planet/meta.json."
+  source: "https://github.com/RMC-14/RMC-14"
+# WOLFGATE END

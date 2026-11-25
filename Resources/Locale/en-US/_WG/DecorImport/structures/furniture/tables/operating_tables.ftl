@@ -1,0 +1,11 @@
+ent-CoyoteTableOptable = operating table
+    .desc = Used for advanced medical procedures.
+ent-CoyoteTableOptablePrimitive = butchers table
+    .desc = Used for painful, primitive medical procedures.
+ent-TgTableOptable = operating table
+    .desc = Used for advanced medical procedures.
+ent-ParaTableTray = surgical instrument table
+    .desc = A small metal tray with wheels.
+ent-AbductorOperatingTable = abductor operating table
+ent-CMOperatingTable = operating table
+    .desc = Used for advanced medical procedures.

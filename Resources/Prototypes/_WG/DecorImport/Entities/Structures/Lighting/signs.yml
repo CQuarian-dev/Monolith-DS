@@ -1,0 +1,223 @@
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonAltevian
+  suffix: altevian
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_altevian.rsi
+    state: Altevian-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonBar
+  suffix: bar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_bar.rsi
+    state: Bar-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonBooze1
+  suffix: booze1
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_booze1.rsi
+    state: Booze-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonBooze2
+  suffix: booze2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_booze2.rsi
+    state: BoozeWord-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonCross
+  suffix: cross
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_cross.rsi
+    state: GreenCross-broken
+    offset: "0,0"
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonDice
+  suffix: dice
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_dice.rsi
+    state: Dice-broken
+    offset: "0,0"
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonGenericBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_generic_blue.rsi
+    state: GenericBlue-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonGenericOrange
+  suffix: orange
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_generic_orange.rsi
+    state: GenericOrange-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonGenericPink
+  suffix: pink
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_generic_pink.rsi
+    state: GenericPink-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonGenericPurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_generic_purple.rsi
+    state: GenericPurple-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonGenericRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_generic_red.rsi
+    state: GenericRed-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonGenericYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_generic_yellow.rsi
+    state: GenericYellow-broken
+    offset: "0,0"
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonImport
+  suffix: import
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_import.rsi
+    state: Import-broken
+    offset: "0,0"
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonPharmacy
+  suffix: pharmacy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_pharmacy.rsi
+    state: Pharmacy-broken
+    offset: "0,0"
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreSmallNeonPolice
+  suffix: police
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/neon_police.rsi
+    state: Police-broken
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_sign.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignHeaven
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_heaven.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignShed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_shed.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignChikenRanch
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_chiken_ranch.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignKebab
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_kebab.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignKebabSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_kebab_sign.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignOasis
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_oasis.rsi
+    offset: "0,0"
+
+- type: entity
+  parent: Poweredlight
+  id: CoyoteLightSignOasisSign
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sign_oasis_sign.rsi
+    offset: "0,0"

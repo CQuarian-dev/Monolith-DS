@@ -1,0 +1,14 @@
+ent-AuroraBunkBed = bunk bed
+    .desc = A space-saving solution for living space problems. A symbol of roommate concept.
+ent-AuroraBunkBedBlack = bunk bed
+    .desc = A space-saving solution for living space problems. A symbol of roommate concept.
+ent-AuroraBunkBedBlue = bunk bed
+    .desc = A space-saving solution for living space problems. A symbol of roommate concept.
+ent-AuroraBunkBedGreen = bunk bed
+    .desc = A space-saving solution for living space problems. A symbol of roommate concept.
+ent-RMCBedBunk = black bunk-bed
+ent-RMCBedBunkBlue = blue bunk-bed
+ent-RMCBedBunkBrown = brown bunk-bed
+ent-RMCBedBunkGreen = green bunk-bed
+ent-RMCBedBunkNoSheets = bunk-bed
+ent-RMCBedBunkRed = red bunk-bed

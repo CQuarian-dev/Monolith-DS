@@ -1,0 +1,4 @@
+- files: [ asteroid.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/discordia-space/CEV-Eris/blob/5f7847f26585d80505500be5a62e621022a56bf7/icons/turf/flooring/asteroid.dmi (states asteroid, asteroid0, asteroid1, asteroid2)."
+  source: "https://github.com/discordia-space/CEV-Eris"

@@ -1,0 +1,299 @@
+- type: entity
+  abstract: true
+  id: DecorImportAlienWeedsBase
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - MidImpassable
+  - type: Sprite
+    drawdepth: FloorObjects
+  - type: Damageable
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: DecorImportAlienNestBase
+  components:
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.05"
+        density: 190
+        mask:
+        - TableMask
+  - type: Strap
+    position: Down
+    rotation: -90
+  - type: Damageable
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 120
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+# tgstation
+
+- type: entity
+  parent: BaseWall
+  id: TgAlienResinMembrane
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/resin_membrane_tgstation.rsi
+    state: resin_membrane0
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/resin_membrane_tgstation.rsi
+    state: resin_membrane0
+  - type: IconSmooth
+    key: walls
+    base: resin_membrane
+    mode: CardinalFlags
+  - type: Occluder
+    enabled: false
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/tgstation/attackblob.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 160
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+# Paradise
+
+- type: entity
+  parent: DecorImportAlienWeedsBase
+  id: ParadiseAlienWeedsNode
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/weeds_paradise.rsi
+    state: weednode
+    drawdepth: Objects
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/paradise/attackblob.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 15
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: ParadiseAlienResinBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: PointLight
+    radius: 1
+    energy: 1
+    color: "#C850FF"
+
+# CEV-Eris
+
+- type: entity
+  parent: DecorImportAlienWeedsBase
+  id: ErisAlienWeeds
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alien_eris.rsi
+    layers:
+    - state: weeds
+      map: [ random ]
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/alien_eris.rsi
+    state: weeds
+  - type: RandomSprite
+    available:
+    - random:
+        weeds: ""
+        weeds1: ""
+        weeds2: ""
+
+- type: entity
+  parent: DecorImportAlienWeedsBase
+  id: ErisAlienWeedsNode
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alien_eris.rsi
+    state: weednode
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#3CDCFF"
+
+- type: entity
+  parent: BaseWall
+  id: ErisAlienResinWall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alien_eris.rsi
+    state: resinwall
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/alien_eris.rsi
+    state: resinwall
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: ErisAlienResinWall
+  id: ErisAlienResinMembrane
+  components:
+  - type: Sprite
+    state: resinmembrane
+  - type: Icon
+    state: resinmembrane
+  - type: Occluder
+    enabled: false
+
+- type: entity
+  parent: DecorImportAlienNestBase
+  id: ErisAlienNest
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/alien_eris.rsi
+    state: nest
+    noRot: true
+
+# Polaris
+
+- type: entity
+  parent: BaseStructure
+  id: PolarisPropMachineGreenEgg
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/gel_cocoon_polaris.rsi
+    state: gel_cocoon
+    noRot: true
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.45,0.35,0.35"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseStructure
+  id: CitadelRPBlightCocoon
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/cocoon_blight_citadelrp.rsi
+    state: cocoon_full
+    noRot: true
+  - type: Damageable
+    damageContainer: Biological
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy # LuaM: XenoResinBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: CitadelRPBlightCocoon
+  id: CitadelRPBlightCocoonStirring
+  components:
+  - type: Sprite
+    state: cocoon_half
+
+- type: entity
+  parent: CitadelRPBlightCocoon
+  id: CitadelRPBlightCocoonEmpty
+  components:
+  - type: Sprite
+    state: cocoon_empty
+
+- type: entity
+  parent: CitadelRPBlightCocoon
+  id: CitadelRPBlightCocoonDead
+  components:
+  - type: Sprite
+    state: cocoon_dead
+
+- type: entity
+  parent: CitadelRPBlightCocoon
+  id: CitadelRPBlightEggSacs
+  components:
+  - type: Sprite
+    state: egg_sacs

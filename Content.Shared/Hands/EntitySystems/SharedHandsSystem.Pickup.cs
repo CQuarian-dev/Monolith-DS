@@ -103,8 +103,13 @@ public abstract partial class SharedHandsSystem : EntitySystem
         if (!Resolve(entity, ref item, false))
             return false;
 
-        if (!CanPickupToHand(uid, entity, hand, checkActionBlocker, handsComp, item))
+        // LuaM-start
+        if (!CanPickupToHand(uid, entity, hand, checkActionBlocker, handsComp, item, showPopup: true))
             return false;
+
+        if (!BeforeDoPickup((uid, handsComp), entity))
+            return false;
+        // LuaM-end
 
         if (animate)
         {
@@ -149,7 +154,7 @@ public abstract partial class SharedHandsSystem : EntitySystem
         return false;
     }
 
-    public bool CanPickupAnyHand(EntityUid uid, EntityUid entity, bool checkActionBlocker = true, HandsComponent? handsComp = null, ItemComponent? item = null)
+    public bool CanPickupAnyHand(EntityUid uid, EntityUid entity, bool checkActionBlocker = true, HandsComponent? handsComp = null, ItemComponent? item = null, bool showPopup = false) // LuaM
     {
         if (!Resolve(uid, ref handsComp, false))
             return false;
@@ -157,13 +162,13 @@ public abstract partial class SharedHandsSystem : EntitySystem
         if (!TryGetEmptyHand(uid, out var hand, handsComp))
             return false;
 
-        return CanPickupToHand(uid, entity, hand, checkActionBlocker, handsComp, item);
+        return CanPickupToHand(uid, entity, hand, checkActionBlocker, handsComp, item, showPopup); // LuaM
     }
 
     /// <summary>
     ///     Checks whether a given item will fit into a specific user's hand. Unless otherwise specified, this will also check the general CanPickup action blocker.
     /// </summary>
-    public bool CanPickupToHand(EntityUid uid, EntityUid entity, Hand hand, bool checkActionBlocker = true, HandsComponent? handsComp = null, ItemComponent? item = null)
+    public bool CanPickupToHand(EntityUid uid, EntityUid entity, Hand hand, bool checkActionBlocker = true, HandsComponent? handsComp = null, ItemComponent? item = null, bool showPopup = false) // LuaM
     {
         if (!Resolve(uid, ref handsComp, false))
             return false;
@@ -178,7 +183,7 @@ public abstract partial class SharedHandsSystem : EntitySystem
         if (TryComp(entity, out PhysicsComponent? physics) && physics.BodyType == BodyType.Static && !item.PickupStatic) // Mono
             return false;
 
-        if (checkActionBlocker && !_actionBlocker.CanPickup(uid, entity))
+        if (checkActionBlocker && !_actionBlocker.CanPickup(uid, entity, showPopup)) // LuaM
             return false;
 
         if (ContainerSystem.TryGetContainingContainer((entity, null, null), out var container))
@@ -225,6 +230,29 @@ public abstract partial class SharedHandsSystem : EntitySystem
             }
         }
     }
+
+    // LuaM-start
+    /// <summary>
+    /// Last step before <see cref="DoPickup"/>: raises cancellable before-pickup events
+    /// that may have side effects, unlike <see cref="GettingPickedUpAttemptEvent"/>.
+    /// </summary>
+    private bool BeforeDoPickup(Entity<HandsComponent?> user, EntityUid item)
+    {
+        if (!Resolve(user, ref user.Comp))
+            return false;
+
+        var userEv = new BeforeEquippingHandEvent(item);
+        RaiseLocalEvent(user, ref userEv);
+
+        if (userEv.Cancelled)
+            return false;
+
+        var itemEv = new BeforeGettingEquippedHandEvent(user);
+        RaiseLocalEvent(item, ref itemEv);
+
+        return !itemEv.Cancelled;
+    }
+    // LuaM-end
 
     /// <summary>
     ///     Puts an entity into the player's hand, assumes that the insertion is allowed. In general, you should not be calling this function directly.

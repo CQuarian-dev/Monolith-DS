@@ -1,0 +1,102 @@
+# Yogstation
+
+- type: entity
+  parent: FoodInjectableBase
+  id: YogFoodBiancoBerry
+  components:
+  - type: FlavorProfile
+    flavors:
+    - berry
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Consumable/Food/jungle_fruit_yogstation.rsi
+    state: bianco_fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 1
+  - type: Extractable
+    grindableSolutionName: food
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  parent: YogFoodBiancoBerry
+  id: YogFoodBonjiBerry
+  components:
+  - type: Sprite
+    state: bonji_fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3
+
+- type: entity
+  parent: YogFoodBiancoBerry
+  id: YogFoodKukuBerry
+  components:
+  - type: Sprite
+    state: kuku_fruit
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 2
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+
+- type: entity
+  parent: FoodInjectableBase
+  id: YogFoodLiberalHat
+  components:
+  - type: FlavorProfile
+    flavors:
+    - mushroom
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Consumable/Food/jungle_fruit_yogstation.rsi
+    state: liberal_hat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 1
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Extractable
+    grindableSolutionName: food
+
+- type: entityLootTable
+  id: YogBiancoBushGather
+  entries:
+  - id: YogFoodBiancoBerry
+    amount: 1
+    maxAmount: 1
+
+- type: entityLootTable
+  id: YogBonjiBushGather
+  entries:
+  - id: YogFoodBonjiBerry
+    amount: 1
+    maxAmount: 1
+
+- type: entityLootTable
+  id: YogKukuBushGather
+  entries:
+  - id: YogFoodKukuBerry
+    amount: 1
+    maxAmount: 1
+
+- type: entityLootTable
+  id: YogLiberalHatsGather
+  entries:
+  - id: YogFoodLiberalHat
+    amount: 3
+    maxAmount: 3

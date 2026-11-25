@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "drytallgrass_2"
+    },
+    {
+      "name": "drytallgrass_3"
+    },
+    {
+      "name": "drytallgrass_4"
+    },
+    {
+      "name": "grass_3"
+    },
+    {
+      "name": "grass_4"
+    },
+    {
+      "name": "tallgrass_3"
+    },
+    {
+      "name": "tallgrass_4"
+    }
+  ]
+}

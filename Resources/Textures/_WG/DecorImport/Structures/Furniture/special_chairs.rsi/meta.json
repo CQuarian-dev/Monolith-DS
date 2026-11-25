@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7, BeeStation at commit https://github.com/BeeStation/BeeStation-Hornet/commit/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d, CEV-Eris at commit https://github.com/discordia-space/CEV-Eris/commit/5f7847f26585d80505500be5a62e621022a56bf7, Citadel Station at commit https://github.com/Citadel-Station-13/Citadel-Station-13/commit/31b47497ab7e3b1c15c67657931ce480f14caed1, CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15, Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc, NovaSector at commit https://github.com/NovaSector/NovaSector/commit/3754f28afedc5e20e1bc76dd6c5568c957a4a9de, Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b, tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518, Yogstation at commit https://github.com/yogstation13/Yogstation/commit/ae2886be95c234202212a3090ee7637173ea2c1d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bananium_chair",
+      "directions": 4
+    },
+    {
+      "name": "barber_chair_nova",
+      "directions": 4
+    },
+    {
+      "name": "barber_chair_paradise",
+      "directions": 4
+    },
+    {
+      "name": "brass_chair",
+      "directions": 4
+    },
+    {
+      "name": "chair_fancy_aurora",
+      "directions": 4
+    },
+    {
+      "name": "chair_fancy_beestation",
+      "directions": 4
+    },
+    {
+      "name": "chair_flock",
+      "directions": 4,
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ],
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "chairold",
+      "directions": 4
+    },
+    {
+      "name": "comfychair_corp",
+      "directions": 4
+    },
+    {
+      "name": "echair0_citadel",
+      "directions": 4
+    },
+    {
+      "name": "echair0_tgstation",
+      "directions": 4
+    },
+    {
+      "name": "onestar_chair_grey",
+      "directions": 4
+    },
+    {
+      "name": "onestar_chair_red",
+      "directions": 4
+    },
+    {
+      "name": "shuttlechair_preview",
+      "directions": 4
+    },
+    {
+      "name": "throne"
+    },
+    {
+      "name": "tzimisce_stool",
+      "directions": 4
+    },
+    {
+      "name": "wheelchair",
+      "directions": 4
+    }
+  ]
+}

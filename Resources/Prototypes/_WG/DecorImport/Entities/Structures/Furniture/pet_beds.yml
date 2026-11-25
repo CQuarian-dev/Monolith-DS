@@ -1,0 +1,41 @@
+- type: entity
+  parent: Bed
+  id: GoonStoolPetBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/pet_beds_goonstation.rsi
+    noRot: false
+    state: petbed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonStoolPetBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: ShiptestBedDogbed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/pet_beds.rsi
+    noRot: false
+    state: dogbed
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 100
+  - type: Construction
+    graph: DecorBuildShiptestBedDogbed
+    node: built

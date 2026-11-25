@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "anvil"
+    },
+    {
+      "name": "endtable-classic"
+    },
+    {
+      "name": "endtable-gothic"
+    },
+    {
+      "name": "endtablehoney"
+    },
+    {
+      "name": "hibachi",
+      "directions": 4
+    },
+    {
+      "name": "podiumwhite"
+    },
+    {
+      "name": "podiumwhite-nt"
+    },
+    {
+      "name": "podiumwhite-snd"
+    },
+    {
+      "name": "podiumwood"
+    },
+    {
+      "name": "podiumwood-nt"
+    },
+    {
+      "name": "podiumwood-snd"
+    },
+    {
+      "name": "table_folding"
+    },
+    {
+      "name": "table_glass"
+    }
+  ]
+}

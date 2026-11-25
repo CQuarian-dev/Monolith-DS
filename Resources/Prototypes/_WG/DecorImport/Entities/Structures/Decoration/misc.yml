@@ -1,0 +1,184 @@
+- type: entity
+  parent: BaseFlora
+  id: SkyratFloraScrap
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: scrap
+    offset: "0,0"
+    layers:
+    - state: scrap
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompAnthill0
+  suffix: anthill0
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: anthill0
+    offset: "0,0"
+    layers:
+    - state: anthill0
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompAnthill1
+  suffix: anthill1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: anthill1
+    offset: "0,0"
+    layers:
+    - state: anthill1
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraChompAnthill2
+  suffix: anthill2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: anthill2
+    offset: "0,0"
+    layers:
+    - state: anthill2
+
+- type: entity
+  parent: BaseFlora
+  id: ParaFloraStrawBail
+  suffix: flora
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: strawbail1
+    offset: "0,0"
+    layers:
+    - state: strawbail1
+
+- type: entity
+  parent: BaseFlora
+  id: ParaFloraStrawBailAlt1
+  suffix: 1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: strawbail2
+    offset: "0,0"
+    layers:
+    - state: strawbail2
+
+- type: entity
+  parent: BaseFlora
+  id: ParaFloraStrawBailAlt2
+  suffix: 2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: strawbail3
+    offset: "0,0"
+    layers:
+    - state: strawbail3
+
+- type: entity
+  parent: BaseTree
+  id: CMFloraWoodTrunk1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: trunk1
+    offset: "0,0"
+    layers:
+    - state: trunk1
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraPumpkinCarved
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: decor-jackolantern
+    offset: "0,0"
+    layers:
+    - state: decor-jackolantern
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraPumpkinCarvedGirly
+  suffix: girly
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: decor-jackolantern-girly
+    offset: "0,0"
+    layers:
+    - state: decor-jackolantern-girly
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraPumpkinCarvedOwo
+  suffix: owo
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: decor-jackolantern-owo
+    offset: "0,0"
+    layers:
+    - state: decor-jackolantern-owo
+
+- type: entity
+  parent: BaseFlora
+  id: VoreFloraPumpkinCarvedScream
+  suffix: scream
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: decor-jackolantern-scream
+    offset: "0,0"
+    layers:
+    - state: decor-jackolantern-scream
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackFluffTvAnalog
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/misc.rsi
+    state: tv_analog
+    noRot: true
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic

@@ -1,0 +1,19 @@
+ent-WGMobTunnelRaider = tunnel raider
+    .desc = A scavenger who lives off what miners leave behind, and off the miners.
+ent-WGMobTunnelRaiderGunner = tunnel raider
+    .desc = A scavenger with a pipe shotgun and not much else.
+ent-WGMobLostSurveyor = lost surveyor
+    .desc = Hurt and out of light, he has been looking for the way up for days.
+ent-WGMobTrappedMiner = trapped miner
+    .desc = Someone is shouting from behind the rock fall.
+ent-WGMobBlindCrawler = blind crawler
+    .desc = Pale, eyeless and listening. Walk.
+ent-WGMobLamplighter = the Lamplighter
+    .desc = It stands very still in the light. It doesn't like the light.
+ent-WGMobCavernEcho = the Echo
+    .desc = It has your voice.
+
+wg-cavern-surveyor-follows = {CAPITALIZE(THE($surveyor))} will follow you out.
+wg-cavern-surveyor-led = Oh thank god. Lead the way, I'm right behind you.
+wg-cavern-surveyor-thanks = Daylight... I owe you. Here, take this. All of it.
+wg-cavern-trapped-miner-thanks = I thought I'd die down there! Here, it's all I have on me. I'm getting out of here.

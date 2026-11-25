@@ -1,0 +1,17 @@
+# LuaM: prototypes DecorImport furniture and its construction recipes need, from Wolfgate's Backmen content.
+
+# _Backmen/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ComfyDarkChair
+  parent: ComfyChair
+  components:
+  - type: Sprite
+    sprite: Backmen/Structures/Furniture/chairs.rsi
+    state: dark-comfy
+  - type: Construction
+    graph: DecorBuildComfyDarkChair
+    node: built
+  - type: Icon
+    sprite: Backmen/Structures/Furniture/chairs.rsi
+    state: dark-comfy
+# WOLFGATE END

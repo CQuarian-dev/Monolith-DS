@@ -667,13 +667,13 @@
   id: NFSandMineralHardRich
   table: !type:GroupSelector
     children:
-    - id: NFWallBasaltCobblebrick
+    - id: NFWallSandstone # LuaM
       weight: 0.3
-    - id: NFWallBasaltCobblebrickArtifactFragment
+    - id: NFWallSandstoneArtifactFragment # LuaM
       weight: 0.3
-    - id: NFWallBasaltCobblebrickBluespace
+    - id: NFWallSandstoneBluespace # LuaM
       weight: 0.1
-    - id: NFWallBasaltCobblebrickDiamond
+    - id: NFWallSandstoneDiamond # LuaM
       weight: 0.3
 
 - type: entity
@@ -807,13 +807,13 @@
   id: NFChromiteMineralHardRich
   table: !type:GroupSelector
     children:
-    - id: NFWallBasaltCobblebrick
+    - id: NFWallChromiteCobblebrick # LuaM
       weight: 0.3
-    - id: NFWallBasaltCobblebrickArtifactFragment
+    - id: NFWallChromiteCobblebrickArtifactFragment # LuaM
       weight: 0.25
-    - id: NFWallBasaltCobblebrickBluespace
+    - id: NFWallChromiteCobblebrickBluespace # LuaM
       weight: 0.25
-    - id: NFWallBasaltCobblebrickDiamond
+    - id: NFWallChromiteCobblebrickDiamond # LuaM
       weight: 0.2
 
 - type: entity

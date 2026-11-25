@@ -1,0 +1,157 @@
+- type: entity
+  parent: BaseStructure
+  id: InsurrectionCovenantHoloSmall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_props_insurrection.rsi
+    state: holo_small
+    noRot: true
+  - type: InteractionOutline
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#40e0ff"
+
+- type: entity
+  parent: InsurrectionCovenantHoloSmall
+  id: InsurrectionCovenantHoloMedium
+  components:
+  - type: Sprite
+    state: holo_medium
+
+- type: entity
+  parent: InsurrectionCovenantHoloSmall
+  id: InsurrectionCovenantHoloLarge
+  components:
+  - type: Sprite
+    state: holo_large
+  - type: PointLight
+    radius: 3
+
+- type: entity
+  parent: InsurrectionCovenantHoloSmall
+  id: InsurrectionCovenantMonitor
+  components:
+  - type: Sprite
+    state: monitor
+  - type: PointLight
+    radius: 1.5
+    energy: 0.8
+
+- type: entity
+  parent: TableBase
+  id: InsurrectionTableCovenant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_props_insurrection.rsi
+    state: table_large
+    snapCardinals: false
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_props_insurrection.rsi
+    state: table_large
+  - type: IconSmooth
+    key: InsurrectionTableCovenant
+    mode: NoSprite
+
+- type: entity
+  parent: InsurrectionTableCovenant
+  id: InsurrectionTableCovenantSmall
+  components:
+  - type: Sprite
+    state: table_small
+  - type: Icon
+    state: table_small
+
+- type: entity
+  parent: BaseStructure
+  id: InsurrectionCovenantCryotube
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_cryotube_insurrection.rsi
+    state: cell-on
+    offset: "0,0.5"
+  - type: InteractionOutline
+  - type: PointLight
+    radius: 1.5
+    energy: 0.8
+    color: "#40e0ff"
+
+- type: entity
+  parent: InsurrectionCovenantCryotube
+  id: InsurrectionCovenantCryotubeOccupied
+  suffix: Occupied
+  components:
+  - type: Sprite
+    state: cell-occupied
+
+- type: entity
+  parent: BaseStructure
+  id: InsurrectionCovenantLiftPad
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_lift_insurrection.rsi
+    state: filled_up
+    drawdepth: FloorObjects
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        hard: false
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+
+- type: entity
+  parent: InsurrectionCovenantLiftPad
+  id: InsurrectionCovenantLiftPadOff
+  suffix: Off
+  components:
+  - type: Sprite
+    state: filled
+
+- type: entity
+  parent: InsurrectionCovenantLiftPad
+  id: InsurrectionCovenantLiftShaft
+  components:
+  - type: Sprite
+    state: open
+
+- type: entity
+  parent: BaseStructure
+  id: InsurrectionCovenantLiftPillar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_lift_insurrection.rsi
+    state: pillarup
+  - type: InteractionOutline
+
+- type: entity
+  parent: InsurrectionCovenantLiftPillar
+  id: InsurrectionCovenantLiftPillarOff
+  suffix: Off
+  components:
+  - type: Sprite
+    state: pillar
+
+- type: entity
+  parent: InsurrectionCovenantLiftPad
+  id: InsurrectionCovenantGravLift
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_grav_insurrection.rsi
+    state: lift
+  - type: PointLight
+    radius: 2
+    energy: 0.8
+    color: "#c060ff"
+
+- type: entity
+  parent: InsurrectionCovenantLiftPad
+  id: InsurrectionCovenantJumpPad
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/covenant_grav_insurrection.rsi
+    state: jumppad

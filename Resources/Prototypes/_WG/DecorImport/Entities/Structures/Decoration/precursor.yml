@@ -1,0 +1,142 @@
+# Goonstation
+
+- type: entity
+  parent: CEZLevelLadderBase
+  id: GoonAncientStairs
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/ancient_stairs_goon.rsi
+
+- type: entity
+  parent: BaseStructure
+  id: GoonCultistBarricade
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/sigil_barricade_goon.rsi
+    state: sigil_barricade
+    noRot: true
+  - type: InteractionOutline
+  - type: Occluder
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.49,-0.49,0.49,0.49"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseStructure
+  id: GoonIntruderSpire
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/intruder_spire_goon.rsi
+    noRot: true
+    layers:
+    - state: spire-base
+    - state: spire-accent
+      shader: unshaded
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StrongMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          GoonIntruderSpireDamaged:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonIntruderSpire
+  id: GoonIntruderSpireDamaged
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - state: spire-base-damaged1
+    - state: spire-fire-fg-damaged1
+      shader: unshaded
+    - state: spire-lightning-damaged1
+      shader: unshaded
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          GoonIntruderSpireRuined:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonIntruderSpire
+  id: GoonIntruderSpireRuined
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - state: spire-fire-bg-damaged2
+      shader: unshaded
+    - state: spire-base-damaged2
+    - state: spire-accent-damaged2
+      shader: unshaded
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonIntruderSpire
+  id: GoonIntruderSpireOld
+  components:
+  - type: Sprite
+    layers:
+    - state: spire-old

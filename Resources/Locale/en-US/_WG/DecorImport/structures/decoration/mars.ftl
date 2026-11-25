@@ -1,0 +1,12 @@
+ent-GoonMarsCliff = martian dust
+    .desc = Someone would've probably paid big money to get a sample of this fifty years ago.
+ent-GoonMarsCliffInner = { ent-GoonMarsCliff }
+    .desc = { ent-GoonMarsCliff.desc }
+ent-ShiptestFloraRockLava = lavatic rock
+    .desc = A volcanic rock. Lava is gushing from it.
+ent-ShiptestFloraRockRockplanet = russet stone
+    .desc = A raised knurl of red rock.
+ent-ShiptestFloraRockPileRockplanet = russet stones
+    .desc = A pile of rust-red rocks.
+ent-ChompAntStructureWall = Metant wall
+    .desc = A creation of metal ants.

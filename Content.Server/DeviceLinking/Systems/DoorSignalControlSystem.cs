@@ -78,7 +78,7 @@ namespace Content.Server.DeviceLinking.Systems
                     bolt = state == SignalState.High;
                 }
 
-                _doorSystem.SetBoltsDown((uid, bolts), bolt);
+                _doorSystem.TrySetBoltDown((uid, bolts), bolt); // LuaM
             }
         }
 

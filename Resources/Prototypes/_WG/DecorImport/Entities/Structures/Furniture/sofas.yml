@@ -1,0 +1,3375 @@
+- type: entity
+  parent: StoolBase
+  id: GoonChairCouchBlue
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonChairCouchBlue
+  id: GoonChairCouchBlueCenter
+  suffix: center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-blue_center
+
+- type: entity
+  parent: GoonChairCouchBlue
+  id: GoonChairCouchBlueLeft
+  suffix: left end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-blue_left
+
+- type: entity
+  parent: GoonChairCouchBlue
+  id: GoonChairCouchBlueRight
+  suffix: right end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-blue_right
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairCouchGreen
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-green
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonChairCouchGreen
+  id: GoonChairCouchGreenCenter
+  suffix: center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-green_center
+
+- type: entity
+  parent: GoonChairCouchGreen
+  id: GoonChairCouchGreenLeft
+  suffix: left end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-green_left
+
+- type: entity
+  parent: GoonChairCouchGreen
+  id: GoonChairCouchGreenRight
+  suffix: right end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-green_right
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairCouchPurple
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-purple
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonChairCouchPurple
+  id: GoonChairCouchPurpleCenter
+  suffix: center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-purple_center
+
+- type: entity
+  parent: GoonChairCouchPurple
+  id: GoonChairCouchPurpleLeft
+  suffix: left end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-purple_left
+
+- type: entity
+  parent: GoonChairCouchPurple
+  id: GoonChairCouchPurpleRight
+  suffix: right end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-purple_right
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairCouchRed
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonChairCouchRed
+  id: GoonChairCouchRedCenter
+  suffix: center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-red_center
+
+- type: entity
+  parent: GoonChairCouchRed
+  id: GoonChairCouchRedLeft
+  suffix: left end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-red_left
+
+- type: entity
+  parent: GoonChairCouchRed
+  id: GoonChairCouchRedRight
+  suffix: right end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-red_right
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairCouchYellow
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: GoonChairCouchYellow
+  id: GoonChairCouchYellowCenter
+  suffix: center
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-yellow_center
+
+- type: entity
+  parent: GoonChairCouchYellow
+  id: GoonChairCouchYellowLeft
+  suffix: left end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-yellow_left
+
+- type: entity
+  parent: GoonChairCouchYellow
+  id: GoonChairCouchYellowRight
+  suffix: right end
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_goonstation.rsi
+    state: chair_couch-yellow_right
+
+- type: entity
+  parent: ChairBase
+  id: CMHybrisaSofaTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: sofa_teal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: NebulaBedSofaLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_bed
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaBedSofaLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaBedSofa
+  suffix: bed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_bed
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaBedSofa
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaBedSofaRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_bed
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaBedSofaRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaLeftPurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_purple
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaLeftPurple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaMiddlePurple
+  suffix: middle purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_purple
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaMiddlePurple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaRightPurple
+  suffix: right purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_purple
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaRightPurple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaLeftRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaLeftRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaMiddleRed
+  suffix: middle red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaMiddleRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaRightRed
+  suffix: right red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaRightRed
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaLeftTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_teal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaLeftTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaMiddleTeal
+  suffix: middle teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_teal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaMiddleTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaRightTeal
+  suffix: right teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_teal
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaRightTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaLeftUnpadded
+  suffix: unpadded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_left_unpadded
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaLeftUnpadded
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaMiddleUnpadded
+  suffix: middle unpadded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_middle_unpadded
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaMiddleUnpadded
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaSofaRightUnpadded
+  suffix: right unpadded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_nebula.rsi
+    state: sofa_right_unpadded
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaSofaRightUnpadded
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CMSouthGreyLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_hori1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSofaSouthGrey
+  suffix: grey
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_hori2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSouthGreyRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_hori3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSouthWhiteLeft
+  suffix: white left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_cmss13.rsi
+    noRot: false
+    state: bench_hor1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSofaSouthWhite
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_cmss13.rsi
+    noRot: false
+    state: bench_hor2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSouthWhiteRight
+  suffix: white right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_cmss13.rsi
+    noRot: false
+    state: bench_hor3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMVertGreyTop
+  suffix: top
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_vet3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSofaVertGrey
+  suffix: vert grey
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_vet2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMVertGreyBot
+  suffix: bot
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_vet1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMVertTealTop
+  suffix: teal top
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_vet3_teal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSofaVertTeal
+  suffix: vert teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_vet2_teal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMVertTealBot
+  suffix: teal bot
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/couch_cmss13.rsi
+    noRot: false
+    state: couch_vet1_teal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMVertWhiteTop
+  suffix: white top
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_cmss13.rsi
+    noRot: false
+    state: bench_vet3
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMSofaVertWhite
+  suffix: vert white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_cmss13.rsi
+    noRot: false
+    state: bench_vet2
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CMVertWhiteBot
+  suffix: white bot
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/bench_cmss13.rsi
+    noRot: false
+    state: bench_vet1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBeigeRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_right_beige
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairSofaBeige
+  suffix: beige
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofamiddle_beige
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBeigeCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofacorner_beige
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBeigeLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_left_beige
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBlackRight
+  suffix: black right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_right_black
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairSofaBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofamiddle_black
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBlackCorner
+  suffix: black corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofacorner_black
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBlackLeft
+  suffix: black left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_left_black
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBlueRight
+  suffix: blue right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_right_blue
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairSofaBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofamiddle_blue
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBlueCorner
+  suffix: blue corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofacorner_blue
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBlueLeft
+  suffix: blue left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_left_blue
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBrownRight
+  suffix: brown right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_right_brown
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairSofaBrown
+  suffix: brown
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofamiddle_brown
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBrownCorner
+  suffix: brown corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofacorner_brown
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaBrownLeft
+  suffix: brown left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_left_brown
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaGreenRight
+  suffix: green right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_right_green
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairSofaGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofamiddle_green
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaGreenCorner
+  suffix: green corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofacorner_green
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaGreenLeft
+  suffix: green left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_left_green
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaLimeRight
+  suffix: lime right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_right_lime
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisChairSofaLime
+  suffix: lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofamiddle_lime
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaLimeCorner
+  suffix: lime corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofacorner_lime
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: PolarisSofaLimeLeft
+  suffix: lime left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_polaris.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: sofaend_left_lime
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairSofaRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_coyote.rsi
+    state: sofaend_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairSofaRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairSofa
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_coyote.rsi
+    state: sofamiddle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairSofa
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairSofaCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_coyote.rsi
+    state: sofacorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairSofaCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairSofaLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_coyote.rsi
+    state: sofaend_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairSofaLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: TgChairSofaRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_tgstation.rsi
+    state: sofaend_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairSofaRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: TgChairSofaMiddle
+  suffix: middle
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_tgstation.rsi
+    state: sofamiddle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairSofaMiddle
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: TgChairSofaCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_tgstation.rsi
+    state: sofacorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairSofaCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: TgChairSofaLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_tgstation.rsi
+    state: sofaend_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairSofaLeft
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaRightBlue
+  suffix: right blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_right_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaRightBlue
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairSofaBlue
+  suffix: chair blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_middle_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairSofaBlue
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraCornerConcaveBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_corner_in_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraCornerConcaveBlue
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaLeftBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_left_blue
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaLeftBlue
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaRightLime
+  suffix: right lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_right_lime
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaRightLime
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairSofaLime
+  suffix: chair lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_middle_lime
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairSofaLime
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraCornerConcaveLime
+  suffix: lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_corner_in_lime
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraCornerConcaveLime
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaLeftLime
+  suffix: lime
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_left_lime
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaLeftLime
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaRightYellow
+  suffix: right yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_right_yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaRightYellow
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairSofaYellow
+  suffix: chair yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_middle_yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairSofaYellow
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraCornerConcaveYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_corner_in_yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraCornerConcaveYellow
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaLeftYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_left_yellow
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaLeftYellow
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairSofaRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_right_chair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairSofaRight
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraStoolChairSofa
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_middle_stool
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraStoolChairSofa
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraSofaCornerConcave
+  suffix: concave
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_corner_in
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraSofaCornerConcave
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairSofaLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_aurora.rsi
+    state: sofa_end_left_chair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairSofaLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBlueRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: blue_sofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBlueRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairSofaBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: blue_sofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairSofaBlue
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBlueCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: blue_sofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBlueCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBlueInternalCorner
+  suffix: internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: blue_sofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBlueInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBlueLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: blue_sofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBlueLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBrownRight
+  suffix: brown right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: brown_sofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBrownRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairSofaBrown
+  suffix: brown
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: brown_sofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairSofaBrown
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBrownCorner
+  suffix: brown corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: brown_sofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBrownCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBrownInternalCorner
+  suffix: brown internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: brown_sofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBrownInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBrownLeft
+  suffix: brown left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: brown_sofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBrownLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaGreyRight
+  suffix: grey right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: grey_sofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaGreyRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairSofaGrey
+  suffix: grey
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: grey_sofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairSofaGrey
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaGreyCorner
+  suffix: grey corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: grey_sofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaGreyCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaGreyInternalCorner
+  suffix: grey internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: grey_sofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaGreyInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaGreyLeft
+  suffix: grey left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: grey_sofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaGreyLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaWhiteRight
+  suffix: white right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: white_sofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaWhiteRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairSofaWhite
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: white_sofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairSofaWhite
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaWhiteCorner
+  suffix: white corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: white_sofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaWhiteCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaWhiteInternalCorner
+  suffix: white internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: white_sofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaWhiteInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaWhiteLeft
+  suffix: white left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_shiptest.rsi
+    state: white_sofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaWhiteLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueCorpoRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: blue_corpsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueCorpoRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBlueCorpo
+  suffix: corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: blue_corpsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBlueCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueCorpoCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: blue_corpsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueCorpoCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueCorpoInternalCorner
+  suffix: internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: blue_corpsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueCorpoInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueCorpoLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: blue_corpsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueCorpoLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBrownCorpoRight
+  suffix: corpo right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: brown_corpsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBrownCorpoRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBrownCorpo
+  suffix: brown corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: brown_corpsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBrownCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBrownCorpoCorner
+  suffix: corpo corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: brown_corpsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBrownCorpoCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBrownCorpoInternalCorner
+  suffix: corpo internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: brown_corpsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBrownCorpoInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBrownCorpoLeft
+  suffix: corpo left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: brown_corpsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBrownCorpoLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestPurpleCorpoRight
+  suffix: purple corpo right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: purple_corpsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestPurpleCorpoRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaPurpleCorpo
+  suffix: purple corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: purple_corpsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaPurpleCorpo
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestPurpleCorpoCorner
+  suffix: purple corpo corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: purple_corpsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestPurpleCorpoCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestPurpleCorpoInternalCorner
+  suffix: purple corpo internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: purple_corpsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestPurpleCorpoInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestPurpleCorpoLeft
+  suffix: purple corpo left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    state: purple_corpsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestPurpleCorpoLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteCorpoRight
+  suffix: white corpo right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: white_corpsofa_end_right
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteCorpoRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaWhiteCorpo
+  suffix: white corpo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: white_corpsofa_middle
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaWhiteCorpo
+    node: built
+
+- type: entity
+  parent: ShiptestSofaWhiteCorpo
+  id: ShiptestSofaWhiteCorpo4
+  suffix: white corpo, side
+  components:
+  - type: Sprite
+    overrideDir: West
+    rotation: 90
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteCorpoCorner
+  suffix: white corpo corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: white_corpsofa_corner
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteCorpoCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteCorpoInternalCorner
+  suffix: white corpo internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: white_corpsofa_internalcorner
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteCorpoInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteCorpoLeft
+  suffix: white corpo left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_corp_shiptest.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: white_corpsofa_end_left
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteCorpoLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueOldRight
+  suffix: right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: blue_oldsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueOldRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaBlueOld
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: blue_oldsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaBlueOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueOldCorner
+  suffix: corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: blue_oldsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueOldCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueOldInternalCorner
+  suffix: internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: blue_oldsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueOldInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestBlueOldLeft
+  suffix: left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: blue_oldsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestBlueOldLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestGreyOldRight
+  suffix: grey right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: grey_oldsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestGreyOldRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaGreyOld
+  suffix: grey
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: grey_oldsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaGreyOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestGreyOldCorner
+  suffix: grey corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: grey_oldsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestGreyOldCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestGreyOldInternalCorner
+  suffix: grey internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: grey_oldsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestGreyOldInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestGreyOldLeft
+  suffix: grey left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: grey_oldsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestGreyOldLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestRedOldRight
+  suffix: red right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: red_oldsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestRedOldRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaRedOld
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: red_oldsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaRedOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestRedOldCorner
+  suffix: red corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: red_oldsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestRedOldCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestRedOldInternalCorner
+  suffix: red internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: red_oldsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestRedOldInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestRedOldLeft
+  suffix: red left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: red_oldsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestRedOldLeft
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteOldRight
+  suffix: white right
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: white_oldsofa_end_right
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteOldRight
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestSofaWhiteOld
+  suffix: white
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: white_oldsofa_middle
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestSofaWhiteOld
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteOldCorner
+  suffix: white corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: white_oldsofa_corner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteOldCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteOldInternalCorner
+  suffix: white internal corner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: white_oldsofa_internalcorner
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteOldInternalCorner
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWhiteOldLeft
+  suffix: white left
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Bench/sofa_old_shiptest.rsi
+    state: white_oldsofa_end_left
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWhiteOldLeft
+    node: built

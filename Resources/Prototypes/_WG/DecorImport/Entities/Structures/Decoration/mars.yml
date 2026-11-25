@@ -1,0 +1,148 @@
+# Goonstation
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: GoonMarsCliffBase
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Walls/mars_cliff_goon.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: GoonMarsCliffBase
+  id: GoonMarsCliff
+  components:
+  - type: Sprite
+    state: mars_cliff1
+
+- type: entity
+  parent: GoonMarsCliffBase
+  id: GoonMarsCliffInner
+  components:
+  - type: Sprite
+    state: mars_cliff2
+
+# Shiptest
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestFloraRockLava
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/shiptest/hit_stone.ogg
+    noDamageSound:
+      path: /Audio/Effects/weak_hit2.ogg
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/rocks_shiptest.rsi
+    layers:
+    - state: basalt1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        basalt1: ""
+        basalt2: ""
+        basalt3: ""
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#ab4907"
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestFloraRockRockplanet
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/shiptest/hit_stone.ogg
+    noDamageSound:
+      path: /Audio/Effects/weak_hit2.ogg
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/rocks_shiptest.rsi
+    layers:
+    - state: redrock1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        redrock1: ""
+        redrock2: ""
+        redrock3: ""
+
+- type: entity
+  id: ShiptestFloraRockPileRockplanet
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/_WG/DecorImport/shiptest/hit_stone.ogg
+    noDamageSound:
+      path: /Audio/Effects/weak_hit2.ogg
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/rocks_shiptest.rsi
+    noRot: true
+    drawdepth: FloorObjects
+    layers:
+    - state: redrocks1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        redrocks1: ""
+        redrocks2: ""
+        redrocks3: ""
+
+# CHOMPStation
+
+- type: entity
+  parent: BaseStructure
+  id: ChompAntStructureWall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/tribal_gear_chomp.rsi
+    state: wall
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

@@ -1,0 +1,17 @@
+# LuaM: prototypes DecorImport furniture and its construction recipes need, from Wolfgate's Nuclear14 content.
+
+# _Nuclear14/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  parent: ChairWood
+  id: N14ChairSchool
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/schoolchair.rsi
+    state: chair
+  - type: Construction
+    graph: DecorBuildN14ChairSchool
+    node: built
+  - type: Icon
+    sprite: _Nuclear14/Structures/Furniture/schoolchair.rsi
+    state: chair
+# WOLFGATE END

@@ -1,0 +1,143 @@
+- type: entity
+  parent: BaseSign
+  id: DarkPackStoreSignBacoTell
+  components:
+  - type: Sprite
+    snapCardinals: false
+    sprite: _WG/DecorImport/Structures/Lighting/store_sign.rsi
+    state: bacotell
+
+- type: entity
+  parent: DarkPackStoreSignBacoTell
+  id: DarkPackStoreSignBubway
+  components:
+  - type: Sprite
+    state: bubway
+
+- type: entity
+  parent: DarkPackStoreSignBacoTell
+  id: DarkPackStoreSignGummaGuts
+  components:
+  - type: Sprite
+    state: gummaguts
+
+- type: entity
+  parent: DarkPackStoreSignBacoTell
+  id: DarkPackStoreSignRedDragon
+  components:
+  - type: Sprite
+    state: reddragon
+
+- type: entity
+  parent: DarkPackStoreSignBacoTell
+  id: DarkPackStoreSignOTolleys
+  components:
+  - type: Sprite
+    state: otolleys
+
+- type: entity
+  parent: DarkPackStoreSignBacoTell
+  id: DarkPackStoreSignMagadon
+  components:
+  - type: Sprite
+    state: magadon
+
+- type: entity
+  parent: BaseSign
+  id: DarkPackSignOrder
+  components:
+  - type: Sprite
+    snapCardinals: false
+    sprite: _WG/DecorImport/Structures/Lighting/city_sign.rsi
+    state: order
+
+- type: entity
+  parent: DarkPackSignOrder
+  id: DarkPackSignBar
+  components:
+  - type: Sprite
+    state: bar
+
+- type: entity
+  parent: DarkPackSignBar
+  id: DarkPackSignBarSnow
+  suffix: snow
+  components:
+  - type: Sprite
+    state: bar-snow
+
+- type: entity
+  parent: DarkPackSignOrder
+  id: DarkPackSignHotelBanner
+  components:
+  - type: Sprite
+    state: banner
+
+- type: entity
+  parent: DarkPackSignHotelBanner
+  id: DarkPackSignHotelBannerSnow
+  suffix: snow
+  components:
+  - type: Sprite
+    state: banner-snow
+
+- type: entity
+  parent: DarkPackSignOrder
+  id: DarkPackSignHotel
+  suffix: east
+  components:
+  - type: Sprite
+    state: hotel_east
+    drawdepth: Overdoors
+  - type: PointLight
+    radius: 2
+    energy: 1.5
+    color: "#d26be0"
+
+- type: entity
+  parent: DarkPackSignHotel
+  id: DarkPackSignHotelWest
+  suffix: west
+  components:
+  - type: Sprite
+    state: hotel_west
+
+- type: entity
+  parent: DarkPackSignHotel
+  id: DarkPackSignHotelSnow
+  suffix: east, snow
+  components:
+  - type: Sprite
+    state: hotel_east-snow
+
+- type: entity
+  parent: DarkPackSignHotel
+  id: DarkPackSignHotelWestSnow
+  suffix: west, snow
+  components:
+  - type: Sprite
+    state: hotel_west-snow
+
+- type: entity
+  parent: BaseSign
+  id: DarkPackSignCabaret
+  suffix: left
+  components:
+  - type: Sprite
+    snapCardinals: false
+    sprite: _WG/DecorImport/Structures/Lighting/cabaret.rsi
+    state: cabar
+    offset: "0.25,0.25"
+    drawdepth: Overdoors
+  - type: PointLight
+    radius: 2
+    energy: 1.5
+    color: "#e58ad8"
+
+- type: entity
+  parent: DarkPackSignCabaret
+  id: DarkPackSignCabaretRight
+  suffix: right
+  components:
+  - type: Sprite
+    state: et

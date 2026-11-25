@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc, Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76, Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "desk_wood_corner",
+      "directions": 4
+    },
+    {
+      "name": "desk_wood_left",
+      "directions": 4
+    },
+    {
+      "name": "desk_wood_mid",
+      "directions": 4
+    },
+    {
+      "name": "desk_wood_right",
+      "directions": 4
+    },
+    {
+      "name": "dresser"
+    },
+    {
+      "name": "emptycomputer",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "ark1_s"
+    },
+    {
+      "name": "ark1_n"
+    },
+    {
+      "name": "ark1_e"
+    },
+    {
+      "name": "ark1_w"
+    },
+    {
+      "name": "ark1_se"
+    },
+    {
+      "name": "ark1_sw"
+    },
+    {
+      "name": "ark1_ne"
+    },
+    {
+      "name": "ark1_nw"
+    },
+    {
+      "name": "ark1-snow_s"
+    },
+    {
+      "name": "ark1-snow_n"
+    },
+    {
+      "name": "ark1-snow_e"
+    },
+    {
+      "name": "ark1-snow_w"
+    },
+    {
+      "name": "ark1-snow_se"
+    },
+    {
+      "name": "ark1-snow_sw"
+    },
+    {
+      "name": "ark1-snow_ne"
+    },
+    {
+      "name": "ark1-snow_nw"
+    },
+    {
+      "name": "ark2_s"
+    },
+    {
+      "name": "ark2_n"
+    },
+    {
+      "name": "ark2_w"
+    },
+    {
+      "name": "ark2-snow_s"
+    },
+    {
+      "name": "ark2-snow_n"
+    },
+    {
+      "name": "ark2-snow_w"
+    },
+    {
+      "name": "trad"
+    },
+    {
+      "name": "trad-art1"
+    },
+    {
+      "name": "trad-art2"
+    },
+    {
+      "name": "trad-art3"
+    },
+    {
+      "name": "budshrine"
+    }
+  ]
+}

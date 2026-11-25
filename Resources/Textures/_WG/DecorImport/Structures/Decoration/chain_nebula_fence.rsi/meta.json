@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "single"
+        },
+        {
+            "name": "straight",
+            "directions": 4
+        },
+        {
+            "name": "end",
+            "directions": 4
+        },
+        {
+            "name": "post",
+            "directions": 4
+        },
+        {
+            "name": "corner",
+            "directions": 8
+        },
+        {
+            "name": "three_way",
+            "directions": 4
+        },
+        {
+            "name": "four_way"
+        },
+        {
+            "name": "door-closed",
+            "directions": 4
+        },
+        {
+            "name": "door-opened",
+            "directions": 4
+        },
+        {
+            "name": "straight-cut1",
+            "directions": 4
+        },
+        {
+            "name": "straight-cut2",
+            "directions": 4
+        },
+        {
+            "name": "straight-cut3",
+            "directions": 4
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- files: ["asphalt_old.png", "asphalt_old_roadlines4.png", "blackwood.png", "bluemetal_1.png", "bluemetalfull.png", "carpet_deco_pink.png", "carpetbeige.png", "carpetblack.png", "carpetblack_deco.png", "carpetblue.png", "carpetblue_deco.png", "carpetdarkerblue.png", "carpetfadedred.png", "carpetgreen.png", "carpetgreen_deco.png", "carpetpatternblue.png", "carpetred.png", "carpetred_deco.png", "cement1.png", "cement2.png", "cuppafloor.png", "darkgrey_bigtile.png", "dropshipfloorfull.png", "engineer_floor_5.png", "engineer_metalfloor_4.png", "floor.png", "greywood.png", "metalwhitefull.png", "redwood.png", "spaceport1.png", "spaceport2.png", "supermartfloor1.png", "tilebeige.png", "tilebeigecheckalt.png", "tileblack.png", "tileblue.png", "tilebluecheck.png", "tilegreen.png", "tilegrey.png", "tilelightbeige.png", "tilered.png", "tilewhite.png", "tilewhitecheck.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from RMC-14 at commit 7fca80389aa705890666b9476051fcca2970e6fc."
+  source: "https://github.com/RMC-14/RMC-14"
+# WOLFGATE END

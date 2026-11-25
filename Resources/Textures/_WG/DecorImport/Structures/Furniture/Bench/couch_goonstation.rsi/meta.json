@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from Goonstation at commit https://github.com/goonstation/goonstation/commit/5c2227ce62cee48048c7944aea340b0a14c88a7d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chair_couch-blue",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-blue_center",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-blue_left",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-blue_right",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-green",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-green_center",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-green_left",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-green_right",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-purple",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-purple_center",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-purple_left",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-purple_right",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-red",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-red_center",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-red_left",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-red_right",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-yellow",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-yellow_center",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-yellow_left",
+      "directions": 4
+    },
+    {
+      "name": "chair_couch-yellow_right",
+      "directions": 4
+    }
+  ]
+}

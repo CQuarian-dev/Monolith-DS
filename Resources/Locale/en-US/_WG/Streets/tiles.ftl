@@ -1,0 +1,10 @@
+tiles-wg-streets-black-carpet = black carpet
+tiles-wg-streets-blue-carpet = blue carpet
+tiles-wg-streets-dirt-road = dirt road
+tiles-wg-streets-red-metal-tile = red metal tile
+tiles-wg-streets-sidewalk = sidewalk
+tiles-wg-streets-white-metal-tile = white metal tile
+tiles-wg-streets-asphalt = asphalt
+tiles-wg-streets-beige-metal-tile = beige metal tile
+tiles-wg-streets-shale = shale
+tiles-wg-streets-tiles-rmc-asphalt = tiles-rmc-asphalt

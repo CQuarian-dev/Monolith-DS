@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CitadelRP at commit https://github.com/citadel-station/citadel-rp/commit/db254a45e84676b7d1f32e3386c65453253bc6c5.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "rock1"
+    },
+    {
+      "name": "rock2"
+    },
+    {
+      "name": "rock3"
+    },
+    {
+      "name": "rock4"
+    },
+    {
+      "name": "rock5"
+    },
+    {
+      "name": "busha1"
+    },
+    {
+      "name": "busha2"
+    },
+    {
+      "name": "busha3"
+    },
+    {
+      "name": "bushb1"
+    },
+    {
+      "name": "bushb2"
+    },
+    {
+      "name": "bushb3"
+    },
+    {
+      "name": "bushc1"
+    },
+    {
+      "name": "bushc2"
+    },
+    {
+      "name": "bushc3"
+    }
+  ]
+}

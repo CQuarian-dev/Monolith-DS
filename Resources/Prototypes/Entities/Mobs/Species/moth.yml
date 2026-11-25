@@ -5,10 +5,12 @@
   id: BaseMobMoth
   abstract: true
   components:
+  # WOLFGATE(Planets) START: z-level flight is back on, which Monolith#4812 turned off
   - type: CEZFlyer # Mono: z-level flight
     flightSpeed: 0.35
     flightMoveSpeedModifier: 0.35
     hoverStaminaDrain: 4
+  # WOLFGATE END
   - type: CEControllableFlight
     startFlightDoAfter: 2
   - type: HumanoidAppearance

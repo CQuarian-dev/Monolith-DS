@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DS13 at commit https://github.com/DS-13-Dev-Team/DS13-2.0/commit/4c8813536f72a1e2efafb661b62821bb62a5a514.",
+  "size": {
+    "x": 32,
+    "y": 48
+  },
+  "states": [
+    {
+      "name": "wall"
+    }
+  ]
+}

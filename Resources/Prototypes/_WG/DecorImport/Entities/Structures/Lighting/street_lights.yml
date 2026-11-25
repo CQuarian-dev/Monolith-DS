@@ -1,0 +1,190 @@
+- type: entity
+  parent: PoweredLightPostSmall
+  id: MonkeLightStreetLamp
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_street_lamp.rsi
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: MonkeLightStreetLamp
+  id: MonkeLightStreetLamp2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: MonkeLightStreetLamp
+  id: MonkeLightStreetLamp3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: MonkeLightStreetLamp
+  id: MonkeLightStreetLamp4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: ShiptestLightStreet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_street.rsi
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: ShiptestLightStreet
+  id: ShiptestLightStreet2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: ShiptestLightStreet
+  id: ShiptestLightStreet3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: ShiptestLightStreet
+  id: ShiptestLightStreet4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: VoreLightLamppost
+  suffix: lamppost
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_lamppost.rsi
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: VoreLightLamppost
+  id: VoreLightLamppost2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: VoreLightLamppost
+  id: VoreLightLamppost3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: VoreLightLamppost
+  id: VoreLightLamppost4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: CoyoteLightLampost
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_lampost.rsi
+    snapCardinals: false
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: DarkPackLightLamppostOne
+  suffix: one
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/lamppost_one.rsi
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: DarkPackLightLamppostOne
+  id: DarkPackLightLamppostOne2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: DarkPackLightLamppostOne
+  id: DarkPackLightLamppostOne3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: DarkPackLightLamppostOne
+  id: DarkPackLightLamppostOne4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: DarkPackLightLamppostThree
+  suffix: three
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/lamppost_three.rsi
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: DarkPackLightLamppostThree
+  id: DarkPackLightLamppostThree2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: DarkPackLightLamppostThree
+  id: DarkPackLightLamppostThree3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: DarkPackLightLamppostThree
+  id: DarkPackLightLamppostThree4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: DarkPackLightLamppostFour
+  suffix: four
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/lamppost_four.rsi
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: DarkPackLightLamppostSidewalk
+  suffix: sidewalk
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/lamppost_sidewalk.rsi
+
+- type: entity
+  parent: PoweredLightPostSmall
+  id: DarkPackLamppostSidewalkChinese
+  suffix: chinese
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/sidewalk_chinese.rsi
+    snapCardinals: false

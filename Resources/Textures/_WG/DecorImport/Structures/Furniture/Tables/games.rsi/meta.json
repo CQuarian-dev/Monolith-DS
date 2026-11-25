@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "blackjack_l",
+      "directions": 4
+    },
+    {
+      "name": "blackjack_m",
+      "directions": 4
+    },
+    {
+      "name": "blackjack_r",
+      "directions": 4
+    },
+    {
+      "name": "craps_table",
+      "directions": 4
+    },
+    {
+      "name": "gamble_chess"
+    },
+    {
+      "name": "gamble_dice"
+    },
+    {
+      "name": "gamble_four"
+    },
+    {
+      "name": "gamble_ninemen"
+    },
+    {
+      "name": "gamble_space"
+    },
+    {
+      "name": "gamble_sweeper"
+    },
+    {
+      "name": "gamble_toe"
+    },
+    {
+      "name": "nv_pooltable",
+      "directions": 8
+    },
+    {
+      "name": "roulette_long"
+    },
+    {
+      "name": "roulette_table"
+    },
+    {
+      "name": "roulette_wheel"
+    },
+    {
+      "name": "roulette_wheel_long"
+    }
+  ]
+}

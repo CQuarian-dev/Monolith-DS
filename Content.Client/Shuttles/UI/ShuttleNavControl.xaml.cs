@@ -143,6 +143,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
         OnMouseEntered += HandleMouseEntered;
         OnMouseExited += HandleMouseExited;
+        WgAddPlanetScanner(); // WOLFGATE(PlanetScan): hovering a world opens its scan.
     }
 
     private void HandleMouseEntered(GUIMouseHoverEventArgs args)
@@ -157,6 +158,19 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
     public void SetMatrix(EntityCoordinates? coordinates, Angle? angle)
     {
+        _wgRadarOrigin = coordinates; // WOLFGATE(Planets): retain the moving origin while panned.
+        // WOLFGATE(Planets) START: a map-pinned radar must follow travel to another map.
+        // Otherwise panning in space permanently hides orbit terrain (and contacts) by retaining the old map.
+        if (_wasPanned && coordinates is { } next && _coordinates is { } previous &&
+            EntManager.TryGetComponent<TransformComponent>(next.EntityId, out var nextTransform) &&
+            (!EntManager.TryGetComponent<TransformComponent>(previous.EntityId, out var previousTransform) ||
+             nextTransform.MapUid != previousTransform.MapUid))
+        {
+            _wasPanned = false;
+            Offset = TargetOffset = Vector2.Zero;
+        }
+        // WOLFGATE END
+
         if (_wasPanned) // Mono hack
             return;
 
@@ -295,6 +309,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         _radarModeButtons.AddChild(_radarResetButton);
 
         parent.AddChild(_radarModeButtons);
+        AddWgTerrainButton(parent); // WOLFGATE(Planets): terrain toggle overlays the radar, not the settings column.
         LayoutContainer.SetAnchorAndMarginPreset(_radarModeButtons, LayoutContainer.LayoutPreset.BottomLeft, margin: 10);
     }
 
@@ -472,6 +487,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
         _isMouseDown = true;
         _lastMousePos = args.RelativePosition;
+        _wgPressedAt = args.RelativePixelPosition; // WOLFGATE(PlanetSignals): where a click on a world began.
         TryFireAtPosition(args.RelativePosition);
     }
 
@@ -483,6 +499,10 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
             return;
 
         _isMouseDown = false;
+
+        // WOLFGATE(PlanetSignals): a click on a world lists its signals.
+        if (WgTryOpenPlanetSignals(args.RelativePixelPosition, args.RelativePosition))
+            return;
 
         var coords = GetMouseEntityCoordinates(args.RelativePosition);
         OnRadarClick?.Invoke(coords);
@@ -574,6 +594,11 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
         DrawBacking(handle);
 
+        // WOLFGATE(Planets) START: a grid's map can change between BUI updates (FTL / planet layer travel).
+        if (_wasPanned && _wgRadarOrigin is { } radarOrigin)
+            SetMatrix(radarOrigin, _rotation);
+        // WOLFGATE END
+
         // No data
         if (_coordinates == null || _rotation == null)
         {
@@ -611,6 +636,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
         var worldToView = worldToShuttle * shuttleToView;
 
         DrawStarSystem(handle, worldToShuttle, shuttleToView, xform.MapUid); // Far Horizons
+        DrawWgTerrain(handle, worldToView, xform.MapUid); // WOLFGATE(Planets): cached planetary terrain beneath radar contacts.
         DrawRadiusIndicators(handle, worldToView, mapPos.Position, xform.MapUid); // LuaM
         DrawNebulae(handle, worldToView, mapPos); // Lua
 
@@ -635,6 +661,7 @@ public partial class ShuttleNavControl : BaseShuttleControl // Mono
 
         DrawCircles(handle);
 
+        DrawWgPlanetSignals(handle, worldToView, xform); // WOLFGATE(PlanetSignals): sites and other layers' vessels on a world's radar.
         DrawIFFBeacons(handle, worldToView, mapPos, xform.MapUid); // Far Horizons
 
         // Draw shields

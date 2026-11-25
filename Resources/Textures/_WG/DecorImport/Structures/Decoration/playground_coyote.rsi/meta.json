@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+  "size": {
+    "x": 68,
+    "y": 68
+  },
+  "states": [
+    {
+      "name": "merry_go_round"
+    },
+    {
+      "name": "slide",
+      "directions": 4
+    },
+    {
+      "name": "brown_ride",
+      "directions": 4
+    },
+    {
+      "name": "white_ride",
+      "directions": 4
+    },
+    {
+      "name": "white2_ride"
+    },
+    {
+      "name": "black_ride"
+    },
+    {
+      "name": "red_ride"
+    },
+    {
+      "name": "hopscotch_number"
+    },
+    {
+      "name": "hopscotch"
+    },
+    {
+      "name": "haybale"
+    }
+  ]
+}

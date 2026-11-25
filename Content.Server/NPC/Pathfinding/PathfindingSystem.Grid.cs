@@ -120,10 +120,17 @@ public sealed partial class PathfindingSystem
 
             // TODO: Often we invalidate the entire chunk when it might be something as simple as an airlock change
             // Would be better to handle that though this was safer and max it's taking is like 1-2ms every half-second.
-            var dirt = new GridPathfindingChunk[Math.Min(comp.DirtyChunks.Count, MaxChunksPerTick - builtChunks)]; // LuaM
+            // WOLFGATE(Planets) START: a planet layer builds only the dirty chunks near someone, a slice an update
+            var building = WgChunksToBuild(uid, comp);
+            if (building.Count == 0)
+                continue;
+
+            var dirt = new GridPathfindingChunk[Math.Min(building.Count, MaxChunksPerTick - builtChunks)]; // LuaM
             var idx = 0;
 
-            foreach (var origin in comp.DirtyChunks)
+            // foreach (var origin in comp.DirtyChunks)
+            foreach (var origin in building)
+            // WOLFGATE END
             {
                 // LuaM-start
                 if (idx >= dirt.Length)

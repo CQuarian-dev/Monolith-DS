@@ -1,0 +1,9 @@
+- files: [ dry_firm.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DS-13-Dev-Team/DS13-1.0/blob/1751066f68b8dd75c778a3ae19a52915a8034ae4/icons/turf/floors_outside_ds13.dmi (state dry_firm)."
+  source: "https://github.com/DS-13-Dev-Team/DS13-1.0"
+
+- files: [ dry_cracked.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DS-13-Dev-Team/DS13-1.0/blob/1751066f68b8dd75c778a3ae19a52915a8034ae4/icons/turf/floors_outside_ds13.dmi (state dry_cracked)."
+  source: "https://github.com/DS-13-Dev-Team/DS13-1.0"

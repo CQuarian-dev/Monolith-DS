@@ -100,7 +100,7 @@ namespace Content.Server.Shuttles.Systems
             foreach (var entity in _dockingBoltSet)
             {
                 _doorSystem.TryClose(entity);
-                _doorSystem.SetBoltsDown((entity.Owner, entity.Comp2), enabled);
+                _doorSystem.TrySetBoltDown((entity.Owner, entity.Comp2), enabled); // LuaM
             }
         }
 
@@ -326,7 +326,15 @@ namespace Content.Server.Shuttles.Systems
 
             if (TryComp(dockAUid, out DoorComponent? doorA))
             {
-                if (_doorSystem.TryOpen(dockAUid, doorA))
+                // LuaM-start
+                var opened = true;
+                if (!Paused(dockAUid))
+                    opened = _doorSystem.TryOpen(dockAUid, doorA);
+                else
+                    _doorSystem.StartOpening(dockAUid, doorA);
+
+                if (opened)
+                // LuaM-end
                 {
                     if (TryComp<DoorBoltComponent>(dockAUid, out var airlockA))
                     {
@@ -338,7 +346,15 @@ namespace Content.Server.Shuttles.Systems
 
             if (TryComp(dockBUid, out DoorComponent? doorB))
             {
-                if (_doorSystem.TryOpen(dockBUid, doorB))
+                // LuaM-start
+                var opened = true;
+                if (!Paused(dockBUid))
+                    opened = _doorSystem.TryOpen(dockBUid, doorB);
+                else
+                    _doorSystem.StartOpening(dockBUid, doorB);
+
+                if (opened)
+                // LuaM-end
                 {
                     if (TryComp<DoorBoltComponent>(dockBUid, out var airlockB))
                     {
@@ -452,8 +468,9 @@ namespace Content.Server.Shuttles.Systems
             if (TerminatingOrDeleted(dockUid))
                 return;
 
-            if (TryComp<DoorBoltComponent>(dockUid, out var airlock))
-                _doorSystem.SetBoltsDown((dockUid, airlock), false);
+            // -- Dock() болтит шлюзы без проверки питания, поэтому и снимать болты надо без неё, иначе обесточенный шлюз остаётся заболченным навсегда
+            if (TryComp<DoorBoltComponent>(dockUid, out var airlock) && airlock.BoltsDown) // LuaM
+                _doorSystem.SetBoltsDown((dockUid, airlock), false); // LuaM
 
             if (TryComp(dockUid, out DoorComponent? door) && _doorSystem.TryClose(dockUid, door))
                 door.ChangeAirtight = true;

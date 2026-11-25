@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-4.0",
+  "copyright": "Taken from TerraGov-Marine-Corps at commit https://github.com/tgstation/TerraGov-Marine-Corps/commit/76806a3745f7797304aba86d170ca529c2eac320.",
+  "size": {
+    "x": 64,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "boulder_1"
+    },
+    {
+      "name": "boulder_2"
+    },
+    {
+      "name": "boulder_3"
+    }
+  ]
+}

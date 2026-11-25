@@ -1,0 +1,71 @@
+# Atmospheric flight callouts, set and cleared by WGFlightAlarmSystem.
+- type: shipAlertCode
+  id: WGAlertLiftLost
+  name: wg-alert-lift-lost
+  description: wg-alert-lift-lost-desc
+  announcement: wg-alert-lift-lost-announcement
+  color: "#ffd23f"
+  order: 10
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/lift_lost.ogg
+
+- type: shipAlertCode
+  id: WGAlertDontSink
+  name: wg-alert-dont-sink
+  description: wg-alert-dont-sink-desc
+  announcement: wg-alert-dont-sink-announcement
+  color: "#ffd23f"
+  order: 11
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/dont_sink.ogg
+
+- type: shipAlertCode
+  id: WGAlertSinkRate
+  name: wg-alert-sink-rate
+  description: wg-alert-sink-rate-desc
+  announcement: wg-alert-sink-rate-announcement
+  color: "#ff9a30"
+  order: 12
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/sink_rate.ogg
+
+- type: shipAlertCode
+  id: WGAlertTerrain
+  name: wg-alert-terrain
+  description: wg-alert-terrain-desc
+  announcement: wg-alert-terrain-announcement
+  color: "#ff9a30"
+  order: 13
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/terrain.ogg
+
+- type: shipAlertCode
+  id: WGAlertTooLowTerrain
+  name: wg-alert-too-low-terrain
+  description: wg-alert-too-low-terrain-desc
+  announcement: wg-alert-too-low-terrain-announcement
+  color: "#ff3030"
+  order: 14
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/too_low_terrain.ogg
+
+- type: shipAlertCode
+  id: WGAlertPullUp
+  name: wg-alert-pull-up
+  description: wg-alert-pull-up-desc
+  announcement: wg-alert-pull-up-announcement
+  color: "#ff3030"
+  order: 15
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/pull_up.ogg
+
+# Orbit decay, set and cleared by WGOrbitDecaySystem.
+- type: shipAlertCode
+  id: WGAlertOrbitDecay
+  name: wg-alert-orbit-decay
+  description: wg-alert-orbit-decay-desc
+  announcement: wg-alert-orbit-decay-announcement
+  color: "#ff9a30"
+  order: 16
+  selectable: false
+  sound: /Audio/_WG/Planets/Flight/lift_lost.ogg

@@ -51,7 +51,7 @@ namespace Content.Client.Cargo.BUI
 
             var spriteSystem = EntMan.System<SpriteSystem>();
             var dependencies = IoCManager.Instance!;
-            _menu = new CargoConsoleMenu(Owner, EntMan, dependencies.Resolve<IPrototypeManager>(), spriteSystem);
+            _menu = new CargoConsoleMenu(Owner, EntMan, dependencies.Resolve<IPrototypeManager>(), spriteSystem, dependencies.Resolve<Robust.Shared.Configuration.IConfigurationManager>()); // LuaM
             var localPlayer = dependencies.Resolve<IPlayerManager>().LocalEntity;
             var description = new FormattedMessage();
 

@@ -1,0 +1,6 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- files: ["ice_0.png", "ice_double_edge_e.png", "ice_double_edge_n.png", "ice_double_edge_s.png", "ice_double_edge_w.png", "ice_single_edge_ne.png", "ice_single_edge_nw.png", "ice_single_edge_se.png", "ice_single_edge_sw.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from RMC-14 at commit https://github.com/RMC-14/RMC-14/commit/7fca80389aa705890666b9476051fcca2970e6fc, which credits cmss13 icons/turf/ground_map.dmi, ice.dmi and floors/snow2.dmi in planet/meta.json."
+  source: "https://github.com/RMC-14/RMC-14"
+# WOLFGATE END

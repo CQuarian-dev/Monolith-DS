@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CHOMPStation at commit https://github.com/CHOMPStation2/CHOMPStation2/commit/ca24d940aa4a6eb0d58d32b85ddc830f44459264, Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22.",
+  "size": {
+    "x": 160,
+    "y": 160
+  },
+  "states": [
+    {
+      "name": "boulder"
+    },
+    {
+      "name": "desert_tree"
+    },
+    {
+      "name": "desert_tree1"
+    },
+    {
+      "name": "desert_tree3"
+    },
+    {
+      "name": "large_boulder"
+    },
+    {
+      "name": "lcactus"
+    },
+    {
+      "name": "lcactus1"
+    },
+    {
+      "name": "mpalmtree"
+    },
+    {
+      "name": "mpalmtreeb"
+    },
+    {
+      "name": "mpalmtreeb1"
+    },
+    {
+      "name": "palml_stump"
+    },
+    {
+      "name": "palmrs_stump"
+    },
+    {
+      "name": "palmtree"
+    },
+    {
+      "name": "palmtree1"
+    },
+    {
+      "name": "spalmtree"
+    },
+    {
+      "name": "tall_boulder"
+    }
+  ]
+}

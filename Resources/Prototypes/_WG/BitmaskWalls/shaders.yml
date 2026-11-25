@@ -1,0 +1,4 @@
+- type: shader
+  id: WallFrill
+  kind: source
+  path: "/Textures/_WG/BitmaskWalls/wall_frill.swsl"

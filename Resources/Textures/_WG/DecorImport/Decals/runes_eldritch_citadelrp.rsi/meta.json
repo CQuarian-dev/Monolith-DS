@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from CitadelRP at commit https://github.com/citadel-station/citadel-rp/commit/db254a45e84676b7d1f32e3386c65453253bc6c5.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "alert_rune"
+    },
+    {
+      "name": "tentacle_rune"
+    },
+    {
+      "name": "madness_rune"
+    },
+    {
+      "name": "small_rune_1",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_2",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_3",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_4",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_5",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_6",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_7",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_8",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_9",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_10",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "small_rune_11",
+      "delays": [
+        [
+          0.1,
+          0.3,
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
+    }
+  ]
+}

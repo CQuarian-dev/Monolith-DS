@@ -1,0 +1,452 @@
+- type: entity
+  parent: StoolBase
+  id: AuroraStoolChairFancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: chair_fancy_aurora
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraStoolChairFancy
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CMChairBoneThrone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x32_hunter_props_cm.rsi
+    state: bone_throne
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: VGThrone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/throne_vgstation.rsi
+    state: throne
+    offset: "0,0.5"
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: VGThrone
+  id: VGThroneSkull
+  components:
+  - type: Sprite
+    state: skullthrone
+
+- type: entity
+  parent: ChairBase
+  id: BeeChairFancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: chair_fancy_beestation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: BeeChairFancyCorp
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: comfychair_corp
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeChairFancyCorp
+    node: built
+
+- type: entity
+  parent: UnanchoredChairBase
+  id: TgChairBronze
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: brass_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairBronze
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ErisChairCustomOnestar
+  suffix: custom
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: onestar_chair_grey
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisChairCustomOnestar
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ErisCustomOnestarRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: onestar_chair_red
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisCustomOnestarRed
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairComfyThroneGold
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs_goonstation.rsi
+    state: thronegold
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CoyoteChairComfyThrone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    noRot: false
+    state: throne
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: DarkPackChairOldTzimisce
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: tzimisce_stool
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: TgChairOld
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: chairold
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: YogChairBananium
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: bananium_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 60
+  - type: Construction
+    graph: DecorBuildYogChairBananium
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraStoolChairRemote
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: shuttlechair_preview
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ParaChairComfyFlock
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: chair_flock
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: CitChairEChair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: echair0_citadel
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: TgChairEChair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: echair0_tgstation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairComfyBarberChair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs_goonstation.rsi
+    state: barberchair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: NovaChairComfyBarberChair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: barber_chair_nova
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ParaChairBarber
+  suffix: barber
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: barber_chair_paradise
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildParaChairBarber
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: CMBedChairWheelchair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs.rsi
+    state: wheelchair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairComfyWheelchair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/special_chairs_goonstation.rsi
+    state: wheelchair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

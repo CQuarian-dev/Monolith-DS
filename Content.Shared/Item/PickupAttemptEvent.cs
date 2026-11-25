@@ -5,7 +5,7 @@ namespace Content.Shared.Item;
 /// </summary>
 public sealed class PickupAttemptEvent : BasePickupAttemptEvent
 {
-    public PickupAttemptEvent(EntityUid user, EntityUid item) : base(user, item) { }
+    public PickupAttemptEvent(EntityUid user, EntityUid item, bool showPopup = false) : base(user, item, showPopup) { } // LuaM
 }
 
 /// <summary>
@@ -13,7 +13,7 @@ public sealed class PickupAttemptEvent : BasePickupAttemptEvent
 /// </summary>
 public sealed class GettingPickedUpAttemptEvent : BasePickupAttemptEvent
 {
-    public GettingPickedUpAttemptEvent(EntityUid user, EntityUid item) : base(user, item) { }
+    public GettingPickedUpAttemptEvent(EntityUid user, EntityUid item, bool showPopup = false) : base(user, item, showPopup) { } // LuaM
 }
 
 [Virtual]
@@ -22,9 +22,18 @@ public class BasePickupAttemptEvent : CancellableEntityEventArgs
     public readonly EntityUid User;
     public readonly EntityUid Item;
 
-    public BasePickupAttemptEvent(EntityUid user, EntityUid item)
+    // LuaM-start
+    /// <summary>
+    /// Whether to show a popup telling the player why the attempt was cancelled.
+    /// False when raised for verbs or other checks that do not perform the pickup.
+    /// </summary>
+    public bool ShowPopup;
+
+    public BasePickupAttemptEvent(EntityUid user, EntityUid item, bool showPopup = false)
     {
         User = user;
         Item = item;
+        ShowPopup = showPopup;
     }
+    // LuaM-end
 }

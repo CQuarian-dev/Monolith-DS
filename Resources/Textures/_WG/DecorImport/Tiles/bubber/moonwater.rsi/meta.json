@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Bubberstation at commit https://github.com/Bubberstation/Bubberstation/commit/792301a70da075679790652676e6774e746df81d.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "moonwater-0"
+    },
+    {
+      "name": "moonwater-1"
+    },
+    {
+      "name": "moonwater-2"
+    },
+    {
+      "name": "moonwater-3"
+    },
+    {
+      "name": "moonwater-4"
+    },
+    {
+      "name": "moonwater-5"
+    },
+    {
+      "name": "moonwater-6"
+    },
+    {
+      "name": "moonwater-7"
+    },
+    {
+      "name": "moonwater-8"
+    },
+    {
+      "name": "moonwater-9"
+    },
+    {
+      "name": "moonwater-10"
+    },
+    {
+      "name": "moonwater-11"
+    },
+    {
+      "name": "moonwater-12"
+    },
+    {
+      "name": "moonwater-13"
+    },
+    {
+      "name": "moonwater-14"
+    },
+    {
+      "name": "moonwater-15"
+    },
+    {
+      "name": "moonwater-21"
+    },
+    {
+      "name": "moonwater-23"
+    },
+    {
+      "name": "moonwater-29"
+    },
+    {
+      "name": "moonwater-31"
+    },
+    {
+      "name": "moonwater-38"
+    },
+    {
+      "name": "moonwater-39"
+    },
+    {
+      "name": "moonwater-46"
+    },
+    {
+      "name": "moonwater-47"
+    },
+    {
+      "name": "moonwater-55"
+    },
+    {
+      "name": "moonwater-63"
+    },
+    {
+      "name": "moonwater-74"
+    },
+    {
+      "name": "moonwater-75"
+    },
+    {
+      "name": "moonwater-78"
+    },
+    {
+      "name": "moonwater-79"
+    },
+    {
+      "name": "moonwater-95"
+    },
+    {
+      "name": "moonwater-110"
+    },
+    {
+      "name": "moonwater-111"
+    },
+    {
+      "name": "moonwater-127"
+    },
+    {
+      "name": "moonwater-137"
+    },
+    {
+      "name": "moonwater-139"
+    },
+    {
+      "name": "moonwater-141"
+    },
+    {
+      "name": "moonwater-143"
+    },
+    {
+      "name": "moonwater-157"
+    },
+    {
+      "name": "moonwater-159"
+    },
+    {
+      "name": "moonwater-175"
+    },
+    {
+      "name": "moonwater-191"
+    },
+    {
+      "name": "moonwater-203"
+    },
+    {
+      "name": "moonwater-207"
+    },
+    {
+      "name": "moonwater-223"
+    },
+    {
+      "name": "moonwater-239"
+    },
+    {
+      "name": "moonwater-255"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+- files: ["runedsanddoor.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15."
+  source: "https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/sound/effects/runedsanddoor.ogg"
+
+- files: ["airlock.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15."
+  source: "https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/sound/machines/airlock.ogg"

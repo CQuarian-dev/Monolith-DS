@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-4.0",
+  "copyright": "Taken from TerraGov-Marine-Corps at commit https://github.com/tgstation/TerraGov-Marine-Corps/commit/76806a3745f7797304aba86d170ca529c2eac320.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "basalt_1"
+    },
+    {
+      "name": "basalt_2"
+    },
+    {
+      "name": "basalt_3"
+    },
+    {
+      "name": "basalt_4"
+    },
+    {
+      "name": "basalt_5"
+    },
+    {
+      "name": "basalt_6"
+    },
+    {
+      "name": "basalt_7"
+    },
+    {
+      "name": "basalt_8"
+    },
+    {
+      "name": "basalt_9"
+    },
+    {
+      "name": "basalt_10"
+    },
+    {
+      "name": "basalt_11"
+    },
+    {
+      "name": "basalt_12"
+    },
+    {
+      "name": "basalt_13"
+    },
+    {
+      "name": "basalt_14"
+    },
+    {
+      "name": "tinyrock_1"
+    },
+    {
+      "name": "tinyrock_2"
+    },
+    {
+      "name": "tinyrock_3"
+    },
+    {
+      "name": "tinyrock_4"
+    },
+    {
+      "name": "tinyrock_5"
+    },
+    {
+      "name": "tinyrock_6"
+    },
+    {
+      "name": "tinyrock_7"
+    },
+    {
+      "name": "tinyrock_8"
+    },
+    {
+      "name": "lavarocks"
+    },
+    {
+      "name": "lavarocks1"
+    },
+    {
+      "name": "lavarocks2"
+    },
+    {
+      "name": "lavarocks3"
+    }
+  ]
+}

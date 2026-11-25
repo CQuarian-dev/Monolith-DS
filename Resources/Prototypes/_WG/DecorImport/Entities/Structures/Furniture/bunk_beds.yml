@@ -1,0 +1,82 @@
+- type: entity
+  parent: Bed
+  id: AuroraBunkBed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bunk_beds.rsi
+    state: zbunkbed
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraBunkBed
+    node: built
+
+- type: entity
+  parent: Bed
+  id: AuroraBunkBedBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bunk_beds.rsi
+    state: zbunkbed4
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraBunkBedBlack
+    node: built
+
+- type: entity
+  parent: Bed
+  id: AuroraBunkBedBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bunk_beds.rsi
+    state: zbunkbed2
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraBunkBedBlue
+    node: built
+
+- type: entity
+  parent: Bed
+  id: AuroraBunkBedGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bunk_beds.rsi
+    state: zbunkbed3
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildAuroraBunkBedGreen
+    node: built

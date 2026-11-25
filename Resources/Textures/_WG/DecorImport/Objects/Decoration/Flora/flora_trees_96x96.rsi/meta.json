@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7, DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 96,
+    "y": 96
+  },
+  "states": [
+    {
+      "name": "blossom_beet_tree_example"
+    },
+    {
+      "name": "fall_beet_tree_example"
+    },
+    {
+      "name": "gem"
+    },
+    {
+      "name": "patiencetop"
+    },
+    {
+      "name": "spire"
+    },
+    {
+      "name": "tree1"
+    },
+    {
+      "name": "tree_example"
+    }
+  ]
+}

@@ -30,6 +30,7 @@ namespace Content.Server.Body.Systems;
 public sealed partial class RespiratorSystem : EntitySystem
 {
     [Dependency] private IAdminLogManager _adminLogger = default!;
+    [Dependency] private Content.Server._WG.Dormancy.WGDormancySystem _wgDormancy = default!; // WOLFGATE(Dormancy): skips NPC bodies nobody is near
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private AlertsSystem _alertsSystem = default!;
     [Dependency] private AtmosphereSystem _atmosSys = default!;
@@ -75,6 +76,7 @@ public sealed partial class RespiratorSystem : EntitySystem
                 continue;
 
             respirator.NextUpdate += respirator.UpdateInterval;
+            if (_wgDormancy.BodySleeps(uid)) continue; // WOLFGATE(Dormancy): an NPC body no player is near on a planet skips its upkeep
 
             if (_mobState.IsDead(uid) || HasComp<BreathingImmunityComponent>(uid)) // Shitmed: BreathingImmunity
                 continue;

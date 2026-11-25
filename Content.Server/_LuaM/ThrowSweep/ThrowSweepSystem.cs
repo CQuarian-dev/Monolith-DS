@@ -11,7 +11,7 @@ using Robust.Shared.Physics.Systems;
 
 namespace Content.Server._LuaM.ThrowSweep;
 
-public sealed class ThrowSweepSystem : EntitySystem
+public sealed partial class ThrowSweepSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private EntityLookupSystem _lookup = default!;

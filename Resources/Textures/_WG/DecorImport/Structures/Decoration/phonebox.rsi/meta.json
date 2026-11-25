@@ -1,0 +1,65 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15.",
+    "size": {
+        "x": 64,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "phonebox_off_open"
+        },
+        {
+            "name": "phonebox_off_empty_closed"
+        },
+        {
+            "name": "phonebox_off_full_closed"
+        },
+        {
+            "name": "phonebox_off_broken"
+        },
+        {
+            "name": "phonebox_on_open",
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "phonebox_on_empty_closed",
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "phonebox_on_full_closed",
+            "delays": [
+                [
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15,
+                    0.15
+                ]
+            ]
+        },
+        {
+            "name": "phonebox_bloody_off_broken"
+        }
+    ]
+}

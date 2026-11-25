@@ -1,0 +1,186 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+    "size": {
+        "x": 64,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "sign1",
+            "delays": [
+                [
+                    0.4,
+                    0.4
+                ]
+            ]
+        },
+        {
+            "name": "sign2",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "sign3"
+        },
+        {
+            "name": "sign4",
+            "delays": [
+                [
+                    0.5,
+                    0.8
+                ]
+            ]
+        },
+        {
+            "name": "sign5"
+        },
+        {
+            "name": "sign6"
+        },
+        {
+            "name": "sign7",
+            "delays": [
+                [
+                    0.5,
+                    0.2,
+                    0.7
+                ]
+            ]
+        },
+        {
+            "name": "soleil_royal",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    2.0,
+                    0.8,
+                    2.0
+                ]
+            ]
+        },
+        {
+            "name": "ee_moto",
+            "delays": [
+                [
+                    8.0,
+                    0.1,
+                    0.03,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "shibata_moto",
+            "delays": [
+                [
+                    6.0,
+                    0.3
+                ]
+            ]
+        },
+        {
+            "name": "lime_electronics",
+            "delays": [
+                [
+                    2.0,
+                    0.02,
+                    0.02,
+                    0.01
+                ]
+            ]
+        },
+        {
+            "name": "koramak_records",
+            "delays": [
+                [
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2,
+                    0.2
+                ]
+            ]
+        },
+        {
+            "name": "believe",
+            "delays": [
+                [
+                    1.0,
+                    1.0,
+                    1.0,
+                    1.0,
+                    7.0
+                ]
+            ]
+        },
+        {
+            "name": "internet_cafe",
+            "delays": [
+                [
+                    8.0,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "xt-100",
+            "delays": [
+                [
+                    4.0,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "spice_hut",
+            "delays": [
+                [
+                    1.0,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "vol_plus",
+            "delays": [
+                [
+                    1.0,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "rokkaku_consulting"
+        }
+    ]
+}

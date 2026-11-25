@@ -26,6 +26,9 @@ public partial class ShuttleNavControl
 
         handle.DrawCircle(starPos, starRadius, starSystem.StarSystem.Star.Color.WithAlpha(0.15f)); // LuaM: 0.5 > 0.15
 
+        // WOLFGATE(PlanetScan): worlds draw as their own planet sprite, at a size that reads as a world.
+        if (WgDrawScopePlanets(handle, starSystem.StarSystem, worldToView, mapUid)) return;
+
         foreach (var planet in starSystem.StarSystem.Planets)
         {
             var planetPos = Vector2.Transform(planet.Position, worldToView);
@@ -76,6 +79,9 @@ public partial class ShuttleNavControl
                 );
             }
 
+            // WOLFGATE(PlanetScan): a world on the scope has its sprite and hover scan instead of a blip and label.
+            if (!isOutsideRadarCircle && WgIsScopePlanet(uid, uiPosition)) continue;
+
             NfAddBlipToList(_beaconBlips, isOutsideRadarCircle, uiPosition, uiXCentre, uiYCentre, color);
 
             var distance = Vector2.Distance(worldPos, mapPos.Position);
@@ -86,6 +92,8 @@ public partial class ShuttleNavControl
 
             var labelOffset = new Vector2(blipSize, -handle.GetDimensions(Font, mainLabel, 0.9f).Y * 0.5f);
             handle.DrawString(Font, (uiPosition + labelOffset) * UIScale, mainLabel, UIScale * 0.9f, color);
+            WgBeginTag(uiPosition * UIScale, (uiPosition + labelOffset) * UIScale); // LuaM: без раскладки тегов RadarLabels
+            WgDrawPlanetSignalTag(handle, uid, uiPosition, labelOffset, mainLabel); // WOLFGATE(PlanetSignals): what a world holds, over its name.
 
             if (!ShowIFFDetailed)
                 continue;

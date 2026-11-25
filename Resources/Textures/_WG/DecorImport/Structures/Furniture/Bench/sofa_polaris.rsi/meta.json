@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Polaris at commit https://github.com/PolarisSS13/Polaris/commit/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "sofacorner_beige",
+      "directions": 4
+    },
+    {
+      "name": "sofacorner_black",
+      "directions": 4
+    },
+    {
+      "name": "sofacorner_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofacorner_brown",
+      "directions": 4
+    },
+    {
+      "name": "sofacorner_green",
+      "directions": 4
+    },
+    {
+      "name": "sofacorner_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_left_beige",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_left_black",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_left_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_left_brown",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_left_green",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_left_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_right_beige",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_right_black",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_right_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_right_brown",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_right_green",
+      "directions": 4
+    },
+    {
+      "name": "sofaend_right_lime",
+      "directions": 4
+    },
+    {
+      "name": "sofamiddle_beige",
+      "directions": 4
+    },
+    {
+      "name": "sofamiddle_black",
+      "directions": 4
+    },
+    {
+      "name": "sofamiddle_blue",
+      "directions": 4
+    },
+    {
+      "name": "sofamiddle_brown",
+      "directions": 4
+    },
+    {
+      "name": "sofamiddle_green",
+      "directions": 4
+    },
+    {
+      "name": "sofamiddle_lime",
+      "directions": 4
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+- files: ["attackblob.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7."
+  source: "https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/sound/effects/attackblob.ogg"
+
+- files: ["gloves_drop.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7."
+  source: "https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/sound/items/drop/gloves.ogg"
+
+- files: ["gloves_pickup.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7."
+  source: "https://github.com/Aurorastation/Aurora.3/blob/4c83a7bac48311e4e0fd9449a27980ca35eed7a7/sound/items/pickup/gloves.ogg"

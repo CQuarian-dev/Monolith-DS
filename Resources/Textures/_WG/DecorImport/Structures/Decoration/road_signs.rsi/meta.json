@@ -1,0 +1,68 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+    "size": {
+        "x": 32,
+        "y": 48
+    },
+    "states": [
+        {
+            "name": "noenter"
+        },
+        {
+            "name": "4way"
+        },
+        {
+            "name": "allway"
+        },
+        {
+            "name": "wrongway"
+        },
+        {
+            "name": "noturnleft"
+        },
+        {
+            "name": "noturnright"
+        },
+        {
+            "name": "noturnforward"
+        },
+        {
+            "name": "exitleft"
+        },
+        {
+            "name": "onewayright"
+        },
+        {
+            "name": "onlyright"
+        },
+        {
+            "name": "onlyleft"
+        },
+        {
+            "name": "speed50"
+        },
+        {
+            "name": "speed40"
+        },
+        {
+            "name": "speed25"
+        },
+        {
+            "name": "warningdeer"
+        },
+        {
+            "name": "warningpedestrian"
+        },
+        {
+            "name": "circleofdoom"
+        },
+        {
+            "name": "parking"
+        },
+        {
+            "name": "crosswalk"
+        }
+    ]
+}

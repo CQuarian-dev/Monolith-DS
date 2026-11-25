@@ -1,0 +1,198 @@
+# Static forest terrain: deliberately no Kudzu, spreader or contact-damage components.
+- type: entity
+  id: WGCarcinomaTendons
+  name: dormant tendons
+  description: Dense, rooted strands of meat. These mature tendons no longer spread.
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Sprite
+    sprite: Objects/Misc/fleshkudzu.rsi
+    state: kudzu_11
+    drawdepth: Overdoors
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        hard: false
+        density: 7
+        shape: !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer: [MidImpassable]
+  - type: Damageable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [Destruction]
+
+- type: biomeTemplate
+  id: WGCarcinomaTendonForest
+  layers:
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGFloorFlesh, FloorFlesh]
+    entities: [WGCarcinomaTendons]
+    threshold: 0.1
+    noise: { seed: 53, noiseType: OpenSimplex2, frequency: 0.6 }
+  # Grasping vines (_WG/Planets/Life) stand on tendon tiles: the same noise, a higher threshold.
+  # Rare pockets of resin and hive wall; they win over the tendons where they stand.
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaHivePocket
+    threshold: 0.9
+    noise: { seed: 83, noiseType: OpenSimplex2, frequency: 0.04 }
+
+- type: biomeTemplate
+  id: WGCarcinomaBloodOcean
+  layers:
+  - !type:BiomeTileLayer
+    tile: WGBloodOceanSeabed
+    threshold: -1
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGBloodOceanSeabed]
+    entities: [WGBloodOcean]
+    threshold: -1
+    noise: { seed: 0, noiseType: OpenSimplex2, frequency: 0.01 }
+
+- type: entity
+  id: WGBloodOcean
+  parent: MonoFloorWaterEntity
+  name: blood lake
+  description: A still lake of dark blood laps against the living shore.
+  components:
+  # Recoloured art: a tint only multiplies, and the water sprite is dark blue, so tinting it red read as black.
+  - type: Sprite
+    sprite: _WG/Planets/BloodWater/blood-lake.rsi
+    layers: # LuaM: our MonoFloorWaterEntity draws a "water" state this RSI doesn't have
+    - state: full
+  - type: Icon
+    sprite: _WG/Planets/BloodWater/blood-lake.rsi
+  # Blood isn't water: it never freezes into lake ice.
+  - type: WGFreezableWater
+    freezeAt: 0
+  - type: SolutionContainerManager
+    solutions:
+      pool:
+        maxVol: 9999999
+        reagents:
+        - ReagentId: Blood
+          Quantity: 9999999
+
+- type: entityTable
+  id: WGCarcinomaAberrantFlesh
+  table: !type:GroupSelector
+    children:
+    - id: MobFleshJaredExpeditions
+    - id: MobFleshJaredOldExpeditions
+    - id: MobFleshGolemExpeditions
+    - id: MobFleshGolemAltExpeditions
+    - id: MobFleshGolemOldExpeditions
+    - id: MobFleshClampExpeditions
+    - id: MobFleshClampOldExpeditions
+    - id: MobFleshLoverExpeditions
+    - id: MobFleshAssimilatedMiner
+      weight: 0.4
+
+- type: entityTable
+  id: WGCarcinomaNewbornFlesh
+  table: !type:GroupSelector
+    children:
+    - id: MobFleshJaredExpeditionsNewborn
+    - id: MobFleshJaredOldExpeditionsNewborn
+    - id: MobFleshGolemExpeditionsNewborn
+    - id: MobFleshGolemAltExpeditionsNewborn
+    - id: MobFleshGolemOldExpeditionsNewborn
+    - id: MobFleshClampExpeditionsNewborn
+    - id: MobFleshClampOldExpeditionsNewborn
+    - id: MobFleshLoverExpeditionsNewborn
+    - id: MobFleshAssimilatedMiner
+      weight: 0.4
+
+- type: entity
+  parent: XenoWardingTower
+  id: WGCarcinomaAssimilationSack
+  name: assimilation sack
+  description: A swollen incubator. Newborn aberrant flesh pushes against its translucent membrane.
+  components:
+  - type: WGPlanetFaunaSpawner
+    table: WGCarcinomaNewbornFlesh
+    keepEntity: true
+    spawnDelay: 240
+  # Its spawn clock would start again on a fresh copy, so it stays when its chunk unloads.
+  - type: WGBiomeKeep
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 500
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Sprite
+    sprite: _NF/Structures/Specific/AberrantFlesh/digestivesack.rsi
+    drawdepth: Mobs
+    snapCardinals: true
+    layers:
+    - state: base
+    - state: unshaded
+      shader: unshaded
+  - type: AmbientSound
+    volume: -9
+    range: 5
+    sound:
+      collection: blood #eating
+      params:
+        variation: 0.250
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MeatBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MeatLaserImpact
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 60
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          FoodMeat:
+            min: 1
+            max: 2
+
+# Preserve the riverbed's indestructible terrain using the visually verified rust-red iron-sand artwork.
+- type: tile
+  id: WGBloodOceanSeabed
+  parent: FloorAsteroidIronsand
+  indestructible: true
+  footstepSounds:
+    collection: FootstepWater
+  barestepSounds:
+    collection: FootstepWater

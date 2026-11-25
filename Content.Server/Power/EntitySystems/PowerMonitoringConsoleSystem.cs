@@ -772,7 +772,7 @@ internal sealed partial class PowerMonitoringConsoleSystem : SharedPowerMonitori
             node.ReachableNodes.Count == 0)
         {
             // Make a child the new master of the collection if necessary
-            if (device.ChildDevices.TryFirstOrNull(out var kvp))
+            if (device.ChildDevices.TryFirstOrNull(child => !TerminatingOrDeleted(child.Key), out var kvp)) // LuaM
             {
                 var newMaster = kvp.Value.Key;
                 var newMasterDevice = kvp.Value.Value;

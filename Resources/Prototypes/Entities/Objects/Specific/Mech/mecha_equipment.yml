@@ -26,6 +26,7 @@
       components: # Frontier
         - Anomaly # Frontier
         - Mech # Frontier
+        - MagnetPickup # LuaM
     maxContents: 8
   - type: UIFragment
     ui: !type:MechGrabberUi
@@ -46,6 +47,7 @@
       components: # Frontier
         - Anomaly # Frontier
         - Mech # Frontier
+        - MagnetPickup # LuaM
     maxContents: 4
     grabDelay: 3
     grabEnergyDelta: -20

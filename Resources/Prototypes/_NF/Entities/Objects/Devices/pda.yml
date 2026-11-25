@@ -28,6 +28,8 @@
       - AppraisalCartridge
       - NetProbeCartridge
       - MedTekCartridge # Mono
+  - type: SentienceTarget # LuaM
+    weight: 0.0 # LuaM
 
 - type: entity
   parent: BasePDA

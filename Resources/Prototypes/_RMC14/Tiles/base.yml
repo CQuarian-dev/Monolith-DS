@@ -1,0 +1,19 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- type: tile
+  abstract: true
+  id: CMTileBase
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSteel
+  heatCapacity: 10000
+  friction: 1
+
+- type: tile
+  abstract: true
+  parent: CMTileBase
+  id: CMTileBaseUnpryable
+  deconstructTools: [ ]
+# WOLFGATE END

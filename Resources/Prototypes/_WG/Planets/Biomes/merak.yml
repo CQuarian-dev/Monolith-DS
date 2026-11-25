@@ -1,0 +1,386 @@
+# Merak: dune seas, red-rock badlands, cactus fields, quake-cracked gravel flats and rare oases.
+# Every outdoor tile is a weather child so dust storms draw; soft ground digs through to the cavern like the old sand.
+
+# Dune seas
+- type: tile
+  id: WGFloorMerakDuneSand
+  parent: RMCPlanetSandWet
+  weather: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 1
+  itemDrop: DesertSand1
+  footstepSounds:
+    collection: FootstepAsteroid
+  barestepSounds:
+    collection: FootstepAsteroid
+
+- type: tile
+  id: WGFloorMerakGoldSand
+  parent: NebulaFloorRockSand
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 1
+  itemDrop: DesertSand1
+
+- type: tile
+  id: WGFloorMerakPaleSand
+  parent: FloorLowDesert
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 1
+  itemDrop: DesertSand1
+
+# Red-rock badlands
+- type: tile
+  id: WGFloorMerakRedDesertSand
+  parent: RMCPlanetRedDesertBase
+  weather: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 1
+  itemDrop: DesertSand1
+  footstepSounds:
+    collection: FootstepAsteroid
+  barestepSounds:
+    collection: FootstepAsteroid
+
+- type: tile
+  id: WGFloorMerakRedDesertRock
+  parent: RMCPlanetRedDesertRock
+  weather: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  barestepSounds:
+    collection: FootstepAsteroid
+
+- type: tile
+  id: WGFloorMerakRedDesertRockCracked
+  parent: RMCPlanetRedDesertRock1
+  weather: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  barestepSounds:
+    collection: FootstepAsteroid
+
+# Wind-scoured dark flats between the red rock.
+- type: tile
+  id: WGFloorMerakDarkSand
+  parent: FloorAsteroidSand
+  weather: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 1
+  itemDrop: DesertSand1
+  footstepSounds:
+    collection: FootstepAsteroid
+  barestepSounds:
+    collection: FootstepAsteroid
+
+# Quake-cracked gravel flats
+- type: tile
+  id: WGFloorMerakDesertGravel
+  parent: ChompFloorOutdoorsDesertPlanetGravel
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 2
+
+- type: tile
+  id: WGFloorMerakDesertSandrock
+  parent: FloorDesertPlanet
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 2
+
+- type: tile
+  id: WGFloorMerakDesertCracked
+  parent: NebulaFloorDry
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 2
+
+# Oasis shores
+- type: tile
+  id: WGFloorMerakOasisDirt
+  parent: PolarisFloorOutdoorsDirt
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 2
+
+- type: tile
+  id: WGFloorMerakOasisGrass
+  parent: GoonFloorSwampgrass
+  weather: true
+  isSubfloor: true
+  indestructible: true
+  baseTurf: Space
+  deconstructTools: [ Digging ]
+  deconstructTimeMultiplier: 2
+  footstepSounds:
+    collection: FootstepGrass
+
+# Biome: the layers below it win over the ones above it.
+- type: biomeTemplate
+  id: WGMerakDesert
+  layers:
+  # Boulders
+  - !type:BiomeEntityLayer
+    threshold: 0.975
+    noise: { seed: 0, noiseType: OpenSimplex2, frequency: 5 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand, WGFloorMerakDarkSand]
+    entities: [FloraRockSolidPlanet]
+  # Dune fauna; each region lays its own wildlife (_WG/Planets/Life/merak.yml).
+  # Native plants
+  - !type:BiomeEntityLayer
+    threshold: 0.915
+    noise: { seed: 0, noiseType: OpenSimplex2, frequency: 2 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [FloraPilumaPlant]
+  - !type:BiomeEntityLayer
+    threshold: 0.925
+    noise: { seed: 0, noiseType: OpenSimplex2, frequency: 2 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand]
+    entities: [FloraOrakimPlant]
+  # Tumbleweeds on open sand and flats
+  # Rock decals
+  - !type:BiomeDecalLayer
+    allowedTiles:
+    - WGFloorMerakDuneSand
+    - WGFloorMerakGoldSand
+    - WGFloorMerakPaleSand
+    - WGFloorMerakDarkSand
+    threshold: 0.9
+    divisions: 1
+    noise: { seed: 1, frequency: 5 }
+    decals: [Basalt1, Basalt2, Basalt3, Basalt4, Basalt5, Basalt6, Basalt7, Basalt8, Basalt9]
+  # Ore crab sites in a band round the outcrops; the outcrops below win where the noise is higher.
+  # Ore outcrops
+  - !type:BiomeEntityLayer
+    allowedTiles:
+    - WGFloorMerakDuneSand
+    - WGFloorMerakGoldSand
+    - WGFloorMerakPaleSand
+    - WGFloorMerakDarkSand
+    - WGFloorMerakRedDesertSand
+    - WGFloorMerakDesertGravel
+    - WGFloorMerakDesertSandrock
+    - WGFloorMerakDesertCracked
+    threshold: 0.15
+    noise:
+      seed: 0
+      noiseType: Cellular
+      frequency: 0.05
+      lacunarity: 5
+      fractalType: FBm
+      octaves: 2
+      cellularDistanceFunction: Euclidean
+      cellularReturnType: Distance2
+    entities: [MonoPlanetmapOreSandRich]
+  - !type:BiomeDummyLayer
+    id: Loot
+  # Ground: the dune sea, then the regions on top of it.
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: WGFloorMerakDuneSand
+  - !type:BiomeTileLayer
+    threshold: 0.1
+    tile: WGFloorMerakGoldSand
+    noise: { seed: 5, noiseType: OpenSimplex2, frequency: 0.005 }
+  - !type:BiomeTileLayer
+    threshold: 0.5
+    tile: WGFloorMerakPaleSand
+    noise: { seed: 6, noiseType: OpenSimplex2, frequency: 0.006 }
+  - !type:BiomeMetaLayer
+    threshold: 0.3
+    template: WGMerakBadlands
+    noise: { seed: 11, noiseType: OpenSimplex2, frequency: 0.006, fractalType: FBm, octaves: 3 }
+  - !type:BiomeMetaLayer
+    threshold: 0.3
+    template: WGMerakGravelFlats
+    noise: { seed: 37, noiseType: OpenSimplex2, frequency: 0.006, fractalType: FBm, octaves: 3 }
+  - !type:BiomeMetaLayer
+    threshold: 0.35
+    template: WGMerakCactusFields
+    noise: { seed: 23, noiseType: OpenSimplex2, frequency: 0.007, fractalType: FBm, octaves: 3 }
+  - !type:BiomeMetaLayer
+    threshold: 0.82
+    template: WGMerakOasis
+    noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.0075, fractalType: FBm, octaves: 2 }
+
+- type: biomeTemplate
+  id: WGMerakBadlands
+  layers:
+  # Wildlife: lizards and cobras
+  # Dry scrub, black boulders and short mesas; later layers win.
+  - !type:BiomeEntityLayer
+    threshold: 0.8
+    noise: { seed: 12, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakRedDesertSand, WGFloorMerakRedDesertRock, WGFloorMerakRedDesertRockCracked, WGFloorMerakDarkSand]
+    entities: [CoyoteFloraWasteplantWildFeracactus, CMFloraBushDesert, CoyoteFloraWasteplantWildPrickly]
+  - !type:BiomeEntityLayer
+    threshold: 0.82
+    noise: { seed: 13, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakRedDesertSand, WGFloorMerakRedDesertRock, WGFloorMerakRedDesertRockCracked, WGFloorMerakDarkSand]
+    entities: [CMRockBlackGroundDense2, CMRockBlackGroundDense3, CMRockBlackGroundDense]
+  - !type:BiomeEntityLayer
+    threshold: 0.9
+    noise: { seed: 18, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakRedDesertSand, WGFloorMerakRedDesertRock, WGFloorMerakRedDesertRockCracked, WGFloorMerakDarkSand]
+    entities: [CMBouldersLargeBoulderdarkBoulderDark2, CMBouldersSmallboulderdarkBoulderDark3, CMRockBlackGroundDense4]
+  # Spitting cacti (_WG/Planets/Life/merak.yml)
+  - !type:BiomeEntityLayer
+    threshold: 0.78
+    noise: { seed: 14, noiseType: OpenSimplex2, frequency: 0.05, fractalType: FBm, octaves: 2 }
+    allowedTiles: [WGFloorMerakRedDesertRock, WGFloorMerakRedDesertRockCracked]
+    entities: [CMRockOrange]
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: WGFloorMerakRedDesertSand
+  - !type:BiomeTileLayer
+    threshold: 0.15
+    tile: WGFloorMerakRedDesertRock
+    noise: { seed: 15, noiseType: OpenSimplex2, frequency: 0.012 }
+  - !type:BiomeTileLayer
+    threshold: 0.5
+    tile: WGFloorMerakRedDesertRockCracked
+    noise: { seed: 16, noiseType: OpenSimplex2, frequency: 0.015 }
+  - !type:BiomeTileLayer
+    threshold: 0.62
+    tile: WGFloorMerakDarkSand
+    noise: { seed: 17, noiseType: OpenSimplex2, frequency: 0.012 }
+
+- type: biomeTemplate
+  id: WGMerakGravelFlats
+  layers:
+  # Rock spires, rubble and the odd bone; later layers win.
+  - !type:BiomeEntityLayer
+    threshold: 0.88
+    noise: { seed: 38, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
+    entities: [GoonStone, GoonStone2, GoonStone3]
+  - !type:BiomeEntityLayer
+    threshold: 0.88
+    noise: { seed: 46, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
+    entities: [AuroraFloraRockDesert]
+  - !type:BiomeEntityLayer
+    threshold: 0.9
+    noise: { seed: 47, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
+    entities: [AuroraFloraRockSpire]
+  - !type:BiomeEntityLayer
+    threshold: 0.93
+    noise: { seed: 39, noiseType: OpenSimplex2, frequency: 2 }
+    allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
+    entities: [TgBoneSkullHalf, TgStatueBoneSkull, TgStatueBoneRib]
+  - !type:BiomeEntityLayer
+    threshold: 0.95
+    noise: { seed: 48, noiseType: OpenSimplex2, frequency: 2 }
+    allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
+    entities: [CoyoteChompBonesLribs, CoyoteChompBonesLskullW, CoyoteChompBonesLbone]
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: WGFloorMerakDesertGravel
+  - !type:BiomeTileLayer
+    threshold: 0.25
+    tile: WGFloorMerakDesertSandrock
+    noise: { seed: 40, noiseType: OpenSimplex2, frequency: 0.012 }
+  - !type:BiomeTileLayer
+    threshold: 0.45
+    tile: WGFloorMerakDesertCracked
+    noise: { seed: 42, noiseType: OpenSimplex2, frequency: 0.012 }
+
+- type: biomeTemplate
+  id: WGMerakCactusFields
+  layers:
+  # Wildlife: kangaroos. Same noise as the dune layer, so it replaces the dune table here.
+  # Desert grass, shrubs, cacti and lone trees; later layers win.
+  - !type:BiomeEntityLayer
+    threshold: 0.45
+    noise: { seed: 24, noiseType: OpenSimplex2, frequency: 0.3 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [CMGrassDesertLightgrass5, CMGrassDesertHeavy, CMGrassDesertLightgrass7, AuroraFloraGrassDesert, CMGrassDesertLightgrass10]
+  - !type:BiomeEntityLayer
+    threshold: 0.72
+    noise: { seed: 25, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [ChompFloraDesertPlanetShrub, ChompFloraDesertPlanetBush, CMFloraBushDesert, ChompFloraDesertPlanetThicket]
+  - !type:BiomeEntityLayer
+    threshold: 0.72
+    noise: { seed: 28, noiseType: OpenSimplex2, frequency: 3 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [CoyoteFloraWasteplantWildAgave, CoyoteFloraWasteplantWildYucca, CoyoteFloraWasteplantWildMesquite, CoyoteFloraWasteplantWildPinyon]
+  - !type:BiomeEntityLayer
+    threshold: 0.68
+    noise: { seed: 26, noiseType: OpenSimplex2, frequency: 4 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [ChompFloraDesertPlanetBarrelcacti, CoyoteFloraChompBarrelcacti1, CoyoteFloraChompBarrelcacti2, CoyoteFloraChompBarrelcacti3]
+  - !type:BiomeEntityLayer
+    threshold: 0.78
+    noise: { seed: 29, noiseType: OpenSimplex2, frequency: 4 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [CMDesertCactusMultiple, ChompFloraDesertPlanetLbarrelcacti, CMBushDesertCactus, CoyoteFloraChompLbarrelcacti1]
+  # Living plants (_WG/Planets/Life/merak.yml): sting-nettle, tappable barrel cacti, agave
+  - !type:BiomeEntityLayer
+    threshold: 0.93
+    noise: { seed: 27, noiseType: OpenSimplex2, frequency: 2 }
+    allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
+    entities: [ChompTreeDesertPlanetDesertTree1, AuroraFloraTreeDesert, ChompTreeDesertPlanetDesertTree3, CoyoteTreeChompLcactus]
+
+# The halo is the pond's own noise one band below the water, so only real ponds get one.
+- type: biomeTemplate
+  id: WGMerakOasis
+  layers:
+  # Wildlife: goats and crabs, and very rarely a mimic
+  # Desert grass, shade palms, bushes and reeds; later layers win.
+  - !type:BiomeEntityLayer
+    threshold: 0.1
+    noise: { seed: 43, noiseType: OpenSimplex2, frequency: 0.25 }
+    allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
+    entities: [CMGrassDesertLightgrass7, CMGrassTallgrassDesert, CMGrassDesertLightgrass5, AuroraFloraGrassDesert]
+  - !type:BiomeEntityLayer
+    threshold: 0.7
+    noise: { seed: 44, noiseType: OpenSimplex2, frequency: 0.3 }
+    allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
+    entities: [ChompFloraDesertPlanetPalmy, ChompFloraDesertPlanetBush, CoyoteFloraChompPalmy1]
+  - !type:BiomeEntityLayer
+    threshold: 0.7
+    noise: { seed: 45, noiseType: OpenSimplex2, frequency: 0.3 }
+    allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
+    entities: [ChompTreeDesertPlanetMpalmtree, ChompTreeDesertPlanetPalmtree, TgFloraTreePalm, ChompTreeDesertPlanetSpalmtree]
+  # Date palms in the thickest groves
+  - !type:BiomeEntityLayer
+    threshold: 0.875
+    noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.0075, fractalType: FBm, octaves: 2 }
+    allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
+    entities: [AuroraFloraBushKonyangReeds]
+  - !type:BiomeEntityLayer
+    threshold: 0.9
+    noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.0075, fractalType: FBm, octaves: 2 }
+    allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
+    entities: [MonoFloorWaterEntity]
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: WGFloorMerakOasisDirt
+  - !type:BiomeTileLayer
+    threshold: 0.86
+    tile: WGFloorMerakOasisGrass
+    noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.0075, fractalType: FBm, octaves: 2 }

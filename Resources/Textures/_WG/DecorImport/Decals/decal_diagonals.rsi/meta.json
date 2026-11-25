@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7 and DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "aurora_curb_diagonal"
+    },
+    {
+      "name": "darkpack_border_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt1_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt2_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt3_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt1-snow_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt2-snow_diagonal"
+    },
+    {
+      "name": "darkpack_line_offset_alt3-snow_diagonal"
+    }
+  ]
+}

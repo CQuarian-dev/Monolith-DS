@@ -1,0 +1,902 @@
+- type: entity
+  parent: StoolBase
+  id: BayStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_preview_baystation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: BayStoolPadded
+  suffix: padded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_padded_preview_baystation
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayStoolPadded
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: CitChairStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_citadel
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCitChairStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: CoyoteChairStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_coyote
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCoyoteChairStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: ErisStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_preview_eris
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: ErisStoolPadded
+  suffix: padded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_padded_preview_eris
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisStoolPadded
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools_goonstation.rsi
+    noRot: false
+    state: stool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildGoonStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: NebulaStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: PolarisStool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: stool_preview_polaris
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: ShiptestChairStool
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: stool_shiptest
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairStool
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: ShiptestChairStoolGreyscale
+  suffix: greyscale
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: stool_greyscale
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairStoolGreyscale
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: CitChairStoolAlien
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stoolalien
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: CitChairStoolBrass
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stoolbrass
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCitChairStoolBrass
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolWooden
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools_goonstation.rsi
+    noRot: false
+    state: wstool
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildGoonStoolWooden
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: NebulaStoolWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_wood
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaStoolWood
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: NebulaStoolRustic
+  suffix: rustic
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_rustic
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: TgChairStoolBamboo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: bamboo_stool
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: MonkeChairStoolSandstone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: stool_monke
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: AuroraBedStoolHover
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: hover_stool
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: BayStoolBar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: bar_stool_preview_baystation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayStoolBar
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: BayStoolBarPadded
+  suffix: padded
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: bar_stool_padded_preview
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayStoolBarPadded
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: CitStoolBarAlien
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: baralien
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: CitStoolBarBrass
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: barbrass
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCitStoolBarBrass
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: CoyoteChairStoolF13stool
+  suffix: f13stool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: f13stool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: CoyoteStoolRetroBacked
+  suffix: backed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: bar_backed
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: ErisChairCustomBarSpecial
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: bar_chair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisChairCustomBarSpecial
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolBar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools_goonstation.rsi
+    noRot: false
+    state: bar-stool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolNeon
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools_goonstation.rsi
+    noRot: false
+    state: neonstool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolSleek
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools_goonstation.rsi
+    noRot: false
+    state: sleek_stool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: NebulaStoolBar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: bar_stool
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaStoolBar
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: PolarisBedChairModernBarStool
+  suffix: modern
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    noRot: false
+    state: modern_stool
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: PolarisStoolBarstool
+  suffix: barstool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: bar_stool_preview_polaris
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: ShiptestChairStoolBar
+  suffix: chair
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: bar
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairStoolBar
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: ShiptestStoolBarGreyscale
+  suffix: greyscale
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: bar_greyscale
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestStoolBarGreyscale
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: YogChairStoolBeanbag
+  suffix: stool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildYogChairStoolBeanbag
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: YogStoolBeanbagBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_black
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildYogStoolBeanbagBlack
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: YogStoolBeanbagBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_blue
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildYogStoolBeanbagBlue
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: YogStoolBeanbagGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_green
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildYogStoolBeanbagGreen
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: YogStoolBeanbagRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_red
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildYogStoolBeanbagRed
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: YogStoolBeanbagYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/stools.rsi
+    state: beanbag_yellow
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildYogStoolBeanbagYellow
+    node: built

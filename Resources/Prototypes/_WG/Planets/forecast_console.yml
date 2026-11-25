@@ -1,0 +1,49 @@
+# Weather forecast console: a sector world's season, weather now and the next three hours.
+
+- type: entity
+  parent: BaseComputer
+  id: WGComputerWeatherForecast
+  name: weather forecast computer
+  description: Reads the sector's survey satellites to forecast the weather and seasons on its worlds. Further out, the guesses get vaguer.
+  components:
+  - type: WGWeatherForecastConsole
+  - type: Computer
+    board: WGWeatherForecastComputerCircuitboard
+  - type: Sprite
+    layers:
+    - map: [ "computerLayerBody" ]
+      state: computer
+    - map: [ "computerLayerKeyboard" ]
+      state: generic_keyboard
+    - map: [ "computerLayerScreen" ]
+      state: sensors
+    - map: [ "computerLayerKeys" ]
+      state: generic_keys
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
+  - type: ActivatableUI
+    key: enum.WGWeatherForecastUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.WGWeatherForecastUiKey.Key:
+        type: WGWeatherForecastBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
+  - type: PointLight
+    color: "#6ab0e0"
+
+- type: entity
+  parent: BaseComputerCircuitboard
+  id: WGWeatherForecastComputerCircuitboard
+  name: weather forecast computer board
+  description: A circuit board for a weather forecast computer.
+  components:
+  - type: Sprite
+    state: cpu_science
+  - type: ComputerBoard
+    prototype: WGComputerWeatherForecast
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: WGWeatherForecastComputerCircuitboard
+  result: WGWeatherForecastComputerCircuitboard

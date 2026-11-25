@@ -313,7 +313,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
                 Vessel = prototype,
                 VesselName = { Text = GetLocalizedVesselName(prototype) },
                 CategoryLabel = { Text = Loc.GetString($"shipyard-console-category-{prototype.Category}") },
-                LimitedCount = { Visible = limit > 0, Text = $"{Math.Max(limitRemain, 0)}/{limit}" },
+                LimitedCount = { Visible = limit >= 0, Text = $"{Math.Max(limitRemain, 0)}/{limit}" },
                 Pressed = prototype.ID == _selected?.ID,
             };
             vesselEntry.OnPressed += _ => Select(prototype);
@@ -343,7 +343,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
     private string GetStockText(VesselPrototype prototype)
     {
         var (limit, remain) = GetLimit(prototype);
-        return limit > 0
+        return limit >= 0
             ? Loc.GetString("shipyard-info-stock-limited", ("remain", Math.Max(remain, 0)), ("limit", limit))
             : Loc.GetString("shipyard-info-stock-unlimited");
     }
@@ -423,7 +423,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
 
         var (limit, remain) = GetLimit(vessel);
         var available = _lastAvailableProtos.Contains(vessel.ID);
-        PurchaseButton.Disabled = _guidebookReadOnly || !available || !_validId || limit > 0 && remain <= 0;
+        PurchaseButton.Disabled = _guidebookReadOnly || !available || !_validId || limit >= 0 && remain <= 0;
         SelectedPriceLabel.Text = price;
     }
 

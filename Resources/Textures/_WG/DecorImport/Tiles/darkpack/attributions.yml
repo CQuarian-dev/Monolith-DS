@@ -1,0 +1,89 @@
+- files: [ black_right.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state stairs_black-r)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ black_right_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state stairs_black-r)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ city_church.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state church1)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ city_gummaguts.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state gummaguts)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ city_light.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state dancefloor)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ city_saint.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state saint1)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ iron_stairs.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state stairs)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ stairs_ramp.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state ramp)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ stairs_right.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state stairs-r)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ stairs_right_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state stairs-r)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ wood_herring.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state woodd1)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ wood_ornate.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (state wood_ornate)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ clinic.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (states clinic1-9)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ factory.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (states factory1-9)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ industrial.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (states industrial1-9)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ toilet.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (states toilet1-9)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ toilet_large.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (states toilet_large1-9)."
+  source: "https://github.com/DarkPack13/SecondCity"
+
+- files: [ sidewalk.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/DarkPack13/SecondCity/blob/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc/modular_darkpack/modules/walls/icons/floors.dmi (states sidewalk1-3)."
+  source: "https://github.com/DarkPack13/SecondCity"

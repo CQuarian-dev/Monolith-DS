@@ -1,0 +1,199 @@
+- files: [ bamboo_planks.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state bamboo)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ bamboo_tatami.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/floor_variations.dmi (state bamboo-green)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ concrete_slab_1.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/concrete.dmi (state conc_slab_1)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ concrete_slab_3.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/concrete.dmi (state conc_slab_3)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ floor_hay.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state hay)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ floor_sandstone.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state sandstone_floor)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ glass_stained_black.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/glass_stained_black.dmi (state glass_stained_black-0)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ glass_stained_blue.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/glass_stained_blue.dmi (state glass_stained_blue-0)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ glass_stained_green.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/glass_stained_green.dmi (state glass_stained_green-0)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ glass_stained_purple.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/glass_stained_purple.dmi (state glass_stained_purple-0)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ glass_stained_red.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/glass_stained_red.dmi (state glass_stained_red-0)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ glass_stained_yellow.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/glass_stained_yellow.dmi (state glass_stained_yellow-0)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ gold_sun.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state gold_sun)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ lone_star.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/floor_variations.dmi (state carpet-star)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ mineral_runite.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state runite)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ plastic_puzzle.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state plastic_puzzle)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ silver_moon.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state silver_moon)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ silver_moon_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state silver_moon)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ stairs_right.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state stairs-r)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ tatami_black.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/floor_variations.dmi (state bamboo-black)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ tatami_purple.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/floor_variations.dmi (state bamboo-purple)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_southeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_southwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_northeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_northwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_corner.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach-corner)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_corner_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach-corner)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_corner_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach-corner)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_coast_corner_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state beach-corner)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_water.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state water)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ beach_water_deep.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/beach.dmi (state deepwater)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ siderite.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/siderite.dmi (state siderite-255)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ siderite_edge_south.png, siderite_edge_north.png, siderite_edge_east.png, siderite_edge_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors/siderite.dmi (states siderite-55, siderite-110, siderite-157, siderite-203)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ necropolis_1.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state necro1)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ necropolis_2.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state necro2)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ necropolis_3.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/turf/floors.dmi (state necro3)."
+  source: "https://github.com/tgstation/tgstation"

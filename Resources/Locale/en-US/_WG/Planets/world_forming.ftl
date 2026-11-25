@@ -1,0 +1,14 @@
+wg-world-forming-title = Forming worlds: {$name} — {$stage}
+wg-world-forming-hud = Forming {$name} — {$stage}
+wg-world-forming-percent = {$percent}%
+wg-world-forming-count = {$count} worlds in all.
+wg-world-forming-held = The round starts once they are done.
+wg-world-forming-stage-waiting = waiting its turn
+wg-world-forming-stage-caverns = cavern mouths
+wg-world-forming-stage-cities = cities
+wg-world-forming-stage-sites = sites
+wg-world-forming-stage-roads = roads
+wg-world-forming-stage-wrecks = wrecks and camps
+wg-world-forming-stage-terrain = terrain
+wg-world-forming-stage-boundary = boundary
+wg-world-forming-stage-wildlife = wildlife

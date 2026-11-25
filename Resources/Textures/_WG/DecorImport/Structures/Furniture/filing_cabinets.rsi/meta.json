@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355, CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "chestdrawer_documentation_highcom"
+    },
+    {
+      "name": "chestdrawer_double"
+    },
+    {
+      "name": "chestdrawer_filingcabinet"
+    },
+    {
+      "name": "filingcabinet_baystation"
+    },
+    {
+      "name": "filingcabinet_double"
+    },
+    {
+      "name": "filingcabinet_m"
+    },
+    {
+      "name": "filingcabinet_m_documentation"
+    },
+    {
+      "name": "tallcabinet_baystation"
+    },
+    {
+      "name": "tallcabinet_cmss13"
+    },
+    {
+      "name": "wallcabinet"
+    }
+  ]
+}

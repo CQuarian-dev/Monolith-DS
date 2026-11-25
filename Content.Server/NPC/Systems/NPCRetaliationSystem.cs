@@ -23,6 +23,7 @@ public sealed partial class NPCRetaliationSystem : EntitySystem
     {
         SubscribeLocalEvent<NPCRetaliationComponent, DamageChangedEvent>(OnDamageChanged);
         SubscribeLocalEvent<NPCRetaliationComponent, DisarmedEvent>(OnDisarmed);
+        SubscribeLocalEvent<NPCRetaliationComponent, EntityUnpausedEvent>(WgOnUnpaused); // WOLFGATE(Dormancy): a pause doesn't run down who it remembers attacking it
     }
 
     private void OnDamageChanged(Entity<NPCRetaliationComponent> ent, ref DamageChangedEvent args)

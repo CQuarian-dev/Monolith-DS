@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Taken from Mojave Sun at commit https://github.com/Mojave-Sun/mojave-sun-13/commit/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "floor-0"
+    },
+    {
+      "name": "floor-1"
+    },
+    {
+      "name": "floor-2"
+    },
+    {
+      "name": "floor-3"
+    },
+    {
+      "name": "floor-4"
+    },
+    {
+      "name": "floor-5"
+    },
+    {
+      "name": "floor-6"
+    },
+    {
+      "name": "floor-7"
+    },
+    {
+      "name": "floor-8"
+    },
+    {
+      "name": "floor-9"
+    },
+    {
+      "name": "floor-10"
+    },
+    {
+      "name": "floor-11"
+    },
+    {
+      "name": "floor-12"
+    },
+    {
+      "name": "floor-13"
+    },
+    {
+      "name": "floor-14"
+    },
+    {
+      "name": "floor-15"
+    },
+    {
+      "name": "floor-21"
+    },
+    {
+      "name": "floor-23"
+    },
+    {
+      "name": "floor-29"
+    },
+    {
+      "name": "floor-31"
+    },
+    {
+      "name": "floor-38"
+    },
+    {
+      "name": "floor-39"
+    },
+    {
+      "name": "floor-46"
+    },
+    {
+      "name": "floor-47"
+    },
+    {
+      "name": "floor-55"
+    },
+    {
+      "name": "floor-63"
+    },
+    {
+      "name": "floor-74"
+    },
+    {
+      "name": "floor-75"
+    },
+    {
+      "name": "floor-78"
+    },
+    {
+      "name": "floor-79"
+    },
+    {
+      "name": "floor-95"
+    },
+    {
+      "name": "floor-110"
+    },
+    {
+      "name": "floor-111"
+    },
+    {
+      "name": "floor-127"
+    },
+    {
+      "name": "floor-137"
+    },
+    {
+      "name": "floor-139"
+    },
+    {
+      "name": "floor-141"
+    },
+    {
+      "name": "floor-143"
+    },
+    {
+      "name": "floor-157"
+    },
+    {
+      "name": "floor-159"
+    },
+    {
+      "name": "floor-175"
+    },
+    {
+      "name": "floor-191"
+    },
+    {
+      "name": "floor-203"
+    },
+    {
+      "name": "floor-207"
+    },
+    {
+      "name": "floor-223"
+    },
+    {
+      "name": "floor-239"
+    },
+    {
+      "name": "floor-255"
+    }
+  ]
+}

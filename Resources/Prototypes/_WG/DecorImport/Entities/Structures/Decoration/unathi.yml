@@ -1,0 +1,248 @@
+# Aurora
+
+- type: entity
+  parent: BaseStructure
+  id: AuroraUnathiPillar
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/unathi_ruins_aurora.rsi
+    state: pillar
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: AuroraUnathiPillar
+  id: AuroraUnathiPillarMador
+  components:
+  - type: Sprite
+    state: mador_pillar
+
+- type: entity
+  parent: AuroraUnathiPillar
+  id: AuroraUnathiStatue
+  components:
+  - type: Sprite
+    state: statue
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueWarrior
+  components:
+  - type: Sprite
+    state: warriorstatue_left
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueWarriorRight
+  components:
+  - type: Sprite
+    state: warriorstatue_right
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueCrown
+  components:
+  - type: Sprite
+    state: crownstatue
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueRobe
+  components:
+  - type: Sprite
+    state: robestatue
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueMador
+  components:
+  - type: Sprite
+    state: mador_statue1
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueMadorArmored
+  components:
+  - type: Sprite
+    state: mador_statue_armored
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueMadorWarrior
+  components:
+  - type: Sprite
+    state: mador_statue_warrior_left
+
+- type: entity
+  parent: AuroraUnathiStatue
+  id: AuroraUnathiStatueMadorWarriorRight
+  components:
+  - type: Sprite
+    state: mador_statue_warrior_right
+
+- type: entity
+  parent: BaseStructure
+  id: AuroraUnathiSarcophagus
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/unathi_ruins_aurora.rsi
+    layers:
+    - state: wc_sarcophagus
+      map: [ "enum.StorageVisualLayers.Base" ]
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Decoration/unathi_ruins_aurora.rsi
+    state: wc_sarcophagus
+  - type: InteractionOutline
+  - type: Damageable
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 150
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: EntityStorage
+    isCollidableWhenOpen: true
+    closeSound:
+      path: /Audio/Effects/stonedoor_openclose.ogg
+    openSound:
+      path: /Audio/Effects/stonedoor_openclose.ogg
+  - type: ContainerContainer
+    containers:
+      entity_storage: !type:Container
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: wc_sarcophagus
+    stateBaseOpen: wc_sarcophagus_open
+
+- type: entity
+  parent: AuroraUnathiSarcophagus
+  id: AuroraUnathiSarcophagusMador
+  components:
+  - type: Sprite
+    layers:
+    - state: mador_sarcophagus
+      map: [ "enum.StorageVisualLayers.Base" ]
+  - type: Icon
+    state: mador_sarcophagus
+  - type: EntityStorageVisuals
+    stateBaseClosed: mador_sarcophagus
+    stateBaseOpen: mador_sarcophagus_open
+
+- type: entity
+  parent: BaseFlag
+  id: AuroraUnathiTapestrySun
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Wallmounts/unathi_tapestries_aurora.rsi
+    snapCardinals: false
+    state: sun
+
+- type: entity
+  parent: AuroraUnathiTapestrySun
+  id: AuroraUnathiTapestryMoon
+  components:
+  - type: Sprite
+    state: moon
+
+- type: entity
+  parent: AuroraUnathiTapestrySun
+  id: AuroraUnathiTapestryCrown
+  components:
+  - type: Sprite
+    state: crown
+
+- type: entity
+  parent: AuroraUnathiTapestrySun
+  id: AuroraUnathiTapestryWarrior
+  components:
+  - type: Sprite
+    state: warrior
+
+- type: entity
+  parent: AuroraUnathiTapestrySun
+  id: AuroraUnathiTapestryMador
+  components:
+  - type: Sprite
+    state: mador3
+
+- type: entity
+  parent: AuroraUnathiTapestrySun
+  id: AuroraUnathiTapestryMador2
+  components:
+  - type: Sprite
+    state: mador4
+
+- type: entity
+  parent: BaseFlag
+  id: AuroraUnathiTapestryBrothers
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Wallmounts/unathi_tapestries_aurora.rsi
+    snapCardinals: false
+    layers:
+    - state: brothers_l
+    - state: brothers_r
+      offset: 1,0
+
+- type: entity
+  parent: AuroraUnathiTapestryBrothers
+  id: AuroraUnathiTapestryCity
+  components:
+  - type: Sprite
+    layers:
+    - state: city_l
+    - state: city_r
+      offset: 1,0
+
+- type: entity
+  parent: AuroraUnathiTapestryBrothers
+  id: AuroraUnathiTapestryWall
+  components:
+  - type: Sprite
+    layers:
+    - state: wall_l
+    - state: wall_r
+      offset: 1,0
+
+- type: entity
+  parent: AuroraUnathiTapestryBrothers
+  id: AuroraUnathiTapestryUnathi
+  components:
+  - type: Sprite
+    layers:
+    - state: unathi_l
+    - state: unathi_r
+      offset: 1,0
+
+- type: entity
+  parent: AuroraUnathiTapestryBrothers
+  id: AuroraUnathiTapestryMadorLarge
+  components:
+  - type: Sprite
+    layers:
+    - state: mador1_l
+    - state: mador1_r
+      offset: 1,0
+
+- type: entity
+  parent: AuroraUnathiTapestryBrothers
+  id: AuroraUnathiTapestryMadorLarge2
+  components:
+  - type: Sprite
+    layers:
+    - state: mador2_l
+    - state: mador2_r
+      offset: 1,0

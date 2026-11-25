@@ -1,0 +1,9 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+# Metal
+
+- type: tile
+  parent: CMPlanetBase
+  id: RMCPlanetHybrisaAsphalt
+  name: tiles-wg-rmc-asphalt
+  sprite: /Textures/_RMC14/Tiles/hybrisa/asphalt_old.png
+  isSubfloor: false

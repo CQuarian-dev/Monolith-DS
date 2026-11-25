@@ -1,0 +1,4 @@
+- files: ["attackblob.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from TauCetiClassic at commit https://github.com/TauCetiStation/TauCetiClassic/commit/57a938ae835ac9888092b65687ca0e2c2acd3c11."
+  source: "https://github.com/TauCetiStation/TauCetiClassic/blob/57a938ae835ac9888092b65687ca0e2c2acd3c11/sound/effects/attackblob.ogg"

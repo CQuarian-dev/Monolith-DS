@@ -1,0 +1,154 @@
+- type: entity
+  parent: BaseStructure
+  id: GoonDecalAliencomputer
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/aliencomputer_goon.rsi
+    state: display-scroll
+    noRot: true
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.45,0.35,0.45"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  parent: GoonDecalAliencomputer
+  id: GoonDecalAliencomputerOff
+  components:
+  - type: Sprite
+    state: display-off
+
+- type: entity
+  parent: GoonDecalAliencomputer
+  id: GoonDecalAliencomputerBroken
+  components:
+  - type: Sprite
+    state: display-broken
+
+- type: entity
+  parent: GoonDecalAliencomputer
+  id: GoonDecalAliencomputerGraphic
+  components:
+  - type: Sprite
+    state: display-graphic
+
+- type: entity
+  parent: GoonDecalAliencomputer
+  id: GoonDecalAliencomputerBlink
+  components:
+  - type: Sprite
+    state: display-blink
+
+- type: entity
+  abstract: true
+  parent: BaseStructure
+  id: BayCultGrowthBase
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/cult_growths_baystation.rsi
+    noRot: true
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.35,-0.45,0.35,0.35"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: gib
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultBloodStone
+  components:
+  - type: Sprite
+    state: blood_stone
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthBone
+  components:
+  - type: Sprite
+    state: growth_bone
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthGastric
+  components:
+  - type: Sprite
+    state: growth_gastric
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthNode
+  components:
+  - type: Sprite
+    state: growth_node
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthSyphon
+  components:
+  - type: Sprite
+    state: growth_syphon
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthTendril
+  components:
+  - type: Sprite
+    state: growth_tendril
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthWomb
+  components:
+  - type: Sprite
+    state: growth_womb
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultStatue
+  components:
+  - type: Sprite
+    state: statue
+
+- type: entity
+  parent: BayCultGrowthBase
+  id: BayCultGrowthTall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/cult_growth_tall_baystation.rsi
+    state: growth
+    offset: "0,0.5"
+    drawdepth: Overdoors

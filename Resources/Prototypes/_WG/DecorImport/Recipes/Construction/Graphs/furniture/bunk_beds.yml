@@ -1,0 +1,71 @@
+- type: constructionGraph
+  id: DecorBuildAuroraBunkBed
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: AuroraBunkBed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraBunkBedBlack
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: AuroraBunkBedBlack
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraBunkBedBlue
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: AuroraBunkBedBlue
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildAuroraBunkBedGreen
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: AuroraBunkBedGreen
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

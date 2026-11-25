@@ -129,7 +129,7 @@ public sealed partial class GuidebookCatalogSystem
                 foreach (var packId in Values(Node(lathe, field)))
                 {
                     if (!_prototype.TryIndex<LatheRecipePackPrototype>(packId, out var pack)) continue;
-                    foreach (var recipeId in pack.Recipes)
+                    foreach (var recipeId in pack.GetRecipes(_configuration))
                     {
                         if (!_prototype.TryIndex(recipeId, out var recipe) || recipe.Result is not { } product) continue;
                         var research = field == "dynamicPacks" ? techByRecipe.GetValueOrDefault(recipe.ID) : null;

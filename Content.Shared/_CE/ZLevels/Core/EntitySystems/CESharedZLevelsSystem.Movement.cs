@@ -10,12 +10,19 @@ using JetBrains.Annotations;
 using Robust.Shared.Audio;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
+using Content.Shared._WG.Performance; // WOLFGATE(Performance)
 
 namespace Content.Shared._CE.ZLevels.Core.EntitySystems;
 
 public abstract partial class CESharedZLevelsSystem
 {
     private readonly List<EntityUid> _dirtyMovementBodies = new();
+    private readonly HashSet<Entity<CEZPhysicsComponent>> _wgTileHits = new(); // WOLFGATE(Performance): reused by OnTileChanged
+    private readonly HashSet<EntityUid> _wgDirtyMovementSet = new(); // WOLFGATE(Performance): List.Contains per MoveEvent went quadratic in battles
+
+    private const float WGZEpsilon = 0.0001f; // WOLFGATE(Performance): below this a z set is a no-op
+    private readonly HashSet<EntityUid> _wgOnSlope = new(); // WOLFGATE(Performance): bodies whose ground varies within their tile
+    private bool _wgLastSloped; // WOLFGATE(Performance): set by ComputeGroundHeightInternal on a stair curve
 
     private void InitializeMovement()
     {
@@ -111,40 +118,67 @@ public abstract partial class CESharedZLevelsSystem
         if (!TryComp<MapGridComponent>(args.Entity, out var grid))
             return;
 
+        // WOLFGATE(Performance) START: one typed query over the union of the changed tiles instead of an untyped query per tile
+        var any = false;
+        var mapId = MapId.Nullspace;
+        var lo = Vector2.Zero;
+        var hi = Vector2.Zero;
+        var half = grid.TileSizeHalfVector;
+
         foreach (var change in args.Changes)
         {
             var mapCoords = _map.GridTileToWorld(args.Entity, grid, change.GridIndices);
-            var half = grid.TileSizeHalfVector;
             var min = mapCoords.Position - half;
             var max = mapCoords.Position + half;
-            var aabb = new Box2(min, max);
 
-            var entities = _lookup.GetEntitiesIntersecting(mapCoords.MapId, aabb);
-            foreach (var uid in entities)
+            if (!any)
             {
-                if (!ZPhysicsQuery.TryComp(uid, out var zComp))
-                    continue;
-
-                RequestCacheMovement((uid, zComp));
+                any = true;
+                mapId = mapCoords.MapId;
+                lo = min;
+                hi = max;
+                continue;
             }
+
+            lo = Vector2.Min(lo, min);
+            hi = Vector2.Max(hi, max);
         }
+
+        if (!any)
+            return;
+
+        _wgTileHits.Clear();
+        _lookup.GetEntitiesIntersecting(mapId, new Box2(lo, hi), _wgTileHits, LookupFlags.Dynamic | LookupFlags.Static | LookupFlags.Sundries);
+        foreach (var hit in _wgTileHits)
+        {
+            RequestCacheMovement(hit);
+        }
+
+        _wgTileHits.Clear();
+        // WOLFGATE END
     }
 
     private void RequestCacheMovement(Entity<CEZPhysicsComponent> entity, bool force = true)
     {
         var tile = _transform.GetGridOrMapTilePosition(entity);
 
-        if (tile == entity.Comp.CachedTile && !force)
+        if (tile == entity.Comp.CachedTile && !force && !_wgOnSlope.Contains(entity)) // WOLFGATE(Performance): stair height and stickiness change within a tile
             return;
 
         entity.Comp.CachedTile = tile;
         entity.Comp.CachedGroundHeight = ComputeGroundHeightInternal((entity, entity), out var sticky);
         entity.Comp.CachedStickyGround = sticky;
+        // WOLFGATE(Performance) START: remember who stands on a stair curve
+        if (_wgLastSloped)
+            _wgOnSlope.Add(entity);
+        else
+            _wgOnSlope.Remove(entity);
+        // WOLFGATE END
     }
 
     private void OnMoveEvent(Entity<CEZPhysicsComponent> entity, ref MoveEvent args)
     {
-        if (_dirtyMovementBodies.Contains(entity))
+        if (!_wgDirtyMovementSet.Add(entity)) // WOLFGATE(Performance): set lookup instead of List.Contains
             return;
 
         _dirtyMovementBodies.Add(entity);
@@ -165,6 +199,7 @@ public abstract partial class CESharedZLevelsSystem
     private float ComputeGroundHeightInternal(Entity<CEZPhysicsComponent?> target, out bool stickyGround, int maxFloors = 1)
     {
         stickyGround = false;
+        _wgLastSloped = false; // WOLFGATE(Performance): reset the stair flag for this lookup
 
         if (!Resolve(target, ref target.Comp, false))
             return 0;
@@ -195,7 +230,7 @@ public abstract partial class CESharedZLevelsSystem
             var gridTile = _map.WorldToTile(gridUid, grid, worldPos);
 
             //Check all types of ZHeight entities
-            var query = _map.GetAnchoredEntities(gridUid, grid, gridTile);
+            var query = _map.GetAnchoredEntitiesEnumerator(gridUid, grid, gridTile);
             while (query.MoveNext(out var uid))
             {
                 if (!_zHighGroundQuery.TryComp(uid, out var heightComp))
@@ -228,6 +263,7 @@ public abstract partial class CESharedZLevelsSystem
                     return -floor + groundY;
                 }
 
+                _wgLastSloped = true; // WOLFGATE(Performance): this ground varies within the tile
                 var step = 1f / (curve.Count - 1);
                 var index = (int)(t / step);
                 var frac = (t - index * step) / step;
@@ -244,9 +280,17 @@ public abstract partial class CESharedZLevelsSystem
             }
 
             //No ZEntities found, check floor tiles
+            // WOLFGATE(Planets) START: a roof one layer down is something to stand on, not to drop through.
+            if (floor > 0 && !_gridQuery.HasComp(target) && WgRoofedBelow(gridUid, grid, gridTile))
+                return -floor + 1;
+            // WOLFGATE END
+
             if (_map.TryGetTileRef(gridUid, grid, gridTile, out var tileRef) &&
                 !tileRef.Tile.IsEmpty)
                 return -floor; // tile ground has groundY == 0 -> -floor
+
+            if (WgUnloadedGround(gridUid, gridTile)) // WOLFGATE(Planets): planet terrain that isn't loaded is still ground
+                return -floor;
         }
 
         return -maxFloors;
@@ -324,7 +368,12 @@ public abstract partial class CESharedZLevelsSystem
         if (!Resolve(ent.Owner, ref ent.Comp))
             return;
 
+        // WOLFGATE(Performance): skip the dirty and wake when a convoy or parachute re-sets the same height
+        if (MathF.Abs(ent.Comp.LocalPosition - newPosition) < WGZEpsilon)
+            return;
+
         ent.Comp.LocalPosition = newPosition;
+        WGNoteHeight(ent, newPosition); // WOLFGATE(Performance): raised entities join the sprite passes
         DirtyField(ent, ent.Comp, nameof(CEZPhysicsComponent.LocalPosition));
         WakeBody(ent);
     }
@@ -340,6 +389,20 @@ public abstract partial class CESharedZLevelsSystem
 
         ent.Comp.LaunchCountdown = seconds;
         DirtyField(ent, ent.Comp, nameof(CEZPhysicsComponent.LaunchCountdown));
+    }
+
+    /// <summary>
+    /// Sets whether the grid currently has solid terrain under its footprint, for the shuttle
+    /// console readout.
+    /// </summary>
+    [PublicAPI]
+    public void SetGroundContact(Entity<CEZPhysicsComponent?> ent, bool contact)
+    {
+        if (!Resolve(ent.Owner, ref ent.Comp, false) || ent.Comp.GroundContact == contact)
+            return;
+
+        ent.Comp.GroundContact = contact;
+        DirtyField(ent, ent.Comp, nameof(CEZPhysicsComponent.GroundContact));
     }
 
     [PublicAPI]
@@ -373,6 +436,10 @@ public abstract partial class CESharedZLevelsSystem
         if (!Resolve(ent.Owner, ref ent.Comp))
             return;
 
+        // WOLFGATE(Performance): skip the dirty and wake when the velocity is unchanged
+        if (MathF.Abs(ent.Comp.Velocity - newVelocity) < WGZEpsilon)
+            return;
+
         ent.Comp.Velocity = newVelocity;
         DirtyField(ent, ent.Comp, nameof(CEZPhysicsComponent.Velocity));
         WakeBody(ent);
@@ -399,6 +466,33 @@ public abstract partial class CESharedZLevelsSystem
 
         if (map is null)
             return false;
+
+        // Convoy transit: a networked ship's decks ride adjacent stacked transit maps,
+        // which aren't z-network members, so MapOffset can't target them. Step straight to
+        // the linked deck (one floor at a time) so crew can climb or fall between a ship's
+        // floors mid-descent instead of dropping onto the empty z-level the ship has left.
+        // Grids are excluded — they move as sets through the transit machinery, not this.
+        if ((offset == 1 || offset == -1)
+            && !_gridQuery.HasComp(ent)
+            && TryComp<CEZTransitMapComponent>(map.Value.Owner, out var currentTransit))
+        {
+            var deckLink = offset < 0 ? currentTransit.TransitBelow : currentTransit.TransitAbove;
+            if (deckLink is { } deckMap
+                && !TerminatingOrDeleted(deckMap)
+                && _mapQuery.TryComp(deckMap, out var deckMapComp))
+            {
+                var keepRot = _transform.GetWorldRotation(ent);
+                _transform.SetMapCoordinates(ent, new MapCoordinates(_transform.GetWorldPosition(ent), deckMapComp.MapId));
+                _transform.SetWorldRotation(ent, keepRot);
+
+                // Cache value only; the gap's lower anchor depth is the sensible stand-in.
+                var deckDepth = _zMapQuery.TryComp(currentTransit.LowerMap, out var lowerZ) ? lowerZ.Depth : 0;
+                var deckEv = new CEZLevelMapMoveEvent(offset, deckDepth);
+                RaiseLocalEvent(ent, ref deckEv);
+
+                return true;
+            }
+        }
 
         if (!TryMapOffset(map.Value, offset, out var targetMap))
             return false;
@@ -463,25 +557,6 @@ public abstract partial class CESharedZLevelsSystem
         return TryMove(ent, -1);
     }
 
-    [PublicAPI]
-    public bool TryMoveDownOrChasm(EntityUid ent)
-    {
-        if (TryMoveDown(ent))
-            return true;
-
-        //welp, that default Chasm behavior. Not really good, but ok for now.
-        if (HasComp<ChasmFallingComponent>(ent))
-            return false; //Already falling
-
-        var audio = new SoundPathSpecifier("/Audio/Effects/falling.ogg");
-        _audio.PlayPredicted(audio, Transform(ent).Coordinates, ent);
-        var falling = AddComp<ChasmFallingComponent>(ent);
-        falling.NextDeletionTime = _timing.CurTime + falling.DeletionTime;
-        _blocker.UpdateCanMove(ent);
-
-        return false;
-    }
-
     private void UpdateDirtyMovement()
     {
         for (var i = _dirtyMovementBodies.Count - 1; i >= 0; i--)
@@ -492,11 +567,12 @@ public abstract partial class CESharedZLevelsSystem
                 continue;
 
             var entity = (uid, component);
-            RequestCacheMovement(entity);
+            RequestCacheMovement(entity, force: false); // WOLFGATE(Performance): recompute ground height only when the tile changed
             RefreshBody(entity);
         }
 
         _dirtyMovementBodies.Clear();
+        _wgDirtyMovementSet.ClearAndTrim(); // WOLFGATE(Performance): release a battle's oversized set afterwards
     }
 }
 
@@ -553,10 +629,16 @@ public struct CEZLevelHitEvent(float impactPower)
 /// Is called every frame to calculate the current vertical velocity of the active zphysics entities.
 /// </summary>
 [ByRefEvent]
-public struct CEGetZVelocityEvent(Entity<CEZPhysicsComponent> target)
+public struct CEGetZVelocityEvent(Entity<CEZPhysicsComponent> target, float frameTime)
 {
     public Entity<CEZPhysicsComponent> Target = target;
     public float VelocityDelta = 0;
+
+    /// <summary>
+    /// The substep length the returned <see cref="VelocityDelta"/> is integrated over, so
+    /// handlers can predict where this step lands and clamp against overshooting a plane.
+    /// </summary>
+    public float FrameTime = frameTime;
 }
 
 /// <summary>

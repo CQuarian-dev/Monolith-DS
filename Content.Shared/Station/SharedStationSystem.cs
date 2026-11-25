@@ -34,16 +34,21 @@ public abstract partial class SharedStationSystem : EntitySystem
             return null;
 
         EntityUid? largestGrid = null;
-        Box2 largestBounds = new Box2();
+        // LuaM-start
+        var largestArea = 0.0f;
 
         foreach (var gridUid in ent.Comp.Grids)
         {
-            if (!TryComp<MapGridComponent>(gridUid, out var grid) ||
-                grid.LocalAABB.Size.LengthSquared() < largestBounds.Size.LengthSquared())
+            if (!TryComp<MapGridComponent>(gridUid, out var grid))
                 continue;
 
-            largestBounds = grid.LocalAABB;
+            var gridArea = Box2.Area(grid.LocalAABB);
+            if (gridArea < largestArea)
+                continue;
+
+            largestArea = gridArea;
             largestGrid = gridUid;
+        // LuaM-end
         }
 
         return largestGrid;

@@ -25,7 +25,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Content.Shared.DeviceNetwork.Components;
 using Robust.Shared.Timing;
-using System.Numerics; //Frontier modification
 using Content.Server.Salvage.Expeditions;
 using Content.Server._Mono.Radar; // Monolith
 using Content.Server.Explosion.EntitySystems;

@@ -1,0 +1,24 @@
+- files: [ wood_whitewood.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/icons/turf/floors/hybrisafloors.dmi (state whitewood)."
+  source: "https://github.com/cmss13-devs/cmss13"
+
+- files: [ ancientfloor_floor.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/icons/turf/floors/hunter/ancientfloor.dmi (states floor1, floor2, floor5, floor7, floor8)."
+  source: "https://github.com/cmss13-devs/cmss13"
+
+- files: [ ancientfloor_damaged.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/icons/turf/floors/hunter/ancientfloor.dmi (states damaged1 to damaged7)."
+  source: "https://github.com/cmss13-devs/cmss13"
+
+- files: [ ancientfloor_floor_breach.png, ancientfloor_floor_deco.png, ancientfloor_floor_deco_0.png, ancientfloor_floor_deco_1.png, ancientfloor_floor_deco_2.png, ancientfloor_floor_deco_alt.png, ancientfloor_floor_dark_deco.png, ancientfloor_floor_dark_deco_1.png, ancientfloor_floor_deco_alt_dark.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/icons/turf/floors/hunter/ancientfloor.dmi (states floor_breach, floor_deco, floor_deco_0, floor_deco_1, floor_deco_2, floor_deco_alt, floor_dark_deco, floor_dark_deco_1, floor_deco_alt_dark)."
+  source: "https://github.com/cmss13-devs/cmss13"
+
+- files: [ hunter_floors_hunter_red.png, hunter_floors_hunter_red_2.png, hunter_floors_hunter_red_4.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/cmss13-devs/cmss13/blob/d5306e2724d6006e69439d9cf64a2b166fe4ed15/icons/turf/floors/hunter/hunter_floors.dmi (states hunter_red, hunter_red_2, hunter_red_4)."
+  source: "https://github.com/cmss13-devs/cmss13"

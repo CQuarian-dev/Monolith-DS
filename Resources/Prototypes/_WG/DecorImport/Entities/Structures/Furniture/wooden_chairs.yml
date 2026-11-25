@@ -1,0 +1,703 @@
+- type: entity
+  parent: StoolBase
+  id: AuroraStoolChairWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_aurora
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraStoolChairWood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayBedChairWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_preview_bed
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayBedChairWood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairWoodEbony
+  suffix: ebony
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_preview_ebony
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairWoodEbony
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairWoodMahogany
+  suffix: mahogany
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_preview_mahogany
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairWoodMahogany
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairWoodMaple
+  suffix: maple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_preview_maple
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairWoodMaple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairWoodWalnut
+  suffix: walnut
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_preview_walnut
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairWoodWalnut
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayChairWoodWings
+  suffix: wings
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_preview
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairWoodWings
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayWoodWingsEbony
+  suffix: ebony
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_preview_ebony
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayWoodWingsEbony
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayWoodWingsMahogany
+  suffix: mahogany
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_preview_mahogany
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayWoodWingsMahogany
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayWoodWingsMaple
+  suffix: maple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_preview_maple
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayWoodWingsMaple
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BayWoodWingsWalnut
+  suffix: walnut
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_preview_walnut
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayWoodWingsWalnut
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BeeChairWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_beestation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeChairWood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: BeeChairWoodWings
+  suffix: wings
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_beestation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeChairWoodWings
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CitChairWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_citadel
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCitChairWood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CMChairWoodWings
+  suffix: wings
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_cmss13
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: TgChairWoodWings
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_tgstation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildTgChairWoodWings
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_shiptest
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairWood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairWoodGreyscale
+  suffix: wood greyscale
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_greyscale
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairWoodGreyscale
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestChairWoodWings
+  suffix: wings
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_shiptest
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairWoodWings
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ShiptestWoodWingsGreyscale
+  suffix: greyscale
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_wings_greyscale
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestWoodWingsGreyscale
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: ErisChairCustomWood
+  suffix: wood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: wooden_chair_eris
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 50
+  - type: Construction
+    graph: DecorBuildErisChairCustomWood
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: ParaChairStoolWood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    noRot: false
+    state: wooden_stool
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildParaChairStoolWood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: PolarisBedChairSifwood
+  suffix: sifwood
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: chair_preview
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildPolarisBedChairSifwood
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairRustic
+  suffix: rustic
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: chair_rustic
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairRusticFancy
+  suffix: fancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: chair_rustic_fancy
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: NebulaChairRusticFancyEbony
+  suffix: ebony
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: chair_rustic_fancy_ebony
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairDiningRegal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs_goonstation.rsi
+    state: regalchair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairComfyWoodRegal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs_goonstation.rsi
+    state: wooden_regalchair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: YogChairAmericandiner
+  suffix: americandiner
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: americhair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: YogChairAmericandinerBlack
+  suffix: black
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/wooden_chairs.rsi
+    state: americhair_black
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]

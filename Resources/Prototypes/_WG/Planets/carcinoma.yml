@@ -1,0 +1,252 @@
+# The first unsanctioned Kyphrus world. Static biomass avoids unbounded kudzu growth.
+- type: planetPalette
+  id: WGPaletteCarcinoma
+  color1: '#281013'
+  color2: '#772B36'
+  color3: '#C17A73'
+  color4: '#D8ACA0'
+
+- type: planetType
+  id: WGPlanetCarcinoma
+  name: Carcinoma
+  shader: RockyPlanet
+  earthMass: 1.0
+  rotation: 0.8
+  palette: WGPaletteCarcinoma
+  atmosphere: StandardAtmosphere
+  customData:
+    floats:
+      terrainScale: 1.0
+      macroFrequency: 3.75
+      macroAmplitude: 0.75
+      ridgeFrequency: 1.0
+      ridgeAmplitude: 3.0
+      detailFrequency: 7.5
+      detailAmplitude: 0.25
+      polarCapColor: 0.875
+      polarCapCoverage: 0.0
+
+- type: wgPlanetSurface
+  id: WGSurfaceCarcinoma
+  planetType: WGPlanetCarcinoma
+  ground: WGCarcinomaSurface
+  airLayers: 3
+  cloudLayer: false
+  orbitRange: 2000
+  buildAtRoundStart: true
+  sanctioned: false
+  climate: wg-planet-scan-climate-carcinoma
+  hazards:
+  - wg-planet-scan-hazard-blood-storms
+  - wg-planet-scan-hazard-biohazard
+  - wg-planet-scan-hazard-wildlife
+  gravity: 1
+  radius: 192
+  pois: WGPoisCarcinoma
+  seed: 20260918
+  networkComponents:
+  # The planet breathes out carbon dioxide (_WG/PlanetVents): 3 kPa oxygen, 12 kPa nitrogen and 90 kPa carbon dioxide at
+  # 37 °C, 105 kPa in all. Nobody breathes it without internals but the world's own life.
+  - type: MapAtmosphere
+    space: false
+    mixture:
+      volume: 2500
+      immutable: true
+      temperature: 310.15
+      moles: [2.908408, 11.633631, 87.252232]
+  # LuaM: WGPlanetNatives (Xenobiology) is not ported
+  groundComponents:
+  - type: CEZLevelRoof
+  - type: CEZGroundLayer
+  airComponents:
+  - type: MapLight
+    ambientLightColor: "#b47c78"
+  - type: Gravity
+    enabled: true
+    inherent: true
+  orbitComponents:
+  - type: MapLight
+    ambientLightColor: "#2a3340"
+
+- type: planet
+  id: WGCarcinomaSurface
+  biome: WGBiomeCarcinoma
+  mapName: wg-planet-carcinoma-surface
+  mapLight: "#c88f87"
+  atmosphere:
+    volume: 2500
+    immutable: true
+    temperature: 310.15
+    moles: [2.908408, 11.633631, 87.252232]
+
+- type: biomeTemplate
+  id: WGBiomeCarcinoma
+  layers:
+  - !type:BiomeTileLayer
+    threshold: -1
+    tile: WGFloorFlesh
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGFloorFlesh, FloorFlesh, WGFloorFleshScab, WGFloorFleshBoneMeaty, WGFloorFleshBoneSpine, WGFloorFleshBoneStraight, WGFloorFleshCrust, WGFloorFleshMarshMud, WGFloorFleshMarshDirt]
+    entities: [WGFaunaCarcinoma]
+    threshold: 0.97
+    noise: { seed: 37, noiseType: OpenSimplex2, frequency: 3 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGFloorFlesh, FloorFlesh, WGFloorFleshScab, WGFloorFleshBoneMeaty, WGFloorFleshBoneSpine, WGFloorFleshBoneStraight, WGFloorFleshCrust, WGFloorFleshMarshMud, WGFloorFleshMarshDirt]
+    entities: [FleshBlocker]
+    threshold: 0.98
+    noise: { seed: 2, noiseType: OpenSimplex2, frequency: 1 }
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGFloorFlesh, FloorFlesh]
+    entities: [WallMeat]
+    threshold: 0.72
+    noise: { seed: 11, noiseType: OpenSimplex2, frequency: 0.025 }
+  # Dried crust ring just outside each grove; the grove layer after it wins inside.
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaScabEdge
+    threshold: 0.3
+    noise: { seed: 16, noiseType: OpenSimplex2, frequency: 0.018 }
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaGrove
+    threshold: 0.4
+    noise: { seed: 16, noiseType: OpenSimplex2, frequency: 0.018 }
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaTendonForest
+    threshold: 0.45
+    noise: { seed: 51, noiseType: OpenSimplex2, frequency: 0.012 }
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaBoneField
+    threshold: 0.84
+    noise: { seed: 89, noiseType: OpenSimplex2, frequency: 0.012 }
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaMarsh
+    threshold: 0.8
+    noise: { seed: 87, noiseType: OpenSimplex2, frequency: 0.014 }
+  # Wild slime patches (_WG/WildSlimes) over the ground regions, under the shores, rivers and lakes: a few sparse zones,
+  # each with a patch or two. The Gut's grotto layer shares both noises.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGFloorFlesh, FloorFlesh, WGFloorFleshScab, WGFloorFleshBoneMeaty, WGFloorFleshBoneSpine, WGFloorFleshBoneStraight, WGFloorFleshCrust, WGFloorFleshMarshMud, WGFloorFleshMarshDirt]
+    entities: [WGCarcinomaAssimilationSack]
+    threshold: 0.985
+    noise: { seed: 57, noiseType: OpenSimplex2, frequency: 0.6 }
+  # One-shot nests stay sparse. The later river layer wins on overlapping cells, keeping them out of blood channels.
+  # Bursting pimples (_WG/LivingWorld), sparse and short of the blood channels.
+  # Breathing vents (_WG/PlanetVents) in wide fields over a share of the ground, under the rivers and lakes.
+  # Scabbed band round each lake: the lake's own noise, a lower threshold.
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaScabShore
+    threshold: 0.58
+    noise: { seed: 61, frequency: 0.012, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, lacunarity: 2 }
+
+  # Blood lakes override all terrestrial features, as Asclepiu's lakes do. They took over from the old rivers: still
+  # water laid like every other world's, not square channels.
+  - !type:BiomeMetaLayer
+    template: WGCarcinomaBloodOcean
+    threshold: 0.72
+    noise: { seed: 61, frequency: 0.012, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, lacunarity: 2 }
+
+- type: biomeTemplate
+  id: WGCarcinomaGrove
+  layers:
+  # The ground inside a grove stays plain flesh, so the crust ring only shows outside it.
+  - !type:BiomeTileLayer
+    tile: WGFloorFlesh
+    threshold: -1
+  # Independent placement keeps harvestable trees from being lost in the noise-based variant selection.
+  - !type:BiomeEntityLayer
+    allowedTiles: [WGFloorFlesh, FloorFlesh]
+    entities: [WGFleshPolyp]
+    threshold: 0.96
+    noise: { seed: 74, noiseType: OpenSimplex2, frequency: 1 }
+
+- type: entity
+  id: WGFleshTreeBase
+  abstract: true
+  parent: BaseTree
+  name: flesh tree
+  description: Veined limbs reach from a trunk of living meat. Its swollen branches twitch in the wind.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _WG/Planets/Structures/flesh_trees.rsi
+    offset: 0,0.5
+    layers:
+    - state: tree01
+      map: ["tree"]
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [Destruction]
+    - trigger: !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/gib1.ogg
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          FoodMeat:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [Destruction]
+
+- type: entity
+  id: WGFleshPolyp
+  parent: FleshBlocker
+  name: flesh polyp
+  description: A bulbous growth rooted in the living ground.
+  components:
+  - type: Sprite
+    color: "#b87989"
+
+- type: entity
+  id: WGBloodRiver
+  parent: FloorWaterEntity
+  name: blood river
+  description: A slow current of dark blood runs through the planet's flesh.
+  components:
+  # Recoloured art, as the blood lake's: a red tint over the blue water sprite read as near black.
+  - type: Sprite
+    sprite: _WG/Planets/BloodWater/blood-river.rsi
+  - type: SolutionContainerManager
+    solutions:
+      pool:
+        maxVol: 9999999
+        reagents:
+        - ReagentId: Blood
+          Quantity: 9999999
+
+- type: entityTable
+  id: WGFaunaCarcinoma
+  table: !type:GroupSelector
+    children:
+    # A bird flock (_WG/Birds); the leader spawns the rest.
+    - !type:NestedSelector
+      tableId: WGCarcinomaAberrantFlesh
+      weight: 5
+    - !type:NestedSelector
+      tableId: WGCarcinomaNewbornFlesh
+      weight: 2
+    - id: MobLetoferolBeast
+      weight: 9
+    - id: MobLetoferolHorror
+      weight: 1
+
+- type: entity
+  id: WGFaunaCarcinoma
+  parent: MarkerBase
+  name: quarantined biothreat spawner
+  categories: [HideSpawnMenu]
+  components:
+  - type: WGPlanetFaunaSpawner
+    table: WGFaunaCarcinoma
+
+# Exterior flesh terrain accepts weather without exposing indoor station flesh floors.
+- type: tile
+  id: WGFloorFlesh
+  parent: FloorFlesh
+  weather: true

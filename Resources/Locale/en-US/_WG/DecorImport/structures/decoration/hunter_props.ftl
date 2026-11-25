@@ -1,0 +1,17 @@
+ent-CMHunterTrophyWallBottomLeft = Yautja Trophy Display Rack
+    .desc = A trophy rack for hunters displaying their prizes.
+ent-CMHunterTrophyWallBottomRight = { ent-CMHunterTrophyWallBottomLeft }
+    .desc = { ent-CMHunterTrophyWallBottomLeft.desc }
+ent-CMHunterTrophyWallCenter = { ent-CMHunterTrophyWallBottomLeft }
+    .desc = { ent-CMHunterTrophyWallBottomLeft.desc }
+ent-CMHunterTrophyWallTopLeft = { ent-CMHunterTrophyWallBottomLeft }
+    .desc = { ent-CMHunterTrophyWallBottomLeft.desc }
+ent-CMHunterTrophyWallTopCenter = { ent-CMHunterTrophyWallBottomLeft }
+    .desc = { ent-CMHunterTrophyWallBottomLeft.desc }
+ent-CMHunterTrophyWallTopRight = { ent-CMHunterTrophyWallBottomLeft }
+    .desc = { ent-CMHunterTrophyWallBottomLeft.desc }
+ent-CMHunterFeed = hunter feed
+ent-CMHunterFountain = carved stone head
+    .desc = A huge carved stone head of an unknown creature, water flows from it's mouth.
+ent-CMHunterLocker = alien closet
+    .desc = A suspicious dark metal alien closet, what horrors can be stored inside?

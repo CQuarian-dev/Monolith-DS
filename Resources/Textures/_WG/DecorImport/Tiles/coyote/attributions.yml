@@ -1,0 +1,44 @@
+- files: [ floor_padded.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/turf/floors.dmi (state floor_padded)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ floor_wood_mosaic.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/modular_sunset/icons/turfs/wood_floor.dmi (state mosaic1)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ stone_rugged.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/turf/f13floors2.dmi (state khanstone)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ titanium_blue.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/turf/floors.dmi (state titanium_blue)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ titanium_purple.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/turf/floors.dmi (state titanium_purple)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ titanium_white.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/turf/floors.dmi (state titanium_white)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ titanium_yellow.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/turf/floors.dmi (state titanium_yellow)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ molten.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/fallout/turfs/ultra.dmi (state molten)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"
+
+- files: [ fissurel.png, fissurec.png, fissurer.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/ARF-SS13/coyote-bayou/blob/af94b33c76dffc30896d97f20bcea09cbed14b22/icons/fallout/turfs/ultra.dmi (states fissurel, fissurec, fissurer)."
+  source: "https://github.com/ARF-SS13/coyote-bayou"

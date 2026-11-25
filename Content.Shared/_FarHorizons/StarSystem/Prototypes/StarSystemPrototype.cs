@@ -7,6 +7,7 @@ public sealed partial class StarSystemPrototype : IPrototype
 {
     [IdDataField] public string ID { get; private set; } = default!;
     [DataField(required: true)] public ProtoId<StarTypePrototype> Star;
+    [DataField] public ProtoId<StarSystemPrototype>? PlanetNetworkVariant; // LuaM
     [DataField] public List<StarSystemPlanet> Planets = new();
     [DataField] public StarSystemAsteroidBelt? AsteroidBelt;
 }
@@ -17,6 +18,7 @@ public sealed partial class StarSystemPlanet
     [DataField(required: true)] public ProtoId<PlanetTypePrototype> Planet;
     [DataField(required: true)] public float Distance;
     [DataField] public float Angle;
+    [DataField] public string? Name; // LuaM
 }
 
 [DataDefinition]

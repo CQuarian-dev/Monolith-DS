@@ -1,0 +1,161 @@
+# CM-SS13
+
+- type: entity
+  parent: BaseStructure
+  id: CMHunterTrophyWallBottomLeft
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x32_hunter_props_cm.rsi
+    state: pred_trophy_vendor_bottom_left
+  - type: InteractionOutline
+  - type: PointLight
+    radius: 1.5
+    energy: 0.8
+    color: "#d02020"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        density: 1000
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+
+- type: entity
+  parent: CMHunterTrophyWallBottomLeft
+  id: CMHunterTrophyWallBottomRight
+  components:
+  - type: Sprite
+    state: pred_trophy_vendor_bottom_right
+
+- type: entity
+  parent: CMHunterTrophyWallBottomLeft
+  id: CMHunterTrophyWallCenter
+  components:
+  - type: Sprite
+    state: pred_trophy_vendor_center
+
+- type: entity
+  parent: CMHunterTrophyWallBottomLeft
+  id: CMHunterTrophyWallTopLeft
+  components:
+  - type: Sprite
+    state: pred_trophy_vendor_top_left
+
+- type: entity
+  parent: CMHunterTrophyWallBottomLeft
+  id: CMHunterTrophyWallTopCenter
+  components:
+  - type: Sprite
+    state: pred_trophy_vendor_top_center
+
+- type: entity
+  parent: CMHunterTrophyWallBottomLeft
+  id: CMHunterTrophyWallTopRight
+  components:
+  - type: Sprite
+    state: pred_trophy_vendor_top_right
+
+- type: entity
+  parent: BaseStructure
+  id: CMHunterFeed
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x32_hunter_props_cm.rsi
+    state: hunter_feed
+    noRot: true
+  - type: InteractionOutline
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseStructure
+  id: CMHunterFountain
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x32_hunter_props_cm.rsi
+    state: fountain_head_flowing
+    noRot: true
+  - type: InteractionOutline
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        maxVol: 500
+        reagents:
+        - ReagentId: Water
+          Quantity: 500
+  - type: SolutionRegeneration
+    solution: tank
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 1
+  - type: DrainableSolution
+    solution: tank
+  - type: ReagentTank
+  - type: AmbientSound
+    volume: -8
+    range: 4
+    sound:
+      path: /Audio/Ambience/Objects/flowing_water_open.ogg
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ClosetBase
+  id: CMHunterLocker
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/32x32_hunter_props_cm.rsi
+    # LuaM-start: our ClosetBase layers name generic/generic_door/welded states this RSI doesn't have
+    layers:
+    - state: closed
+      map: ["enum.StorageVisualLayers.Base"]
+      visible: false
+    - state: closed
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      sprite: Structures/Storage/closet.rsi
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: paper
+      visible: false
+      sprite: Structures/Storage/closet_labels.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]
+  - type: EntityStorageVisuals
+    stateBaseClosed: closed
+    stateDoorOpen: open
+    stateDoorClosed: closed
+    # LuaM-end

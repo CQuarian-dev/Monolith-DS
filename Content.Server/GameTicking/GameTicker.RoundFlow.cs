@@ -372,6 +372,9 @@ namespace Content.Server.GameTicking
             if (DummyTicker || _startingRound)
                 return;
 
+            if (WGRoundStartHeld(force)) // WOLFGATE(Planets): round-start worlds still forming hold the start
+                return;
+
             _startingRound = true;
 
             if (RoundId == 0)

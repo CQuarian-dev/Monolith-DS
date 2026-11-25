@@ -1,0 +1,29 @@
+- files: [ tg_icemoon.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/tgstation/tgstation/blob/0f669632f5f8972a04df1e24bb987240dbaf7518/icons/effects/parallax.dmi (state icemoon)."
+  source: "https://github.com/tgstation/tgstation"
+
+- files: [ monke_nebula1.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Monkestation/Monkestation2.0/blob/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8/icons/effects/parallax/parallax.dmi (state nebula1)."
+  source: "https://github.com/Monkestation/Monkestation2.0"
+
+- files: [ vore_virgo5.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/VOREStation/VOREStation/blob/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88/icons/skybox/virgo5.dmi (state v5)."
+  source: "https://github.com/VOREStation/VOREStation"
+
+- files: [ goon_amantes.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/misc/512x512.dmi (state amantes)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ goon_bigasteroid_1.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/obj/large/160x160.dmi (state bigasteroid_1)."
+  source: "https://github.com/goonstation/goonstation"
+
+- files: [ goon_regina.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/goonstation/goonstation/blob/5c2227ce62cee48048c7944aea340b0a14c88a7d/icons/obj/large/320x320.dmi (state regina)."
+  source: "https://github.com/goonstation/goonstation"

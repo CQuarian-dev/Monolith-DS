@@ -13,7 +13,6 @@ namespace Content.Client._NF.Shipyard.BUI;
 public sealed partial class ShipyardConsoleBoundUserInterface : BoundUserInterface
 {
     private ShipyardConsoleMenu? _menu;
-    private ShipyardRulesPopup? _rulesWindow;
     // [Dependency] private ShipyardPreviewSystem _preview = default!; // LuaM: ship preview disabled
     public int Balance { get; private set; }
 

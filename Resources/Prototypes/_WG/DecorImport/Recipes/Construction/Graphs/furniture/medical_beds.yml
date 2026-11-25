@@ -1,0 +1,125 @@
+- type: constructionGraph
+  id: DecorBuildTgBedMedical
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: TgBedMedical
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildTgBedMedicalEmergency
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: TgBedMedicalEmergency
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBedRoller
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: ShiptestBedRoller
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildParaBedAmbTrolley
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: ParaBedAmbTrolley
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildNovaBedMedicalMedigun
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: NovaBedMedicalMedigun
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildYogBedSurgicalMat
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: YogBedSurgicalMat
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMHybrisaHospitalHospitaldivider
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMHybrisaHospitalHospitaldivider
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

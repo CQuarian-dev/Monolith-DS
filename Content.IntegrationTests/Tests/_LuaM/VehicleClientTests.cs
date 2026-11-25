@@ -261,7 +261,7 @@ public sealed class VehicleClientTests
         return rider;
     }
 
-    private static T? Find<T>(Control control) where T : Control
+    private static T Find<T>(Control control) where T : Control
     {
         if (control is T found)
             return found;

@@ -1,0 +1,819 @@
+# Beestation
+
+- type: entity
+  id: BeeFloorCarpetGrimy
+  parent: CarpetBase
+  suffix: Grimy
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_grimy.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_grimy.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemBeeFloorCarpetGrimy:
+                min: 1
+                max: 1
+
+- type: entity
+  id: BeeFloorCarpetOlive
+  parent: CarpetBase
+  suffix: Olive
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_olive.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_olive.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemBeeFloorCarpetOlive:
+                min: 1
+                max: 1
+
+# Coyote Bayou
+
+- type: entity
+  id: CoyoteFloorCarpetVault
+  parent: CarpetBase
+  suffix: Vault
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_vault.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_vault.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemCoyoteFloorCarpetVault:
+                min: 1
+                max: 1
+
+# Nova Sector
+
+- type: entity
+  id: NovaFloorKinarisBlackGreen
+  parent: CarpetBase
+  suffix: Kinaris, black and green
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/black_green.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/black_green.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorKinarisBlackGreen:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorKinarisBlackRed
+  parent: CarpetBase
+  suffix: Kinaris, black and red
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/black_red.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/black_red.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorKinarisBlackRed:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetKinaris
+  parent: CarpetBase
+  suffix: Kinaris, cyan
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_kinaris.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_kinaris.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetKinaris:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetKinarisGreen
+  parent: CarpetBase
+  suffix: Kinaris, green
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/kinaris_green.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/kinaris_green.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetKinarisGreen:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetKinarisRed
+  parent: CarpetBase
+  suffix: Kinaris, red
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/kinaris_red.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/kinaris_red.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetKinarisRed:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetPolite
+  parent: CarpetBase
+  suffix: Polite, black
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_polite.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_polite.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetPolite:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetPoliteBlue
+  parent: CarpetBase
+  suffix: Polite, blue
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/polite_blue.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/polite_blue.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetPoliteBlue:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetPoliteRed
+  parent: CarpetBase
+  suffix: Polite, red
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/polite_red.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/polite_red.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetPoliteRed:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetCarpAlt
+  parent: CarpetBase
+  suffix: Carp, patterned
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carp_alt.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carp_alt.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetCarpAlt:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetLizardAlt
+  parent: CarpetBase
+  suffix: Lizard, patterned
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/lizard_alt.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/lizard_alt.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetLizardAlt:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetMothAlt
+  parent: CarpetBase
+  suffix: Moth, patterned
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/moth_alt.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/moth_alt.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetMothAlt:
+                min: 1
+                max: 1
+
+- type: entity
+  id: NovaFloorCarpetNeonSimple
+  parent: CarpetBase
+  suffix: Neon
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/neon_simple.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/neon_simple.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemNovaFloorCarpetNeonSimple:
+                min: 1
+                max: 1
+
+# Shiptest
+
+- type: entity
+  id: ShiptestFloorCarpetRedGold
+  parent: CarpetBase
+  suffix: Red and gold
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_red_gold.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_red_gold.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemShiptestFloorCarpetRedGold:
+                min: 1
+                max: 1
+
+# /tg/station
+
+- type: entity
+  id: TgFloorCarpet
+  parent: CarpetBase
+  suffix: Brown
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/floor_carpet.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/floor_carpet.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpet:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetBlack
+  parent: CarpetBase
+  suffix: Black
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_black.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_black.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetBlack:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetBlue
+  parent: CarpetBase
+  suffix: Blue
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_blue.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_blue.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetBlue:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetCyan
+  parent: CarpetBase
+  suffix: Cyan
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_cyan.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_cyan.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetCyan:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetRoyalblack
+  parent: CarpetBase
+  suffix: Royal black
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_royalblack.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_royalblack.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetRoyalblack:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetRoyalblue
+  parent: CarpetBase
+  suffix: Royal blue
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_royalblue.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_royalblue.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetRoyalblue:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetCarp
+  parent: CarpetBase
+  suffix: Carp
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_carp.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_carp.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetCarp:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetGoliath
+  parent: CarpetBase
+  suffix: Goliath
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_goliath.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_goliath.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetGoliath:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetLizard
+  parent: CarpetBase
+  suffix: Lizard
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_lizard.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_lizard.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetLizard:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetMoth
+  parent: CarpetBase
+  suffix: Moth
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_moth.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_moth.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetMoth:
+                min: 1
+                max: 1
+
+- type: entity
+  id: TgFloorCarpetStellar
+  parent: CarpetBase
+  suffix: Stellar
+  components:
+  - type: Clickable
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_stellar.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/Carpets/carpet_stellar.rsi
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 100
+        behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 10
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:SpawnEntitiesBehavior
+            spawn:
+              FloorCarpetItemTgFloorCarpetStellar:
+                min: 1
+                max: 1

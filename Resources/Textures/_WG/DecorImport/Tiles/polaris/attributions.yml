@@ -1,0 +1,119 @@
+- files: [ carpet_turcarpet.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/flooring/carpet.dmi (state turcarpet)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ floor_wmarble.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/flooring/misc.dmi (state lightmarble)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ ice_dark.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state ice_dark)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ ice_dark_smooth.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state ice_dark_smooth)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ outdoors_rocks.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state rock)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ outdoors_sidewalk.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state sidewalk)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ steel_bar_dance.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/flooring/eris/tiles_steel.dmi (state bar_dance)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ steel_bar_light.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/flooring/eris/tiles_steel.dmi (state bar_light)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_southeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_southwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_northeast.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_northwest.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shoreline)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_corner.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shorelinecorner)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_corner_north.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shorelinecorner)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_corner_east.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shorelinecorner)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ water_shoreline_corner_west.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state shorelinecorner)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ outdoors_mud.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state mud_dark)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ carpet_retro.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/flooring/carpet.dmi (state retrocarpet)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ outdoors_dirt.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/outdoors.dmi (state dirt-dark)."
+  source: "https://github.com/PolarisSS13/Polaris"
+
+- files: [ sand_icey.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/PolarisSS13/Polaris/blob/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25/icons/turf/flooring/asteroid.dmi (state sand-icey)."
+  source: "https://github.com/PolarisSS13/Polaris"

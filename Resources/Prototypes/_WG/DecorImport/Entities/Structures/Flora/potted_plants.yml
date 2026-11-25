@@ -1,0 +1,627 @@
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-26
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantBamboo
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-04
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantBouquet
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-15_aurora
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantDrooping
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-23
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantEye
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-36
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantFerntrim
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-30_aurora
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantFortuneFlower
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-tc-02
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantGreetingPalm
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-tc-01
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantLuceVine
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-luce-vine
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantMysterious
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-07
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantRiverPlum
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-tc-03
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantShoot
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-17
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantSticky
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-13_aurora
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantStoutbush
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-22
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantTall
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-12
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: AuroraFloraPottedplantThinbush
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-06
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: BayFloraPottedplantFloorleaf
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-28
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ChompFloraDesertPlanetPottedPlant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: potplant0
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: CoyoteFloraChompPotplant1
+  suffix: potplant1
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: potplant1
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: CoyoteFloraChompPotplant2
+  suffix: potplant2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: potplant2
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: CoyoteKirbyplantsBonsai
+  suffix: kirbyplants
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: bonsai_1
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: CoyoteKirbyplantsBonsaiBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: bonsai_4
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: CoyoteKirbyplantsBonsaiOrange
+  suffix: orange
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: bonsai_3
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: CoyoteKirbyplantsBonsaiPink
+  suffix: pink
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: bonsai_2
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: DarkPackKirbyplantsDarkpackPlant1
+  suffix: plant1
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant1
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: DarkPackKirbyplantsDarkpackPlant2
+  suffix: plant2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant2
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: DarkPackKirbyplantsDarkpackPlant3
+  suffix: plant3
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant3
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: DarkPackKirbyplantsDarkpackPlant4
+  suffix: plant4
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant4
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: DarkPackKirbyplantsDarkpackPlant5
+  suffix: plant5
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant5
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplant
+  suffix: decorativeplant
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant1
+    offset: "0,0"
+    layers:
+    - state: plant1
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplantPlant2
+  suffix: plant2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant2
+    offset: "0,0"
+    layers:
+    - state: plant2
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplantPlant3
+  suffix: plant3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant3
+    offset: "0,0"
+    layers:
+    - state: plant3
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplantPlant4
+  suffix: plant4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant4
+    offset: "0,0"
+    layers:
+    - state: plant4
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplantPlant5
+  suffix: plant5
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant5
+    offset: "0,0"
+    layers:
+    - state: plant5
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplantPlant6
+  suffix: plant6
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant6
+    offset: "0,0"
+    layers:
+    - state: plant6
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationDecorativeplantPlant7
+  suffix: plant7
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant7
+    offset: "0,0"
+    layers:
+    - state: plant7
+
+- type: entity
+  parent: BaseFlora
+  id: GoonDecorationFloralarrangement
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: floral_arrange
+    offset: "0,0"
+    layers:
+    - state: floral_arrange
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonDecorationPottedfern
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: plant_fern
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonPottedPlant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    layers:
+    - state: ppot1
+      map: [ random ]
+    offset: "0.0,0.300"
+    snapCardinals: false
+  - type: RandomSprite
+    available:
+    - random:
+        ppot1: ""
+        ppot2: ""
+        ppot3: ""
+        ppot4: ""
+        ppot5: ""
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: ppot1
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonPottedPlantPottedPlant1
+  suffix: plant1
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: ppot1
+    offset: "0.0,0.300"
+    snapCardinals: false
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonPottedPlantPottedPlant2
+  suffix: plant2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: ppot2
+    offset: "0.0,0.300"
+    snapCardinals: false
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonPottedPlantPottedPlant3
+  suffix: plant3
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: ppot3
+    offset: "0.0,0.300"
+    snapCardinals: false
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonPottedPlantPottedPlant4
+  suffix: plant4
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: ppot4
+    offset: "0.0,0.300"
+    snapCardinals: false
+
+- type: entity
+  parent: PottedPlantBase
+  id: GoonPottedPlantPottedPlant5
+  suffix: plant5
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: ppot5
+    offset: "0.0,0.300"
+    snapCardinals: false
+
+- type: entity
+  parent: BaseTree
+  id: GoonShrubCaptainshrub
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants_goonstation.rsi
+    state: bonsai
+    offset: "0,0"
+    layers:
+    - state: bonsai
+
+- type: entity
+  parent: PottedPlantBase
+  id: ImpstationPottedPlantBioluminscent
+  components:
+  - type: Sprite
+    state: plant-09
+  - type: PointLight
+    radius: 2
+    color: "#2cb2e8"
+
+- type: entity
+  parent: PottedPlantBase
+  id: NebulaFloraPottedplantDeskferntrim
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-30_nebula
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: NovaKirbyplantsMonkey
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: monkeyplant
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant2
+  suffix: plant2
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-2
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant3
+  suffix: plant3
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-3
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant5
+  suffix: plant5
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-5
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant6
+  suffix: plant6
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-6
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant7
+  suffix: plant7
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-7
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant10
+  suffix: plant10
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-10
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant11
+  suffix: plant11
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-11
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant13
+  suffix: plant13
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-13_paradise
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaKirbyplantsLargePlant15
+  suffix: plant15
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-15_paradise
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: ParaLargeAlienAlien8
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: alien-8
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: PolarisFloraPottedplantXmas
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: plant-xmas
+    offset: "0.0,0.300"
+
+- type: entity
+  parent: PottedPlantBase
+  id: TgKirbyplantsFern
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/potted_plants.rsi
+    state: fern
+    offset: "0.0,0.300"

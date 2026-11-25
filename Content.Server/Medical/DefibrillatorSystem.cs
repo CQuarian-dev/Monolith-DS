@@ -196,7 +196,7 @@ public sealed partial class DefibrillatorSystem : EntitySystem
             _chatManager.TrySendInGameICMessage(uid, Loc.GetString("defibrillator-rotten"),
                 InGameICChatType.Speak, true);
         }
-        else if (TryComp<UnrevivableComponent>(target, out var unrevivable))
+        else if (TryComp<UnrevivableComponent>(target, out var unrevivable) && _mobState.IsDead(target, mob)) // LuaM
         {
             _chatManager.TrySendInGameICMessage(uid, Loc.GetString(unrevivable.ReasonMessage),
                 InGameICChatType.Speak, true);

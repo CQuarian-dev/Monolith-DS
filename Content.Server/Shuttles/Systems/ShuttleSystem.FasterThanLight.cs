@@ -250,6 +250,21 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
+        // WOLFGATE(Planets) START: a hull mid-hop can't jump, nor can a ship docked to one
+        if (HasComp<Content.Server._WG.Planets.Hop.WGPlanetHopComponent>(shuttleUid))
+        {
+            reason = Loc.GetString("wg-orbit-hopping");
+            return false;
+        }
+
+        // Planet ground is the map's own grid: jumping it would move the whole world.
+        if (HasComp<MapComponent>(shuttleUid))
+        {
+            reason = Loc.GetString("wg-liftoff-refused-ground");
+            return false;
+        }
+        // WOLFGATE END
+
         if (TryComp<PhysicsComponent>(shuttleUid, out var shuttlePhysics))
         {
 
@@ -301,6 +316,14 @@ public sealed partial class ShuttleSystem
         float? hyperspaceTime = null,
         string? priorityTag = null)
     {
+        // LuaM-start
+        if (!coordinates.IsValid(EntityManager) || !double.IsFinite(angle.Theta))
+        {
+            Log.Error($"Found invalid FTL destination with coordinates {coordinates} and angle {angle} for shuttle {shuttleUid}");
+            return;
+        }
+        // LuaM-end
+
         // Check if destination is an expedition map
         bool isExpedition = IsTargetExpedition(coordinates);
 
@@ -368,6 +391,9 @@ public sealed partial class ShuttleSystem
         float? hyperspaceTime = null,
         string? priorityTag = null)
     {
+        if (WgRefusesFtlDeparture(shuttleUid)) // WOLFGATE(Planets): the docking branch never calls TrySetupFTL, so it asks the same gate.
+            return;
+
         // TODO: Validation
         if (!TryComp<FTLDestinationComponent>(_mapSystem.GetMapOrInvalid(_transform.GetMapId(target)), out var dest))
         {
@@ -546,6 +572,9 @@ public sealed partial class ShuttleSystem
     private bool TrySetupFTL(EntityUid uid, ShuttleComponent shuttle, [NotNullWhen(true)] out FTLComponent? component)
     {
         component = null;
+
+        if (WgRefusesFtlDeparture(uid)) // WOLFGATE(Planets): a planet is left from orbit, never from the surface, the air or mid-transit.
+            return false;
 
         if (HasComp<FTLComponent>(uid))
         {
@@ -1007,7 +1036,7 @@ public sealed partial class ShuttleSystem
         }
     }
 
-    private void LeaveNoFTLBehind(Entity<TransformComponent> grid, Matrix3x2 oldGridMatrix, EntityUid? oldMapUid)
+    public void LeaveNoFTLBehind(Entity<TransformComponent> grid, Matrix3x2 oldGridMatrix, EntityUid? oldMapUid) // WOLFGATE(Planets): a hop leaves NoFTL entities behind too
     {
         if (oldMapUid == null)
             return;
@@ -1465,6 +1494,9 @@ public sealed partial class ShuttleSystem
                 {
                     continue;
                 }
+
+                if (WgSetDownOn(uid, ent, mapUid.Value)) // WOLFGATE(Planets): a hull coming down on a planet hurts a mob under it and shoves it clear, and gibs nobody
+                    continue;
 
                 if (_bodyQuery.TryGetComponent(ent, out var mob))
                 {

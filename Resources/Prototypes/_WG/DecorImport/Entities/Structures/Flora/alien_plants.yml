@@ -1,0 +1,361 @@
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraBiolumi
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: stick
+    offset: "0,0"
+    layers:
+    - state: stick
+  - type: PointLight
+    radius: 15.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraBiolumiFlower
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: flower
+    offset: "0,0"
+    layers:
+    - state: flower
+  - type: PointLight
+    radius: 15.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraBiolumiLamp
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: lamp
+    offset: "0,0"
+    layers:
+    - state: lamp
+  - type: PointLight
+    radius: 15.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: NovaFloraBiolumiMine
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: mine
+    offset: "0,0"
+    layers:
+    - state: mine
+  - type: PointLight
+    radius: 15.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshChilly
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: chilly_pepper1
+    offset: "0,0"
+    layers:
+    - state: chilly_pepper1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        chilly_pepper1: ""
+        chilly_pepper2: ""
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshDrakeBeet
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: drakebeet1
+    offset: "0,0"
+    layers:
+    - state: drakebeet1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshFonarstolbe
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: lamppostfruit1
+    offset: "0,0"
+    layers:
+    - state: lamppostfruit1
+  - type: PointLight
+    radius: 2.0
+    energy: 2.1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshGlowgrowth
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: glowgrowth1
+    offset: "0,0"
+    layers:
+    - state: glowgrowth1
+  - type: PointLight
+    radius: 2.2
+    energy: 1.2
+    color: "#67b6a5"
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraAshInozhakust
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: shrub1
+    offset: "0,0"
+    layers:
+    - state: shrub1
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraLunarPlantStyle1
+  suffix: 1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: lunar_plant1
+    offset: "0,0"
+    layers:
+    - state: lunar_plant1
+  - type: PointLight
+    radius: 2.5
+    energy: 1.0
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraLunarPlantStyle2
+  suffix: 2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: lunar_plant2
+    offset: "0,0"
+    layers:
+    - state: lunar_plant2
+  - type: PointLight
+    radius: 2.5
+    energy: 1.0
+
+- type: entity
+  parent: BaseFlora
+  id: TgFloraLunarPlantStyle3
+  suffix: 3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: lunar_plant3
+    offset: "0,0"
+    layers:
+    - state: lunar_plant3
+  - type: PointLight
+    radius: 2.5
+    energy: 1.0
+
+- type: entity
+  parent: BaseFlora
+  id: BeeFloraAshStrange
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: xpod1
+    offset: "0,0"
+    layers:
+    - state: xpod1
+  - type: PointLight
+    radius: 2.0
+    energy: 2.1
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestAshSpaceVoidmelon
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: melon
+    offset: "0,0"
+    layers:
+    - state: melon
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestAshGardenArid
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: gardenarid
+    offset: "0,0"
+    layers:
+    - state: gardenarid
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestAshGardenFrigid
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: gardencold
+    offset: "0,0"
+    layers:
+    - state: gardencold
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestAshGardenWaste
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: gardensick
+    offset: "0,0"
+    layers:
+    - state: gardensick
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraAshGarden
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: garden
+    offset: "0,0"
+    layers:
+    - state: garden
+  - type: PointLight
+    radius: 1.5
+    energy: 0.5
+
+- type: entity
+  parent: BaseFlora
+  id: AuroraAssunzioneBushLucevine
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: lvcluster_1
+    offset: "0,0"
+    layers:
+    - state: lvcluster_1
+      map: [ "base" ]
+    - state: lvcluster_1-em
+      map: [ "glow" ]
+      shader: unshaded
+  - type: RandomSprite
+    available:
+    - base:
+        lvcluster_1: ""
+      glow:
+        lvcluster_1-em: ""
+    - base:
+        lvcluster_2: ""
+      glow:
+        lvcluster_2-em: ""
+    - base:
+        lvcluster_3: ""
+      glow:
+        lvcluster_3-em: ""
+  - type: PointLight
+    radius: 1.9
+    energy: 1.0
+    color: "#00FFFF"
+
+- type: entity
+  parent: BaseFlora
+  id: ShiptestFloraAshFern
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: cavefern
+    offset: "0,0"
+    layers:
+    - state: cavefern
+
+- type: entity
+  parent: BaseTree
+  id: CMFloraJunglePlantbot1
+  suffix: plantbot1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: plantbot1
+    offset: "0,0"
+    layers:
+    - state: plantbot1
+
+- type: entity
+  parent: BaseTree
+  id: CMFloraJunglePlanttop1
+  suffix: planttop1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_alien_plants.rsi
+    state: planttop1
+    offset: "0,0"
+    layers:
+    - state: planttop1

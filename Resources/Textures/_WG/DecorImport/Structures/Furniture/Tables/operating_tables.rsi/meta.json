@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b, tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "optable"
+    },
+    {
+      "name": "optable_primitive"
+    },
+    {
+      "name": "surgery_table"
+    },
+    {
+      "name": "tray",
+      "directions": 4
+    }
+  ]
+}

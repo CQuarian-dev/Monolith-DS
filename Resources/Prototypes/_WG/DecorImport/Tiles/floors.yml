@@ -1,0 +1,211 @@
+# Marble
+
+- type: tile
+  id: FrontierFloorWhiteMarble
+  name: tiles-wg-frontier-floor-white-marble
+  sprite: /Textures/_WG/DecorImport/Tiles/frontier_floor_white_marble.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  friction: 0.8
+  itemDrop: FloorTileItemFrontierFloorWhiteMarble
+  heatCapacity: 10000
+
+- type: tile
+  id: FrontierFloorPlasmaMarble
+  name: tiles-wg-frontier-floor-plasma-marble
+  sprite: /Textures/_WG/DecorImport/Tiles/frontier_floor_plasma_marble.png
+  variants: 8
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  friction: 0.8
+  itemDrop: FloorTileItemFrontierFloorPlasmaMarble
+  heatCapacity: 10000
+
+- type: tile
+  id: AuroraFloorSidewalkAssunzioneFlat
+  name: tiles-wg-aurora-floor-sidewalk-assunzione-flat
+  sprite: /Textures/_WG/DecorImport/Tiles/aurora/assunzione_flat.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemAuroraFloorSidewalkAssunzioneFlat
+  heatCapacity: 10000
+
+- type: tile
+  id: NebulaFloorPathHerringbone
+  name: tiles-wg-nebula-floor-path-herringbone
+  sprite: /Textures/_WG/DecorImport/Tiles/nebula/path_herringbone.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNebulaFloorPathHerringbone
+  heatCapacity: 10000
+
+- type: tile
+  id: NovaFloorBoneMeaty
+  name: tiles-wg-nova-floor-bone-meaty
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/bone_meaty.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNovaFloorBoneMeaty
+  heatCapacity: 10000
+
+- type: tile
+  id: NovaFloorBoneSpine
+  name: tiles-wg-nova-floor-bone-spine
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/bone_spine.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNovaFloorBoneSpine
+  heatCapacity: 10000
+  allowRotationMirror: true
+
+- type: tile
+  id: NovaFloorBoneStraight
+  name: tiles-wg-nova-floor-bone-straight
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/bone_straight.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNovaFloorBoneStraight
+  heatCapacity: 10000
+  allowRotationMirror: true
+
+- type: tile
+  id: NovaFloorPoolCobbleWateryrock
+  name: tiles-wg-nova-floor-pool-cobble-wateryrock
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/cobble_wateryrock.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNovaFloorPoolCobbleWateryrock
+  heatCapacity: 10000
+
+- type: tile
+  id: NovaFloorConcreteTiles
+  name: tiles-wg-nova-floor-concrete-tiles
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/concrete_tiles.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNovaFloorConcreteTiles
+  heatCapacity: 10000
+
+- type: tile
+  id: NovaFloorMeatFresh
+  name: tiles-wg-nova-floor-meat-fresh
+  sprite: /Textures/_WG/DecorImport/Tiles/nova/meat_fresh.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemNovaFloorMeatFresh
+  heatCapacity: 10000
+
+- type: tile
+  id: VoreFloorWoodHardwood
+  name: tiles-wg-vore-floor-wood-hardwood
+  sprite: /Textures/_WG/DecorImport/Tiles/vore/wood_hardwood.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemVoreFloorWoodHardwood
+  heatCapacity: 10000
+
+- type: tile
+  id: FulpFloorWoodDark
+  name: tiles-wg-fulp-floor-wood-dark
+  sprite: /Textures/_WG/DecorImport/Tiles/fulp/wood_dark.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepWood
+  barestepSounds:
+    collection: BarestepWood
+  itemDrop: FloorTileItemFulpFloorWoodDark
+  heatCapacity: 10000
+
+# Monkestation
+
+- type: tile
+  id: SkyratFloorIronKitchenSmall
+  name: tiles-wg-skyrat-floor-iron-kitchen-small
+  sprite: /Textures/_WG/DecorImport/Tiles/skyrat/kitchen_small.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemSkyratFloorIronKitchenSmall
+  heatCapacity: 10000
+
+- type: tile
+  id: TgFloorConcreteSlab1
+  name: tiles-wg-tg-floor-concrete-slab1
+  sprite: /Textures/_WG/DecorImport/Tiles/tgstation/concrete_slab_1.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemTgFloorConcreteSlab1
+  heatCapacity: 10000
+
+- type: tile
+  id: TgFloorSandstone
+  name: tiles-wg-tg-floor-sandstone
+  sprite: /Textures/_WG/DecorImport/Tiles/tgstation/floor_sandstone.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemTgFloorSandstone
+  heatCapacity: 10000

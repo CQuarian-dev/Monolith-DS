@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Monkestation at commit https://github.com/Monkestation/Monkestation2.0/commit/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8.",
+  "size": {
+    "x": 37,
+    "y": 64
+  },
+  "states": [
+    {
+      "name": "mermaid",
+      "directions": 4
+    }
+  ]
+}

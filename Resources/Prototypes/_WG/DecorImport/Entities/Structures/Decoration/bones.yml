@@ -1,0 +1,203 @@
+- type: entity
+  parent: BaseStructure
+  id: TgStatueBoneRib
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones.rsi
+    state: rib
+    noRot: true
+    enableOverrideDir: true
+    overrideDir: South
+    drawdepth: Mobs
+    offset: "0.0,0.500"
+    snapCardinals: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Construction
+    graph: DecorBuildTgStatueBoneRib
+    node: built
+
+- type: entity
+  parent: TgStatueBoneRib
+  id: TgStatueBoneRib2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: BaseStructure
+  id: TgStatueBoneSkull
+  suffix: bone
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones.rsi
+    state: skull
+    noRot: true
+    drawdepth: Mobs
+    offset: "0.0,0.500"
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Construction
+    graph: DecorBuildTgStatueBoneSkull
+    node: built
+
+- type: entity
+  parent: BaseStructure
+  id: TgBoneSkullHalf
+  suffix: half
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones.rsi
+    state: skull-half
+    noRot: true
+    enableOverrideDir: true
+    overrideDir: South
+    drawdepth: Mobs
+    offset: "0.0,0.500"
+    snapCardinals: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Construction
+    graph: DecorBuildTgBoneSkullHalf
+    node: built
+
+- type: entity
+  parent: TgBoneSkullHalf
+  id: TgBoneSkullHalf2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: BaseStructure
+  id: NovaStatueBoneRib
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones.rsi
+    state: rib
+    noRot: true
+    enableOverrideDir: true
+    overrideDir: South
+    drawdepth: Mobs
+    offset: "0.0,0.500"
+    snapCardinals: false
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Construction
+    graph: DecorBuildNovaStatueBoneRib
+    node: built
+
+- type: entity
+  parent: BaseStructure
+  id: NovaStatueBoneSkull
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones.rsi
+    state: skull
+    noRot: true
+    drawdepth: Mobs
+    offset: "0.0,0.500"
+  - type: InteractionOutline
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Construction
+    graph: DecorBuildNovaStatueBoneSkull
+    node: built
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteChompBonesLbone
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones_64x64.rsi
+    state: lbone
+    offset: "0.500,0.500"
+    layers:
+    - state: lbone
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteChompBonesLribs
+  suffix: lribs
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones_64x64.rsi
+    state: lribs
+    offset: "0.500,0.500"
+    layers:
+    - state: lribs
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteChompBonesLribs1
+  suffix: lribs1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones_64x64.rsi
+    state: lribs1
+    offset: "0.500,0.500"
+    layers:
+    - state: lribs1
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteChompBonesLskullW
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/bones_64x64.rsi
+    state: lskull_wood
+    offset: "0.500,0.500"
+    layers:
+    - state: lskull_wood

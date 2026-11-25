@@ -3,7 +3,7 @@
   parent: BaseVessel
   name: vessel-archonC-name
   description: vessel-archonC-desc
-  price: 100000
+  price: 115000 # LuaM
   category: Medium
   group: Expedition
   access: Mercenary

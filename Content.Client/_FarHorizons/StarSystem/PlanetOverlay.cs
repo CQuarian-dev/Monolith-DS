@@ -70,7 +70,8 @@ public sealed class PlanetOverlay : Overlay
         handle.UseShader(null);
     }
 
-    private ShaderInstance? SetupPlanetShader(Planet planet, Star star)
+    // WOLFGATE(Planets): public (was private), so the planet approach can draw the very same body over the orbit hop.
+    public ShaderInstance? SetupPlanetShader(Planet planet, Star star)
     {
         if (!_protoMan.TryIndex<ShaderPrototype>(planet.Shader, out var shaderProto) ||
             !_protoMan.TryIndex(planet.Palette, out var palette))

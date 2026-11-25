@@ -1,0 +1,1980 @@
+# LuaM: prototypes DecorImport furniture and its construction recipes need, from Wolfgate's StarLight content.
+
+# _StarLight/Entities/Structures/Furniture/Tables/round_tables.yml
+- type: entity
+  id: RoundTableCarpet
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_carpet
+    snapCardinals: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildRoundTableCarpet
+    node: built
+  - type: Anchorable
+  - type: Transform
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: [ TableMask ]
+        layer: [ TableLayer ]
+  - type: Climbable
+  - type: Clickable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 3
+  - type: StaticPrice
+    price: 30
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_carpet
+
+# _StarLight/Entities/Structures/Furniture/Tables/round_tables.yml
+- type: entity
+  id: RoundTableGlass
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_glass
+    snapCardinals: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildRoundTableGlass
+    node: built
+  - type: Anchorable
+  - type: Transform
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: [ TableMask ]
+        layer: [ TableLayer ]
+  - type: Climbable
+  - type: Clickable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 3
+  - type: StaticPrice
+    price: 25
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_glass
+
+# _StarLight/Entities/Structures/Furniture/Tables/round_tables.yml
+- type: entity
+  id: RoundTablePlasma
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_plasma
+    snapCardinals: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 35
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildRoundTablePlasma
+    node: built
+  - type: Anchorable
+  - type: Transform
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: [ TableMask ]
+        layer: [ TableLayer ]
+  - type: Climbable
+  - type: Clickable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 3
+  - type: StaticPrice
+    price: 54
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_plasma
+# WOLFGATE END
+
+# _StarLight/Entities/Structures/Furniture/Tables/round_tables.yml
+- type: entity
+  id: RoundTablePlastic
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_plastic
+    snapCardinals: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildRoundTablePlastic
+    node: built
+  - type: Anchorable
+  - type: Transform
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: [ TableMask ]
+        layer: [ TableLayer ]
+  - type: Climbable
+  - type: Clickable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 3
+  - type: StaticPrice
+    price: 30
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_plastic
+
+# _StarLight/Entities/Structures/Furniture/Tables/round_tables.yml
+- type: entity
+  id: RoundTableSteel
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_generic
+    snapCardinals: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 35
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildRoundTableSteel
+    node: built
+  - type: Anchorable
+  - type: Transform
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: [ TableMask ]
+        layer: [ TableLayer ]
+  - type: Climbable
+  - type: Clickable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 3
+  - type: StaticPrice
+    price: 22
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_generic
+
+# _StarLight/Entities/Structures/Furniture/Tables/round_tables.yml
+- type: entity
+  id: RoundTableWood
+  parent: BaseStructure
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_wood
+    snapCardinals: true
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+          params:
+            volume: -6
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildRoundTableWood
+    node: built
+  - type: Anchorable
+  - type: Transform
+  - type: PlaceableSurface
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,0.45,0.45"
+        density: 55
+        mask: [ TableMask ]
+        layer: [ TableLayer ]
+  - type: Climbable
+  - type: Clickable
+  - type: Bonkable
+    bonkDamage:
+      types:
+        Blunt: 3
+  - type: StaticPrice
+    price: 30
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Tables/roundtable.rsi
+    state: round_wood
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchBlueComfyCorner
+  suffix: Corner. Blue
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#334e6d"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchBlueComfyCorner
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchBlueComfyEndLeft
+  suffix: End Left. Blue
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#334e6d"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchBlueComfyEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchBlueComfyEndRight
+  suffix: End Right. Blue
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#334e6d"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchBlueComfyEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchBlueComfyMiddle
+  suffix: Middle. Blue
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#334e6d"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchBlueComfyMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    state: base
+
+#region Bench Gray
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGrayComfy
+  suffix: Solo. Gray
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    layers:
+    - state: bench_solo_base
+      color: "#767e82"
+    - state: bench_solo_cover
+      color: "#767e82"
+  - type: Construction
+    graph: DecorBuildBenchGrayComfy
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGrayComfyCorner
+  suffix: Corner. Gray
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#767e82"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGrayComfyCorner
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGrayComfyEndLeft
+  suffix: End Left. Gray
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#767e82"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGrayComfyEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGrayComfyEndRight
+  suffix: End Right. Gray
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#767e82"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGrayComfyEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGrayComfyMiddle
+  suffix: Middle. Gray
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#767e82"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGrayComfyMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    state: base
+
+#region Bench Green
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGreenComfy
+  suffix: Solo. Green
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    layers:
+    - state: bench_solo_base
+      color: "#767e82"
+    - state: bench_solo_cover
+      color: "#3c9950"
+  - type: Construction
+    graph: DecorBuildBenchGreenComfy
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGreenComfyCorner
+  suffix: Corner. Green
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#3c9950"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGreenComfyCorner
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGreenComfyEndLeft
+  suffix: End Left. Green
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#3c9950"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGreenComfyEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGreenComfyEndRight
+  suffix: End Right. Green
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#3c9950"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGreenComfyEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchGreenComfyMiddle
+  suffix: Middle. Green
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#3c9950"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchGreenComfyMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    state: base
+# WOLFGATE END
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchRedComfyCorner
+  suffix: Corner. Red
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#8c4141"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchRedComfyCorner
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchRedComfyEndLeft
+  suffix: End Left. Red
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#8c4141"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchRedComfyEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchRedComfyEndRight
+  suffix: End Right. Red
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#8c4141"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchRedComfyEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  id: BenchRedComfyMiddle
+  suffix: Middle. Red
+  parent: BenchComfy
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      color: "#8c4141"
+      renderingStrategy: Default
+  - type: Construction
+    graph: DecorBuildBenchRedComfyMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    state: base
+
+#region Bench Blue
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  suffix: Corner. White
+  id: BenchComfyCorner
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      renderingStrategy: Default
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildBenchComfyCorner
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_corner.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  suffix: End Left. White
+  id: BenchComfyEndLeft
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      renderingStrategy: Default
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildBenchComfyEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  suffix: End Right. White
+  id: BenchComfyEndRight
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      renderingStrategy: Default
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildBenchComfyEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/benches.yml
+- type: entity
+  suffix: Middle. White
+  id: BenchComfyMiddle
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: base
+      color: "#767e82"
+      renderingStrategy: Default
+    - state: cover
+      renderingStrategy: Default
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildBenchComfyMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Benches/bench_middle.rsi
+    state: base
+
+#region Bench Red
+
+# _StarLight/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ChairEvacSeat
+  parent: ChairBase
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Chairs/evac_chair.rsi
+    state: evac_chair
+  - type: Construction
+    graph: DecorBuildChairEvacSeat
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Chairs/evac_chair.rsi
+    state: evac_chair
+# WOLFGATE END
+
+# _StarLight/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ChairFroggy
+  parent: SeatBase
+  components:
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Anchorable
+    - type: Rotatable
+    - type: Sprite
+      sprite: _Starlight/Structures/Furniture/Chairs/froggy_chair.rsi
+      state: froggy_chair
+    - type: Construction
+      graph: DecorBuildChairFroggy
+      node: built
+    - type: Icon
+      sprite: _Starlight/Structures/Furniture/Chairs/froggy_chair.rsi
+      state: froggy_chair
+
+# _StarLight/Entities/Structures/Furniture/chairs.yml
+- type: entity
+  id: ChairLovey
+  parent: SeatBase
+  components:
+    - type: Transform
+      anchored: true
+    - type: Physics
+      bodyType: Static
+    - type: Anchorable
+    - type: Rotatable
+    - type: Sprite
+      sprite: _Starlight/Structures/Furniture/Chairs/lovey_chair.rsi
+      state: lovey_chair
+    - type: Construction
+      graph: DecorBuildChairLovey
+      node: built
+    - type: Icon
+      sprite: _Starlight/Structures/Furniture/Chairs/lovey_chair.rsi
+      state: lovey_chair
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Corner. Blue
+  id: SofaCornerBlue
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    layers:
+    - state: base
+      color: "#334e6d"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaCornerBlue
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Corner. Brown
+  id: SofaCornerBrown
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    layers:
+    - state: base
+      color: "#6e594f"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaCornerBrown
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Corner. Gray
+  id: SofaCorner
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaCorner
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Corner. Green
+  id: SofaCornerGreen
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    layers:
+    - state: base
+      color: "#3c9950"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaCornerGreen
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Corner. Red
+  id: SofaCornerRed
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    layers:
+    - state: base
+      color: "#8c4141"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaCornerRed
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Corner. White
+  id: SofaCornerWhite
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_corner.rsi
+    layers:
+    - state: base
+      color: "#ebebeb"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaCornerWhite
+    node: built
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left
+  id: DinerEndLeft
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_end_left.rsi
+    state: base
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 70
+  - type: Construction
+    graph: DecorBuildDinerEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left
+  id: SofaFancyEndLeft
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_end_left.rsi
+    state: base
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaFancyEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left. Blue
+  id: SofaEndLeftBlue
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    layers:
+    - state: base
+      color: "#334e6d"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndLeftBlue
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left. Brown
+  id: SofaEndLeftBrown
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    layers:
+    - state: base
+      color: "#6e594f"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndLeftBrown
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left. Gray
+  id: SofaEndLeft
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndLeft
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left. Green
+  id: SofaEndLeftGreen
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    layers:
+    - state: base
+      color: "#3c9950"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndLeftGreen
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left. Red
+  id: SofaEndLeftRed
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    layers:
+    - state: base
+      color: "#8c4141"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndLeftRed
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Left. White
+  id: SofaEndLeftWhite
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    layers:
+    - state: base
+      color: "#ebebeb"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndLeftWhite
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_left.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right
+  id: DinerEndRight
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_end_right.rsi
+    state: base
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 70
+  - type: Construction
+    graph: DecorBuildDinerEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right
+  id: SofaFancyEndRight
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_end_right.rsi
+    state: base
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaFancyEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right. Blue
+  id: SofaEndRightBlue
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    layers:
+    - state: base
+      color: "#334e6d"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndRightBlue
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right. Brown
+  id: SofaEndRightBrown
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    layers:
+    - state: base
+      color: "#6e594f"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndRightBrown
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right. Gray
+  id: SofaEndRight
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndRight
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right. Green
+  id: SofaEndRightGreen
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    layers:
+    - state: base
+      color: "#3c9950"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndRightGreen
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right. Red
+  id: SofaEndRightRed
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    layers:
+    - state: base
+      color: "#8c4141"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndRightRed
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: End Right. White
+  id: SofaEndRightWhite
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    layers:
+    - state: base
+      color: "#ebebeb"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaEndRightWhite
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_end_right.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle
+  id: DinerMiddle
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_middle.rsi
+    state: base
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 70
+  - type: Construction
+    graph: DecorBuildDinerMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/diner_middle.rsi
+    state: base
+
+#region Sofa Fancy
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle
+  id: SofaFancyMiddle
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_middle.rsi
+    state: base
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaFancyMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/fancy_middle.rsi
+    state: base
+
+#region Sofa Gray
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle. Blue
+  id: SofaMiddleBlue
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    layers:
+    - state: base
+      color: "#334e6d"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaMiddleBlue
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    state: base
+
+#region Sofa Red
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle. Brown
+  id: SofaMiddleBrown
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    layers:
+    - state: base
+      color: "#6e594f"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaMiddleBrown
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    state: base
+# WOLFGATE END
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle. Gray
+  id: SofaMiddle
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    layers:
+    - state: base
+      color: "#767e82"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaMiddle
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    state: base
+
+#region Sofa White
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle. Green
+  id: SofaMiddleGreen
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    layers:
+    - state: base
+      color: "#3c9950"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaMiddleGreen
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    state: base
+
+#region Sofa Brown
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle. Red
+  id: SofaMiddleRed
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    layers:
+    - state: base
+      color: "#8c4141"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaMiddleRed
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    state: base
+
+#region Sofa Green
+
+# _StarLight/Entities/Structures/Furniture/sofas.yml
+- type: entity
+  suffix: Middle. White
+  id: SofaMiddleWhite
+  parent: SeatBase
+  components:
+  - type: Transform
+    anchored: true
+  - type: Rotatable
+  - type: Sprite
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    layers:
+    - state: base
+      color: "#ebebeb"
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 35
+  - type: Construction
+    graph: DecorBuildSofaMiddleWhite
+    node: built
+  - type: Icon
+    sprite: _Starlight/Structures/Furniture/Sofas/sofa_middle.rsi
+    state: base
+
+#region Sofa Blue
+
+# _StarLight/Entities/Structures/Lighting/ground_lighting.yml
+- type: entity
+  id: FloorLight
+  suffix: Always Powered
+  parent: BaseStructure
+  components:
+    - type: Sprite
+      sprite: _Paradise/Structures/Lighting/floorlights.rsi
+      snapCardinals: false
+      drawdepth: FloorObjects
+      noRot: true
+      layers:
+        - map: ["enum.PoweredLightLayers.Base"]
+          state: base
+        - map: ["enum.PoweredLightLayers.Glow"]
+          state: glow
+          shader: unshaded
+      state: base
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape: !type:PhysShapeCircle
+            radius: 0.1
+          density: 100
+          mask:
+            - None
+          layer:
+            - TabletopMachineLayer
+    - type: PointLight
+      radius: 10
+      energy: 2.5
+      softness: 0.9
+      color: "#FFE4CE"
+    - type: InteractionOutline
+    - type: Damageable
+      damageModifierSet: Metallic
+    - type: Destructible
+      thresholds:
+        - trigger: !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                SheetSteel1:
+                  min: 1
+                  max: 1
+            - !type:EmptyAllContainersBehaviour
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalGlassBreak
+    - type: StaticPrice
+      price: 75
+    - type: RequireProjectileTarget
+    - type: Icon
+      sprite: _Paradise/Structures/Lighting/floorlights.rsi
+      state: base
+
+# _StarLight/Entities/Structures/Lighting/ground_lighting.yml
+- type: entity
+  id: StarlightPoweredFloorLightEmpty
+  suffix: Empty
+  parent: FloorLight
+  components:
+    - type: Sprite
+      state: empty
+    - type: PointLight
+      enabled: false
+    - type: PoweredLight
+      bulb: Bulb
+    - type: ContainerContainer
+      containers:
+        light_bulb: !type:ContainerSlot
+    - type: ApcPowerReceiver
+    - type: ExtensionCableReceiver
+    - type: DeviceNetwork
+      deviceNetId: Wireless
+      receiveFrequencyId: SmartLight
+    - type: WirelessNetworkConnection
+      range: 200
+    - type: DeviceLinkSink
+      ports:
+        - On
+        - Off
+        - Toggle
+    - type: Construction
+      graph: DecorBuildStarlightPoweredFloorLightEmpty
+      node: built
+    - type: Appearance
+    - type: PoweredLightVisuals
+      blinkingSound:
+        path: "/Audio/Machines/light_tube_on.ogg"
+      spriteStateMap:
+        empty: empty
+        off: base
+        on: base
+        broken: broken
+        burned: burned
+    - type: DamageOnInteract
+      damage:
+        types:
+          Heat: 2
+      popupText: powered-light-component-burn-hand
+    - type: Icon
+      sprite: _Paradise/Structures/Lighting/floorlights.rsi
+      state: empty
+
+# _StarLight/Entities/Structures/Wallmounts/Signs/lit_signs.yml
+- type: entity
+  id: BarSignLights
+  parent: Poweredlight
+  suffix: On
+  placement:
+    mode: SnapgridCenter
+    snap: [ Wallmount ]
+  components:
+  - type: AmbientSound #SL
+    volume: -7 #SL
+    range: 4 #SL
+    sound: #SL
+      path: /Audio/_Starlight/Effects/Machinery/electric_buzz.ogg #SL
+  - type: WallMount
+    arc: 360
+  - type: Sprite
+    sprite: _Starlight/Structures/Wallmounts/bar_light.rsi
+    drawdepth: WallMountedItems
+    layers:
+    - map: [ enum.PoweredLightLayers.Base ]
+      state: base
+    - map: [ enum.PoweredLightLayers.Glow ]
+      state: glow
+      shader: unshaded
+    state: base
+  - type: Appearance
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: ApcPowerReceiver
+    powerLoad: 100
+  - type: PoweredLight
+    bulb: Bulb
+    "on": true
+    hasLampOnSpawn: LightBulb
+  - type: DamageOnInteract
+    damage:
+      types:
+        Heat: 1
+    popupText: powered-light-component-burn-hand
+  - type: PointLight
+    radius: 1
+    energy: 0.2
+    softness: 3
+    offset: "0, 0"
+    enabled: true
+  - type: PoweredLightVisuals
+    blinkingSound:
+      path: /Audio/Machines/light_tube_on.ogg
+    spriteStateMap:
+      empty: base
+      "off": base
+      "on": base
+      broken: base
+      burned: base
+  - type: Anchorable
+    flags: [ Anchorable ]
+  - type: Rotatable
+  - type: Physics
+    canCollide: false
+    bodyType: Static
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true
+  - type: Tag
+    tags: [ Structure ]
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: ExtensionCableReceiver
+  - type: LightningTarget
+    priority: 1
+  - type: ContainerContainer
+    containers:
+      light_bulb: !type:ContainerSlot {}
+  - type: DeviceLinkSink
+    ports: [ "On", "Off", Toggle ]
+  - type: Construction
+    graph: DecorBuildBarSignLights
+    node: built
+  - type: StaticPrice
+    price: 12
+  - type: Icon
+    sprite: _Starlight/Structures/Wallmounts/bar_light.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Wallmounts/Signs/lit_signs.yml
+- type: entity
+  id: ClinicSignLights
+  parent: [ BarSignLights ]
+  suffix: On
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Wallmounts/clinic.rsi
+    drawdepth: WallMountedItems
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: base
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: glow
+      shader: unshaded
+    state: base
+  - type: Icon
+    sprite: _Starlight/Structures/Wallmounts/clinic.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Wallmounts/Signs/lit_signs.yml
+- type: entity
+  id: OnAirSignLights
+  parent: [ BarSignLights ]
+  suffix: On
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Wallmounts/on_air.rsi
+    drawdepth: WallMountedItems
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: base
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: glow
+      shader: unshaded
+    state: base
+  - type: Icon
+    sprite: _Starlight/Structures/Wallmounts/on_air.rsi
+    state: base
+
+# _StarLight/Entities/Structures/Wallmounts/Signs/lit_signs.yml
+- type: entity
+  id: OpenSignLights
+  parent: [ BarSignLights ]
+  suffix: On
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Wallmounts/open.rsi
+    drawdepth: WallMountedItems
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: base
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: glow
+      shader: unshaded
+    state: base
+  - type: Icon
+    sprite: _Starlight/Structures/Wallmounts/open.rsi
+    state: base
+# WOLFGATE END

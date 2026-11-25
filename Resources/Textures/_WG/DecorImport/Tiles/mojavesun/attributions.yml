@@ -1,0 +1,24 @@
+- files: [ ice.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/Mojave-Sun/mojave-sun-13/blob/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e/mojave/icons/turf/64x/ice_1.dmi (state ice-0)."
+  source: "https://github.com/Mojave-Sun/mojave-sun-13"
+
+- files: [ ice_edge_south.png, ice_edge_north.png, ice_edge_east.png, ice_edge_west.png ]
+  license: CC-BY-NC-SA-3.0
+  copyright: "Taken from https://github.com/Mojave-Sun/mojave-sun-13/blob/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e/mojave/icons/turf/64x/ice_border.dmi (states ice-55, ice-110, ice-157, ice-203)."
+  source: "https://github.com/Mojave-Sun/mojave-sun-13"
+
+- files: [ sewer_deep.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Mojave-Sun/mojave-sun-13/blob/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e/mojave/icons/turf/water.dmi (state sewer_deep)."
+  source: "https://github.com/Mojave-Sun/mojave-sun-13"
+
+- files: [ sewer_medium.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Mojave-Sun/mojave-sun-13/blob/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e/mojave/icons/turf/water.dmi (state sewer_medium)."
+  source: "https://github.com/Mojave-Sun/mojave-sun-13"
+
+- files: [ sewer_shallow.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/Mojave-Sun/mojave-sun-13/blob/1302c0c1f01873bdc6bb2db45bf6ba0b4176770e/mojave/icons/turf/water.dmi (state sewer_shallow)."
+  source: "https://github.com/Mojave-Sun/mojave-sun-13"

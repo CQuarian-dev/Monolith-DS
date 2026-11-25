@@ -1,0 +1,254 @@
+- type: entity
+  parent: Dresser
+  id: BayBookcase
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf.rsi
+    state: book-0_baystation
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 50
+  - type: Construction
+    graph: DecorBuildBayBookcase
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: GoonBookcase
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf_goonstation.rsi
+    state: bookcase_empty_alone
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonBookcase
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: GoonBookcaseButton
+  suffix: button
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf_goonstation.rsi
+    state: bookcase_full_alone_button
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonBookcaseButton
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: GoonBookcaseDirectional
+  suffix: directional
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf_goonstation.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bookcase_empty_wall
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonBookcaseDirectional
+    node: built
+
+- type: entity
+  parent: GoonBookcaseDirectional
+  id: GoonBookcaseDirectional2
+  suffix: directional, right end
+  components:
+  - type: Sprite
+    overrideDir: SouthEast
+
+- type: entity
+  parent: GoonBookcaseDirectional
+  id: GoonBookcaseDirectional3
+  suffix: directional, left end
+  components:
+  - type: Sprite
+    overrideDir: SouthWest
+
+- type: entity
+  parent: Dresser
+  id: GoonBookcaseDirectionalFull
+  suffix: full
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf_goonstation.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bookcase_full_wall
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonBookcaseDirectionalFull
+    node: built
+
+- type: entity
+  parent: GoonBookcaseDirectionalFull
+  id: GoonBookcaseDirectionalFull2
+  suffix: full, right end
+  components:
+  - type: Sprite
+    overrideDir: SouthEast
+
+- type: entity
+  parent: GoonBookcaseDirectionalFull
+  id: GoonBookcaseDirectionalFull3
+  suffix: full, left end
+  components:
+  - type: Sprite
+    overrideDir: SouthWest
+
+- type: entity
+  parent: Dresser
+  id: GoonDecorationBookcase
+  suffix: decoration
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf_goonstation.rsi
+    noRot: true
+    granularLayersRendering: true
+    enableOverrideDir: true
+    overrideDir: South
+    layers:
+    - state: bookcase
+      renderingStrategy: Default
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildGoonDecorationBookcase
+    node: built
+
+- type: entity
+  parent: GoonDecorationBookcase
+  id: GoonDecorationBookcase2
+  suffix: decoration
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonDecorationBookcase
+  id: GoonDecorationBookcase3
+  suffix: decoration
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: GoonDecorationBookcase
+  id: GoonDecorationBookcase4
+  suffix: decoration
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: Dresser
+  id: NebulaBookcaseFancy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf.rsi
+    state: fancy
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaBookcaseFancy
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: NebulaBookcaseCart
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/bookshelf.rsi
+    state: book-0_nebula
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaBookcaseCart
+    node: built

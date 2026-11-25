@@ -1,0 +1,53 @@
+# Monolith's Crocus (Jianghui Industrial) on Asclepiu: a random spot each round, joinable through its own station.
+- type: wgFixedCity
+  id: WGCityCrocus
+  surface: WGSurfaceAsclepiu
+  gameMap: CrocusJianghuiIndustrial
+  station: Jianghui
+  name: wg-city-crocus
+  # The map's boundary rock and walls are indestructible on Crocus; here the whole city can be broken into.
+  replace:
+    N14WallRockIndestructible: WallRock
+    WallConcreteIndestructible: WallConcrete
+    N14WallRoughScrapSlantedIndestructible: N14WallRoughScrapSlanted
+    PlastitaniumWindowIndestructible: PlastitaniumWindow
+    BlastDoorIndestructible: BlastDoor
+    N14BlastDoorExteriorIndestructible: BlastDoor
+    # Ghosts start where the round's own map puts them, not in Crocus.
+    SpawnPointObserver: null
+    # Admin markers: warp points and Crocus's region definitions.
+    WarpPoint: null
+    WarpPointAdmin: null
+    BiomeSourceFallbackJianghuiCity: null
+    BiomeSourceFallbackJianghuiIndustrial: null
+    BiomeSourceFallbackJianghuiPort: null
+    # The ground war's time-lock seals and objectives.
+    WindowTimedSeal10Minutes: null
+    PDVThiefBeacon: null
+    TSFNaniteCanisterLarge: null
+    # The factions' base turrets stay, without Crocus's godmode; their vendors and overwatch consoles stay as mapped.
+    SpawnMobWeaponTurretPDV: WeaponTurretPDV
+  # Crocus's streets get the world's road surface.
+  replaceTiles:
+    FloorAsphalt: RMCPlanetHybrisaAsphalt
+  entrances:
+  # North out of the park, west off the main avenue; as wide as a world road with its shoulders.
+  - start: -40,71
+    direction: North
+    width: 7
+    tile: RMCPlanetHybrisaAsphalt
+  - start: -79,39
+    direction: West
+    width: 7
+    tile: RMCPlanetHybrisaAsphalt
+  # Below the street, the world's own rock fills in around the bunker.
+  terrain:
+  - N14WallRockIndestructible
+  # Every level's tiles, Crocus's own coordinates; the underground rock is left out (terrain below).
+  footprint: -105,-46,176,94
+  # Civilians in its rooms on every level, whatever has become of the city.
+  # What's become of the city this round. Indoor groups settle on roofed floor, upstairs too where upperLevels is set.
+  # LuaM: fates with people or creatures wait for the NPC step
+  fates:
+  - name: safe
+    weight: 3

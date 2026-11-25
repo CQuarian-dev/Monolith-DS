@@ -1,0 +1,114 @@
+- type: entity
+  parent: Dresser
+  id: DarkPackDresser
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/dresser.rsi
+    state: dresser_darkpack
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 100
+  - type: Construction
+    graph: DecorBuildDarkPackDresser
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: NovaDresser
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/dresser.rsi
+    state: dresser_nova
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 100
+  - type: Construction
+    graph: DecorBuildNovaDresser
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: ParaDresser
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/dresser.rsi
+    state: dresser_paradise
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 300
+  - type: Construction
+    graph: DecorBuildParaDresser
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: ShiptestDresser
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/dresser.rsi
+    state: dresser_shiptest
+    noRot: true
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 100
+  - type: Construction
+    graph: DecorBuildShiptestDresser
+    node: built
+
+- type: entity
+  parent: Dresser
+  id: ParaDresserWardrobe
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/dresser.rsi
+    state: wardrobe
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildParaDresserWardrobe
+    node: built

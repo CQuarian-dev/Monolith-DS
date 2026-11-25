@@ -1,0 +1,20 @@
+# LuaM: placeholders for the Wolfgate NPCs that stand in planet POI maps (_WG/Traders and PlanetPois/traders.yml).
+# They spawn nothing; the NPC step replaces each with the real prototype of the same id and deletes this file.
+
+- type: entity
+  parent: MarkerBase
+  id: WGPoiFuelTrader
+  name: fuel trader marker
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent: MarkerBase
+  id: WGPoiInnkeeper
+  name: innkeeper marker
+  categories: [ HideSpawnMenu ]
+
+- type: entity
+  parent: MarkerBase
+  id: WGPoiMechanic
+  name: mechanic marker
+  categories: [ HideSpawnMenu ]

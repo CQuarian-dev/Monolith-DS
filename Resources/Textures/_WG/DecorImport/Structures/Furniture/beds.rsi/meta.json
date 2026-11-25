@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355, BeeStation at commit https://github.com/BeeStation/BeeStation-Hornet/commit/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d, Bubberstation at commit https://github.com/Bubberstation/Bubberstation/commit/792301a70da075679790652676e6774e746df81d, CEV-Eris at commit https://github.com/discordia-space/CEV-Eris/commit/5f7847f26585d80505500be5a62e621022a56bf7, Citadel Station at commit https://github.com/Citadel-Station-13/Citadel-Station-13/commit/31b47497ab7e3b1c15c67657931ce480f14caed1, CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15, Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc, Monkestation at commit https://github.com/Monkestation/Monkestation2.0/commit/e36a318784de793c0d37d5ed3eacb7e1b0fd36e8, Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76, NovaSector at commit https://github.com/NovaSector/NovaSector/commit/3754f28afedc5e20e1bc76dd6c5568c957a4a9de, Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b, tgstation at commit https://github.com/tgstation/tgstation/commit/0f669632f5f8972a04df1e24bb987240dbaf7518, VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "abed_double",
+      "directions": 4
+    },
+    {
+      "name": "bdsm_bed"
+    },
+    {
+      "name": "bed"
+    },
+    {
+      "name": "bed_club",
+      "directions": 4
+    },
+    {
+      "name": "bed_darkpack"
+    },
+    {
+      "name": "bed_dingy",
+      "directions": 4
+    },
+    {
+      "name": "bed_double",
+      "directions": 4
+    },
+    {
+      "name": "bed_double_pod",
+      "directions": 4
+    },
+    {
+      "name": "bed_eris"
+    },
+    {
+      "name": "bed_monke",
+      "directions": 4
+    },
+    {
+      "name": "bed_padded"
+    },
+    {
+      "name": "bed_pod"
+    },
+    {
+      "name": "bed_simple"
+    },
+    {
+      "name": "bed_tgstation",
+      "directions": 4
+    },
+    {
+      "name": "bed_vore"
+    },
+    {
+      "name": "bed_wood",
+      "directions": 4
+    },
+    {
+      "name": "bed_wooden",
+      "directions": 4
+    },
+    {
+      "name": "dirty_mattress_double",
+      "directions": 4
+    },
+    {
+      "name": "pelt_bed_black",
+      "directions": 4
+    },
+    {
+      "name": "pelt_bed_white",
+      "directions": 4
+    },
+    {
+      "name": "psychbed"
+    },
+    {
+      "name": "shitty_hay_bed"
+    },
+    {
+      "name": "thatch_bed"
+    },
+    {
+      "name": "world_padded_preview_bed"
+    },
+    {
+      "name": "world_padded_preview_bed_ebony"
+    },
+    {
+      "name": "world_padded_preview_ebony_cloth"
+    }
+  ]
+}

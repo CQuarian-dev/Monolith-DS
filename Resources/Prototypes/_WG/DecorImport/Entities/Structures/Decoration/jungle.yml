@@ -1,0 +1,465 @@
+- type: entity
+  parent: BaseFlora
+  id: YogFloraBiancoBush
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/jungle_plants_yogstation.rsi
+    state: bianco_plant
+  - type: InteractionOutline
+  - type: Gatherable
+    toolWhitelist:
+      components:
+      - Hands
+    loot:
+      All: YogBiancoBushGather
+
+- type: entity
+  parent: YogFloraBiancoBush
+  id: YogFloraBonjiBush
+  components:
+  - type: Sprite
+    state: bonji_plant
+  - type: Gatherable
+    loot:
+      All: YogBonjiBushGather
+
+- type: entity
+  parent: YogFloraBiancoBush
+  id: YogFloraKukuBush
+  components:
+  - type: Sprite
+    state: kuku_plant
+  - type: Gatherable
+    loot:
+      All: YogKukuBushGather
+
+- type: entity
+  parent: YogFloraBiancoBush
+  id: YogFloraLiberalHats
+  components:
+  - type: Sprite
+    state: liberal_hats
+  - type: Gatherable
+    loot:
+      All: YogLiberalHatsGather
+
+- type: entity
+  parent: BaseFlora
+  id: GoonKudzuBenign
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/kudzu_goonstation.rsi
+    drawdepth: FloorObjects
+    layers:
+    - state: kudzu-benign-1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        kudzu-benign-1: ""
+    - base:
+        kudzu-benign-2: ""
+    - base:
+        kudzu-benign-3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: GoonKudzuBulb
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/kudzu_goonstation.rsi
+    state: bulb-closed
+
+- type: entity
+  parent: GoonKudzuBulb
+  id: GoonKudzuCocoon
+  components:
+  - type: Sprite
+    state: cocoon
+
+- type: entity
+  parent: BaseFlora
+  id: CoyoteFloraTrellis
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/trellis_coyote.rsi
+    state: trellis
+
+- type: entity
+  parent: BaseFlora
+  id: CMFloraHugeTree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/bigtree_cmss13.rsi
+    drawdepth: Overdoors
+    noRot: false
+    offset: "1.5,1.5"
+    layers:
+    - state: bigtreeBOT
+    - state: bigtreeTL
+      offset: "-3,4"
+    - state: bigtreeTR
+      offset: "1,4"
+
+- type: entity
+  parent: CMFloraHugeTree
+  id: CMFloraHugeTreeAlt
+  components:
+  - type: Sprite
+    layers:
+    - state: bigtreeBOT_alt
+    - state: bigtreeTL
+      offset: "-3,4"
+    - state: bigtreeTR
+      offset: "1,4"
+
+- type: entity
+  parent: CMStatueAncient
+  id: MonkeStatueAtlantis
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/statue_atlantis_monke.rsi
+    state: mermaid
+    offset: "0.08,0.5"
+
+- type: entity
+  parent: BaseStructure
+  id: DarkPackTotemGlassWalkers
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/totem_darkpack.rsi
+    noRot: true
+    drawdepth: Mobs
+    offset: "0,0.5"
+    layers:
+    - state: glassw
+    - state: glassw_overlay
+      shader: unshaded
+      color: "#35b0ff"
+  - type: PointLight
+    radius: 3
+    energy: 0.5
+    color: "#35b0ff"
+  - type: InteractionOutline
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          DarkPackTotemGlassWalkersBroken:
+            min: 1
+            max: 1
+        offset: 0
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: DarkPackTotemGlassWalkers
+  id: DarkPackTotemGlassWalkersBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    layers:
+    - state: glassw_broken
+    - state: glassw_broken_overlay
+      shader: unshaded
+      color: "#35b0ff"
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPFloraMossyRock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fey_flora_citadelrp.rsi
+    layers:
+    - state: rock1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        rock1: ""
+    - base:
+        rock2: ""
+    - base:
+        rock3: ""
+    - base:
+        rock4: ""
+    - base:
+        rock5: ""
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPFloraTallFern
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fey_flora_citadelrp.rsi
+    layers:
+    - state: busha1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        busha1: ""
+    - base:
+        busha2: ""
+    - base:
+        busha3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPFloraLeafyBush
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fey_flora_citadelrp.rsi
+    layers:
+    - state: bushb1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        bushb1: ""
+    - base:
+        bushb2: ""
+    - base:
+        bushb3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPFloraBroadleafBush
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fey_flora_citadelrp.rsi
+    layers:
+    - state: bushc1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        bushc1: ""
+    - base:
+        bushc2: ""
+    - base:
+        bushc3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPFloraLargeFern
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fey_flora_64_citadelrp.rsi
+    layers:
+    - state: bush1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        bush1: ""
+    - base:
+        bush2: ""
+    - base:
+        bush3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: CitadelRPFloraMossyRockPile
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/fey_flora_64_citadelrp.rsi
+    layers:
+    - state: rocks1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        rocks1: ""
+    - base:
+        rocks2: ""
+    - base:
+        rocks3: ""
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFloraReeds
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamp_flora_onyxbay.rsi
+    layers:
+    - state: reeds_1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        reeds_1: ""
+    - base:
+        reeds_2: ""
+    - base:
+        reeds_3: ""
+    - base:
+        reeds_4: ""
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFloraDarkRock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamp_flora_onyxbay.rsi
+    layers:
+    - state: rock1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        rock1: ""
+    - base:
+        rock2: ""
+    - base:
+        rock3: ""
+    - base:
+        rock4: ""
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFloraThornbush
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamp_flora_onyxbay.rsi
+    state: thornbush
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayTreeStump
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamptree_onyxbay.rsi
+    offset: "0,1"
+    layers:
+    - state: t1stump
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        t1stump: ""
+    - base:
+        t2stump: ""
+    - base:
+        t3stump: ""
+    - base:
+        t4stump: ""
+
+- type: entity
+  parent: BaseFlora
+  id: OnyxBayFallenLog
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamptree_onyxbay.rsi
+    offset: "0,1"
+    layers:
+    - state: log1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        log1: ""
+    - base:
+        log2: ""
+
+- type: entity
+  parent: BaseTree
+  id: OnyxBayTreeSwamp
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamptree_onyxbay.rsi
+    layers:
+    - state: t1
+      map: [ "base" ]
+  - type: RandomSprite
+    available:
+    - base:
+        t1: ""
+    - base:
+        t2: ""
+    - base:
+        t3: ""
+    - base:
+        t4: ""
+    - base:
+        t5: ""
+    - base:
+        t6: ""
+    - base:
+        t7: ""
+    - base:
+        t8: ""
+    - base:
+        t9: ""
+    - base:
+        t10: ""
+    - base:
+        t11: ""
+    - base:
+        t12: ""
+    - base:
+        t13: ""
+    - base:
+        t14: ""
+    - base:
+        t15: ""
+    - base:
+        t16: ""
+
+- type: entity
+  parent: BaseTree
+  id: OnyxBayTreeGnarled
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/swamptree_onyxbay.rsi
+    state: mystical

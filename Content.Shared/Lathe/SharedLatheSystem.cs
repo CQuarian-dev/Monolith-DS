@@ -32,6 +32,8 @@ public abstract partial class SharedLatheSystem : EntitySystem
     [Dependency] private SharedSolutionContainerSystem _solution = default!;
     [Dependency] protected EntityQuery<StackComponent> _stackQuery = default!;
 
+    [Dependency] protected Robust.Shared.Configuration.IConfigurationManager RecipeConfig = default!; // LuaM
+
     public readonly Dictionary<string, List<LatheRecipePrototype>> InverseRecipes = new();
 
     public override void Initialize()
@@ -54,7 +56,7 @@ public abstract partial class SharedLatheSystem : EntitySystem
         foreach (var id in packs)
         {
             var pack = _proto.Index(id);
-            recipes.UnionWith(pack.Recipes);
+            recipes.UnionWith(pack.GetRecipes(RecipeConfig)); // LuaM
         }
     }
 

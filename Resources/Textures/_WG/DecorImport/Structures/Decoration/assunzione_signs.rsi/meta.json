@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+    "size": {
+        "x": 79,
+        "y": 22
+    },
+    "states": [
+        {
+            "name": "shop_sign",
+            "delays": [
+                [
+                    2.0,
+                    2.0
+                ]
+            ]
+        },
+        {
+            "name": "police_sign",
+            "delays": [
+                [
+                    1.6,
+                    1.6
+                ]
+            ]
+        },
+        {
+            "name": "pharmacy_sign",
+            "delays": [
+                [
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "stafylia_sign",
+            "delays": [
+                [
+                    2.0,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}

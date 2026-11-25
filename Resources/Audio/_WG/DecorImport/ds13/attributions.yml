@@ -1,0 +1,9 @@
+- files: ["attackblob.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from DS13 at commit https://github.com/DS-13-Dev-Team/DS13-2.0/commit/4c8813536f72a1e2efafb661b62821bb62a5a514."
+  source: "https://github.com/DS-13-Dev-Team/DS13-2.0/blob/4c8813536f72a1e2efafb661b62821bb62a5a514/sound/effects/attackblob.ogg"
+
+- files: ["markerthrob.ogg"]
+  license: "CC-BY-SA-3.0"
+  copyright: "Taken from DS13 at commit https://github.com/DS-13-Dev-Team/DS13-2.0/commit/4c8813536f72a1e2efafb661b62821bb62a5a514."
+  source: "https://github.com/DS-13-Dev-Team/DS13-2.0/blob/4c8813536f72a1e2efafb661b62821bb62a5a514/deadspace/sound/effects/markerthrob.ogg"

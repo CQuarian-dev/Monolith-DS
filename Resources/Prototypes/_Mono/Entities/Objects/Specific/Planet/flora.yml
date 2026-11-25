@@ -8,23 +8,25 @@
   - type: Sprite
     noRot: true
     sprite: _Mono/Objects/Flora/flora.rsi
-  - type: Physics
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.2,-0.3,0.2,0.4"
-        density: 150
-        mask:
-        - SmallMobMask
-        layer:
-        - Impassable
-        - MidImpassable
-        - LowImpassable
-        - DoorPassable
-        hard: False
+  # LuaM-start: WOLFGATE(Performance)
+  # - type: Physics
+  #   bodyType: Static
+  # - type: Fixtures
+  #   fixtures:
+  #     fix1:
+  #       shape:
+  #         !type:PhysShapeAabb
+  #         bounds: "-0.2,-0.3,0.2,0.4"
+  #       density: 150
+  #       mask:
+  #       - SmallMobMask
+  #       layer:
+  #       - Impassable
+  #       - MidImpassable
+  #       - LowImpassable
+  #       - DoorPassable
+  #       hard: False
+  # LuaM-end
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Wood

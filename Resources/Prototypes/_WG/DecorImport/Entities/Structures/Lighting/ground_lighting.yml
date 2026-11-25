@@ -1,0 +1,111 @@
+- type: entity
+  parent: PoweredSmallLight
+  id: AuroraLight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_floor.rsi
+    offset: "0,0"
+    drawdepth: FloorObjects
+    snapCardinals: false
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: AuroraLightSmall
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/small_floor.rsi
+    offset: "0,0"
+    drawdepth: FloorObjects
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: AuroraLightSmallEmergency
+  suffix: emergency
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/floor_emergency.rsi
+    offset: "0,0"
+    drawdepth: FloorObjects
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: VoreLightFloortube
+  suffix: floortube
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/light_floortube.rsi
+    offset: "0,0"
+    drawdepth: FloorObjects
+    snapCardinals: false
+  - type: Physics
+    canCollide: false
+
+- type: entity
+  parent: PoweredSmallLight
+  id: CMEngineerCircularLight
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/engineers_light_cm.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: engineerlight_off
+    offset: "0,0"
+    drawdepth: FloorObjects
+    snapCardinals: false
+  - type: Physics
+    canCollide: false
+  - type: PointLight
+    offset: "0,0"
+    radius: 7
+    energy: 3
+  - type: PoweredLight
+    hasLampOnSpawn: LightBulbCrystalGreen
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: engineerlight_off
+      off: engineerlight_off
+      on: engineerlight_on
+      broken: engineerlight_damage
+      burned: engineerlight_damage
+
+- type: entity
+  parent: PoweredSmallLight
+  id: CMLandingLightYautja
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/landinglights_yautja_cm.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: yautja_landing_off
+    offset: "0,0"
+    drawdepth: FloorObjects
+    snapCardinals: false
+  - type: Physics
+    canCollide: false
+  - type: PointLight
+    offset: "0,0"
+    radius: 5
+    energy: 1
+    color: "#FA644B"
+    enabled: false
+  - type: PoweredLight
+    hasLampOnSpawn: LightBulb
+    on: false
+  - type: ApcPowerReceiver
+    needsPower: false
+  - type: PoweredLightVisuals
+    spriteStateMap:
+      empty: yautja_landing_off
+      off: yautja_landing_off
+      on: yautja_landing_on
+      broken: yautja_landing_off
+      burned: yautja_landing_off

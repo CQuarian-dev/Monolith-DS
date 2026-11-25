@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "sun"
+    },
+    {
+      "name": "moon"
+    },
+    {
+      "name": "crown"
+    },
+    {
+      "name": "warrior"
+    },
+    {
+      "name": "mador3"
+    },
+    {
+      "name": "mador4"
+    },
+    {
+      "name": "brothers_l"
+    },
+    {
+      "name": "brothers_r"
+    },
+    {
+      "name": "city_l"
+    },
+    {
+      "name": "city_r"
+    },
+    {
+      "name": "wall_l"
+    },
+    {
+      "name": "wall_r"
+    },
+    {
+      "name": "unathi_l"
+    },
+    {
+      "name": "unathi_r"
+    },
+    {
+      "name": "mador1_l"
+    },
+    {
+      "name": "mador1_r"
+    },
+    {
+      "name": "mador2_l"
+    },
+    {
+      "name": "mador2_r"
+    }
+  ]
+}

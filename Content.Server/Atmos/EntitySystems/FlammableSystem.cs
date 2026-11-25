@@ -445,6 +445,9 @@ namespace Content.Server.Atmos.EntitySystems
             }
             _processingFireEvents.Clear(); // LuaM
 
+            if (WgSkipSweep()) // WOLFGATE(Dormancy): the once-a-second sweep runs ten times a second, not every tick.
+                return;
+
             var curTime = _timing.CurTime;
 
             // LuaM-start

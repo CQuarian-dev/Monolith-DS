@@ -1,0 +1,203 @@
+- type: constructionGraph
+  id: DecorBuildBayFilingcabinet
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: BayFilingcabinet
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildBayFilingcabinetFilingcabinet
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: BayFilingcabinetFilingcabinet
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildBayFilingcabinetWallcabinet
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: Steel
+        amount: 3
+        doAfter: 2
+  - node: built
+    entity: BayFilingcabinetWallcabinet
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 3
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMFilingcabinet
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMFilingcabinet
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMFilingcabinetFilingcabinet
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMFilingcabinetFilingcabinet
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMFilingcabinetDouble
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMFilingcabinetDouble
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMFilingcabinetChestdrawer
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMFilingcabinetChestdrawer
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMFilingcabinetChestdrawerDouble
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMFilingcabinetChestdrawerDouble
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMFilingcabinetDocumentation
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMFilingcabinetDocumentation
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildCMDocumentationHighcomChestdrawer
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: CMDocumentationHighcomChestdrawer
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildGoonCabinet
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: GoonCabinet
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: SheetSteel1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

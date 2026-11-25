@@ -261,9 +261,6 @@ public abstract partial class SharedBiomeSystem : EntitySystem
                 return false;
             }
 
-            if (biomeLayer.MinNeighbours > 0 && !HasNeighboursAbove(noiseCopy, indices, layer.Threshold, invert, biomeLayer.MinNeighbours, 1)) // LuaM
-                continue; // LuaM
-
             var noiseValue = noiseCopy.GetNoise(indices.X, indices.Y, i);
             entity = Pick(biomeLayer.Entities, (noiseValue + 1f) / 2f);
             return true;
@@ -272,38 +269,6 @@ public abstract partial class SharedBiomeSystem : EntitySystem
         entity = null;
         return false;
     }
-
-    // LuaM-start
-    // -- Сосед засчитывается, только если он и сам проходит этот фильтр: иначе на краях пятна оставалась стена, чьих соседей отсеяли
-    private static bool HasNeighboursAbove(FastNoiseLite noise, Vector2i indices, float threshold, bool invert, int min, int depth)
-    {
-        var count = 0;
-        var left = 8;
-        for (var x = -1; x <= 1; x++)
-        {
-            for (var y = -1; y <= 1; y++)
-            {
-                if (x == 0 && y == 0)
-                    continue;
-
-                left--;
-                var neighbour = new Vector2i(indices.X + x, indices.Y + y);
-                var value = noise.GetNoise(neighbour.X, neighbour.Y);
-                if ((invert ? -value : value) >= threshold &&
-                    (depth == 0 || HasNeighboursAbove(noise, neighbour, threshold, invert, min, depth - 1)) &&
-                    ++count >= min)
-                {
-                    return true;
-                }
-
-                if (count + left < min)
-                    return false;
-            }
-        }
-
-        return false;
-    }
-    // LuaM-end
 
     [Obsolete("Use the Entity<MapGridComponent>? overload")]
     public bool TryGetEntity(Vector2i indices, List<IBiomeLayer> layers, Tile tileRef, int seed, MapGridComponent grid,
@@ -411,11 +376,17 @@ public abstract partial class SharedBiomeSystem : EntitySystem
 
     private FastNoiseLite GetNoise(FastNoiseLite seedNoise, int seed)
     {
+        // WOLFGATE(Planets) START: reuse one copy per source noise and seed, since callers only read it
+        if (_wgNoiseCache.TryGet(seedNoise, seed, out var cached))
+            return cached;
+        // WOLFGATE END
+
         var noiseCopy = new FastNoiseLite();
         _serManager.CopyTo(seedNoise, ref noiseCopy, notNullableOverride: true);
         noiseCopy.SetSeed(noiseCopy.GetSeed() + seed);
         // Ensure re-calculate is run.
         noiseCopy.SetFractalOctaves(noiseCopy.GetFractalOctaves());
+        noiseCopy = _wgNoiseCache.Add(seedNoise, noiseCopy); // WOLFGATE(Planets): keep the copy for later calls
         return noiseCopy;
     }
 }

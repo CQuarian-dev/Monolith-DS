@@ -139,7 +139,7 @@
   - type: Construction
     graph: bedNF
     node: mattress
-  # Frontier: break into cloth, not steel.
+  # End Frontier # LuaM
   - type: Destructible
     thresholds:
     - trigger:
@@ -197,6 +197,9 @@
     damage:
       types:
         Cold: -0.5
+  - type: Construction # LuaM
+    graph: bedNF # LuaM
+    node: PsychBed # LuaM
   - type: Destructible
     thresholds:
     - trigger:

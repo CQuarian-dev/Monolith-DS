@@ -33,6 +33,7 @@ using Content.Shared.Traits.Assorted; //Mono: Wheelchair user check
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics.Components;
 using Robust.Server.GameObjects;
+using Content.Server._NF.CryoSleep; // LuaM
 
 namespace Content.Server.Carrying
 {
@@ -77,7 +78,15 @@ namespace Content.Server.Carrying
             SubscribeLocalEvent<BeingCarriedComponent, StrappedEvent>(OnBuckleChange);
             SubscribeLocalEvent<BeingCarriedComponent, UnstrappedEvent>(OnBuckleChange);
             SubscribeLocalEvent<CarriableComponent, CarryDoAfterEvent>(OnDoAfter);
+            SubscribeLocalEvent<BeingCarriedComponent, CryosleepEnterEvent>(OnCarriedCryoEnter); // LuaM
         }
+
+        // LuaM-start
+        private void OnCarriedCryoEnter(EntityUid uid, BeingCarriedComponent component, CryosleepEnterEvent args)
+        {
+            DropCarried(component.Carrier, uid, attachToMap: false);
+        }
+        // LuaM-end
 
         private void AddCarryVerb(EntityUid uid, CarriableComponent component, GetVerbsEvent<AlternativeVerb> args)
         {
@@ -321,7 +330,7 @@ namespace Content.Server.Carrying
             return true;
         }
 
-        public void DropCarried(EntityUid carrier, EntityUid carried)
+        public void DropCarried(EntityUid carrier, EntityUid carried, bool attachToMap = true) // LuaM
         {
             RemComp<CarryingComponent>(carrier); // get rid of this first so we don't recursively fire that event
             RemComp<CarryingSlowdownComponent>(carrier);
@@ -329,7 +338,8 @@ namespace Content.Server.Carrying
             RemComp<KnockedDownComponent>(carried);
             _actionBlockerSystem.UpdateCanMove(carried);
             _virtualItemSystem.DeleteInHandsMatching(carrier, carried);
-            _transform.AttachToGridOrMap(carried);
+            if (attachToMap) // LuaM
+                _transform.AttachToGridOrMap(carried);
             if (!HasComp<LegsParalyzedComponent>(carried)) // Mono: Check wheelchair user before standing
                 _standingState.Stand(carried);
             _movementSpeed.RefreshMovementSpeedModifiers(carrier);
@@ -373,7 +383,7 @@ namespace Content.Server.Carrying
                 // when this happens, it needs to be dropped because it leads to weird behavior
                 if (Transform(carried).ParentUid != carrier)
                 {
-                    DropCarried(carrier, carried);
+                    DropCarried(carrier, carried, attachToMap: false); // LuaM
                     continue;
                 }
 

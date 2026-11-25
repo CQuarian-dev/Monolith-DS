@@ -1,0 +1,110 @@
+# CM-SS13
+
+- type: entity
+  parent: BaseStructure
+  id: CMEngineerConsole
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/engineers_consoles_cm.rsi
+    state: engineerconsole
+    offset: "0.5,0.5"
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,1.45,1.45"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+  - type: Appearance
+  - type: SignalSwitch
+  - type: UseDelay
+    delay: 0.5
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSource
+    ports:
+    - On
+    - Off
+    - Status
+    lastSignals:
+      Status: false
+  - type: PointLight
+    radius: 2
+    energy: 1
+    color: "#00ffa0"
+
+- type: entity
+  parent: BaseStructure
+  id: CMEngineerSpaceJockey
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/engineerjockey_cm.rsi
+    state: spacejockey
+    drawdepth: Overdoors
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.45,-1.45,1.45,1.45"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - HighImpassable
+
+- type: entity
+  parent: BaseStructure
+  id: CMEngineerGiantPod
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/engineerpod_cm.rsi
+    state: pod
+    offset: "0.5,1"
+    drawdepth: Overdoors
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.45,-0.45,1.45,2.45"
+        density: 1000
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+        - HighImpassable
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: CMEngineerGiantPod
+  id: CMEngineerGiantPodBroken
+  components:
+  - type: Sprite
+    state: pod_broken

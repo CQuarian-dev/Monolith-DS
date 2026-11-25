@@ -1,0 +1,20 @@
+# WOLFGATE(DecorImport) START: ported from RMC-14
+- type: tile
+  abstract: true
+  id: CMFloorStripedBase
+  name: tiles-cm-striped
+  baseTurf: ""
+  deconstructTools: [ ]
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+  isSubfloor: true
+  friction: 1
+
+- type: tile
+  parent: CMFloorStripedBase
+  id: CMFloorPlating
+  name: tiles-cm-plating
+  sprite: /Textures/_RMC14/Tiles/floors/plating.png
+  friction: 1
+# WOLFGATE END

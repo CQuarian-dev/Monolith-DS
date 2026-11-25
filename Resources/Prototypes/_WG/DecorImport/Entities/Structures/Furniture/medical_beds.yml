@@ -1,0 +1,139 @@
+- type: entity
+  parent: Bed
+  id: TgBedMedical
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    state: med_down
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildTgBedMedical
+    node: built
+
+- type: entity
+  parent: Bed
+  id: TgBedMedicalEmergency
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    state: emerg_down
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildTgBedMedicalEmergency
+    node: built
+
+- type: entity
+  parent: Bed
+  id: ShiptestBedRoller
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    noRot: false
+    state: down
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildShiptestBedRoller
+    node: built
+
+- type: entity
+  parent: Bed
+  id: ParaBedAmbTrolley
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    state: ambulance
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildParaBedAmbTrolley
+    node: built
+
+- type: entity
+  parent: Bed
+  id: NovaBedMedicalMedigun
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    noRot: false
+    state: hardlight_down
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildNovaBedMedicalMedigun
+    node: built
+
+- type: entity
+  parent: Bed
+  id: YogBedSurgicalMat
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    noRot: false
+    state: opmat
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildYogBedSurgicalMat
+    node: built
+
+- type: entity
+  parent: Bed
+  id: CMHybrisaHospitalHospitaldivider
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/medical_beds.rsi
+    state: hospitalcurtain
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: Construction
+    graph: DecorBuildCMHybrisaHospitalHospitaldivider
+    node: built

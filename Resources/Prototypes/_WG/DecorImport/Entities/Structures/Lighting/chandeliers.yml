@@ -1,0 +1,57 @@
+- type: entity
+  abstract: true
+  parent: [ BaseUrbanCeilingProp, BaseUrbanToggleLight ]
+  id: BaseAuroraChandelier
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/chandelier.rsi
+    offset: 0,1
+  - type: PointLight
+    radius: 6
+    energy: 1.2
+    color: "#FFD8A0"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        offset: 0
+        spawn:
+          AuroraChandelierFallen:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: BaseAuroraChandelier
+  id: AuroraChandelier
+  components:
+  - type: Sprite
+    layers:
+    - state: chandelier_unmoving
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: { state: chandelier }
+          False: { state: chandelier_unmoving }
+
+- type: entity
+  parent: BaseUrbanPropNoCollide
+  id: AuroraChandelierFallen
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Lighting/chandelier.rsi
+    offset: 0,1
+    state: chandelier_down

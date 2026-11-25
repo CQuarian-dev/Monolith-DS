@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Coyote Bayou at commit https://github.com/ARF-SS13/coyote-bayou/commit/af94b33c76dffc30896d97f20bcea09cbed14b22, Polaris at commit https://github.com/PolarisSS13/Polaris/commit/6cd19fe0dec6b5f18b6b18c3eb36af7bf3359f25.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "stone-1"
+    },
+    {
+      "name": "stump"
+    },
+    {
+      "name": "wooden"
+    }
+  ]
+}

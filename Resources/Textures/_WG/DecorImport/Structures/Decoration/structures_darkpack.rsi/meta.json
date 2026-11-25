@@ -1,0 +1,333 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "girder"
+        },
+        {
+            "name": "displaced"
+        },
+        {
+            "name": "displaced_opening",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "displaced_closing",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "displaced_open"
+        },
+        {
+            "name": "reinforced"
+        },
+        {
+            "name": "grille"
+        },
+        {
+            "name": "window",
+            "directions": 8
+        },
+        {
+            "name": "rwindow",
+            "directions": 8
+        },
+        {
+            "name": "twindow",
+            "directions": 8
+        },
+        {
+            "name": "fwindow",
+            "directions": 8
+        },
+        {
+            "name": "woodenbarricade"
+        },
+        {
+            "name": "ladder10"
+        },
+        {
+            "name": "ladder01"
+        },
+        {
+            "name": "ladder11"
+        },
+        {
+            "name": "safe_locked"
+        },
+        {
+            "name": "safe"
+        },
+        {
+            "name": "floorsafe_locked"
+        },
+        {
+            "name": "floorsafe"
+        },
+        {
+            "name": "linenbin-full"
+        },
+        {
+            "name": "linenbin-half"
+        },
+        {
+            "name": "linenbin-empty"
+        },
+        {
+            "name": "brokenratvargrille"
+        },
+        {
+            "name": "speaking_tile"
+        },
+        {
+            "name": "grille50_0"
+        },
+        {
+            "name": "grille50_1"
+        },
+        {
+            "name": "grille50_2"
+        },
+        {
+            "name": "grille50_3"
+        },
+        {
+            "name": "alientable"
+        },
+        {
+            "name": "fancy_table_cyan"
+        },
+        {
+            "name": "fancy_table_royalblack"
+        },
+        {
+            "name": "fancy_table_royalblue"
+        },
+        {
+            "name": "glassbox_chassis"
+        },
+        {
+            "name": "glassbox_broken"
+        },
+        {
+            "name": "moisture_trap",
+            "delays": [
+                [
+                    2.0,
+                    0.1,
+                    0.1,
+                    0.5,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "falconet_patina",
+            "directions": 4
+        },
+        {
+            "name": "falconet_patina_fire",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "wall_gear"
+        },
+        {
+            "name": "steam_vent"
+        },
+        {
+            "name": "steam_vent_off"
+        },
+        {
+            "name": "plasticflaps"
+        },
+        {
+            "name": "rack_parts"
+        },
+        {
+            "name": "barrel"
+        },
+        {
+            "name": "barrel_open"
+        },
+        {
+            "name": "barrel_overlay_label"
+        },
+        {
+            "name": "boxingbell",
+            "directions": 4
+        },
+        {
+            "name": "spirit_board"
+        },
+        {
+            "name": "target_q"
+        },
+        {
+            "name": "morgue2",
+            "directions": 4
+        },
+        {
+            "name": "morgue3",
+            "directions": 4
+        },
+        {
+            "name": "morgue4",
+            "directions": 4
+        },
+        {
+            "name": "morgue_label"
+        },
+        {
+            "name": "gutlunch_trough"
+        },
+        {
+            "name": "wooden_railing_corner",
+            "directions": 4
+        },
+        {
+            "name": "wooden_railing_corner_flipped",
+            "directions": 4
+        },
+        {
+            "name": "wooden_railing",
+            "directions": 8
+        },
+        {
+            "name": "oneway",
+            "directions": 4,
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
+        },
+        {
+            "name": "oneway_off",
+            "directions": 4
+        },
+        {
+            "name": "raptor_trough"
+        },
+        {
+            "name": "flatcart"
+        },
+        {
+            "name": "flatcart_flat"
+        },
+        {
+            "name": "linenbasket-empty"
+        },
+        {
+            "name": "linenbasket-half"
+        },
+        {
+            "name": "linenbasket-full"
+        },
+        {
+            "name": "spare_safe"
+        },
+        {
+            "name": "spare_safe_locked"
+        },
+        {
+            "name": "ladder_rim"
+        },
+        {
+            "name": "ladder_hole"
+        },
+        {
+            "name": "stone_window_pane"
+        }
+    ]
+}

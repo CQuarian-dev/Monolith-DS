@@ -37,8 +37,10 @@
   components:
   - type: ContainerFill
     containers:
-      key_slots:
-      - EncryptionKeyStationMaster
+      key_slots: # LuaM
+      - EncryptionKeyCommon
+      - EncryptionKeyNfsd
+      - EncryptionKeyCommand
   - type: Sprite
     sprite: _Mono/Clothing/Ears/Headsets/tsf.rsi
   - type: Clothing

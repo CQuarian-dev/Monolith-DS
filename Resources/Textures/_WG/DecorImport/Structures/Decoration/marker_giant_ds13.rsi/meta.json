@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DS13 at commit https://github.com/DS-13-Dev-Team/DS13-2.0/commit/4c8813536f72a1e2efafb661b62821bb62a5a514.",
+  "size": {
+    "x": 98,
+    "y": 196
+  },
+  "states": [
+    {
+      "name": "marker_giant_dormant"
+    },
+    {
+      "name": "marker_giant_active"
+    },
+    {
+      "name": "marker_giant_active_anim",
+      "delays": [
+        [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ]
+      ]
+    }
+  ]
+}

@@ -963,6 +963,7 @@
       - MedTekCartridge
       - WantedListCartridge
       - LogProbeCartridge
+      - BountyContractsCartridge # LuaM
       - AstroNavCartridge
 
 - type: entity
@@ -1117,6 +1118,8 @@
       - NotekeeperCartridge
       - YupiCartridge # LuaM
       - DeliveryCartridge # LuaM
+      - NewsReaderCartridge # LuaM
+      - BountyContractsCartridge # LuaM
       - AstroNavCartridge # Frontier
 
 - type: entity
@@ -1487,6 +1490,8 @@
      enum.PdaVisuals.PdaType:
        !type:String
        pda-pirate
+  - type: PdaBorderColor # LuaM
+    borderColor: "#333333" # LuaM
   - type: Icon
     state: pda-pirate
 

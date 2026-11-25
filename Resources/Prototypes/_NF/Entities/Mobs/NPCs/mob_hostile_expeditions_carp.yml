@@ -3,27 +3,52 @@
   parent: [NFMobRestrictions, NFMobFactionlessBase, MobCarp]
   suffix: "Frontier"
   categories: [ HideSpawnMenu ]
+  components: # LuaM-start
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - Dragon # LuaM-end
 
 - type: entity
   id: NFMobCarpMagic
   parent: [NFMobRestrictions, NFMobFactionlessBase, MobCarpMagic]
   suffix: "Frontier"
   categories: [ HideSpawnMenu ]
+  components: # LuaM-start
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - Dragon # LuaM-end
 
 - type: entity
   id: NFMobCarpHolo
   parent: [NFMobRestrictions, NFMobFactionlessBase, MobCarpHolo]
   suffix: "Frontier"
   categories: [ HideSpawnMenu ]
+  components: # LuaM-start
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - Dragon # LuaM-end
 
 - type: entity
   id: NFMobCarpRainbow
   parent: [NFMobRestrictions, NFMobFactionlessBase, MobCarpRainbow]
   suffix: "Frontier"
   categories: [ HideSpawnMenu ]
+  components: # LuaM-start
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - Dragon # LuaM-end
 
 - type: entity
   id: NFMobShark
   parent: [NFMobRestrictions, NFMobFactionlessBase, MobShark]
   suffix: "Frontier"
 #  categories: [ HideSpawnMenu ] # No spawner
+  components: # LuaM-start
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+    - Dragon # LuaM-end

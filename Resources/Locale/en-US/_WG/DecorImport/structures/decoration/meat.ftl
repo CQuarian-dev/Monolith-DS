@@ -1,0 +1,17 @@
+ent-ChangelingFleshCocoon = flesh cocoon
+    .desc = An oozing mass of flesh, encasing a victim and harvesting their body for nutrients.
+ent-ADTSandFloor = sand floor
+ent-ADTMeatFloor = meat floor
+ent-ADTGrassFloor = grass floor
+ent-AuroraBedNest = gore nest
+    .desc = It's a gruesome pile of thick, sticky flesh shaped like a nest.
+ent-AuroraGoreTendrils = bloody tendrils
+    .desc = Bloody, pulsating tendrils.
+ent-TauCetiMeatlandWall = flesh wall
+ent-TauCetiMeatlandGrowth = meat growth
+ent-TauCetiMeatlandCore = cellular horror
+    .desc = You don't want to know what this is...
+ent-TauCetiMeatlandCreatureCorpse = dead insane creature
+    .desc = A sanity-destroying otherthing.
+ent-TauCetiMeatlandScraps = meat scraps
+ent-TauCetiMeatlandLair = flesh pit

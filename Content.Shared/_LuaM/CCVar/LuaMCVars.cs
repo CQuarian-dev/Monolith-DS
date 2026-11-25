@@ -67,4 +67,13 @@ public sealed class LuaMCVars
 
     public static readonly CVarDef<bool> LobbyBackgroundParallax =
         CVarDef.Create("luam.lobby_background_parallax", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+    // -- Спящие тела вне планет пропускают обработку жизни, когда рядом нет игроков (WGDormancySystem)
+    public static readonly CVarDef<bool> OffPlanetDormancy =
+        CVarDef.Create("luam.off_planet_dormancy", false, CVar.SERVERONLY);
+
+    // -- Механики Z-уровней из Monolith#4690 (Wolfgate): трение о землю вместо парковки, столкновения со стенами рельефа,
+    // -- полёт на джетпаке между слоями, тени слоёв. Выключено — Z-уровни работают как раньше. Планетам (wg.planet_networks) нужно включённым.
+    public static readonly CVarDef<bool> ZLevelsGridNetworks =
+        CVarDef.Create("luam.zlevels_grid_networks", false, CVar.SERVER | CVar.REPLICATED);
 }

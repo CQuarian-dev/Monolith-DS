@@ -4,6 +4,7 @@ using Content.Client.Shuttles.Systems;
 using Content.Shared._LuaM.Shuttles; // LuaM
 using Content.Shared._Mono.Detection;
 using Content.Shared._NF.Shuttles.Components;
+using Content.Shared._WG.Planets; // WOLFGATE(Planets)
 using Content.Shared.Shuttles.BUIStates;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Systems;
@@ -361,6 +362,8 @@ public sealed partial class MapScreen : BoxContainer
             {
                 mapName = Loc.GetString("shuttle-console-unknown");
             }
+
+            mapName = _entManager.System<WGMapLabelSystem>().Label(mapUid, mapMetadata.EntityName); // WOLFGATE(Planets): sector space, surfaces and levels say what they are
 
             var heading = new CollapsibleHeading(mapName);
 

@@ -11,6 +11,8 @@ namespace Content.Client._LuaM.Guidebook;
 public sealed class GuideShieldPreview : Control
 {
     private readonly PersonalShieldVisuals _visuals;
+    private static readonly ProtoId<ShaderPrototype> SkinShader = "PersonalShieldSkin";
+
     private ShaderInstance? _shader;
     public GuideShieldPreview(PersonalShieldVisuals visuals)
     {
@@ -21,7 +23,7 @@ public sealed class GuideShieldPreview : Control
     protected override void Draw(DrawingHandleScreen handle)
     {
         base.Draw(handle);
-        _shader ??= IoCManager.Resolve<IPrototypeManager>().Index<ShaderPrototype>("PersonalShieldSkin").InstanceUnique();
+        _shader ??= IoCManager.Resolve<IPrototypeManager>().Index(SkinShader).InstanceUnique();
         _shader.SetParameter("progress", 1f);
         _shader.SetParameter("skin_color", _visuals.Color);
         _shader.SetParameter("brightness", _visuals.Brightness);

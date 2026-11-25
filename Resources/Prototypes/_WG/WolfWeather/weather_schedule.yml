@@ -1,0 +1,56 @@
+# Schedules are for maps that aren't planets, such as an event map; a planet's weather follows its wgPlanetWeather.
+#
+# - type: weatherSchedule
+#   id: WGMySchedule
+#   gap:
+#     min: 6m
+#     max: 15m
+#   weathers:
+#   - weather: WGRainLight
+#     weight: 2
+#     duration:
+#       min: 4m
+#       max: 10m
+#   - weather: WGRainHeavy
+#     weight: 1
+#     duration:
+#       min: 2m
+#       max: 5m
+#     windAngle: # Overrides the weather's wind direction. Degrees, 0 is east.
+#       min: 150
+#       max: 210
+
+- type: weatherSchedule
+  id: WGTemperate
+  gap:
+    min: 6m
+    max: 15m
+  weathers:
+  - weather: WGRainLight
+    weight: 3
+    duration:
+      min: 4m
+      max: 10m
+  - weather: WGRainModerate
+    weight: 2
+    duration:
+      min: 3m
+      max: 8m
+  - weather: WGFogWisps
+    weight: 2
+    duration:
+      min: 3m
+      max: 8m
+  - weather: WGRainHeavy
+    weight: 1
+    duration:
+      min: 2m
+      max: 5m
+    windAngle:
+      min: 150
+      max: 210
+  - weather: WGStorm
+    weight: 1
+    duration:
+      min: 2m
+      max: 4m

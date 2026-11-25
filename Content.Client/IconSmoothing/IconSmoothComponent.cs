@@ -81,5 +81,12 @@ namespace Content.Client.IconSmoothing
         /// </summary>
         DiagonalNF,
         // End Frontier
+
+        // WOLFGATE(BitmaskWalls) START: walls drawn from tg's baked bitmask states
+        /// <summary>
+        ///     One state per tg junction of all eight neighbours, named the state base plus the junction number.
+        /// </summary>
+        Bitmask,
+        // WOLFGATE END
     }
 }

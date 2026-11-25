@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7, Baystation 12 at commit https://github.com/Baystation12/Baystation12/commit/64fcc7090fbf1d9255446154730a57586cec3355, BeeStation at commit https://github.com/BeeStation/BeeStation-Hornet/commit/c10d715d09ebbc501f8c127c55db9cee7f7b9c8d, CEV-Eris at commit https://github.com/discordia-space/CEV-Eris/commit/5f7847f26585d80505500be5a62e621022a56bf7, CM-SS13 at commit https://github.com/cmss13-devs/cmss13/commit/d5306e2724d6006e69439d9cf64a2b166fe4ed15, Nebula at commit https://github.com/NebulaSS13/Nebula/commit/d7a668ec0268164d33a13481e2e5ce307996ff76, Paradise at commit https://github.com/ParadiseSS13/Paradise/commit/7cd73f80152a5e234249d99cace75ce2b5c1c54b, Shiptest at commit https://github.com/shiptest-ss13/Shiptest/commit/1d98db044a8a61499ef1e2d54fa2d8516a8e7da3, VOREStation at commit https://github.com/VOREStation/VOREStation/commit/87b3dbf0ec98646a502ec3a8a9b8a2abe8322d88.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "bridge",
+      "directions": 4
+    },
+    {
+      "name": "capchair_preview",
+      "directions": 4
+    },
+    {
+      "name": "chair_comfy_office",
+      "directions": 4
+    },
+    {
+      "name": "chair_comfy_office_purple",
+      "directions": 4
+    },
+    {
+      "name": "chair_comfy_office_red",
+      "directions": 4
+    },
+    {
+      "name": "chair_comfy_office_teal",
+      "directions": 4
+    },
+    {
+      "name": "comfychair_ares",
+      "directions": 4
+    },
+    {
+      "name": "hover_chair",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "hover_command",
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ],
+        [
+          0.2,
+          0.1
+        ]
+      ]
+    },
+    {
+      "name": "officechair_dark_aurora",
+      "directions": 4
+    },
+    {
+      "name": "officechair_dark_beestation",
+      "directions": 4
+    },
+    {
+      "name": "officechair_dark_cmss13",
+      "directions": 4
+    },
+    {
+      "name": "officechair_dark_eris",
+      "directions": 4
+    },
+    {
+      "name": "officechair_dark_paradise",
+      "directions": 4
+    },
+    {
+      "name": "officechair_dark_shiptest",
+      "directions": 4
+    },
+    {
+      "name": "officechair_gray",
+      "directions": 4
+    },
+    {
+      "name": "officechair_preview_dark",
+      "directions": 4
+    },
+    {
+      "name": "officechair_preview_light",
+      "directions": 4
+    },
+    {
+      "name": "officechair_purple",
+      "directions": 4
+    },
+    {
+      "name": "officechair_white_aurora",
+      "directions": 4
+    },
+    {
+      "name": "officechair_white_beestation",
+      "directions": 4
+    },
+    {
+      "name": "officechair_white_cmss13",
+      "directions": 4
+    },
+    {
+      "name": "officechair_white_eris",
+      "directions": 4
+    },
+    {
+      "name": "officechair_white_paradise",
+      "directions": 4
+    },
+    {
+      "name": "officechair_white_shiptest",
+      "directions": 4
+    }
+  ]
+}

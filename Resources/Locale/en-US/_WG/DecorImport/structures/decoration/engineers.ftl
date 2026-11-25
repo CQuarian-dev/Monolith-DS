@@ -1,0 +1,8 @@
+ent-CMEngineerConsole = giant alien console
+    .desc = A giant alien console of some kind, unlike anything you've ever seen before. Who knows the purpose of this strange technology...
+ent-CMEngineerSpaceJockey = giant pilot
+    .desc = A colossal enigma looms before you—a titan of alien origin, frozen in time and death. Its massive form appears fossilized, hinting at eons spent entombed within the bowels of the derelict alien vessel. The creature seems fused with the grandeur of its chair, as if emerging from the very essence of the ship itself. Bones, twisted and contorted, protrude outward in a macabre display, as if violently expelled from within by some unimaginable force. It's a harrowing encounter with an enigmatic being from a bygone era—a silent witness to mysteries that may never be unraveled.
+ent-CMEngineerGiantPod = colossal hypersleep chamber
+    .desc = Before you stands an imposing structure, what looks like a colossal 'hypersleep chamber' of alien design, unlike anything you've ever encountered. Its intricate patterns and unfamiliar symbols hint at technologies far beyond human comprehension. Yet, despite its grandeur, the chamber is empty, devoid of any sign of life.
+ent-CMEngineerGiantPodBroken = giant hypersleep chamber
+    .desc = Before you lies a behemoth of what looks like a 'hypersleep chamber', dwarfing everything around it. Within, a fossilized alien presence lies dormant. The chamber itself bears the scars of a violent past, with holes melted in its outer shell, as if something within had erupted outwards with some unknown force. The desiccated remains of the occupant are twisted and contorted, suggesting a violent demise that occurred long ago.

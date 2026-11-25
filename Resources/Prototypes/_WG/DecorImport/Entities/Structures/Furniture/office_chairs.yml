@@ -1,0 +1,713 @@
+- type: entity
+  parent: StoolBase
+  id: AuroraChairOfficeDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_dark_aurora
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairOfficeDark
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairOfficeLight
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_white_aurora
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildAuroraChairOfficeLight
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairOfficeBridge
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: bridge
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: AuroraChairOfficeHover
+  suffix: hover
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: hover_chair
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: AuroraOfficeHoverCommand
+  suffix: command
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: hover_command
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: OfficeChairBase
+  id: BayChairOfficeDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_preview_dark
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairOfficeDark
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: BayChairOfficeLight
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_preview_light
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBayChairOfficeLight
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: BeeChairOffice
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_dark_beestation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeChairOffice
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: BeeChairOfficeLight
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_white_beestation
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildBeeChairOfficeLight
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: CMChairOfficeDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_dark_cmss13
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCMChairOfficeDark
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: CMChairOfficeLight
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_white_cmss13
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildCMChairOfficeLight
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ErisChairOfficeDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_dark_eris
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisChairOfficeDark
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ErisChairOfficeLight
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_white_eris
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildErisChairOfficeLight
+    node: built
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairOfficeBlue
+  suffix: blue
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: office_chair_blue
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairOfficeGreen
+  suffix: green
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: office_chair_green
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairOfficePurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: office_chair_purple
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairOfficeRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: office_chair_red
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairOfficeYellow
+  suffix: yellow
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: office_chair_yellow
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonChairOfficeSyndie
+  suffix: syndie
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: syndiechair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: StoolBase
+  id: GoonStoolChairOffice
+  suffix: stool
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs_goonstation.rsi
+    state: office_chair
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: OfficeChairBase
+  id: ParaChairOffice
+  suffix: office
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_white_paradise
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildParaChairOffice
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ParaChairOfficeDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_dark_paradise
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildParaChairOfficeDark
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ShiptestChairOffice
+  suffix: office
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_gray
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairOffice
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ShiptestChairOfficeDark
+  suffix: dark
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_dark_shiptest
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairOfficeDark
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ShiptestChairOfficeLight
+  suffix: light
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_white_shiptest
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairOfficeLight
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: ShiptestChairOfficePurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: officechair_purple
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildShiptestChairOfficePurple
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: NebulaChairOfficeComfy
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: chair_comfy_office
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaChairOfficeComfy
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: NebulaOfficeComfyPurple
+  suffix: purple
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: chair_comfy_office_purple
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaOfficeComfyPurple
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: NebulaOfficeComfyRed
+  suffix: red
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: chair_comfy_office_red
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaOfficeComfyRed
+    node: built
+
+- type: entity
+  parent: OfficeChairBase
+  id: NebulaOfficeComfyTeal
+  suffix: teal
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: chair_comfy_office_teal
+    snapCardinals: false
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildNebulaOfficeComfyTeal
+    node: built
+
+- type: entity
+  parent: ChairBase
+  id: CMChairComfyAres
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: comfychair_ares
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  parent: ChairBase
+  id: VoreBayComfyCaptain
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Furniture/office_chairs.rsi
+    state: capchair_preview
+    snapCardinals: false
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+  - type: StaticPrice
+    price: 30.0
+  - type: Construction
+    graph: DecorBuildVoreBayComfyCaptain
+    node: built

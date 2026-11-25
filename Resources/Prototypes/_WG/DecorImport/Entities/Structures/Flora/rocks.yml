@@ -1,0 +1,854 @@
+- type: entity
+  parent: BaseRock
+  id: AuroraFloraRockAdhomai
+  suffix: adhomai
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rock1_aurora
+    offset: "0,0"
+    layers:
+    - state: rock1_aurora
+
+- type: entity
+  parent: BaseRock
+  id: AuroraFloraRockDesert
+  suffix: desert
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: desert_rock
+    offset: "0,0"
+    layers:
+    - state: desert_rock
+
+- type: entity
+  parent: BaseRock
+  id: AuroraFloraRockIce
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rock_1
+    offset: "0,0"
+    layers:
+    - state: rock_1
+
+- type: entity
+  parent: BaseRock
+  id: AuroraFloraRockKonyang
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rock_aurora
+    offset: "0,0"
+    layers:
+    - state: rock_aurora
+
+- type: entity
+  parent: BaseRock
+  id: AuroraFloraRockSnow
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rocklarge1
+    offset: "0,0"
+    layers:
+    - state: rocklarge1
+
+- type: entity
+  parent: BaseRock
+  id: AuroraRockKonyangMoss
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: moss
+    offset: "0,0"
+    layers:
+    - state: moss
+
+- type: entity
+  parent: BaseRock
+  id: AuroraRockKonyangSmall
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: pebble
+    offset: "0,0"
+    layers:
+    - state: pebble
+
+- type: entity
+  parent: BaseRock
+  id: AuroraRockKonyangWater
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rock_water
+    offset: "0,0"
+    layers:
+    - state: rock_water
+
+- type: entity
+  parent: BaseRock
+  id: CMBouldersSmallboulderdarkBoulderDark3
+  suffix: smallboulderdark dark3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: bouldersmalldark3
+    offset: "0,0"
+    layers:
+    - state: bouldersmalldark3
+
+- type: entity
+  parent: BaseRock
+  id: CMDamBoulderBoulder3
+  suffix: boulder3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: boulder3
+    offset: "0,0"
+    layers:
+    - state: boulder3
+
+- type: entity
+  parent: BaseRock
+  id: CMHybrisaBouldersSmallboulderdark
+  suffix: smallboulderdark
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: bouldersmalldark1
+    offset: "0,0"
+    layers:
+    - state: bouldersmalldark1
+
+- type: entity
+  parent: BaseRock
+  id: CMPropDamBoulder
+  suffix: dam
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: boulder1
+    offset: "0,0"
+    layers:
+    - state: boulder1
+
+- type: entity
+  parent: BaseRock
+  id: CMPropRock
+  suffix: rock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rock_cmss13
+    offset: "0,0"
+    layers:
+    - state: rock_cmss13
+
+- type: entity
+  parent: BaseRock
+  id: CMPropRockBrownDegree
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: educated_rock
+    offset: "0,0"
+    layers:
+    - state: educated_rock
+
+- type: entity
+  parent: BaseRock
+  id: CMRockBlackGroundDense
+  suffix: dense
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: black_ground_alt
+    offset: "0,0"
+    layers:
+    - state: black_ground_alt
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: CMRockBlackGroundDense
+  id: CMRockBlackGroundDense2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: CMRockBlackGroundDense
+  id: CMRockBlackGroundDense3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: CMRockBlackGroundDense
+  id: CMRockBlackGroundDense4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: BaseRock
+  id: DarkPackFloraRockDarkpack
+  suffix: darkpack
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rock1_darkpack
+    offset: "0,0"
+    layers:
+    - state: rock1_darkpack
+
+- type: entity
+  parent: BaseRock
+  id: GoonStone
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
+    state: stone
+    offset: "0,0"
+    layers:
+    - state: stone
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone5
+  components:
+  - type: Sprite
+    overrideDir: SouthEast
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone6
+  components:
+  - type: Sprite
+    overrideDir: SouthWest
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone7
+  components:
+  - type: Sprite
+    overrideDir: NorthEast
+
+- type: entity
+  parent: GoonStone
+  id: GoonStone8
+  components:
+  - type: Sprite
+    overrideDir: NorthWest
+
+- type: entity
+  parent: BaseRock
+  id: GoonStoneSnow
+  suffix: snow
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
+    state: snowstone
+    offset: "0,0"
+    layers:
+    - state: snowstone
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: GoonStoneSnow
+  id: GoonStoneSnow2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonStoneSnow
+  id: GoonStoneSnow3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: GoonStoneSnow
+  id: GoonStoneSnow4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: BaseRock
+  id: GoonFakeobjectMoonrock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
+    state: moonrock
+    offset: "0,0"
+    layers:
+    - state: moonrock
+    snapCardinals: false
+    enableOverrideDir: true
+    overrideDir: South
+
+- type: entity
+  parent: GoonFakeobjectMoonrock
+  id: GoonFakeobjectMoonrock2
+  components:
+  - type: Sprite
+    overrideDir: North
+
+- type: entity
+  parent: GoonFakeobjectMoonrock
+  id: GoonFakeobjectMoonrock3
+  components:
+  - type: Sprite
+    overrideDir: East
+
+- type: entity
+  parent: GoonFakeobjectMoonrock
+  id: GoonFakeobjectMoonrock4
+  components:
+  - type: Sprite
+    overrideDir: West
+
+- type: entity
+  parent: BaseRock
+  id: GoonFakeobjectRockpile
+  suffix: rockpile
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
+    state: smallrock
+    offset: "0,0"
+    layers:
+    - state: smallrock
+
+- type: entity
+  parent: BaseRock
+  id: GoonFakeobjectRockpileBig
+  suffix: big
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
+    state: bigrock
+    offset: "0,0"
+    layers:
+    - state: bigrock
+
+- type: entity
+  parent: BaseRock
+  id: ParaFloraRockPile
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: rockpile1
+    offset: "0,0"
+    layers:
+    - state: rockpile1
+
+- type: entity
+  parent: BaseRock
+  id: PolarisPropRockRound
+  suffix: round
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: basalt4
+    offset: "0,0"
+    layers:
+    - state: basalt4
+
+- type: entity
+  parent: BaseRock
+  id: PolarisPropRockWater
+  suffix: water
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: basalt_water2
+    offset: "0,0"
+    layers:
+    - state: basalt_water2
+
+- type: entity
+  parent: BaseRock
+  id: PolarisPropRockWatersharp
+  suffix: watersharp
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: basalt_water1
+    offset: "0,0"
+    layers:
+    - state: basalt_water1
+
+- type: entity
+  parent: BaseRock
+  id: PolarisRockSmallAlt
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: lavarocks2
+    offset: "0,0"
+    layers:
+    - state: lavarocks2
+
+- type: entity
+  parent: BaseRock
+  id: PolarisRockSmallWater
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: waterrocks1
+    offset: "0,0"
+    layers:
+    - state: waterrocks1
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestFloraRockIcy
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: snowrock_1
+    offset: "0,0"
+    layers:
+    - state: snowrock_1
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestRockPileIcy
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: snowrock_4
+    offset: "0,0"
+    layers:
+    - state: snowrock_4
+
+- type: entity
+  parent: BaseRock
+  id: TgFloraRockVolcano
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: volcano_1
+    offset: "0,0"
+    layers:
+    - state: volcano_1
+  - type: PointLight
+    radius: 3.5
+    energy: 2.5
+
+- type: entity
+  parent: BaseRock
+  id: VoreFloraSmallbould
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: smallerboulder
+    offset: "0,0"
+    layers:
+    - state: smallerboulder
+
+- type: entity
+  parent: BaseRock
+  id: VoreFloraBboulder1
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: bigboulder1
+    offset: "0,0"
+    layers:
+    - state: bigboulder1
+
+- type: entity
+  parent: BaseRock
+  id: VoreFloraBboulder2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: bigboulder2
+    offset: "0,0"
+    layers:
+    - state: bigboulder2
+
+- type: entity
+  parent: BaseRock
+  id: VorePropRockCrystal
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: bsc
+    offset: "0,0"
+    layers:
+    - state: bsc
+
+- type: entity
+  parent: BaseRock
+  id: VorePropRockCrystalDust
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
+    state: bsc_dust
+    offset: "0,0"
+    layers:
+    - state: bsc_dust
+
+- type: entity
+  parent: BaseRock
+  id: CMHybrisaBouldersWideBoulderdark
+  suffix: boulderdark
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x32.rsi
+    state: boulderwidedark
+    offset: "0.500,0.0"
+    layers:
+    - state: boulderwidedark
+
+- type: entity
+  parent: BaseRock
+  id: CMBouldersLargeBoulderdarkBoulderDark2
+  suffix: dark2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: boulder_largedark2
+    offset: "0.500,0.500"
+    layers:
+    - state: boulder_largedark2
+
+- type: entity
+  parent: BaseRock
+  id: CMPropHybrisaBoulders
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: boulder_largedark1
+    offset: "0.500,0.500"
+    layers:
+    - state: boulder_largedark1
+
+- type: entity
+  parent: BaseRock
+  id: DarkPackFloraRockDarkpackBig
+  suffix: big
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: rock1
+    offset: "0.500,0.500"
+    layers:
+    - state: rock1
+
+- type: entity
+  parent: BaseRock
+  id: DarkPackFloraRockStalagmite
+  suffix: stalagmite
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: stalagmite1
+    offset: "0.500,0.500"
+    layers:
+    - state: stalagmite1
+
+- type: entity
+  parent: BaseRock
+  id: CoyoteChompBonesLrock
+  suffix: lrock
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: lrock
+    offset: "0.500,0.500"
+    layers:
+    - state: lrock
+
+- type: entity
+  parent: BaseRock
+  id: CoyoteChompBonesLrock2
+  suffix: lrock2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: lrock2
+    offset: "0.500,0.500"
+    layers:
+    - state: lrock2
+
+- type: entity
+  parent: BaseRock
+  id: CoyoteChompBonesLrock4
+  suffix: lrock4
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: lrock4
+    offset: "0.500,0.500"
+    layers:
+    - state: lrock4
+
+- type: entity
+  parent: BaseRock
+  id: BubberJungleLargeStyle2
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: rocks2
+    offset: "0,0"
+    layers:
+    - state: rocks2
+
+- type: entity
+  parent: BaseRock
+  id: NovaJungleLargeStyle3
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: rocks3
+    offset: "0,0"
+    layers:
+    - state: rocks3
+
+- type: entity
+  parent: BaseRock
+  id: TgPileJungleLarge
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_64x64.rsi
+    state: rocks1
+    offset: "0,0"
+    layers:
+    - state: rocks1
+
+- type: entity
+  parent: BaseRock
+  id: ShiptestFloraRockCrystal
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_32x64.rsi
+    state: crystal
+    offset: "0.0,0.500"
+    layers:
+    - state: crystal
+
+- type: entity
+  parent: BaseRock
+  id: TgFloraRockSideriteGrowth
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_32x64.rsi
+    state: siderite_growth1
+    offset: "0.0,0.500"
+    layers:
+    - state: siderite_growth1
+
+- type: entity
+  parent: BaseRock
+  id: PolarisOutcropCoal
+  suffix: Coal
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Decoration/outcrops_polaris.rsi
+    state: outcrop-coal
+  - type: SoundOnGather
+  - type: Gatherable
+    toolWhitelist:
+      tags:
+      - Pickaxe
+      components:
+      - MiningGatheringHard
+      - MiningGatheringSoft
+  - type: OreVein
+    oreChance: 1.0
+    currentOre: NFOreCoal
+
+- type: entity
+  parent: PolarisOutcropCoal
+  id: PolarisOutcropDiamond
+  suffix: Diamond
+  components:
+  - type: Sprite
+    state: outcrop-diamond
+  - type: OreVein
+    currentOre: OreDiamond
+
+- type: entity
+  parent: PolarisOutcropCoal
+  id: PolarisOutcropGold
+  suffix: Gold
+  components:
+  - type: Sprite
+    state: outcrop-gold
+  - type: OreVein
+    currentOre: NFOreGold
+
+- type: entity
+  parent: PolarisOutcropCoal
+  id: PolarisOutcropIron
+  suffix: Iron
+  components:
+  - type: Sprite
+    state: outcrop-iron
+  - type: OreVein
+    currentOre: NFOreSteel
+
+- type: entity
+  parent: PolarisOutcropCoal
+  id: PolarisOutcropPhoron
+  suffix: Plasma
+  components:
+  - type: Sprite
+    state: outcrop-phoron
+  - type: OreVein
+    currentOre: NFOrePlasma
+
+- type: entity
+  parent: PolarisOutcropCoal
+  id: PolarisOutcropSilver
+  suffix: Silver
+  components:
+  - type: Sprite
+    state: outcrop-silver
+  - type: OreVein
+    currentOre: NFOreSilver
+
+- type: entity
+  parent: PolarisOutcropCoal
+  id: PolarisOutcropUranium
+  suffix: Uranium
+  components:
+  - type: Sprite
+    state: outcrop-uranium
+  - type: OreVein
+    currentOre: NFOreUranium

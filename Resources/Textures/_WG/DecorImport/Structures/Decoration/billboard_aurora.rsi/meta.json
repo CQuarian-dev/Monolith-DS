@@ -1,0 +1,74 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Taken from Aurora at commit https://github.com/Aurorastation/Aurora.3/commit/4c83a7bac48311e4e0fd9449a27980ca35eed7a7.",
+    "size": {
+        "x": 96,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "billboard"
+        },
+        {
+            "name": "billboard_nolegs"
+        },
+        {
+            "name": "sign"
+        },
+        {
+            "name": "sign_generic2"
+        },
+        {
+            "name": "sign_generic3"
+        },
+        {
+            "name": "sign_generic4"
+        },
+        {
+            "name": "sign_generic5"
+        },
+        {
+            "name": "sign_generic6"
+        },
+        {
+            "name": "sign_generic7"
+        },
+        {
+            "name": "sign_generic8"
+        },
+        {
+            "name": "sign_konyang1"
+        },
+        {
+            "name": "sign_konyang2"
+        },
+        {
+            "name": "sign_konyang3"
+        },
+        {
+            "name": "sign_konyang4"
+        },
+        {
+            "name": "sign_konyang5"
+        },
+        {
+            "name": "sign_konyang6"
+        },
+        {
+            "name": "sign_konyang7"
+        },
+        {
+            "name": "sign_konyang8"
+        },
+        {
+            "name": "sign_konyang9"
+        },
+        {
+            "name": "sign_konyang10"
+        },
+        {
+            "name": "sign_konyang11"
+        }
+    ]
+}

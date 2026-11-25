@@ -1,0 +1,4 @@
+- files: [ covenant_pattern.png, covenant_smooth_plating.png, covenant_smooth_plating_sides.png, covenant_plating.png, covenant_smooth_plating_corner.png, covenant_paneling.png, covenant_smooth_plating_lane.png, covenant_smooth_plating_endcap.png, covenant_smooth_plating_outer_corner.png ]
+  license: CC-BY-SA-3.0
+  copyright: "Taken from https://github.com/cmss13-devs/cmss13-pve-halo/blob/77ab39636942a7d938632c8637aeae2aec75b6b1/icons/halo/turf/floors/covenant.dmi (states pattern, smooth_plating, smooth_plating_sides, plating, smooth_plating_corner, paneling, smooth_plating_lane, smooth_plating_endcap, first direction, and smooth_plating_sides southwest direction)."
+  source: "https://github.com/cmss13-devs/cmss13-pve-halo"

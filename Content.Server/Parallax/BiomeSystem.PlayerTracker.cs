@@ -30,6 +30,7 @@ public sealed partial class BiomeSystem
                 CanLoad(pSession.AttachedEntity.Value))
             {
                 var worldPos = _transform.GetWorldPosition(xform);
+                WgNoteBodyLoader(biome, worldPos); // WOLFGATE(Planets): a planet layer loads nearest its loaders first
                 AddChunksInRange(biome, worldPos);
 
                 foreach (var layer in biome.MarkerLayers)
@@ -51,7 +52,8 @@ public sealed partial class BiomeSystem
                 }
 
                 var worldPos = _transform.GetWorldPosition(xform);
-                AddChunksInRange(biome, worldPos);
+                WgNoteLoader(biome, worldPos, WgLoadNowEyeRing); // WOLFGATE(Planets): less loads at once round an eye than round a body
+                AddChunksInRange(biome, worldPos, WgEyeLoadArea(xform)); // WOLFGATE(Planets): an eye on a cavern loads a box sized to its view
 
                 foreach (var layer in biome.MarkerLayers)
                 {
@@ -67,9 +69,9 @@ public sealed partial class BiomeSystem
         return !_ghostQuery.HasComp(uid) || _tags.HasTag(uid, AllowBiomeLoadingTag);
     }
 
-    private void AddChunksInRange(BiomeComponent biome, Vector2 worldPos)
+    private void AddChunksInRange(BiomeComponent biome, Vector2 worldPos, Box2? area = null) // WOLFGATE(Planets): an eye may load a smaller box
     {
-        var enumerator = new ChunkIndicesEnumerator(_loadArea.Translated(worldPos), ChunkSize);
+        var enumerator = new ChunkIndicesEnumerator((area ?? _loadArea).Translated(worldPos), ChunkSize); // WOLFGATE(Planets): an eye may load a smaller box
 
         while (enumerator.MoveNext(out var chunkOrigin))
         {

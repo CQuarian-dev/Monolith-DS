@@ -1,0 +1,41 @@
+- type: constructionGraph
+  id: DecorBuildGoonStoolPetBed
+  start: start
+  graph:
+  - node: start
+  - node: built
+    entity: GoonStoolPetBed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialCloth1
+        amount: 2
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2
+
+- type: constructionGraph
+  id: DecorBuildShiptestBedDogbed
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: built
+      steps:
+      - material: WoodPlank
+        amount: 10
+        doAfter: 2
+  - node: built
+    entity: ShiptestBedDogbed
+    edges:
+    - to: start
+      completed:
+      - !type:SpawnPrototype
+        prototype: MaterialWoodPlank1
+        amount: 10
+      - !type:DeleteEntity {}
+      steps:
+      - tool: Screwing
+        doAfter: 2

@@ -1,0 +1,8 @@
+- type: entity
+  parent: Window
+  id: InsurrectionWindowCovenant
+  components:
+  - type: Sprite
+    sprite: _WG/DecorImport/Structures/Windows/covenant_insurrection.rsi
+  - type: Icon
+    sprite: _WG/DecorImport/Structures/Windows/covenant_insurrection.rsi

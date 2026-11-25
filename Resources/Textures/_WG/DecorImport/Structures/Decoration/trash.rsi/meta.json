@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from DarkPack at commit https://github.com/DarkPack13/SecondCity/commit/2a1e8fd0ccf64a5fd40504b20b1e1f76774f5ecc.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "garbage1_old"
+    },
+    {
+      "name": "garbage2_old"
+    },
+    {
+      "name": "garbage3_old"
+    },
+    {
+      "name": "garbage4_old"
+    },
+    {
+      "name": "garbage5_old"
+    },
+    {
+      "name": "garbage6_old"
+    },
+    {
+      "name": "garbage7_old"
+    },
+    {
+      "name": "garbage8_old"
+    },
+    {
+      "name": "garbage9_old"
+    },
+    {
+      "name": "cardboard1"
+    },
+    {
+      "name": "cardboard2"
+    },
+    {
+      "name": "cardboard3"
+    },
+    {
+      "name": "cardboard4"
+    },
+    {
+      "name": "cardboard5"
+    }
+  ]
+}
