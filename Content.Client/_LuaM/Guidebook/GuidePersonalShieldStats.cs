@@ -17,7 +17,7 @@ public sealed class GuidePersonalShieldStats : BoxContainer
     {
         HorizontalExpand = true;
         SeparationOverride = 8;
-        var visuals = suit != null && suit.TryGetComponent<PersonalShieldComponent>(out var field, IoCManager.Resolve<IComponentFactory>())
+        var visuals = suit != null && suit.TryComp<PersonalShieldComponent>(out var field, IoCManager.Resolve<IComponentFactory>())
             ? field.Visuals : new PersonalShieldVisuals();
         var image = new BoxContainer { Orientation = LayoutOrientation.Vertical, SetWidth = 128,
             Margin = new Thickness(5), VerticalAlignment = VAlignment.Top };

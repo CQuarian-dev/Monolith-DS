@@ -289,7 +289,7 @@ public sealed partial class WGPlanetPreloadSystem : EntitySystem
             }
 
             anchored.Clear();
-            var enumerator = _map.GetAnchoredEntitiesEnumerator(ground, ground.Comp2, tile);
+            var enumerator = _map.GetAnchoredEntities(ground, ground.Comp2, tile);
 
             while (enumerator.MoveNext(out var uid))
             {

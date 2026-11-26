@@ -61,7 +61,7 @@ public sealed partial class WaterOverlay : GridOverlay
         var handle = args.WorldHandle;
         var tileSize = grid.Comp.TileSize;
 
-        var enumerator = _mapSystem.GetTilesEnumerator(grid.Owner, grid.Comp, args.WorldBounds);
+        var enumerator = _mapSystem.GetTilesIntersecting(grid.Owner, grid.Comp, args.WorldBounds);
         var drew = false;
 
         _vertices.Clear();

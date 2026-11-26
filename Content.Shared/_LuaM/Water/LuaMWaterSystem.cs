@@ -46,7 +46,7 @@ public sealed partial class LuaMWaterSystem : EntitySystem
         }
 
         var tile = _map.TileIndicesFor(grid, gridComp, xform.Coordinates);
-        var anchored = _map.GetAnchoredEntitiesEnumerator(grid, gridComp, tile);
+        var anchored = _map.GetAnchoredEntities(grid, gridComp, tile);
         while (anchored.MoveNext(out var ent))
         {
             // -- Замёрзшая вода держит как мостки: не топит и не тормозит технику

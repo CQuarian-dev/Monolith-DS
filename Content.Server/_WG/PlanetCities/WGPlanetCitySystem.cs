@@ -13,7 +13,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Server._WG.PlanetCities;
 
 /// <summary>Gives a world with a fixed city as many underground layers as the city has levels below the street.</summary>
-public sealed class WGPlanetCitySystem : EntitySystem
+public sealed partial class WGPlanetCitySystem : EntitySystem
 {
     [Dependency] private BiomeSystem _biome = default!;
     [Dependency] private IConfigurationManager _cfg = default!;

@@ -145,7 +145,7 @@ public sealed partial class WGPlanetPoiSystem
         if (_maps.GetTileRef(grid.Owner, grid.Comp, tile).Tile.IsEmpty)
             return true;
 
-        var anchored = _maps.GetAnchoredEntitiesEnumerator(grid.Owner, grid.Comp, tile);
+        var anchored = _maps.GetAnchoredEntities(grid.Owner, grid.Comp, tile);
         while (anchored.MoveNext(out var uid))
         {
             if (TryComp<PhysicsComponent>(uid, out var body) && body.Hard && body.CanCollide || HasComp<DoorComponent>(uid))

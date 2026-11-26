@@ -59,7 +59,7 @@ public sealed partial class WGPlanetPoiSystem
 
             foreach (var pinned in biome.ModifiedTiles.Values) initialPins.UnionWith(pinned);
             TryComp<RoofComponent>(ground, out var oldRoof);
-            var before = _maps.GetAllTilesEnumerator(ground, grid);
+            var before = _maps.GetAllTiles(ground, grid);
             while (before.MoveNext(out var oldTile))
             {
                 originalTiles[oldTile.Value.GridIndices] = oldTile.Value.Tile;
@@ -392,7 +392,7 @@ public sealed partial class WGPlanetPoiSystem
             {
                 await _dungeon.GenerateDungeonAsync(config, config.ID, grid.Owner, grid.Comp, Vector2i.Zero, generationSeed);
                 var tiles = new HashSet<Vector2i>();
-                var enumerator = _maps.GetAllTilesEnumerator(grid.Owner, grid.Comp);
+                var enumerator = _maps.GetAllTiles(grid.Owner, grid.Comp);
                 while (enumerator.MoveNext(out var tile)) tiles.Add(tile.Value.GridIndices);
                 if (tiles.Count == 0)
                     throw new InvalidOperationException($"{entry.Name} generated no tiles.");
@@ -770,7 +770,7 @@ public sealed partial class WGPlanetPoiSystem
             var result = new HashSet<Vector2i>();
             var roofs = new HashSet<Vector2i>();
             TryComp<RoofComponent>(source.Owner, out var roof);
-            var enumerator = _maps.GetAllTilesEnumerator(source.Owner, source.Comp);
+            var enumerator = _maps.GetAllTiles(source.Owner, source.Comp);
             while (enumerator.MoveNext(out var tile))
             {
                 var index = tile.Value.GridIndices;
@@ -805,7 +805,7 @@ public sealed partial class WGPlanetPoiSystem
         var sourceTiles = new List<Vector2i>();
         if (turns != 0)
         {
-            var tiles = _maps.GetAllTilesEnumerator(source.Owner, source.Comp);
+            var tiles = _maps.GetAllTiles(source.Owner, source.Comp);
             while (tiles.MoveNext(out var tile))
                 sourceTiles.Add(tile.Value.GridIndices);
         }
@@ -1064,7 +1064,7 @@ public sealed partial class WGPlanetPoiSystem
             if (_biome.WgIsPinned((ground, biome), position))
                 continue;
             anchored.Clear();
-            var enumerator = _maps.GetAnchoredEntitiesEnumerator(ground, grid, position);
+            var enumerator = _maps.GetAnchoredEntities(ground, grid, position);
             while (enumerator.MoveNext(out var uid))
                 anchored.Add(uid.Value);
             foreach (var uid in anchored)

@@ -106,7 +106,7 @@ public sealed partial class WGPlanetRegistrySystem
         foreach (var ruleId in preset.Rules)
         {
             if (!_proto.TryIndex<EntityPrototype>(ruleId, out var rule)
-                || !rule.TryGetComponent<StarSystemRuleComponent>(out var starSystem, _factory)
+                || !rule.TryComp<StarSystemRuleComponent>(out var starSystem, _factory)
                 || !_proto.TryIndex(SectorLayout(starSystem.System), out var system))
                 continue;
 

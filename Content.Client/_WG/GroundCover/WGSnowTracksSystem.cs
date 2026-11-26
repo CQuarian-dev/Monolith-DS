@@ -15,7 +15,7 @@ namespace Content.Client._WG.GroundCover;
 /// Tread marks in snow cover, laid on this client from the vehicles it sees move: two lines along the hull's path. They
 /// fade with time, fill in under fresh snow, and go when the snow under them is pressed flat, shoveled or melted.
 /// </summary>
-public sealed class WGSnowTracksSystem : EntitySystem
+public sealed partial class WGSnowTracksSystem : EntitySystem
 {
     [Dependency] private WGGroundCoverSystem _cover = default!;
     [Dependency] private SharedMapSystem _map = default!;
@@ -44,7 +44,7 @@ public sealed class WGSnowTracksSystem : EntitySystem
     private int _seenVersion = -1;
 
     /// <summary>Marks laid and not yet gone.</summary>
-    public int Count { get; private set; }
+    public new int Count { get; private set; }
 
     /// <summary>Marks by grid and tile.</summary>
     public IReadOnlyDictionary<EntityUid, Dictionary<Vector2i, List<WGSnowTread>>> Marks => _marks;

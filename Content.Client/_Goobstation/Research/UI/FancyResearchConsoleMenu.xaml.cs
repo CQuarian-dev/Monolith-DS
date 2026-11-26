@@ -114,7 +114,6 @@ public sealed partial class FancyResearchConsoleMenu : FancyWindow
 
     private ParallaxControl _parallaxControl; // Frontier: Parallax control for the background
 
-    private float _verticalScrollSpeed = 50; // Frontier: Allow mouse scroll
 
     public FancyResearchConsoleMenu()
     {

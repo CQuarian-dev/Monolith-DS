@@ -13,7 +13,7 @@ public sealed partial class GuidebookCatalogSystem
 {
     private void AddPersonalShieldStats(EntityPrototype item, List<GuidebookCatalogStat> stats)
     {
-        if (!item.TryGetComponent<PersonalShieldComponent>(out var personal)) return;
+        if (!item.TryComp<PersonalShieldComponent>(out var personal, IoCManager.Resolve<IComponentFactory>())) return;
         var shield = personal.Shield;
         void Add(string label, string value) => stats.Add(new() { Label = label, Value = value });
         static string F(double value) => value.ToString("0.##", CultureInfo.GetCultureInfo("ru-RU"));
@@ -43,7 +43,7 @@ public sealed partial class GuidebookCatalogSystem
         if (hasBattery)
         {
             Add("Батарея", F(maxBattery) + " Дж; начальный заряд " + F(startingBattery) + " Дж");
-            var recharge = item.TryGetComponent<BatterySelfRechargerComponent>(out var recharger) && recharger.AutoRecharge;
+            var recharge = item.TryComp<BatterySelfRechargerComponent>(out var recharger, IoCManager.Resolve<IComponentFactory>()) && recharger.AutoRecharge;
             var rate = recharge ? recharger!.AutoRechargeRate : 0;
             Add("Самозаряд батареи", recharge ? F(rate) + " Дж/с" : "Нет");
             if (recharge && recharger!.AutoRechargePause)

@@ -219,18 +219,7 @@ public abstract partial class SharedResearchSystem : EntitySystem
 
     public void TrySetMainDiscipline(TechnologyPrototype prototype, EntityUid uid, TechnologyDatabaseComponent? component = null)
     {
-        return;
-        if (!Resolve(uid, ref component))
-            return;
-
-        var discipline = PrototypeManager.Index(prototype.Discipline);
-        if (prototype.Tier < discipline.LockoutTier)
-            return;
-        component.MainDiscipline = prototype.Discipline;
-        Dirty(uid, component);
-
-        var ev = new TechnologyDatabaseModifiedEvent();
-        RaiseLocalEvent(uid, ref ev);
+        // LuaM: research databases allow progression across disciplines.
     }
 
     /// <summary>

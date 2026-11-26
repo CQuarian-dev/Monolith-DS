@@ -395,15 +395,18 @@ public sealed partial class WGGroundCoverSystem
     /// </summary>
     private WGIceChunk? ScanIce(Entity<MapGridComponent> grid, Vector2i index, WGIceChunk? old)
     {
-        var chunk = new WGIceChunk();
+        WGIceChunk? chunk = null; // LuaM
         var origin = index * WGSnowCover.ChunkSize;
         for (var i = 0; i < WGSnowCover.ChunkArea; i++)
         {
-            if (WaterAt(grid, WGSnowCover.TileAt(index, i)) is { } water)
-                chunk.Waters[i] = water;
+            if (WaterAt(grid, WGSnowCover.TileAt(index, i)) is not { } water)
+                continue;
+
+            chunk ??= new WGIceChunk(); // LuaM
+            chunk.Waters[i] = water;
         }
 
-        if (chunk.Waters.Count == 0)
+        if (chunk == null) // LuaM
             return null;
 
         foreach (var water in chunk.Waters.Values)
@@ -484,7 +487,7 @@ public sealed partial class WGGroundCoverSystem
 
     private EntityUid? WaterAt(Entity<MapGridComponent> grid, Vector2i tile)
     {
-        var anchored = _map.GetAnchoredEntitiesEnumerator(grid, grid, tile);
+        var anchored = _map.GetAnchoredEntities(grid, grid, tile);
         while (anchored.MoveNext(out var ent))
         {
             if (HasComp<WGFreezableWaterComponent>(ent.Value))

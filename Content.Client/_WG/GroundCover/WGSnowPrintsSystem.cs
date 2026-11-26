@@ -14,7 +14,7 @@ namespace Content.Client._WG.GroundCover;
 /// time, with the snow under them as it thins, fill in as fresh snow lands on them, and go when their tile is shoveled
 /// or melts bare.
 /// </summary>
-public sealed class WGSnowPrintsSystem : EntitySystem
+public sealed partial class WGSnowPrintsSystem : EntitySystem
 {
     [Dependency] private WGGroundCoverSystem _cover = default!;
     [Dependency] private SharedGravitySystem _gravity = default!;
@@ -52,7 +52,7 @@ public sealed class WGSnowPrintsSystem : EntitySystem
     private int _seenVersion = -1;
 
     /// <summary>Prints laid and not yet gone.</summary>
-    public int Count { get; private set; }
+    public new int Count { get; private set; }
 
     /// <summary>Prints by grid and tile.</summary>
     public IReadOnlyDictionary<EntityUid, Dictionary<Vector2i, List<WGSnowPrint>>> Prints => _prints;

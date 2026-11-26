@@ -5,7 +5,7 @@ using Robust.Shared.Enums;
 namespace Content.Client._WG.GroundCover;
 
 /// <summary>Draws tread marks over the snow cover, under footprints and entities.</summary>
-public sealed class WGSnowTracksOverlay : Overlay
+public sealed partial class WGSnowTracksOverlay : Overlay
 {
     [Dependency] private IEntityManager _entMan = default!;
 

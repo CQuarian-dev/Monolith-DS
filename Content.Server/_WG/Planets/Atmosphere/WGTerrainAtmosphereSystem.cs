@@ -71,7 +71,7 @@ public sealed partial class WGTerrainAtmosphereSystem : EntitySystem
         _placeable = new HashSet<string>();
         foreach (var proto in _proto.EnumeratePrototypes<EntityPrototype>())
         {
-            if (proto.TryGetComponent<FloorTileComponent>(out var floor, _factory) && floor.OutputTiles != null)
+            if (proto.TryComp<FloorTileComponent>(out var floor, _factory) && floor.OutputTiles != null)
                 _placeable.UnionWith(floor.OutputTiles.Select(tile => tile.Id)); // LuaM: ProtoId list
         }
 

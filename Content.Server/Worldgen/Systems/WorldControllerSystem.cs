@@ -111,7 +111,7 @@ public sealed partial class WorldControllerSystem : EntitySystem
             _chunksToLoad[uid] = new Dictionary<Vector2i, List<EntityUid>>();
         }
 
-        if (_chunksToLoad.Count == 0 && EntityManager.Count<LoadedChunkComponent>() == 0) // LuaM: unload chunks of removed controllers too
+        if (_chunksToLoad.Count == 0 && Count<LoadedChunkComponent>() == 0) // LuaM: unload chunks of removed controllers too
             return; // Just bail early.
 
         CollectActiveHelmGrids(); // LuaM

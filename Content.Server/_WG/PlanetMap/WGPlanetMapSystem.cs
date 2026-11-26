@@ -21,7 +21,7 @@ namespace Content.Server._WG.PlanetMap;
 /// Draws up each world's map on its orbit layer: the ground in coarse cells once the world exists, its roads, footpaths
 /// and tunnels as polylines and its sites once they are placed, and a site's name once someone identifies it.
 /// </summary>
-public sealed class WGPlanetMapSystem : EntitySystem
+public sealed partial class WGPlanetMapSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private IGameTiming _timing = default!;

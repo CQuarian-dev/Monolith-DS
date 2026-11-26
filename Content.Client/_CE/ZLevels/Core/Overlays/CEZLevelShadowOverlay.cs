@@ -131,7 +131,7 @@ public sealed partial class CEZLevelShadowOverlay : Overlay
                     var matty = Matrix3x2.Multiply(gridMatrix, invMatrix);
                     worldHandle.SetTransform(matty);
 
-                    var tileEnumerator = _mapSystem.GetTilesEnumerator(grid.Owner, grid, bounds);
+                    var tileEnumerator = _mapSystem.GetTilesIntersecting(grid.Owner, grid, bounds);
                     while (tileEnumerator.MoveNext(out var tileRef))
                     {
                         var tileDef = (ContentTileDefinition) _tileDefMan[tileRef.Tile.TypeId];

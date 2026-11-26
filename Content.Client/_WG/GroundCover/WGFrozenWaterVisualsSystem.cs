@@ -11,7 +11,7 @@ namespace Content.Client._WG.GroundCover;
 /// Draws frozen water with ice art in the water's own shore shapes, and hides it under snow cover so the snow drawn on
 /// the ground shows.
 /// </summary>
-public sealed class WGFrozenWaterVisualsSystem : EntitySystem
+public sealed partial class WGFrozenWaterVisualsSystem : EntitySystem
 {
     [Dependency] private IResourceCache _resources = default!;
     [Dependency] private SharedMapSystem _map = default!;

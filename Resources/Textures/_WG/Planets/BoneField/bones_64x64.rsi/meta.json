@@ -8,16 +8,7 @@
   },
   "states": [
     {
-      "name": "lbone"
-    },
-    {
       "name": "lribs"
-    },
-    {
-      "name": "lribs1"
-    },
-    {
-      "name": "lskull_wood"
     }
   ]
 }

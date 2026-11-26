@@ -4,7 +4,7 @@ using Content.Shared._WG.Planets;
 namespace Content.Server._WG.Planets;
 
 /// <summary>Names the layers of a planet network that come unnamed, so the shuttle map can tell them apart.</summary>
-public sealed class WGPlanetLayerNameSystem : EntitySystem
+public sealed partial class WGPlanetLayerNameSystem : EntitySystem
 {
     [Dependency] private MetaDataSystem _meta = default!;
 

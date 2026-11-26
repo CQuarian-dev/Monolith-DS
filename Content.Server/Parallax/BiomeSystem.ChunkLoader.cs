@@ -3,6 +3,7 @@ using Content.Shared.Decals; // LuaM
 using Content.Shared.Parallax.Biomes;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
+using Robust.Shared.Utility; // LuaM
 using System.Linq;
 
 
@@ -143,8 +144,7 @@ public sealed partial class BiomeSystem
         int seed,
         HashSet<Vector2i> modified)
     {
-        var loadedDecals = new Dictionary<uint, Vector2i>();
-        component.LoadedDecals.Add(chunk, loadedDecals);
+        Dictionary<uint, Vector2i>? loadedDecals = null; // LuaM
 
         _chunkLoaderDecals.Clear();
 
@@ -167,6 +167,7 @@ public sealed partial class BiomeSystem
             if (_decals.TryAddDecal(new Decal(coords.Position + offset, decalId, null, Angle.Zero, 0, false), coords, out var dec))
             {
                 var tilePos = _mapSystem.LocalToTile(gridUid, grid, coords);
+                loadedDecals ??= component.LoadedDecals.GetOrNew(chunk); // LuaM
                 loadedDecals.Add(dec, tilePos);
             }
         }

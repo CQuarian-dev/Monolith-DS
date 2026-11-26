@@ -7,7 +7,7 @@ using Robust.Shared.Utility;
 namespace Content.Client._WG.GroundCover;
 
 /// <summary>Draws footprints over the snow cover, under entities.</summary>
-public sealed class WGSnowPrintsOverlay : Overlay
+public sealed partial class WGSnowPrintsOverlay : Overlay
 {
     [Dependency] private IEntityManager _entMan = default!;
 

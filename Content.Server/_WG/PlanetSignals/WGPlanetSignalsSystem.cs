@@ -23,7 +23,7 @@ namespace Content.Server._WG.PlanetSignals;
 /// Keeps each sector body's list of the vessels on its world's layers, the sites on its ground and the people on it:
 /// counted, and named only where a medical tracking implant gives them away.
 /// </summary>
-public sealed class WGPlanetSignalsSystem : EntitySystem
+public sealed partial class WGPlanetSignalsSystem : EntitySystem
 {
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private SharedStationSystem _station = default!;

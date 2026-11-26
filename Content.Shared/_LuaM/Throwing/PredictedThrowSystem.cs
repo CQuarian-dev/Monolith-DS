@@ -128,7 +128,7 @@ public sealed partial class PredictedThrowSystem : EntitySystem
         if (!_map.TryFindGridAt(mapCoords, out var gridUid, out var grid))
             return false;
 
-        var anchored = _map.GetAnchoredEntitiesEnumerator(gridUid, grid, _map.TileIndicesFor(gridUid, grid, mapCoords));
+        var anchored = _map.GetAnchoredEntities(gridUid, grid, _map.TileIndicesFor(gridUid, grid, mapCoords));
         while (anchored.MoveNext(out var ent))
         {
             if (HasComp<ThrowInsertContainerComponent>(ent))

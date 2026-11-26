@@ -12,7 +12,7 @@ namespace Content.Server._WG.Planets;
 /// Holds the round start while a round-start world built in the lobby is still generating, for at most
 /// wg.planet_round_hold_max seconds, and starts the round itself once they are done or the time is up.
 /// </summary>
-public sealed class WGPlanetRoundHoldSystem : EntitySystem
+public sealed partial class WGPlanetRoundHoldSystem : EntitySystem
 {
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private IConfigurationManager _cfg = default!;

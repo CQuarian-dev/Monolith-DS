@@ -4,7 +4,7 @@ using Robust.Shared.Player;
 namespace Content.Server._WG.GroundCover;
 
 /// <summary>Snow slowdown and footsteps from the depths clients were sent, as each player's client has them.</summary>
-public sealed class WGSnowSlowSystem : SharedWGSnowSlowSystem
+public sealed partial class WGSnowSlowSystem : SharedWGSnowSlowSystem
 {
     [Dependency] private WGGroundCoverSystem _cover = default!;
     [Dependency] private ISharedPlayerManager _player = default!;

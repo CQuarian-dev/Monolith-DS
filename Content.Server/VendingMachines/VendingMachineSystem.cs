@@ -634,26 +634,7 @@ namespace Content.Server.VendingMachines
 
         private void OnPriceCalculation(EntityUid uid, VendingMachineRestockComponent component, ref PriceCalculationEvent args)
         {
-            args.Price = 0; // This area of the code make it so the cargoblacklist gets ignored, this change was to resolve it.
-            return;
-
-            List<double> priceSets = new();
-            // Find the most expensive inventory and use that as the highest price.
-            foreach (var vendingInventory in component.CanRestock)
-            {
-                double total = 0;
-                if (PrototypeManager.TryIndex(vendingInventory, out VendingMachineInventoryPrototype? inventoryPrototype))
-                {
-                    foreach (var (item, amount) in inventoryPrototype.StartingInventory)
-                    {
-                        if (PrototypeManager.TryIndex(item, out EntityPrototype? entity))
-                            total += _pricing.GetEstimatedPrice(entity) * amount;
-                    }
-                }
-                priceSets.Add(total);
-            }
-
-            args.Price += priceSets.Max();
+            args.Price = 0; // LuaM: restock inventory must respect the cargo blacklist.
         }
 
         //private void OnEmpPulse(EntityUid uid, VendingMachineComponent component, ref EmpPulseEvent args) // Frontier: Upstream - #28984

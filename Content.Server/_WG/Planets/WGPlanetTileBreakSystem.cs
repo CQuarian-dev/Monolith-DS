@@ -12,7 +12,7 @@ namespace Content.Server._WG.Planets;
 /// and natural ground that breaks down through them on purpose (Carcinoma's flesh, opening into the caverns) is left be.
 /// A blast never leaves plating or lattice on the ground at all (<see cref="BlastTile"/>).
 /// </summary>
-public sealed class WGPlanetTileBreakSystem : EntitySystem
+public sealed partial class WGPlanetTileBreakSystem : EntitySystem
 {
     [Dependency] private SharedBiomeSystem _biome = default!;
     [Dependency] private SharedMapSystem _map = default!;

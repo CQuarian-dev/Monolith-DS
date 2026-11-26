@@ -16,7 +16,7 @@ namespace Content.Server._Crescent.Hardpoint;
 /// <summary>
 /// This handles...
 /// </summary>
-public sealed partial class HardpointSystem : SharedHardpointSystem
+public sealed partial class HardpointSystem : EntitySystem
 {
     [Dependency] private FireControlSystem _fcsSystem = default!;
     [Dependency] private IGameTiming _gameTiming = default!;
@@ -24,13 +24,16 @@ public sealed partial class HardpointSystem : SharedHardpointSystem
     [Dependency] private SharedGunSystem _gun = default!;
     [Dependency] private EntityLookupSystem _lookupSystem = default!;
     [Dependency] private SharedMapSystem _maps = default!; // LuaM
+    [Dependency] private SharedHardpointSystem _sharedHardpoints = default!; // LuaM
     // Explosions can cause a lot of lookups and events to fire. So we time-limit it based on grids
     private const float UpdateDelay = 2f; // LuaM: 60 > 2, a swapped gun stayed unusable for up to a minute
     private float InternalTimer = 0f;
     private HashSet<EntityUid> QueuedGrids = new();
+
     /// <inheritdoc/>
     public override void Initialize()
     {
+        base.Initialize();
         SubscribeLocalEvent<FixturesComponent, AnchorStateChangedEvent>(OnFixtureAnchor);
         SubscribeLocalEvent<HardpointComponent, HardpointCannonAnchoredEvent>(OnCannonAnchor);
         SubscribeLocalEvent<HardpointComponent, HardpointCannonDeanchoredEvent>(OnCannonDeanchor);
@@ -60,7 +63,7 @@ public sealed partial class HardpointSystem : SharedHardpointSystem
                 continue;
 
             gun.anchoredTo = null;
-            if (TryAnchorToHardpoint(other, gun))
+            if (_sharedHardpoints.TryAnchorToHardpoint(other, gun))
                 return;
         }
     }

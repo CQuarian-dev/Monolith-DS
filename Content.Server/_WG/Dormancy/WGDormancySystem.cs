@@ -20,7 +20,7 @@ namespace Content.Server._WG.Dormancy;
 /// Says whether a spot on a planet is near a player, so systems can leave planet ground nobody is on alone.
 /// Off-planet, and on a planet's orbit layer, everything is always active.
 /// </summary>
-public sealed class WGDormancySystem : EntitySystem
+public sealed partial class WGDormancySystem : EntitySystem
 {
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private ISharedPlayerManager _players = default!;

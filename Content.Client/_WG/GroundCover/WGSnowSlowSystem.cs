@@ -5,7 +5,7 @@ using Robust.Shared.Physics.Components;
 namespace Content.Client._WG.GroundCover;
 
 /// <summary>Predicts snow slowdown and footsteps for the mobs this client moves, from the snow cover it was sent.</summary>
-public sealed class WGSnowSlowSystem : SharedWGSnowSlowSystem
+public sealed partial class WGSnowSlowSystem : SharedWGSnowSlowSystem
 {
     [Dependency] private WGGroundCoverSystem _cover = default!;
     [Dependency] private IClientGameStateManager _state = default!;

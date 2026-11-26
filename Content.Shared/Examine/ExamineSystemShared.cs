@@ -286,7 +286,7 @@ namespace Content.Shared.Examine
                 {
                     message.AddMarkupOrThrow(metadata.EntityDescription);
                 }
-                catch (Exception _)
+                catch (Exception)
                 {
                     message.AddText(metadata.EntityDescription);
                 }

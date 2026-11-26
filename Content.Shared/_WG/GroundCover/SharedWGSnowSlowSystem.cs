@@ -12,7 +12,7 @@ namespace Content.Shared._WG.GroundCover;
 /// Slows mobs in deep snow and gives their steps a crunch on snow cover. Both sides work it out from the snow depths
 /// each has, so walking stays predicted: the server from what it last sent clients, the client from what it got.
 /// </summary>
-public abstract class SharedWGSnowSlowSystem : EntitySystem
+public abstract partial class SharedWGSnowSlowSystem : EntitySystem
 {
     [Dependency] private SharedMapSystem _map = default!;
     [Dependency] private MovementSpeedModifierSystem _speed = default!;

@@ -41,7 +41,7 @@ public sealed class GuidebookPersonalShieldTests
                 && !prototypes.Index<EntityPrototype>(e.PrototypeId).Components.ContainsKey("PersonalShield"))
                 .All(e => e.ShieldStats.Count == 0), Is.True, "Ordinary armor must not gain a fictitious shield.");
             var specialized = catalog.Acquisitions.First(e => e.Kind == "armor"
-                && prototypes.Index<EntityPrototype>(e.PrototypeId).TryGetComponent<PersonalShieldComponent>(out var field)
+                && prototypes.Index<EntityPrototype>(e.PrototypeId).TryComp<PersonalShieldComponent>(out var field, IoCManager.Resolve<IComponentFactory>())
                 && field.Shield.BlockDamageModifier.Coefficients.Values.Any(v => v != 1));
             Assert.That(specialized.ShieldStats.Where(s => s.Label.StartsWith("Расход заряда:"))
                 .Any(s => s.Value != "×1"), Is.True, "Damage costs are shield-specific, not suit armor percentages.");

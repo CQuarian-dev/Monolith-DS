@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 // -- LuaM: заглушка вместо модуля ShipPa Wolfgate. Объявления планет уходят пилотам: popup и строка в чат.
 namespace Content.Server._WG.ShipPa;
 
-public sealed class ShipPaSystem : EntitySystem
+public sealed partial class ShipPaSystem : EntitySystem
 {
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private IPlayerManager _players = default!;

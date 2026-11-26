@@ -4,7 +4,7 @@ using Robust.Shared.Audio;
 namespace Content.Shared._WG.GroundCover;
 
 /// <summary>Steps on frozen water sound of ice rather than a splash, or crunch when snow covers it.</summary>
-public sealed class WGFrozenWaterSystem : EntitySystem
+public sealed partial class WGFrozenWaterSystem : EntitySystem
 {
     [Dependency] private SharedWGSnowSlowSystem _snow = default!;
 

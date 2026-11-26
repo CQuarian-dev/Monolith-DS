@@ -9,7 +9,7 @@ using Robust.Shared.Timing;
 namespace Content.Client._WG.GroundCover;
 
 /// <summary>Keeps the snow cover chunks the server sent, and draws wet ground and snow.</summary>
-public sealed class WGGroundCoverSystem : EntitySystem
+public sealed partial class WGGroundCoverSystem : EntitySystem
 {
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private IOverlayManager _overlay = default!;

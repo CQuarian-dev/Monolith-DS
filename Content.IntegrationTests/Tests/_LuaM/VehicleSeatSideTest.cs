@@ -25,8 +25,8 @@ public sealed class VehicleSeatSideTest
             foreach (var proto in protoMan.EnumeratePrototypes<EntityPrototype>())
             {
                 if (proto.Abstract ||
-                    !proto.TryGetComponent<VehicleRiderVisualsComponent>(out var riders, factory) ||
-                    !proto.TryGetComponent<VehicleSeatsComponent>(out var seats, factory) ||
+                    !proto.TryComp<VehicleRiderVisualsComponent>(out var riders, factory) ||
+                    !proto.TryComp<VehicleSeatsComponent>(out var seats, factory) ||
                     seats.Seats.Count != 2)
                 {
                     continue;

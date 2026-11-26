@@ -213,18 +213,12 @@ namespace Content.Server.Cloning
                 {
                     scanBodyInfo = MetaData(scanBody.Value).EntityName;
 
-                    if (false) // GoobStation: Lets you clone living people
+                    // LuaM: GoobStation allows cloning living occupants.
+                    if (!_mindSystem.TryGetMind(scanBody.Value, out _, out var mind) ||
+                        mind.UserId == null ||
+                        !_playerManager.TryGetSessionById(mind.UserId.Value, out _))
                     {
-                        clonerStatus = ClonerStatus.ScannerOccupantAlive;
-                    }
-                    else
-                    {
-                        if (!_mindSystem.TryGetMind(scanBody.Value, out _, out var mind) ||
-                            mind.UserId == null ||
-                            !_playerManager.TryGetSessionById(mind.UserId.Value, out _))
-                        {
-                            clonerStatus = ClonerStatus.NoMindDetected;
-                        }
+                        clonerStatus = ClonerStatus.NoMindDetected;
                     }
                 }
             }

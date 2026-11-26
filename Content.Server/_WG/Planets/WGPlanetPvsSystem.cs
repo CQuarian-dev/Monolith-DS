@@ -14,7 +14,7 @@ namespace Content.Server._WG.Planets;
 /// client when it leaves view and arrives as new when a viewer returns; client code must resolve layer references
 /// with <c>TryGetEntity</c>, as the orbit layer's radar fallback already does.
 /// </remarks>
-public sealed class WGPlanetPvsSystem : EntitySystem
+public sealed partial class WGPlanetPvsSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private PvsOverrideSystem _pvs = default!;

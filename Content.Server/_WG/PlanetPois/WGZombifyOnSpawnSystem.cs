@@ -26,7 +26,7 @@ public sealed partial class WGZombifyOnSpawnComponent : Component
 public sealed partial class WGInertZombieComponent : Component;
 
 /// <summary>Turns <see cref="WGZombifyOnSpawnComponent"/> bodies a tick after map init, once their gear is on.</summary>
-public sealed class WGZombifyOnSpawnSystem : EntitySystem
+public sealed partial class WGZombifyOnSpawnSystem : EntitySystem
 {
     [Dependency] private NpcFactionSystem _factions = default!;
     [Dependency] private ZombieSystem _zombies = default!;

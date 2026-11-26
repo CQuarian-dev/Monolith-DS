@@ -464,7 +464,7 @@ public sealed partial class CEZLevelsSystem
         // WOLFGATE END
 
         var tileCount = 0;
-        var tiles = _map.GetAllTilesEnumerator(ent, ent.Comp1);
+        var tiles = _map.GetAllTiles(ent, ent.Comp1);
         while (tiles.MoveNext(out var tileRef))
         {
             tileCount++;
@@ -702,7 +702,7 @@ public sealed partial class CEZLevelsSystem
             return false;
 
         var worldAabb = _transform.GetWorldMatrix(grid).TransformBox(grid.Comp.LocalAABB);
-        var tiles = _map.GetTilesEnumerator(mapUid, mapGrid, worldAabb);
+        var tiles = _map.GetTilesIntersecting(mapUid, mapGrid, worldAabb);
         while (tiles.MoveNext(out var tileRef))
         {
             if (!tileRef.Tile.IsEmpty)
