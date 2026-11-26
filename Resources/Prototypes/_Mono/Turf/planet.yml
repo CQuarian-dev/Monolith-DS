@@ -180,6 +180,7 @@
   parent: BaseFloorPlanet
   name: tiles-bedrock-crocus
   sprite: /Textures/_Mono/Tiles/planet/bedrock.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 1
   isSubfloor: false
   weather: false

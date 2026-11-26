@@ -96,7 +96,6 @@
   - path: /Audio/_WG/LivingWorld/ambience/xen_nih_wind1_mix.ogg
   oneShots:
   - path: /Audio/Items/snap.ogg
-  - path: /Audio/Effects/Weather/wind_5_1.ogg
   - path: /Audio/_WG/LivingWorld/ambience/wind_fall.ogg
   loopVolume: -8
   hullVolumeOffset: -6

@@ -81,7 +81,7 @@ public sealed class WGPlanetScanner : Control
         _reader = new WGPlanetScanReader(_entities, _prototypes);
         var cache = IoCManager.Resolve<IResourceCache>();
         _title = new VectorFont(cache.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Bold.ttf"), 11);
-        _text = new VectorFont(cache.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Regular.ttf"), 10);
+        _text = new VectorFont(cache.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Bold.ttf"), 10); // LuaM: Regular was cut from our fonts
     }
 
     protected override void FrameUpdate(FrameEventArgs args)

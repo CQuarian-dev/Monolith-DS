@@ -1,19 +1,5 @@
 - type: entity
   parent: BaseFlora
-  id: AuroraAssunzioneBushFerny
-  suffix: ferny
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
-    state: fernybush_1
-    offset: "0,0"
-    layers:
-    - state: fernybush_1
-
-- type: entity
-  parent: BaseFlora
   id: AuroraFloraAssunzione
   suffix: assunzione
   placement:
@@ -42,20 +28,6 @@
 
 - type: entity
   parent: BaseFlora
-  id: AuroraFloraBushGrove
-  suffix: grove
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
-    state: grove_bush1
-    offset: "0,0"
-    layers:
-    - state: grove_bush1
-
-- type: entity
-  parent: BaseFlora
   id: ChompFloraDesertPlanetBush
   placement:
     mode: SnapgridCenter
@@ -66,19 +38,6 @@
     offset: "0,0"
     layers:
     - state: bush0
-
-- type: entity
-  parent: BaseFlora
-  id: ChompFloraDesertPlanetShrub
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
-    state: shrub0
-    offset: "0,0"
-    layers:
-    - state: shrub0
 
 - type: entity
   parent: BaseFlora
@@ -94,19 +53,6 @@
     - state: shrubber0
 
 - type: entity
-  parent: BaseFlora
-  id: ChompFloraDesertPlanetThicket
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
-    state: thicket0
-    offset: "0,0"
-    layers:
-    - state: thicket0
-
-- type: entity
   parent: BaseTree
   id: ChompFloraDesertPlanetPalmy
   placement:
@@ -118,20 +64,6 @@
     offset: "0,0"
     layers:
     - state: palmy0
-
-- type: entity
-  parent: BaseFlora
-  id: CMFloraBushDesert
-  suffix: desert
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
-    state: tree_1
-    offset: "0,0"
-    layers:
-    - state: tree_1
 
 - type: entity
   parent: BaseFlora
@@ -280,27 +212,6 @@
     overrideDir: South
 
 - type: entity
-  parent: GoonShrubDead
-  id: GoonShrubDead2
-  components:
-  - type: Sprite
-    overrideDir: North
-
-- type: entity
-  parent: GoonShrubDead
-  id: GoonShrubDead3
-  components:
-  - type: Sprite
-    overrideDir: East
-
-- type: entity
-  parent: GoonShrubDead
-  id: GoonShrubDead4
-  components:
-  - type: Sprite
-    overrideDir: West
-
-- type: entity
   parent: BaseFlora
   id: GoonShrubRedweed
   placement:
@@ -329,13 +240,6 @@
     snapCardinals: false
     enableOverrideDir: true
     overrideDir: South
-
-- type: entity
-  parent: GoonShrubSnow
-  id: GoonShrubSnow2
-  components:
-  - type: Sprite
-    overrideDir: East
 
 - type: entity
   parent: BaseFlora
@@ -618,60 +522,6 @@
 
 - type: entity
   parent: BaseFlora
-  id: CoyoteFloraBigBush
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: big_bush
-    offset: "0.500,0.500"
-    layers:
-    - state: big_bush
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraSmallBush
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: small_bush
-    offset: "0.500,0.500"
-    layers:
-    - state: small_bush
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraBurnedbush3
-  suffix: burnedbush3
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: burnedbush3
-    offset: "0.500,0.500"
-    layers:
-    - state: burnedbush3
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraBurnedbush5
-  suffix: burnedbush5
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: burnedbush5
-    offset: "0.500,0.500"
-    layers:
-    - state: burnedbush5
-
-- type: entity
-  parent: BaseFlora
   id: CoyoteFloraJungle1
   suffix: jungle1
   placement:
@@ -725,62 +575,6 @@
     offset: "0.500,0.500"
     layers:
     - state: jungle5
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraTallgrass3
-  suffix: tallgrass3
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: tall_grass_3
-    offset: "0.500,0.500"
-    layers:
-    - state: tall_grass_3
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraTallgrass4
-  suffix: tallgrass4
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: tall_grass_4
-    offset: "0.500,0.500"
-    layers:
-    - state: tall_grass_4
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraTallgrass5
-  suffix: tallgrass5
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: tall_grass_5
-    offset: "0.500,0.500"
-    layers:
-    - state: tall_grass_5
-
-- type: entity
-  parent: BaseFlora
-  id: CoyoteFloraTallgrass9
-  suffix: tallgrass9
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_64x64.rsi
-    state: tall_grass_9
-    offset: "0.500,0.500"
-    layers:
-    - state: tall_grass_9
 
 - type: entity
   parent: BaseTree

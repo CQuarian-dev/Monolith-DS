@@ -304,58 +304,6 @@
 
 - type: entity
   parent: BaseFlora
-  id: VoreFloraLily1
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
-    state: lilypad1
-    offset: "0,0"
-    layers:
-    - state: lilypad1
-
-- type: entity
-  parent: BaseFlora
-  id: VoreFloraLily2
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
-    state: lilypad2
-    offset: "0,0"
-    layers:
-    - state: lilypad2
-
-- type: entity
-  parent: BaseFlora
-  id: VoreFloraLily3
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
-    state: lilypad3
-    offset: "0,0"
-    layers:
-    - state: lilypad3
-
-- type: entity
-  parent: BaseFlora
-  id: GoonFakeobjectLotus
-  placement:
-    mode: SnapgridCenter
-  components:
-  - type: Sprite
-    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
-    state: lotus_1
-    offset: "0,0"
-    layers:
-    - state: lotus_1
-
-- type: entity
-  parent: BaseFlora
   id: AuroraBushKonyangReedsWater
   suffix: water
   placement:

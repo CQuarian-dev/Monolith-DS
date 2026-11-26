@@ -1,0 +1,10 @@
+﻿ent-BaseCoyoteGasPump = топливная колонка
+    .desc = Старая придорожная колонка.
+ent-BaseCMPhoneBox = телефонная будка
+    .desc = Устаревшая, но надёжная техника. Впрочем, линия всё равно не работает.
+ent-BaseCMPhoneBoxWrecked = разбитая телефонная будка
+    .desc = Разбита вдребезги, стёкла выбиты. Прятаться внутри бессмысленно.
+ent-CMPhoneBoxWreckedUnlit = { ent-BaseCMPhoneBoxWrecked }
+    .desc = { ent-BaseCMPhoneBoxWrecked.desc }
+ent-CMPhoneBoxWreckedBloody = { ent-BaseCMPhoneBoxWrecked }
+    .desc = Разбита вдребезги, залита кровью, стёкла выбиты. Прятаться внутри бессмысленно.

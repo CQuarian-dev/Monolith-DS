@@ -5,3 +5,4 @@ ce-zlevel-voice-from-down = { $name } (снизу)
 ce-soft-paws = Вы ловко приземляетесь на ноги.
 ce-soft-paws-too-high = Вы пытаетесь приземлиться на ноги, но падение слишком высокое!
 ce-zflyer-notflying = Для этого нужно летать!
+ce-zgrid-connector-examine-anchoring = [color=cyan]Сейчас он зафиксирован на гриде уровнем выше.[/color]

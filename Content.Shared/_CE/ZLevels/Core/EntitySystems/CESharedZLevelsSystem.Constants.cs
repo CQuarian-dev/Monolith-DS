@@ -8,7 +8,7 @@ namespace Content.Shared._CE.ZLevels.Core.EntitySystems;
 public abstract partial class CESharedZLevelsSystem
 {
     public static int MaxZLevelsBelowRendering = 10;
-    public const float ZLevelOffset = 0.7f;
+    public static float ZLevelOffset = 0.7f; // LuaM: the client sets it from luam.zlevel_offset
 
     /// <summary>
     /// Per-level perspective factor: each z-level below the observer is drawn this

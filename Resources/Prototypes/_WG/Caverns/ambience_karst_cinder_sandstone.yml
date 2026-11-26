@@ -6,8 +6,7 @@
 - type: wgPlanetAmbience
   id: WGCavernAmbienceAsclepiu
   loops:
-  - path: /Audio/Ambience/ambicave.ogg
-  - path: /Audio/Ambience/ambimine.ogg
+  - path: /Audio/_WG/LivingWorld/ambience/xen_swamp1_mix.ogg # LuaM: vanilla cave beds were cut from our build
   oneShots:
   - path: /Audio/Effects/waterswirl.ogg
   - path: /Audio/Ambience/Objects/drain.ogg
@@ -22,8 +21,7 @@
 - type: wgPlanetAmbience
   id: WGCavernAmbienceFervidus
   loops:
-  - path: /Audio/Ambience/ambilava1.ogg
-  - path: /Audio/Ambience/ambilava3.ogg
+  - path: /Audio/_WG/Planets/Worlds/fervidus/fervidus_ambience_loop_1.ogg # LuaM: vanilla lava beds were cut from our build
   - path: /Audio/_WG/LivingWorld/ambience/o_ambience_disaster_fire1.ogg
   oneShots:
   - path: /Audio/_WG/LivingWorld/ambience/o_ambience_disaster_rumble1.ogg
@@ -40,11 +38,9 @@
   id: WGCavernAmbienceMerak
   loops:
   - path: /Audio/_WG/LivingWorld/ambience/wind1.ogg
-  - path: /Audio/Ambience/ambimine.ogg
   oneShots:
   - path: /Audio/Effects/break_stone.ogg
   - path: /Audio/_WG/LivingWorld/ambience/wind_fall.ogg
-  - path: /Audio/Ambience/ambiruin2.ogg
   loopVolume: -9
   hullVolumeOffset: -6
   oneShotVolume: -9

@@ -36,9 +36,9 @@
 - type: biomeTemplate
   id: WGCarcinomaTendonForest
   layers:
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorFlesh, FloorFlesh]
-    entities: [WGCarcinomaTendons]
+    decals: [LuaMFloraWGCarcinomaTendons]
     threshold: 0.1
     noise: { seed: 53, noiseType: OpenSimplex2, frequency: 0.6 }
   # Grasping vines (_WG/Planets/Life) stand on tendon tiles: the same noise, a higher threshold.
@@ -190,6 +190,7 @@
 # Preserve the riverbed's indestructible terrain using the visually verified rust-red iron-sand artwork.
 - type: tile
   id: WGBloodOceanSeabed
+  edgeSpritePriority: -1 # LuaM: soft borders between planet ground tiles
   parent: FloorAsteroidIronsand
   indestructible: true
   footstepSounds:

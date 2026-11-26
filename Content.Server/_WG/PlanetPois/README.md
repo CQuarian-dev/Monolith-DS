@@ -60,6 +60,10 @@ rise as zombies when spawned (`WGZombifyOnSpawn`, `wreck_crew.yml`). About half 
 (`wreck_loot.yml`): a crate with a ship gun flatpack and the hardpoint it mounts on, or a crate of gunnery co-processor
 chips (`_WG/GunneryChips`).
 
+A placed wreck or camp hull is settled into the ground (`SettleWreck`): a city grid and z-level anchor with a static
+body, inherent gravity and a roof over every tile, and no shuttle. If one leaves its world's layers however it got out,
+`WGPlanetWreckReleaseSystem` undoes all of that, so it is a vessel again in space and its engines join its banks.
+
 A table's `camps` (`WGPlanetPoiSystem.Camps`, `camps.yml`) set a ship down intact and square to the world beside a
 road, just off the shoulder of a straight stretch and nose to it, where whoever drives by sees it (out in the open
 instead when no stretch has room, or for a camp with `roadside: false`), with an armed crew from an NpcCrew profile
@@ -126,6 +130,7 @@ payment, sells a few, and eats whoever is left dead in his inn.
 - [`Content.Server/_WG/PlanetPois/WGPlanetPoiSystem.Wrecks.cs`](WGPlanetPoiSystem.Wrecks.cs)
 - [`Content.Server/_WG/PlanetPois/WGPlanetRoadPlanner.cs`](WGPlanetRoadPlanner.cs)
 - [`Content.Server/_WG/PlanetPois/WGPlanetTrailPlanner.cs`](WGPlanetTrailPlanner.cs)
+- [`Content.Server/_WG/PlanetPois/WGPlanetWreckReleaseSystem.cs`](WGPlanetWreckReleaseSystem.cs)
 - [`Content.Server/_WG/PlanetPois/WGRoadDressingPlanner.cs`](WGRoadDressingPlanner.cs)
 - [`Content.Server/_WG/PlanetPois/WGZombifyOnSpawnSystem.cs`](WGZombifyOnSpawnSystem.cs)
 
@@ -159,6 +164,7 @@ payment, sells a few, and eats whoever is left dead in his inn.
 - [`Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetRoadPlannerTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetRoadPlannerTest.cs)
 - [`Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetTrailPlannerTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetTrailPlannerTest.cs)
 - [`Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetVehicleSpawnTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetVehicleSpawnTest.cs)
+- [`Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetWreckReleaseTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetWreckReleaseTest.cs)
 - [`Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetWreckTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/PlanetWreckTest.cs)
 - [`Content.IntegrationTests/Tests/_WG/PlanetPois/RoadsideSitesTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/RoadsideSitesTest.cs)
 - [`Content.IntegrationTests/Tests/_WG/PlanetPois/SettledHullLiftoffTest.cs`](../../../Content.IntegrationTests/Tests/_WG/PlanetPois/SettledHullLiftoffTest.cs)

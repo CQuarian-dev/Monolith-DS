@@ -24,6 +24,16 @@
 # Lake shores: marsh grass, then mud, then wet sand at the waterline.
 - type: tile
   id: WGFloorVerdaMarshGrass
+  edgeSpritePriority: 1 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_West.png
   parent: GoonFloorSwampgrass
   weather: true
   isSubfloor: true
@@ -33,6 +43,7 @@
 
 - type: tile
   id: WGFloorVerdaMarshMud
+  edgeSpritePriority: -1 # LuaM: soft borders between planet ground tiles
   parent: PolarisFloorOutdoorsMud
   weather: true
   isSubfloor: true
@@ -52,6 +63,7 @@
 # The mud ring round a pond, kept apart from the lake shore's so only ponds' rings take their reeds.
 - type: tile
   id: WGFloorVerdaPondMud
+  edgeSpritePriority: -1 # LuaM: soft borders between planet ground tiles
   parent: PolarisFloorOutdoorsMud
   weather: true
   isSubfloor: true
@@ -62,6 +74,16 @@
 # The irradiated scars: dead ground in four tones.
 - type: tile
   id: WGFloorVerdaScarDirt
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_West.png
   parent: PolarisFloorOutdoorsDirt
   weather: true
   isSubfloor: true
@@ -71,6 +93,16 @@
 
 - type: tile
   id: WGFloorVerdaScarDirtPatch
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_West.png
   parent: CitFloorSpooktimeDirtpatch
   weather: true
   isSubfloor: true
@@ -89,6 +121,16 @@
 
 - type: tile
   id: WGFloorVerdaScarAshDirt
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_lavaland_ash_West.png
   parent: ChompFloorOutdoorsLavalandAsh
   weather: true
   isSubfloor: true
@@ -98,6 +140,16 @@
 
 - type: tile
   id: WGFloorVerdaSnowRough
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_West.png
   parent: GoonFloorSnowrough
   weather: true
   isSubfloor: true
@@ -109,9 +161,9 @@
 - type: biomeTemplate
   id: WGVerdaPineGrove
   layers:
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetGrass, WGFloorVerdaForestGrass]
-    entities: [AuroraAssunzioneBushFerny, CoyoteFloraTallgrass4]
+    decals: [LuaMFloraAuroraAssunzioneBushFerny]
     threshold: 0.75
     noise: { seed: 217, noiseType: OpenSimplex2, frequency: 4 }
   - !type:BiomeEntityLayer
@@ -143,19 +195,9 @@
     noise: { seed: 71, noiseType: OpenSimplex2, frequency: 0.012, fractalType: FBm, octaves: 2, lacunarity: 2 }
   # Frogs and crabs (Planets/Life/verda_mobs.yml).
   # Marsh: tall grass and the odd bush and drowned tree.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMarshGrass]
-    entities: [CoyoteFloraTallgrass3, CoyoteFloraTallgrass9]
-    threshold: 0.62
-    noise: { seed: 220, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
-    allowedTiles: [WGFloorVerdaMarshGrass]
-    entities: [CoyoteFloraTallgrass4, CoyoteFloraTallgrass5]
-    threshold: 0.62
-    noise: { seed: 221, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
-    allowedTiles: [WGFloorVerdaMarshGrass]
-    entities: [GoonShrub, AuroraFloraBushGrove]
+    decals: [LuaMFloraGoonShrub, LuaMFloraAuroraFloraBushGrove]
     threshold: 0.85
     noise: { seed: 222, noiseType: OpenSimplex2, frequency: 3 }
   - !type:BiomeEntityLayer
@@ -164,24 +206,24 @@
     threshold: 0.9
     noise: { seed: 223, noiseType: OpenSimplex2, frequency: 2 }
   # Reeds and lilies at the waterline.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMarshMud, WGFloorVerdaShoreSand]
-    entities: [AuroraFloraBushKonyangReeds, CoyoteFloraTallgrass9]
+    decals: [LuaMFloraAuroraFloraBushKonyangReeds]
     threshold: 0.5
     noise: { seed: 224, noiseType: OpenSimplex2, frequency: 3 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMarshMud, WGFloorVerdaShoreSand]
-    entities: [AuroraAssunzioneGrassAlt, AuroraFloraBushKonyangReeds]
+    decals: [LuaMFloraAuroraAssunzioneGrassAlt, LuaMFloraAuroraFloraBushKonyangReeds]
     threshold: 0.68
     noise: { seed: 225, noiseType: OpenSimplex2, frequency: 3 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMarshMud]
-    entities: [VoreFloraLily1, VoreFloraLily2]
+    decals: [LuaMFloraVoreFloraLily1, LuaMFloraVoreFloraLily2]
     threshold: 0.7
     noise: { seed: 226, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMarshMud]
-    entities: [VoreFloraLily3, GoonFakeobjectLotus]
+    decals: [LuaMFloraVoreFloraLily3, LuaMFloraGoonFakeobjectLotus]
     threshold: 0.8
     noise: { seed: 227, noiseType: OpenSimplex2, frequency: 4 }
   # Reeds to cut, a lotus to eat, shore sage to heal with (Planets/Life/verda.yml).
@@ -212,34 +254,34 @@
     threshold: 0.72
     noise: { seed: 11, noiseType: OpenSimplex2, frequency: 0.02 }
   # Dead shrubs and the wasteland's own plants, stones, a few bones, dead and burnt trees.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [GoonShrubDead, GoonShrubDead3]
+    decals: [LuaMFloraGoonShrubDead, LuaMFloraGoonShrubDead3]
     threshold: 0.8
     noise: { seed: 230, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [GoonShrubDead2, CoyoteFloraBurnedbush3]
+    decals: [LuaMFloraGoonShrubDead2]
     threshold: 0.8
     noise: { seed: 231, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [CoyoteFloraWasteplantWildMesquite, CoyoteFloraWasteplantWildYucca]
+    decals: [LuaMFloraCoyoteFloraWasteplantWildMesquite, LuaMFloraCoyoteFloraWasteplantWildYucca]
     threshold: 0.8
     noise: { seed: 232, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [CoyoteFloraWasteplantWildAgave, CoyoteFloraWasteplantWildHorsenettle]
+    decals: [LuaMFloraCoyoteFloraWasteplantWildAgave, LuaMFloraCoyoteFloraWasteplantWildHorsenettle]
     threshold: 0.8
     noise: { seed: 233, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [CoyoteFloraWasteplantWildDatura, CoyoteFloraWasteplantWildXander]
+    decals: [LuaMFloraCoyoteFloraWasteplantWildDatura, LuaMFloraCoyoteFloraWasteplantWildXander]
     threshold: 0.8
     noise: { seed: 234, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [CoyoteFloraWasteplantWildTato, CoyoteFloraWasteplantWildFungus]
+    decals: [LuaMFloraCoyoteFloraWasteplantWildTato, LuaMFloraCoyoteFloraWasteplantWildFungus]
     threshold: 0.8
     noise: { seed: 235, noiseType: OpenSimplex2, frequency: 4 }
   - !type:BiomeEntityLayer
@@ -252,16 +294,6 @@
     entities: [GoonStone2, CoyoteFloraStump]
     threshold: 0.93
     noise: { seed: 237, noiseType: OpenSimplex2, frequency: 3 }
-  - !type:BiomeEntityLayer
-    allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [CoyoteChompBonesLskullW, CoyoteChompBonesLbone]
-    threshold: 0.95
-    noise: { seed: 238, noiseType: OpenSimplex2, frequency: 3 }
-  - !type:BiomeEntityLayer
-    allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
-    entities: [CoyoteChompBonesLribs, CoyoteChompBonesLribs1]
-    threshold: 0.95
-    noise: { seed: 239, noiseType: OpenSimplex2, frequency: 3 }
   - !type:BiomeEntityLayer
     allowedTiles: [WGFloorVerdaScarDirt, WGFloorVerdaScarWiltedGrass, WGFloorVerdaScarAshDirt, WGFloorVerdaScarDirtPatch]
     entities: [NebulaTreeDeadEbony, NebulaTreeDeadMaple]

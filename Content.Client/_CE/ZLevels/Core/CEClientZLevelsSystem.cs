@@ -38,6 +38,8 @@ public sealed partial class CEClientZLevelsSystem : CESharedZLevelsSystem
             else if (!enabled)
                 _overlay.RemoveOverlay<CEZLevelShadowOverlay>();
         }, true);
+        Subs.CVar(_luamCfg, Content.Shared._LuaM.CCVar.LuaMCVars.ZLevelOffset, value => ZLevelOffset = Math.Clamp(value, 0f, 1f), true);
+        Subs.CVar(_luamCfg, Content.Shared._LuaM.CCVar.LuaMCVars.ZLevelShadow, value => CEZLevelShadowOverlay.MaxShadowAlpha = Math.Clamp(value, 0f, 1f), true);
         // LuaM-end
 
         SubscribeLocalEvent<CEZPhysicsComponent, ComponentStartup>(OnStartup);

@@ -4,6 +4,7 @@
 # Obsidian galleries: near-black volcanic glass.
 - type: tile
   id: WGCavernFloorObsidian
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: RMCPlanetHybrisaShale
   indestructible: true
   deconstructTools: []
@@ -12,6 +13,16 @@
 # Sulphur vents: yellow crust round the vents.
 - type: tile
   id: WGCavernFloorSulphur
+  edgeSpritePriority: 1 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nova_grass_lavaland_West.png
   parent: NovaFloorGrassLavaland
   indestructible: true
   deconstructTools: []

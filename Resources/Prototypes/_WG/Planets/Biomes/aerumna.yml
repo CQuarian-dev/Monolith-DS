@@ -5,27 +5,50 @@
 
 - type: tile
   id: WGFloorAerumnaShroud
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_West.png
   parent: NebulaFloorShrouded
   weather: true
 
 - type: tile
   id: WGFloorAerumnaClay
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_clay_West.png
   parent: NebulaFloorClay
   weather: true
 
 - type: tile
   id: WGFloorAerumnaClayRock
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: ChompFloorOutdoorsLavalandAshrock
   weather: true
 
 # Grey ground between the dark chromite and the pale clay, round every clay flat, crystal bed and the hive.
 - type: tile
   id: WGFloorAerumnaDusk
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorCave
   weather: true
 
 - type: tile
   id: WGFloorAerumnaCrystalBed
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: AuroraFloorExoplanetCrystal
   weather: true
 
@@ -44,25 +67,25 @@
     threshold: -1
   # Glowing slugs and shadow cats; only here, never in the open.
   # Small shrooms carpet the floor.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorAerumnaShroud]
-    entities:
-    - GoonMushrooms
-    - GoonMushroomsType1
-    - GoonMushroomsType2
-    - GoonMushroomsType3
-    - GoonMushroomsType4
-    - GoonMushroomsType5
-    - GoonMushroomsType6
-    - NovaFloraMushroom
-    - NovaFloraMushroomBlue
-    - NovaFloraMushroomGreen
+    decals:
+    - LuaMFloraGoonMushrooms
+    - LuaMFloraGoonMushroomsType1
+    - LuaMFloraGoonMushroomsType2
+    - LuaMFloraGoonMushroomsType3
+    - LuaMFloraGoonMushroomsType4
+    - LuaMFloraGoonMushroomsType5
+    - LuaMFloraGoonMushroomsType6
+    - LuaMFloraNovaFloraMushroom
+    - LuaMFloraNovaFloraMushroomBlue
+    - LuaMFloraNovaFloraMushroomGreen
     threshold: 0.45
     noise: { seed: 73, noiseType: OpenSimplex2, frequency: 4 }
   # Taller caps between them.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorAerumnaShroud]
-    entities: [NovaTallShroomColoredBlue, NovaTallShroomColoredGreen, NovaCapShroomColoredBlue, NovaCapShroomColoredGreen]
+    decals: [LuaMFloraNovaTallShroomColoredBlue, LuaMFloraNovaTallShroomColoredGreen, LuaMFloraNovaCapShroomColoredBlue, LuaMFloraNovaCapShroomColoredGreen]
     threshold: 0.7
     noise: { seed: 74, noiseType: OpenSimplex2, frequency: 3 }
   # Bioluminescent plants, glowshrooms and lightshrooms light the dark.
@@ -154,6 +177,7 @@
 # lays stands on the hive ground only; the weeds never spread (WGXenoWeedsWild) and the eggs lie dormant until walked up to.
 - type: tile
   id: WGFloorAerumnaHive
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: ChompFloorOutdoorsRocksCetus
   weather: true
 

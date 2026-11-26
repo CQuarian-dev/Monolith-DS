@@ -4,6 +4,7 @@
 # Dripstone halls: pale flowstone.
 - type: tile
   id: WGCavernFloorFlowstone
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: AuroraFloorCaveAdhomai
   indestructible: true
   deconstructTools: []
@@ -12,6 +13,7 @@
 # Flooded grottos: wet, teal-streaked rock.
 - type: tile
   id: WGCavernFloorWetRock
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: NovaFloorPoolCobbleWateryrock
   indestructible: true
   deconstructTools: []
@@ -20,6 +22,16 @@
 # Mushroom hollows: dark, damp soil.
 - type: tile
   id: WGCavernFloorCaveSoil
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_citadel_spooktime_dirtpatch_West.png
   parent: CitFloorSpooktimeDirtpatch
   indestructible: true
   deconstructTools: []

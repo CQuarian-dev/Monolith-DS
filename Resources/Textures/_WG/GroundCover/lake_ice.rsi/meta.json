@@ -5,7 +5,7 @@
     "y": 32
   },
   "license": "CC-BY-SA-4.0",
-  "copyright": "Made from liquid-water.rsi (vladimir.s) and the CrystallPunk ice tile (TheShuEd, CC-BY-SA-3.0) for Wolfgate frozen lakes",
+  "copyright": "Made from liquid-water.rsi (vladimir.s) and the CrystallPunk ice tile (TheShuEd, CC-BY-SA-3.0) for Wolfgate frozen lakes; static/moving are copies of full for the CE water (LuaM)",
   "states": [
     {
       "name": "full"
@@ -41,6 +41,12 @@
     {
       "name": "water7",
       "directions": 4
+    },
+    {
+      "name": "static"
+    },
+    {
+      "name": "moving"
     }
   ]
 }

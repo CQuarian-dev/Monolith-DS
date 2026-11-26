@@ -1,0 +1,601 @@
+# LuaM: planet flora without collision, drawn as decals instead of entities (generated from the entity prototypes).
+# The offset centres the texture on its tile, as the entity sprite was.
+
+- type: decal
+  id: LuaMFloraAuroraAssunzioneBushFerny
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
+    state: fernybush_1
+
+- type: decal
+  id: LuaMFloraAuroraAssunzioneGrassAlt
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: stalks_alt
+
+- type: decal
+  id: LuaMFloraAuroraFloraBushGrove
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
+    state: grove_bush1
+
+- type: decal
+  id: LuaMFloraAuroraFloraBushKonyangReeds
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: stalks
+
+- type: decal
+  id: LuaMFloraAuroraFloraGrassDesert
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: desert_grass
+
+- type: decal
+  id: LuaMFloraCMBushDesertCactus
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: cactus_3
+
+- type: decal
+  id: LuaMFloraCMDesertCactusMultiple
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: cacti_1
+
+- type: decal
+  id: LuaMFloraCMFloraBushDesert
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
+    state: tree_1
+
+- type: decal
+  id: LuaMFloraCMGrassDesertHeavy
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: heavygrass_1
+
+- type: decal
+  id: LuaMFloraCMGrassDesertLightgrass10
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: lightgrass_10
+
+- type: decal
+  id: LuaMFloraCMGrassDesertLightgrass5
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: lightgrass_5
+
+- type: decal
+  id: LuaMFloraCMGrassDesertLightgrass7
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: lightgrass_7
+
+- type: decal
+  id: LuaMFloraCMGrassTallgrassDesert
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: tallgrass_desert
+
+- type: decal
+  id: LuaMFloraChompFloraDesertPlanetBarrelcacti
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti0
+
+- type: decal
+  id: LuaMFloraChompFloraDesertPlanetBush
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
+    state: bush0
+
+- type: decal
+  id: LuaMFloraChompFloraDesertPlanetLbarrelcacti
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: lbarrelcacti0
+
+- type: decal
+  id: LuaMFloraChompFloraDesertPlanetShrub
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
+    state: shrub0
+
+- type: decal
+  id: LuaMFloraChompFloraDesertPlanetThicket
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes.rsi
+    state: thicket0
+
+- type: decal
+  id: LuaMFloraCobweb1
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: Structures/Decoration/cobweb.rsi
+    state: cobweb1
+
+- type: decal
+  id: LuaMFloraCobweb2
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: Structures/Decoration/cobweb.rsi
+    state: cobweb2
+
+- type: decal
+  id: LuaMFloraCoyoteFloraChompBarrelcacti1
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti1
+
+- type: decal
+  id: LuaMFloraCoyoteFloraChompBarrelcacti2
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti2
+
+- type: decal
+  id: LuaMFloraCoyoteFloraChompBarrelcacti3
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: barrelcacti3
+
+- type: decal
+  id: LuaMFloraCoyoteFloraChompLbarrelcacti1
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_cacti.rsi
+    state: lbarrelcacti1
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildAgave
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_agave
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildDatura
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_datura
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildFeracactus
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_feracactus
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildFungus
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_fungus
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildHorsenettle
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_horsenettle
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildMesquite
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_mesquite
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildPrickly
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_prickly
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildTato
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_tato
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildXander
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_xander
+
+- type: decal
+  id: LuaMFloraCoyoteFloraWasteplantWildYucca
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: wild_yucca
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerBlue
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_blue
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerOrange
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_orange
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerPink
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_pink
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerPurple
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_purple
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerRed
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_red
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerWhite
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_white
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraCoyoteWildPlantFlowerYellowhite
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers_25x25.rsi
+    state: flower_yw
+  offset: 0.0004,0.0004
+
+- type: decal
+  id: LuaMFloraDarkPackFloraDarkpackFlowerMarigold
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: marigold
+
+- type: decal
+  id: LuaMFloraGoonFakeobjectLotus
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants_goonstation.rsi
+    state: lotus_1
+
+- type: decal
+  id: LuaMFloraGoonMushrooms
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom7
+
+- type: decal
+  id: LuaMFloraGoonMushroomsType1
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom1
+
+- type: decal
+  id: LuaMFloraGoonMushroomsType2
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom2
+
+- type: decal
+  id: LuaMFloraGoonMushroomsType3
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom3
+
+- type: decal
+  id: LuaMFloraGoonMushroomsType4
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom4
+
+- type: decal
+  id: LuaMFloraGoonMushroomsType5
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom5
+
+- type: decal
+  id: LuaMFloraGoonMushroomsType6
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms_goonstation.rsi
+    state: mushroom6
+
+- type: decal
+  id: LuaMFloraGoonShrub
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: shrub
+
+- type: decal
+  id: LuaMFloraGoonShrubDead
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: shrub-dead
+
+- type: decal
+  id: LuaMFloraGoonShrubDead2
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: shrub-dead
+
+- type: decal
+  id: LuaMFloraGoonShrubDead3
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: shrub-dead
+
+- type: decal
+  id: LuaMFloraGoonShrubDead4
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: shrub-dead
+
+- type: decal
+  id: LuaMFloraGoonShrubSnow
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: snowshrub
+
+- type: decal
+  id: LuaMFloraGoonShrubSnow2
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_bushes_goonstation.rsi
+    state: snowshrub
+
+- type: decal
+  id: LuaMFloraNovaAshCapShroomColored
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom_red1
+
+- type: decal
+  id: LuaMFloraNovaAshLeafShroomColored
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: s_mushroom_red1
+
+- type: decal
+  id: LuaMFloraNovaAshTallShroomColored
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom_red1
+
+- type: decal
+  id: LuaMFloraNovaCapShroomColoredBlue
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom_blue1
+
+- type: decal
+  id: LuaMFloraNovaCapShroomColoredGreen
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: r_mushroom_green1
+
+- type: decal
+  id: LuaMFloraNovaFloraMushroom
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fake_stillcap_red
+
+- type: decal
+  id: LuaMFloraNovaFloraMushroomBlue
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fake_stillcap_blue
+
+- type: decal
+  id: LuaMFloraNovaFloraMushroomGreen
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: fake_stillcap_green
+
+- type: decal
+  id: LuaMFloraNovaTallShroomColoredBlue
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom_blue1
+
+- type: decal
+  id: LuaMFloraNovaTallShroomColoredGreen
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_mushrooms.rsi
+    state: l_mushroom_green1
+
+- type: decal
+  id: LuaMFloraShiptestFloraGrassBrown
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_grass.rsi
+    state: snowgrass1bb
+
+- type: decal
+  id: LuaMFloraTgFloraAshPlasmaFlower
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: plasma_flower1
+
+- type: decal
+  id: LuaMFloraTgFloraAshPodsneyzka
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_flowers.rsi
+    state: flower1
+
+- type: decal
+  id: LuaMFloraVoreFloraLily1
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: lilypad1
+
+- type: decal
+  id: LuaMFloraVoreFloraLily2
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: lilypad2
+
+- type: decal
+  id: LuaMFloraVoreFloraLily3
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_water_plants.rsi
+    state: lilypad3
+
+- type: decal
+  id: LuaMFloraWGCarcinomaTendons
+  showMenu: false
+  tags: ["planet", "flora"]
+  sprite:
+    sprite: Objects/Misc/fleshkudzu.rsi
+    state: kudzu_11

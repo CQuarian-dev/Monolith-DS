@@ -78,6 +78,21 @@ public sealed partial class ThrusterSystem
                 command.Detached = true;
     }
 
+    /// <summary>Puts a grid's engines into the banks of a shuttle it just became, as none was there to hold them.</summary>
+    public void WgRebankThrusters(EntityUid grid)
+    {
+        var children = Transform(grid).ChildEnumerator;
+        while (children.MoveNext(out var uid))
+        {
+            if (!TryComp<ThrusterComponent>(uid, out var engine))
+                continue;
+
+            engine.IsOn = false;
+            if (CanEnable(uid, engine))
+                EnableThruster(uid, engine);
+        }
+    }
+
     private HashSet<EntityUid> WgConsoleGrids()
     {
         var grids = new HashSet<EntityUid>();

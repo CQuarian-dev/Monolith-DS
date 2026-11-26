@@ -46,7 +46,7 @@ public sealed class WGPlanetTimepieceHud : PanelContainer
         PanelOverride = panel;
 
         var regular = new VectorFont(
-            resources.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Regular.ttf"),
+            resources.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Bold.ttf"), // LuaM: Regular was cut from our fonts
             9);
         var clock = new VectorFont(
             resources.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Bold.ttf"),

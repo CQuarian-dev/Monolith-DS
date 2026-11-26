@@ -35,6 +35,11 @@ namespace Content.Shared.Decals
         [DataField]
         public bool DefaultSnap = true;
 
+        // LuaM-start: shift from the tile corner where a biome lays it, so a texture bigger or smaller than a tile sits centred
+        [DataField]
+        public System.Numerics.Vector2 Offset;
+        // LuaM-end
+
         [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<DecalPrototype>))]
         public string[]? Parents { get; private set; }
 

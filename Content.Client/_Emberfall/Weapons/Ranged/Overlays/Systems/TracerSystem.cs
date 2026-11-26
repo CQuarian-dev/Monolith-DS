@@ -21,6 +21,14 @@ public sealed partial class TracerSystem : EntitySystem
         SubscribeLocalEvent<TracerComponent, ComponentStartup>(OnTracerStart);
     }
 
+    // LuaM-start: the overlay manager outlives a reconnect, the overlay must not keep the old system
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        _overlay.RemoveOverlay<TracerOverlay>();
+    }
+    // LuaM-end
+
     private void OnTracerStart(Entity<TracerComponent> ent, ref ComponentStartup args)
     {
         var xform = Transform(ent);

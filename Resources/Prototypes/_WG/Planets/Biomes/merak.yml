@@ -17,6 +17,16 @@
 
 - type: tile
   id: WGFloorMerakGoldSand
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_rock_sand_West.png
   parent: NebulaFloorRockSand
   weather: true
   isSubfloor: true
@@ -28,6 +38,16 @@
 
 - type: tile
   id: WGFloorMerakPaleSand
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_West.png
   parent: FloorLowDesert
   weather: true
   isSubfloor: true
@@ -40,6 +60,16 @@
 # Red-rock badlands
 - type: tile
   id: WGFloorMerakRedDesertSand
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_red_desert_desert1_West.png
   parent: RMCPlanetRedDesertBase
   weather: true
   baseTurf: Space
@@ -53,6 +83,7 @@
 
 - type: tile
   id: WGFloorMerakRedDesertRock
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: RMCPlanetRedDesertRock
   weather: true
   footstepSounds:
@@ -62,6 +93,7 @@
 
 - type: tile
   id: WGFloorMerakRedDesertRockCracked
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: RMCPlanetRedDesertRock1
   weather: true
   footstepSounds:
@@ -72,6 +104,16 @@
 # Wind-scoured dark flats between the red rock.
 - type: tile
   id: WGFloorMerakDarkSand
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_South.png
+    East: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_East.png
+    North: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_North.png
+    West: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_West.png
   parent: FloorAsteroidSand
   weather: true
   baseTurf: Space
@@ -86,6 +128,16 @@
 # Quake-cracked gravel flats
 - type: tile
   id: WGFloorMerakDesertGravel
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_chomp_desert_planet_gravel_West.png
   parent: ChompFloorOutdoorsDesertPlanetGravel
   weather: true
   isSubfloor: true
@@ -106,6 +158,16 @@
 
 - type: tile
   id: WGFloorMerakDesertCracked
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_West.png
   parent: NebulaFloorDry
   weather: true
   isSubfloor: true
@@ -117,6 +179,16 @@
 # Oasis shores
 - type: tile
   id: WGFloorMerakOasisDirt
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_polaris_outdoors_dirt_West.png
   parent: PolarisFloorOutdoorsDirt
   weather: true
   isSubfloor: true
@@ -127,6 +199,16 @@
 
 - type: tile
   id: WGFloorMerakOasisGrass
+  edgeSpritePriority: 1 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_swampgrass_West.png
   parent: GoonFloorSwampgrass
   weather: true
   isSubfloor: true
@@ -230,11 +312,11 @@
   layers:
   # Wildlife: lizards and cobras
   # Dry scrub, black boulders and short mesas; later layers win.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.8
     noise: { seed: 12, noiseType: OpenSimplex2, frequency: 3 }
     allowedTiles: [WGFloorMerakRedDesertSand, WGFloorMerakRedDesertRock, WGFloorMerakRedDesertRockCracked, WGFloorMerakDarkSand]
-    entities: [CoyoteFloraWasteplantWildFeracactus, CMFloraBushDesert, CoyoteFloraWasteplantWildPrickly]
+    decals: [LuaMFloraCoyoteFloraWasteplantWildFeracactus, LuaMFloraCMFloraBushDesert, LuaMFloraCoyoteFloraWasteplantWildPrickly]
   - !type:BiomeEntityLayer
     threshold: 0.82
     noise: { seed: 13, noiseType: OpenSimplex2, frequency: 3 }
@@ -291,11 +373,6 @@
     noise: { seed: 39, noiseType: OpenSimplex2, frequency: 2 }
     allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
     entities: [TgBoneSkullHalf, TgStatueBoneSkull, TgStatueBoneRib]
-  - !type:BiomeEntityLayer
-    threshold: 0.95
-    noise: { seed: 48, noiseType: OpenSimplex2, frequency: 2 }
-    allowedTiles: [WGFloorMerakDesertGravel, WGFloorMerakDesertSandrock, WGFloorMerakDesertCracked]
-    entities: [CoyoteChompBonesLribs, CoyoteChompBonesLskullW, CoyoteChompBonesLbone]
   - !type:BiomeTileLayer
     threshold: -1
     tile: WGFloorMerakDesertGravel
@@ -313,31 +390,31 @@
   layers:
   # Wildlife: kangaroos. Same noise as the dune layer, so it replaces the dune table here.
   # Desert grass, shrubs, cacti and lone trees; later layers win.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.45
     noise: { seed: 24, noiseType: OpenSimplex2, frequency: 0.3 }
     allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
-    entities: [CMGrassDesertLightgrass5, CMGrassDesertHeavy, CMGrassDesertLightgrass7, AuroraFloraGrassDesert, CMGrassDesertLightgrass10]
-  - !type:BiomeEntityLayer
+    decals: [LuaMFloraCMGrassDesertLightgrass5, LuaMFloraCMGrassDesertHeavy, LuaMFloraCMGrassDesertLightgrass7, LuaMFloraAuroraFloraGrassDesert, LuaMFloraCMGrassDesertLightgrass10]
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.72
     noise: { seed: 25, noiseType: OpenSimplex2, frequency: 3 }
     allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
-    entities: [ChompFloraDesertPlanetShrub, ChompFloraDesertPlanetBush, CMFloraBushDesert, ChompFloraDesertPlanetThicket]
+    decals: [LuaMFloraChompFloraDesertPlanetShrub, LuaMFloraChompFloraDesertPlanetBush, LuaMFloraCMFloraBushDesert, LuaMFloraChompFloraDesertPlanetThicket]
   - !type:BiomeEntityLayer
     threshold: 0.72
     noise: { seed: 28, noiseType: OpenSimplex2, frequency: 3 }
     allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
     entities: [CoyoteFloraWasteplantWildAgave, CoyoteFloraWasteplantWildYucca, CoyoteFloraWasteplantWildMesquite, CoyoteFloraWasteplantWildPinyon]
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.68
     noise: { seed: 26, noiseType: OpenSimplex2, frequency: 4 }
     allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
-    entities: [ChompFloraDesertPlanetBarrelcacti, CoyoteFloraChompBarrelcacti1, CoyoteFloraChompBarrelcacti2, CoyoteFloraChompBarrelcacti3]
-  - !type:BiomeEntityLayer
+    decals: [LuaMFloraChompFloraDesertPlanetBarrelcacti, LuaMFloraCoyoteFloraChompBarrelcacti1, LuaMFloraCoyoteFloraChompBarrelcacti2, LuaMFloraCoyoteFloraChompBarrelcacti3]
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.78
     noise: { seed: 29, noiseType: OpenSimplex2, frequency: 4 }
     allowedTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand]
-    entities: [CMDesertCactusMultiple, ChompFloraDesertPlanetLbarrelcacti, CMBushDesertCactus, CoyoteFloraChompLbarrelcacti1]
+    decals: [LuaMFloraCMDesertCactusMultiple, LuaMFloraChompFloraDesertPlanetLbarrelcacti, LuaMFloraCMBushDesertCactus, LuaMFloraCoyoteFloraChompLbarrelcacti1]
   # Living plants (_WG/Planets/Life/merak.yml): sting-nettle, tappable barrel cacti, agave
   - !type:BiomeEntityLayer
     threshold: 0.93
@@ -351,11 +428,11 @@
   layers:
   # Wildlife: goats and crabs, and very rarely a mimic
   # Desert grass, shade palms, bushes and reeds; later layers win.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.1
     noise: { seed: 43, noiseType: OpenSimplex2, frequency: 0.25 }
     allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
-    entities: [CMGrassDesertLightgrass7, CMGrassTallgrassDesert, CMGrassDesertLightgrass5, AuroraFloraGrassDesert]
+    decals: [LuaMFloraCMGrassDesertLightgrass7, LuaMFloraCMGrassTallgrassDesert, LuaMFloraCMGrassDesertLightgrass5, LuaMFloraAuroraFloraGrassDesert]
   - !type:BiomeEntityLayer
     threshold: 0.7
     noise: { seed: 44, noiseType: OpenSimplex2, frequency: 0.3 }
@@ -367,16 +444,16 @@
     allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
     entities: [ChompTreeDesertPlanetMpalmtree, ChompTreeDesertPlanetPalmtree, TgFloraTreePalm, ChompTreeDesertPlanetSpalmtree]
   # Date palms in the thickest groves
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     threshold: 0.875
     noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.0075, fractalType: FBm, octaves: 2 }
     allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
-    entities: [AuroraFloraBushKonyangReeds]
+    decals: [LuaMFloraAuroraFloraBushKonyangReeds]
   - !type:BiomeEntityLayer
     threshold: 0.9
     noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.0075, fractalType: FBm, octaves: 2 }
     allowedTiles: [WGFloorMerakOasisDirt, WGFloorMerakOasisGrass]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
   - !type:BiomeTileLayer
     threshold: -1
     tile: WGFloorMerakOasisDirt

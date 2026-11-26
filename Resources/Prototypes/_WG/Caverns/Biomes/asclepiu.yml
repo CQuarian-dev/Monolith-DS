@@ -100,9 +100,9 @@
     tile: WGCavernFloorFlowstone
     threshold: 0.36
     noise: { seed: 117, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.025 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetDirt, WGCavernFloorFlowstone]
-    entities: [Cobweb1, Cobweb2]
+    decals: [LuaMFloraCobweb1, LuaMFloraCobweb2]
     threshold: 0.98
     noise: { seed: 301, noiseType: OpenSimplex2, frequency: 1 }
   - !type:BiomeEntityLayer
@@ -175,7 +175,7 @@
   # The pools, on whatever floor.
   - !type:BiomeEntityLayer
     allowedTiles: [FloorPlanetDirt, WGCavernFloorWetRock]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
     threshold: 0.3
     noise: { seed: 434, noiseType: OpenSimplex2, fractalType: FBm, octaves: 2, frequency: 0.045 }
 
@@ -214,14 +214,14 @@
     entities: [CrystalGreen, CrystalCyan]
     threshold: 0.99
     noise: { seed: 304, noiseType: OpenSimplex2, frequency: 1 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetDirt, WGCavernFloorCaveSoil]
-    entities: [GoonMushrooms, GoonMushroomsType3, GoonMushroomsType5]
+    decals: [LuaMFloraGoonMushrooms, LuaMFloraGoonMushroomsType3, LuaMFloraGoonMushroomsType5]
     threshold: 0.96
     noise: { seed: 444, noiseType: OpenSimplex2, frequency: 1 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetDirt, WGCavernFloorCaveSoil]
-    entities: [Cobweb1, Cobweb2]
+    decals: [LuaMFloraCobweb1, LuaMFloraCobweb2]
     threshold: 0.95
     noise: { seed: 445, noiseType: OpenSimplex2, frequency: 1 }
   - !type:BiomeEntityLayer
@@ -239,5 +239,5 @@
     threshold: -1
   - !type:BiomeEntityLayer
     allowedTiles: [FloorPlanetDirt]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
     threshold: -1

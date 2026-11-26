@@ -5,6 +5,8 @@
   name: hoverbike
   description: A turbine with bike handles. Drives like a bike on deck and flies free in open space.
   components:
+  - type: CEZPhysics # LuaM: the turbine keeps it over holes
+    gravityMultiplier: 0
   - type: Sprite
     drawdepth: Objects
     sprite: _NF/Objects/Vehicles/hoverbike.rsi

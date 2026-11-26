@@ -19,6 +19,7 @@ public sealed partial class RoofOverlay : Overlay
     private SharedMapSystem _mapManager => _entManagerForMaps.System<SharedMapSystem>();
     [Dependency] private ITileDefinitionManager _tileDefs = default!; // WOLFGATE(Planets): the open-grating check below reads tile definitions.
     [Dependency] private IOverlayManager _overlay = default!;
+    [Dependency] private Robust.Shared.Configuration.IConfigurationManager _luamCfg = default!; // LuaM
 
     private readonly EntityLookupSystem _lookup;
     private readonly SharedMapSystem _mapSystem;
@@ -56,6 +57,7 @@ public sealed partial class RoofOverlay : Overlay
 
         var viewport = args.Viewport;
         var eye = args.Viewport.Eye;
+        var luamMap = args.MapUid; // LuaM
 
         var worldHandle = args.WorldHandle;
         var lightoverlay = _overlay.GetOverlay<BeforeLightTargetOverlay>();
@@ -125,6 +127,7 @@ public sealed partial class RoofOverlay : Overlay
 
                     var tileEnumerator = _mapSystem.GetTilesIntersecting(grid.Owner, grid, bounds);
                     var roofEnt = (grid.Owner, grid.Comp, roof);
+                    var luamIndoor = LuaMIndoorLight(luamMap, grid.Owner, wgRoofs); // LuaM
 
                     // Due to stencilling we essentially draw on unrooved tiles
                     while (tileEnumerator.MoveNext(out var tileRef))
@@ -136,6 +139,14 @@ public sealed partial class RoofOverlay : Overlay
                             continue;
                         }
 
+                        // LuaM-start: under a roof on the surface some of the day still comes in through windows and doors
+                        if (luamIndoor is { } indoor)
+                        {
+                            color = new Color(MathF.Max(color.Value.R, indoor.R), MathF.Max(color.Value.G, indoor.G),
+                                MathF.Max(color.Value.B, indoor.B), color.Value.A);
+                        }
+                        // LuaM-end
+
                         var local = _lookup.GetLocalBounds(tileRef, grid.Comp.TileSize);
                         worldHandle.DrawRect(local, color.Value);
                     }
@@ -144,4 +155,16 @@ public sealed partial class RoofOverlay : Overlay
 
         worldHandle.SetTransform(Matrix3x2.Identity);
     }
+
+    // LuaM-start: a share of the outdoor light for roofed tiles above ground; caverns stay as dark as their roof
+    private Color? LuaMIndoorLight(EntityUid map, EntityUid grid, WGRoofSystem roofs)
+    {
+        var share = _luamCfg.GetCVar(Content.Shared._LuaM.CCVar.LuaMCVars.RoofIndoorLight);
+        if (share <= 0f || roofs.Underground(grid) || !_entManager.TryGetComponent(map, out MapLightComponent? light))
+            return null;
+
+        var ambient = light.AmbientLightColor;
+        return new Color(ambient.R * share, ambient.G * share, ambient.B * share);
+    }
+    // LuaM-end
 }

@@ -7,6 +7,16 @@
 # Snow and tundra.
 - type: tile
   id: WGFloorThrasciasSnowRough
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowrough_West.png
   parent: GoonFloorSnowrough
   weather: true
   indestructible: true
@@ -14,6 +24,16 @@
 
 - type: tile
   id: WGFloorThrasciasSnowCalm
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_goonstation_floor_snowcalm_West.png
   parent: GoonFloorSnowcalm
   weather: true
   indestructible: true
@@ -22,6 +42,16 @@
 # Bare frozen soil; the only brown ground on the planet.
 - type: tile
   id: WGFloorThrasciasFrozenDirt
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_South.png
+    East: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_East.png
+    North: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_North.png
+    West: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_West.png
   parent: FloorAsteroidSand
   weather: true
   indestructible: true
@@ -44,6 +74,7 @@
 
 - type: tile
   id: WGFloorThrasciasRoughIce
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: GoonFloorWaterIceRough
   weather: true
   indestructible: true
@@ -52,6 +83,7 @@
 # Clear ice that grips, where the dark ice did.
 - type: tile
   id: WGFloorThrasciasClearIce
+  edgeSpritePriority: -1 # LuaM: soft borders between planet ground tiles
   parent: FloorIce
   weather: true
   indestructible: true
@@ -61,6 +93,7 @@
 
 - type: tile
   id: WGFloorThrasciasClearIceSmooth
+  edgeSpritePriority: -1 # LuaM: soft borders between planet ground tiles
   parent: FloorIce
   weather: true
   indestructible: true
@@ -71,6 +104,7 @@
 # The bed of a lake (WGThrasciasLakeWater): grippy, as the water over it gives the slide while frozen.
 - type: tile
   id: WGFloorThrasciasLakeIce
+  edgeSpritePriority: -1 # LuaM: soft borders between planet ground tiles
   parent: FloorIce
   weather: true
   indestructible: true
@@ -82,7 +116,7 @@
 # as ice; its iceFriction and iceAcceleration are the old lake tile's.
 - type: entity
   id: WGThrasciasLakeWater
-  parent: MonoFloorWaterEntity
+  parent: CEWater # LuaM: CE water on every world
   name: lake water
   components:
   - type: WGFreezableWater
@@ -92,6 +126,7 @@
 # Frozen plasma growth: the ground round every plasma pool.
 - type: tile
   id: WGFloorThrasciasCrystalIce
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: AuroraFloorExoplanetCrystal
   weather: true
   indestructible: true
@@ -187,14 +222,14 @@
     - grasssnowc2
     - grasssnowc3
   # Frozen fungus shows only inside the snowdrifts: the same noise as the drift decals, at a higher threshold.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles:
     - FloorSnow
     - WGFloorThrasciasSnowRough
     - WGFloorThrasciasSnowCalm
     - WGFloorThrasciasFrozenDirt
     - WGFloorThrasciasSnowDug
-    entities: [GoonShrubSnow, GoonShrubSnow2]
+    decals: [LuaMFloraGoonShrubSnow, LuaMFloraGoonShrubSnow2]
     threshold: 0.85
     noise: { seed: 103, noiseType: OpenSimplex2, frequency: 2.5 }
   - !type:BiomeEntityLayer
@@ -332,12 +367,12 @@
   id: WGThrasciasBorealPocket
   layers:
   # Whipvines and snow spiders sit under the pines and shrubs: a later layer wins a tile.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles:
     - FloorSnow
     - WGFloorThrasciasSnowRough
     - WGFloorThrasciasSnowCalm
-    entities: [GoonShrubSnow, GoonShrubSnow2]
+    decals: [LuaMFloraGoonShrubSnow, LuaMFloraGoonShrubSnow2]
     threshold: 0.5
     noise: { seed: 143, noiseType: OpenSimplex2, frequency: 0.7 }
   - !type:BiomeEntityLayer

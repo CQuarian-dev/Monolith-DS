@@ -1867,6 +1867,7 @@
   id: FloorChromite
   name: tiles-chromite
   sprite: /Textures/Tiles/chromite.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 7
   placementVariants:
   - 1.0

@@ -4,7 +4,6 @@
 - type: wgPlanetAmbience
   id: WGPlanetAmbienceThrasciasCavern
   loops:
-  - path: /Audio/Ambience/ambicave.ogg
   - path: /Audio/_WG/LivingWorld/ambience/xen_nih_wind1_mix.ogg
   oneShots:
   - path: /Audio/Effects/glass_crack1.ogg

@@ -4,6 +4,16 @@
 # Fossil beds: cracked, dried lake bed.
 - type: tile
   id: WGCavernFloorFossilBed
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_dry_West.png
   parent: NebulaFloorDry
   indestructible: true
   deconstructTools: []
@@ -12,6 +22,7 @@
 # Buried ruin quarter: laid sandstone brick.
 - type: tile
   id: WGCavernFloorRuinStone
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: TgFloorSandstone
   indestructible: true
   deconstructTools: []

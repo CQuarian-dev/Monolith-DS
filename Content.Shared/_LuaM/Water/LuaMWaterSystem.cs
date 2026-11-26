@@ -6,6 +6,7 @@
 
 using System.Diagnostics.CodeAnalysis;
 using Content.Shared._LuaM.Vehicles.Components;
+using Content.Shared._WG.GroundCover;
 using Content.Shared.Buckle.Components;
 using Content.Shared.Tag;
 using Content.Shared.Throwing;
@@ -48,7 +49,12 @@ public sealed partial class LuaMWaterSystem : EntitySystem
         var anchored = _map.GetAnchoredEntitiesEnumerator(grid, gridComp, tile);
         while (anchored.MoveNext(out var ent))
         {
-            if (_waterQuery.TryComp(ent, out var comp))
+            // -- Замёрзшая вода держит как мостки: не топит и не тормозит технику
+            if (TryComp<WGFreezableWaterComponent>(ent, out var ice) && ice.Frozen)
+            {
+                covered = true;
+            }
+            else if (_waterQuery.TryComp(ent, out var comp))
             {
                 if (water == null || comp.Depth > water.Value.Comp.Depth)
                     water = (ent.Value, comp);

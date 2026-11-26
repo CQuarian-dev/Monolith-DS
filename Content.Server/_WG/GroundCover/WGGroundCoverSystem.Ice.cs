@@ -1,5 +1,6 @@
 using Content.Server._WG.Planets;
 using Content.Server.Atmos.Components;
+using Content.Shared._LuaM.Water; // LuaM
 using Content.Shared._WG.GroundCover;
 using Content.Shared.Atmos;
 using Content.Shared.Movement.Components;
@@ -333,6 +334,12 @@ public sealed partial class WGGroundCoverSystem
 
             RemComp<FloorOccluderComponent>(uid);
         }
+        // LuaM-start: CE water sinks mobs through LuaMWater and never had a floor occluder
+        else if (HasComp<LuaMWaterComponent>(uid))
+        {
+            RemComp<FrictionContactsComponent>(uid);
+        }
+        // LuaM-end
         else
         {
             RemComp<FrictionContactsComponent>(uid);

@@ -1,34 +1,34 @@
 <Document>
-  # Planet Flight
+  # Полёт над планетой
 
-  The worlds of the Kyphrus system, and what lives on them, are in the lore book under [lorelink="Star System" link="MonoStarSystem"].
+  Миры системы Кифрус и всё, что на них обитает, описаны в книге лора в разделе [lorelink="Звёздная система" link="MonoStarSystem"].
 
-  Over a planet, your gravity generator does nothing. Your thrusters hold the ship up. The flight panel on the shuttle console shows whether they can.
+  Над планетой генератор гравитации ничего не делает. Корабль держат в воздухе двигатели. Панель полёта на консоли шаттла показывает, справляются ли они.
 
-  ## The flight panel
+  ## Панель полёта
 
-  - The top line says what the ship is doing: in orbit, landed, lifting off, climbing, hovering, descending, or [color=#ff3030]LIFT LOST[/color].
-  - [bold]Lift[/bold] is thrust against the ship's weight on this planet. You need [color=#3fe05a]100%[/color] to hover, climb or take off. Under 100% the ship sinks. Under 50% it falls.
-  - [bold]Power[/bold] says whether your grid can run every thruster. If it is short, thrusters cut out and lift drops.
-  - When landed, the panel says [color=#3fe05a]READY FOR LIFTOFF[/color] or [color=#ff3030]NOT READY[/color], and why.
-  - A [color=#ffd23f]Fix[/color] line tells you how many thrusters to convert or add, or how much power you are missing.
+  - Верхняя строка показывает, что делает корабль: на орбите, посадка, взлёт, набор высоты, зависание, снижение или [color=#ff3030]ПОТЕРЯ ПОДЪЁМНОЙ СИЛЫ[/color].
+  - [bold]Подъёмная сила[/bold] — это тяга против веса корабля на этой планете. Чтобы зависать, набирать высоту или взлетать, нужно [color=#3fe05a]100%[/color]. Ниже 100% корабль проседает. Ниже 50% — падает.
+  - [bold]Питание[/bold] показывает, хватает ли сети на все двигатели. Если не хватает, двигатели отключаются и подъёмная сила падает.
+  - После посадки панель пишет [color=#3fe05a]ГОТОВ К ВЗЛЁТУ[/color] или [color=#ff3030]НЕ ГОТОВ[/color] и почему.
+  - Строка [color=#ffd23f]Решение[/color] подсказывает, сколько двигателей переоборудовать или добавить или сколько питания не хватает.
 
-  ## Thrusters in atmosphere
+  ## Двигатели в атмосфере
 
-  - Ordinary thrusters give [bold]half thrust[/bold] below orbit.
-  - Landing thrusters give [bold]full thrust[/bold]. Convert an anchored thruster with a landing thruster conversion kit, or have a drydock fit atmospheric thrusters to the whole ship.
-  - Heavier planets need more lift. The ship previewer estimates the strongest gravity a ship can lift off in.
+  - Обычные двигатели ниже орбиты дают [bold]половину тяги[/bold].
+  - Посадочные двигатели дают [bold]полную тягу[/bold]. Переоборудуйте закреплённый двигатель набором посадочного переоборудования или попросите сухой док поставить атмосферные двигатели на весь корабль.
+  - Тяжёлым планетам нужна большая подъёмная сила. Предпросмотр корабля оценивает самую сильную гравитацию, с которой корабль сможет взлететь.
 
-  ## Going down and coming back up
+  ## Спуск и подъём
 
-  1. Fly to the planet and press [bold]Enter orbit[/bold].
-  2. Check the panel. With 100% lift and enough power, hold [bold]descend[/bold] or press [bold]Enter atmosphere[/bold]. With less, the console asks you to confirm, because the ship will not be able to climb back out.
-  3. In the air, ascend and descend change altitude. Land gently.
-  4. To leave, hold [bold]ascend[/bold] or press [bold]Liftoff[/bold]. Keep climbing to reach orbit, then press [bold]Leave orbit[/bold].
+  1. Долетите до планеты и нажмите [bold]Выйти на орбиту[/bold].
+  2. Проверьте панель. При 100% подъёмной силы и достаточном питании удерживайте [bold]спуск[/bold] или нажмите [bold]Войти в атмосферу[/bold]. Если меньше, консоль попросит подтверждения: корабль не сможет подняться обратно.
+  3. В воздухе подъём и спуск меняют высоту. Садитесь мягко.
+  4. Чтобы улететь, удерживайте [bold]подъём[/bold] или нажмите [bold]Взлёт[/bold]. Набирайте высоту до орбиты, затем нажмите [bold]Покинуть орбиту[/bold].
 
-  ## When it goes wrong
+  ## Если что-то пошло не так
 
-  - A ship that loses lift glides down and the alarms call out its height. Restore power or thrust and it recovers.
-  - Hitting the ground too fast is a crash: hull damage, a skid and broken systems.
-  - Force-anchored ships and ships held by something on the ground cannot lift off. The panel says what is holding you.
+  - Корабль, потерявший подъёмную силу, планирует вниз, а сигнализация объявляет высоту. Восстановите питание или тягу, и он выровняется.
+  - Слишком быстрое касание земли — это крушение: повреждение корпуса, занос и сломанные системы.
+  - Принудительно закреплённые корабли и корабли, которые что-то держит на земле, взлететь не могут. Панель пишет, что вас держит.
 </Document>

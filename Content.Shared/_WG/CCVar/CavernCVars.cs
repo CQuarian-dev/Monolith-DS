@@ -19,5 +19,5 @@ public sealed class CavernCVars
     /// Whether cavern mouths are claimed ahead of players as they explore; off leaves only the gate and admin mouths.
     /// </summary>
     public static readonly CVarDef<bool> CavernClaims =
-        CVarDef.Create("wg.cavern_claims", true, CVar.SERVERONLY);
+        CVarDef.Create("wg.cavern_claims", false, CVar.SERVERONLY); // LuaM: no random holes, caverns are reached through the gate and buildings
 }

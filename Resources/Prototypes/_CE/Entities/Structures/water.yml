@@ -22,12 +22,22 @@
   # LuaM-end
   - type: Clickable
   - type: SyncSprite
+  # LuaM-start: CE water takes its shores from CE tiles, which our worlds don't have; it smooths its own corners instead
   - type: Sprite
-    sprite: _CE/Structures/Nature/water.rsi
-    state: static
+    sprite: _WG/Resprites/Wizden/Tiles/TileEntities/liquid-water.rsi
     drawdepth: Puddles
-  - type: CEIconSmooth
-    key: floorTile
+    layers:
+    - state: full
+      visible: false
+  - type: IconSmooth
+    key: water
+    base: water
+  - type: Icon
+    sprite: _WG/Resprites/Wizden/Tiles/TileEntities/liquid-water.rsi
+    state: full
+#  - type: CEIconSmooth
+#    key: floorTile
+  # LuaM-end
   - type: Physics
     bodyType: Static
   - type: Fixtures
@@ -89,6 +99,7 @@
       params:
         volume: 8
   - type: CESafeFalling
+  - type: WGFreezableWater # LuaM: lakes freeze in cold air, as the Mono water did
   - type: AmbientSound
     volume: 5
     range: 4
@@ -106,10 +117,10 @@
   parent: CEWater
   id: CEWaterMoving
   suffix: Moving
-  components:
-  - type: Sprite
-    state: moving
-    snapCardinals: false
+#  components:
+#  - type: Sprite # LuaM: same smoothed water as CEWater
+#    state: moving
+#    snapCardinals: false
 
 - type: entity
   parent: CEWater

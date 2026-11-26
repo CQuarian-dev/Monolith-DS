@@ -81,8 +81,15 @@ public sealed class WGFrozenWaterVisualsSystem : EntitySystem
         var rsi = ent.Comp1.Frozen ? ice : sprite.BaseRSI;
         for (var i = 0; _sprite.TryGetLayer((ent, sprite), i, out var layer, false); i++)
         {
-            if (layer.ActualRsi != rsi)
-                _sprite.LayerSetRsi((ent, sprite), i, rsi, layer.State);
+            // LuaM-start: only the water's own layers swap art; tile-smoothing corners and states the ice lacks stay
+            if (layer.ActualRsi == rsi || layer.ActualRsi != (ent.Comp1.Frozen ? sprite.BaseRSI : ice))
+                continue;
+
+            if (rsi == null || !rsi.TryGetState(layer.State, out _))
+                continue;
+
+            _sprite.LayerSetRsi((ent, sprite), i, rsi, layer.State);
+            // LuaM-end
         }
 
         _sprite.SetVisible((ent, sprite), !ent.Comp1.Frozen || !SnowCovered(ent));

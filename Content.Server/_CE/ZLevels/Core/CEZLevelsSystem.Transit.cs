@@ -595,6 +595,15 @@ public sealed partial class CEZLevelsSystem
             var convoy = GetConvoyMaps(transitMapUid);
             var bottomTransit = Comp<CEZTransitMapComponent>(convoy[0]);
 
+            // LuaM-start: a grid standing on the level below, as a city floor, can't take a hull set down into it
+            if (bottomTransit.LowerMap is { } builtOver && LuaMConvoyBlockedByGrids(convoy[0], builtOver))
+            {
+                LuaMRefuseDescent(grid);
+                progress = CeilingClearance;
+                break;
+            }
+            // LuaM-end
+
             // You can't fly below terrain — the convoy sets down on it instead.
             if (bottomTransit.LowerMap is not { } bottomLower || ConvoyBlockedByPlane(convoy[0], bottomLower))
                 return LandTransitSet(grid);
@@ -636,6 +645,7 @@ public sealed partial class CEZLevelsSystem
             }
         }
 
+        LuaMCrashIntoFloors(convoyMaps); // LuaM
         return true;
     }
 
@@ -684,6 +694,86 @@ public sealed partial class CEZLevelsSystem
 
         return false;
     }
+
+    // LuaM-start: grids standing on a level (city floors, stations, other hulls) are as solid as its own tiles
+    private List<Entity<MapGridComponent>> _luamLevelGrids = new();
+
+    private readonly Dictionary<EntityUid, TimeSpan> _luamNextCrash = new();
+    private static readonly TimeSpan LuaMCrashCooldown = TimeSpan.FromSeconds(3);
+
+    private bool LuaMConvoyBlockedByGrids(EntityUid edgeTransitMap, EntityUid level)
+    {
+        foreach (var hull in CollectGridsOnMap(edgeTransitMap))
+        {
+            if (LuaMHullOverGrids(hull, level))
+                return true;
+        }
+
+        return false;
+    }
+
+    private bool LuaMHullOverGrids(EntityUid hull, EntityUid level)
+    {
+        if (!TryComp<MapGridComponent>(hull, out var hullGrid))
+            return false;
+
+        var footprint = _transform.GetWorldMatrix(hull).TransformBox(hullGrid.LocalAABB);
+        _luamLevelGrids.Clear();
+        _map.FindGridsIntersecting(level, footprint, ref _luamLevelGrids, includeMap: false);
+        foreach (var other in _luamLevelGrids)
+        {
+            if (other.Owner == level || other.Owner == hull)
+                continue;
+
+            var tiles = _map.GetTilesEnumerator(other.Owner, other.Comp, footprint);
+            while (tiles.MoveNext(out var tile))
+            {
+                if (!tile.Tile.IsEmpty)
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
+    /// <summary>
+    /// LuaM: between two levels a hull is inside whatever stands on the level above it, so a hull flown under a
+    /// building's upper floor slams into the building, as one rising into it does.
+    /// </summary>
+    private void LuaMCrashIntoFloors(List<EntityUid> convoyMaps)
+    {
+        foreach (var convoyMap in convoyMaps)
+        {
+            if (!TryComp<CEZTransitMapComponent>(convoyMap, out var transit) || transit.UpperMap is not { } floor)
+                continue;
+
+            foreach (var hull in CollectGridsOnMap(convoyMap))
+            {
+                if (_timing.CurTime < _luamNextCrash.GetValueOrDefault(hull) || !LuaMHullOverGrids(hull, floor))
+                    continue;
+
+                _luamNextCrash[hull] = _timing.CurTime + LuaMCrashCooldown;
+                _shuttle.Smimsh(hull, crushMap: floor, explodeGrids: true);
+            }
+        }
+    }
+
+    private void LuaMRefuseDescent(EntityUid grid)
+    {
+        if (_timing.CurTime < _wgNextLandingRefusal.GetValueOrDefault(grid))
+            return;
+
+        _wgNextLandingRefusal[grid] = _timing.CurTime + WGLandingRefusalCooldown;
+        var transitSet = CollectTransitSet(grid);
+        var pilots = EntityQueryEnumerator<Content.Shared.Shuttles.Components.PilotComponent>();
+        while (pilots.MoveNext(out var pilotUid, out var pilot))
+        {
+            if (pilot.Console is { } console && !TerminatingOrDeleted(console)
+                && transitSet.Contains(Transform(console).GridUid ?? EntityUid.Invalid))
+                _popup.PopupEntity(Loc.GetString("wg-flight-landing-blocked"), console, pilotUid);
+        }
+    }
+    // LuaM-end
 
     private bool LandTransitSet(Entity<MapGridComponent> grid)
     {

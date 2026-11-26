@@ -1,0 +1,14 @@
+﻿ent-BayBookcase = книжный шкаф
+ent-GoonBookcase = книжный шкаф
+    .desc = Деревянная мебель для хранения книг.
+ent-GoonBookcaseButton = книжный шкаф
+    .desc = Деревянная мебель для хранения книг.
+ent-GoonBookcaseDirectional = книжный шкаф
+    .desc = Деревянная мебель для хранения книг.
+ent-GoonBookcaseDirectionalFull = книжный шкаф
+    .desc = Деревянная мебель для хранения книг.
+ent-GoonDecorationBookcase = книжный шкаф
+    .desc = Это книжный шкаф. Полный книг.
+ent-NebulaBookcaseFancy = книжный шкаф
+ent-NebulaBookcaseCart = книжная тележка
+    .desc = Передвижная тележка для перевозки книг.

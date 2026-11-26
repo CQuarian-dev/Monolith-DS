@@ -1,0 +1,13 @@
+﻿cmd-cavernencounters-desc = Показывает запланированные в пещерах каждого мира встречи и их места или телепортирует к одной из них.
+cmd-cavernencounters-help = Использование: { $command } [мир] | { $command } goto <номер>
+cmd-cavernencounters-invalid-args = Ожидается пусто, название мира или goto <номер>.
+cmd-cavernencounters-world = { $planet }: встреч { $count }, размещено { $spawned }, пропущено { $skipped }
+cmd-cavernencounters-row = #{ $number } { $encounter } | { $state } | запланирована в { $planned } | комната в { $centre }
+cmd-cavernencounters-none = ещё нет
+cmd-cavernencounters-empty = Ни в одном мире нет встреч в пещерах.
+cmd-cavernencounters-unknown-world = Мира «{ $planet }» со встречами в пещерах нет.
+cmd-cavernencounters-bad-number = Встречи номер { $number } нет. Сначала выведите список.
+cmd-cavernencounters-no-entity = Сначала вселитесь в сущность.
+cmd-cavernencounters-goto-done = Перемещено к #{ $number } { $encounter } на { $planet } ({ $state }).
+cmd-cavernencounters-hint-first = <мир | goto>
+cmd-cavernencounters-hint-number = <номер встречи>

@@ -211,6 +211,17 @@ public sealed partial class CEZLevelsSystem
         return HasComp<WGPlanetLayerComponent>(map) && !WgIsGroundLayer(map);
     }
 
+    // LuaM-start: ship guns stay quiet on a planet's ground and until the hull has taken off from it
+    public bool LuaMNearPlanetGround(EntityUid grid)
+    {
+        if (Transform(grid).MapUid is not { } map || HasComp<WGOrbitLayerComponent>(map))
+            return false;
+
+        var onPlanet = HasComp<WGPlanetLayerComponent>(map) || HasComp<CEZTransitMapComponent>(map) && WgIsPlanetFlight(grid);
+        return onPlanet && !WgHasTakenOff(grid, map);
+    }
+    // LuaM-end
+
     private bool WgIsGroundLayer(EntityUid map)
     {
         return HasComp<CEZGroundLayerComponent>(map) || TryComp<CEZMapComponent>(map, out var zMap) && zMap.Depth == 0;

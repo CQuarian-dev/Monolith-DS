@@ -16,6 +16,9 @@ using Content.Shared.Standing;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Player;
 using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
@@ -33,6 +36,7 @@ public sealed partial class LuaMWaterVisualsSystem : EntitySystem
     [Dependency] private StandingStateSystem _standing = default!;
     [Dependency] private IResourceCache _resources = default!;
     [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
 
     private static readonly ProtoId<ShaderPrototype> WaterShader = "LuaMWaterSubmersion";
     private static readonly EntProtoId WakeVisual = "LuaMWaterWake";
@@ -44,6 +48,11 @@ public sealed partial class LuaMWaterVisualsSystem : EntitySystem
     private const float FeetLine = 4f;
     private static readonly TimeSpan SurfaceCheckInterval = TimeSpan.FromSeconds(0.1);
     private static readonly TimeSpan MovingLinger = TimeSpan.FromSeconds(0.2);
+    private static readonly SoundSpecifier VehicleEnterSound = new SoundPathSpecifier("/Audio/Effects/Fluids/watersplash.ogg", AudioParams.Default.WithVariation(0.1f));
+    private static readonly SoundSpecifier VehicleExitSound = new SoundPathSpecifier("/Audio/Effects/Fluids/slosh.ogg", AudioParams.Default.WithVariation(0.1f));
+    private static readonly SoundSpecifier VehicleWadeSound = new SoundPathSpecifier("/Audio/_CE/Ambience/water.ogg");
+    private const float WadeIdleVolume = -6f;
+    private const float WadeMovingVolume = 2f;
 
     private readonly HashSet<EntityUid> _pending = new();
     private bool _newWater;
@@ -259,10 +268,42 @@ public sealed partial class LuaMWaterVisualsSystem : EntitySystem
         _sprite.SetVisible((splash, splashSprite), sprite.Visible);
     }
 
+    // -- Техника плещет, въезжая в воду и выезжая из неё, а в воде шумит течением: громче на ходу, тише на месте
+    private void UpdateWadeSound(Entity<LuaMWaterVisualsComponent> ent, bool wet)
+    {
+        if (wet != ent.Comp.Wet)
+        {
+            ent.Comp.Wet = wet;
+            _audio.PlayEntity(wet ? VehicleEnterSound : VehicleExitSound, Filter.Local(), ent, false);
+        }
+
+        if (!wet)
+        {
+            ent.Comp.WadeLoop = _audio.Stop(ent.Comp.WadeLoop);
+            return;
+        }
+
+        var volume = _timing.CurTime < ent.Comp.MovingUntil ? WadeMovingVolume : WadeIdleVolume;
+        if (ent.Comp.WadeLoop is not { } loop || !Exists(loop))
+        {
+            ent.Comp.WadeLoop = _audio.PlayEntity(VehicleWadeSound, Filter.Local(), ent, false,
+                AudioParams.Default.WithLoop(true).WithVolume(volume))?.Entity;
+            ent.Comp.WadeVolume = volume;
+            return;
+        }
+
+        if (!MathHelper.CloseTo(ent.Comp.WadeVolume, volume))
+        {
+            ent.Comp.WadeVolume = volume;
+            _audio.SetVolume(loop, volume);
+        }
+    }
+
     private void OnVisualsShutdown(Entity<LuaMWaterVisualsComponent> ent, ref ComponentShutdown args)
     {
         if (ent.Comp.Splash != null)
             QueueDel(ent.Comp.Splash);
+        ent.Comp.WadeLoop = _audio.Stop(ent.Comp.WadeLoop);
 
         if (!TryComp<SpriteComponent>(ent, out var sprite))
             return;
@@ -275,6 +316,7 @@ public sealed partial class LuaMWaterVisualsSystem : EntitySystem
     // -- Пена дочерняя к машине и вращается вместе с ней: движок выбирает ей тот же ракурс, что и кузову
     private void UpdateFoam(Entity<LuaMWaterVisualsComponent> ent, SpriteComponent sprite, LuaMWaterVehicleComponent vehicle, bool visible)
     {
+        UpdateWadeSound(ent, visible);
         if (!visible)
         {
             if (ent.Comp.Splash != null)

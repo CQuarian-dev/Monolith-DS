@@ -1,0 +1,12 @@
+﻿wg-shuttle-console-liftoff = Взлёт
+wg-shuttle-console-cancel-liftoff = Отменить взлёт
+wg-liftoff-no-hull = Эта консоль не стоит на летающем корпусе.
+wg-liftoff-refused-ground = Эта консоль стоит на земле планеты, а не на корабле. Лететь она не может.
+wg-liftoff-not-grounded = Взлёт возможен только когда корпус стоит на планете.
+wg-liftoff-not-planet = Этот корпус летит не над планетой.
+wg-liftoff-pilot-lost = Возьмите управление этой консолью шаттла, прежде чем взлетать.
+wg-liftoff-force-anchored = Корпус принудительно закреплён и не может взлететь.
+wg-liftoff-power-deficit = Двигателям не хватает питания, чтобы поднять корпус.
+wg-liftoff-insufficient-lift = Не хватает подъёмной силы: { $percent }% из нужных 100%.
+wg-liftoff-blocked = Что-то удерживает корпус на земле.
+wg-liftoff-settled = Этот корпус разбит и врос в землю. Он больше никогда не взлетит.

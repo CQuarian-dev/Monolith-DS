@@ -139,7 +139,7 @@
   # Pools in the clearings, a dozen tiles or so across.
   - !type:BiomeEntityLayer
     allowedTiles: [FloorChromite, WGFloorAerumnaClay, WGFloorAerumnaClayRock, WGFloorAerumnaDusk, WGFloorAerumnaShroud, WGFloorAerumnaCrystalBed, WGFloorAerumnaHive]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
     threshold: 0.75
     noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.016, fractalType: FBm, octaves: 2 }
 
@@ -178,6 +178,13 @@
     threshold: 0.76
     noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.03, fractalType: FBm, octaves: 2 }
   # Decals go first: a decal layer that passes blocks every entity layer listed before it.
+  # LuaM-start: sparse grass tufts under everything else, so open grass is never bare
+  - !type:BiomeDecalLayer
+    allowedTiles: [FloorPlanetGrass, WGFloorVerdaMeadowGrass, WGFloorVerdaForestGrass]
+    decals: [Grassa1, Grassa2, Grassa3, Grassa4, Grassa5, Grassb1, Grassb2, Grassb3, Grassb4, Grassb5, Grassd1, Grassd2, Grassd3]
+    threshold: 0.35
+    noise: { seed: 260, noiseType: OpenSimplex2, frequency: 3 }
+  # LuaM-end
   - !type:BiomeDecalLayer
     allowedTiles: [WGFloorVerdaMeadowGrass]
     decals: [AuroraDecalFloorDecalKonyangFlowers]
@@ -185,36 +192,31 @@
     noise: { seed: 64, noiseType: OpenSimplex2, frequency: 4 }
   # Wildlife by region (Planets/Life/verda_mobs.yml): meadow, woods and the pond shores.
   # Wildflower meadows.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMeadowGrass]
-    entities: [CoyoteWildPlantFlowerBlue, CoyoteWildPlantFlowerOrange]
+    decals: [LuaMFloraCoyoteWildPlantFlowerBlue, LuaMFloraCoyoteWildPlantFlowerOrange]
     threshold: 0.84
     noise: { seed: 201, noiseType: OpenSimplex2, frequency: 5 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMeadowGrass]
-    entities: [CoyoteWildPlantFlowerPink, CoyoteWildPlantFlowerPurple]
+    decals: [LuaMFloraCoyoteWildPlantFlowerPink, LuaMFloraCoyoteWildPlantFlowerPurple]
     threshold: 0.84
     noise: { seed: 202, noiseType: OpenSimplex2, frequency: 5 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMeadowGrass]
-    entities: [CoyoteWildPlantFlowerRed, CoyoteWildPlantFlowerWhite]
+    decals: [LuaMFloraCoyoteWildPlantFlowerRed, LuaMFloraCoyoteWildPlantFlowerWhite]
     threshold: 0.84
     noise: { seed: 203, noiseType: OpenSimplex2, frequency: 5 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMeadowGrass]
-    entities: [CoyoteWildPlantFlowerYellowhite, CoyoteWildPlantPetuniaBlue]
+    decals: [LuaMFloraCoyoteWildPlantFlowerYellowhite]
     threshold: 0.84
     noise: { seed: 204, noiseType: OpenSimplex2, frequency: 5 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaMeadowGrass]
-    entities: [DarkPackFloraDarkpackFlowerMarigold, CoyoteFloraWildPlantThistle]
+    decals: [LuaMFloraDarkPackFloraDarkpackFlowerMarigold]
     threshold: 0.84
     noise: { seed: 205, noiseType: OpenSimplex2, frequency: 5 }
-  - !type:BiomeEntityLayer
-    allowedTiles: [WGFloorVerdaMeadowGrass]
-    entities: [CoyoteFloraTallgrass3, CoyoteFloraTallgrass5]
-    threshold: 0.84
-    noise: { seed: 206, noiseType: OpenSimplex2, frequency: 5 }
   # Bees and snakes stand where a wildflower or a clump of tall grass would (same noise, a higher threshold, listed after).
   - !type:BiomeMetaLayer
     template: WGTemperateWoodland
@@ -226,21 +228,21 @@
     threshold: 0.72
     noise: { seed: 11, noiseType: OpenSimplex2, frequency: 0.02 }
   # Reeds round the ponds.
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaPondMud]
-    entities: [AuroraFloraBushKonyangReeds, CoyoteFloraTallgrass9]
+    decals: [LuaMFloraAuroraFloraBushKonyangReeds]
     threshold: 0.4
     noise: { seed: 228, noiseType: OpenSimplex2, frequency: 3 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorVerdaPondMud]
-    entities: [AuroraAssunzioneGrassAlt, AuroraFloraBushKonyangReeds]
+    decals: [LuaMFloraAuroraAssunzioneGrassAlt, LuaMFloraAuroraFloraBushKonyangReeds]
     threshold: 0.4
     noise: { seed: 229, noiseType: OpenSimplex2, frequency: 3 }
   # Pond rings: reeds to cut, a lotus to eat, shore sage to heal with (Planets/Life/verda.yml).
   # Ponds a few tiles across, between the lakes.
   - !type:BiomeEntityLayer
     allowedTiles: [FloorPlanetGrass, FloorPlanetDirt, WGFloorVerdaMeadowGrass, WGFloorVerdaForestGrass, WGFloorVerdaPondMud]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
     threshold: 0.85
     noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.03, fractalType: FBm, octaves: 2 }
 
@@ -248,19 +250,19 @@
 - type: biomeTemplate
   id: WGTemperateWoodland
   layers:
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetGrass, WGFloorVerdaForestGrass]
-    entities: [GoonShrub, CoyoteFloraBigBush]
+    decals: [LuaMFloraGoonShrub]
     threshold: 0.9
     noise: { seed: 207, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetGrass, WGFloorVerdaForestGrass]
-    entities: [CoyoteFloraSmallBush, AuroraFloraBushGrove]
+    decals: [LuaMFloraAuroraFloraBushGrove]
     threshold: 0.9
     noise: { seed: 208, noiseType: OpenSimplex2, frequency: 4 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorPlanetGrass, WGFloorVerdaForestGrass]
-    entities: [AuroraAssunzioneBushFerny, CoyoteFloraTallgrass5]
+    decals: [LuaMFloraAuroraAssunzioneBushFerny]
     threshold: 0.9
     noise: { seed: 209, noiseType: OpenSimplex2, frequency: 4 }
   - !type:BiomeEntityLayer
@@ -325,9 +327,9 @@
     decals: [AuroraDecalFloorDecalSnowrocks]
     threshold: 0.86
     noise: { seed: 97, noiseType: OpenSimplex2, frequency: 3 }
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [FloorSnow, WGFloorVerdaSnowRough]
-    entities: [GoonShrubSnow, GoonShrubSnow2]
+    decals: [LuaMFloraGoonShrubSnow, LuaMFloraGoonShrubSnow2]
     threshold: 0.88
     noise: { seed: 246, noiseType: OpenSimplex2, frequency: 3 }
   - !type:BiomeEntityLayer
@@ -360,7 +362,7 @@
     threshold: -1
   - !type:BiomeEntityLayer
     allowedTiles: [FloorRiverbed]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
     threshold: -1
     noise: { seed: 0, noiseType: OpenSimplex2, frequency: 0.01 }
 
@@ -500,6 +502,6 @@
   # Oasis ponds, ten tiles or so across.
   - !type:BiomeEntityLayer
     allowedTiles: [FloorDesert, FloorDesertRocky, FloorDesertPlanet, FloorAsteroidSandUnvariantizedPlanet, FloorAsteroidSandPlanet]
-    entities: [MonoFloorWaterEntity]
+    entities: [CEWater] # LuaM: CE water on every world
     threshold: 0.8
     noise: { seed: 41, noiseType: OpenSimplex2, frequency: 0.016, fractalType: FBm, octaves: 2 }

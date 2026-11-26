@@ -3,6 +3,7 @@
 
 - type: tile
   id: WGCavernFloorLimestone
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorCave
   indestructible: true
   deconstructTools: []
@@ -10,6 +11,16 @@
 
 - type: tile
   id: WGCavernFloorSand
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_South.png
+    East: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_East.png
+    North: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_North.png
+    West: /Textures/_LuaM/Tiles/Edges/Tiles_Asteroid_asteroid_West.png
   parent: FloorAsteroidSand
   indestructible: true
   deconstructTools: []
@@ -24,6 +35,7 @@
 
 - type: tile
   id: WGCavernFloorChromite
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorChromite
   indestructible: true
   deconstructTools: []
@@ -31,6 +43,7 @@
 
 - type: tile
   id: WGCavernFloorBedrock
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorBedrock
   indestructible: true
   deconstructTools: []
@@ -38,6 +51,7 @@
 
 - type: tile
   id: WGCavernFloorFlesh
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorFlesh
   indestructible: true
   deconstructTools: []
@@ -47,6 +61,16 @@
 
 - type: tile
   id: WGCavernFloorAsh
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_South.png
+    East: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_East.png
+    North: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_North.png
+    West: /Textures/_LuaM/Tiles/Edges/Tiles_cavedrought_West.png
   parent: FloorCaveDrought
   indestructible: true
   deconstructTools: []
@@ -93,6 +117,7 @@
 
 - type: tile
   id: WGCavernFloorGut
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorAsteroidIronsand
   indestructible: true
   deconstructTools: []

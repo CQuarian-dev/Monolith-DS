@@ -7811,7 +7811,7 @@ entities:
     - type: Transform
       pos: 154.5,44.5
       parent: 1
-- proto: CEWaterCrocus
+- proto: CEWater
   entities:
   - uid: 1359
     components:

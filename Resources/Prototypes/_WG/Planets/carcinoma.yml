@@ -248,5 +248,6 @@
 # Exterior flesh terrain accepts weather without exposing indoor station flesh floors.
 - type: tile
   id: WGFloorFlesh
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: FloorFlesh
   weather: true

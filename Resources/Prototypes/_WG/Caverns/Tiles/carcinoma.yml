@@ -6,6 +6,7 @@
   id: WGCavernFloorNerve
   parent: WGFloorFleshScab
   sprite: /Textures/_WG/DecorImport/Tiles/nova/meat_fresh.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 1
   placementVariants: [1]
   indestructible: true
@@ -14,6 +15,7 @@
 
 - type: tile
   id: WGCavernFloorBoneRim
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorFleshBoneMeaty
   indestructible: true
   deconstructTools: []
@@ -21,6 +23,7 @@
 
 - type: tile
   id: WGCavernFloorBoneCartilage
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorFleshBoneStraight
   indestructible: true
   deconstructTools: []
@@ -28,6 +31,7 @@
 
 - type: tile
   id: WGCavernFloorBoneSpine
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorFleshBoneSpine
   indestructible: true
   deconstructTools: []
@@ -35,6 +39,16 @@
 
 - type: tile
   id: WGCavernFloorClot
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_Planets_BoneField_clotted_blood_West.png
   parent: WGFloorFleshRiverBank
   indestructible: true
   deconstructTools: []

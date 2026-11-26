@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 10/27/2026 00:57:45
-  entityCount: 4495
+  entityCount: 4499
 maps: []
 grids:
 - 1
@@ -5324,6 +5324,26 @@ entities:
       parent: 1
 - proto: CableApcExtension
   entities:
+  - uid: 4497
+    components:
+    - type: Transform
+      pos: 16.5,-57.5
+      parent: 1
+  - uid: 4498
+    components:
+    - type: Transform
+      pos: 17.5,-57.5
+      parent: 1
+  - uid: 4499
+    components:
+    - type: Transform
+      pos: 18.5,-57.5
+      parent: 1
+  - uid: 4500
+    components:
+    - type: Transform
+      pos: 18.5,-56.5
+      parent: 1
   - uid: 583
     components:
     - type: Transform

@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 08/25/2026 21:07:57
-  entityCount: 4520
+  entityCount: 4519
 maps: []
 grids:
 - 1
@@ -28079,14 +28079,6 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Static
-- proto: WeaponAMRShenzhen
-  entities:
-  - uid: 4446
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -7.3073816,-62.021553
-      parent: 1
 - proto: WeaponCapacitorRecharger
   entities:
   - uid: 4447

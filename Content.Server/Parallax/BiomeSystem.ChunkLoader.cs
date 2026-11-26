@@ -1,4 +1,5 @@
 // Mono - Refactored into smaller subsystems
+using Content.Shared.Decals; // LuaM
 using Content.Shared.Parallax.Biomes;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -161,7 +162,9 @@ public sealed partial class BiomeSystem
         // Batch create
         foreach (var (decalId, coords) in _chunkLoaderDecals)
         {
-            if (_decals.TryAddDecal(decalId, coords, out var dec))
+            // LuaM: the decal shifts by its offset, the tile check stays on its own tile
+            var offset = ProtoManager.TryIndex<DecalPrototype>(decalId, out var decalProto) ? decalProto.Offset : System.Numerics.Vector2.Zero;
+            if (_decals.TryAddDecal(new Decal(coords.Position + offset, decalId, null, Angle.Zero, 0, false), coords, out var dec))
             {
                 var tilePos = _mapSystem.LocalToTile(gridUid, grid, coords);
                 loadedDecals.Add(dec, tilePos);

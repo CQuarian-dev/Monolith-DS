@@ -34,6 +34,7 @@ public sealed partial class FireControlSystem : EntitySystem
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private PowerReceiverSystem _power = default!;
     [Dependency] private RotateToFaceSystem _rotateToFace = default!;
+    [Dependency] private Content.Server._CE.ZLevels.Core.CEZLevelsSystem _luamZLevels = default!; // LuaM
     /// <summary>
     /// Dictionary of entities that have visualization enabled
     /// </summary>
@@ -396,6 +397,7 @@ public sealed partial class FireControlSystem : EntitySystem
             || HasComp<FTLComponent>(grid)
             || HasComp<Content.Server._WG.Planets.Hop.WGPlanetHopComponent>(grid) // WOLFGATE(Planets): no firing mid-hop
             || HasComp<SpaceArtilleryDisabledGridComponent>(grid)
+            || _luamZLevels.LuaMNearPlanetGround(grid) // LuaM: no ship guns on or just over a planet's ground
         )
             return false;
 
@@ -406,6 +408,20 @@ public sealed partial class FireControlSystem : EntitySystem
 
         return true;
     }
+
+    // LuaM-start: the gunner hears why the guns are quiet, once in a while rather than on every held click
+    private readonly Dictionary<EntityUid, TimeSpan> _luamNextGroundWarning = new();
+
+    public void LuaMWarnGroundFire(EntityUid grid, EntityUid? actor)
+    {
+        if (actor is not { } user || !_luamZLevels.LuaMNearPlanetGround(grid)
+            || _timing.CurTime < _luamNextGroundWarning.GetValueOrDefault(user))
+            return;
+
+        _luamNextGroundWarning[user] = _timing.CurTime + TimeSpan.FromSeconds(2);
+        _popup.PopupEntity(Loc.GetString("luam-ship-guns-ground"), user, user);
+    }
+    // LuaM-end
 
     public void FireWeapons(EntityUid server, List<NetEntity> weapons, NetCoordinates coordinates, FireControlServerComponent? component = null)
     {

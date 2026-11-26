@@ -385,3 +385,5 @@ ui-options-combat-music-windup = Задержка активации боево�
 ui-options-combat-music-winddown = Задержка деактивации боевой музыки:
 ui-options-combat-music-sec-format = { $value } сек.
 ui-options-combat-music = Музыка боя
+ui-options-function-shuttle-ascend = Подъём шаттла
+ui-options-function-shuttle-descend = Спуск шаттла

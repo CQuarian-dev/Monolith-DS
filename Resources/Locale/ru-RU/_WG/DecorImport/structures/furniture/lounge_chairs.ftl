@@ -1,0 +1,10 @@
+﻿ent-ADTDeckChair = шезлонг
+    .desc = Шезлонг, чтобы ровно загореть в свете ближайшей звезды.
+ent-ChairBeachLoungeBlue = лежак
+ent-ChairBeachLoungeBrown = лежак
+ent-ChairBeachLoungeGreen = лежак
+ent-ChairBeachLoungeOrange = лежак
+ent-ChairBeachLoungeRed = лежак
+ent-ChairBeachLoungeWhite = лежак
+ent-ChairBigLog = большое бревно
+    .desc = Большое бревно. На нём можно сидеть или грызть его, если вы бобёр или какой-нибудь человек-термит.

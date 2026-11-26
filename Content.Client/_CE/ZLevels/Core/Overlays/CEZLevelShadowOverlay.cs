@@ -35,7 +35,7 @@ public sealed partial class CEZLevelShadowOverlay : Overlay
 
     public Color Color = Color.Black;
 
-    public const float MaxShadowAlpha = 0.98f;
+    public static float MaxShadowAlpha = 0.98f; // LuaM: set from luam.zlevel_shadow
     public const float ShadowHeightFalloff = 0.45f;
 
     public override OverlaySpace Space => OverlaySpace.BeforeLighting;

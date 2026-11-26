@@ -4,7 +4,6 @@
 - type: wgPlanetAmbience
   id: WGPlanetAmbienceAerumnaCavern
   loops:
-  - path: /Audio/Ambience/ambimystery.ogg
   - path: /Audio/_WG/Planets/Worlds/aerumna/aerumna_ambience_loop_3.ogg
   oneShots:
   - path: /Audio/_WG/Planets/Worlds/aerumna/aerumna_random_sound_1.ogg

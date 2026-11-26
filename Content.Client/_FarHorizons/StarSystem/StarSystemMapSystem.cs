@@ -31,8 +31,16 @@ public sealed partial class StarSystemMapSystem : SharedStarSystemMapSystem
         _beltOverlay = new(EntityManager, _protoMan);
         _starLightOverlay = new(EntityManager, _mapMan, _protoMan, _overlayMan, _tileDefMan, _cfg);
 
-        _cfg.OnValueChanged(FHCCVars.RenderStarSystem, EnsureStarSystem, true);
+        Subs.CVar(_cfg, FHCCVars.RenderStarSystem, EnsureStarSystem, true); // LuaM: unsubscribes with the system
     }
+
+    // LuaM-start: the overlay manager outlives a reconnect; overlays left behind held the old, shut-down systems
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        EnsureStarSystem(false);
+    }
+    // LuaM-end
 
     private void EnsureStarSystem(bool enabled)
     {

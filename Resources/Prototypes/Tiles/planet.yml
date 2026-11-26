@@ -2,6 +2,16 @@
   id: FloorPlanetDirt
   name: tiles-dirt-floor
   sprite: /Textures/Tiles/Planet/dirt.png # LuaM: dirt.rsi/dirt.png > dirt.png
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_South.png
+    East: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_East.png
+    North: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_North.png
+    West: /Textures/_LuaM/Tiles/Edges/Tiles_Planet_dirt_West.png
   variants: 4
   placementVariants:
   - 1.0
@@ -167,6 +177,16 @@
   id: FloorRiverbed
   name: tiles-low-desert-floor
   sprite: /Textures/_RMC14/Tiles/planet/desert/desert.png
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_RMC14_Tiles_planet_desert_desert_West.png
   variants: 6
   placementVariants:
   - 0.95
@@ -293,6 +313,7 @@
   id: FloorBasalt
   name: tiles-basalt-floor
   sprite: /Textures/Tiles/Planet/basalt.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -346,6 +367,7 @@
   id: FloorIce
   name: tiles-ice
   sprite: /Textures/Tiles/Planet/Snow/ice.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   isSubfloor: true
   friction: 0.05
   heatCapacity: 10000

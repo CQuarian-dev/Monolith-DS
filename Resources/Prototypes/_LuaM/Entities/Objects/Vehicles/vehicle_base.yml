@@ -14,6 +14,7 @@
   - type: Physics
     bodyType: Dynamic
     fixedRotation: true
+  - type: CEZPhysics # LuaM: drops through holes to the level below like anything else on planets
   - type: Strap
     position: None
     size: 500

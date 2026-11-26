@@ -76,4 +76,16 @@ public sealed class LuaMCVars
     // -- полёт на джетпаке между слоями, тени слоёв. Выключено — Z-уровни работают как раньше. Планетам (wg.planet_networks) нужно включённым.
     public static readonly CVarDef<bool> ZLevelsGridNetworks =
         CVarDef.Create("luam.zlevels_grid_networks", false, CVar.SERVER | CVar.REPLICATED);
+
+    // -- На сколько тайлов на экране сдвинут соседний Z-уровень: высота «обрыва» между уровнями (в CE 0.7)
+    public static readonly CVarDef<float> ZLevelOffset =
+        CVarDef.Create("luam.zlevel_offset", 0.4f, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+    // -- Самая густая тень от уровня над головой, 0..1 (в CE 0.98)
+    public static readonly CVarDef<float> ZLevelShadow =
+        CVarDef.Create("luam.zlevel_shadow", 0.6f, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+    // -- Доля дневного света под крышей на поверхности планет, 0..1 (0 — как в Wolfgate, кромешная тьма без ламп)
+    public static readonly CVarDef<float> RoofIndoorLight =
+        CVarDef.Create("luam.roof_indoor_light", 0.35f, CVar.ARCHIVE | CVar.CLIENTONLY);
 }

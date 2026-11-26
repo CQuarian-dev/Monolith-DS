@@ -35,6 +35,14 @@ public sealed partial class MapTextSystem : SharedMapTextSystem
         DebugTools.Assert(_prototypeManager.HasIndex<FontPrototype>(SharedMapTextComponent.DefaultFont));
     }
 
+    // LuaM-start: the overlay manager outlives a reconnect, the overlay must not keep the old systems
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        _overlayManager.RemoveOverlay(_overlay);
+    }
+    // LuaM-end
+
     private void OnComponentStartup(Entity<MapTextComponent> ent, ref ComponentStartup args)
     {
         CacheText(ent.Comp);

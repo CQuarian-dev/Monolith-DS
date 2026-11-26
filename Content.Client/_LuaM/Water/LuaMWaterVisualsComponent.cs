@@ -23,4 +23,7 @@ public sealed partial class LuaMWaterVisualsComponent : Component
     public TimeSpan NextSurfaceCheck;
     public string? SplashState;
     public int SplashSize;
+    public bool Wet;
+    public EntityUid? WadeLoop;
+    public float WadeVolume;
 }

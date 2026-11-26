@@ -4,6 +4,16 @@
 
 - type: tile
   id: WGCavernFloorUmbralShroud
+  edgeSpritePriority: 0 # LuaM: soft borders between planet ground tiles
+  edgeSprites: # LuaM
+    SouthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_SouthEast.png
+    NorthEast: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_NorthEast.png
+    NorthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_NorthWest.png
+    SouthWest: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_SouthWest.png
+    South: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_South.png
+    East: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_East.png
+    North: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_North.png
+    West: /Textures/_LuaM/Tiles/Edges/_WG_DecorImport_Tiles_nebula_floor_shrouded_West.png
   parent: WGFloorAerumnaShroud
   indestructible: true
   deconstructTools: []
@@ -11,6 +21,7 @@
 
 - type: tile
   id: WGCavernFloorUmbralDusk
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorAerumnaDusk
   indestructible: true
   deconstructTools: []
@@ -18,6 +29,7 @@
 
 - type: tile
   id: WGCavernFloorNest
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorAerumnaHive
   indestructible: true
   deconstructTools: []

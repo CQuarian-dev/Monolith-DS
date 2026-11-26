@@ -1,0 +1,1 @@
+﻿ent-BarSignLights = вывеска бара

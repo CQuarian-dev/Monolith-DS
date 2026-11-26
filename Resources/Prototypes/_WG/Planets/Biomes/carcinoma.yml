@@ -7,6 +7,7 @@
   id: WGFloorFleshScab
   parent: NovaFloorMeatFresh
   sprite: /Textures/_WG/Planets/BoneField/scab_shore.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 4
   placementVariants: [1, 1, 1, 1]
   weather: true
@@ -17,6 +18,7 @@
   id: WGFloorFleshBoneMeaty
   parent: NovaFloorBoneMeaty
   sprite: /Textures/_WG/Planets/BoneField/calcified_flesh.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 4
   placementVariants: [1, 1, 1, 1]
   weather: true
@@ -25,6 +27,7 @@
   id: WGFloorFleshBoneSpine
   parent: NovaFloorBoneSpine
   sprite: /Textures/_WG/Planets/BoneField/bleached_bone.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 4
   placementVariants: [1, 1, 1, 1]
   weather: true
@@ -33,6 +36,7 @@
   id: WGFloorFleshBoneStraight
   parent: NovaFloorBoneStraight
   sprite: /Textures/_WG/Planets/BoneField/cartilage.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 4
   placementVariants: [1, 1, 1, 1]
   weather: true
@@ -42,6 +46,7 @@
   id: WGFloorFleshCrust
   parent: ChompFloorOutdoorsRocksCetus
   sprite: /Textures/_WG/Planets/BoneField/dried_crust.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 4
   placementVariants: [1, 1, 1, 1]
   weather: true
@@ -57,6 +62,7 @@
   id: WGFloorFleshMarshDirt
   parent: PolarisFloorOutdoorsDirt
   sprite: /Textures/_WG/Planets/BoneField/marsh_scab.png
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   variants: 4
   placementVariants: [1, 1, 1, 1]
   weather: true
@@ -114,9 +120,9 @@
   - !type:BiomeTileLayer
     tile: WGFloorFleshCrust
     threshold: -1
-  - !type:BiomeEntityLayer
+  - !type:BiomeDecalLayer # LuaM: collisionless flora as decals
     allowedTiles: [WGFloorFleshCrust]
-    entities: [GoonShrubDead, GoonShrubDead2, GoonShrubDead3, GoonShrubDead4, CoyoteFloraBurnedbush3, CoyoteFloraBurnedbush5]
+    decals: [LuaMFloraGoonShrubDead, LuaMFloraGoonShrubDead2, LuaMFloraGoonShrubDead3, LuaMFloraGoonShrubDead4]
     threshold: 0.84
     noise: { seed: 91, noiseType: OpenSimplex2, frequency: 1.5 }
   - !type:BiomeEntityLayer
@@ -141,11 +147,6 @@
     threshold: 0.55
     noise: { seed: 95, noiseType: OpenSimplex2, frequency: 0.05 }
   # Pullable bone piles and the field's burrowers (_WG/Planets/Life); the scenery layers below win where they overlap.
-  - !type:BiomeEntityLayer
-    allowedTiles: [WGFloorFleshBoneMeaty, WGFloorFleshBoneSpine, WGFloorFleshBoneStraight]
-    entities: [WGCarcinomaBoneLong, WGCarcinomaBoneRibs, WGCarcinomaBoneRibsTall, WGCarcinomaBoneSkullGreat]
-    threshold: 0.9
-    noise: { seed: 96, noiseType: OpenSimplex2, frequency: 1 }
   - !type:BiomeEntityLayer
     allowedTiles: [WGFloorFleshBoneMeaty, WGFloorFleshBoneSpine, WGFloorFleshBoneStraight]
     entities: [WGCarcinomaBoneLumpOne, WGCarcinomaBoneLumpTwo, WGCarcinomaBoneLumpThree]
@@ -270,33 +271,9 @@
     sprite: _WG/Planets/BoneField/bones.rsi
 
 - type: entity
-  id: WGCarcinomaBoneLong
-  parent: CoyoteChompBonesLbone
-  name: long bone
-  components:
-  - type: Sprite
-    sprite: _WG/Planets/BoneField/bones_64x64.rsi
-
-- type: entity
   id: WGCarcinomaBoneRibs
   parent: CoyoteChompBonesLribs
   name: rib bones
-  components:
-  - type: Sprite
-    sprite: _WG/Planets/BoneField/bones_64x64.rsi
-
-- type: entity
-  id: WGCarcinomaBoneRibsTall
-  parent: CoyoteChompBonesLribs1
-  name: rib bones
-  components:
-  - type: Sprite
-    sprite: _WG/Planets/BoneField/bones_64x64.rsi
-
-- type: entity
-  id: WGCarcinomaBoneSkullGreat
-  parent: CoyoteChompBonesLskullW
-  name: great skull
   components:
   - type: Sprite
     sprite: _WG/Planets/BoneField/bones_64x64.rsi

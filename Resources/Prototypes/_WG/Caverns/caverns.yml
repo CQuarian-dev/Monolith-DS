@@ -19,9 +19,9 @@
     roughness: 0.35
     cellSize: 96
     groundTiles: [FloorPlanetGrass, FloorPlanetDirt, FloorSnow, WGFloorVerdaMeadowGrass, WGFloorVerdaForestGrass, WGFloorVerdaSnowRough]
-    avoid: [MonoFloorWaterEntity, MonoPlanetmapOreBase, MonoPlanetmapOreSnow]
+    avoid: [CEWater, MonoPlanetmapOreBase, MonoPlanetmapOreSnow] # LuaM: CE water on every world
     landingTile: WGCavernFloorPoolbed
-    landingEntity: MonoFloorWaterEntity
+    landingEntity: CEWater # LuaM: CE water on every world
     shade: WGCavernShadeAsclepiu
     stairs: WGCavernStairsAsclepiu
     rim: [FloraRockSolid]
@@ -80,7 +80,7 @@
     roughness: 0.1
     cellSize: 96
     groundTiles: [WGFloorMerakDuneSand, WGFloorMerakGoldSand, WGFloorMerakPaleSand, WGFloorMerakDarkSand, WGFloorMerakRedDesertSand, WGFloorMerakDesertGravel]
-    avoid: [MonoFloorWaterEntity, MonoPlanetmapOreSandRich, CMRockOrange]
+    avoid: [CEWater, MonoPlanetmapOreSandRich, CMRockOrange] # LuaM: CE water on every world
     landingTile: WGCavernFloorSandDrift
     shade: WGCavernShadeMerak
     stairs: WGCavernStairsMerak
@@ -103,7 +103,7 @@
     riftWidth: 2
     cellSize: 128
     groundTiles: [FloorChromite, WGFloorAerumnaClay, WGFloorAerumnaClayRock, WGFloorAerumnaDusk, WGFloorAerumnaShroud, WGFloorAerumnaHive]
-    avoid: [MonoFloorWaterEntity, MonoPlanetmapOreChromite, GoonSetpiecesRootwall]
+    avoid: [CEWater, MonoPlanetmapOreChromite, GoonSetpiecesRootwall] # LuaM: CE water on every world
     landingTile: WGCavernFloorChromiteScree
     shade: WGCavernShadeAerumna
     stairs: WGCavernStairsAerumna

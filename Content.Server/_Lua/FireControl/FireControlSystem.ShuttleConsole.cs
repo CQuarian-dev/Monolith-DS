@@ -81,6 +81,7 @@ public sealed partial class FireControlSystem
             return;
 
         _consoleMousePositions[console] = cursor;
+        LuaMWarnGroundFire(grid, actor); // LuaM
         RememberShuttleConsoleWeapons(console, selected, server);
         FireWeapons(serverUid.Value, selected, coordinates, server);
         LogShuttleConsoleFire(console, actor, grid, xform.MapID, coordinates);

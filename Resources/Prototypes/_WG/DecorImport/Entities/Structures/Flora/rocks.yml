@@ -71,6 +71,15 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: VehicleCrushable # LuaM: vehicles knock it over like FloraRockSolid
+    minSpeed: 9
+    hullDamage: 60
+    speedMultiplier: 0.5
+    sound:
+      path: /Audio/Effects/break_stone.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Sprite
     sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks.rsi
     state: moss
@@ -245,6 +254,15 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: VehicleCrushable # LuaM: vehicles knock it over like FloraRockSolid
+    minSpeed: 9
+    hullDamage: 60
+    speedMultiplier: 0.5
+    sound:
+      path: /Audio/Effects/break_stone.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Sprite
     sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
     state: stone
@@ -311,6 +329,15 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: VehicleCrushable # LuaM: vehicles knock it over like FloraRockSolid
+    minSpeed: 9
+    hullDamage: 60
+    speedMultiplier: 0.5
+    sound:
+      path: /Audio/Effects/break_stone.ogg
+      params:
+        volume: 5
+        variation: 0.05
   - type: Sprite
     sprite: _WG/DecorImport/Objects/Decoration/Flora/flora_rocks_goonstation.rsi
     state: snowstone

@@ -1,0 +1,11 @@
+﻿ent-ChompFloraDesertPlanetBush = куст
+    .desc = Гуще и сорнее.
+ent-ChompFloraDesertPlanetPalmy = куст юкки
+    .desc = Скорее всего, на самом деле не юкка.
+ent-GoonShrub = кустарник
+    .desc = Куст. Как ни старайтесь, не понять, настоящий он или нет.
+ent-GoonShrubDead = засохший кустарник
+    .desc = Куст. Как ни старайтесь, не понять, настоящий он или нет.
+ent-GoonShrubSnow = кустарник
+    .desc = Куст. Как ни старайтесь, не понять, настоящий он или нет.
+ent-CoyoteFloraChompPalmy1 = пальмовый куст

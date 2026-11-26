@@ -140,6 +140,7 @@ public sealed partial class FireControlSystem : EntitySystem
             return;
 
         // Fire the actual weapons
+        LuaMWarnGroundFire(grid.Value, args.Actor); // LuaM
         ForgetShuttleConsoleWeapons(args.Selected); // Lua
         FireWeapons((EntityUid)component.ConnectedServer, args.Selected, args.Coordinates, server);
         if ((component.NextLog == null || component.NextLog < _timing.CurTime) && args.Selected.Any())

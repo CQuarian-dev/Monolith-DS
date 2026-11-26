@@ -3,6 +3,7 @@
 
 - type: tile
   id: WGCavernFloorRimeFall
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorThrasciasCrystalIce
   indestructible: true
   deconstructTools: []
@@ -10,6 +11,7 @@
 
 - type: tile
   id: WGCavernFloorRimeBlue
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: WGFloorThrasciasRoughIce
   indestructible: true
   deconstructTools: []
@@ -24,6 +26,7 @@
 
 - type: tile
   id: WGCavernFloorRimeDark
+  edgeSpritePriority: -2 # LuaM: soft borders between planet ground tiles
   parent: AuroraFloorExoplanetIceDark
   indestructible: true
   deconstructTools: []
