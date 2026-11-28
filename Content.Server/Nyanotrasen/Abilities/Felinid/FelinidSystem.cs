@@ -150,8 +150,11 @@ public sealed partial class FelinidSystem : EntitySystem
             _actionsSystem.SetCharges(component.HairballAction, 1); // You get the charge back and that's it. Tough.
             _actionsSystem.SetEnabled(component.HairballAction, true);
         }
-        Del(component.EatActionTarget.Value);
+        // LuaM-start
+        var target = component.EatActionTarget.Value;
         component.EatActionTarget = null;
+        Del(target);
+        // LuaM-end
 
         _audio.PlayPvs(new ResolvedPathSpecifier("/Audio/_DV/Items/eatfood.ogg"), uid, AudioParams.Default.WithVariation(0.15f));
 

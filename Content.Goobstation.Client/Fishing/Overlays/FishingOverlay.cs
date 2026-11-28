@@ -22,6 +22,7 @@ public sealed class FishingOverlay : Overlay
     private readonly SharedTransformSystem _transform;
     private readonly ProgressColorSystem _progressColor;
 
+    private readonly SpriteSystem _sprites; // LuaM
     private readonly Texture _barTexture;
 
     // Fractional positions for progress bar fill (relative to texture height/width)
@@ -44,7 +45,8 @@ public sealed class FishingOverlay : Overlay
 
         // Load the progress bar texture
         var sprite = new SpriteSpecifier.Rsi(new("/Textures/_Goobstation/Interface/Misc/fish_bar.rsi"), "icon");
-        _barTexture = _entManager.EntitySysManager.GetEntitySystem<SpriteSystem>().Frame0(sprite);
+        _sprites = _entManager.System<SpriteSystem>(); // LuaM
+        _barTexture = _sprites.Frame0(sprite);
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -93,7 +95,7 @@ public sealed class FishingOverlay : Overlay
 
             // Calculate the position of the progress bar relative to the entity
             var position = new Vector2(
-                sprite.Bounds.Width / 2f,
+                _sprites.GetLocalBounds((uid, sprite)).Width / 2f, // LuaM
                 -scaledTextureSize.Y / 2f // Center vertically
             );
 

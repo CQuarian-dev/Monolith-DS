@@ -1,8 +1,11 @@
 using System.Numerics;
+using Content.Client._LuaM.UserInterface.Hud; // LuaM
+using Content.Client.Stylesheets; // LuaM
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
+using Robust.Shared.Input; // LuaM
 
 namespace Content.Client._WG.Planets;
 
@@ -33,24 +36,18 @@ public sealed class WGPlanetTimepieceHud : PanelContainer
     {
         MinSize = new Vector2(PanelWidth, PanelHeight);
         MaxWidth = MaxPanelWidth;
-        MouseFilter = Control.MouseFilterMode.Ignore;
+        // LuaM-start: dragged by the mouse, styled as the lobby HUD
+        MouseFilter = Control.MouseFilterMode.Stop;
+        DefaultCursorShape = CursorShape.Move;
 
-        var panel = new StyleBoxFlat
-        {
-            BackgroundColor = Color.FromHex("#081013D9"),
-            BorderColor = Color.FromHex("#74BFA680"),
-            BorderThickness = new Thickness(1),
-        };
-        panel.SetContentMarginOverride(StyleBox.Margin.Horizontal, 8);
-        panel.SetContentMarginOverride(StyleBox.Margin.Vertical, 5);
+        var panel = HudPalette.Box(HudPalette.Panel.WithAlpha(0.92f), HudPalette.Border, HudPalette.Fg);
+        panel.SetContentMarginOverride(StyleBox.Margin.Horizontal, 10);
+        panel.SetContentMarginOverride(StyleBox.Margin.Vertical, 6);
         PanelOverride = panel;
 
-        var regular = new VectorFont(
-            resources.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Bold.ttf"), // LuaM: Regular was cut from our fonts
-            9);
-        var clock = new VectorFont(
-            resources.GetResource<FontResource>("/Fonts/RobotoMono/RobotoMono-Bold.ttf"),
-            20);
+        var regular = LobbyHudStyles.UiFont(resources, 10);
+        var clock = LobbyHudStyles.MonoFont(resources, 20, semi: true);
+        // LuaM-end
 
         var column = new BoxContainer
         {
@@ -60,10 +57,10 @@ public sealed class WGPlanetTimepieceHud : PanelContainer
         };
         AddChild(column);
 
-        _planet = MakeLabel(regular, Color.FromHex("#A8C8BE"));
-        _time = MakeLabel(clock, Color.FromHex("#D8FFF2"));
-        _weather = MakeLabel(regular, Color.FromHex("#78AA9B"));
-        _climate = MakeLabel(regular, Color.FromHex("#A8C8BE"));
+        _planet = MakeLabel(regular, HudPalette.FgLabel); // LuaM
+        _time = MakeLabel(clock, HudPalette.Fg); // LuaM
+        _weather = MakeLabel(regular, HudPalette.TextDim); // LuaM
+        _climate = MakeLabel(regular, HudPalette.Text); // LuaM
 
         column.AddChild(_planet);
         column.AddChild(_time);
@@ -104,7 +101,7 @@ public sealed class WGPlanetTimepieceHud : PanelContainer
     {
         if (_climate.Text != climate)
             _climate.Text = climate;
-        _climate.FontColorOverride = climateColor ?? Color.FromHex("#A8C8BE");
+        _climate.FontColorOverride = climateColor ?? HudPalette.Text; // LuaM
         if (_planet.Text != planet)
             _planet.Text = planet;
         if (_time.Text != time)
@@ -112,6 +109,43 @@ public sealed class WGPlanetTimepieceHud : PanelContainer
         if (_weather.Text != weather)
             _weather.Text = weather;
     }
+
+    // LuaM-start: the player drags the readout where it doesn't cover the view; the system keeps the spot
+    public event Action<Vector2>? Dragged;
+    public bool Dragging { get; private set; }
+    private Vector2 _grab;
+
+    protected override void KeyBindDown(GUIBoundKeyEventArgs args)
+    {
+        base.KeyBindDown(args);
+        if (args.Function != EngineKeyFunctions.UIClick)
+            return;
+
+        Dragging = true;
+        _grab = args.PointerLocation.Position / UIScale - Position;
+        args.Handle();
+    }
+
+    protected override void KeyBindUp(GUIBoundKeyEventArgs args)
+    {
+        base.KeyBindUp(args);
+        if (args.Function != EngineKeyFunctions.UIClick || !Dragging)
+            return;
+
+        Dragging = false;
+        Dragged?.Invoke(Position);
+    }
+
+    protected override void MouseMove(GUIMouseMoveEventArgs args)
+    {
+        base.MouseMove(args);
+        if (!Dragging || Parent == null)
+            return;
+
+        var pos = Vector2.Clamp(args.GlobalPosition - _grab, Vector2.Zero, Vector2.Max(Vector2.Zero, Parent.Size - Size));
+        LayoutContainer.SetPosition(this, pos);
+    }
+    // LuaM-end
 
     private static Label MakeLabel(Font font, Color color)
     {

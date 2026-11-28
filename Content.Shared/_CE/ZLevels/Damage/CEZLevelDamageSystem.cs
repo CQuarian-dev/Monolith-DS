@@ -9,6 +9,7 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Map;
 using Content.Shared.Maps;
 using Content.Shared.CCVar;
+using Content.Shared.Mobs.Components; // LuaM
 using Content.Shared.Damage;
 using Content.Shared.Damage.Prototypes;
 using Content.Shared.Stunnable;
@@ -126,7 +127,7 @@ public sealed partial class CEZLevelDamageSystem : EntitySystem
         if (knockdownTime > 0)
             _stun.TryKnockdown(ent.Owner, TimeSpan.FromSeconds(knockdownTime), true);
 
-        if (_net.IsClient && _timing.IsFirstTimePredicted) //Only visuals so client only
+        if (HasComp<MobStateComponent>(ent) ? _net.IsServer : _net.IsClient && _timing.IsFirstTimePredicted) // LuaM
             SpawnAtPosition(FallVFX, Transform(ent).Coordinates);
     }
 

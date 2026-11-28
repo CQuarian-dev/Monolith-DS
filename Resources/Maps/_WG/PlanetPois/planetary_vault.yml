@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 10/22/2026 14:08:22
-  entityCount: 568
+  entityCount: 563
 maps: []
 grids:
 - 1
@@ -77,6 +77,39 @@ entities:
       chunkCollection:
         version: 2
         nodes:
+        - node:
+            angle: -1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb1
+          decals:
+            279: 7,0
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb1
+          decals:
+            280: -2,2
+        - node:
+            angle: 1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb1
+          decals:
+            281: 4,-14
+        - node:
+            angle: -1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb2
+          decals:
+            282: 7,-14
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb2
+          decals:
+            283: 0,2
         - node:
             id: Basalt2
             color: '#FFFFFFFF'
@@ -1162,38 +1195,6 @@ entities:
       parent: 1
       rot: -1.5707963267948966 rad
       pos: -3.5,-11.5
-- proto: Cobweb1
-  entities:
-  - uid: 520
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: 4.5,-13.5
-  - uid: 522
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 7.5,0.5
-  - uid: 525
-    components:
-    - type: Transform
-      parent: 1
-      pos: -1.5,2.5
-- proto: Cobweb2
-  entities:
-  - uid: 523
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 7.5,-13.5
-  - uid: 524
-    components:
-    - type: Transform
-      parent: 1
-      pos: 0.5,2.5
 - proto: ComputerBroken
   entities:
   - uid: 517

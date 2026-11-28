@@ -1,10 +1,13 @@
 using System.Linq;
 using Content.Server._LuaM.Body;
 using Content.Server.Body.Systems;
+using Content.Shared._LuaM.Addiction;
 using Content.Shared._LuaM.Traits;
 using Content.Shared.Chemistry.Components;
+using Content.Shared.FixedPoint;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map;
+using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Tests._LuaM;
 
@@ -14,6 +17,8 @@ namespace Content.IntegrationTests.Tests._LuaM;
 [TestFixture]
 public sealed class AddictionTest
 {
+    private static readonly ProtoId<AddictionPrototype> AlcoholAddiction = "Alcohol";
+
     [Test]
     public async Task SeveralAddictionsStack()
     {
@@ -40,7 +45,8 @@ public sealed class AddictionTest
 
             // a pack of cigarettes and a bottle
             Metabolize(entities, human, "Nicotine", 35);
-            Metabolize(entities, human, "Ethanol", 80);
+            var alcohol = server.ProtoMan.Index(AlcoholAddiction);
+            Metabolize(entities, human, "Ethanol", alcohol.Threshold);
         });
 
         await server.WaitRunTicks(5);
@@ -107,7 +113,7 @@ public sealed class AddictionTest
         await pair.CleanReturnAsync();
     }
 
-    private static void Metabolize(IEntityManager entities, EntityUid body, string reagent, int amount)
+    private static void Metabolize(IEntityManager entities, EntityUid body, string reagent, FixedPoint2 amount)
     {
         var ev = new ReagentMetabolizedEvent(reagent, amount);
         entities.EventBus.RaiseLocalEvent(body, ref ev);

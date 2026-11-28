@@ -38,6 +38,7 @@
         ents: []
       toggleable-clothing: !type:Container
       cell_slot: !type:ContainerSlot
+      storage_module: !type:ContainerSlot # LuaM
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -63,6 +64,7 @@
   - type: ItemSlotsRequirePanel
     slots:
       cell_slot: true
+      storage_module: true # LuaM
   - type: PowerCellDraw
     drawRate: 0.1 # Sealed draw rate
     useRate: 0.5 # Draw rate for sealing
@@ -145,6 +147,7 @@
         ents: []
       toggleable-clothing: !type:Container
       cell_slot: !type:ContainerSlot
+      storage_module: !type:ContainerSlot # LuaM
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

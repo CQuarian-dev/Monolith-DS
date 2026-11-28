@@ -24,6 +24,8 @@ public sealed partial class CEZLevelBlurOverlay : Overlay
 
     private readonly ProtoId<ShaderPrototype> _zBlurShader = "CEZBlur";
 
+    public static float StrengthPerLevel = 1f; // LuaM: set from luam.zlevel_blur
+
     public CEZLevelBlurOverlay()
     {
         IoCManager.InjectDependencies(this);
@@ -61,7 +63,7 @@ public sealed partial class CEZLevelBlurOverlay : Overlay
 
         var strength = 1f;
         if (args.Viewport.Eye is ScalingViewport.ZEye zeye)
-            strength = Math.Clamp(-zeye.Depth, 0f, 1f);
+            strength = Math.Clamp(-zeye.Depth * StrengthPerLevel, 0f, 1f); // LuaM
 
         _blurShader?.SetParameter("SCREEN_TEXTURE", ScreenTexture);
         _blurShader?.SetParameter("BLUR_COLOR", ambientColor);

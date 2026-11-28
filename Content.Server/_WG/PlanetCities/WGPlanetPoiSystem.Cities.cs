@@ -361,6 +361,18 @@ public sealed partial class WGPlanetPoiSystem
         return new CityLevel(depth, path, staging, grid, deferred, new HashSet<Vector2i>());
     }
 
+    // LuaM-start: a swapped-in ground tile takes a variant from its position, or a whole lawn repeats one picture
+    private byte LuaMSwapVariant(int tileId, Vector2i indices)
+    {
+        var variants = _tiles[tileId] is ContentTileDefinition def ? def.Variants : (byte) 1;
+        if (variants <= 1)
+            return 0;
+
+        var hash = unchecked((uint) (indices.X * 73856093 ^ indices.Y * 19349663));
+        return (byte) (hash % variants);
+    }
+    // LuaM-end
+
     /// <summary>Swaps or removes the prototypes the city lists, drops anything standing off the tiles and strips godmode.</summary>
     private async Task PrepareCityLevelAsync(WGFixedCityPrototype city, CityLevel level, Box2i footprint)
     {
@@ -373,7 +385,7 @@ public sealed partial class WGPlanetPoiSystem
             while (all.MoveNext(out var tileRef))
             {
                 if (swaps.TryGetValue(tileRef.Value.Tile.TypeId, out var swap))
-                    swapped.Add((tileRef.Value.GridIndices, new Tile(swap)));
+                    swapped.Add((tileRef.Value.GridIndices, new Tile(swap, variant: LuaMSwapVariant(swap, tileRef.Value.GridIndices)))); // LuaM
             }
 
             _maps.SetTiles(grid.Owner, grid.Comp, swapped);

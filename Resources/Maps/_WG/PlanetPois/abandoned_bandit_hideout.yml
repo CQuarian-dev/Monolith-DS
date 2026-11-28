@@ -5,7 +5,7 @@ meta:
   forkId: wolfgate-mapping
   forkVersion: 20261020-040257-874e52c-tm294-a26dc02e
   time: 10/20/2026 23:08:58
-  entityCount: 127
+  entityCount: 122
 maps: []
 grids:
 - 1
@@ -56,6 +56,34 @@ entities:
       chunkCollection:
         version: 2
         nodes:
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass1
+          decals:
+            100: 6,6
+        - node:
+            angle: 3.141593 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass3
+          decals:
+            101: 6,6
+        - node:
+            angle: -1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass4
+          decals:
+            102: 2,7
+        - node:
+            angle: -1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass6
+          decals:
+            103: 7,3
+            104: 2,7
         - node:
             id: Basalt1
             color: '#FFFFFFFF'
@@ -633,53 +661,6 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: 1.5,8.5
-- proto: N14DecorFloorGlass1
-  entities:
-  - uid: 123
-    components:
-    - type: Transform
-      parent: 1
-      pos: 6.5,6.5
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass3
-  entities:
-  - uid: 70
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 6.5,6.5
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass4
-  entities:
-  - uid: 43
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 2.5,7.5
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass6
-  entities:
-  - uid: 41
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 7.5,3.5
-    - type: Fixtures
-      fixtures: {}
-  - uid: 42
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 2.5,7.5
-    - type: Fixtures
-      fixtures: {}
 - proto: N14DecorFloorTrashbags6
   entities:
   - uid: 124

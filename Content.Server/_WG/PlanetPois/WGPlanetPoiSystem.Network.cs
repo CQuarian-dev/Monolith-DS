@@ -854,8 +854,9 @@ public sealed partial class WGPlanetPoiSystem
             // A decal sits on its bottom-left corner, so it turns about its middle.
             var position = Turns(turns).RotateVec(decal.Coordinates + new Vector2(0.5f)) - new Vector2(0.5f) + origin;
             var turned = decal.WithCoordinates(position).WithRotation(decal.Angle + Turns(turns));
+            // LuaM: a decal over a tile the site left empty is dropped, as anything else standing off the floor is
             if (!_decals.TryAddDecal(turned, new EntityCoordinates(ground, position), out var id))
-                throw new InvalidOperationException($"Could not transfer POI decal {decal.Id} at {position}.");
+                continue;
             createdDecals.Add(id);
         }
     }

@@ -24,12 +24,27 @@ public abstract partial class SharedDoAfterSystem : EntitySystem
         var xformQuery = GetEntityQuery<TransformComponent>();
         var handsQuery = GetEntityQuery<HandsComponent>();
 
+        // LuaM-start
+        _activeDoAfters.Clear();
         var enumerator = EntityQueryEnumerator<ActiveDoAfterComponent, DoAfterComponent>();
         while (enumerator.MoveNext(out var uid, out var active, out var comp))
         {
+            _activeDoAfters.Add((uid, active, comp));
+        }
+
+        foreach (var (uid, active, comp) in _activeDoAfters)
+        {
+            if (active.Deleted || comp.Deleted)
+                continue;
+
             Update(uid, active, comp, time, xformQuery, handsQuery);
         }
+
+        _activeDoAfters.Clear();
+        // LuaM-end
     }
+
+    private readonly List<(EntityUid, ActiveDoAfterComponent, DoAfterComponent)> _activeDoAfters = new(); // LuaM
 
     protected void Update(
         EntityUid uid,

@@ -24,6 +24,11 @@ public sealed partial class CEZGridFallerComponent : Component
     public float Velocity;
 
     /// <summary>
+    /// Earliest time at which an overlap with an overhead floor may cause another impact.
+    /// </summary>
+    public TimeSpan NextFloorCrash; // LuaM
+
+    /// <summary>
     /// Time when the spoolup start began.
     /// </summary>
     [DataField]

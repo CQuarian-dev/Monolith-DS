@@ -42,7 +42,7 @@
     minSpeed: 9 # LuaM
     hullDamage: 40 # LuaM
     speedMultiplier: 0.5 # LuaM
-    drop: Log # LuaM
+    drop: LuaMCrushedLog # LuaM
     sound: # LuaM
       path: /Audio/Effects/tree_fell.ogg # LuaM
       params: # LuaM

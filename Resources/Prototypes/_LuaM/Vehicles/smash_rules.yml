@@ -72,6 +72,17 @@
   minDestroyWeightClass: Light
   slowdownBelowWeightClass: Medium
 
+# Мешки с песком, металлические и проволочные баррикады машину не держат; противотанковые ежи — держат
+- type: luamVehicleSmashRule
+  id: LuaMVehicleSmashBarricades
+  parents:
+  - N14BarricadeSandbagSingle
+  - N14BarricadeRazorwire
+  excludeParents:
+  - N14BarricadeTanktrap
+  minDestroyWeightClass: Light
+  slowdownBelowWeightClass: Medium
+
 - type: luamVehicleSmashRule
   id: LuaMVehicleSmashGrilles
   parents:

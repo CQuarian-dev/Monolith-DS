@@ -5,7 +5,7 @@ meta:
   forkId: wolfgate-mapping
   forkVersion: 20261023-201310-d5515d3-tm231-b5e79818
   time: 10/23/2026 21:42:12
-  entityCount: 330
+  entityCount: 322
 maps: []
 grids:
 - 1
@@ -61,7 +61,37 @@ entities:
     - type: DecalGrid
       chunkCollection:
         version: 2
-        nodes: []
+        nodes:
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb1
+          decals:
+            0: 1,14
+            1: 1,9
+        - node:
+            angle: -1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb2
+          decals:
+            2: -11,4
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb2
+          decals:
+            3: 3,9
+            4: 11,9
+            5: 11,23
+            6: 3,14
+        - node:
+            angle: 1.570796 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorCobweb2
+          decals:
+            7: -13,8
 - proto: AberrantFleshDigestiveSack
   entities:
   - uid: 289
@@ -1493,52 +1523,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 9.5,24.5
-- proto: Cobweb1
-  entities:
-  - uid: 252
-    components:
-    - type: Transform
-      parent: 1
-      pos: 1.5,14.5
-  - uid: 253
-    components:
-    - type: Transform
-      parent: 1
-      pos: 1.5,9.5
-- proto: Cobweb2
-  entities:
-  - uid: 254
-    components:
-    - type: Transform
-      parent: 1
-      pos: 3.5,9.5
-  - uid: 255
-    components:
-    - type: Transform
-      parent: 1
-      pos: 11.5,9.5
-  - uid: 256
-    components:
-    - type: Transform
-      parent: 1
-      pos: 11.5,23.5
-  - uid: 257
-    components:
-    - type: Transform
-      parent: 1
-      pos: 3.5,14.5
-  - uid: 258
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: -10.5,4.5
-  - uid: 259
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: -12.5,8.5
 - proto: CoyoteChairComfyThrone
   entities:
   - uid: 77

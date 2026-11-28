@@ -11,7 +11,7 @@ namespace Content.Shared._WG.Planets;
 public static class WGPlanetView
 {
     /// <summary>Each planet layer below the observer is drawn this much smaller, as every z-level was before Monolith set the factor to 1.</summary>
-    public const float LayerShrink = 0.85f;
+    public const float LayerShrink = 1f; // LuaM: no perspective, a city's storeys line up over each other (Wolfgate 0.85)
 
     /// <summary>The smallest a lower layer is drawn; past it the ground from orbit would fill the view with five screens of terrain.</summary>
     public const float MinLayerScale = 0.6f;

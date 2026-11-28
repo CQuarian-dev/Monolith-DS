@@ -19,6 +19,8 @@ public sealed partial class TileEntityShaderSystem : EntitySystem
     [Dependency] private SpriteSystem _sprite = default!;
     [Dependency] private TurfSystem _turf = default!;
 
+    private const string TileShaderId = "TileEntityShader"; // LuaM
+
     private readonly Dictionary<EntityUid, (string Id, ShaderInstance Instance)> _instances = new();
 
     /// <summary>
@@ -37,7 +39,7 @@ public sealed partial class TileEntityShaderSystem : EntitySystem
 
     private void OnBeforeRender(Entity<TileShaderTargetComponent> ent, ref BeforePostShaderRenderEvent args)
     {
-        if (!_instances.TryGetValue(ent.Owner, out var owned) || args.Sprite.PostShader != owned.Instance)
+        if (!_instances.TryGetValue(ent.Owner, out var owned) || args.Id != TileShaderId || args.Shader != owned.Instance)
             return;
 
         var shader = owned.Instance;
@@ -139,11 +141,8 @@ public sealed partial class TileEntityShaderSystem : EntitySystem
                 continue;
             }
 
-            if (owned.Instance != null && sprite.PostShader == owned.Instance)
-                continue;
-
-            // Something else already has a postshader on the entity. Not our problem!
-            if (sprite.PostShader != null && sprite.PostShader != owned.Instance)
+            // LuaM: keep existing effects and install the tile shader only on an empty stack.
+            if (_sprite.GetPostShaders(sprite).Count != 0)
                 continue;
 
             var instance = owned.Instance ?? _proto.Index<ShaderPrototype>(wanted).InstanceUnique();
@@ -151,7 +150,7 @@ public sealed partial class TileEntityShaderSystem : EntitySystem
 
             // WOLFGATE START: engine 291 ignores the sprite-wide RaiseShaderEvent; it is per post-shader now
             // upstream original: sprite.PostShader = instance; sprite.RaiseShaderEvent = true;
-            _sprite.SetPostShader(sprite, new SpriteComponent.PostShaderArgs("TileEntityShader", instance) { RaiseShaderEvent = true });
+            _sprite.SetPostShader(sprite, new SpriteComponent.PostShaderArgs(TileShaderId, instance) { RaiseShaderEvent = true });
             // WOLFGATE END
         }
     }
@@ -166,11 +165,9 @@ public sealed partial class TileEntityShaderSystem : EntitySystem
 
     private void Release(EntityUid uid, SpriteComponent sprite, ShaderInstance instance)
     {
-        if (sprite.PostShader == instance)
-        {
-            sprite.PostShader = null;
-            sprite.RaiseShaderEvent = false;
-        }
+        // LuaM: release only the entry installed by this system.
+        if (_sprite.TryGetPostShader(sprite, TileShaderId, out var entry) && entry.Shader == instance)
+            _sprite.RemovePostShader(sprite, TileShaderId);
 
         _instances.Remove(uid);
         instance.Dispose();

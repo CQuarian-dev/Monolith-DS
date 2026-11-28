@@ -30,7 +30,9 @@ public sealed class GuideEntryPrototypeTests
             {
                 using var reader = resMan.ContentFileReadText(proto.Text);
                 var text = reader.ReadToEnd();
-                Assert.That(parser.TryAddMarkup(new Document(), text), $"Failed to parse guidebook: {proto.Id}");
+                // LuaM: dispose the detached validation tree before its controls reach the style queue.
+                using var document = new Document();
+                Assert.That(parser.TryAddMarkup(document, text), $"Failed to parse guidebook: {proto.Id}");
             });
 
             // Avoid styleguide update limit

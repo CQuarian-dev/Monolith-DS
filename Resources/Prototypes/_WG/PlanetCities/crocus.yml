@@ -27,9 +27,23 @@
     TSFNaniteCanisterLarge: null
     # The factions' base turrets stay, without Crocus's godmode; their vendors and overwatch consoles stay as mapped.
     SpawnMobWeaponTurretPDV: WeaponTurretPDV
+    # LuaM-start: Crocus's own red plateau flora gives way to Verda's
+    FloraTreeCrocusPineRed: CoyoteFloraTreeMedPine
+    FloraTreeCrocusPine: CoyoteFloraTreeMedPine
+    FloraTreeCrocusDead: NebulaTreeDeadMaple
+    CrocusStrippedTree: NebulaTreeDeadYew
+    FloraBoulderCrocus: GoonStone
+    # LuaM-end
   # Crocus's streets get the world's road surface.
   replaceTiles:
     FloorAsphalt: RMCPlanetHybrisaAsphalt
+    # LuaM-start: the plateaus and lawns wear Verda's ground
+    FloorPlanetRedGrassCrocus: FloorPlanetGrass
+    FloorPlanetGrassCrocus: FloorPlanetGrass
+    FloorPlanetDirtCrocus: FloorPlanetDirt
+    FloorPlanetDirtCrocusNoEdge: FloorPlanetDirt
+    FloorPlanetCrocusBedrock: FloorPlanetDirt
+    # LuaM-end
   entrances:
   # North out of the park, west off the main avenue; as wide as a world road with its shoulders.
   - start: -40,71

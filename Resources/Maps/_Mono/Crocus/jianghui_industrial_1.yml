@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 10/01/2026 00:53:24
-  entityCount: 13186
+  entityCount: 12721
 maps:
 - 1
 grids:
@@ -646,6 +646,731 @@ entities:
       chunkCollection:
         version: 2
         nodes:
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard1
+          decals:
+            128: -5,66
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard10
+          decals:
+            129: 11,8
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard11
+          decals:
+            130: 42,1
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard13
+          decals:
+            131: -25,49
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard14
+          decals:
+            132: -4,8
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard15
+          decals:
+            133: 12,-3
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard19
+          decals:
+            134: -26,49
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard21
+          decals:
+            135: 12,11
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard22
+          decals:
+            136: -48,42
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard23
+          decals:
+            137: -7,66
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard24
+          decals:
+            138: 66,-2
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard3
+          decals:
+            139: 61,-3
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard5
+          decals:
+            140: 64,-3
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard8
+          decals:
+            141: -56,47
+            142: -25,45
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBoard9
+          decals:
+            143: -12,57
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookPile1
+          decals:
+            144: -40,59
+            145: -48,61
+            146: -25,42
+            147: 72,-2
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookPile2
+          decals:
+            148: 7,9
+            149: -48,57
+            150: -50,58
+            151: 1,42
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookPile3
+          decals:
+            152: -54,45
+            153: -52,57
+            154: -48,59
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookPile5
+          decals:
+            155: -51,64
+            156: 1,43
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookPile6
+          decals:
+            157: -52,65
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookstack1
+          decals:
+            158: -50,45
+            159: -50,59
+            160: -14,53
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookstack2
+          decals:
+            161: -48,46
+            162: -52,60
+            163: -25,39
+            164: -13,54
+            165: 5,42
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBookstack3
+          decals:
+            166: -51,66
+            167: -50,61
+            168: 4,42
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorBrickrubble
+          decals:
+            169: 73,11
+            170: -35,68
+            171: -49,41
+            172: -50,40
+            173: -46,39
+            174: -47,40
+            175: -46,41
+            176: -55,54
+            177: -53,53
+            178: -51,52
+            179: -52,54
+            180: -53,52
+            181: 72,14
+            182: 160,50
+            183: 157,50
+            184: 159,51
+            185: -37,71
+            186: -43,70
+            187: 158,49
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorCardboard
+          decals:
+            188: -28,50
+            189: -24,55
+            190: -27,53
+            191: 41,2
+            192: 41,1
+            193: 42,2
+            194: -24,67
+            195: -37,57
+            196: 8,-3
+            197: -24,49
+            198: -54,55
+            199: -59,52
+            200: -58,49
+            201: -48,50
+            202: -48,49
+            203: -53,50
+            204: -49,47
+            205: -12,62
+            206: -18,65
+            207: -13,69
+            208: -32,34
+            209: -22,35
+            210: -19,43
+            211: 5,58
+            212: 20,51
+            213: -9,32
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood1
+          decals:
+            214: -5,65
+        - node:
+            angle: 3.141593 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood1
+          decals:
+            215: -58,33
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood2
+          decals:
+            216: -32,33
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood4
+          decals:
+            217: -53,45
+            218: -12,66
+            219: 4,41
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood5
+          decals:
+            220: -14,65
+            221: 71,-1
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood6
+          decals:
+            222: -27,48
+            223: -53,49
+        - node:
+            angle: 3.141593 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorFood6
+          decals:
+            224: -57,34
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass1
+          decals:
+            225: 12,9
+            226: 6,5
+            227: -31,34
+            228: 72,-1
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass2
+          decals:
+            229: -35,62
+            230: -18,69
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass3
+          decals:
+            231: 19,-32
+            232: 22,-31
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass4
+          decals:
+            233: 4,39
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass5
+          decals:
+            234: -25,57
+        - node:
+            angle: 3.141593 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorGlass6
+          decals:
+            235: -57,35
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPallet
+          decals:
+            236: 38,1
+            237: 14,-30
+            238: -26,48
+            239: -55,63
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPaper
+          decals:
+            240: -42,29
+            241: -37,28
+            242: 29,-8
+            243: 36,-10
+            244: 31,-12
+            245: 12,-18
+            246: 9,-24
+            247: 12,-23
+            248: 12,-27
+            249: 26,-30
+            250: -30,55
+            251: -35,52
+            252: 35,-11
+            253: 34,-5
+            254: 39,-6
+            255: 46,-7
+            256: 9,-3
+            257: 6,9
+            258: 7,11
+            259: -21,53
+            260: -22,55
+            261: -19,49
+            262: -21,61
+            263: -24,59
+            264: -28,60
+            265: -33,58
+            266: -42,54
+            267: -42,46
+            268: -38,47
+            269: -44,52
+            270: -46,55
+            271: -47,53
+            272: -56,54
+            273: -51,54
+            274: -52,45
+            275: -60,47
+            276: -21,31
+            277: -22,34
+            278: -31,35
+            279: -8,59
+            280: -7,68
+            281: -7,67
+            282: -15,74
+            283: -18,73
+            284: -21,74
+            285: -21,68
+            286: -24,71
+            287: -23,64
+            288: -6,62
+            289: -2,59
+            290: -12,59
+            291: -16,62
+            292: -24,35
+            293: -43,36
+            294: -33,27
+            295: -31,29
+            296: -40,35
+            297: -8,46
+            298: -10,47
+            299: -1,46
+            300: 5,47
+            301: 8,41
+            302: 7,36
+            303: 9,34
+            304: 10,44
+            305: 7,27
+            306: -8,36
+            307: -5,32
+            308: -10,32
+            309: -12,42
+            310: 18,55
+            311: 20,50
+            312: 20,48
+            313: 21,52
+            314: 24,47
+            315: 27,46
+            316: 25,52
+            317: 28,54
+            318: 10,58
+            319: 7,61
+            320: -56,61
+            321: -57,58
+            322: 72,0
+            323: 71,6
+            324: 67,4
+            325: 62,3
+            326: 66,10
+            327: 61,9
+            328: 74,9
+            329: 77,17
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPaper1
+          decals:
+            330: 30,-4
+            331: 12,-32
+            332: -32,54
+            333: 44,1
+            334: 8,-1
+            335: 8,9
+            336: 8,11
+            337: 4,10
+            338: -21,49
+            339: -28,59
+            340: -32,61
+            341: -32,59
+            342: -51,60
+            343: -49,58
+            344: -50,53
+            345: -52,47
+            346: -48,45
+            347: -4,61
+            348: -6,58
+            349: -18,67
+            350: -15,65
+            351: -10,66
+            352: -24,33
+            353: -31,32
+            354: -26,35
+            355: -14,29
+            356: -16,27
+            357: -15,36
+            358: 0,39
+            359: 5,41
+            360: -1,43
+            361: -8,42
+            362: -13,41
+            363: -6,36
+            364: 24,51
+            365: 26,51
+            366: 26,46
+            367: 22,46
+            368: 15,51
+            369: 17,55
+            370: -57,64
+            371: -57,55
+            372: 13,60
+            373: 64,-1
+            374: 58,-4
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPaper2
+          decals:
+            375: 13,-11
+            376: 16,-9
+            377: 18,-30
+            378: 36,0
+            379: -35,55
+            380: -23,49
+            381: -23,61
+            382: -23,59
+            383: -27,61
+            384: -53,42
+            385: -48,40
+            386: -51,65
+            387: -56,52
+            388: -58,50
+            389: -20,45
+            390: -17,41
+            391: -17,34
+            392: -25,27
+            393: -26,29
+            394: -21,26
+            395: 1,61
+            396: -3,70
+            397: -5,72
+            398: -16,57
+            399: -12,61
+            400: -11,65
+            401: -17,44
+            402: -41,34
+            403: -41,40
+            404: -44,40
+            405: -42,30
+            406: 8,33
+            407: 8,29
+            408: 9,38
+            409: 0,27
+            410: -3,29
+            411: -10,27
+            412: -18,29
+            413: 18,46
+            414: 18,51
+            415: 15,54
+            416: -4,74
+            417: -11,73
+            418: -28,74
+            419: -35,74
+            420: -38,68
+            421: -45,70
+            422: 16,61
+            423: 69,1
+            424: 63,-4
+            425: 64,14
+        - node:
+            angle: 3.141593 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPaper2
+          decals:
+            426: -56,27
+            427: -53,33
+            428: -59,30
+            429: -61,33
+            430: -62,34
+            431: -49,31
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPaper3
+          decals:
+            432: 27,-15
+            433: 26,-11
+            434: 14,-14
+            435: 30,-8
+            436: -37,53
+            437: -1,6
+            438: -2,10
+            439: 1,1
+            440: 28,-18
+            441: 27,-26
+            442: 26,-22
+            443: 3,-2
+            444: -26,50
+            445: -21,52
+            446: -22,53
+            447: -20,55
+            448: -35,60
+            449: -37,59
+            450: -39,61
+            451: -37,64
+            452: -40,59
+            453: -42,50
+            454: -43,44
+            455: -33,46
+            456: -26,47
+            457: -51,40
+            458: -49,42
+            459: -54,53
+            460: -57,46
+            461: -21,29
+            462: -27,31
+            463: -25,33
+            464: -28,27
+            465: -2,66
+            466: -18,55
+            467: -17,52
+            468: -15,66
+            469: -12,69
+            470: -41,37
+            471: -18,38
+            472: -39,28
+            473: -18,47
+            474: -20,47
+            475: -42,33
+            476: -6,46
+            477: -6,41
+            478: -12,46
+            479: 18,49
+            480: 16,55
+            481: 18,54
+            482: 15,49
+            483: -55,58
+            484: -55,61
+            485: 77,12
+            486: 73,14
+            487: 68,12
+        - node:
+            angle: 3.141593 rad
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorPaper3
+          decals:
+            488: -57,32
+            489: -55,35
+            490: -52,34
+            491: -53,30
+            492: -48,34
+            493: -47,35
+            494: -48,28
+            495: -55,29
+            496: -54,27
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorScrapwood
+          decals:
+            497: 3,5
+            498: -28,46
+            499: -50,42
+            500: -49,40
+            501: -48,41
+            502: -48,54
+            503: -42,61
+            504: -43,58
+            505: -27,59
+            506: -22,68
+            507: -23,65
+            508: 21,55
+            509: 23,54
+            510: -56,59
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorSkeletonOver
+          decals:
+            511: -18,4
+            512: 20,50
+        - node:
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14Rails
+          decals:
+            513: 51,4
+            514: 61,4
+            515: 59,4
+            516: 53,4
+            517: 57,4
+            518: 52,7
+            519: 50,7
+            520: 48,7
+            521: 46,7
+            522: 44,7
+            523: 42,7
+            524: 40,7
+            525: 38,7
+            526: 36,7
+            527: 34,7
+            528: 33,4
+            529: 35,4
+            530: 37,4
+            531: 39,4
+            532: 41,4
+            533: 43,4
+            534: 45,4
+            535: 47,4
+            536: 49,4
+            537: -9,4
+            538: -11,4
+            539: -7,4
+            540: -37,4
+            541: -47,4
+            542: -49,4
+            543: -53,4
+            544: -35,4
+            545: -39,4
+            546: -61,4
+            547: -29,4
+            548: -57,4
+            549: -59,4
+            550: -25,4
+            551: -31,4
+            552: -27,4
+            553: -33,4
+            554: -13,4
+            555: -15,4
+            556: -21,4
+            557: -23,4
+            558: -17,4
+            559: -19,4
+            560: -43,4
+            561: -55,4
+            562: -51,4
+            563: -45,4
+            564: -41,4
+            565: 21,4
+            566: 25,4
+            567: -5,4
+            568: 23,4
+            569: 27,4
+            570: 1,4
+            571: 19,4
+            572: 17,4
+            573: 29,4
+            574: -1,4
+            575: 9,4
+            576: 11,4
+            577: -3,4
+            578: 3,4
+            579: 15,4
+            580: 5,4
+            581: 13,4
+            582: 7,4
+            583: 65,4
+            584: 73,4
+            585: 63,4
+            586: 69,4
+            587: 67,4
+            588: 71,4
+        - node:
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14RailsJunctionLeftBottom
+          decals:
+            589: 55,4
+        - node:
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14RailsJunctionRightBottom
+          decals:
+            590: 31,4
+        - node:
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14RailsTurnSE
+          decals:
+            591: 32,6
+        - node:
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14RailsTurnWS
+          decals:
+            592: 54,6
         - node:
             color: '#FFFFFFFF'
             id: BrickTileDarkCornerNw
@@ -34455,474 +35180,6 @@ entities:
     - type: Transform
       pos: 157.5,52.5
       parent: 1
-- proto: N14DecorFloorBoard1
-  entities:
-  - uid: 5740
-    components:
-    - type: Transform
-      pos: -4.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard10
-  entities:
-  - uid: 5741
-    components:
-    - type: Transform
-      pos: 11.5,8.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard11
-  entities:
-  - uid: 5742
-    components:
-    - type: Transform
-      pos: 42.5,1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard13
-  entities:
-  - uid: 5743
-    components:
-    - type: Transform
-      pos: -24.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard14
-  entities:
-  - uid: 5744
-    components:
-    - type: Transform
-      pos: -3.5,8.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard15
-  entities:
-  - uid: 5745
-    components:
-    - type: Transform
-      pos: 12.5,-2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard19
-  entities:
-  - uid: 5746
-    components:
-    - type: Transform
-      pos: -25.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard21
-  entities:
-  - uid: 5747
-    components:
-    - type: Transform
-      pos: 12.5,11.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard22
-  entities:
-  - uid: 5748
-    components:
-    - type: Transform
-      pos: -47.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard23
-  entities:
-  - uid: 5749
-    components:
-    - type: Transform
-      pos: -6.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard24
-  entities:
-  - uid: 5750
-    components:
-    - type: Transform
-      pos: 66.5,-1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard3
-  entities:
-  - uid: 5751
-    components:
-    - type: Transform
-      pos: 61.5,-2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard5
-  entities:
-  - uid: 5752
-    components:
-    - type: Transform
-      pos: 64.5,-2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard8
-  entities:
-  - uid: 5753
-    components:
-    - type: Transform
-      pos: -55.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5754
-    components:
-    - type: Transform
-      pos: -24.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBoard9
-  entities:
-  - uid: 5755
-    components:
-    - type: Transform
-      pos: -11.5,57.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookPile1
-  entities:
-  - uid: 5756
-    components:
-    - type: Transform
-      pos: -39.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5757
-    components:
-    - type: Transform
-      pos: -47.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5758
-    components:
-    - type: Transform
-      pos: -24.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5759
-    components:
-    - type: Transform
-      pos: 72.5,-1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookPile2
-  entities:
-  - uid: 5760
-    components:
-    - type: Transform
-      pos: 7.5,9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5761
-    components:
-    - type: Transform
-      pos: -47.5,57.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5762
-    components:
-    - type: Transform
-      pos: -49.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5763
-    components:
-    - type: Transform
-      pos: 1.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookPile3
-  entities:
-  - uid: 5764
-    components:
-    - type: Transform
-      pos: -53.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5765
-    components:
-    - type: Transform
-      pos: -51.5,57.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5766
-    components:
-    - type: Transform
-      pos: -47.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookPile5
-  entities:
-  - uid: 5767
-    components:
-    - type: Transform
-      pos: -50.5,64.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5768
-    components:
-    - type: Transform
-      pos: 1.5,43.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookPile6
-  entities:
-  - uid: 5769
-    components:
-    - type: Transform
-      pos: -51.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookstack1
-  entities:
-  - uid: 5770
-    components:
-    - type: Transform
-      pos: -49.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5771
-    components:
-    - type: Transform
-      pos: -49.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5772
-    components:
-    - type: Transform
-      pos: -13.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookstack2
-  entities:
-  - uid: 5773
-    components:
-    - type: Transform
-      pos: -47.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5774
-    components:
-    - type: Transform
-      pos: -51.5,60.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5775
-    components:
-    - type: Transform
-      pos: -24.5,39.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5776
-    components:
-    - type: Transform
-      pos: -12.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5777
-    components:
-    - type: Transform
-      pos: 5.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBookstack3
-  entities:
-  - uid: 5778
-    components:
-    - type: Transform
-      pos: -50.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5779
-    components:
-    - type: Transform
-      pos: -49.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5780
-    components:
-    - type: Transform
-      pos: 4.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorBrickrubble
-  entities:
-  - uid: 5781
-    components:
-    - type: Transform
-      pos: 73.5,11.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5782
-    components:
-    - type: Transform
-      pos: -34.5,68.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5783
-    components:
-    - type: Transform
-      pos: -48.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5784
-    components:
-    - type: Transform
-      pos: -49.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5785
-    components:
-    - type: Transform
-      pos: -45.5,39.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5786
-    components:
-    - type: Transform
-      pos: -46.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5787
-    components:
-    - type: Transform
-      pos: -45.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5788
-    components:
-    - type: Transform
-      pos: -54.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5789
-    components:
-    - type: Transform
-      pos: -52.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5790
-    components:
-    - type: Transform
-      pos: -50.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5791
-    components:
-    - type: Transform
-      pos: -51.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5792
-    components:
-    - type: Transform
-      pos: -52.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5793
-    components:
-    - type: Transform
-      pos: 72.5,14.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5794
-    components:
-    - type: Transform
-      pos: 160.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5795
-    components:
-    - type: Transform
-      pos: 157.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5796
-    components:
-    - type: Transform
-      pos: 159.5,51.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5797
-    components:
-    - type: Transform
-      pos: -36.5,71.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5798
-    components:
-    - type: Transform
-      pos: -42.5,70.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5799
-    components:
-    - type: Transform
-      pos: 158.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
 - proto: N14DecorFloorBrickStack
   entities:
   - uid: 5800
@@ -35100,399 +35357,6 @@ entities:
     - type: Transform
       pos: 60.5,11.5
       parent: 1
-- proto: N14DecorFloorCardboard
-  entities:
-  - uid: 5835
-    components:
-    - type: Transform
-      pos: -27.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5836
-    components:
-    - type: Transform
-      pos: -23.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5837
-    components:
-    - type: Transform
-      pos: -26.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5838
-    components:
-    - type: Transform
-      pos: 41.5,2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5839
-    components:
-    - type: Transform
-      pos: 41.5,1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5840
-    components:
-    - type: Transform
-      pos: 42.5,2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5841
-    components:
-    - type: Transform
-      pos: -23.5,67.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5842
-    components:
-    - type: Transform
-      pos: -36.5,57.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5843
-    components:
-    - type: Transform
-      pos: 8.5,-2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5844
-    components:
-    - type: Transform
-      pos: -23.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5845
-    components:
-    - type: Transform
-      pos: -53.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5846
-    components:
-    - type: Transform
-      pos: -58.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5847
-    components:
-    - type: Transform
-      pos: -57.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5848
-    components:
-    - type: Transform
-      pos: -47.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5849
-    components:
-    - type: Transform
-      pos: -47.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5850
-    components:
-    - type: Transform
-      pos: -52.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5851
-    components:
-    - type: Transform
-      pos: -48.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5852
-    components:
-    - type: Transform
-      pos: -11.5,62.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5853
-    components:
-    - type: Transform
-      pos: -17.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5854
-    components:
-    - type: Transform
-      pos: -12.5,69.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5855
-    components:
-    - type: Transform
-      pos: -31.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5856
-    components:
-    - type: Transform
-      pos: -21.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5857
-    components:
-    - type: Transform
-      pos: -18.5,43.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5858
-    components:
-    - type: Transform
-      pos: 5.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5859
-    components:
-    - type: Transform
-      pos: 20.5,51.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5860
-    components:
-    - type: Transform
-      pos: -8.5,32.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorFood1
-  entities:
-  - uid: 5861
-    components:
-    - type: Transform
-      pos: -4.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5862
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -57.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorFood2
-  entities:
-  - uid: 5863
-    components:
-    - type: Transform
-      pos: -31.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorFood4
-  entities:
-  - uid: 5864
-    components:
-    - type: Transform
-      pos: -52.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5865
-    components:
-    - type: Transform
-      pos: -11.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5866
-    components:
-    - type: Transform
-      pos: 4.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorFood5
-  entities:
-  - uid: 5867
-    components:
-    - type: Transform
-      pos: -13.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5868
-    components:
-    - type: Transform
-      pos: 71.5,-0.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorFood6
-  entities:
-  - uid: 5869
-    components:
-    - type: Transform
-      pos: -26.5,48.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5870
-    components:
-    - type: Transform
-      pos: -52.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5871
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -56.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass1
-  entities:
-  - uid: 5872
-    components:
-    - type: Transform
-      pos: 12.5,9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5873
-    components:
-    - type: Transform
-      pos: 6.5,5.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5874
-    components:
-    - type: Transform
-      pos: -30.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5875
-    components:
-    - type: Transform
-      pos: 72.5,-0.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass2
-  entities:
-  - uid: 5876
-    components:
-    - type: Transform
-      pos: -34.5,62.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5877
-    components:
-    - type: Transform
-      pos: -17.5,69.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass3
-  entities:
-  - uid: 5878
-    components:
-    - type: Transform
-      pos: 19.5,-31.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5879
-    components:
-    - type: Transform
-      pos: 22.5,-30.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass4
-  entities:
-  - uid: 5880
-    components:
-    - type: Transform
-      pos: 4.5,39.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass5
-  entities:
-  - uid: 5881
-    components:
-    - type: Transform
-      pos: -24.5,57.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorGlass6
-  entities:
-  - uid: 5882
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -56.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorPallet
-  entities:
-  - uid: 5883
-    components:
-    - type: Transform
-      pos: 38.5,1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5884
-    components:
-    - type: Transform
-      pos: 14.5,-29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5885
-    components:
-    - type: Transform
-      pos: -25.5,48.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5886
-    components:
-    - type: Transform
-      pos: -54.5,63.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
 - proto: N14DecorFloorPalletStack
   entities:
   - uid: 5887
@@ -35580,1944 +35444,6 @@ entities:
     - type: Transform
       pos: 73.5,12.5
       parent: 1
-- proto: N14DecorFloorPaper
-  entities:
-  - uid: 5904
-    components:
-    - type: Transform
-      pos: -41.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5905
-    components:
-    - type: Transform
-      pos: -36.5,28.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5906
-    components:
-    - type: Transform
-      pos: 29.5,-7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5907
-    components:
-    - type: Transform
-      pos: 36.5,-9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5908
-    components:
-    - type: Transform
-      pos: 31.5,-11.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5909
-    components:
-    - type: Transform
-      pos: 12.5,-17.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5910
-    components:
-    - type: Transform
-      pos: 9.5,-23.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5911
-    components:
-    - type: Transform
-      pos: 12.5,-22.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5912
-    components:
-    - type: Transform
-      pos: 12.5,-26.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5913
-    components:
-    - type: Transform
-      pos: 26.5,-29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5914
-    components:
-    - type: Transform
-      pos: -29.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5915
-    components:
-    - type: Transform
-      pos: -34.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5916
-    components:
-    - type: Transform
-      pos: 35.5,-10.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5917
-    components:
-    - type: Transform
-      pos: 34.5,-4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5918
-    components:
-    - type: Transform
-      pos: 39.5,-5.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5919
-    components:
-    - type: Transform
-      pos: 46.5,-6.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5920
-    components:
-    - type: Transform
-      pos: 9.5,-2.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5921
-    components:
-    - type: Transform
-      pos: 6.5,9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5922
-    components:
-    - type: Transform
-      pos: 7.5,11.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5923
-    components:
-    - type: Transform
-      pos: -20.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5924
-    components:
-    - type: Transform
-      pos: -21.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5925
-    components:
-    - type: Transform
-      pos: -18.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5926
-    components:
-    - type: Transform
-      pos: -20.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5927
-    components:
-    - type: Transform
-      pos: -23.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5928
-    components:
-    - type: Transform
-      pos: -27.5,60.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5929
-    components:
-    - type: Transform
-      pos: -32.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5930
-    components:
-    - type: Transform
-      pos: -41.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5931
-    components:
-    - type: Transform
-      pos: -41.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5932
-    components:
-    - type: Transform
-      pos: -37.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5933
-    components:
-    - type: Transform
-      pos: -43.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5934
-    components:
-    - type: Transform
-      pos: -45.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5935
-    components:
-    - type: Transform
-      pos: -46.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5936
-    components:
-    - type: Transform
-      pos: -55.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5937
-    components:
-    - type: Transform
-      pos: -50.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5938
-    components:
-    - type: Transform
-      pos: -51.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5939
-    components:
-    - type: Transform
-      pos: -59.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5940
-    components:
-    - type: Transform
-      pos: -20.5,31.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5941
-    components:
-    - type: Transform
-      pos: -21.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5942
-    components:
-    - type: Transform
-      pos: -30.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5943
-    components:
-    - type: Transform
-      pos: -7.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5944
-    components:
-    - type: Transform
-      pos: -6.5,68.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5945
-    components:
-    - type: Transform
-      pos: -6.5,67.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5946
-    components:
-    - type: Transform
-      pos: -14.5,74.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5947
-    components:
-    - type: Transform
-      pos: -17.5,73.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5948
-    components:
-    - type: Transform
-      pos: -20.5,74.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5949
-    components:
-    - type: Transform
-      pos: -20.5,68.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5950
-    components:
-    - type: Transform
-      pos: -23.5,71.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5951
-    components:
-    - type: Transform
-      pos: -22.5,64.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5952
-    components:
-    - type: Transform
-      pos: -5.5,62.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5953
-    components:
-    - type: Transform
-      pos: -1.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5954
-    components:
-    - type: Transform
-      pos: -11.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5955
-    components:
-    - type: Transform
-      pos: -15.5,62.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5956
-    components:
-    - type: Transform
-      pos: -23.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5957
-    components:
-    - type: Transform
-      pos: -42.5,36.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5958
-    components:
-    - type: Transform
-      pos: -32.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5959
-    components:
-    - type: Transform
-      pos: -30.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5960
-    components:
-    - type: Transform
-      pos: -39.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5961
-    components:
-    - type: Transform
-      pos: -7.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5962
-    components:
-    - type: Transform
-      pos: -9.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5963
-    components:
-    - type: Transform
-      pos: -0.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5964
-    components:
-    - type: Transform
-      pos: 5.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5965
-    components:
-    - type: Transform
-      pos: 8.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5966
-    components:
-    - type: Transform
-      pos: 7.5,36.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5967
-    components:
-    - type: Transform
-      pos: 9.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5968
-    components:
-    - type: Transform
-      pos: 10.5,44.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5969
-    components:
-    - type: Transform
-      pos: 7.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5970
-    components:
-    - type: Transform
-      pos: -7.5,36.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5971
-    components:
-    - type: Transform
-      pos: -4.5,32.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5972
-    components:
-    - type: Transform
-      pos: -9.5,32.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5973
-    components:
-    - type: Transform
-      pos: -11.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5974
-    components:
-    - type: Transform
-      pos: 18.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5975
-    components:
-    - type: Transform
-      pos: 20.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5976
-    components:
-    - type: Transform
-      pos: 20.5,48.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5977
-    components:
-    - type: Transform
-      pos: 21.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5978
-    components:
-    - type: Transform
-      pos: 24.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5979
-    components:
-    - type: Transform
-      pos: 27.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5980
-    components:
-    - type: Transform
-      pos: 25.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5981
-    components:
-    - type: Transform
-      pos: 28.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5982
-    components:
-    - type: Transform
-      pos: 10.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5983
-    components:
-    - type: Transform
-      pos: 7.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5984
-    components:
-    - type: Transform
-      pos: -55.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5985
-    components:
-    - type: Transform
-      pos: -56.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5986
-    components:
-    - type: Transform
-      pos: 72.5,0.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5987
-    components:
-    - type: Transform
-      pos: 71.5,6.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5988
-    components:
-    - type: Transform
-      pos: 67.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5989
-    components:
-    - type: Transform
-      pos: 62.5,3.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5990
-    components:
-    - type: Transform
-      pos: 66.5,10.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5991
-    components:
-    - type: Transform
-      pos: 61.5,9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5992
-    components:
-    - type: Transform
-      pos: 74.5,9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5993
-    components:
-    - type: Transform
-      pos: 77.5,17.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorPaper1
-  entities:
-  - uid: 5994
-    components:
-    - type: Transform
-      pos: 30.5,-3.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5995
-    components:
-    - type: Transform
-      pos: 12.5,-31.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5996
-    components:
-    - type: Transform
-      pos: -31.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5997
-    components:
-    - type: Transform
-      pos: 44.5,1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5998
-    components:
-    - type: Transform
-      pos: 8.5,-0.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 5999
-    components:
-    - type: Transform
-      pos: 8.5,9.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6000
-    components:
-    - type: Transform
-      pos: 8.5,11.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6001
-    components:
-    - type: Transform
-      pos: 4.5,10.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6002
-    components:
-    - type: Transform
-      pos: -20.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6003
-    components:
-    - type: Transform
-      pos: -27.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6004
-    components:
-    - type: Transform
-      pos: -31.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6005
-    components:
-    - type: Transform
-      pos: -31.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6006
-    components:
-    - type: Transform
-      pos: -50.5,60.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6007
-    components:
-    - type: Transform
-      pos: -48.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6008
-    components:
-    - type: Transform
-      pos: -49.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6009
-    components:
-    - type: Transform
-      pos: -51.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6010
-    components:
-    - type: Transform
-      pos: -47.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6011
-    components:
-    - type: Transform
-      pos: -3.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6012
-    components:
-    - type: Transform
-      pos: -5.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6013
-    components:
-    - type: Transform
-      pos: -17.5,67.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6014
-    components:
-    - type: Transform
-      pos: -14.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6015
-    components:
-    - type: Transform
-      pos: -9.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6016
-    components:
-    - type: Transform
-      pos: -23.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6017
-    components:
-    - type: Transform
-      pos: -30.5,32.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6018
-    components:
-    - type: Transform
-      pos: -25.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6019
-    components:
-    - type: Transform
-      pos: -13.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6020
-    components:
-    - type: Transform
-      pos: -15.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6021
-    components:
-    - type: Transform
-      pos: -14.5,36.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6022
-    components:
-    - type: Transform
-      pos: 0.5,39.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6023
-    components:
-    - type: Transform
-      pos: 5.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6024
-    components:
-    - type: Transform
-      pos: -0.5,43.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6025
-    components:
-    - type: Transform
-      pos: -7.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6026
-    components:
-    - type: Transform
-      pos: -12.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6027
-    components:
-    - type: Transform
-      pos: -5.5,36.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6028
-    components:
-    - type: Transform
-      pos: 24.5,51.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6029
-    components:
-    - type: Transform
-      pos: 26.5,51.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6030
-    components:
-    - type: Transform
-      pos: 26.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6031
-    components:
-    - type: Transform
-      pos: 22.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6032
-    components:
-    - type: Transform
-      pos: 15.5,51.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6033
-    components:
-    - type: Transform
-      pos: 17.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6034
-    components:
-    - type: Transform
-      pos: -56.5,64.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6035
-    components:
-    - type: Transform
-      pos: -56.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6036
-    components:
-    - type: Transform
-      pos: 13.5,60.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6037
-    components:
-    - type: Transform
-      pos: 64.5,-0.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6038
-    components:
-    - type: Transform
-      pos: 58.5,-3.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorPaper2
-  entities:
-  - uid: 6039
-    components:
-    - type: Transform
-      pos: 13.5,-10.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6040
-    components:
-    - type: Transform
-      pos: 16.5,-8.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6041
-    components:
-    - type: Transform
-      pos: 18.5,-29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6042
-    components:
-    - type: Transform
-      pos: 36.5,0.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6043
-    components:
-    - type: Transform
-      pos: -34.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6044
-    components:
-    - type: Transform
-      pos: -22.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6045
-    components:
-    - type: Transform
-      pos: -22.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6046
-    components:
-    - type: Transform
-      pos: -22.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6047
-    components:
-    - type: Transform
-      pos: -26.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6048
-    components:
-    - type: Transform
-      pos: -52.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6049
-    components:
-    - type: Transform
-      pos: -47.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6050
-    components:
-    - type: Transform
-      pos: -50.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6051
-    components:
-    - type: Transform
-      pos: -55.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6052
-    components:
-    - type: Transform
-      pos: -57.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6053
-    components:
-    - type: Transform
-      pos: -19.5,45.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6054
-    components:
-    - type: Transform
-      pos: -16.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6055
-    components:
-    - type: Transform
-      pos: -16.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6056
-    components:
-    - type: Transform
-      pos: -24.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6057
-    components:
-    - type: Transform
-      pos: -25.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6058
-    components:
-    - type: Transform
-      pos: -20.5,26.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6059
-    components:
-    - type: Transform
-      pos: 1.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6060
-    components:
-    - type: Transform
-      pos: -2.5,70.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6061
-    components:
-    - type: Transform
-      pos: -4.5,72.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6062
-    components:
-    - type: Transform
-      pos: -15.5,57.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6063
-    components:
-    - type: Transform
-      pos: -11.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6064
-    components:
-    - type: Transform
-      pos: -10.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6065
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -55.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6066
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -52.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6067
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -58.5,30.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6068
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -60.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6069
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -61.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6070
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -48.5,31.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6071
-    components:
-    - type: Transform
-      pos: -16.5,44.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6072
-    components:
-    - type: Transform
-      pos: -40.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6073
-    components:
-    - type: Transform
-      pos: -40.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6074
-    components:
-    - type: Transform
-      pos: -43.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6075
-    components:
-    - type: Transform
-      pos: -41.5,30.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6076
-    components:
-    - type: Transform
-      pos: 8.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6077
-    components:
-    - type: Transform
-      pos: 8.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6078
-    components:
-    - type: Transform
-      pos: 9.5,38.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6079
-    components:
-    - type: Transform
-      pos: 0.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6080
-    components:
-    - type: Transform
-      pos: -2.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6081
-    components:
-    - type: Transform
-      pos: -9.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6082
-    components:
-    - type: Transform
-      pos: -17.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6083
-    components:
-    - type: Transform
-      pos: 18.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6084
-    components:
-    - type: Transform
-      pos: 18.5,51.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6085
-    components:
-    - type: Transform
-      pos: 15.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6086
-    components:
-    - type: Transform
-      pos: -3.5,74.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6087
-    components:
-    - type: Transform
-      pos: -10.5,73.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6088
-    components:
-    - type: Transform
-      pos: -27.5,74.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6089
-    components:
-    - type: Transform
-      pos: -34.5,74.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6090
-    components:
-    - type: Transform
-      pos: -37.5,68.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6091
-    components:
-    - type: Transform
-      pos: -44.5,70.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6092
-    components:
-    - type: Transform
-      pos: 16.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6093
-    components:
-    - type: Transform
-      pos: 69.5,1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6094
-    components:
-    - type: Transform
-      pos: 63.5,-3.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6095
-    components:
-    - type: Transform
-      pos: 64.5,14.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorPaper3
-  entities:
-  - uid: 6096
-    components:
-    - type: Transform
-      pos: 27.5,-14.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6097
-    components:
-    - type: Transform
-      pos: 26.5,-10.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6098
-    components:
-    - type: Transform
-      pos: 14.5,-13.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6099
-    components:
-    - type: Transform
-      pos: 30.5,-7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6100
-    components:
-    - type: Transform
-      pos: -36.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6101
-    components:
-    - type: Transform
-      pos: -0.5,6.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6102
-    components:
-    - type: Transform
-      pos: -1.5,10.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6103
-    components:
-    - type: Transform
-      pos: 1.5,1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6104
-    components:
-    - type: Transform
-      pos: 28.5,-17.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6105
-    components:
-    - type: Transform
-      pos: 27.5,-25.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6106
-    components:
-    - type: Transform
-      pos: 26.5,-21.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6107
-    components:
-    - type: Transform
-      pos: 3.5,-1.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6108
-    components:
-    - type: Transform
-      pos: -25.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6109
-    components:
-    - type: Transform
-      pos: -20.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6110
-    components:
-    - type: Transform
-      pos: -21.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6111
-    components:
-    - type: Transform
-      pos: -19.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6112
-    components:
-    - type: Transform
-      pos: -34.5,60.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6113
-    components:
-    - type: Transform
-      pos: -36.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6114
-    components:
-    - type: Transform
-      pos: -38.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6115
-    components:
-    - type: Transform
-      pos: -36.5,64.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6116
-    components:
-    - type: Transform
-      pos: -39.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6117
-    components:
-    - type: Transform
-      pos: -41.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6118
-    components:
-    - type: Transform
-      pos: -42.5,44.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6119
-    components:
-    - type: Transform
-      pos: -32.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6120
-    components:
-    - type: Transform
-      pos: -25.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6121
-    components:
-    - type: Transform
-      pos: -50.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6122
-    components:
-    - type: Transform
-      pos: -48.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6123
-    components:
-    - type: Transform
-      pos: -53.5,53.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6124
-    components:
-    - type: Transform
-      pos: -56.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6125
-    components:
-    - type: Transform
-      pos: -20.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6126
-    components:
-    - type: Transform
-      pos: -26.5,31.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6127
-    components:
-    - type: Transform
-      pos: -24.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6128
-    components:
-    - type: Transform
-      pos: -27.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6129
-    components:
-    - type: Transform
-      pos: -1.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6130
-    components:
-    - type: Transform
-      pos: -17.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6131
-    components:
-    - type: Transform
-      pos: -16.5,52.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6132
-    components:
-    - type: Transform
-      pos: -14.5,66.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6133
-    components:
-    - type: Transform
-      pos: -11.5,69.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6134
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -56.5,32.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6135
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -54.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6136
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -51.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6137
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -52.5,30.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6138
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -47.5,34.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6139
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -46.5,35.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6140
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -47.5,28.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6141
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -54.5,29.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6142
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -53.5,27.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6143
-    components:
-    - type: Transform
-      pos: -40.5,37.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6144
-    components:
-    - type: Transform
-      pos: -17.5,38.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6145
-    components:
-    - type: Transform
-      pos: -38.5,28.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6146
-    components:
-    - type: Transform
-      pos: -17.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6147
-    components:
-    - type: Transform
-      pos: -19.5,47.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6148
-    components:
-    - type: Transform
-      pos: -41.5,33.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6149
-    components:
-    - type: Transform
-      pos: -5.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6150
-    components:
-    - type: Transform
-      pos: -5.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6151
-    components:
-    - type: Transform
-      pos: -11.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6152
-    components:
-    - type: Transform
-      pos: 18.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6153
-    components:
-    - type: Transform
-      pos: 16.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6154
-    components:
-    - type: Transform
-      pos: 18.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6155
-    components:
-    - type: Transform
-      pos: 15.5,49.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6156
-    components:
-    - type: Transform
-      pos: -54.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6157
-    components:
-    - type: Transform
-      pos: -54.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6158
-    components:
-    - type: Transform
-      pos: 77.5,12.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6159
-    components:
-    - type: Transform
-      pos: 73.5,14.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6160
-    components:
-    - type: Transform
-      pos: 68.5,12.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorScrapwood
-  entities:
-  - uid: 6161
-    components:
-    - type: Transform
-      pos: 3.5,5.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6162
-    components:
-    - type: Transform
-      pos: -27.5,46.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6163
-    components:
-    - type: Transform
-      pos: -49.5,42.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6164
-    components:
-    - type: Transform
-      pos: -48.5,40.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6165
-    components:
-    - type: Transform
-      pos: -47.5,41.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6166
-    components:
-    - type: Transform
-      pos: -47.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6167
-    components:
-    - type: Transform
-      pos: -41.5,61.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6168
-    components:
-    - type: Transform
-      pos: -42.5,58.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6169
-    components:
-    - type: Transform
-      pos: -26.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6170
-    components:
-    - type: Transform
-      pos: -21.5,68.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6171
-    components:
-    - type: Transform
-      pos: -22.5,65.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6172
-    components:
-    - type: Transform
-      pos: 21.5,55.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6173
-    components:
-    - type: Transform
-      pos: 23.5,54.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6174
-    components:
-    - type: Transform
-      pos: -55.5,59.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14DecorFloorSkeletonOver
-  entities:
-  - uid: 6175
-    components:
-    - type: Transform
-      pos: -17.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6176
-    components:
-    - type: Transform
-      pos: 20.5,50.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
 - proto: N14DecorFloorTrashbags1
   entities:
   - uid: 6177
@@ -38733,576 +36659,6 @@ entities:
     - type: Transform
       pos: 70.5,7.5
       parent: 1
-- proto: N14Rails
-  entities:
-  - uid: 6403
-    components:
-    - type: Transform
-      pos: 51.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6404
-    components:
-    - type: Transform
-      pos: 61.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6405
-    components:
-    - type: Transform
-      pos: 59.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6406
-    components:
-    - type: Transform
-      pos: 53.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6407
-    components:
-    - type: Transform
-      pos: 57.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6408
-    components:
-    - type: Transform
-      pos: 52.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6409
-    components:
-    - type: Transform
-      pos: 50.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6410
-    components:
-    - type: Transform
-      pos: 48.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6411
-    components:
-    - type: Transform
-      pos: 46.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6412
-    components:
-    - type: Transform
-      pos: 44.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6413
-    components:
-    - type: Transform
-      pos: 42.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6414
-    components:
-    - type: Transform
-      pos: 40.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6415
-    components:
-    - type: Transform
-      pos: 38.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6416
-    components:
-    - type: Transform
-      pos: 36.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6417
-    components:
-    - type: Transform
-      pos: 34.5,7.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6418
-    components:
-    - type: Transform
-      pos: 33.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6419
-    components:
-    - type: Transform
-      pos: 35.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6420
-    components:
-    - type: Transform
-      pos: 37.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6421
-    components:
-    - type: Transform
-      pos: 39.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6422
-    components:
-    - type: Transform
-      pos: 41.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6423
-    components:
-    - type: Transform
-      pos: 43.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6424
-    components:
-    - type: Transform
-      pos: 45.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6425
-    components:
-    - type: Transform
-      pos: 47.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6426
-    components:
-    - type: Transform
-      pos: 49.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6427
-    components:
-    - type: Transform
-      pos: -8.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6428
-    components:
-    - type: Transform
-      pos: -10.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6429
-    components:
-    - type: Transform
-      pos: -6.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6430
-    components:
-    - type: Transform
-      pos: -36.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6431
-    components:
-    - type: Transform
-      pos: -46.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6432
-    components:
-    - type: Transform
-      pos: -48.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6433
-    components:
-    - type: Transform
-      pos: -52.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6434
-    components:
-    - type: Transform
-      pos: -34.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6435
-    components:
-    - type: Transform
-      pos: -38.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6436
-    components:
-    - type: Transform
-      pos: -60.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6437
-    components:
-    - type: Transform
-      pos: -28.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6438
-    components:
-    - type: Transform
-      pos: -56.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6439
-    components:
-    - type: Transform
-      pos: -58.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6440
-    components:
-    - type: Transform
-      pos: -24.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6441
-    components:
-    - type: Transform
-      pos: -30.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6442
-    components:
-    - type: Transform
-      pos: -26.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6443
-    components:
-    - type: Transform
-      pos: -32.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6444
-    components:
-    - type: Transform
-      pos: -12.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6445
-    components:
-    - type: Transform
-      pos: -14.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6446
-    components:
-    - type: Transform
-      pos: -20.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6447
-    components:
-    - type: Transform
-      pos: -22.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6448
-    components:
-    - type: Transform
-      pos: -16.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6449
-    components:
-    - type: Transform
-      pos: -18.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6450
-    components:
-    - type: Transform
-      pos: -42.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6451
-    components:
-    - type: Transform
-      pos: -54.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6452
-    components:
-    - type: Transform
-      pos: -50.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6453
-    components:
-    - type: Transform
-      pos: -44.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6454
-    components:
-    - type: Transform
-      pos: -40.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6455
-    components:
-    - type: Transform
-      pos: 21.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6456
-    components:
-    - type: Transform
-      pos: 25.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6457
-    components:
-    - type: Transform
-      pos: -4.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6458
-    components:
-    - type: Transform
-      pos: 23.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6459
-    components:
-    - type: Transform
-      pos: 27.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6460
-    components:
-    - type: Transform
-      pos: 1.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6461
-    components:
-    - type: Transform
-      pos: 19.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6462
-    components:
-    - type: Transform
-      pos: 17.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6463
-    components:
-    - type: Transform
-      pos: 29.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6464
-    components:
-    - type: Transform
-      pos: -0.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6465
-    components:
-    - type: Transform
-      pos: 9.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6466
-    components:
-    - type: Transform
-      pos: 11.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6467
-    components:
-    - type: Transform
-      pos: -2.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6468
-    components:
-    - type: Transform
-      pos: 3.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6469
-    components:
-    - type: Transform
-      pos: 15.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6470
-    components:
-    - type: Transform
-      pos: 5.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6471
-    components:
-    - type: Transform
-      pos: 13.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6472
-    components:
-    - type: Transform
-      pos: 7.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6473
-    components:
-    - type: Transform
-      pos: 65.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6474
-    components:
-    - type: Transform
-      pos: 73.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6475
-    components:
-    - type: Transform
-      pos: 63.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6476
-    components:
-    - type: Transform
-      pos: 69.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6477
-    components:
-    - type: Transform
-      pos: 67.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-  - uid: 6478
-    components:
-    - type: Transform
-      pos: 71.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14RailsJunctionLeftBottom
-  entities:
-  - uid: 6479
-    components:
-    - type: Transform
-      pos: 55.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14RailsJunctionRightBottom
-  entities:
-  - uid: 6480
-    components:
-    - type: Transform
-      pos: 31.5,4.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14RailsTurnSE
-  entities:
-  - uid: 6481
-    components:
-    - type: Transform
-      pos: 32.5,6.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
-- proto: N14RailsTurnWS
-  entities:
-  - uid: 6482
-    components:
-    - type: Transform
-      pos: 54.5,6.5
-      parent: 1
-    - type: Fixtures
-      fixtures: {}
 - proto: N14RugBlue
   entities:
   - uid: 6483

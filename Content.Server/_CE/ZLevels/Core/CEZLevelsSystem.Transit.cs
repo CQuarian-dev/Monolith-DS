@@ -11,6 +11,7 @@ using Content.Shared._CE.ZLevels.Core.EntitySystems;
 using Robust.Server.GameStates;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
+using Robust.Shared.Physics; // LuaM
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Systems;
 
@@ -596,9 +597,17 @@ public sealed partial class CEZLevelsSystem
             var bottomTransit = Comp<CEZTransitMapComponent>(convoy[0]);
 
             // LuaM-start: a grid standing on the level below, as a city floor, can't take a hull set down into it
-            if (bottomTransit.LowerMap is { } builtOver && LuaMConvoyBlockedByGrids(convoy[0], builtOver))
+            // A fast descent crosses the plane and lets the hop or landing handle its impact.
+            var canCrash = TryComp<CEZGridFallerComponent>(grid, out var faller) && faller.Velocity >= faller.GridCrashVelocity;
+            if (!canCrash && bottomTransit.LowerMap is { } builtOver && LuaMConvoyBlockedByGrids(convoy[0], builtOver))
             {
                 LuaMRefuseDescent(grid);
+                foreach (var hull in CollectGridsOnMap(convoy[0]))
+                {
+                    if (TryComp<CEZGridFallerComponent>(hull, out var held))
+                        held.Velocity = 0f;
+                }
+
                 progress = CeilingClearance;
                 break;
             }
@@ -696,9 +705,7 @@ public sealed partial class CEZLevelsSystem
     }
 
     // LuaM-start: grids standing on a level (city floors, stations, other hulls) are as solid as its own tiles
-    private List<Entity<MapGridComponent>> _luamLevelGrids = new();
 
-    private readonly Dictionary<EntityUid, TimeSpan> _luamNextCrash = new();
     private static readonly TimeSpan LuaMCrashCooldown = TimeSpan.FromSeconds(3);
 
     private bool LuaMConvoyBlockedByGrids(EntityUid edgeTransitMap, EntityUid level)
@@ -714,23 +721,24 @@ public sealed partial class CEZLevelsSystem
 
     private bool LuaMHullOverGrids(EntityUid hull, EntityUid level)
     {
-        if (!TryComp<MapGridComponent>(hull, out var hullGrid))
+        if (!TryComp<FixturesComponent>(hull, out var fixtures))
             return false;
 
-        var footprint = _transform.GetWorldMatrix(hull).TransformBox(hullGrid.LocalAABB);
-        _luamLevelGrids.Clear();
-        _map.FindGridsIntersecting(level, footprint, ref _luamLevelGrids, includeMap: false);
-        foreach (var other in _luamLevelGrids)
+        var transform = _physics.GetRelativePhysicsTransform(hull, level);
+        foreach (var fixture in fixtures.Fixtures.Values)
         {
-            if (other.Owner == level || other.Owner == hull)
+            if (!fixture.Hard)
                 continue;
 
-            var tiles = _map.GetTilesEnumerator(other.Owner, other.Comp, footprint);
-            while (tiles.MoveNext(out var tile))
-            {
-                if (!tile.Tile.IsEmpty)
-                    return true;
-            }
+            var hit = false;
+            _map.FindGridsIntersecting(level, fixture.Shape, transform, ref hit,
+                static (EntityUid _, MapGridComponent _, ref bool found) =>
+                {
+                    found = true;
+                    return false;
+                }, approx: false, includeMap: false);
+            if (hit)
+                return true;
         }
 
         return false;
@@ -749,10 +757,12 @@ public sealed partial class CEZLevelsSystem
 
             foreach (var hull in CollectGridsOnMap(convoyMap))
             {
-                if (_timing.CurTime < _luamNextCrash.GetValueOrDefault(hull) || !LuaMHullOverGrids(hull, floor))
+                if (!TryComp<CEZGridFallerComponent>(hull, out var faller)
+                    || _timing.CurTime < faller.NextFloorCrash
+                    || !LuaMHullOverGrids(hull, floor))
                     continue;
 
-                _luamNextCrash[hull] = _timing.CurTime + LuaMCrashCooldown;
+                faller.NextFloorCrash = _timing.CurTime + LuaMCrashCooldown;
                 _shuttle.Smimsh(hull, crushMap: floor, explodeGrids: true);
             }
         }
@@ -860,6 +870,11 @@ public sealed partial class CEZLevelsSystem
             var crossedPlane = up ? lower : upper;
             foreach (var gridUid in movedGrids)
             {
+                // LuaM-start: after a descent this plane is now the ceiling of the new gap.
+                // Its impact is handled here, so the ceiling check must not hit it again immediately.
+                if (!up && TryComp<CEZGridFallerComponent>(gridUid, out var faller) && LuaMHullOverGrids(gridUid, crossedPlane))
+                    faller.NextFloorCrash = _timing.CurTime + LuaMCrashCooldown;
+                // LuaM-end
                 _shuttle.Smimsh(gridUid, crushMap: crossedPlane, explodeGrids: true);
             }
 

@@ -17,6 +17,7 @@ public sealed partial class WGPlanetTimepieceHudSystem : EntitySystem
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IUserInterfaceManager _ui = default!;
     [Dependency] private IResourceCache _resources = default!;
+    [Dependency] private Robust.Shared.Configuration.IConfigurationManager _luamCfg = default!; // LuaM
 
     private WGPlanetTimepieceHud _hud = default!;
     private float _untilRefresh;
@@ -43,6 +44,7 @@ public sealed partial class WGPlanetTimepieceHudSystem : EntitySystem
         };
         _ui.PopupRoot.AddChild(_hud);
         LayoutContainer.SetAnchorPreset(_hud, LayoutContainer.LayoutPreset.TopLeft);
+        _hud.Dragged += pos => _luamCfg.SetCVar(Content.Shared._LuaM.CCVar.LuaMCVars.PlanetClockPosition, $"{pos.X:0},{pos.Y:0}"); // LuaM
 
         SubscribeLocalEvent<WGPlanetEnvironmentComponent, AfterAutoHandleStateEvent>(OnEnvironmentState);
         SubscribeLocalEvent<LocalPlayerAttachedEvent>(OnPlayerAttached);
@@ -151,6 +153,19 @@ public sealed partial class WGPlanetTimepieceHudSystem : EntitySystem
         var size = new Vector2(
             MathF.Max(_hud.Width, WGPlanetTimepieceHud.PanelWidth),
             MathF.Max(_hud.Height, WGPlanetTimepieceHud.PanelHeight));
+        // LuaM-start: a spot the player dragged it to wins over the default corner
+        if (_hud.Dragging)
+            return;
+
+        var saved = _luamCfg.GetCVar(Content.Shared._LuaM.CCVar.LuaMCVars.PlanetClockPosition).Split(',');
+        if (saved.Length == 2 && float.TryParse(saved[0], System.Globalization.CultureInfo.InvariantCulture, out var x)
+            && float.TryParse(saved[1], System.Globalization.CultureInfo.InvariantCulture, out var y))
+        {
+            var room = Vector2.Max(Vector2.Zero, _ui.PopupRoot.Size - size);
+            LayoutContainer.SetPosition(_hud, Vector2.Clamp(new Vector2(x, y), Vector2.Zero, room));
+            return;
+        }
+        // LuaM-end
         LayoutContainer.SetPosition(_hud, WGHudPlacement.Place(_ui, size));
     }
 

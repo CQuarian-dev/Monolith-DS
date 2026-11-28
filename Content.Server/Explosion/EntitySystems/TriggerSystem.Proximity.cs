@@ -128,10 +128,10 @@ public sealed partial class TriggerSystem
         var query = EntityQueryEnumerator<TriggerOnProximityComponent>();
         while (query.MoveNext(out var uid, out var trigger))
         {
-            if (curTime >= trigger.NextVisualUpdate)
+            if (trigger.NextVisualUpdate != TimeSpan.Zero && curTime >= trigger.NextVisualUpdate) // LuaM
             {
                 // Update the visual state once the animation is done.
-                trigger.NextVisualUpdate = TimeSpan.MaxValue;
+                trigger.NextVisualUpdate = TimeSpan.Zero; // LuaM
                 SetProximityAppearance(uid, trigger);
             }
 

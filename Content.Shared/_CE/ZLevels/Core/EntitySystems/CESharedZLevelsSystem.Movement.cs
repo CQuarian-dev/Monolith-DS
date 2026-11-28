@@ -18,6 +18,7 @@ public abstract partial class CESharedZLevelsSystem
 {
     private readonly List<EntityUid> _dirtyMovementBodies = new();
     private readonly HashSet<Entity<CEZPhysicsComponent>> _wgTileHits = new(); // WOLFGATE(Performance): reused by OnTileChanged
+    private readonly HashSet<Vector2i> _luamRemovedTiles = new(); // LuaM
     private readonly HashSet<EntityUid> _wgDirtyMovementSet = new(); // WOLFGATE(Performance): List.Contains per MoveEvent went quadratic in battles
 
     private const float WGZEpsilon = 0.0001f; // WOLFGATE(Performance): below this a z set is a no-op
@@ -29,7 +30,19 @@ public abstract partial class CESharedZLevelsSystem
         SubscribeLocalEvent<CEZPhysicsComponent, CEZLevelMapMoveEvent>(OnZLevelMapMove);
         SubscribeLocalEvent<CEZPhysicsComponent, MoveEvent>(OnMoveEvent);
         SubscribeLocalEvent<CEZMapComponent, TileChangedEvent>(OnTileChanged);
+        SubscribeLocalEvent<TileChangedEvent>(LuaMOnGridTileChanged); // LuaM
     }
+
+    // LuaM-start: grids standing on a level (city floors, hulls) lose tiles too, and what lay on them must fall
+    private void LuaMOnGridTileChanged(ref TileChangedEvent args)
+    {
+        if (_zMapQuery.HasComp(args.Entity) || !_zMapQuery.HasComp(Transform(args.Entity).MapUid))
+            return;
+
+        var map = Transform(args.Entity).MapUid!.Value;
+        OnTileChanged((map, _zMapQuery.Comp(map)), ref args);
+    }
+    // LuaM-end
 
     /// <summary>
     /// Returns the last cached distance to the floor.
@@ -115,47 +128,46 @@ public abstract partial class CESharedZLevelsSystem
 
     private void OnTileChanged(Entity<CEZMapComponent> ent, ref TileChangedEvent args)
     {
-        if (!TryComp<MapGridComponent>(args.Entity, out var grid))
+        if (args.Changes.Length == 0 || !TryComp<MapGridComponent>(args.Entity, out var grid))
             return;
 
-        // WOLFGATE(Performance) START: one typed query over the union of the changed tiles instead of an untyped query per tile
-        var any = false;
-        var mapId = MapId.Nullspace;
-        var lo = Vector2.Zero;
-        var hi = Vector2.Zero;
+        // LuaM-start: query once in world coordinates, including the corners of rotated tiles.
+        var lo = new Vector2(float.PositiveInfinity);
+        var hi = new Vector2(float.NegativeInfinity);
         var half = grid.TileSizeHalfVector;
+        _luamRemovedTiles.Clear();
 
         foreach (var change in args.Changes)
         {
-            var mapCoords = _map.GridTileToWorld(args.Entity, grid, change.GridIndices);
-            var min = mapCoords.Position - half;
-            var max = mapCoords.Position + half;
-
-            if (!any)
-            {
-                any = true;
-                mapId = mapCoords.MapId;
-                lo = min;
-                hi = max;
-                continue;
-            }
-
-            lo = Vector2.Min(lo, min);
-            hi = Vector2.Max(hi, max);
+            var center = _map.GridTileToLocal(args.Entity, grid, change.GridIndices).Position;
+            lo = Vector2.Min(lo, center - half);
+            hi = Vector2.Max(hi, center + half);
+            if (change.NewTile.IsEmpty)
+                _luamRemovedTiles.Add(change.GridIndices);
         }
 
-        if (!any)
-            return;
-
+        var bounds = _transform.GetWorldMatrix(args.Entity).TransformBox(new Box2(lo, hi));
         _wgTileHits.Clear();
-        _lookup.GetEntitiesIntersecting(mapId, new Box2(lo, hi), _wgTileHits, LookupFlags.Dynamic | LookupFlags.Static | LookupFlags.Sundries);
+        _lookup.GetEntitiesIntersecting(Transform(args.Entity).MapID, bounds, _wgTileHits, LookupFlags.Dynamic | LookupFlags.Static | LookupFlags.Sundries);
+
         foreach (var hit in _wgTileHits)
         {
             RequestCacheMovement(hit);
+            if (_luamRemovedTiles.Count == 0)
+                continue;
+
+            var xform = Transform(hit);
+            if (xform.GridUid is { } hitGrid && hitGrid != args.Entity.Owner)
+                continue;
+
+            var tile = _map.TileIndicesFor(args.Entity, grid, xform.Coordinates);
+            if (_luamRemovedTiles.Contains(tile))
+                RefreshBody(hit);
         }
 
         _wgTileHits.Clear();
-        // WOLFGATE END
+        _luamRemovedTiles.Clear();
+        // LuaM-end
     }
 
     private void RequestCacheMovement(Entity<CEZPhysicsComponent> entity, bool force = true)

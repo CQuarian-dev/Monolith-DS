@@ -31,8 +31,19 @@ public sealed partial class WGOrbitalMobFallSystem : EntitySystem
     [Dependency] private SharedAudioSystem _audio = default!;
     private static readonly SoundSpecifier Splat = new SoundPathSpecifier("/Audio/Effects/gib1.ogg");
 
+    // LuaM-start
+    private static readonly SoundSpecifier BodyFall = new SoundCollectionSpecifier("BodyFall");
+
+    private void OnMobImpact(Entity<MobStateComponent> ent, ref CEZFallingDamageCalculateEvent args)
+    {
+        if (args.Fallen == ent.Owner && !HasComp<WGOrbitalMobFallComponent>(ent) && TryComp<CEZPhysicsComponent>(ent, out var body) && body.Velocity < 0)
+            _audio.PlayPvs(BodyFall, ent);
+    }
+    // LuaM-end
+
     public override void Initialize()
     {
+        SubscribeLocalEvent<MobStateComponent, CEZFallingDamageCalculateEvent>(OnMobImpact); // LuaM
         SubscribeLocalEvent<MobStateComponent, CEZLevelFallMapEvent>(OnFall);
         SubscribeLocalEvent<WGOrbitalMobFallComponent, CEZFallingDamageCalculateEvent>(OnCalculate);
         SubscribeLocalEvent<WGOrbitalMobFallComponent, CEZLevelHitEvent>(OnHit, after: new[] { typeof(CEZLevelDamageSystem) });

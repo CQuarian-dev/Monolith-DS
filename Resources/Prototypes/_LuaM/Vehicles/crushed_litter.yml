@@ -1,0 +1,7 @@
+# Бревно от дерева, сбитого техникой: никто не подобрал за 10 минут — исчезает, чтобы просеки не копили сотни брёвен
+- type: entity
+  parent: Log
+  id: LuaMCrushedLog
+  suffix: Crushed
+  components:
+  - type: LuaMLitter

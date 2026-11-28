@@ -5,7 +5,7 @@ meta:
   forkId: wolfgate-mapping
   forkVersion: 20261023-003702-2b11836-tm231-eb8571c4
   time: 10/23/2026 03:13:38
-  entityCount: 54
+  entityCount: 53
 maps: []
 grids:
 - 1
@@ -38,7 +38,13 @@ entities:
     - type: DecalGrid
       chunkCollection:
         version: 2
-        nodes: []
+        nodes:
+        - node:
+            cleanable: True
+            color: '#FFFFFFFF'
+            id: LuaMDecorN14DecorFloorSkeleton
+          decals:
+            0: -10,10
 - proto: CEZGridConnector
   entities:
   - uid: 37
@@ -89,15 +95,6 @@ entities:
     - type: Transform
       parent: 1
       pos: -8.5,11.5
-- proto: N14DecorFloorSkeleton
-  entities:
-  - uid: 55
-    components:
-    - type: Transform
-      parent: 1
-      pos: -9.5,10.5
-    - type: Fixtures
-      fixtures: {}
 - proto: MetalDoor
   entities:
   - uid: 54

@@ -1,0 +1,503 @@
+# LuaM: collisionless litter and decor from planet maps, as cleanable decals (generated from the entity prototypes).
+# The offset centres the texture on its tile, as the entity sprite was.
+
+- type: decal
+  id: LuaMDecorCobweb1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: Structures/Decoration/cobweb.rsi
+    state: cobweb1
+
+- type: decal
+  id: LuaMDecorCobweb2
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: Structures/Decoration/cobweb.rsi
+    state: cobweb2
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_ns-1
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard10
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_we-4
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard11
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_we-5
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard13
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_ns-1
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard14
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_ns-2
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard15
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_ns-3
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard16
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_ns-4
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard17
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_ns-5
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard18
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_ns-6
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard19
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_we-1
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard20
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_we-2
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard21
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_we-3
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard22
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_we-4
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard23
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_we-5
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard24
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_mammoth_we-6
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard3
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_ns-3
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard4
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_ns-4
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard5
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_ns-5
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard7
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_we-1
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard8
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_we-2
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBoard9
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/cave_decor.rsi
+    state: boards_drought_we-3
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookPile1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookpile_1
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookPile2
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookpile_2
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookPile3
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookpile_3
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookPile4
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookpile_4
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookPile5
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookpile_5
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookPile6
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookpile_6
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookstack1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookstack_1
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookstack2
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookstack_2
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBookstack3
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: bookstack_3
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorBrickrubble
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: brickrubble
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorCardboard
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: cardboard
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorFood1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: foodstuff_1
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorFood2
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: foodstuff_2
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorFood4
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: foodstuff_4
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorFood5
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: foodstuff_5
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorFood6
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: foodstuff_6
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorGlass1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: glass_1
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorGlass2
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: glass_2
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorGlass3
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: glass_3
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorGlass4
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: glass_4
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorGlass5
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: glass_5
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorGlass6
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: glass_6
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorPallet
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: pallet
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorPaper
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: scattered_papers
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorPaper1
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: papers_1
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorPaper2
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: papers_2
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorPaper3
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: papers_3
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorScrapwood
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: woodscrap
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorSkeleton
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: skeleton
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14DecorFloorSkeletonOver
+  tags: ["dirty", "planet"]
+  defaultCleanable: true
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/world.rsi
+    state: skeleton
+  offset: 0,-0.25
+
+- type: decal
+  id: LuaMDecorN14Rails
+  tags: ["dirty", "planet"]
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/rails64.rsi
+    state: rails
+  offset: -0.5,-0.5
+
+- type: decal
+  id: LuaMDecorN14RailsJunctionLeftBottom
+  tags: ["dirty", "planet"]
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/rails64.rsi
+    state: junction-left-bottom
+  offset: -0.5,-0.5
+
+- type: decal
+  id: LuaMDecorN14RailsJunctionRightBottom
+  tags: ["dirty", "planet"]
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/rails64.rsi
+    state: junction-right-bottom
+  offset: -0.5,-0.5
+
+- type: decal
+  id: LuaMDecorN14RailsTurnSE
+  tags: ["dirty", "planet"]
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/rails64.rsi
+    state: turn-SE
+  offset: -0.5,-0.5
+
+- type: decal
+  id: LuaMDecorN14RailsTurnWS
+  tags: ["dirty", "planet"]
+  sprite:
+    sprite: _Nuclear14/Structures/Decoration/rails64.rsi
+    state: turn-WS
+  offset: -0.5,-0.5
+
+- type: decal
+  id: LuaMDecorWGCarcinomaTendons
+  tags: ["dirty", "planet"]
+  sprite:
+    sprite: Objects/Misc/fleshkudzu.rsi
+    state: kudzu_11
