@@ -45,19 +45,31 @@ public static class LobbyHudStyles
     public const string Note = "LuaMHudNote";
     public const string TabTitle = "LuaMHudTab";
     public const string TraitTitle = "LuaMHudTraitTitle";
+    public const string TraitCard = "LuaMHudTraitCard";
     public const string NoteLead = "LuaMHudNoteLead";
 
     private const string Fonts = "/Fonts/_LuaM/";
     private const string Symbols = "/Fonts/NotoSans/NotoSansSymbols2-Regular.ttf";
 
+    // The same fallbacks as the old Noto stack: circled digits and ☹ of the ahelp list are only in NotoSansSymbols
+    private static readonly string[] Fallbacks =
+    {
+        "/Fonts/NotoSans/NotoSans-Regular.ttf",
+        "/Fonts/NotoSans/NotoSansSymbols-Regular.ttf",
+        Symbols,
+        "/Fonts/NotoSans/NotoSansSC-Regular.ttf",
+    };
+
+    private static string[] Stack(string main) => [main, .. Fallbacks];
+
     public static Font UiFont(IResourceCache res, int size, string weight = "SemiBold") =>
-        res.GetFont(new[] { Fonts + $"IBMPlexSansCondensed/IBMPlexSansCondensed-{weight}.ttf", "/Fonts/NotoSans/NotoSans-Regular.ttf", Symbols }, size);
+        res.GetFont(Stack(Fonts + $"IBMPlexSansCondensed/IBMPlexSansCondensed-{weight}.ttf"), size);
 
     public static Font MonoFont(IResourceCache res, int size, bool semi = false) =>
-        res.GetFont(new[] { Fonts + (semi ? "IBMPlexMono/IBMPlexMono-SemiBold.ttf" : "IBMPlexMono/IBMPlexMono-Regular.ttf"), "/Fonts/NotoSans/NotoSans-Regular.ttf", Symbols }, size);
+        res.GetFont(Stack(Fonts + (semi ? "IBMPlexMono/IBMPlexMono-SemiBold.ttf" : "IBMPlexMono/IBMPlexMono-Regular.ttf")), size);
 
     public static Font MonoMediumFont(IResourceCache res, int size) =>
-        res.GetFont(new[] { Fonts + "IBMPlexMono/IBMPlexMono-Medium.ttf", "/Fonts/NotoSans/NotoSans-Regular.ttf", Symbols }, size);
+        res.GetFont(Stack(Fonts + "IBMPlexMono/IBMPlexMono-Medium.ttf"), size);
 
     public static StyleRule[] GetRules(IResourceCache resCache)
     {
@@ -70,11 +82,11 @@ public static class LobbyHudStyles
 
         var primary = Lamp(HudPalette.Fg, StyleBoxLamp.Lit.On);
         var accent = Lamp(HudPalette.Fg, StyleBoxLamp.Lit.On, HudPalette.Fg);
-        accent.InnerGlow = HudPalette.Fg.WithAlpha(0.35f);
-        accent.OuterGlow = HudPalette.Fg.WithAlpha(0.07f);
+        accent.InnerGlow = HudPalette.Fg.WithAlpha(0.18f);
+        accent.OuterGlow = HudPalette.Fg.WithAlpha(0.035f);
         var accentHover = Lamp(HudPalette.Fg, StyleBoxLamp.Lit.On, HudPalette.Cream);
-        accentHover.InnerGlow = HudPalette.Fg.WithAlpha(0.5f);
-        accentHover.OuterGlow = HudPalette.Fg.WithAlpha(0.1f);
+        accentHover.InnerGlow = HudPalette.Fg.WithAlpha(0.25f);
+        accentHover.OuterGlow = HudPalette.Fg.WithAlpha(0.05f);
         var primaryHover = Lamp(HudPalette.Fg, StyleBoxLamp.Lit.On, HudPalette.Fg);
         var primaryPressed = Lamp(HudPalette.Fg, StyleBoxLamp.Lit.On, HudPalette.FgDim);
 
@@ -199,6 +211,9 @@ public static class LobbyHudStyles
                 .Prop(Label.StylePropertyFontColor, HudPalette.Fg),
             Element<Label>().Class(TraitTitle)
                 .Prop(Label.StylePropertyFont, UiFont(resCache, 18))
+                .Prop(Label.StylePropertyFontColor, HudPalette.Text),
+            Element<Label>().Class(TraitCard)
+                .Prop(Label.StylePropertyFont, ui13)
                 .Prop(Label.StylePropertyFontColor, HudPalette.Text),
             Element<Label>().Class(Note)
                 .Prop(Label.StylePropertyFont, MonoFont(resCache, 11))

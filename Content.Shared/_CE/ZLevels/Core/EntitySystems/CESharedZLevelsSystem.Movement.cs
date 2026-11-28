@@ -193,6 +193,9 @@ public abstract partial class CESharedZLevelsSystem
         // LuaM-start: without client simulation nothing ever clears the list on the client, it would grow for the whole session
         if (_net.IsClient && !_clientSimulation)
             return;
+
+        if (!_zMapQuery.HasComp(Transform(entity).MapUid))
+            return;
         // LuaM-end
 
         if (!_wgDirtyMovementSet.Add(entity)) // WOLFGATE(Performance): set lookup instead of List.Contains

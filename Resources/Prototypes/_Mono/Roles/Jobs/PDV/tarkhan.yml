@@ -11,6 +11,12 @@
 #  - !type:DepartmentTimeRequirement # Requires time in both factions # Commented by LuaM
 #    department: Antag # Commented by LuaM
 #    time: 108000 # 30 hours # mono # Commented by LuaM
+  # LuaM-start: no vox Tarkhans
+  - !type:SpeciesRequirement
+    inverted: true
+    species:
+    - Vox
+  # LuaM-end
   - !type:TraitsRequirement # The trait doesn't do anything if you're PDV anyways, but this is 1 step closer to letting it actually give you points
     inverted: true
     traits:
@@ -52,12 +58,14 @@
 - type: startingGear
   id: PDVTarkhanGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitNfsdTacCream
+    jumpsuit: ClothingUniformJumpsuitTarkhan # LuaM: ClothingUniformJumpsuitNfsdTacCream > ClothingUniformJumpsuitTarkhan
     back: ClothingBackpackPDVTarkhan
-    ears: ClothingHeadsetAltVanguardCommand
-    gloves: ClothingHandsGlovesTacticalCombatBlack
+    ears: ClothingHeadsetAltTarkhan # LuaM: ClothingHeadsetAltVanguardCommand > ClothingHeadsetAltTarkhan
+    gloves: ClothingHandsGlovesTarkhan # LuaM: ClothingHandsGlovesTacticalCombatBlack > ClothingHandsGlovesTarkhan
     outerClothing: ClothingOuterHardsuitTarkhan
-    shoes: ClothingShoesBootsMagAshen
+    suitstorage: JetpackTarkhanFilled # LuaM
+    shoes: ClothingShoesBootsMagTarkhan # LuaM: ClothingShoesBootsMagAshen > ClothingShoesBootsMagPDVAdvanced > ClothingShoesBootsMagTarkhan
+    mask: ClothingMaskGasTarkhan # LuaM
     id: PDVTarkhanPDA
     pocket1: CrowbarPocket
     pocket2: RadioHandheldNF
@@ -67,5 +75,6 @@
     back:
     - BookNordfallSOP # LuaM: faction service handbook
     - BasePirateUplinkRadioPirateCaptain
+    - PDVHandheldOverwatchConsole # LuaM
   inhand:
   - UndeterminedPDVTarkhanKit

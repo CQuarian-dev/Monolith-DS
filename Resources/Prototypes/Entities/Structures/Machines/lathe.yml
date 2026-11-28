@@ -512,6 +512,7 @@
     idleState: icon
     runningState: icon
     staticPacks:
+    - LuaMShipGunAssemblyColossus # LuaM
     - SecurityEquipmentStatic
     - SecurityPracticeStatic
     - StaticAmmoRecipePack
@@ -587,6 +588,7 @@
     # - StaticGrenades # Commented by LuaM
     - RoundstartShipgunAmmo # Mono
     dynamicPacks:
+    - LuaMShipGunAssemblyCivilian # LuaM
     - DynamicAmmoRecipePack
     # Mono start
     # - ResearchedExplosives # Commented by LuaM

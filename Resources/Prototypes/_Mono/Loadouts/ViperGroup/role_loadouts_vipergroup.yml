@@ -21,7 +21,8 @@
   - VGInfanteerPDA
   - ContractorWallet
   - ContractorCartridge
-  - ContractorImplanter
+  - MartialArtsManual # LuaM
+  - VGImplanter # LuaM: ContractorImplanter > VGImplanter, no medical tracker
   - ContractorUtility
   - ContractorFun
   - ContractorTrinkets
@@ -53,7 +54,8 @@
   - VGLieutenantPDA
   - ContractorWallet
   - ContractorCartridge
-  - ContractorImplanter
+  - MartialArtsManual # LuaM
+  - VGImplanter # LuaM: ContractorImplanter > VGImplanter, no medical tracker
   - ContractorUtility
   - ContractorFun
   - ContractorTrinkets
@@ -85,7 +87,8 @@
   - VGCommanderPDA
   - ContractorWallet
   - ContractorCartridge
-  - ContractorImplanter
+  - MartialArtsManual # LuaM
+  - VGImplanter # LuaM: ContractorImplanter > VGImplanter, no medical tracker
   - ContractorUtility
   - ContractorFun
   - ContractorTrinkets

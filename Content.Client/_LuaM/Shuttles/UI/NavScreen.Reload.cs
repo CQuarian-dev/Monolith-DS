@@ -32,7 +32,7 @@ public sealed partial class NavScreen
             MaxValue = 1,
             Value = 1,
             SetHeight = 4,
-            Margin = new Thickness(4, 0, 4, 2),
+            Margin = new Thickness(0, 0, 0, 2),
             ForegroundStyleBoxOverride = ReloadReadyStyle,
             BackgroundStyleBoxOverride = ReloadBackgroundStyle,
         };
@@ -80,7 +80,9 @@ public sealed partial class NavScreen
                 progress = Math.Clamp((float) ((now - reload.Start) / (reload.End - reload.Start)), 0f, 1f);
             }
 
-            bar.Value = progress ?? 1f;
+            var value = progress ?? 1f;
+            if (bar.Value != value)
+                bar.Value = value;
 
             var style = progress == null ? ReloadReadyStyle : ReloadChargingStyle;
             if (bar.ForegroundStyleBoxOverride != style)

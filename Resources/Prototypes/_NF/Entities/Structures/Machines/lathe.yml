@@ -182,6 +182,7 @@
     # LuaM-start:
     - NFMercenaryTechfabDeprecatedStatic
     - MonoRestraintsStatic
+    - LuaMTsf8x65AmmoStatic
     # LuaM-end
     dynamicPacks:
     - NFNfsdTechfabDeprecated
@@ -208,6 +209,7 @@
     - SecurityEquipment
     - SmartGun
     - PunkGear
+    - LuaMShipGunAssemblyTsf
 # LuaM-end.
   - type: EmagLatheRecipes
     emagStaticPacks:
@@ -252,11 +254,13 @@
     staticPacks:
     - NFMercenaryTechfabDeprecatedStatic
     #- StaticAmmoRecipePack # Commented by LuaM
+    - LuaMMercenaryFMJAmmo # LuaM
     - MonoRestraintsStatic # Mono
     #- RoundstartShipgunAmmo # Mono # Commented by LuaM
     - StaticGrenades
     - MonoAttachmentsStatic # Mono
     dynamicPacks:
+    - LuaMShipGunAssemblyCivilian # LuaM
     - NFMercenaryTechfabDeprecated
     #- DynamicAmmoRecipePack
     # Mono start
@@ -329,11 +333,13 @@
     staticPacks:
     - NFHackedMercenaryTechfabDeprecatedStatic
     #- StaticAmmoRecipePack
+    - LuaMMercenaryFMJAmmo # LuaM
     - MonoRestraintsStatic
     #- RoundstartShipgunAmmo # Mono
     - StaticGrenades
     - MonoAttachmentsStatic # Mono
     dynamicPacks:
+    - LuaMShipGunAssemblyCivilian # LuaM
     - NFHackedMercenaryTechfabDeprecated
    # - DynamicAmmoRecipePack
     - SmartGun # Goobstation

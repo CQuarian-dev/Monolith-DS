@@ -206,6 +206,7 @@
       enum.SurgeryUIKey.Key:
         type: SurgeryBui
   - type: Puller
+  - type: GrabIntent # LuaM: grab stages
   - type: Speech
     speechSounds: Alto
   - type: DamageForceSay

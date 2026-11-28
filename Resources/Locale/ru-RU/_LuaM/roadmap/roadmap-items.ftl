@@ -1,4 +1,5 @@
 ﻿roadmap-item-ui-unification = Приведение UI к общей схеме
+roadmap-item-mc-updates-part-one = Новинки для МЦ. Часть 1
 roadmap-item-mmc-updates = Новинки для ММС
 roadmap-item-vg-updates = Новинки для VG
 roadmap-item-sbkc-updates = Новинки для СБКЦ
@@ -8,6 +9,7 @@ roadmap-item-optimization = Оптимизация
 roadmap-item-circle-squad = Отряд «Круг»
 roadmap-item-corporations = Дальнейшее развитие корпораций
 roadmap-item-martial-arts = Боевые искусства
+roadmap-item-ship-guns = Создание корабельных орудий
 roadmap-item-surgery = Улучшение хирургии
 roadmap-item-prestige-ranks = Престижные ранги для ролей
 roadmap-item-fauna-ai = Продвинутый ИИ фауны
